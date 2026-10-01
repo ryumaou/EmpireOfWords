@@ -3,9 +3,11 @@ A set of Python scripts that allow a technically literate worldbuilder to create
 
 Based, in part, on Perl scripts originally created by Chris Pound, with additional inspiration from other conlanging sources.
 
+# Conlang Project v3
+
 Project layout:
 
-```text
+```
 project/
 ├── src/
 │   ├── build_language.py
@@ -14,57 +16,47 @@ project/
 ├── vocabulary/
 │   └── MagicVocabulary.txt
 ├── data/
-│   └── <base-language-corpus>.txt
+│   └── base_language.txt
 └── output/
 ```
 
 Run from the project root:
 
-```cmd
-python src\build_language.py --language-name "My Language" --seed 12345
+```
+python src/build_language.py --language-name "Khudzul" --seed 12345
 ```
 
-If there is one `.txt` corpus in `data`, it is selected automatically. Otherwise specify it:
+Or choose files explicitly:
 
-```cmd
-python src\build_language.py vocabulary\MagicVocabulary.txt data\my_corpus.txt --language-name "My Language" --seed 12345
+```
+python src/build_language.py vocabulary/MagicVocabulary.txt data/germanic.txt --language-name "Khudzul" --seed 12345
 ```
 
-The scripts resolve defaults from the project directory, not the shell's current directory.
+## v3 grammar features
+
+In addition to v2 noun number/case, tense/aspect, syntax, pronouns, articles, and derivational morphology, v3 adds:
+
+- subject agreement: 1/2/3 person × singular/plural
+- demonstratives: proximal/distal × singular/plural
+- interrogatives: who, what, where, when, why, how, which
+- comparative and superlative adjective morphology
+- genitive possessive constructions
+- yes/no question particle and generated placement
+- wh-question strategy (in-situ or fronted)
+- imperative, subjunctive, and conditional moods
+- generated example sentences with English, surface form, and interlinear-style morpheme gloss
 
 ## Output
 
-Each language receives its own directory under `output`:
+Each language is written to `output/<LanguageName>/`:
 
-```text
-output/My_Language/
-├── dictionary.csv
-├── derivational_morphology.txt
-├── etymology.txt
-├── language.json
-├── grammar.json
-├── paradigms.csv
-└── reference.md
-```
+- `dictionary.csv` — roots and derived vocabulary
+- `derivational_morphology.txt` — vocabulary-building modifiers
+- `etymology.txt` — derivational history and unresolved references
+- `grammar.json` — machine-readable grammar
+- `language.json` — canonical combined language package
+- `paradigms.csv` — noun, verb/agreement/mood, and adjective comparison forms
+- `examples.txt` — generated sentences and glosses
+- `reference.md` — readable grammar reference plus examples
 
-`language.json` is the canonical machine-readable language package. `grammar.json` contains syntax and inflectional grammar. `paradigms.csv` applies noun and verb inflection to the generated lexicon. `reference.md` is a human-readable grammar summary.
-
-## Grammar v2
-
-The naturalistic generator currently establishes a coherent basic grammar rather than independently randomizing every feature:
-
-- SOV/SVO/VSO basic constituent order (weighted)
-- correlated prepositions/postpositions
-- adjective position
-- possessor position
-- optional articles
-- singular/plural
-- nominative, accusative, genitive, dative
-- present, past, future
-- simple/progressive aspect
-- morphological negation
-- six independent personal pronouns
-- language-native grammatical morphemes generated from the same Pound model as the vocabulary
-
-This is deliberately a v2 foundation. It keeps derivational morphology separate from inflection so later translation code can inflect a lemma without creating spurious dictionary entries.
-
+All grammatical forms are generated from the same Pound `lc` phonological model as the lexicon. The generator does not invent target-language words during sentence generation; examples are assembled from the generated lexicon and grammar.
