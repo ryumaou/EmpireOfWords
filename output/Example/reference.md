@@ -70,43 +70,69 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 - superlative: **yafuntt**
 
 ## Generated Examples
-### Declarative
-- English: The warrior killed the dragon.
-- Language: **goger idakottaku nemasu**
-- Gloss: `warrior.NOM dragon-ACC kill-PST-3SG`
+### Translation
+- English: The big dog is sleeping.
+- Language: **kaho nurup**
+- Gloss: `SUBJ SLEEP-PROG`
+- Status: `ok`
 
-### Yes/no question
-- English: Did the warrior kill the dragon?
-- Language: **goger idakottaku nemasu sadezen**
-- Gloss: `warrior.NOM dragon-ACC kill-PST-3SG Q`
+### Translation
+- English: Where is my book?
+- Language: **gyugyu gamondona woji**
+- Gloss: `WHERE 1SG-GEN book`
+- Status: `ok`
 
-### Possession
-- English: the hunter's house
-- Language: **gahozuer zewoja**
-- Gloss: `hunter-GEN house`
+### Translation
+- English: She will give him water.
+- Language: **byurumy idojushi zuitasu byurumy **
+- Gloss: `SUBJ water.ACC GIVE-FUT 3SG.DAT `
+- Status: `ok`
 
-### Comparison
-- English: bigger / biggest
-- Language: **zon izuheru / yafuntt izuheru**
-- Gloss: `big-CMPR / big-SUP`
+### Translation
+- English: This child walked to that house yesterday.
+- Language: **ogezom bemasu pere deshush zewojahi pyanmas woshoju**
+- Gloss: `SUBJ WALK TO THAT house.DAT`
+- Status: `ok`
 
-### Wh-question
-- English: Who do you see?
-- Language: **epepaho stumasu dashoja**
-- Gloss: `who 2SG see-2SG`
+### Translation
+- English: Are you hungry?
+- Language: **epepaho gamashi sadezen**
+- Gloss: `2SG hungry Q`
+- Status: `ok`
 
-### Imperative
-- English: Go!
-- Language: **byomasua**
-- Gloss: `go-IMPE`
+### Translation
+- English: Give me the red bird!
+- Language: **zuitasua mondona idokyu**
+- Gloss: `give-IMP 1SG.DAT bird.ACC`
+- Status: `ok`
 
-### Subjunctive
-- English: that he go
-- Language: **byomasupo**
-- Gloss: `go-SUBJ`
+### Translation
+- English: The woman and the man are talking.
+- Language: **hitiach obyap**
+- Gloss: `SUBJ TALK-PROG`
+- Status: `ok`
 
-### Conditional
-- English: he would go
-- Language: **byomasud**
-- Gloss: `go-COND`
+### Translation
+- English: I do not see three cats.
+- Language: **mondona yomemas idanulli stumasufuh**
+- Gloss: `SUBJ THREE cat.PL.ACC SEE-NEG`
+- Status: `ok`
+
+### Translation
+- English: There is a black mountain.
+- Language: **fumyogy nakinah**
+- Gloss: `mountain.NOM exist-3SG`
+- Status: `ok`
+
+### Translation
+- English: Two children played in the garden.
+- Language: **dedarom bemasu tora oiditak zamasu**
+- Gloss: `SUBJ PLAY IN garden.LOC`
+- Status: `ok`
+
+### Translation
+- English: A Tiger wearing a bell will starve.
+- Language: **naratte idazuhodoz zanakip aridatt**
+- Gloss: `SUBJ WEAR-PART bell.ACC STARVE-FUT`
+- Status: `ok`
 

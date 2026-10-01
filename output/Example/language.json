@@ -30454,54 +30454,84 @@
       "derivation": "young-TO.CREATE-QUALITY.OF.BEING"
     }
   ],
+  "translation_source": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\translations\\sentences_default.txt",
   "examples": [
     {
-      "type": "Declarative",
-      "english": "The warrior killed the dragon.",
-      "surface": "goger idakottaku nemasu",
-      "gloss": "warrior.NOM dragon-ACC kill-PST-3SG"
+      "type": "Translation",
+      "english": "The big dog is sleeping.",
+      "surface": "kaho nurup",
+      "gloss": "SUBJ SLEEP-PROG",
+      "status": "ok"
     },
     {
-      "type": "Yes/no question",
-      "english": "Did the warrior kill the dragon?",
-      "surface": "goger idakottaku nemasu sadezen",
-      "gloss": "warrior.NOM dragon-ACC kill-PST-3SG Q"
+      "type": "Translation",
+      "english": "Where is my book?",
+      "surface": "gyugyu gamondona woji",
+      "gloss": "WHERE 1SG-GEN book",
+      "status": "ok"
     },
     {
-      "type": "Possession",
-      "english": "the hunter's house",
-      "surface": "gahozuer zewoja",
-      "gloss": "hunter-GEN house"
+      "type": "Translation",
+      "english": "She will give him water.",
+      "surface": "byurumy idojushi zuitasu byurumy ",
+      "gloss": "SUBJ water.ACC GIVE-FUT 3SG.DAT ",
+      "status": "ok"
     },
     {
-      "type": "Comparison",
-      "english": "bigger / biggest",
-      "surface": "zon izuheru / yafuntt izuheru",
-      "gloss": "big-CMPR / big-SUP"
+      "type": "Translation",
+      "english": "This child walked to that house yesterday.",
+      "surface": "ogezom bemasu pere deshush zewojahi pyanmas woshoju",
+      "gloss": "SUBJ WALK TO THAT house.DAT",
+      "status": "ok"
     },
     {
-      "type": "Wh-question",
-      "english": "Who do you see?",
-      "surface": "epepaho stumasu dashoja",
-      "gloss": "who 2SG see-2SG"
+      "type": "Translation",
+      "english": "Are you hungry?",
+      "surface": "epepaho gamashi sadezen",
+      "gloss": "2SG hungry Q",
+      "status": "ok"
     },
     {
-      "type": "Imperative",
-      "english": "Go!",
-      "surface": "byomasua",
-      "gloss": "go-IMPE"
+      "type": "Translation",
+      "english": "Give me the red bird!",
+      "surface": "zuitasua mondona idokyu",
+      "gloss": "give-IMP 1SG.DAT bird.ACC",
+      "status": "ok"
     },
     {
-      "type": "Subjunctive",
-      "english": "that he go",
-      "surface": "byomasupo",
-      "gloss": "go-SUBJ"
+      "type": "Translation",
+      "english": "The woman and the man are talking.",
+      "surface": "hitiach obyap",
+      "gloss": "SUBJ TALK-PROG",
+      "status": "ok"
     },
     {
-      "type": "Conditional",
-      "english": "he would go",
-      "surface": "byomasud",
-      "gloss": "go-COND"
+      "type": "Translation",
+      "english": "I do not see three cats.",
+      "surface": "mondona yomemas idanulli stumasufuh",
+      "gloss": "SUBJ THREE cat.PL.ACC SEE-NEG",
+      "status": "ok"
+    },
+    {
+      "type": "Translation",
+      "english": "There is a black mountain.",
+      "surface": "fumyogy nakinah",
+      "gloss": "mountain.NOM exist-3SG",
+      "status": "ok"
+    },
+    {
+      "type": "Translation",
+      "english": "Two children played in the garden.",
+      "surface": "dedarom bemasu tora oiditak zamasu",
+      "gloss": "SUBJ PLAY IN garden.LOC",
+      "status": "ok"
+    },
+    {
+      "type": "Translation",
+      "english": "A Tiger wearing a bell will starve.",
+      "surface": "naratte idazuhodoz zanakip aridatt",
+      "gloss": "SUBJ WEAR-PART bell.ACC STARVE-FUT",
+      "status": "ok"
     }
   ]
 }

@@ -10,7 +10,7 @@ Example:
 """
 from __future__ import annotations
 import argparse, csv, importlib.util, random, re, sys
-from grammar_engine import FAMILIES, generate_grammar, load_grammar, write_package
+from grammar_engine import FAMILIES, generate_grammar, load_grammar, write_package, load_translation_sentences
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -213,6 +213,7 @@ def main(argv=None):
     p.add_argument("corpus", nargs="?", type=Path, help="legacy positional source corpus (prefer --source)")
     p.add_argument("--vocabulary", dest="vocabulary_file", type=Path, help="vocabulary definition file; relative paths resolve from the project root")
     p.add_argument("--source", dest="source_file", type=Path, help="source/base language corpus to analyze; relative paths resolve from the project root")
+    p.add_argument("--translations", dest="translations_file", type=Path, help="English sentence file under ./translations (or another project-relative path); replaces built-in examples")
     p.add_argument("--project-root", type=Path, default=root_default)
     p.add_argument("--language-name", default="Generated Language")
     p.add_argument("--grammar", dest="legacy_grammar", choices=["naturalistic","random"], help="legacy alias for --grammar-family")
@@ -283,6 +284,12 @@ def main(argv=None):
     if not selected_source.is_file(): p.error(f"source language file not found: {selected_source}")
     args.vocabulary = selected_vocab
     args.corpus = selected_source
+    translation_sentences=None; translation_source=None
+    if args.translations_file is not None:
+        translation_source=resolve_project_path(args.translations_file)
+        if not translation_source.is_file(): p.error(f"translations file not found: {translation_source}")
+        translation_sentences=load_translation_sentences(translation_source)
+        if not translation_sentences: p.error(f"translations file contains no usable sentences: {translation_source}")
     # Defaults go under ./output/<safe-language-name>/
     safe=re.sub(r'[^A-Za-z0-9._-]+','_',args.language_name).strip('_') or 'language'
     package_dir=project/'output'/safe
@@ -366,7 +373,7 @@ def main(argv=None):
     else:
         family=args.legacy_grammar or args.grammar_family
         grammar=generate_grammar(roots,rng,family,overrides)
-    write_package(package_dir,args.language_name,grammar,entries,forms,affixes,args.seed)
+    write_package(package_dir,args.language_name,grammar,entries,forms,affixes,args.seed,translation_sentences,translation_source)
     print(f"Entries: {len(entries)}")
     print(f"Base roots: {len(base)}")
     print(f"Modifiers: {len(mod_rules)}")
@@ -376,6 +383,7 @@ def main(argv=None):
     print(f"Morphology: {args.morphology}")
     print(f"Etymology: {args.etymology}")
     print(f"Grammar package: {package_dir}")
+    if translation_source: print(f"Translations: {translation_source} ({len(translation_sentences)} sentences; replaces built-in examples)")
     return 2 if errors or unresolved else 0
 
 if __name__=="__main__":
