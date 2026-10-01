@@ -10,53 +10,71 @@ Project layout:
 ```
 project/
 ├── src/
-│   ├── build_language.py
-│   ├── grammar_engine.py
-│   └── lc.py
 ├── vocabulary/
-│   └── MagicVocabulary.txt
 ├── data/
-│   └── base_language.txt
 └── output/
 ```
 
-Run from the project root:
+## Basic use
 
 ```
 python src/build_language.py --language-name "Khudzul" --seed 12345
 ```
 
-Or choose files explicitly:
+The default `naturalistic` mode selects a coherent grammar family. Choose one explicitly:
 
 ```
-python src/build_language.py vocabulary/MagicVocabulary.txt data/germanic.txt --language-name "Khudzul" --seed 12345
+python src/build_language.py --language-name "Ardunaic" --grammar-family romance --seed 12345
+python src/build_language.py --language-name "Khudzul" --grammar-family turkic --seed 12345
 ```
 
-## v3 grammar features
+Families: `naturalistic`, `random`, `romance`, `germanic`, `slavic`, `arabic`, `turkic`, `japanese`, `celtic`, `latin`, `greek`, `indic`, `bantu`, `polynesian`, `analytic`, `agglutinative`, `fusional`, `isolating`.
 
-In addition to v2 noun number/case, tense/aspect, syntax, pronouns, articles, and derivational morphology, v3 adds:
+These are typological inspirations, not replicas of real languages. A family sets weighted defaults; the seed still creates variation.
 
-- subject agreement: 1/2/3 person × singular/plural
-- demonstratives: proximal/distal × singular/plural
-- interrogatives: who, what, where, when, why, how, which
-- comparative and superlative adjective morphology
-- genitive possessive constructions
-- yes/no question particle and generated placement
-- wh-question strategy (in-situ or fronted)
-- imperative, subjunctive, and conditional moods
-- generated example sentences with English, surface form, and interlinear-style morpheme gloss
+## Override the family
 
-## Output
+```
+python src/build_language.py --language-name "Khudzul" --grammar-family germanic --word-order SOV --adjective-position after --cases 5 --gender none --seed 12345
+```
 
-Each language is written to `output/<LanguageName>/`:
+Available controls:
 
-- `dictionary.csv` — roots and derived vocabulary
-- `derivational_morphology.txt` — vocabulary-building modifiers
-- `etymology.txt` — derivational history and unresolved references
-- `grammar.json` — machine-readable grammar
-- `language.json` — canonical combined language package
-- `paradigms.csv` — noun, verb/agreement/mood, and adjective comparison forms
-- `examples.txt` — generated sentences and glosses
-- `reference.md` — readable grammar reference plus examples
+```
+--word-order SVO|SOV|VSO|VOS|OVS|OSV
+--adjective-position before|after
+--adposition pre|post|preposition|postposition
+--possession possessor-first|possessed-first|before|after
+--gender none|2|3|classes
+--cases 0..8
+--articles none|definite|indefinite|both
+--agreement none|subject|subject-object
+--tense minimal|standard|rich
+--aspect minimal|standard|rich
+--mood minimal|standard|rich
+--plural none|suffix|prefix|mixed
+--comparison particle|affix|mixed
+--questions particle|word-order|verb|mixed
+--negation particle|affix|mixed
+--grammar-morphology analytic|agglutinative|fusional|mixed|isolating
+```
 
-All grammatical forms are generated from the same Pound `lc` phonological model as the lexicon. The generator does not invent target-language words during sentence generation; examples are assembled from the generated lexicon and grammar.
+`--grammar-morphology` is separate from `--grammar-family`, so hybrids are possible:
+
+```
+python src/build_language.py --grammar-family romance --grammar-morphology agglutinative --language-name "Hybrid"
+```
+
+## Reuse an exact grammar
+
+Every generated language writes `output/<Language>/grammar.json`. Feed it back later:
+
+```
+python src/build_language.py --language-name "Khudzul2" --grammar-file output/Khudzul/grammar.json --seed 54321
+```
+
+When `--grammar-file` is supplied, family and grammar override switches are ignored. This lets you keep the exact grammatical architecture while generating a new lexicon from another corpus/seed.
+
+## Outputs
+
+As in v3: `dictionary.csv`, `derivational_morphology.txt`, `etymology.txt`, `grammar.json`, `language.json`, `paradigms.csv`, `examples.txt`, and `reference.md` under `output/<LanguageName>/`.
