@@ -10,7 +10,7 @@ Example:
 """
 from __future__ import annotations
 import argparse, csv, importlib.util, random, re, sys
-from grammar_engine import generate_grammar, write_package
+from grammar_engine import FAMILIES, generate_grammar, load_grammar, write_package
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -209,11 +209,31 @@ def tokenize_expr(expr: str, modifiers: set[str], by_key, by_gloss, current: Ent
 def main(argv=None):
     p=argparse.ArgumentParser(description="Build a related conlang lexicon from a MagicVocabulary-style list")
     root_default=Path(__file__).resolve().parent.parent
-    p.add_argument("vocabulary", nargs="?", type=Path, help="vocabulary file; default: ./vocabulary/MagicVocabulary.txt")
-    p.add_argument("corpus", nargs="?", type=Path, help="source corpus; default: first .txt file in ./data")
+    p.add_argument("vocabulary", nargs="?", type=Path, help="legacy positional vocabulary file (prefer --vocabulary)")
+    p.add_argument("corpus", nargs="?", type=Path, help="legacy positional source corpus (prefer --source)")
+    p.add_argument("--vocabulary", dest="vocabulary_file", type=Path, help="vocabulary definition file; relative paths resolve from the project root")
+    p.add_argument("--source", dest="source_file", type=Path, help="source/base language corpus to analyze; relative paths resolve from the project root")
     p.add_argument("--project-root", type=Path, default=root_default)
     p.add_argument("--language-name", default="Generated Language")
-    p.add_argument("--grammar", choices=["naturalistic","random"], default="naturalistic")
+    p.add_argument("--grammar", dest="legacy_grammar", choices=["naturalistic","random"], help="legacy alias for --grammar-family")
+    p.add_argument("--grammar-family", choices=sorted(FAMILIES), default="naturalistic")
+    p.add_argument("--grammar-file", type=Path, help="reuse an exact grammar.json; family/grammar overrides are ignored")
+    p.add_argument("--word-order", choices=["SVO","SOV","VSO","VOS","OVS","OSV"])
+    p.add_argument("--adjective-position", choices=["before","after"])
+    p.add_argument("--adposition", choices=["preposition","postposition","pre","post"])
+    p.add_argument("--possession", choices=["before","after","possessor-first","possessed-first"])
+    p.add_argument("--gender", choices=["none","2","3","classes"])
+    p.add_argument("--cases", type=int, choices=range(0,9), metavar="0-8")
+    p.add_argument("--articles", choices=["none","definite","indefinite","both"])
+    p.add_argument("--agreement", choices=["none","subject","subject-object"])
+    p.add_argument("--tense", choices=["minimal","standard","rich"])
+    p.add_argument("--aspect", choices=["minimal","standard","rich"])
+    p.add_argument("--mood", choices=["minimal","standard","rich"])
+    p.add_argument("--plural", choices=["none","suffix","prefix","mixed"])
+    p.add_argument("--comparison", choices=["particle","affix","mixed"])
+    p.add_argument("--questions", choices=["particle","word-order","verb","mixed"])
+    p.add_argument("--negation", choices=["particle","affix","mixed"])
+    p.add_argument("--grammar-morphology", choices=["analytic","agglutinative","fusional","mixed","isolating"], help="grammar morphology type")
     p.add_argument("--lc", type=Path, default=Path(__file__).with_name("lc.py"), help="path to tested lc.py")
     p.add_argument("--output", type=Path, default=Path("generated_language.csv"))
     p.add_argument("--etymology", type=Path, default=Path("generated_language_etymology.txt"))
@@ -223,14 +243,45 @@ def main(argv=None):
     p.add_argument("--max-root", type=int, default=7)
     args=p.parse_args(argv)
     project=args.project_root.resolve()
-    if args.vocabulary is None:
-        args.vocabulary=project/'vocabulary'/'MagicVocabulary.txt'
-    elif not args.vocabulary.is_absolute(): args.vocabulary=(project/args.vocabulary).resolve()
-    if args.corpus is None:
-        candidates=sorted((project/'data').glob('*.txt'))
-        if not candidates: p.error("no corpus supplied and no .txt files found in ./data")
-        args.corpus=candidates[0]
-    elif not args.corpus.is_absolute(): args.corpus=(project/args.corpus).resolve()
+
+    # Explicit selectors win. Positional arguments remain supported for v1-v4 compatibility.
+    if args.vocabulary_file is not None and args.vocabulary is not None:
+        p.error("specify the vocabulary either with --vocabulary or as the legacy positional argument, not both")
+    if args.source_file is not None and args.corpus is not None:
+        p.error("specify the source either with --source or as the legacy positional argument, not both")
+
+    selected_vocab = args.vocabulary_file if args.vocabulary_file is not None else args.vocabulary
+    selected_source = args.source_file if args.source_file is not None else args.corpus
+
+    def resolve_project_path(value):
+        return value.resolve() if value.is_absolute() else (project / value).resolve()
+
+    if selected_vocab is None:
+        candidates = sorted(pth for pth in (project/'vocabulary').iterdir() if pth.is_file()) if (project/'vocabulary').exists() else []
+        if not candidates:
+            p.error("no vocabulary supplied and no files found in ./vocabulary; use --vocabulary FILE")
+        if len(candidates) > 1:
+            listing = "\n  ".join(str(x.relative_to(project)) for x in candidates)
+            p.error(f"multiple vocabulary files found; select one with --vocabulary FILE:\n  {listing}")
+        selected_vocab = candidates[0]
+    else:
+        selected_vocab = resolve_project_path(selected_vocab)
+
+    if selected_source is None:
+        candidates = sorted((project/'data').glob('*.txt'))
+        if not candidates:
+            p.error("no source supplied and no .txt files found in ./data; use --source FILE")
+        if len(candidates) > 1:
+            listing = "\n  ".join(str(x.relative_to(project)) for x in candidates)
+            p.error(f"multiple source language files found; select one with --source FILE:\n  {listing}")
+        selected_source = candidates[0]
+    else:
+        selected_source = resolve_project_path(selected_source)
+
+    if not selected_vocab.is_file(): p.error(f"vocabulary file not found: {selected_vocab}")
+    if not selected_source.is_file(): p.error(f"source language file not found: {selected_source}")
+    args.vocabulary = selected_vocab
+    args.corpus = selected_source
     # Defaults go under ./output/<safe-language-name>/
     safe=re.sub(r'[^A-Za-z0-9._-]+','_',args.language_name).strip('_') or 'language'
     package_dir=project/'output'/safe
@@ -297,7 +348,23 @@ def main(argv=None):
         if unresolved or errors:
             f.write("\nUNRESOLVED / ERRORS\n")
             for e,msg in unresolved+errors: f.write(f"line {e.line_no}: {e.key.gloss}:{e.key.pos}: {msg} [{e.expr}]\n")
-    grammar=generate_grammar(roots,rng,args.grammar)
+    overrides={
+        'word_order':args.word_order, 'adjective_position':args.adjective_position,
+        'adposition': {'pre':'preposition','post':'postposition'}.get(args.adposition,args.adposition),
+        'possession': {'possessor-first':'before','possessed-first':'after'}.get(args.possession,args.possession),
+        'gender': ({'none':0,'2':2,'3':3,'classes':'classes'}.get(args.gender) if args.gender is not None else None),
+        'cases':args.cases, 'articles':args.articles, 'agreement':args.agreement,
+        'tense':args.tense, 'aspect':args.aspect, 'mood':args.mood, 'plural':args.plural,
+        'comparison':args.comparison, 'questions':args.questions, 'negation':args.negation,
+        'morphology':args.grammar_morphology,
+    }
+    overrides={k:v for k,v in overrides.items() if v is not None}
+    if args.grammar_file:
+        gp=args.grammar_file if args.grammar_file.is_absolute() else (project/args.grammar_file).resolve()
+        grammar=load_grammar(gp)
+    else:
+        family=args.legacy_grammar or args.grammar_family
+        grammar=generate_grammar(roots,rng,family,overrides)
     write_package(package_dir,args.language_name,grammar,entries,forms,affixes,args.seed)
     print(f"Entries: {len(entries)}")
     print(f"Base roots: {len(base)}")

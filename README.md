@@ -3,7 +3,7 @@ A set of Python scripts that allow a technically literate worldbuilder to create
 
 Based, in part, on Perl scripts originally created by Chris Pound, with additional inspiration from other conlanging sources.
 
-# Conlang Project v3
+# Conlang Project v4.1
 
 Project layout:
 
@@ -13,6 +13,25 @@ project/
 ├── vocabulary/
 ├── data/
 └── output/
+```
+
+## Selecting source and vocabulary files
+
+The preferred interface explicitly selects the base-language corpus and vocabulary definition:
+
+```
+python src/build_language.py --language-name "Khudzul" --source data/Khudzul.txt --vocabulary vocabulary/MagicVocabulary.txt --grammar-family germanic --seed 12345
+```
+
+`--source FILE` selects the source/base language corpus that the Pound model analyzes. `--vocabulary FILE` selects the vocabulary definition to generate. Relative paths are resolved from the project root, not the current working directory.
+
+If either switch is omitted, the builder auto-selects only when exactly one candidate exists in the corresponding directory. If multiple vocabulary or source files exist, it stops and lists them so you can select one explicitly. The older positional `vocabulary corpus` syntax remains supported for compatibility.
+
+Examples:
+
+```
+python src/build_language.py --language-name "Test One" --source data/Kusan.txt --vocabulary vocabulary/MagicVocabulary.txt --grammar-family turkic
+python src/build_language.py --language-name "Test Two" --source data/Ardunaic.txt --vocabulary vocabulary/BasicVocabulary.txt --grammar-family romance
 ```
 
 ## Basic use
