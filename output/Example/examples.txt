@@ -1,0 +1,40 @@
+[Declarative]
+English: The warrior killed the dragon.
+Language: goger idakottaku nemasu
+Gloss: warrior.NOM dragon-ACC kill-PST-3SG
+
+[Yes/no question]
+English: Did the warrior kill the dragon?
+Language: goger idakottaku nemasu sadezen
+Gloss: warrior.NOM dragon-ACC kill-PST-3SG Q
+
+[Possession]
+English: the hunter's house
+Language: gahozuer zewoja
+Gloss: hunter-GEN house
+
+[Comparison]
+English: bigger / biggest
+Language: zon izuheru / yafuntt izuheru
+Gloss: big-CMPR / big-SUP
+
+[Wh-question]
+English: Who do you see?
+Language: epepaho stumasu dashoja
+Gloss: who 2SG see-2SG
+
+[Imperative]
+English: Go!
+Language: byomasua
+Gloss: go-IMPE
+
+[Subjunctive]
+English: that he go
+Language: byomasupo
+Gloss: go-SUBJ
+
+[Conditional]
+English: he would go
+Language: byomasud
+Gloss: go-COND
+

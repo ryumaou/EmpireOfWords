@@ -234,6 +234,7 @@ def main(argv=None):
     p.add_argument("--questions", choices=["particle","word-order","verb","mixed"])
     p.add_argument("--negation", choices=["particle","affix","mixed"])
     p.add_argument("--grammar-morphology", choices=["analytic","agglutinative","fusional","mixed","isolating"], help="grammar morphology type")
+    p.add_argument("--morphophonemics", default="auto", help="auto, none, or comma-separated rules (vowel_harmony, initial_mutation, lenition, elision, palatalization, consonant_assimilation, nasal_assimilation, epenthesis, reduplication, ablaut, templatic_light)")
     p.add_argument("--lc", type=Path, default=Path(__file__).with_name("lc.py"), help="path to tested lc.py")
     p.add_argument("--output", type=Path, default=Path("generated_language.csv"))
     p.add_argument("--etymology", type=Path, default=Path("generated_language_etymology.txt"))
@@ -356,7 +357,7 @@ def main(argv=None):
         'cases':args.cases, 'articles':args.articles, 'agreement':args.agreement,
         'tense':args.tense, 'aspect':args.aspect, 'mood':args.mood, 'plural':args.plural,
         'comparison':args.comparison, 'questions':args.questions, 'negation':args.negation,
-        'morphology':args.grammar_morphology,
+        'morphology':args.grammar_morphology, 'morphophonemics':args.morphophonemics,
     }
     overrides={k:v for k,v in overrides.items() if v is not None}
     if args.grammar_file:

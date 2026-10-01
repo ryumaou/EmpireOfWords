@@ -1,0 +1,125 @@
+{
+  "family": "japanese",
+  "requested_family": "japanese",
+  "word_order": "SOV",
+  "adposition_type": "postposition",
+  "adjective_position": "before",
+  "possessor_position": "before",
+  "articles": "none",
+  "gender": 0,
+  "morphology_type": "mixed",
+  "morphophonemics": {
+    "mode": "auto",
+    "rules": [
+      "epenthesis",
+      "consonant_assimilation"
+    ]
+  },
+  "noun": {
+    "numbers": [
+      "singular"
+    ],
+    "plural_strategy": "none",
+    "cases": [
+      "nominative",
+      "accusative",
+      "genitive",
+      "dative"
+    ]
+  },
+  "verb": {
+    "tenses": [
+      "present"
+    ],
+    "tense_level": "minimal",
+    "aspects": [
+      "simple",
+      "progressive"
+    ],
+    "aspect_level": "standard",
+    "moods": [
+      "indicative",
+      "imperative",
+      "subjunctive",
+      "conditional"
+    ],
+    "mood_level": "standard",
+    "agreement": "none",
+    "negation": "affix"
+  },
+  "comparison": {
+    "degrees": [
+      "positive",
+      "comparative",
+      "superlative"
+    ],
+    "strategy": "particle"
+  },
+  "questions": {
+    "strategy": "particle",
+    "particle_position": "final",
+    "wh_strategy": "in_situ"
+  },
+  "morphemes": {
+    "accusative": {
+      "form": "id",
+      "side": "prefix"
+    },
+    "genitive": {
+      "form": "g",
+      "side": "prefix"
+    },
+    "dative": {
+      "form": "hi",
+      "side": "suffix"
+    },
+    "progressive": {
+      "form": "p",
+      "side": "suffix"
+    },
+    "imperative": {
+      "form": "a",
+      "side": "suffix"
+    },
+    "subjunctive": {
+      "form": "po",
+      "side": "suffix"
+    },
+    "conditional": {
+      "form": "d",
+      "side": "suffix"
+    },
+    "negative": {
+      "form": "fuh",
+      "side": "suffix"
+    }
+  },
+  "particles": {
+    "yes_no": "sadezen",
+    "comparative": "zon",
+    "superlative": "yafuntt"
+  },
+  "pronouns": {
+    "1sg": "mondona",
+    "2sg": "epepaho",
+    "3sg": "byurumy",
+    "1pl": "deru",
+    "2pl": "luporu",
+    "3pl": "yoto"
+  },
+  "demonstratives": {
+    "proximal_singular": "ogezom",
+    "distal_singular": "deshush",
+    "proximal_plural": "ogoze",
+    "distal_plural": "narisha"
+  },
+  "interrogatives": {
+    "who": "dashoja",
+    "what": "taru",
+    "where": "gyugyu",
+    "when": "usu",
+    "why": "pyaorya",
+    "how": "izuru",
+    "which": "gogiza"
+  }
+}
