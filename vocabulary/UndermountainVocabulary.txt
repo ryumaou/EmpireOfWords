@@ -135,6 +135,7 @@ amplification:n
 amulet:n
 amuse:v
 analogy:n
+analyze:v
 ancestor:n
 anchor:n
 ancient:adj
@@ -4782,7 +4783,6 @@ bastard sword:n = bastard-blade-DIM
 battle axe:n = battle-blade-AUG
 bead:v = bead-NOUN.TO.VERB
 beauty:n = beautiful-TO.CREATE-QUALITY.OF.BEING
-bed hangings:n = bed-decoration
 behavior:n = behave (act)-ACT.OF
 belfry:n = bell-PLACE.OF
 belief:n = believe-ACT.OF
@@ -4844,6 +4844,7 @@ death:n = die-ACT.OF
 deathcurse:n = death-curse
 decay:v = decay-NOUN.TO.VERB
 decision:n = decide-ACT.OF
+decoration:n = decorate-VERB.TO.NOUN
 defense:n = defend-ACT.OF
 description:n = describe-ACT.OF
 destruction:n = destroy-ACT.OF
@@ -4902,7 +4903,7 @@ forgetful:adj = forget-RESULT.OF.DOING
 friendly:adj = friend-RELATING.TO
 frost:n = freeze-ACT.OF
 gardener:n = garden-DOER
-general:n = army-leader
+general:n = army/warband:n-leader
 glow:n = light:n-DIM
 glow, from plants = glow:n-plant
 glow, from creature = glow:n-insect
@@ -4951,7 +4952,7 @@ lawyer:n = law-DOER
 leaden:adj = lead (soft metal)-HAVING.QUALITY.OF
 legal:adj = law-RELATING.TO
 length:n = long-TO.CREATE-QUALITY.OF.BEING
-lieutenant general:n = silver:adj-general
+lieutenant general:n = silver:adj-general:n
 lieutenant:n = group-leader
 locksmith:n = lock-DOER
 loss:n = lose-ACT.OF
@@ -5030,7 +5031,7 @@ quarrel:v = quarrel-NOUN.TO.VERB
 quickly:adv = quick-ADVERB
 race:v = race-NOUN.TO.VERB
 rain:v = rain-NOUN.TO.VERB
-rebel:v = rebel-NON.TO.VERB
+rebel:v = rebel-NOUN.TO.VERB
 recently:adv = recent-ADVERB
 recognition:n = recognize-ACT.OF
 record:v = record-NOUN.TO.VERB

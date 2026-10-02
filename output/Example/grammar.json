@@ -7,7 +7,7 @@
   "possessor_position": "before",
   "articles": "none",
   "gender": 0,
-  "morphology_type": "mixed",
+  "morphology_type": "agglutinative",
   "morphophonemics": {
     "mode": "auto",
     "rules": [
@@ -62,64 +62,64 @@
   },
   "morphemes": {
     "accusative": {
-      "form": "id",
-      "side": "prefix"
+      "form": "nim",
+      "side": "suffix"
     },
     "genitive": {
-      "form": "g",
-      "side": "prefix"
+      "form": "das",
+      "side": "suffix"
     },
     "dative": {
-      "form": "hi",
+      "form": "aro",
       "side": "suffix"
     },
     "progressive": {
-      "form": "p",
+      "form": "na",
       "side": "suffix"
     },
     "imperative": {
-      "form": "a",
+      "form": "s",
       "side": "suffix"
     },
     "subjunctive": {
-      "form": "po",
+      "form": "n",
       "side": "suffix"
     },
     "conditional": {
-      "form": "d",
+      "form": "zoh",
       "side": "suffix"
     },
     "negative": {
-      "form": "fuh",
+      "form": "o",
       "side": "suffix"
     }
   },
   "particles": {
-    "yes_no": "sadezen",
-    "comparative": "zon",
-    "superlative": "yafuntt"
+    "yes_no": "nupya",
+    "comparative": "pyamasu",
+    "superlative": "aruhohy"
   },
   "pronouns": {
-    "1sg": "mondona",
-    "2sg": "epepaho",
-    "3sg": "byurumy",
-    "1pl": "deru",
-    "2pl": "luporu",
-    "3pl": "yoto"
+    "1sg": "dariryo",
+    "2sg": "den",
+    "3sg": "hinmasu",
+    "1pl": "owa",
+    "2pl": "hosa",
+    "3pl": "osaran"
   },
   "demonstratives": {
-    "proximal_singular": "ogezom",
-    "distal_singular": "deshush",
-    "proximal_plural": "ogoze",
-    "distal_plural": "narisha"
+    "proximal_singular": "pra",
+    "distal_singular": "soda",
+    "proximal_plural": "nataqui",
+    "distal_plural": "yuho"
   },
   "interrogatives": {
-    "who": "dashoja",
-    "what": "taru",
-    "where": "gyugyu",
-    "when": "usu",
-    "why": "pyaorya",
-    "how": "izuru",
-    "which": "gogiza"
+    "who": "yonti",
+    "what": "ada",
+    "where": "kyumasu",
+    "when": "sorusad",
+    "why": "tokutta",
+    "how": "fure",
+    "which": "hegyasu"
   }
 }

@@ -1,0 +1,37 @@
+# Supplemental vocabulary example.
+# Copy/rename this file and add entries using gloss:pos.
+# These are examples from the current diagnostic run; edit to suit your intended meanings.
+story:n
+robin:n
+pebble:n
+wild:adj
+doll:n
+concert:n
+solstice:n
+bonfire:n
+entrance:n
+residence:n
+lofty:adj
+caress:n
+spool:n
+juicy:adj
+salty:adj
+roadside:n
+litter:n
+gray:adj
+tune:n
+crow:n
+pitcher:n
+brim:n
+glee:n
+corn:n
+brave:adj
+handful:n
+bedroom:n
+tiny:adj
+splendid:adj
+candlelight:n
+shabby:adj
+uncomfortable:adj
+mite:n
+faithful:adj

@@ -315,8 +315,8 @@ def _np(words,g,by,case='nominative'):
             idx=parts.index(core); parts[idx]=affix(parts[idx],g['morphemes'][mk],g); gps[idx]+='-'+('DEF' if det=='the' else 'INDF')
     return ' '.join(parts),' '.join(gps)
 
-def translate_sentence(sentence,g,entries,forms):
-    """Translate a deliberately constrained English example sentence.
+def _legacy_translate_sentence(sentence,g,entries,forms):
+    """Legacy constrained English example translator.
     Unsupported constructions return an explanatory status rather than invented language.
     """
     by=_lexicon(entries,forms)
@@ -370,16 +370,16 @@ def translate_sentence(sentence,g,entries,forms):
             mv=verb_form(main,g,'3sg','future' if 'future' in g['verb']['tenses'] else 'present')
             return ('Translation',raw,f'{rel} {mv}',f'SUBJ {stem.upper()}-PART {pg} {m.group(6).upper()}-FUT','ok')
     # Generic simple clauses: subject + auxiliaries + verb + object/PP.
-    toks=low.split(); subj_person=None; subj=None; idx=0
+    toks=low.split(); subj_person=None; subj=None; subj_gloss=None; idx=0
     pm={'i':'1sg','you':'2sg','he':'3sg','she':'3sg','we':'1pl','they':'3pl'}
     if toks and toks[0] in pm:
-        subj_person=pm[toks[0]]; subj=g['pronouns'][subj_person]; idx=1
+        subj_person=pm[toks[0]]; subj=g['pronouns'][subj_person]; subj_gloss=subj_person.upper(); idx=1
     else:
         # find first verb boundary and treat preceding words as NP
         verb_words=set(k for k,v in by.items() if any(p=='v' for p,_ in v))
         vi=next((i for i,w in enumerate(toks) if w in verb_words or (w.endswith('ed') and (w[:-2] in verb_words or w[:-1] in verb_words)) or (w.endswith('ing') and (w[:-3] in verb_words or w[:-3]+'e' in verb_words)) or w in ('is','are','am','was','were','will','do','does','did')),None)
         if vi is not None:
-            subj,sg=_np(toks[:vi],g,by); subj_person='3pl' if any(w.endswith('s') or w in ('children','men','women') for w in toks[:vi]) else '3sg'; idx=vi
+            subj,sg=_np(toks[:vi],g,by); subj_gloss=sg; subj_person='3pl' if any(w.endswith('s') or w in ('children','men','women') for w in toks[:vi]) else '3sg'; idx=vi
     if subj:
         tense='present'; aspect='simple'; negative=False
         while idx<len(toks) and toks[idx] in ('will','do','does','did','not','is','are','am','was','were'):
@@ -405,7 +405,7 @@ def translate_sentence(sentence,g,entries,forms):
                     left,right=re.split(r' and ',low,1); right_words=right.split(); auxi=next((i for i,x in enumerate(right_words) if x in ('is','are','am','was','were','will') or _lookup(by,x,('v',))),None)
                     if auxi is not None:
                         n1,g1=_np(left.split(),g,by); n2,g2=_np(right_words[:auxi],g,by); conj=_lookup(by,'and',('conj',)) or 'and'
-                        if n1 and n2: subj=f'{n1} {conj} {n2}'; subj_person='3pl'
+                        if n1 and n2: subj=f'{n1} {conj} {n2}'; subj_gloss=f'{g1} AND {g2}'; subj_person='3pl'
                 obj=None; og=None
                 # prepositional tail
                 prep_i=next((i for i,x in enumerate(rest) if x in ('to','in','at','on')),None)
@@ -422,12 +422,130 @@ def translate_sentence(sentence,g,entries,forms):
                     if pobj: pp += (ad+' '+pobj if g['adposition_type']=='preposition' else pobj+' '+ad); ppg += prep.upper()+' '+pg
                 v=verb_form(verb,g,subj_person,tense if tense in g['verb']['tenses'] else 'present',aspect if aspect in g['verb']['aspects'] else 'simple',negative=negative)
                 surf=order_clause(subj,v,obj or '',g).replace('  ',' ').strip(); surf=' '.join(x for x in [surf,pp,*tail] if x)
-                gloss=order_clause('SUBJ',vg.upper()+('-FUT' if tense=='future' else '-PST' if tense=='past' else '')+('-PROG' if aspect=='progressive' else '')+('-NEG' if negative else ''),og or '',g).replace('  ',' ').strip(); gloss=' '.join(x for x in [gloss,ppg] if x)
+                gloss=order_clause(subj_gloss or 'SUBJ',vg.upper()+('-FUT' if tense=='future' else '-PST' if tense=='past' else '')+('-PROG' if aspect=='progressive' else '')+('-NEG' if negative else ''),og or '',g).replace('  ',' ').strip(); gloss=' '.join(x for x in [gloss,ppg] if x)
                 if question:
                     q=g.get('particles',{}).get('yes_no')
                     if q: surf=(q+' '+surf) if g['questions']['particle_position']=='initial' else (surf+' '+q); gloss+=' Q'
                 return ('Translation',raw,surf,gloss,'ok')
     return ('Translation',raw,'[UNRESOLVED]','[UNRESOLVED]','unsupported vocabulary or construction')
+
+
+# Translation analysis is shared by build-time examples and standalone translation.
+from english_analyzer import (
+    CAPABILITIES as TRANSLATION_CAPABILITIES,
+    IRREGULAR_VERBS as _IRREGULAR_VERBS,
+    FUNCTION_WORDS as _FUNCTION_WORDS,
+    AUX as _AUX,
+    tokens as _english_tokens,
+    lemma_candidates as _lemma_candidates,
+    lexical_match as _lexical_match,
+    analyze as _analyze_english,
+)
+
+
+def _normalize_for_legacy(raw,by):
+    """Conservative English normalization used only when it preserves features."""
+    tokens=_english_tokens(raw); changed=False
+    # Normalize 3sg present lexical verbs when their lemma is in the lexicon.
+    for i,w in enumerate(tokens):
+        if w in _FUNCTION_WORDS: continue
+        match=_lexical_match(by,w)
+        if match and match!=w and w.endswith('s') and not w.endswith('ss'):
+            tokens[i]=match; changed=True
+    # Irregular simple past -> did + lemma. Avoid participles after HAVE/BE.
+    for i,w in enumerate(list(tokens)):
+        if w in _IRREGULAR_VERBS and _IRREGULAR_VERBS[w][1]=='past' and w not in ('was','were','had'):
+            if i and tokens[i-1] in ('has','have','had','is','are','was','were'): continue
+            lemma=_IRREGULAR_VERBS[w][0]
+            if lemma in by:
+                tokens[i:i+1]=['did',lemma]; changed=True; break
+    if not changed: return raw
+    punct='?' if raw.rstrip().endswith('?') else '!' if raw.rstrip().endswith('!') else '.'
+    return ' '.join(tokens)+punct
+
+
+def _prepare_for_legacy(raw, constructions, by):
+    """Adapt analyzable English surface syntax to the constrained legacy realizer."""
+    t=raw.strip()
+    if 'imperative' in constructions and not t.endswith(('!','?')):
+        t=t.rstrip('.')+'!'
+    if 'yes_no_question' in constructions:
+        qt=_english_tokens(t)
+        if qt and qt[0].lower() in ('do','does','did'):
+            aux=qt[0].lower(); body=[x.lower() for x in qt[1:]]
+            vi=next((i for i,w in enumerate(body) if any(p=='v' for p,_ in by.get(_lexical_match(by,w) or w,[]))),None)
+            if vi is not None and vi>0:
+                t=' '.join(body[:vi]+[aux]+body[vi:])+'?'
+        elif len(qt)>=3 and qt[0].lower() in ('is','are','am','was','were') and qt[1].lower() in ('i','you','he','she','we','they'):
+            t=' '.join([qt[1].lower(),qt[0].lower()]+[x.lower() for x in qt[2:]])+'?'
+    return t
+
+def analyze_translation(sentence,g,entries,forms):
+    """Return a structured deterministic analysis plus translation result."""
+    by=_lexicon(entries,forms); raw=sentence.strip()
+    base_ir=_analyze_english(raw,by)
+    tokens=base_ir['tokens']; constructions=base_ir['constructions']
+    lexical=base_ir['lexical_items']; missing=base_ir['missing_lexemes']
+    normalized=_normalize_for_legacy(raw,by)
+    prepared=_prepare_for_legacy(normalized,constructions,by)
+    legacy=_legacy_translate_sentence(prepared,g,entries,forms)
+    _,_,surface,gloss,legacy_status=legacy
+
+    # Constructions that the current deterministic realizer can identify but not
+    # yet safely realize must never be silently flattened into a simple clause.
+    diagnosed=[c for c in constructions if TRANSLATION_CAPABILITIES.get(c)=='diagnosed']
+    if diagnosed:
+        status='unsupported-grammar'; surface='[UNRESOLVED]'; gloss='[UNRESOLVED]'
+        reason='unsupported construction: '+', '.join(diagnosed)
+    elif legacy_status!='ok':
+        status='unresolved-vocabulary' if missing else 'unsupported-grammar'
+        reason=('missing vocabulary: '+', '.join(dict.fromkeys(missing))) if missing else 'unsupported sentence structure'
+    else:
+        # Completeness guard: every recognized lexical concept must leave a receipt
+        # in the gloss.  v5.5 exempted subject nouns/adjectives because the legacy
+        # gloss said only SUBJ; generic clauses now retain the NP gloss, so that
+        # exemption would hide lost adjectives and coordinated subjects.
+        gu=gloss.lower(); dropped=[]
+        for item in lexical:
+            lemma=item['lemma'].lower()
+            if lemma not in gu and item['token'].lower() not in gu:
+                dropped.append(item['token'])
+        # Grammatical features need receipts too. A sentence is not complete merely
+        # because all dictionary roots appeared somewhere in the output.
+        gl=gloss.upper()
+        if 'progressive' in constructions and 'PROG' not in gl: dropped.append('progressive aspect')
+        if 'perfect' in constructions and 'PERF' not in gl: dropped.append('perfect aspect')
+        if 'negation' in constructions and 'NEG' not in gl: dropped.append('negation')
+        if 'yes_no_question' in constructions and ' Q' not in (' '+gl): dropped.append('question marking')
+        if 'imperative' in constructions and 'IMP' not in gl: dropped.append('imperative mood')
+        if 'possessive' in constructions and 'GEN' not in gl: dropped.append('possessive relation')
+        if 'comparison' in constructions and not any(x in gl for x in ('COMP','SUPER','MORE','LESS','THAN')): dropped.append('comparison')
+        if 'modal' in constructions:
+            low_tokens=set(base_ir['tokens'])
+            if low_tokens & {'will','shall'}:
+                if 'FUT' not in gl: dropped.append('future/modal')
+            elif low_tokens & {'can','could','should','would','must','may','might'} and 'MOD' not in gl:
+                dropped.append('modal meaning')
+        # Explicit coordination with multiple lexical verbs is unsafe in legacy path.
+        verb_count=sum(1 for item in lexical if any(p=='v' for p,_ in by.get(item['lemma'],[])))
+        if 'coordination' in constructions and verb_count>1: dropped.append('coordinated clause/predicate')
+        if missing or dropped:
+            status='partial'; surface='[PARTIAL]'
+            reason_parts=[]
+            if missing: reason_parts.append('unrecognized: '+', '.join(dict.fromkeys(missing)))
+            if dropped: reason_parts.append('not realized: '+', '.join(dict.fromkeys(dropped)))
+            reason='; '.join(reason_parts)
+        else:
+            status='ok'; reason='complete'
+    ir=dict(base_ir)
+    ir['normalized_english']=normalized if normalized!=raw else None
+    ir['realizer_input']=prepared if prepared!=normalized else None
+    return {'type':'Translation','english':raw,'surface':surface,'gloss':gloss,'status':status,'reason':reason,'ir':ir}
+
+
+def translate_sentence(sentence,g,entries,forms):
+    d=analyze_translation(sentence,g,entries,forms)
+    return (d['type'],d['english'],d['surface'],d['gloss'],d['status'])
 
 def generate_examples(g, entries, forms, translation_sentences=None):
     if translation_sentences is not None:
@@ -464,7 +582,7 @@ def generate_examples(g, entries, forms, translation_sentences=None):
 
 def write_package(outdir, language_name, grammar, entries, forms, deriv_affixes, seed, translation_sentences=None, translation_source=None):
     outdir.mkdir(parents=True,exist_ok=True); examples=generate_examples(grammar,entries,forms,translation_sentences)
-    data={'name':language_name,'seed':seed,'grammar':grammar,'derivational_morphology':{k:{'side':v.side,'form':v.form,'source_rule':v.source_rule} for k,v in deriv_affixes.items()},'lexicon':[{'gloss':e.key.gloss,'pos':e.key.pos,'form':forms.get(e.key,''),'derivation':e.expr} for e in entries],'translation_source':str(translation_source) if translation_source else None,'examples':[{'type':t,'english':en,'surface':s,'gloss':gl,'status':status} for t,en,s,gl,status in examples]}
+    data={'schema_version':2,'tool_version':'5.7','name':language_name,'seed':seed,'grammar':grammar,'translation_capabilities':TRANSLATION_CAPABILITIES,'derivational_morphology':{k:{'side':v.side,'form':v.form,'source_rule':v.source_rule} for k,v in deriv_affixes.items()},'lexicon':[{'gloss':e.key.gloss,'pos':e.key.pos,'form':forms.get(e.key,''),'derivation':e.expr} for e in entries],'translation_source':str(translation_source) if translation_source else None,'examples':[{'type':t,'english':en,'surface':s,'gloss':gl,'status':status} for t,en,s,gl,status in examples]}
     (outdir/'language.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8'); (outdir/'grammar.json').write_text(json.dumps(grammar,ensure_ascii=False,indent=2),encoding='utf-8')
     with (outdir/'paradigms.csv').open('w',encoding='utf-8',newline='') as f:
         w=csv.writer(f); w.writerow(['English','POS','Lemma','Feature','Form'])

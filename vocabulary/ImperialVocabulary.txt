@@ -1309,7 +1309,7 @@ dubious:adj
 duck:n
 duck:v
 due:adj
-duel:v
+duel:n
 dukes:n
 dulcimer:n
 dull:adj
@@ -4727,7 +4727,7 @@ NOUN.TO.VERB = Random
 TENDING.TO = RANDOM
 VERB.TO.NOUN = Random
 
-leader:n = lead-DOER
+leader:n = lead:v-DOER
 silver:adj = silver-HAVING.QUALITY.OF
 ability:n = able-ACT.OF
 absence:n = absen-QUALITY.OF.BEING
@@ -4885,7 +4885,7 @@ grill:v = grill-NOUN.TO.VERB
 grocer:n = vegetable-PLACE.OF
 growth:n = grow-ACT.OF
 guardian:n = guard-DOER
-hairy:adj = hair-RELATING.TO
+hairy:adj = hair (of body):n-RELATING.TO
 happiness:n = happy-TO.CREATE-QUALITY.OF.BEING
 healer:n = heal-DOER
 healthy:adj = health-RELATING.TO
@@ -4910,7 +4910,7 @@ kitten:dim = cat-DIM
 knot:v = knot-TO.CREATE
 knowledge:n = know-ACT.OF
 lawyer:n = law-DOER
-leaden:adj = lead:n-HAVING.QUALITY.OF
+leaden:adj = lead (soft metal):n-HAVING.QUALITY.OF
 legal:adj = law-RELATING.TO
 length:n = long-TO.CREATE-QUALITY.OF.BEING
 lieutenant general:n = silver:adj-general

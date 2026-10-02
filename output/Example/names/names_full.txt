@@ -1,0 +1,204 @@
+Proper names: Example
+============================================================
+
+1. Soidiimu Doru Dosupanchita
+   Personal name: Soidiimu Doru
+   Personal generation: soidiimu+doru
+   Family name: Dosupanchita
+   Meaning: death man
+   Formula: death+man
+   Language roots: dosup+anchita
+
+2. Semito Naruh Sedessekaganakiwanakuer
+   Personal name: Semito Naruh
+   Personal generation: semito+naruh
+   Family name: Sedessekaganakiwanakuer
+   Meaning: white robe wizard
+   Formula: white+robe+wizard
+   Language roots: sedesse+kaga+nakiwanakuer
+
+3. Gozuwo Wag Kyazogomettakotoshu
+   Personal name: Gozuwo Wag
+   Personal generation: gozuwo+wag
+   Family name: Kyazogomettakotoshu
+   Meaning: blind dwarf mountain
+   Formula: blind+dwarf+mountain
+   Language roots: kyazo+gomett+kotoshu
+
+4. Deshi Mukyopaki Sedomasahobuseranakiwanakuer
+   Personal name: Deshi Mukyopaki
+   Personal generation: deshi+mukyopaki
+   Family name: Sedomasahobuseranakiwanakuer
+   Meaning: three eye wizard
+   Formula: three+eye+wizard
+   Language roots: sedomas+hobuser+nakiwanakuer
+
+5. Rofuma Desu Hitteisamonyoma
+   Personal name: Rofuma Desu
+   Personal generation: rofuma+desu
+   Family name: Hitteisamonyoma
+   Meaning: dragon toe
+   Formula: dragon+toe
+   Language roots: hitteis+monyoma
+
+6. Daso Kahachite Hittasuhezemas
+   Personal name: Daso Kahachite
+   Personal generation: daso+kahachite
+   Family name: Hittasuhezemas
+   Meaning: cat soldier
+   Formula: cat+soldier
+   Language roots: hittasu+hezemas
+
+7. Hyorekaru Dar Byobyutahittasu
+   Personal name: Hyorekaru Dar
+   Personal generation: hyorekaru+dar
+   Family name: Byobyutahittasu
+   Meaning: silver cat
+   Formula: silver+cat
+   Language roots: byobyut+hittasu
+
+8. Anar Oemasaji Uruhooubanuae
+   Personal name: Anar Oemasaji
+   Personal generation: anar+oemasaji
+   Family name: Uruhooubanuae
+   Meaning: jewel eel
+   Formula: jewel+eel
+   Language roots: uruhoo+ubanuae
+
+9. Heminonyo Neq Kotoshuzattaki
+   Personal name: Heminonyo Neq
+   Personal generation: heminonyo+neq
+   Family name: Kotoshuzattaki
+   Meaning: mountain house
+   Formula: mountain+house
+   Language roots: kotoshu+zattaki
+
+10. Nar Deshinma Atokotoshu
+   Personal name: Nar Deshinma
+   Personal generation: nar+deshinma
+   Family name: Atokotoshu
+   Meaning: demon mountain
+   Formula: demon+mountain
+   Language roots: ato+kotoshu
+
+11. Nyatakina Hewo Hamasiuru
+   Personal name: Nyatakina Hewo
+   Personal generation: nyatakina+hewo
+   Family name: Hamasiuru
+   Meaning: blood hand
+   Formula: blood+hand
+   Language roots: hamasi+uru
+
+12. Zeglia Mondu Yadageheika
+   Personal name: Zeglia Mondu
+   Personal generation: zeglia+mondu
+   Family name: Yadageheika
+   Meaning: angel seed
+   Formula: angel+seed
+   Language roots: yad+geheika
+
+13. Hyofumyoh Hyasi Juhotomyotte
+   Personal name: Hyofumyoh Hyasi
+   Personal generation: hyofumyoh+hyasi
+   Family name: Juhotomyotte
+   Meaning: rat kin
+   Formula: rat+kin
+   Language roots: juhoto+myotte
+
+14. Shuru Shibuitat Tomasutabara
+   Personal name: Shuru Shibuitat
+   Personal generation: shuru+shibuitat
+   Family name: Tomasutabara
+   Meaning: red gem
+   Formula: red+gem
+   Language roots: tomasut+bara
+
+15. Ochum Cilishaze Arepenyumumu
+   Personal name: Ochum Cilishaze
+   Personal generation: ochum+cilishaze
+   Family name: Arepenyumumu
+   Meaning: iron monkey
+   Formula: iron+monkey
+   Language roots: arepe+nyumumu
+
+16. Dor Apudasu Sedomasabokinat
+   Personal name: Dor Apudasu
+   Personal generation: dor+apudasu
+   Family name: Sedomasabokinat
+   Meaning: three orchard
+   Formula: three+orchard
+   Language roots: sedomas+bokinat
+
+17. Ritogita Byu Nohegemahobuser
+   Personal name: Ritogita Byu
+   Personal generation: ritogita+byu
+   Family name: Nohegemahobuser
+   Meaning: moon eye
+   Formula: moon+eye
+   Language roots: nohegem+hobuser
+
+18. Vishohyo Hat Kotoshumono
+   Personal name: Vishohyo Hat
+   Personal generation: vishohyo+hat
+   Family name: Kotoshumono
+   Meaning: mountain altar
+   Formula: mountain+altar
+   Language roots: kotoshu+mono
+
+19. Kyudaki Zaa Zewojasen
+   Personal name: Kyudaki Zaa
+   Personal generation: kyudaki+zaa
+   Family name: Zewojasen
+   Meaning: horse lord
+   Formula: horse+lord
+   Language roots: zewoja+sen
+
+20. Eshiru Futte Izumonoizuru
+   Personal name: Eshiru Futte
+   Personal generation: eshiru+futte
+   Family name: Izumonoizuru
+   Meaning: two shadow
+   Formula: two+shadow
+   Language roots: izumono+izuru
+
+21. Goha Mongutsu Semasiohesu
+   Personal name: Goha Mongutsu
+   Personal generation: goha+mongutsu
+   Family name: Semasiohesu
+   Meaning: flower lake
+   Formula: flower+lake
+   Language roots: semasi+ohesu
+
+22. Pom Arachisho Monaibayuyos
+   Personal name: Pom Arachisho
+   Personal generation: pom+arachisho
+   Family name: Monaibayuyos
+   Meaning: opal river
+   Formula: opal+river
+   Language roots: monai+bayuyos
+
+23. Dez Doshitte Nohegemantozuer
+   Personal name: Dez Doshitte
+   Personal generation: dez+doshitte
+   Family name: Nohegemantozuer
+   Meaning: moon hunter
+   Formula: moon+hunter
+   Language roots: nohegem+ntozuer
+
+24. Ochi Zukyunrya Deshitomyanobayuyos
+   Personal name: Ochi Zukyunrya
+   Personal generation: ochi+zukyunrya
+   Family name: Deshitomyanobayuyos
+   Meaning: blue snake river
+   Formula: blue+snake+river
+   Language roots: deshito+myano+bayuyos
+
+25. Komasodoz Zon Bayuyosageheika
+   Personal name: Komasodoz Zon
+   Personal generation: komasodoz+zon
+   Family name: Bayuyosageheika
+   Meaning: river seed
+   Formula: river+seed
+   Language roots: bayuyos+geheika
+
+Unavailable formulas (missing one or more lexical roots): 99

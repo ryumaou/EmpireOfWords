@@ -9,7 +9,7 @@ Example:
   python build_language.py MagicVocabulary.txt corpus.txt --seed 12345 --output language.csv
 """
 from __future__ import annotations
-import argparse, csv, importlib.util, random, re, sys
+import argparse, csv, importlib.util, random, re, sys, json, hashlib
 from grammar_engine import FAMILIES, generate_grammar, load_grammar, write_package, load_translation_sentences
 from dataclasses import dataclass
 from pathlib import Path
@@ -55,7 +55,7 @@ def load_lc_module(script: Path):
     return mod
 
 
-def parse_vocab(path: Path):
+def parse_vocab(path: Path, require_modifiers: bool = True):
     entries: list[Entry] = []
     modifiers: dict[str, str] = {}
     in_modifier_block = False
@@ -79,7 +79,7 @@ def parse_vocab(path: Path):
             continue
         expr = right.strip() if sep else None
         entries.append(Entry(EntryKey(gloss, pos), expr, no))
-    if not modifiers:
+    if require_modifiers and not modifiers:
         raise ValueError("no uppercase modifier definitions were found")
     return entries, modifiers
 
@@ -170,6 +170,16 @@ def choose_key(ref: str, by_key: dict[EntryKey,Entry], by_gloss: dict[str,list[E
         if k in by_key: return k
     candidates = by_gloss.get(ref, [])
     if not candidates:
+        # Fallback for sense-qualified vocabulary entries.  A derivation may
+        # refer to a bare gloss such as "hair" while the vocabulary contains
+        # "hair (of body)" and "hair (of head)".  Preserve vocabulary-file
+        # order and use the first matching sense by default.
+        ref_base = re.sub(r"\s*\([^)]*\)\s*$", "", ref).strip()
+        candidates = [
+            k for k in by_key
+            if re.sub(r"\s*\([^)]*\)\s*$", "", k.gloss).strip() == ref_base
+        ]
+    if not candidates:
         return None
     # An unqualified derivation such as attack:v = attack-NOUN.TO.VERB
     # means "the other lexical attack" (normally attack:n), not itself.
@@ -212,6 +222,7 @@ def main(argv=None):
     p.add_argument("vocabulary", nargs="?", type=Path, help="legacy positional vocabulary file (prefer --vocabulary)")
     p.add_argument("corpus", nargs="?", type=Path, help="legacy positional source corpus (prefer --source)")
     p.add_argument("--vocabulary", dest="vocabulary_file", type=Path, help="vocabulary definition file; relative paths resolve from the project root")
+    p.add_argument("--supplemental-vocabulary", dest="supplemental_vocabulary", action="append", type=Path, default=[], help="additional vocabulary file to merge after the main vocabulary; may be repeated")
     p.add_argument("--source", dest="source_file", type=Path, help="source/base language corpus to analyze; relative paths resolve from the project root")
     p.add_argument("--translations", dest="translations_file", type=Path, help="English sentence file under ./translations (or another project-relative path); replaces built-in examples")
     p.add_argument("--project-root", type=Path, default=root_default)
@@ -298,6 +309,22 @@ def main(argv=None):
     if args.morphology == Path('generated_language_morphology.txt'): args.morphology=package_dir/'derivational_morphology.txt'
     rng=random.Random(args.seed)
     entries, mod_rules=parse_vocab(args.vocabulary)
+    supplemental_paths=[]
+    for sv in args.supplemental_vocabulary:
+        sv=resolve_project_path(sv)
+        if not sv.is_file(): p.error(f"supplemental vocabulary file not found: {sv}")
+        supplemental_paths.append(sv)
+        extra_entries, extra_mods=parse_vocab(sv, require_modifiers=False)
+        existing={e.key for e in entries}
+        duplicates=[e.key for e in extra_entries if e.key in existing]
+        if duplicates:
+            shown=', '.join(f'{k.gloss}:{k.pos}' for k in duplicates[:10])
+            p.error(f"supplemental vocabulary duplicates existing entries: {shown}")
+        for name,rule in extra_mods.items():
+            if name in mod_rules and mod_rules[name] != rule:
+                p.error(f"supplemental vocabulary redefines modifier {name} with a different rule")
+            mod_rules.setdefault(name,rule)
+        entries.extend(extra_entries)
     lc=load_lc_module(args.lc)
     by_key={e.key:e for e in entries}
     by_gloss={}
@@ -374,6 +401,24 @@ def main(argv=None):
         family=args.legacy_grammar or args.grammar_family
         grammar=generate_grammar(roots,rng,family,overrides)
     write_package(package_dir,args.language_name,grammar,entries,forms,affixes,args.seed,translation_sentences,translation_source)
+    def sha256_file(path):
+        h=hashlib.sha256()
+        with Path(path).open('rb') as fh:
+            for chunk in iter(lambda:fh.read(1024*1024),b''): h.update(chunk)
+        return h.hexdigest()
+    manifest={
+        'schema_version':2,'tool_version':'5.7','language':args.language_name,'seed':args.seed,
+        'source':{'path':str(args.corpus),'sha256':sha256_file(args.corpus)},
+        'vocabulary':{'path':str(args.vocabulary),'sha256':sha256_file(args.vocabulary)},
+        'supplemental_vocabulary':[{'path':str(x),'sha256':sha256_file(x)} for x in supplemental_paths],
+        'grammar_family':args.legacy_grammar or args.grammar_family,
+        'grammar_file':str(args.grammar_file) if args.grammar_file else None,
+        'translation_source':str(translation_source) if translation_source else None,
+        'counts':{'entries':len(entries),'base_roots':len(base),'modifiers':len(mod_rules),
+                  'derived_resolved':sum(1 for e in entries if e.expr and e.key in forms),
+                  'unresolved_errors':len({(e.line_no,m) for e,m in unresolved+errors})}
+    }
+    (package_dir/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
     print(f"Entries: {len(entries)}")
     print(f"Base roots: {len(base)}")
     print(f"Modifiers: {len(mod_rules)}")

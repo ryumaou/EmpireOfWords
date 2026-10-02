@@ -169,6 +169,7 @@ anonymous:adj
 another:det
 answer:n
 ant:n
+antenna:n
 anthropology:n
 anticipate:v
 antidote:n
@@ -5105,7 +5106,7 @@ accountant:n = account-DOER
 agreement:n = agree-ACT.OF
 aircraft carrier:n = airplane-ship
 alchemist:n = alchemy-DOER
-analysis:n = analyse-ACT.OF
+analysis:n = analyze-ACT.OF
 anger:n = angry-TO.CREATE-QUALITY.OF.BEING
 antigravity:adj = gravity-OPPOSITE-QUALITY.OF.BEING
 antigravity:n = gravity-OPPOSITE
@@ -5310,7 +5311,7 @@ record:v = record-NOUN.TO.VERB
 reflection:n = reflect-ACT.OF
 religious:adj = religion-RELATING.TO
 response:n = respond-ACT.OF
-rich, flavorsome:adj = flavour-RELATING.TO
+rich, flavorsome:adj = flavor-RELATING.TO
 rich, wealthy:adj = wealth-RELATING.TO
 rifleman:n = rifle-DOER
 risky, dangerous:adj = risk-RELATING.TO

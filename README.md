@@ -3,63 +3,190 @@ A set of Python scripts that allow a technically literate worldbuilder to create
 
 Based, in part, on Perl scripts originally created by Chris Pound, with additional inspiration from other conlanging sources.
 
-# Conlang Project v5
+## Overview
 
-Project layout:
+Empire Of Words is a deterministic, file-based conlang toolkit. It can generate a lexicon from the statistical character of a source corpus, construct a configurable grammar, create inflectional paradigms and reference material, translate supported English constructions, diagnose translation gaps, extend an existing language without regenerating it, validate generated packages, and create language-shaped personal and family names.
 
-```
-project/
+The tools are designed to work together around a generated `language.json` package. A seed can be supplied whenever reproducibility matters. Translation and name generation consume an existing language rather than silently rebuilding it.
+
+The system deliberately distinguishes between what it can generate or analyze and what it cannot. Unsupported translation structures and missing vocabulary are reported rather than filled with invented target-language forms.
+
+## Requirements
+
+- Python 3
+- No external Python packages are required by the supplied scripts.
+- Commands in this README use Windows `cmd.exe` continuation syntax (`^`), but the scripts are ordinary Python programs and can be run on other platforms with normal path and shell syntax.
+
+Run commands from the project root unless you explicitly use `--project-root`.
+
+## Project structure
+
+```text
+Empire-Of-Words/
+├── README.md
+├── CHANGELOG.md
 ├── src/
+│   ├── add_words.py
+│   ├── build_language.py
+│   ├── english_analyzer.py
+│   ├── generate_names.py
+│   ├── grammar_engine.py
+│   ├── language_io.py
+│   ├── lc.py
+│   ├── translate.py
+│   └── validate_language.py
 ├── vocabulary/
-├── data/
-└── output/
+│   ├── MagicVocabulary.txt
+│   ├── NamingVocabulary.txt
+│   └── extra_words_example.txt
+├── translations/
+│   ├── sentences_default.txt
+│   └── sentences_advanced.txt
+├── tests/
+│   └── test_analysis.py
+├── data/                         # user-supplied source corpora
+└── output/                       # generated at runtime
+    └── <LanguageName>/
+        ├── dictionary.csv
+        ├── derivational_morphology.txt
+        ├── etymology.txt
+        ├── examples.txt
+        ├── grammar.json
+        ├── language.json
+        ├── manifest.json
+        ├── paradigms.csv
+        ├── reference.md
+        ├── names/                # created by generate_names.py
+        └── translations/         # created by translate.py
 ```
 
-## Selecting source and vocabulary files
+`data/` and `output/` may not exist in a fresh distribution. Create `data/` when you add source corpora; `output/` is created automatically when a language is built.
 
-The preferred interface explicitly selects the base-language corpus and vocabulary definition:
+## Typical workflow
 
-```
-python src/build_language.py --language-name "Khudzul" --source data/Khudzul.txt --vocabulary vocabulary/MagicVocabulary.txt --grammar-family germanic --seed 12345
-```
+A normal project moves through five independent stages:
 
-`--source FILE` selects the source/base language corpus that the Pound model analyzes. `--vocabulary FILE` selects the vocabulary definition to generate. Relative paths are resolved from the project root, not the current working directory.
-
-If either switch is omitted, the builder auto-selects only when exactly one candidate exists in the corresponding directory. If multiple vocabulary or source files exist, it stops and lists them so you can select one explicitly. The older positional `vocabulary corpus` syntax remains supported for compatibility.
-
-Examples:
-
-```
-python src/build_language.py --language-name "Test One" --source data/Kusan.txt --vocabulary vocabulary/MagicVocabulary.txt --grammar-family turkic
-python src/build_language.py --language-name "Test Two" --source data/Ardunaic.txt --vocabulary vocabulary/BasicVocabulary.txt --grammar-family romance
-```
-
-## Basic use
-
-```
-python src/build_language.py --language-name "Khudzul" --seed 12345
-```
-
-The default `naturalistic` mode selects a coherent grammar family. Choose one explicitly:
-
-```
-python src/build_language.py --language-name "Ardunaic" --grammar-family romance --seed 12345
-python src/build_language.py --language-name "Khudzul" --grammar-family turkic --seed 12345
+```text
+source corpus + vocabulary
+          │
+          ▼
+   build_language.py
+          │
+          ▼
+ output/<Language>/language.json
+          │
+     ┌────┼───────────────┐
+     ▼    ▼               ▼
+ validate translate   generate names
+          │
+          ▼
+ diagnostics / missing-word review
+          │
+          ▼
+ supplemental vocabulary or add_words.py
 ```
 
-Families: `naturalistic`, `random`, `romance`, `germanic`, `slavic`, `arabic`, `turkic`, `japanese`, `celtic`, `latin`, `greek`, `indic`, `bantu`, `polynesian`, `analytic`, `agglutinative`, `fusional`, `isolating`.
+A generated language remains stable unless you deliberately rebuild it or extend its lexicon.
 
-These are typological inspirations, not replicas of real languages. A family sets weighted defaults; the seed still creates variation.
+# Creating a language
 
-## Override the family
+## Source corpus
 
+Put one or more source text files in `data/`. The source is used to learn the character sequences from which new roots and grammatical material are generated. It is not treated as a vocabulary translation table.
+
+Example:
+
+```text
+data/ExampleSource.txt
 ```
-python src/build_language.py --language-name "Khudzul" --grammar-family germanic --word-order SOV --adjective-position after --cases 5 --gender none --seed 12345
+
+If there is exactly one `.txt` source in `data/`, the builder can select it automatically. If there are several, select one explicitly with `--source`.
+
+## Vocabulary definition
+
+The main supplied vocabulary is:
+
+```text
+vocabulary/MagicVocabulary.txt
 ```
 
-Available controls:
+A basic independent entry uses:
 
+```text
+dog:n
+run:v
+red:adj
 ```
+
+Derived entries may reference other vocabulary and named derivational modifiers, for example:
+
+```text
+dancer:n = dance:v-DOER
+```
+
+Sense-qualified vocabulary can be referenced explicitly:
+
+```text
+hair (of body):n
+hair (of head):n
+hairy:adj = hair (of body)-RELATING.TO
+```
+
+When an unqualified derivational reference has multiple matching sense-qualified entries, the first matching entry in vocabulary-file order is used. Prefer explicit references when the intended sense matters.
+
+## Basic build
+
+```cmd
+python src\build_language.py ^
+  --language-name "Example" ^
+  --source data\ExampleSource.txt ^
+  --vocabulary vocabulary\MagicVocabulary.txt ^
+  --grammar-family naturalistic ^
+  --seed 12345
+```
+
+Relative paths are resolved from the project root rather than the current working directory.
+
+If exactly one source corpus and one vocabulary file are available, they may be omitted:
+
+```cmd
+python src\build_language.py --language-name "Example" --seed 12345
+```
+
+When multiple candidates exist, the builder stops and asks you to select one instead of guessing.
+
+## Grammar families
+
+`--grammar-family` selects a typological profile. These are inspirations and weighted structural defaults, not attempts to reproduce a particular natural language.
+
+Available profiles are:
+
+```text
+naturalistic   random         romance        germanic
+slavic         arabic         semitic        turkic
+uralic         japanese       celtic         latin
+greek          indic          iranian        dravidian
+bantu          polynesian     austronesian   berber
+quechuan       kartvelian     caucasian      sino-tibetan
+analytic       agglutinative  fusional       isolating
+```
+
+Example:
+
+```cmd
+python src\build_language.py ^
+  --language-name "Example" ^
+  --source data\ExampleSource.txt ^
+  --vocabulary vocabulary\MagicVocabulary.txt ^
+  --grammar-family uralic ^
+  --seed 12345
+```
+
+## Grammar overrides
+
+Family defaults can be overridden individually:
+
+```text
 --word-order SVO|SOV|VSO|VOS|OVS|OSV
 --adjective-position before|after
 --adposition pre|post|preposition|postposition
@@ -78,114 +205,476 @@ Available controls:
 --grammar-morphology analytic|agglutinative|fusional|mixed|isolating
 ```
 
-`--grammar-morphology` is separate from `--grammar-family`, so hybrids are possible:
-
-```
-python src/build_language.py --grammar-family romance --grammar-morphology agglutinative --language-name "Hybrid"
-```
-
-## Reuse an exact grammar
-
-Every generated language writes `output/<Language>/grammar.json`. Feed it back later:
-
-```
-python src/build_language.py --language-name "Khudzul2" --grammar-file output/Khudzul/grammar.json --seed 54321
-```
-
-When `--grammar-file` is supplied, family and grammar override switches are ignored. This lets you keep the exact grammatical architecture while generating a new lexicon from another corpus/seed.
-
-## Outputs
-
-As in v3: `dictionary.csv`, `derivational_morphology.txt`, `etymology.txt`, `grammar.json`, `language.json`, `paradigms.csv`, `examples.txt`, and `reference.md` under `output/<LanguageName>/`.
-
-# Version 5: expanded grammar families and morphophonemics
-
-Version 5 adds typological grammar presets and a surface morphophonemic layer. Family names are inspirations/profiles, not claims to reproduce any one natural language exactly.
-
-## Additional grammar families
-
-In addition to the v5 families, `--grammar-family` now includes:
-
-- `semitic` — VSO/SVO weighting, gender, aspect-rich verbs, fusional/mixed morphology; light templatic stem alternation and vowel elision.
-- `uralic` — SOV/SVO weighting, postpositions, many cases, agglutination; vowel harmony and boundary assimilation.
-- `kartvelian` — SOV/SVO, postpositions, rich verbal agreement/TAM; consonant assimilation and epenthesis.
-- `caucasian` — SOV-heavy, high case counts, possible noun classes and complex agreement; consonant-cluster repair/assimilation.
-- `austronesian` — verb-initial/SVO weighting, analytic-to-agglutinative morphology; productive light reduplication and nasal assimilation.
-- `dravidian` — strongly SOV/postpositional, case-rich and agglutinative; light vowel harmony and assimilation.
-- `iranian` — SOV-heavy, mixed/fusional morphology; vowel elision and lenition.
-- `sino-tibetan` — SVO/SOV weighting, mostly analytic/isolating grammar and particles. Tonogenesis is not simulated from a non-tonal Pound corpus.
-- `berber` — VSO/SVO weighting, gender and aspect-rich verbal grammar; vowel elision and assimilation.
-- `quechuan` — strongly SOV/postpositional, case-rich agglutination and agreement; light harmony and assimilation.
-
-The existing families also receive default morphophonemic profiles. Examples include `turkic`/`uralic` vowel harmony, `celtic` initial mutation/lenition, `slavic` palatalization, `romance` elision/assimilation, `germanic` light ablaut, and `arabic`/`semitic` conservative templatic-style stem alternation.
-
-## Morphophonemic switch
-
-By default, the selected family chooses its associated rules:
+For example:
 
 ```cmd
 python src\build_language.py ^
   --language-name "Example" ^
-  --source data\Source.txt ^
+  --source data\ExampleSource.txt ^
   --vocabulary vocabulary\MagicVocabulary.txt ^
-  --grammar-family uralic ^
-  --morphophonemics auto ^
+  --grammar-family germanic ^
+  --word-order SOV ^
+  --adjective-position after ^
+  --cases 5 ^
+  --gender none ^
   --seed 12345
 ```
 
-Disable surface morphophonemics while retaining the grammar family:
+Grammar family and grammar morphology are independent, so hybrid designs are possible.
 
-```cmd
+## Morphophonemics
+
+By default, a grammar family selects an associated surface morphophonemic profile:
+
+```text
+--morphophonemics auto
+```
+
+Disable the layer with:
+
+```text
 --morphophonemics none
 ```
 
-Or explicitly select one or more comma-separated rules:
+Or explicitly choose comma-separated rules. Supported rules include:
 
-```cmd
---morphophonemics vowel_harmony,consonant_assimilation
+```text
+vowel_harmony
+vowel_harmony_light
+initial_mutation
+lenition
+elision
+vowel_elision
+palatalization
+consonant_assimilation
+nasal_assimilation
+epenthesis
+reduplication
+ablaut
+templatic_light
 ```
 
-Supported rules are:
-
-`vowel_harmony`, `vowel_harmony_light`, `initial_mutation`, `lenition`, `elision`, `vowel_elision`, `palatalization`, `consonant_assimilation`, `nasal_assimilation`, `epenthesis`, `reduplication`, `ablaut`, and `templatic_light`.
-
-These rules apply to generated grammatical morphology. The canonical morphemes remain recorded separately in `grammar.json`, while paradigms and examples contain their realized surface forms.
-
-## Hybrid examples
-
-Romance-like grammar with Uralic-style harmony:
+Example:
 
 ```cmd
 python src\build_language.py ^
-  --language-name "HybridOne" ^
-  --source data\Ardunaic.txt ^
+  --language-name "Hybrid" ^
+  --source data\ExampleSource.txt ^
   --vocabulary vocabulary\MagicVocabulary.txt ^
   --grammar-family romance ^
-  --morphophonemics vowel_harmony,consonant_assimilation
+  --morphophonemics vowel_harmony,consonant_assimilation ^
+  --seed 12345
 ```
 
-Celtic-like grammar without mutation:
+`templatic_light` performs conservative internal stem alternation. It is not a full consonantal-root-and-pattern system.
+
+## Reusing an exact grammar
+
+Every language package includes `grammar.json`. Reuse it to create another language with the same grammatical architecture:
 
 ```cmd
 python src\build_language.py ^
-  --language-name "HybridTwo" ^
-  --source data\Kusan.txt ^
-  --vocabulary vocabulary\BasicVocabulary.txt ^
-  --grammar-family celtic ^
-  --morphophonemics none
-```
-
-Austronesian-like grammar with explicit reduplication:
-
-```cmd
-python src\build_language.py ^
-  --language-name "IslandSpeech" ^
-  --source data\IslandSource.txt ^
+  --language-name "RelatedLanguage" ^
+  --source data\RelatedSource.txt ^
   --vocabulary vocabulary\MagicVocabulary.txt ^
-  --grammar-family austronesian ^
-  --morphophonemics reduplication,nasal_assimilation
+  --grammar-file output\Example\grammar.json ^
+  --seed 54321
 ```
 
-## Design limitation
+When `--grammar-file` is supplied, grammar-family and grammar-override switches are ignored.
 
-`templatic_light` is intentionally conservative. The Pound source model generates whole roots rather than abstract consonantal roots, so v5 performs recognizable internal vowel alternation instead of pretending to implement a full Arabic/Hebrew root-and-pattern system. A future dedicated consonantal-root generator could make that behavior substantially deeper.
+This is useful when creating related languages or a language family whose members should share a grammatical profile while using different lexical source material.
+
+## Supplemental vocabulary during a build
+
+Additional vocabulary can be kept outside the main vocabulary file:
+
+```text
+vocabulary/Example_extra.txt
+```
+
+Example:
+
+```text
+robin:n
+bonfire:n
+solstice:n
+juicy:adj
+salty:adj
+```
+
+Include it with:
+
+```cmd
+python src\build_language.py ^
+  --language-name "Example" ^
+  --source data\ExampleSource.txt ^
+  --vocabulary vocabulary\MagicVocabulary.txt ^
+  --supplemental-vocabulary vocabulary\Example_extra.txt ^
+  --seed 12345
+```
+
+`--supplemental-vocabulary` may be repeated to combine multiple vocabulary packs. Duplicate entries are rejected, and a supplemental file cannot silently redefine an existing modifier with a different rule.
+
+## Translation sentences during generation
+
+A reusable sentence suite is a UTF-8 text file containing one English sentence per line. Blank lines and lines beginning with `#` are ignored.
+
+```cmd
+python src\build_language.py ^
+  --language-name "Example" ^
+  --source data\ExampleSource.txt ^
+  --vocabulary vocabulary\MagicVocabulary.txt ^
+  --translations translations\sentences_default.txt ^
+  --grammar-family naturalistic ^
+  --seed 12345
+```
+
+When supplied, these sentences replace the built-in examples written to the generated package. Unsupported vocabulary or constructions are reported rather than filled with invented target-language words.
+
+# Generated language package
+
+A normal build creates `output/<LanguageName>/` containing:
+
+- `language.json` — canonical machine-readable language package: grammar, lexicon, generated forms, translation capabilities, and examples.
+- `grammar.json` — reusable grammar definition.
+- `dictionary.csv` — English gloss, part of speech, generated form, root/derived status, and derivation.
+- `paradigms.csv` — generated noun, verb, and adjective paradigms.
+- `derivational_morphology.txt` — generated derivational affixes and their source rules.
+- `etymology.txt` — derivational relationships plus unresolved vocabulary/derivation errors.
+- `examples.txt` — generated or requested example translations.
+- `reference.md` — human-readable grammar reference.
+- `manifest.json` — build provenance, seed, source/vocabulary paths and hashes, grammar selection, and build counts.
+
+The builder exits with a nonzero status when unresolved vocabulary derivations or build errors remain, even if it was able to write useful output files. See the `UNRESOLVED / ERRORS` section of `etymology.txt` for details.
+
+# Validating a language
+
+Use `validate_language.py` to inspect an existing package without changing it:
+
+```cmd
+python src\validate_language.py --language output\Example
+```
+
+To audit the language against a translation suite:
+
+```cmd
+python src\validate_language.py ^
+  --language output\Example ^
+  --translations translations\sentences_advanced.txt ^
+  --report output\Example\advanced_validation.json
+```
+
+Validation checks the package structure and can report translation coverage against a sentence suite.
+
+# Translating with an existing language
+
+`translate.py` loads an existing `language.json`; it does not regenerate the language.
+
+## Translate a sentence file
+
+```cmd
+python src\translate.py ^
+  --language output\Example ^
+  --input translations\sentences_advanced.txt
+```
+
+The default output is:
+
+```text
+output/Example/translations/sentences_advanced.txt
+```
+
+Use `--output` to choose another path.
+
+## Translate one sentence
+
+```cmd
+python src\translate.py ^
+  --language output\Example ^
+  --sentence "The warrior walked into the city."
+```
+
+The result is printed to the console.
+
+## Translation diagnostics
+
+```cmd
+python src\translate.py ^
+  --language output\Example ^
+  --input translations\sentences_advanced.txt ^
+  --diagnostics
+```
+
+Diagnostics classify results as:
+
+```text
+ok
+partial
+unresolved-vocabulary
+unsupported-grammar
+```
+
+An `ok` result is intended to mean that the meaningful analyzed content was realized. `partial` is used when the analyzer recognizes content that the realizer does not preserve.
+
+For a batch translation, diagnostics include status totals, detected constructions, missing/unrecognized English lexemes, and per-sentence reasons. The translation workflow also writes a POS-neutral missing-word review list beside the diagnostic output. Review that list before adding vocabulary: an inflected form may indicate a lemmatizer issue rather than a genuinely absent concept.
+
+The translation engine is deterministic and intentionally conservative. It does not use an AI model to invent target-language forms.
+
+# Extending an existing dictionary
+
+Use `add_words.py` when you want to add independent roots to an existing language without regenerating its current vocabulary.
+
+Create a file such as:
+
+```text
+vocabulary/Example_extra.txt
+```
+
+with entries like:
+
+```text
+robin:n
+bonfire:n
+solstice:n
+juicy:adj
+salty:adj
+```
+
+Then run:
+
+```cmd
+python src\add_words.py ^
+  --language output\Example ^
+  --words vocabulary\Example_extra.txt ^
+  --seed 67890
+```
+
+The script:
+
+- preserves all existing lexical forms;
+- learns new word shapes from the existing root lexicon;
+- generates only genuinely new roots;
+- skips entries already present;
+- updates `language.json` and `dictionary.csv`;
+- appends applicable paradigms to `paradigms.csv`;
+- records the extension in `language.json`; and
+- creates `language.json.bak` before modifying the package.
+
+`add_words.py` currently accepts independent `gloss:pos` roots only. Add derivational definitions to a vocabulary file and rebuild if you need new derived entries.
+
+# Generating proper names
+
+`generate_names.py` creates names from an existing language without modifying its dictionary.
+
+There are two complementary naming systems.
+
+## Personal names
+
+Personal names are generated from the statistical character of the language's existing root vocabulary. Candidate forms are divided into short and long pools according to vowel count, and a personal name combines one element from each pool in randomized order.
+
+These are phonological creations. The program does not invent semantic meanings for them.
+
+Generate personal names with:
+
+```cmd
+python src\generate_names.py ^
+  --language output\Example ^
+  --mode personal ^
+  --count 50 ^
+  --seed 12345
+```
+
+The short/long boundary defaults to three vowels. For languages whose word shapes make that unsuitable, override it:
+
+```text
+--vowel-cutoff 2
+```
+
+## Family and clan names
+
+Family names use semantic formulas from:
+
+```text
+vocabulary/NamingVocabulary.txt
+```
+
+Examples of formula structure include:
+
+```text
+black+bear
+dragon+hunter
+moon+flower
+black+flower+river
+```
+
+Every component must exist in the generated language lexicon. The generator combines the language's actual forms, applies configured boundary morphophonemics, and reports both the resulting name and its semantic source.
+
+A result can therefore record:
+
+```text
+Family name: <generated compound>
+Meaning: black bear
+Formula: black+bear
+Language roots: <form for black> + <form for bear>
+```
+
+A formula is skipped when one or more required concepts are absent. Add culturally important missing concepts with supplemental vocabulary or `add_words.py`, then rerun name generation.
+
+Generate family names with:
+
+```cmd
+python src\generate_names.py ^
+  --language output\Example ^
+  --mode family ^
+  --naming-vocabulary vocabulary\NamingVocabulary.txt ^
+  --count 50 ^
+  --seed 12345
+```
+
+## Full names
+
+The default mode combines a generated personal name with a meaningful family name:
+
+```cmd
+python src\generate_names.py ^
+  --language output\Example ^
+  --count 25 ^
+  --seed 12345
+```
+
+Equivalent explicit mode:
+
+```text
+--mode full
+```
+
+`--mode all` is also accepted by the script.
+
+Default output is written under:
+
+```text
+output/Example/names/
+```
+
+with both a human-readable text file and a CSV containing the full name, personal name, family name, family-name meaning, source formula, personal generation components, and family source forms.
+
+Use `--output` to select a different text output path; the CSV is written beside it.
+
+# Testing
+
+Run the supplied regression tests from the project root:
+
+```cmd
+python -m unittest discover -s tests -v
+```
+
+The tests cover important English-analysis distinctions used by the translation pipeline.
+
+# Script reference
+
+## `src/build_language.py`
+
+Creates a complete language package.
+
+Important options:
+
+```text
+--language-name NAME
+--source FILE
+--vocabulary FILE
+--supplemental-vocabulary FILE    repeatable
+--translations FILE
+--grammar-family FAMILY
+--grammar-file FILE
+--morphophonemics RULES
+--seed NUMBER
+--min-root NUMBER
+--max-root NUMBER
+--project-root PATH
+```
+
+Use `python src\build_language.py --help` for the complete grammar-override list.
+
+## `src/translate.py`
+
+Translates one sentence or a sentence file with an existing language.
+
+```text
+--language PATH
+--input FILE | --sentence TEXT
+--output FILE
+--diagnostics
+--project-root PATH
+```
+
+## `src/validate_language.py`
+
+Validates an existing language package and optionally audits a translation suite.
+
+```text
+--language PATH
+--translations FILE
+--report FILE
+--project-root PATH
+```
+
+## `src/add_words.py`
+
+Adds independent vocabulary roots without regenerating existing forms.
+
+```text
+--language PATH
+--words FILE
+--seed NUMBER
+--project-root PATH
+```
+
+## `src/generate_names.py`
+
+Generates personal, family, or full names from an existing language.
+
+```text
+--language PATH
+--naming-vocabulary FILE
+--mode personal|family|full|all
+--count NUMBER
+--seed NUMBER
+--vowel-cutoff NUMBER
+--output FILE
+--project-root PATH
+```
+
+# Reproducibility and project management
+
+For repeatable results, record the seed used for each operation. A language build records its primary build information in `manifest.json`, including hashes of the selected source and vocabulary files. Keep source corpora, vocabulary supplements, grammar files, translation suites, and seeds under version control if you want to reproduce a worldbuilding project later.
+
+A practical organization for several related languages is:
+
+```text
+data/
+├── ProtoLanguage.txt
+├── DaughterNorth.txt
+└── DaughterSouth.txt
+
+vocabulary/
+├── MagicVocabulary.txt
+├── SharedCulture.txt
+├── NorthernCulture.txt
+└── SouthernCulture.txt
+
+output/
+├── ProtoLanguage/
+├── NorthernLanguage/
+└── SouthernLanguage/
+```
+
+You can reuse a common `grammar.json`, vary source corpora and seeds, share supplemental vocabulary packs, or combine those techniques depending on how closely related the imagined languages should be.
+
+# Design principles and limitations
+
+Empire Of Words favors reproducibility and inspectability over opaque generation. Generated forms, derivations, grammar choices, paradigms, translation diagnostics, and name etymologies are written to ordinary text, CSV, Markdown, and JSON files.
+
+The grammar-family profiles are broad typological inspirations rather than linguistic simulations of specific real-world languages. The English translator supports a growing inventory of constructions but is not a general-purpose natural-language parser. Unsupported grammar is diagnosed instead of silently approximated, and missing target-language concepts are reported instead of invented.
+
+Personal names are language-shaped but semantically arbitrary. Family/clan names have meanings only when those meanings are grounded in the semantic formulas and vocabulary forms used to construct them.
