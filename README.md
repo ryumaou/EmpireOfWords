@@ -29,6 +29,7 @@ Empire-Of-Words/
 │   ├── add_words.py
 │   ├── build_language.py
 │   ├── english_analyzer.py
+│   ├── generate_daughter.py
 │   ├── generate_names.py
 │   ├── grammar_engine.py
 │   ├── language_io.py
@@ -54,6 +55,8 @@ Empire-Of-Words/
         ├── grammar.json
         ├── language.json
         ├── manifest.json
+        ├── lineage.csv              # daughter languages
+        ├── lineage.md               # daughter languages
         ├── paradigms.csv
         ├── reference.md
         ├── names/                # created by generate_names.py
@@ -463,6 +466,97 @@ The script:
 
 `add_words.py` currently accepts independent `gloss:pos` roots only. Add derivational definitions to a vocabulary file and rebuild if you need new derived entries.
 
+# Creating daughter languages
+
+`generate_daughter.py` evolves an existing generated language into a historically related daughter language. Unlike a fresh build, it begins with the parent language's lexicon and grammar, applies ordered regular sound changes, optionally introduces grammatical drift, and replaces a controlled fraction of inherited roots with lexical innovations.
+
+The result is a normal Empire Of Words language package. It can be translated with, extended with `add_words.py`, used for proper-name generation, validated, or used as the parent of another daughter language. This allows branching and multi-generation language families.
+
+## Basic daughter generation
+
+```cmd
+python src\generate_daughter.py ^
+  --parent output\RootLanguage ^
+  --language-name "DaughterLanguage" ^
+  --profile balanced ^
+  --seed 24680
+```
+
+The three built-in evolution profiles are:
+
+```text
+conservative   fewer regular sound changes, little lexical replacement, little grammar drift
+balanced       moderate sound change and vocabulary turnover
+divergent      stronger sound change, more lexical replacement, and more opportunities for grammar drift
+```
+
+Profiles are convenient defaults rather than opaque presets. The exact changes selected for a daughter are written into its package.
+
+## Controlling historical distance
+
+Profile settings can be overridden independently:
+
+```cmd
+python src\generate_daughter.py ^
+  --parent output\RootLanguage ^
+  --language-name "Northern" ^
+  --profile balanced ^
+  --sound-rules 8 ^
+  --lexical-replacement 0.08 ^
+  --grammar-drift 0.30 ^
+  --seed 1001
+```
+
+`--sound-rules` controls the number of ordered regular sound changes. `--lexical-replacement` is a fraction from 0 to 1 specifying how many inherited root lexemes are replaced by innovations. `--grammar-drift` is a probability from 0 to 1 applied to the supported syntactic drift dimensions.
+
+Regular sound changes apply to inherited lexical forms and grammatical material. Independent lexical words retain the project's minimum two-letter visible form rule. Lexical replacement is separate from sound change: a changed cognate remains inherited, while a replacement is explicitly marked as an innovation.
+
+## Lineage records
+
+A daughter package adds:
+
+```text
+lineage.csv
+lineage.md
+```
+
+`lineage.csv` records each lexical entry's English gloss, part of speech, parent form, daughter form, inheritance status, and applied changes. The daughter's `dictionary.csv` also includes parent-form and inheritance columns.
+
+`lineage.md` summarizes the parent, evolution profile, seed, ordered sound changes, grammar changes, and lexical-replacement statistics. `language.json` stores the same ancestry metadata in its `lineage` object.
+
+This makes ancestry inspectable rather than inferred from spelling similarity.
+
+## Branching a family
+
+Generate sister languages from the same parent with different seeds or profiles:
+
+```cmd
+python src\generate_daughter.py --parent output\Proto --language-name "North" --profile balanced --seed 101
+python src\generate_daughter.py --parent output\Proto --language-name "South" --profile balanced --seed 202
+```
+
+Then continue either branch:
+
+```cmd
+python src\generate_daughter.py --parent output\North --language-name "NorthCoastal" --profile conservative --seed 303
+```
+
+`NorthCoastal` records `North` as its immediate parent, while `North` retains its own ancestry back to `Proto`. The packages therefore form an explicit family tree.
+
+## Shared-history branches
+
+If two daughter languages should share early innovations, first generate an intermediate ancestor and branch from it. For example:
+
+```text
+Proto
+  │
+  └── EarlyNorthern
+        ├── Highland
+        └── Coastal
+```
+
+This is preferable to independently generating `Highland` and `Coastal` from `Proto`, because their shared sound and grammar changes are then genuinely inherited from `EarlyNorthern`.
+
 # Generating proper names
 
 `generate_names.py` creates names from an existing language without modifying its dictionary.
@@ -627,6 +721,20 @@ Adds independent vocabulary roots without regenerating existing forms.
 --language PATH
 --words FILE
 --seed NUMBER
+--project-root PATH
+```
+
+## `src/generate_daughter.py`
+
+```text
+--parent PATH
+--language-name NAME
+--profile conservative|balanced|divergent
+--seed NUMBER
+--sound-rules NUMBER
+--lexical-replacement FRACTION
+--grammar-drift FRACTION
+--output DIRECTORY
 --project-root PATH
 ```
 
