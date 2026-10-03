@@ -160,7 +160,7 @@ When multiple candidates exist, the builder stops and asks you to select one ins
 
 ## Grammar families
 
-`--grammar-family` selects a typological profile. These are inspirations and weighted structural defaults, not attempts to reproduce a particular natural language.
+`--grammar-family` selects a typological profile. These are ***inspirations*** and weighted structural defaults, *not attempts to reproduce a particular natural language*.
 
 Available profiles are:
 
