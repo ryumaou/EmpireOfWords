@@ -1,0 +1,177 @@
+{
+  "family": "arabic",
+  "requested_family": "arabic",
+  "word_order": "SVO",
+  "adposition_type": "preposition",
+  "adjective_position": "after",
+  "possessor_position": "after",
+  "articles": "definite",
+  "gender": 2,
+  "morphology_type": "mixed",
+  "morphophonemics": {
+    "mode": "auto",
+    "rules": [
+      "templatic_light",
+      "vowel_elision"
+    ]
+  },
+  "noun": {
+    "numbers": [
+      "singular",
+      "plural"
+    ],
+    "plural_strategy": "mixed",
+    "cases": [
+      "nominative",
+      "accusative",
+      "genitive"
+    ]
+  },
+  "verb": {
+    "tenses": [
+      "present",
+      "past",
+      "future"
+    ],
+    "tense_level": "standard",
+    "aspects": [
+      "simple",
+      "progressive",
+      "perfect"
+    ],
+    "aspect_level": "rich",
+    "moods": [
+      "indicative",
+      "imperative",
+      "subjunctive",
+      "conditional"
+    ],
+    "mood_level": "standard",
+    "agreement": "subject",
+    "negation": "mixed"
+  },
+  "comparison": {
+    "degrees": [
+      "positive",
+      "comparative",
+      "superlative"
+    ],
+    "strategy": "mixed"
+  },
+  "questions": {
+    "strategy": "particle",
+    "particle_position": "initial",
+    "wh_strategy": "fronted"
+  },
+  "morphemes": {
+    "plural": {
+      "form": "de",
+      "side": "suffix"
+    },
+    "accusative": {
+      "form": "man",
+      "side": "prefix"
+    },
+    "genitive": {
+      "form": "cir",
+      "side": "prefix"
+    },
+    "past": {
+      "form": "den",
+      "side": "suffix"
+    },
+    "future": {
+      "form": "u",
+      "side": "prefix"
+    },
+    "progressive": {
+      "form": "mem",
+      "side": "prefix"
+    },
+    "perfect": {
+      "form": "si",
+      "side": "suffix"
+    },
+    "imperative": {
+      "form": "bik",
+      "side": "suffix"
+    },
+    "subjunctive": {
+      "form": "s",
+      "side": "prefix"
+    },
+    "conditional": {
+      "form": "ke",
+      "side": "suffix"
+    },
+    "negative": {
+      "form": "pa",
+      "side": "prefix"
+    },
+    "comparative": {
+      "form": "te",
+      "side": "suffix"
+    },
+    "superlative": {
+      "form": "b",
+      "side": "suffix"
+    },
+    "definite_article": {
+      "form": "l",
+      "side": "suffix"
+    },
+    "agr_1sg": {
+      "form": "ad",
+      "side": "suffix"
+    },
+    "agr_2sg": {
+      "form": "jad",
+      "side": "suffix"
+    },
+    "agr_3sg": {
+      "form": "a",
+      "side": "suffix"
+    },
+    "agr_1pl": {
+      "form": "st",
+      "side": "suffix"
+    },
+    "agr_2pl": {
+      "form": "pe",
+      "side": "suffix"
+    },
+    "agr_3pl": {
+      "form": "wa",
+      "side": "suffix"
+    }
+  },
+  "particles": {
+    "yes_no": "kerbera",
+    "negative": "sakusam",
+    "comparative": "bahap",
+    "superlative": "hap"
+  },
+  "pronouns": {
+    "1sg": "pempula",
+    "2sg": "terberu",
+    "3sg": "ang",
+    "1pl": "unan",
+    "2pl": "mekok",
+    "3pl": "lendaks"
+  },
+  "demonstratives": {
+    "proximal_singular": "tampa",
+    "distal_singular": "pekepem",
+    "proximal_plural": "semakir",
+    "distal_plural": "persema"
+  },
+  "interrogatives": {
+    "who": "pot",
+    "what": "desumpa",
+    "where": "kempa",
+    "when": "mung",
+    "why": "baumpun",
+    "how": "lahulan",
+    "which": "memisti"
+  }
+}

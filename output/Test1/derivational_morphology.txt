@@ -1,0 +1,19 @@
+seed: 12345
+OPPOSITE                 pa-              source=Random
+ADVERB                   pe-              source=Random
+QUALITY.OF.BEING         d-               source=Random
+TO.MAKE                  -b               source=Random
+HAVING.QUALITY.OF        pe-              source=Random
+RELATING.TO              ga-              source=Random
+TO.CREATE                te-              source=Random
+RESULT.OF.DOING          -pe              source=Random
+LIKELY.TO                -m               source=Random
+ACT.OF                   k-               source=Random
+PRODUCT.OF               re-              source=Random
+DOER                     conditional -er/r source=IF \V THEN -er ELSE -r
+PLACE.OF                 ku-              source=Random
+DIM                      le-              source=Random
+AUG                      me-              source=Random
+NOUN.TO.VERB             -ka              source=Random
+TENDING.TO               -u               source=RANDOM
+VERB.TO.NOUN             -ra              source=Random

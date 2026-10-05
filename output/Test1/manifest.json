@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "tool_version": "5.7",
+  "language": "Test1",
+  "seed": 12345,
+  "source": {
+    "path": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\data\\indonesian.txt",
+    "sha256": "f109deeca8f89752b40d9d1bd19345b2999b4201cbbf648066c4beb0a7717906"
+  },
+  "vocabulary": {
+    "path": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\vocabulary\\UndermountainVocabulary.txt",
+    "sha256": "36163ab1d3b0e1e5a98ea211fb6c613b7ea473ee7f0c299eafcf83921b277545"
+  },
+  "supplemental_vocabulary": [],
+  "grammar_family": "arabic",
+  "grammar_file": null,
+  "translation_source": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\translations\\sentences_default.txt",
+  "counts": {
+    "entries": 5104,
+    "base_roots": 4729,
+    "modifiers": 18,
+    "derived_resolved": 375,
+    "unresolved_errors": 0
+  }
+}

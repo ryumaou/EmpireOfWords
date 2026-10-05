@@ -1,49 +1,49 @@
 [Translation]
 English: The big dog is sleeping.
 Language: [PARTIAL]
-Gloss: dog.NOM SLEEP-PROG
+Gloss: dog.NOM-DEF SLEEP-PROG
 Status: partial
 Reason: not realized: big
 [Translation]
 English: Where is my book?
-Language: kyumasu dariryodas hyantte
+Language: kempa tamacar cirpampila
 Gloss: WHERE 1SG-GEN book
 Status: ok
 Reason: complete
 [Translation]
 English: She will give him water.
-Language: hinmasu autaranim nyopet hinmasu 
-Gloss: 3SG water.ACC GIVE-FUT 3SG.DAT 
+Language: ang ubanyida manbahkin ang 
+Gloss: 3SG GIVE-FUT water.ACC 3SG.DAT 
 Status: ok
 Reason: complete
 [Translation]
 English: This child walked to that house yesterday.
-Language: pra auta myuzoto soda zattakiaro bomasu akishid
+Language: tampa urahnyi kerdanwa kelihan pekepem sebeama daga
 Gloss: THIS child.NOM WALK TO THAT house.DAT
 Status: ok
 Reason: complete
 [Translation]
 English: Are you hungry?
-Language: den onena nupya
+Language: kerbera terberu memparingjad
 Gloss: 2SG HUNGRY-PROG Q
 Status: ok
 Reason: complete
 [Translation]
 English: Give me the red bird!
 Language: [PARTIAL]
-Gloss: give-IMP 1SG.DAT bird.ACC
+Gloss: give-IMP 1SG.DAT bird.ACC-DEF
 Status: partial
 Reason: not realized: red
 [Translation]
 English: The woman and the man are talking.
 Language: [PARTIAL]
-Gloss: man.NOM TALK-PROG
+Gloss: man.NOM-DEF TALK-PROG
 Status: partial
 Reason: not realized: woman
 [Translation]
 English: I do not see three cats.
-Language: dariryo sedomas hittasunim karintao
-Gloss: 1SG THREE cat.PL.ACC SEE-NEG
+Language: pempula pabanginad manlahitde seadisw
+Gloss: 1SG SEE-NEG cat.PL.ACC THREE
 Status: ok
 Reason: complete
 [Translation]
@@ -54,8 +54,8 @@ Status: partial
 Reason: not realized: black
 [Translation]
 English: Two children played in the garden.
-Language: izumono auta tadorot puwo kyogemy
-Gloss: TWO child.PL.NOM PLAY IN garden.LOC
+Language: urahnyide bungkit terterlwa keada matiriml
+Gloss: child.PL.NOM TWO PLAY IN garden.LOC-DEF
 Status: ok
 Reason: complete
 [Translation]
@@ -66,80 +66,80 @@ Status: partial
 Reason: not realized: tiger
 [Translation]
 English: The sun shines.
-Language: datta tochi
-Gloss: sun.NOM SHINE
+Language: saikemul bersa
+Gloss: sun.NOM-DEF SHINE
 Status: ok
 Reason: complete
 [Translation]
 English: The sun is shining.
-Language: datta tochina
-Gloss: sun.NOM SHINE-PROG
+Language: saikemul membarsa
+Gloss: sun.NOM-DEF SHINE-PROG
 Status: ok
 Reason: complete
 [Translation]
 English: The sun shone.
-Language: datta tochi
-Gloss: sun.NOM SHINE-PST
+Language: saikemul bersadena
+Gloss: sun.NOM-DEF SHINE-PST
 Status: ok
 Reason: complete
 [Translation]
 English: The sun will shine.
-Language: datta tochi
-Gloss: sun.NOM SHINE-FUT
+Language: saikemul ubarsa
+Gloss: sun.NOM-DEF SHINE-FUT
 Status: ok
 Reason: complete
 [Translation]
 English: The sun has been shining.
 Language: [PARTIAL]
-Gloss: sun.NOM SHINE
+Gloss: sun.NOM-DEF SHINE
 Status: partial
 Reason: not realized: perfect aspect
 [Translation]
 English: The sun is shining again.
-Language: datta arunim tochina
-Gloss: sun.NOM again.ACC SHINE-PROG
+Language: saikemul membarsa manjar
+Gloss: sun.NOM-DEF SHINE-PROG again.ACC
 Status: ok
 Reason: complete
 [Translation]
 English: The sun will shine tomorrow.
-Language: datta tochi zui
-Gloss: sun.NOM SHINE-FUT
+Language: saikemul ubarsa rangaha
+Gloss: sun.NOM-DEF SHINE-FUT
 Status: ok
 Reason: complete
 [Translation]
 English: The sun shines brightly.
 Language: [PARTIAL]
-Gloss: sun.NOM SHINE
+Gloss: sun.NOM-DEF SHINE
 Status: partial
 Reason: not realized: brightly
 [Translation]
 English: The bright sun shines.
 Language: [PARTIAL]
-Gloss: sun.NOM SHINE
+Gloss: sun.NOM-DEF SHINE
 Status: partial
 Reason: not realized: bright
 [Translation]
 English: The sun is rising now.
-Language: datta osomasanim sewapyuna
-Gloss: sun.NOM now.ACC RISE-PROG
+Language: saikemul memtarisika manaciri
+Gloss: sun.NOM-DEF RISE-PROG now.ACC
 Status: ok
 Reason: complete
 [Translation]
 English: All the people shouted.
 Language: [PARTIAL]
-Gloss: all.NOM SHOUT
+Gloss: all.NOM-DEF SHOUT
 Status: partial
 Reason: not realized: people
 [Translation]
 English: Some of the people shouted.
 Language: [PARTIAL]
-Gloss: of.NOM SHOUT
+Gloss: of.NOM-DEF SHOUT
 Status: partial
 Reason: not realized: people
 [Translation]
 English: Many of the people shouted twice.
 Language: [PARTIAL]
-Gloss: of.NOM SHOUT
+Gloss: of.NOM-DEF SHOUT
 Status: partial
 Reason: not realized: people
 [Translation]
@@ -150,20 +150,20 @@ Status: partial
 Reason: not realized: happy, people
 [Translation]
 English: The kitten jumped up.
-Language: hittasu yaroonim byawo
-Gloss: kitten.NOM up.ACC JUMP
+Language: lelehitl berbola mankadisko
+Gloss: kitten.NOM-DEF JUMP up.ACC
 Status: ok
 Reason: complete
 [Translation]
 English: The kitten jumped onto the table.
 Language: [PARTIAL]
-Gloss: kitten.NOM table.ACC JUMP
+Gloss: kitten.NOM-DEF JUMP table.ACC-DEF
 Status: partial
 Reason: not realized: onto
 [Translation]
 English: My little kitten walked away.
 Language: [PARTIAL]
-Gloss: kitten.NOM away.ACC WALK
+Gloss: kitten.NOM WALK away.ACC
 Status: partial
 Reason: not realized: little
 [Translation]
@@ -180,8 +180,8 @@ Status: unsupported-grammar
 Reason: unsupported sentence structure
 [Translation]
 English: The kitten is playing in the rain.
-Language: hittasu tadorotana wahedes kyogemy
-Gloss: kitten.NOM PLAY-PROG IN rain.LOC
+Language: lelehitl memtartirla keada dikirayl
+Gloss: kitten.NOM-DEF PLAY-PROG IN rain.LOC-DEF
 Status: ok
 Reason: complete
 [Translation]
@@ -193,21 +193,21 @@ Reason: unsupported sentence structure
 [Translation]
 English: Soon the rain will stop.
 Language: [PARTIAL]
-Gloss: soon.NOM stop.ACC RAIN
+Gloss: soon.NOM-DEF RAIN stop.ACC
 Status: partial
 Reason: not realized: future/modal
 [Translation]
 English: I hope the rain stops soon.
 Language: [PARTIAL]
-Gloss: 1SG soon.ACC HOPE
+Gloss: 1SG HOPE soon.ACC-DEF
 Status: partial
 Reason: not realized: rain, stops
 [Translation]
 English: Once wild animals lived here.
 Language: [PARTIAL]
-Gloss: animal.NOM here.ACC LIVE
+Gloss: animal.NOM LIVE here.ACC
 Status: partial
-Reason: not realized: wild
+Reason: unrecognized: wild
 [Translation]
 English: Slowly she looked around.
 Language: [UNRESOLVED]
@@ -216,7 +216,7 @@ Status: unsupported-grammar
 Reason: unsupported sentence structure
 [Translation]
 English: Go away!
-Language: hyanos zunsedanim
+Language: catbikjad manlar
 Gloss: go-IMP away.ACC
 Status: ok
 Reason: complete
@@ -229,7 +229,7 @@ Reason: not realized: possessive relation
 [Translation]
 English: You should go.
 Language: [PARTIAL]
-Gloss: 2SG go.ACC SHOULD
+Gloss: 2SG SHOULD go.ACC
 Status: partial
 Reason: not realized: modal meaning
 [Translation]
@@ -240,26 +240,26 @@ Status: unsupported-grammar
 Reason: unsupported sentence structure
 [Translation]
 English: He will arrive soon.
-Language: hinmasu shitteranim altis
-Gloss: 3SG soon.ACC ARRIVE-FUT
+Language: ang udaingana manmatinye
+Gloss: 3SG ARRIVE-FUT soon.ACC
 Status: ok
 Reason: complete
 [Translation]
 English: The baby’s ball has rolled away.
 Language: [PARTIAL]
-Gloss: ball.NOM away.ACC ROLL
+Gloss: ball.NOM-DEF ROLL away.ACC
 Status: partial
 Reason: not realized: baby's, perfect aspect, possessive relation
 [Translation]
 English: The two boys are working together.
 Language: [PARTIAL]
-Gloss: TWO boy.PL.NOM together.ACC WORK-PROG
+Gloss: boy.PL.NOM-DEF TWO WORK-PROG together.ACC
 Status: partial
 Reason: not realized: comparison
 [Translation]
 English: This mist will probably clear away.
 Language: [PARTIAL]
-Gloss: THIS mist.NOM away.ACC PROBABLY-FUT
+Gloss: THIS mist.NOM PROBABLY-FUT away.ACC
 Status: partial
 Reason: not realized: clear
 [Translation]
@@ -271,25 +271,25 @@ Reason: unrecognized: everywhere; not realized: lovely
 [Translation]
 English: We should eat more slowly.
 Language: [PARTIAL]
-Gloss: 1PL more.ACC SHOULD
+Gloss: 1PL SHOULD more.ACC
 Status: partial
 Reason: not realized: eat, slowly, modal meaning
 [Translation]
 English: You have come too soon.
 Language: [PARTIAL]
-Gloss: 2SG soon.ACC HAVE
+Gloss: 2SG HAVE soon.ACC
 Status: partial
 Reason: not realized: come
 [Translation]
 English: You must write more neatly.
 Language: [PARTIAL]
-Gloss: 2SG more.ACC MUST
+Gloss: 2SG MUST more.ACC
 Status: partial
 Reason: unrecognized: neatly; not realized: write, modal meaning
 [Translation]
 English: Directly opposite stands a wonderful palace.
 Language: [PARTIAL]
-Gloss: opposite.NOM palace.ACC STAND
+Gloss: opposite.NOM STAND palace.ACC
 Status: partial
 Reason: not realized: directly, wonderful
 [Translation]
@@ -300,32 +300,32 @@ Status: unsupported-grammar
 Reason: unsupported sentence structure
 [Translation]
 English: My cat is black.
-Language: hittasu ademasuna
+Language: lehit memlaitinsa
 Gloss: cat.NOM BLACK-PROG
 Status: ok
 Reason: complete
 [Translation]
 English: The little girl’s doll is broken.
 Language: [PARTIAL]
-Gloss: doll.NOM BROKEN-PROG
+Gloss: girl.NOM-DEF BROKEN-PROG
 Status: partial
-Reason: not realized: little, girl's, possessive relation
+Reason: unrecognized: doll; not realized: little, possessive relation
 [Translation]
 English: I usually sleep soundly.
 Language: [PARTIAL]
-Gloss: 1SG sleep.ACC USUALLY
+Gloss: 1SG USUALLY sleep.ACC
 Status: partial
 Reason: not realized: soundly
 [Translation]
 English: The children ran after Jack.
-Language: auta soonim henuzuk
-Gloss: child.PL.NOM after.ACC RUN-PST
+Language: urahnyidel tusidenwa mankahisah
+Gloss: child.PL.NOM-DEF RUN-PST after.ACC
 Status: ok
 Reason: complete
 [Translation]
 English: I can play after school.
 Language: [PARTIAL]
-Gloss: 1SG school.ACC CAN
+Gloss: 1SG CAN school.ACC
 Status: partial
 Reason: not realized: play, modal meaning
 [Translation]
@@ -336,14 +336,14 @@ Status: partial
 Reason: not realized: village
 [Translation]
 English: We arrived at the river.
-Language: owa altis bayuyos waminai
-Gloss: 1PL ARRIVE AT river.LOC
+Language: unan duanganst berpenc wymingil
+Gloss: 1PL ARRIVE AT river.LOC-DEF
 Status: ok
 Reason: complete
 [Translation]
 English: I have been waiting for you.
 Language: [PARTIAL]
-Gloss: 1SG you.ACC HAVE
+Gloss: 1SG HAVE you.ACC
 Status: partial
 Reason: not realized: waiting, perfect aspect
 [Translation]
@@ -355,19 +355,19 @@ Reason: missing vocabulary: campers
 [Translation]
 English: A little girl with a kitten sat near me.
 Language: [PARTIAL]
-Gloss: kitten.NOM me.ACC SIT-PST
+Gloss: kitten.NOM SIT-PST me.ACC
 Status: partial
 Reason: not realized: little, girl
 [Translation]
 English: The child waited at the door for her father.
 Language: [PARTIAL]
-Gloss: child.NOM WAIT AT father.LOC
+Gloss: child.NOM-DEF WAIT AT father.LOC-DEF
 Status: partial
 Reason: not realized: door
 [Translation]
 English: Yesterday the oldest girl in the village lost her kitten.
 Language: [PARTIAL]
-Gloss: village.NOM kitten.ACC LOSE-PST 3SG.DAT 
+Gloss: village.NOM-DEF LOSE-PST kitten.ACC 3SG.DAT 
 Status: partial
 Reason: not realized: oldest, girl, comparison
 [Translation]
@@ -384,8 +384,8 @@ Status: unsupported-grammar
 Reason: unsupported sentence structure
 [Translation]
 English: Did the man leave?
-Language: anchita heyanyo nupya
-Gloss: man.NOM LEAVE-PST Q
+Language: kerbera jahaingl gajadena
+Gloss: man.NOM-DEF LEAVE-PST Q
 Status: ok
 Reason: complete
 [Translation]
@@ -408,16 +408,16 @@ Status: unsupported-grammar
 Reason: unsupported sentence structure
 [Translation]
 English: Does the robin sing in the rain?
-Language: antas zuheazokez wahedes kyogemy nupya
-Gloss: robin.NOM SING IN rain.LOC Q
-Status: ok
-Reason: complete
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: robin
 [Translation]
 English: Are you going with us to the concert?
-Language: den ochittenim wahena chikyaro bomasu nupya
-Gloss: 2SG us.PL.ACC GOING-PROG TO concert.DAT Q
-Status: ok
-Reason: complete
+Language: [PARTIAL]
+Gloss: 2SG GOING-PROG us.PL.ACC Q
+Status: partial
+Reason: unrecognized: concert
 [Translation]
 English: Have you ever travelled in the jungle?
 Language: [UNRESOLVED]
@@ -427,21 +427,21 @@ Reason: unsupported sentence structure
 [Translation]
 English: We sailed down the river for several miles.
 Language: [PARTIAL]
-Gloss: 1PL several.ACC SAIL
+Gloss: 1PL SAIL several.ACC-DEF
 Status: partial
 Reason: unrecognized: miles; not realized: river
 [Translation]
 English: Everybody knows about hunting.
-Language: karitsu ettaronim zuchibu
-Gloss: everybody.NOM hunting.ACC KNOW
+Language: pingain maksipa mansatirus
+Gloss: everybody.NOM KNOW hunting.ACC
 Status: ok
 Reason: complete
 [Translation]
 English: On a Sunny morning after the solstice we started for the mountains.
 Language: [PARTIAL]
-Gloss: we.NOM mountain.ACC START
+Gloss: we.NOM-DEF START mountain.ACC-DEF
 Status: partial
-Reason: not realized: morning, solstice
+Reason: unrecognized: solstice; not realized: morning
 [Translation]
 English: Tom laughed at the monkey’s tricks.
 Language: [UNRESOLVED]
@@ -451,7 +451,7 @@ Reason: unsupported sentence structure
 [Translation]
 English: An old man with a walking stick stood beside the fence.
 Language: [PARTIAL]
-Gloss: with.NOM fence.ACC WALKING
+Gloss: with.NOM WALKING fence.ACC-DEF
 Status: partial
 Reason: not realized: old, man, stick, stood, beside
 [Translation]
@@ -463,15 +463,15 @@ Reason: unsupported construction: passive
 [Translation]
 English: The little seeds waited patiently under the snow for the warm spring sun.
 Language: [PARTIAL]
-Gloss: little.NOM sun.ACC SEED
+Gloss: little.NOM-DEF SEED sun.ACC-DEF
 Status: partial
 Reason: not realized: waited, patiently, snow, warm, spring
 [Translation]
 English: Many little girls with wreaths of flowers on their heads danced around the bonfire.
 Language: [PARTIAL]
-Gloss: their.NOM bonfire.ACC HEAD
+Gloss: their.NOM HEAD around.ACC-DEF
 Status: partial
-Reason: unrecognized: wreaths; not realized: little, girls, flowers, danced
+Reason: unrecognized: wreaths, bonfire; not realized: little, girls, flowers, danced
 [Translation]
 English: The cover of the basket fell to the floor.
 Language: [UNRESOLVED]
@@ -482,20 +482,20 @@ Reason: unsupported sentence structure
 English: The first boy in the line stopped at the entrance.
 Language: [UNRESOLVED]
 Gloss: [UNRESOLVED]
-Status: unsupported-grammar
-Reason: unsupported sentence structure
+Status: unresolved-vocabulary
+Reason: missing vocabulary: entrance
 [Translation]
 English: On the top of the hill in a little hut lived a wise old woman.
 Language: [PARTIAL]
-Gloss: hut.NOM woman.ACC LIVE
+Gloss: hut.NOM LIVE woman.ACC
 Status: partial
 Reason: not realized: top, hill, little, wise, old
 [Translation]
 English: During our residence in the country we often walked in the pastures.
 Language: [PARTIAL]
-Gloss: often.NOM WALK IN pasture.LOC
+Gloss: often.NOM-DEF WALK IN pasture.LOC-DEF
 Status: partial
-Reason: not realized: residence, country
+Reason: unrecognized: residence; not realized: country
 [Translation]
 English: When will your guests from the city arrive?
 Language: [UNRESOLVED]
@@ -505,19 +505,19 @@ Reason: unsupported sentence structure
 [Translation]
 English: Near the mouth of the river, its course turns sharply towards the East.
 Language: [PARTIAL]
-Gloss: course.NOM east.PL.ACC TURN
+Gloss: course.NOM-DEF TURN east.PL.ACC-DEF
 Status: partial
 Reason: not realized: mouth, river, sharply
 [Translation]
 English: Between the two lofty mountains lay a fertile valley.
 Language: [PARTIAL]
-Gloss: TWO mountain.PL.NOM valley.ACC LAY
+Gloss: mountain.PL.NOM-DEF TWO LAY valley.ACC
 Status: partial
-Reason: not realized: lofty, fertile
+Reason: unrecognized: lofty; not realized: fertile
 [Translation]
 English: Among the wheat grew tall red poppies.
 Language: [PARTIAL]
-Gloss: wheat.NOM poppy.ACC GROW-PST
+Gloss: wheat.NOM-DEF GROW-PST poppy.ACC
 Status: partial
 Reason: not realized: tall, red
 [Translation]
@@ -529,55 +529,55 @@ Reason: unsupported sentence structure
 [Translation]
 English: The sun looked down through the branches upon the children at play.
 Language: [PARTIAL]
-Gloss: sun.NOM child.PL.ACC LOOK AT play.LOC
+Gloss: sun.NOM-DEF LOOK child.PL.ACC-DEF AT play.LOC
 Status: partial
 Reason: not realized: branches
 [Translation]
 English: The west wind blew across my face like a friendly caress.
 Language: [PARTIAL]
-Gloss: west.NOM caress.PL.ACC WIND
+Gloss: west.NOM-DEF WIND friendly.PL.ACC
 Status: partial
-Reason: not realized: blew, across, face, like, friendly
+Reason: unrecognized: caress; not realized: blew, across, face, like
 [Translation]
 English: The spool of thread rolled across the floor.
 Language: [PARTIAL]
-Gloss: thread.NOM floor.PL.ACC ROLL
+Gloss: thread.NOM-DEF ROLL floor.PL.ACC-DEF
 Status: partial
-Reason: not realized: spool, across
+Reason: unrecognized: spool; not realized: across
 [Translation]
 English: A box of growing plants stood in the Window.
 Language: [PARTIAL]
-Gloss: of.NOM stand.ACC GROW IN window.LOC
+Gloss: of.NOM GROW stand.ACC IN window.LOC-DEF
 Status: partial
 Reason: not realized: box, plants
 [Translation]
 English: I am very happy.
-Language: dariryo jinattanim rimuzuana
-Gloss: 1SG happy.ACC VERY-PROG
+Language: pempula memamingad manmanipat
+Gloss: 1SG VERY-PROG happy.ACC
 Status: ok
 Reason: complete
 [Translation]
 English: These oranges are juicy.
-Language: nataqui owomas gokuna
-Gloss: THESE orange.PL.NOM JUICY-PROG
-Status: ok
-Reason: complete
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: juicy
 [Translation]
 English: Sea water is salty.
-Language: [PARTIAL]
-Gloss: water.NOM SALTY-PROG
-Status: partial
-Reason: not realized: sea
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: salty
 [Translation]
 English: The streets are full of people.
 Language: [PARTIAL]
-Gloss: street.NOM of.ACC FULL-PROG
+Gloss: street.NOM-DEF FULL-PROG of.ACC
 Status: partial
 Reason: not realized: people
 [Translation]
 English: Sugar tastes sweet.
-Language: ryawa deshitsanim lua
-Gloss: sugar.NOM sweet.ACC TASTE
+Language: lebiata lebebiha manlasitan
+Gloss: sugar.NOM TASTE sweet.ACC
 Status: ok
 Reason: complete
 [Translation]
@@ -589,7 +589,7 @@ Reason: unsupported sentence structure
 [Translation]
 English: The little girl seemed lonely.
 Language: [PARTIAL]
-Gloss: girl.NOM SEEM
+Gloss: girl.NOM-DEF SEEM
 Status: partial
 Reason: not realized: little, lonely
 [Translation]
@@ -601,21 +601,21 @@ Reason: unsupported sentence structure
 [Translation]
 English: I have lost my blanket.
 Language: [PARTIAL]
-Gloss: 1SG blanket.ACC HAVE
+Gloss: 1SG HAVE blanket.ACC
 Status: partial
 Reason: not realized: lost
 [Translation]
 English: A robin has built his nest in the apple tree.
-Language: [PARTIAL]
-Gloss: robin.NOM NEST IN tree.LOC
-Status: partial
-Reason: not realized: built, apple
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: robin
 [Translation]
 English: At noon we ate our lunch by the roadside.
 Language: [PARTIAL]
-Gloss: we.NOM roadside.ACC EAT-PST
+Gloss: we.NOM EAT-PST by.ACC-DEF
 Status: partial
-Reason: not realized: noon, lunch
+Reason: unrecognized: roadside; not realized: noon, lunch
 [Translation]
 English: Mr. Jones made a knife for his little boy.
 Language: [UNRESOLVED]
@@ -654,16 +654,16 @@ Status: unsupported-grammar
 Reason: unsupported sentence structure
 [Translation]
 English: Are you waiting for me?
-Language: den fesunim judatana nupya
-Gloss: 2SG me.ACC WAIT-PROG Q
+Language: kerbera terberu memsaktilajad mantampida
+Gloss: 2SG WAIT-PROG me.ACC Q
 Status: ok
 Reason: complete
 [Translation]
 English: Is this the first kitten of the litter?
 Language: [UNRESOLVED]
 Gloss: [UNRESOLVED]
-Status: unsupported-grammar
-Reason: unsupported sentence structure
+Status: unresolved-vocabulary
+Reason: missing vocabulary: litter
 [Translation]
 English: Are these shoes too big for you?
 Language: [UNRESOLVED]
@@ -672,8 +672,8 @@ Status: unsupported-grammar
 Reason: unsupported sentence structure
 [Translation]
 English: How wide is the River?
-Language: todasha bayuyosanim kotarumana nupya
-Gloss: wide.NOM river.ACC THE-PROG Q
+Language: kerbera berinta membatinga manwymangi
+Gloss: wide.NOM THE-PROG river.ACC Q
 Status: ok
 Reason: complete
 [Translation]
@@ -684,7 +684,7 @@ Status: unsupported-grammar
 Reason: unsupported sentence structure
 [Translation]
 English: Sit here by me.
-Language: jietemas fesunim
+Language: berhafabikjad mantampida
 Gloss: sit-IMP me.ACC
 Status: ok
 Reason: complete
@@ -696,7 +696,7 @@ Status: partial
 Reason: not realized: secret
 [Translation]
 English: Come with us.
-Language: ajimasus ochittenim
+Language: tenemahbikjad manmandi
 Gloss: come-IMP us.PL.ACC
 Status: ok
 Reason: complete
@@ -714,32 +714,32 @@ Status: unsupported-grammar
 Reason: unsupported sentence structure
 [Translation]
 English: Have some tea.
-Language: sohos onenainim
+Language: kernyabikjad mandaritar
 Gloss: have-IMP tea.ACC
 Status: ok
 Reason: complete
 [Translation]
 English: Pip and his dog were great friends.
-Language: janni ryazugyanim nowahyana
-Gloss: dog.NOM friend.ACC GREAT-PST-PROG
+Language: secamah membarlibadenwa manhasi
+Gloss: dog.NOM GREAT-PST-PROG friend.ACC
 Status: ok
 Reason: complete
 [Translation]
 English: John and Elizabeth are brother and sister.
-Language: henta ohyohenim atana
-Gloss: and.NOM sister.ACC BROTHER-PROG
+Language: menggil memtainyaka mankardika
+Gloss: and.NOM BROTHER-PROG sister.ACC
 Status: ok
 Reason: complete
 [Translation]
 English: You and I will go together.
 Language: [PARTIAL]
-Gloss: 2SG together.ACC AND
+Gloss: 2SG AND together.ACC
 Status: partial
 Reason: not realized: go, comparison, future/modal
 [Translation]
 English: They opened all the doors and windows.
 Language: [PARTIAL]
-Gloss: 3PL window.ACC OPEN
+Gloss: 3PL OPEN window.ACC-DEF
 Status: partial
 Reason: not realized: doors
 [Translation]
@@ -757,9 +757,9 @@ Reason: unsupported sentence structure
 [Translation]
 English: Does the sky look blue or gray?
 Language: [PARTIAL]
-Gloss: sky.NOM gray.ACC LOOK Q
+Gloss: sky.NOM-DEF LOOK or.ACC Q
 Status: partial
-Reason: not realized: blue
+Reason: unrecognized: gray; not realized: blue
 [Translation]
 English: Come with your father or mother.
 Language: [PARTIAL]
@@ -775,39 +775,39 @@ Reason: unsupported sentence structure
 [Translation]
 English: He played a tune on his wonderful flute.
 Language: [PARTIAL]
-Gloss: 3SG tune.ACC PLAY ON flute.LOC
+Gloss: 3SG PLAY ON flute.LOC
 Status: partial
-Reason: not realized: wonderful
+Reason: unrecognized: tune; not realized: wonderful
 [Translation]
 English: Toward the end of August the days grow much shorter.
 Language: [PARTIAL]
-Gloss: day.NOM much.ACC GROW
+Gloss: day.NOM-DEF GROW much.ACC
 Status: partial
 Reason: not realized: end, shorter, comparison
 [Translation]
 English: A company of soldiers marched over the hill and across the meadow.
 Language: [PARTIAL]
-Gloss: soldier.NOM meadow.PL.ACC MARCH
+Gloss: soldier.NOM MARCH meadow.PL.ACC-DEF
 Status: partial
 Reason: not realized: company, hill, across
 [Translation]
 English: The first part of the story is very interesting.
 Language: [PARTIAL]
-Gloss: story.NOM VERY-PROG
+Gloss: of.NOM-DEF VERY-PROG
 Status: partial
-Reason: not realized: first, part, interesting
+Reason: unrecognized: story; not realized: first, part, interesting
 [Translation]
 English: The crow dropped some pebbles into the pitcher and raised the water to the brim.
 Language: [PARTIAL]
-Gloss: and.NOM water.ACC RAISE TO brim.DAT
+Gloss: and.NOM-DEF RAISE water.ACC-DEF
 Status: partial
-Reason: not realized: crow, dropped, pebbles, into, pitcher, coordinated clause/predicate
+Reason: unrecognized: crow, pebbles, pitcher, brim; not realized: dropped, into, coordinated clause/predicate
 [Translation]
 English: The baby clapped her hands and laughed in glee.
 Language: [PARTIAL]
-Gloss: and.NOM LAUGH IN glee.LOC
+Gloss: and.NOM-DEF LAUGH
 Status: partial
-Reason: not realized: baby, clapped, hands, coordinated clause/predicate
+Reason: unrecognized: glee; not realized: baby, clapped, hands, coordinated clause/predicate
 [Translation]
 English: Stop your game and be quiet.
 Language: [PARTIAL]
@@ -817,19 +817,19 @@ Reason: not realized: game
 [Translation]
 English: The sound of the drums grew louder and louder.
 Language: [PARTIAL]
-Gloss: drum.NOM and.ACC GROW-PST
+Gloss: drum.NOM-DEF GROW-PST and.ACC
 Status: partial
 Reason: not realized: sound, louder, comparison
 [Translation]
 English: Do you like summer or winter better?
 Language: [PARTIAL]
-Gloss: 2SG better.ACC LIKE Q
+Gloss: 2SG LIKE better.ACC Q
 Status: partial
 Reason: not realized: summer, winter, comparison
 [Translation]
 English: That boy will have a wonderful trip.
 Language: [PARTIAL]
-Gloss: THAT boy.NOM trip.ACC HAVE-FUT
+Gloss: THAT boy.NOM HAVE-FUT trip.ACC
 Status: partial
 Reason: not realized: wonderful
 [Translation]
@@ -837,11 +837,11 @@ English: They popped corn, and then sat around the fire and ate it.
 Language: [UNRESOLVED]
 Gloss: [UNRESOLVED]
 Status: unresolved-vocabulary
-Reason: missing vocabulary: popped
+Reason: missing vocabulary: popped, corn
 [Translation]
 English: They won the first two games, but lost the last one.
 Language: [PARTIAL]
-Gloss: 3PL TWO one.PL.ACC WIN-PST
+Gloss: 3PL WIN-PST one.PL.ACC-DEF TWO
 Status: partial
 Reason: not realized: first, games, lost, last, coordinated clause/predicate
 [Translation]
@@ -859,7 +859,7 @@ Reason: unsupported construction: appositive
 [Translation]
 English: Aha! I have caught you!
 Language: [PARTIAL]
-Gloss: i.NOM you.ACC HAVE
+Gloss: i.NOM HAVE you.ACC
 Status: partial
 Reason: not realized: caught, imperative mood
 [Translation]
@@ -877,49 +877,49 @@ Reason: missing vocabulary: dear
 [Translation]
 English: Alas! that news is sad indeed!
 Language: [PARTIAL]
-Gloss: THAT news.PL.NOM indeed.ACC SAD-PROG
+Gloss: THAT news.PL.NOM SAD-PROG indeed.ACC
 Status: partial
 Reason: not realized: imperative mood
 [Translation]
 English: Whew! that cold wind freezes my nose!
 Language: [PARTIAL]
-Gloss: THAT cold.NOM nose.ACC WIND
+Gloss: THAT cold.NOM WIND nose.ACC
 Status: partial
 Reason: not realized: freezes, imperative mood
 [Translation]
 English: Are you warm enough now?
-Language: den osomasanim hejusena nupya
-Gloss: 2SG now.ACC WARM-PROG Q
+Language: kerbera terberu memsarlidejad manaciri
+Gloss: 2SG WARM-PROG now.ACC Q
 Status: ok
 Reason: complete
 [Translation]
 English: They heard the warning too late.
 Language: [PARTIAL]
-Gloss: 3PL late.ACC HEAR-PST
+Gloss: 3PL HEAR-PST late.ACC-DEF
 Status: partial
 Reason: not realized: warning
 [Translation]
 English: We are a brave people, and love our country.
 Language: [UNRESOLVED]
 Gloss: [UNRESOLVED]
-Status: unsupported-grammar
-Reason: unsupported sentence structure
+Status: unresolved-vocabulary
+Reason: missing vocabulary: brave
 [Translation]
 English: All the children came except Mary.
-Language: auta itanim ajimasu
-Gloss: child.PL.NOM except.ACC COME-PST
+Language: urahnyidel tenemahdenwa manhabirka
+Gloss: child.PL.NOM-DEF COME-PST except.ACC
 Status: ok
 Reason: complete
 [Translation]
 English: Jack seized a handful of pebbles and threw them into the lake.
 Language: [PARTIAL]
-Gloss: and.NOM lake.ACC THROW-PST 3PL.DAT 
+Gloss: and.NOM THROW-PST lake.ACC-DEF 3PL.DAT 
 Status: partial
-Reason: unrecognized: seized; not realized: handful, pebbles, into
+Reason: unrecognized: seized, handful, pebbles; not realized: into
 [Translation]
 English: This cottage stood on a low hill, at some distance from the village.
 Language: [PARTIAL]
-Gloss: THIS cottage.NOM STAND-PST ON village.LOC
+Gloss: THIS cottage.NOM STAND-PST ON village.LOC-DEF
 Status: partial
 Reason: not realized: low, hill, distance
 [Translation]
@@ -936,20 +936,20 @@ Status: unsupported-grammar
 Reason: unsupported sentence structure
 [Translation]
 English: The river knows the way to the sea.
-Language: bayuyos modaryonim zuchibu chodasuaro bomasu
-Gloss: river.NOM way.ACC KNOW TO sea.DAT
+Language: wymingil maksipa manbairikal kelihan kesmanl
+Gloss: river.NOM-DEF KNOW way.ACC-DEF TO sea.DAT-DEF
 Status: ok
 Reason: complete
 [Translation]
 English: The boat sails away, like a bird on the wing.
 Language: [PARTIAL]
-Gloss: boat.NOM bird.ACC SAIL ON wing.LOC
+Gloss: boat.NOM-DEF SAIL bird.ACC ON wing.LOC-DEF
 Status: partial
 Reason: not realized: like
 [Translation]
 English: They looked cautiously about, but saw nothing.
 Language: [PARTIAL]
-Gloss: 3PL nothing.ACC LOOK
+Gloss: 3PL LOOK nothing.ACC
 Status: partial
 Reason: unrecognized: cautiously; not realized: saw, coordinated clause/predicate
 [Translation]
@@ -961,25 +961,25 @@ Reason: unsupported construction: appositive
 [Translation]
 English: We visited my uncle’s village, the largest village in the world.
 Language: [PARTIAL]
-Gloss: 1PL village.ACC VISIT IN world.LOC
+Gloss: 1PL VISIT village.ACC-DEF IN world.LOC-DEF
 Status: partial
 Reason: not realized: uncle's, largest, possessive relation, comparison
 [Translation]
 English: We learn something new each day.
 Language: [PARTIAL]
-Gloss: 1PL day.ACC LEARN
+Gloss: 1PL LEARN day.ACC
 Status: partial
 Reason: not realized: something, new
 [Translation]
 English: The market begins five minutes earlier this week.
 Language: [PARTIAL]
-Gloss: market.NOM THIS FIVE week.PL.ACC BEGIN
+Gloss: market.NOM-DEF BEGIN THIS week.PL.ACC FIVE
 Status: partial
 Reason: not realized: minutes, earlier, comparison
 [Translation]
 English: Did you find the distance too great?
 Language: [PARTIAL]
-Gloss: 2SG great.ACC FIND-PST Q
+Gloss: 2SG FIND-PST great.ACC-DEF Q
 Status: partial
 Reason: not realized: distance
 [Translation]
@@ -990,28 +990,28 @@ Status: unsupported-grammar
 Reason: unsupported sentence structure
 [Translation]
 English: Madam, I will obey your command.
-Language: wayorum jamumanim hohomas
-Gloss: i.NOM command.ACC OBEY-FUT
+Language: perak usainawa mangampik
+Gloss: i.NOM OBEY-FUT command.ACC
 Status: ok
 Reason: complete
 [Translation]
 English: Here under this tree they gave their guests a splendid feast.
 Language: [PARTIAL]
-Gloss: THIS they.NOM feast.ACC GIVE-PST
+Gloss: THIS they.NOM GIVE-PST feast.ACC
 Status: partial
-Reason: not realized: tree, guests, splendid
+Reason: unrecognized: splendid; not realized: tree, guests
 [Translation]
 English: In winter I get up at night, and dress by yellow candlelight.
 Language: [PARTIAL]
-Gloss: i.NOM up.ACC GET AT candlelight.PL.LOC
+Gloss: i.NOM GET up.ACC AT yellow.PL.LOC
 Status: partial
-Reason: not realized: winter, night, dress, yellow
+Reason: unrecognized: candlelight; not realized: winter, night, dress
 [Translation]
 English: Tell the last part of that story again.
 Language: [PARTIAL]
-Gloss: tell-IMP THAT again.ACC
+Gloss: tell-IMP THAT again.ACC-DEF
 Status: partial
-Reason: not realized: last, part, story
+Reason: unrecognized: story; not realized: last, part
 [Translation]
 English: Be quick or you will be too late.
 Language: [UNRESOLVED]
@@ -1057,36 +1057,36 @@ Reason: unsupported sentence structure
 [Translation]
 English: We consider them our faithful friends.
 Language: [PARTIAL]
-Gloss: 1PL friend.ACC CONSIDER 3PL.DAT 
+Gloss: 1PL CONSIDER friend.ACC 3PL.DAT 
 Status: partial
-Reason: not realized: faithful
+Reason: unrecognized: faithful
 [Translation]
 English: We will make this place our home.
 Language: [PARTIAL]
-Gloss: 1PL THIS home.ACC MAKE-FUT
+Gloss: 1PL MAKE-FUT THIS home.ACC
 Status: partial
 Reason: not realized: place
 [Translation]
 English: The squirrels make their nests warm and snug with soft moss and leaves.
 Language: [PARTIAL]
-Gloss: squirrel.NOM leaf.PL.ACC MAKE
+Gloss: squirrel.NOM-DEF MAKE leaf.PL.ACC
 Status: partial
 Reason: unrecognized: snug; not realized: nests, warm, soft, moss, coordinated clause/predicate
 [Translation]
 English: The little girl made the doll’s dress herself.
 Language: [PARTIAL]
-Gloss: girl.NOM dress.PL.ACC MAKE-PST
+Gloss: girl.NOM-DEF MAKE-PST dress.PL.ACC-DEF
 Status: partial
-Reason: not realized: little, doll's, possessive relation
+Reason: unrecognized: doll's; not realized: little, possessive relation
 [Translation]
 English: I hurt myself.
-Language: dariryo deyuzam
+Language: pempula kembantad
 Gloss: 1SG HURT
 Status: ok
 Reason: complete
 [Translation]
 English: She was talking to herself.
-Language: hinmasu zemana
+Language: ang memaninsidena
 Gloss: 3SG TALK-PST-PROG
 Status: ok
 Reason: complete
@@ -1099,7 +1099,7 @@ Reason: unrecognized: trustworthy
 [Translation]
 English: We could see ourselves in the water.
 Language: [PARTIAL]
-Gloss: 1PL see.ACC COULD IN water.LOC
+Gloss: 1PL COULD see.ACC IN water.LOC-DEF
 Status: partial
 Reason: not realized: modal meaning
 [Translation]
@@ -1111,12 +1111,12 @@ Reason: unsupported sentence structure
 [Translation]
 English: I feel ashamed of myself.
 Language: [PARTIAL]
-Gloss: 1SG of.ACC FEEL
+Gloss: 1SG FEEL of.ACC
 Status: partial
 Reason: unrecognized: ashamed
 [Translation]
 English: Sit here by yourself.
-Language: jietemas wodasunim
+Language: berhafabikjad mankahis
 Gloss: sit-IMP by.ACC
 Status: ok
 Reason: complete
@@ -1129,7 +1129,7 @@ Reason: missing vocabulary: embroidered, national
 [Translation]
 English: They wore red caps, the symbol of liberty.
 Language: [PARTIAL]
-Gloss: 3PL liberty.ACC WEAR-PST
+Gloss: 3PL WEAR-PST liberty.ACC-DEF
 Status: partial
 Reason: not realized: red, caps, symbol
 [Translation]
@@ -1153,7 +1153,7 @@ Reason: not realized: thought, like
 [Translation]
 English: Every spring and fall our cousins pay us a long visit.
 Language: [PARTIAL]
-Gloss: every.NOM visit.PL.ACC SPRING
+Gloss: every.NOM SPRING visit.PL.ACC
 Status: partial
 Reason: not realized: fall, cousins, pay, long, coordinated clause/predicate
 [Translation]
@@ -1201,7 +1201,7 @@ Reason: unsupported construction: conditional_clause
 [Translation]
 English: When he saw me, he stopped.
 Language: [PARTIAL]
-Gloss: he.NOM he.ACC SEE-PST 1SG.DAT 
+Gloss: he.NOM SEE-PST he.ACC 1SG.DAT 
 Status: partial
 Reason: not realized: stopped
 [Translation]
@@ -1255,7 +1255,7 @@ Reason: unsupported construction: subordinate_clause
 [Translation]
 English: I have found the ring I lost.
 Language: [PARTIAL]
-Gloss: 1SG lose.ACC HAVE
+Gloss: 1SG HAVE lose.ACC-DEF
 Status: partial
 Reason: not realized: found, ring
 [Translation]
@@ -1268,8 +1268,8 @@ Reason: not realized: future/modal, coordinated clause/predicate
 English: That is the funniest story I ever heard.
 Language: [UNRESOLVED]
 Gloss: [UNRESOLVED]
-Status: unsupported-grammar
-Reason: unsupported sentence structure
+Status: unresolved-vocabulary
+Reason: missing vocabulary: story
 [Translation]
 English: She is taller than her brother.
 Language: [UNRESOLVED]
@@ -1279,7 +1279,7 @@ Reason: unsupported sentence structure
 [Translation]
 English: They are no wiser than we.
 Language: [PARTIAL]
-Gloss: 3PL we.ACC NO-PROG
+Gloss: 3PL NO-PROG we.ACC
 Status: partial
 Reason: not realized: wiser, comparison
 [Translation]
@@ -1291,7 +1291,7 @@ Reason: not realized: travels, faster, comparison
 [Translation]
 English: We have more time than they.
 Language: [PARTIAL]
-Gloss: 1PL they.ACC HAVE
+Gloss: 1PL HAVE they.ACC
 Status: partial
 Reason: not realized: time, comparison
 [Translation]
@@ -1303,13 +1303,13 @@ Reason: unsupported sentence structure
 [Translation]
 English: He was very poor, and with his wife and five children lived in a little low cabin of logs and stones.
 Language: [PARTIAL]
-Gloss: 3SG FIVE child.PL.ACC VERY-PST-PROG IN stone.LOC
+Gloss: 3SG VERY-PST-PROG child.PL.ACC FIVE IN stone.LOC
 Status: partial
 Reason: unrecognized: logs; not realized: poor, wife, lived, little, low, cabin
 [Translation]
 English: When the wind blew, the traveler wrapped his mantle more closely around him.
 Language: [PARTIAL]
-Gloss: when.NOM around.ACC WIND
+Gloss: when.NOM-DEF WIND around.ACC-DEF
 Status: partial
 Reason: unrecognized: mantle; not realized: blew, traveler, wrapped, closely, comparison
 [Translation]
@@ -1321,7 +1321,7 @@ Reason: unsupported construction: complement_clause
 [Translation]
 English: We went back to the place where we saw the roses.
 Language: [PARTIAL]
-Gloss: 1PL back.ACC GO-PST TO rose.DAT
+Gloss: 1PL GO-PST back.ACC TO rose.DAT-DEF
 Status: partial
 Reason: not realized: place, saw
 [Translation]
@@ -1351,7 +1351,7 @@ Reason: unsupported sentence structure
 [Translation]
 English: The house stands where three roads meet.
 Language: [PARTIAL]
-Gloss: house.NOM THREE meet.PL.ACC STAND
+Gloss: house.NOM-DEF STAND meet.PL.ACC THREE
 Status: partial
 Reason: not realized: roads
 [Translation]
@@ -1363,12 +1363,12 @@ Reason: unsupported sentence structure
 [Translation]
 English: Evidently that gate is never opened, for the long grass and the great hemlocks grow close against it.
 Language: [PARTIAL]
-Gloss: THAT gate.NOM against.PL.ACC NEVER-PROG
+Gloss: THAT gate.NOM NEVER-PROG against.PL.ACC-DEF
 Status: partial
 Reason: unrecognized: hemlocks; not realized: opened, long, grass, great, grow, close, negation, comparison, coordinated clause/predicate
 [Translation]
 English: I met a little cottage girl; she was eight years old, she said.
 Language: [PARTIAL]
-Gloss: 1SG EIGHT old.PL.ACC MEET-PST
+Gloss: 1SG MEET-PST old.PL.ACC EIGHT
 Status: partial
 Reason: not realized: little, cottage, girl, years, said

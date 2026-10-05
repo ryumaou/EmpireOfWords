@@ -1,0 +1,66 @@
+[Translation]
+English: The big dog is sleeping.
+Language: [PARTIAL]
+Gloss: dog.NOM-DEF SLEEP-PROG
+Status: partial
+
+[Translation]
+English: Where is my book?
+Language: kempa tamacar cirpampila
+Gloss: WHERE 1SG-GEN book
+Status: ok
+
+[Translation]
+English: She will give him water.
+Language: ang ubanyida manbahkin ang 
+Gloss: 3SG GIVE-FUT water.ACC 3SG.DAT 
+Status: ok
+
+[Translation]
+English: This child walked to that house yesterday.
+Language: tampa urahnyi kerdanwa kelihan pekepem sebeama daga
+Gloss: THIS child.NOM WALK TO THAT house.DAT
+Status: ok
+
+[Translation]
+English: Are you hungry?
+Language: kerbera terberu memparingjad
+Gloss: 2SG HUNGRY-PROG Q
+Status: ok
+
+[Translation]
+English: Give me the red bird!
+Language: [PARTIAL]
+Gloss: give-IMP 1SG.DAT bird.ACC-DEF
+Status: partial
+
+[Translation]
+English: The woman and the man are talking.
+Language: [PARTIAL]
+Gloss: man.NOM-DEF TALK-PROG
+Status: partial
+
+[Translation]
+English: I do not see three cats.
+Language: pempula pabanginad manlahitde seadisw
+Gloss: 1SG SEE-NEG cat.PL.ACC THREE
+Status: ok
+
+[Translation]
+English: There is a black mountain.
+Language: [PARTIAL]
+Gloss: mountain.NOM exist-3SG
+Status: partial
+
+[Translation]
+English: Two children played in the garden.
+Language: urahnyide bungkit terterlwa keada matiriml
+Gloss: child.PL.NOM TWO PLAY IN garden.LOC-DEF
+Status: ok
+
+[Translation]
+English: A Tiger wearing a bell will starve.
+Language: [PARTIAL]
+Gloss: SUBJ WEAR-PART bell.ACC STARVE-FUT
+Status: partial
+

@@ -1,10 +1,10 @@
 {
-  "language": "Example",
+  "language": "Test1",
   "summary": {
-    "partial": 113,
-    "ok": 41,
-    "unsupported-grammar": 70,
-    "unresolved-vocabulary": 5
+    "partial": 112,
+    "ok": 38,
+    "unsupported-grammar": 66,
+    "unresolved-vocabulary": 13
   },
   "capabilities": {
     "simple_clause": "supported",
@@ -37,7 +37,7 @@
       "type": "Translation",
       "english": "The big dog is sleeping.",
       "surface": "[PARTIAL]",
-      "gloss": "dog.NOM SLEEP-PROG",
+      "gloss": "dog.NOM-DEF SLEEP-PROG",
       "status": "partial",
       "reason": "not realized: big",
       "ir": {
@@ -91,7 +91,7 @@
     {
       "type": "Translation",
       "english": "Where is my book?",
-      "surface": "kyumasu dariryodas hyantte",
+      "surface": "kempa tamacar cirpampila",
       "gloss": "WHERE 1SG-GEN book",
       "status": "ok",
       "reason": "complete",
@@ -140,8 +140,8 @@
     {
       "type": "Translation",
       "english": "She will give him water.",
-      "surface": "hinmasu autaranim nyopet hinmasu ",
-      "gloss": "3SG water.ACC GIVE-FUT 3SG.DAT ",
+      "surface": "ang ubanyida manbahkin ang ",
+      "gloss": "3SG GIVE-FUT water.ACC 3SG.DAT ",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -195,7 +195,7 @@
     {
       "type": "Translation",
       "english": "This child walked to that house yesterday.",
-      "surface": "pra auta myuzoto soda zattakiaro bomasu akishid",
+      "surface": "tampa urahnyi kerdanwa kelihan pekepem sebeama daga",
       "gloss": "THIS child.NOM WALK TO THAT house.DAT",
       "status": "ok",
       "reason": "complete",
@@ -260,7 +260,7 @@
     {
       "type": "Translation",
       "english": "Are you hungry?",
-      "surface": "den onena nupya",
+      "surface": "kerbera terberu memparingjad",
       "gloss": "2SG HUNGRY-PROG Q",
       "status": "ok",
       "reason": "complete",
@@ -304,7 +304,7 @@
       "type": "Translation",
       "english": "Give me the red bird!",
       "surface": "[PARTIAL]",
-      "gloss": "give-IMP 1SG.DAT bird.ACC",
+      "gloss": "give-IMP 1SG.DAT bird.ACC-DEF",
       "status": "partial",
       "reason": "not realized: red",
       "ir": {
@@ -359,7 +359,7 @@
       "type": "Translation",
       "english": "The woman and the man are talking.",
       "surface": "[PARTIAL]",
-      "gloss": "man.NOM TALK-PROG",
+      "gloss": "man.NOM-DEF TALK-PROG",
       "status": "partial",
       "reason": "not realized: woman",
       "ir": {
@@ -426,8 +426,8 @@
     {
       "type": "Translation",
       "english": "I do not see three cats.",
-      "surface": "dariryo sedomas hittasunim karintao",
-      "gloss": "1SG THREE cat.PL.ACC SEE-NEG",
+      "surface": "pempula pabanginad manlahitde seadisw",
+      "gloss": "1SG SEE-NEG cat.PL.ACC THREE",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -540,8 +540,8 @@
     {
       "type": "Translation",
       "english": "Two children played in the garden.",
-      "surface": "izumono auta tadorot puwo kyogemy",
-      "gloss": "TWO child.PL.NOM PLAY IN garden.LOC",
+      "surface": "urahnyide bungkit terterlwa keada matiriml",
+      "gloss": "child.PL.NOM TWO PLAY IN garden.LOC-DEF",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -666,8 +666,8 @@
     {
       "type": "Translation",
       "english": "The sun shines.",
-      "surface": "datta tochi",
-      "gloss": "sun.NOM SHINE",
+      "surface": "saikemul bersa",
+      "gloss": "sun.NOM-DEF SHINE",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -707,8 +707,8 @@
     {
       "type": "Translation",
       "english": "The sun is shining.",
-      "surface": "datta tochina",
-      "gloss": "sun.NOM SHINE-PROG",
+      "surface": "saikemul membarsa",
+      "gloss": "sun.NOM-DEF SHINE-PROG",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -756,8 +756,8 @@
     {
       "type": "Translation",
       "english": "The sun shone.",
-      "surface": "datta tochi",
-      "gloss": "sun.NOM SHINE-PST",
+      "surface": "saikemul bersadena",
+      "gloss": "sun.NOM-DEF SHINE-PST",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -797,8 +797,8 @@
     {
       "type": "Translation",
       "english": "The sun will shine.",
-      "surface": "datta tochi",
-      "gloss": "sun.NOM SHINE-FUT",
+      "surface": "saikemul ubarsa",
+      "gloss": "sun.NOM-DEF SHINE-FUT",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -847,7 +847,7 @@
       "type": "Translation",
       "english": "The sun has been shining.",
       "surface": "[PARTIAL]",
-      "gloss": "sun.NOM SHINE",
+      "gloss": "sun.NOM-DEF SHINE",
       "status": "partial",
       "reason": "not realized: perfect aspect",
       "ir": {
@@ -901,8 +901,8 @@
     {
       "type": "Translation",
       "english": "The sun is shining again.",
-      "surface": "datta arunim tochina",
-      "gloss": "sun.NOM again.ACC SHINE-PROG",
+      "surface": "saikemul membarsa manjar",
+      "gloss": "sun.NOM-DEF SHINE-PROG again.ACC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -956,8 +956,8 @@
     {
       "type": "Translation",
       "english": "The sun will shine tomorrow.",
-      "surface": "datta tochi zui",
-      "gloss": "sun.NOM SHINE-FUT",
+      "surface": "saikemul ubarsa rangaha",
+      "gloss": "sun.NOM-DEF SHINE-FUT",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -1012,7 +1012,7 @@
       "type": "Translation",
       "english": "The sun shines brightly.",
       "surface": "[PARTIAL]",
-      "gloss": "sun.NOM SHINE",
+      "gloss": "sun.NOM-DEF SHINE",
       "status": "partial",
       "reason": "not realized: brightly",
       "ir": {
@@ -1059,7 +1059,7 @@
       "type": "Translation",
       "english": "The bright sun shines.",
       "surface": "[PARTIAL]",
-      "gloss": "sun.NOM SHINE",
+      "gloss": "sun.NOM-DEF SHINE",
       "status": "partial",
       "reason": "not realized: bright",
       "ir": {
@@ -1105,8 +1105,8 @@
     {
       "type": "Translation",
       "english": "The sun is rising now.",
-      "surface": "datta osomasanim sewapyuna",
-      "gloss": "sun.NOM now.ACC RISE-PROG",
+      "surface": "saikemul memtarisika manaciri",
+      "gloss": "sun.NOM-DEF RISE-PROG now.ACC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -1161,7 +1161,7 @@
       "type": "Translation",
       "english": "All the people shouted.",
       "surface": "[PARTIAL]",
-      "gloss": "all.NOM SHOUT",
+      "gloss": "all.NOM-DEF SHOUT",
       "status": "partial",
       "reason": "not realized: people",
       "ir": {
@@ -1208,7 +1208,7 @@
       "type": "Translation",
       "english": "Some of the people shouted.",
       "surface": "[PARTIAL]",
-      "gloss": "of.NOM SHOUT",
+      "gloss": "of.NOM-DEF SHOUT",
       "status": "partial",
       "reason": "not realized: people",
       "ir": {
@@ -1261,7 +1261,7 @@
       "type": "Translation",
       "english": "Many of the people shouted twice.",
       "surface": "[PARTIAL]",
-      "gloss": "of.NOM SHOUT",
+      "gloss": "of.NOM-DEF SHOUT",
       "status": "partial",
       "reason": "not realized: people",
       "ir": {
@@ -1366,8 +1366,8 @@
     {
       "type": "Translation",
       "english": "The kitten jumped up.",
-      "surface": "hittasu yaroonim byawo",
-      "gloss": "kitten.NOM up.ACC JUMP",
+      "surface": "lelehitl berbola mankadisko",
+      "gloss": "kitten.NOM-DEF JUMP up.ACC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -1414,7 +1414,7 @@
       "type": "Translation",
       "english": "The kitten jumped onto the table.",
       "surface": "[PARTIAL]",
-      "gloss": "kitten.NOM table.ACC JUMP",
+      "gloss": "kitten.NOM-DEF JUMP table.ACC-DEF",
       "status": "partial",
       "reason": "not realized: onto",
       "ir": {
@@ -1473,7 +1473,7 @@
       "type": "Translation",
       "english": "My little kitten walked away.",
       "surface": "[PARTIAL]",
-      "gloss": "kitten.NOM away.ACC WALK",
+      "gloss": "kitten.NOM WALK away.ACC",
       "status": "partial",
       "reason": "not realized: little",
       "ir": {
@@ -1616,8 +1616,8 @@
     {
       "type": "Translation",
       "english": "The kitten is playing in the rain.",
-      "surface": "hittasu tadorotana wahedes kyogemy",
-      "gloss": "kitten.NOM PLAY-PROG IN rain.LOC",
+      "surface": "lelehitl memtartirla keada dikirayl",
+      "gloss": "kitten.NOM-DEF PLAY-PROG IN rain.LOC-DEF",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -1733,7 +1733,7 @@
       "type": "Translation",
       "english": "Soon the rain will stop.",
       "surface": "[PARTIAL]",
-      "gloss": "soon.NOM stop.ACC RAIN",
+      "gloss": "soon.NOM-DEF RAIN stop.ACC",
       "status": "partial",
       "reason": "not realized: future/modal",
       "ir": {
@@ -1788,7 +1788,7 @@
       "type": "Translation",
       "english": "I hope the rain stops soon.",
       "surface": "[PARTIAL]",
-      "gloss": "1SG soon.ACC HOPE",
+      "gloss": "1SG HOPE soon.ACC-DEF",
       "status": "partial",
       "reason": "not realized: rain, stops",
       "ir": {
@@ -1847,9 +1847,9 @@
       "type": "Translation",
       "english": "Once wild animals lived here.",
       "surface": "[PARTIAL]",
-      "gloss": "animal.NOM here.ACC LIVE",
+      "gloss": "animal.NOM LIVE here.ACC",
       "status": "partial",
-      "reason": "not realized: wild",
+      "reason": "unrecognized: wild",
       "ir": {
         "tokens": [
           "once",
@@ -1867,10 +1867,6 @@
         ],
         "constructions": [],
         "lexical_items": [
-          {
-            "token": "wild",
-            "lemma": "wild"
-          },
           {
             "token": "animals",
             "lemma": "animal"
@@ -1891,7 +1887,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "wild"
+        ],
         "normalized_english": "Once wild animal lived here.",
         "realizer_input": null
       }
@@ -1946,7 +1944,7 @@
     {
       "type": "Translation",
       "english": "Go away!",
-      "surface": "hyanos zunsedanim",
+      "surface": "catbikjad manlar",
       "gloss": "go-IMP away.ACC",
       "status": "ok",
       "reason": "complete",
@@ -2022,7 +2020,7 @@
       "type": "Translation",
       "english": "You should go.",
       "surface": "[PARTIAL]",
-      "gloss": "2SG go.ACC SHOULD",
+      "gloss": "2SG SHOULD go.ACC",
       "status": "partial",
       "reason": "not realized: modal meaning",
       "ir": {
@@ -2125,8 +2123,8 @@
     {
       "type": "Translation",
       "english": "He will arrive soon.",
-      "surface": "hinmasu shitteranim altis",
-      "gloss": "3SG soon.ACC ARRIVE-FUT",
+      "surface": "ang udaingana manmatinye",
+      "gloss": "3SG ARRIVE-FUT soon.ACC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -2175,7 +2173,7 @@
       "type": "Translation",
       "english": "The baby’s ball has rolled away.",
       "surface": "[PARTIAL]",
-      "gloss": "ball.NOM away.ACC ROLL",
+      "gloss": "ball.NOM-DEF ROLL away.ACC",
       "status": "partial",
       "reason": "not realized: baby's, perfect aspect, possessive relation",
       "ir": {
@@ -2238,7 +2236,7 @@
       "type": "Translation",
       "english": "The two boys are working together.",
       "surface": "[PARTIAL]",
-      "gloss": "TWO boy.PL.NOM together.ACC WORK-PROG",
+      "gloss": "boy.PL.NOM-DEF TWO WORK-PROG together.ACC",
       "status": "partial",
       "reason": "not realized: comparison",
       "ir": {
@@ -2300,7 +2298,7 @@
       "type": "Translation",
       "english": "This mist will probably clear away.",
       "surface": "[PARTIAL]",
-      "gloss": "THIS mist.NOM away.ACC PROBABLY-FUT",
+      "gloss": "THIS mist.NOM PROBABLY-FUT away.ACC",
       "status": "partial",
       "reason": "not realized: clear",
       "ir": {
@@ -2414,7 +2412,7 @@
       "type": "Translation",
       "english": "We should eat more slowly.",
       "surface": "[PARTIAL]",
-      "gloss": "1PL more.ACC SHOULD",
+      "gloss": "1PL SHOULD more.ACC",
       "status": "partial",
       "reason": "not realized: eat, slowly, modal meaning",
       "ir": {
@@ -2470,7 +2468,7 @@
       "type": "Translation",
       "english": "You have come too soon.",
       "surface": "[PARTIAL]",
-      "gloss": "2SG soon.ACC HAVE",
+      "gloss": "2SG HAVE soon.ACC",
       "status": "partial",
       "reason": "not realized: come",
       "ir": {
@@ -2523,7 +2521,7 @@
       "type": "Translation",
       "english": "You must write more neatly.",
       "surface": "[PARTIAL]",
-      "gloss": "2SG more.ACC MUST",
+      "gloss": "2SG MUST more.ACC",
       "status": "partial",
       "reason": "unrecognized: neatly; not realized: write, modal meaning",
       "ir": {
@@ -2577,7 +2575,7 @@
       "type": "Translation",
       "english": "Directly opposite stands a wonderful palace.",
       "surface": "[PARTIAL]",
-      "gloss": "opposite.NOM palace.ACC STAND",
+      "gloss": "opposite.NOM STAND palace.ACC",
       "status": "partial",
       "reason": "not realized: directly, wonderful",
       "ir": {
@@ -2686,7 +2684,7 @@
     {
       "type": "Translation",
       "english": "My cat is black.",
-      "surface": "hittasu ademasuna",
+      "surface": "lehit memlaitinsa",
       "gloss": "cat.NOM BLACK-PROG",
       "status": "ok",
       "reason": "complete",
@@ -2734,9 +2732,9 @@
       "type": "Translation",
       "english": "The little girl’s doll is broken.",
       "surface": "[PARTIAL]",
-      "gloss": "doll.NOM BROKEN-PROG",
+      "gloss": "girl.NOM-DEF BROKEN-PROG",
       "status": "partial",
-      "reason": "not realized: little, girl's, possessive relation",
+      "reason": "unrecognized: doll; not realized: little, possessive relation",
       "ir": {
         "tokens": [
           "the",
@@ -2768,10 +2766,6 @@
             "feature": "possessive"
           },
           {
-            "token": "doll",
-            "lemma": "doll"
-          },
-          {
             "token": "broken",
             "lemma": "broken"
           }
@@ -2787,7 +2781,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "doll"
+        ],
         "normalized_english": "The little girl doll is broken.",
         "realizer_input": null
       }
@@ -2796,7 +2792,7 @@
       "type": "Translation",
       "english": "I usually sleep soundly.",
       "surface": "[PARTIAL]",
-      "gloss": "1SG sleep.ACC USUALLY",
+      "gloss": "1SG USUALLY sleep.ACC",
       "status": "partial",
       "reason": "not realized: soundly",
       "ir": {
@@ -2842,8 +2838,8 @@
     {
       "type": "Translation",
       "english": "The children ran after Jack.",
-      "surface": "auta soonim henuzuk",
-      "gloss": "child.PL.NOM after.ACC RUN-PST",
+      "surface": "urahnyidel tusidenwa mankahisah",
+      "gloss": "child.PL.NOM-DEF RUN-PST after.ACC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -2898,7 +2894,7 @@
       "type": "Translation",
       "english": "I can play after school.",
       "surface": "[PARTIAL]",
-      "gloss": "1SG school.ACC CAN",
+      "gloss": "1SG CAN school.ACC",
       "status": "partial",
       "reason": "not realized: play, modal meaning",
       "ir": {
@@ -3023,8 +3019,8 @@
     {
       "type": "Translation",
       "english": "We arrived at the river.",
-      "surface": "owa altis bayuyos waminai",
-      "gloss": "1PL ARRIVE AT river.LOC",
+      "surface": "unan duanganst berpenc wymingil",
+      "gloss": "1PL ARRIVE AT river.LOC-DEF",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -3077,7 +3073,7 @@
       "type": "Translation",
       "english": "I have been waiting for you.",
       "surface": "[PARTIAL]",
-      "gloss": "1SG you.ACC HAVE",
+      "gloss": "1SG HAVE you.ACC",
       "status": "partial",
       "reason": "not realized: waiting, perfect aspect",
       "ir": {
@@ -3195,7 +3191,7 @@
       "type": "Translation",
       "english": "A little girl with a kitten sat near me.",
       "surface": "[PARTIAL]",
-      "gloss": "kitten.NOM me.ACC SIT-PST",
+      "gloss": "kitten.NOM SIT-PST me.ACC",
       "status": "partial",
       "reason": "not realized: little, girl",
       "ir": {
@@ -3272,7 +3268,7 @@
       "type": "Translation",
       "english": "The child waited at the door for her father.",
       "surface": "[PARTIAL]",
-      "gloss": "child.NOM WAIT AT father.LOC",
+      "gloss": "child.NOM-DEF WAIT AT father.LOC-DEF",
       "status": "partial",
       "reason": "not realized: door",
       "ir": {
@@ -3349,7 +3345,7 @@
       "type": "Translation",
       "english": "Yesterday the oldest girl in the village lost her kitten.",
       "surface": "[PARTIAL]",
-      "gloss": "village.NOM kitten.ACC LOSE-PST 3SG.DAT ",
+      "gloss": "village.NOM-DEF LOSE-PST kitten.ACC 3SG.DAT ",
       "status": "partial",
       "reason": "not realized: oldest, girl, comparison",
       "ir": {
@@ -3550,8 +3546,8 @@
     {
       "type": "Translation",
       "english": "Did the man leave?",
-      "surface": "anchita heyanyo nupya",
-      "gloss": "man.NOM LEAVE-PST Q",
+      "surface": "kerbera jahaingl gajadena",
+      "gloss": "man.NOM-DEF LEAVE-PST Q",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -3783,10 +3779,10 @@
     {
       "type": "Translation",
       "english": "Does the robin sing in the rain?",
-      "surface": "antas zuheazokez wahedes kyogemy nupya",
-      "gloss": "robin.NOM SING IN rain.LOC Q",
-      "status": "ok",
-      "reason": "complete",
+      "surface": "[UNRESOLVED]",
+      "gloss": "[UNRESOLVED]",
+      "status": "unresolved-vocabulary",
+      "reason": "missing vocabulary: robin",
       "ir": {
         "tokens": [
           "does",
@@ -3810,10 +3806,6 @@
           "yes_no_question"
         ],
         "lexical_items": [
-          {
-            "token": "robin",
-            "lemma": "robin"
-          },
           {
             "token": "sing",
             "lemma": "sing"
@@ -3842,7 +3834,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "robin"
+        ],
         "normalized_english": "do the robin sing in the rain?",
         "realizer_input": "the robin do sing in the rain?"
       }
@@ -3850,10 +3844,10 @@
     {
       "type": "Translation",
       "english": "Are you going with us to the concert?",
-      "surface": "den ochittenim wahena chikyaro bomasu nupya",
-      "gloss": "2SG us.PL.ACC GOING-PROG TO concert.DAT Q",
-      "status": "ok",
-      "reason": "complete",
+      "surface": "[PARTIAL]",
+      "gloss": "2SG GOING-PROG us.PL.ACC Q",
+      "status": "partial",
+      "reason": "unrecognized: concert",
       "ir": {
         "tokens": [
           "are",
@@ -3883,10 +3877,6 @@
           {
             "token": "going",
             "lemma": "going"
-          },
-          {
-            "token": "concert",
-            "lemma": "concert"
           }
         ],
         "grammatical_items": [
@@ -3916,7 +3906,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "concert"
+        ],
         "normalized_english": null,
         "realizer_input": "you are going with us to the concert?"
       }
@@ -3993,7 +3985,7 @@
       "type": "Translation",
       "english": "We sailed down the river for several miles.",
       "surface": "[PARTIAL]",
-      "gloss": "1PL several.ACC SAIL",
+      "gloss": "1PL SAIL several.ACC-DEF",
       "status": "partial",
       "reason": "unrecognized: miles; not realized: river",
       "ir": {
@@ -4061,8 +4053,8 @@
     {
       "type": "Translation",
       "english": "Everybody knows about hunting.",
-      "surface": "karitsu ettaronim zuchibu",
-      "gloss": "everybody.NOM hunting.ACC KNOW",
+      "surface": "pingain maksipa mansatirus",
+      "gloss": "everybody.NOM KNOW hunting.ACC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -4109,9 +4101,9 @@
       "type": "Translation",
       "english": "On a Sunny morning after the solstice we started for the mountains.",
       "surface": "[PARTIAL]",
-      "gloss": "we.NOM mountain.ACC START",
+      "gloss": "we.NOM-DEF START mountain.ACC-DEF",
       "status": "partial",
-      "reason": "not realized: morning, solstice",
+      "reason": "unrecognized: solstice; not realized: morning",
       "ir": {
         "tokens": [
           "on",
@@ -4146,10 +4138,6 @@
           {
             "token": "morning",
             "lemma": "morning"
-          },
-          {
-            "token": "solstice",
-            "lemma": "solstice"
           },
           {
             "token": "started",
@@ -4197,7 +4185,9 @@
         "proper_names": [
           "Sunny"
         ],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "solstice"
+        ],
         "normalized_english": "On a Sunny morning after the solstice we started for the mountain.",
         "realizer_input": null
       }
@@ -4270,7 +4260,7 @@
       "type": "Translation",
       "english": "An old man with a walking stick stood beside the fence.",
       "surface": "[PARTIAL]",
-      "gloss": "with.NOM fence.ACC WALKING",
+      "gloss": "with.NOM WALKING fence.ACC-DEF",
       "status": "partial",
       "reason": "not realized: old, man, stick, stood, beside",
       "ir": {
@@ -4427,7 +4417,7 @@
       "type": "Translation",
       "english": "The little seeds waited patiently under the snow for the warm spring sun.",
       "surface": "[PARTIAL]",
-      "gloss": "little.NOM sun.ACC SEED",
+      "gloss": "little.NOM-DEF SEED sun.ACC-DEF",
       "status": "partial",
       "reason": "not realized: waited, patiently, snow, warm, spring",
       "ir": {
@@ -4528,9 +4518,9 @@
       "type": "Translation",
       "english": "Many little girls with wreaths of flowers on their heads danced around the bonfire.",
       "surface": "[PARTIAL]",
-      "gloss": "their.NOM bonfire.ACC HEAD",
+      "gloss": "their.NOM HEAD around.ACC-DEF",
       "status": "partial",
-      "reason": "unrecognized: wreaths; not realized: little, girls, flowers, danced",
+      "reason": "unrecognized: wreaths, bonfire; not realized: little, girls, flowers, danced",
       "ir": {
         "tokens": [
           "many",
@@ -4585,10 +4575,6 @@
           {
             "token": "danced",
             "lemma": "dance"
-          },
-          {
-            "token": "bonfire",
-            "lemma": "bonfire"
           }
         ],
         "grammatical_items": [
@@ -4623,7 +4609,8 @@
         ],
         "proper_names": [],
         "missing_lexemes": [
-          "wreaths"
+          "wreaths",
+          "bonfire"
         ],
         "normalized_english": "Many little girl with wreaths of flower on their head danced around the bonfire.",
         "realizer_input": null
@@ -4711,8 +4698,8 @@
       "english": "The first boy in the line stopped at the entrance.",
       "surface": "[UNRESOLVED]",
       "gloss": "[UNRESOLVED]",
-      "status": "unsupported-grammar",
-      "reason": "unsupported sentence structure",
+      "status": "unresolved-vocabulary",
+      "reason": "missing vocabulary: entrance",
       "ir": {
         "tokens": [
           "the",
@@ -4755,10 +4742,6 @@
           {
             "token": "stopped",
             "lemma": "stop"
-          },
-          {
-            "token": "entrance",
-            "lemma": "entrance"
           }
         ],
         "grammatical_items": [
@@ -4784,7 +4767,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "entrance"
+        ],
         "normalized_english": null,
         "realizer_input": null
       }
@@ -4793,7 +4778,7 @@
       "type": "Translation",
       "english": "On the top of the hill in a little hut lived a wise old woman.",
       "surface": "[PARTIAL]",
-      "gloss": "hut.NOM woman.ACC LIVE",
+      "gloss": "hut.NOM LIVE woman.ACC",
       "status": "partial",
       "reason": "not realized: top, hill, little, wise, old",
       "ir": {
@@ -4906,9 +4891,9 @@
       "type": "Translation",
       "english": "During our residence in the country we often walked in the pastures.",
       "surface": "[PARTIAL]",
-      "gloss": "often.NOM WALK IN pasture.LOC",
+      "gloss": "often.NOM-DEF WALK IN pasture.LOC-DEF",
       "status": "partial",
-      "reason": "not realized: residence, country",
+      "reason": "unrecognized: residence; not realized: country",
       "ir": {
         "tokens": [
           "during",
@@ -4940,10 +4925,6 @@
         ],
         "constructions": [],
         "lexical_items": [
-          {
-            "token": "residence",
-            "lemma": "residence"
-          },
           {
             "token": "country",
             "lemma": "country"
@@ -4992,7 +4973,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "residence"
+        ],
         "normalized_english": "During our residence in the country we often walked in the pasture.",
         "realizer_input": null
       }
@@ -5075,7 +5058,7 @@
       "type": "Translation",
       "english": "Near the mouth of the river, its course turns sharply towards the East.",
       "surface": "[PARTIAL]",
-      "gloss": "course.NOM east.PL.ACC TURN",
+      "gloss": "course.NOM-DEF TURN east.PL.ACC-DEF",
       "status": "partial",
       "reason": "not realized: mouth, river, sharply",
       "ir": {
@@ -5176,9 +5159,9 @@
       "type": "Translation",
       "english": "Between the two lofty mountains lay a fertile valley.",
       "surface": "[PARTIAL]",
-      "gloss": "TWO mountain.PL.NOM valley.ACC LAY",
+      "gloss": "mountain.PL.NOM-DEF TWO LAY valley.ACC",
       "status": "partial",
-      "reason": "not realized: lofty, fertile",
+      "reason": "unrecognized: lofty; not realized: fertile",
       "ir": {
         "tokens": [
           "between",
@@ -5207,10 +5190,6 @@
           {
             "token": "two",
             "lemma": "two"
-          },
-          {
-            "token": "lofty",
-            "lemma": "lofty"
           },
           {
             "token": "mountains",
@@ -5244,7 +5223,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "lofty"
+        ],
         "normalized_english": "Between the two lofty mountain lay a fertile valley.",
         "realizer_input": null
       }
@@ -5253,7 +5234,7 @@
       "type": "Translation",
       "english": "Among the wheat grew tall red poppies.",
       "surface": "[PARTIAL]",
-      "gloss": "wheat.NOM poppy.ACC GROW-PST",
+      "gloss": "wheat.NOM-DEF GROW-PST poppy.ACC",
       "status": "partial",
       "reason": "not realized: tall, red",
       "ir": {
@@ -5413,7 +5394,7 @@
       "type": "Translation",
       "english": "The sun looked down through the branches upon the children at play.",
       "surface": "[PARTIAL]",
-      "gloss": "sun.NOM child.PL.ACC LOOK AT play.LOC",
+      "gloss": "sun.NOM-DEF LOOK child.PL.ACC-DEF AT play.LOC",
       "status": "partial",
       "reason": "not realized: branches",
       "ir": {
@@ -5508,9 +5489,9 @@
       "type": "Translation",
       "english": "The west wind blew across my face like a friendly caress.",
       "surface": "[PARTIAL]",
-      "gloss": "west.NOM caress.PL.ACC WIND",
+      "gloss": "west.NOM-DEF WIND friendly.PL.ACC",
       "status": "partial",
-      "reason": "not realized: blew, across, face, like, friendly",
+      "reason": "unrecognized: caress; not realized: blew, across, face, like",
       "ir": {
         "tokens": [
           "the",
@@ -5567,10 +5548,6 @@
           {
             "token": "friendly",
             "lemma": "friendly"
-          },
-          {
-            "token": "caress",
-            "lemma": "caress"
           }
         ],
         "grammatical_items": [
@@ -5588,7 +5565,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "caress"
+        ],
         "normalized_english": "The west wind did blow across my face like a friendly caress.",
         "realizer_input": null
       }
@@ -5597,9 +5576,9 @@
       "type": "Translation",
       "english": "The spool of thread rolled across the floor.",
       "surface": "[PARTIAL]",
-      "gloss": "thread.NOM floor.PL.ACC ROLL",
+      "gloss": "thread.NOM-DEF ROLL floor.PL.ACC-DEF",
       "status": "partial",
-      "reason": "not realized: spool, across",
+      "reason": "unrecognized: spool; not realized: across",
       "ir": {
         "tokens": [
           "the",
@@ -5623,10 +5602,6 @@
         ],
         "constructions": [],
         "lexical_items": [
-          {
-            "token": "spool",
-            "lemma": "spool"
-          },
           {
             "token": "thread",
             "lemma": "thread"
@@ -5659,7 +5634,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "spool"
+        ],
         "normalized_english": null,
         "realizer_input": null
       }
@@ -5668,7 +5645,7 @@
       "type": "Translation",
       "english": "A box of growing plants stood in the Window.",
       "surface": "[PARTIAL]",
-      "gloss": "of.NOM stand.ACC GROW IN window.LOC",
+      "gloss": "of.NOM GROW stand.ACC IN window.LOC-DEF",
       "status": "partial",
       "reason": "not realized: box, plants",
       "ir": {
@@ -5744,8 +5721,8 @@
     {
       "type": "Translation",
       "english": "I am very happy.",
-      "surface": "dariryo jinattanim rimuzuana",
-      "gloss": "1SG happy.ACC VERY-PROG",
+      "surface": "pempula memamingad manmanipat",
+      "gloss": "1SG VERY-PROG happy.ACC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -5791,10 +5768,10 @@
     {
       "type": "Translation",
       "english": "These oranges are juicy.",
-      "surface": "nataqui owomas gokuna",
-      "gloss": "THESE orange.PL.NOM JUICY-PROG",
-      "status": "ok",
-      "reason": "complete",
+      "surface": "[UNRESOLVED]",
+      "gloss": "[UNRESOLVED]",
+      "status": "unresolved-vocabulary",
+      "reason": "missing vocabulary: juicy",
       "ir": {
         "tokens": [
           "these",
@@ -5813,10 +5790,6 @@
           {
             "token": "oranges",
             "lemma": "orange"
-          },
-          {
-            "token": "juicy",
-            "lemma": "juicy"
           }
         ],
         "grammatical_items": [
@@ -5830,7 +5803,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "juicy"
+        ],
         "normalized_english": "These orange are juicy.",
         "realizer_input": null
       }
@@ -5838,10 +5813,10 @@
     {
       "type": "Translation",
       "english": "Sea water is salty.",
-      "surface": "[PARTIAL]",
-      "gloss": "water.NOM SALTY-PROG",
-      "status": "partial",
-      "reason": "not realized: sea",
+      "surface": "[UNRESOLVED]",
+      "gloss": "[UNRESOLVED]",
+      "status": "unresolved-vocabulary",
+      "reason": "missing vocabulary: salty",
       "ir": {
         "tokens": [
           "sea",
@@ -5864,10 +5839,6 @@
           {
             "token": "water",
             "lemma": "water"
-          },
-          {
-            "token": "salty",
-            "lemma": "salty"
           }
         ],
         "grammatical_items": [
@@ -5877,7 +5848,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "salty"
+        ],
         "normalized_english": null,
         "realizer_input": null
       }
@@ -5886,7 +5859,7 @@
       "type": "Translation",
       "english": "The streets are full of people.",
       "surface": "[PARTIAL]",
-      "gloss": "street.NOM of.ACC FULL-PROG",
+      "gloss": "street.NOM-DEF FULL-PROG of.ACC",
       "status": "partial",
       "reason": "not realized: people",
       "ir": {
@@ -5944,8 +5917,8 @@
     {
       "type": "Translation",
       "english": "Sugar tastes sweet.",
-      "surface": "ryawa deshitsanim lua",
-      "gloss": "sugar.NOM sweet.ACC TASTE",
+      "surface": "lebiata lebebiha manlasitan",
+      "gloss": "sugar.NOM TASTE sweet.ACC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -6032,7 +6005,7 @@
       "type": "Translation",
       "english": "The little girl seemed lonely.",
       "surface": "[PARTIAL]",
-      "gloss": "girl.NOM SEEM",
+      "gloss": "girl.NOM-DEF SEEM",
       "status": "partial",
       "reason": "not realized: little, lonely",
       "ir": {
@@ -6165,7 +6138,7 @@
       "type": "Translation",
       "english": "I have lost my blanket.",
       "surface": "[PARTIAL]",
-      "gloss": "1SG blanket.ACC HAVE",
+      "gloss": "1SG HAVE blanket.ACC",
       "status": "partial",
       "reason": "not realized: lost",
       "ir": {
@@ -6217,10 +6190,10 @@
     {
       "type": "Translation",
       "english": "A robin has built his nest in the apple tree.",
-      "surface": "[PARTIAL]",
-      "gloss": "robin.NOM NEST IN tree.LOC",
-      "status": "partial",
-      "reason": "not realized: built, apple",
+      "surface": "[UNRESOLVED]",
+      "gloss": "[UNRESOLVED]",
+      "status": "unresolved-vocabulary",
+      "reason": "missing vocabulary: robin",
       "ir": {
         "tokens": [
           "a",
@@ -6248,10 +6221,6 @@
         ],
         "constructions": [],
         "lexical_items": [
-          {
-            "token": "robin",
-            "lemma": "robin"
-          },
           {
             "token": "built",
             "lemma": "build"
@@ -6292,7 +6261,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "robin"
+        ],
         "normalized_english": null,
         "realizer_input": null
       }
@@ -6301,9 +6272,9 @@
       "type": "Translation",
       "english": "At noon we ate our lunch by the roadside.",
       "surface": "[PARTIAL]",
-      "gloss": "we.NOM roadside.ACC EAT-PST",
+      "gloss": "we.NOM EAT-PST by.ACC-DEF",
       "status": "partial",
-      "reason": "not realized: noon, lunch",
+      "reason": "unrecognized: roadside; not realized: noon, lunch",
       "ir": {
         "tokens": [
           "at",
@@ -6340,10 +6311,6 @@
           {
             "token": "lunch",
             "lemma": "lunch"
-          },
-          {
-            "token": "roadside",
-            "lemma": "roadside"
           }
         ],
         "grammatical_items": [
@@ -6369,7 +6336,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "roadside"
+        ],
         "normalized_english": "At noon we did eat our lunch by the roadside.",
         "realizer_input": null
       }
@@ -6757,8 +6726,8 @@
     {
       "type": "Translation",
       "english": "Are you waiting for me?",
-      "surface": "den fesunim judatana nupya",
-      "gloss": "2SG me.ACC WAIT-PROG Q",
+      "surface": "kerbera terberu memsaktilajad mantampida",
+      "gloss": "2SG WAIT-PROG me.ACC Q",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -6815,8 +6784,8 @@
       "english": "Is this the first kitten of the litter?",
       "surface": "[UNRESOLVED]",
       "gloss": "[UNRESOLVED]",
-      "status": "unsupported-grammar",
-      "reason": "unsupported sentence structure",
+      "status": "unresolved-vocabulary",
+      "reason": "missing vocabulary: litter",
       "ir": {
         "tokens": [
           "is",
@@ -6849,10 +6818,6 @@
           {
             "token": "kitten",
             "lemma": "kitten"
-          },
-          {
-            "token": "litter",
-            "lemma": "litter"
           }
         ],
         "grammatical_items": [
@@ -6878,7 +6843,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "litter"
+        ],
         "normalized_english": null,
         "realizer_input": null
       }
@@ -6953,8 +6920,8 @@
     {
       "type": "Translation",
       "english": "How wide is the River?",
-      "surface": "todasha bayuyosanim kotarumana nupya",
-      "gloss": "wide.NOM river.ACC THE-PROG Q",
+      "surface": "kerbera berinta membatinga manwymangi",
+      "gloss": "wide.NOM THE-PROG river.ACC Q",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -7038,7 +7005,7 @@
     {
       "type": "Translation",
       "english": "Sit here by me.",
-      "surface": "jietemas fesunim",
+      "surface": "berhafabikjad mantampida",
       "gloss": "sit-IMP me.ACC",
       "status": "ok",
       "reason": "complete",
@@ -7142,7 +7109,7 @@
     {
       "type": "Translation",
       "english": "Come with us.",
-      "surface": "ajimasus ochittenim",
+      "surface": "tenemahbikjad manmandi",
       "gloss": "come-IMP us.PL.ACC",
       "status": "ok",
       "reason": "complete",
@@ -7277,7 +7244,7 @@
     {
       "type": "Translation",
       "english": "Have some tea.",
-      "surface": "sohos onenainim",
+      "surface": "kernyabikjad mandaritar",
       "gloss": "have-IMP tea.ACC",
       "status": "ok",
       "reason": "complete",
@@ -7320,8 +7287,8 @@
     {
       "type": "Translation",
       "english": "Pip and his dog were great friends.",
-      "surface": "janni ryazugyanim nowahyana",
-      "gloss": "dog.NOM friend.ACC GREAT-PST-PROG",
+      "surface": "secamah membarlibadenwa manhasi",
+      "gloss": "dog.NOM GREAT-PST-PROG friend.ACC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -7389,8 +7356,8 @@
     {
       "type": "Translation",
       "english": "John and Elizabeth are brother and sister.",
-      "surface": "henta ohyohenim atana",
-      "gloss": "and.NOM sister.ACC BROTHER-PROG",
+      "surface": "menggil memtainyaka mankardika",
+      "gloss": "and.NOM BROTHER-PROG sister.ACC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -7460,7 +7427,7 @@
       "type": "Translation",
       "english": "You and I will go together.",
       "surface": "[PARTIAL]",
-      "gloss": "2SG together.ACC AND",
+      "gloss": "2SG AND together.ACC",
       "status": "partial",
       "reason": "not realized: go, comparison, future/modal",
       "ir": {
@@ -7523,7 +7490,7 @@
       "type": "Translation",
       "english": "They opened all the doors and windows.",
       "surface": "[PARTIAL]",
-      "gloss": "3PL window.ACC OPEN",
+      "gloss": "3PL OPEN window.ACC-DEF",
       "status": "partial",
       "reason": "not realized: doors",
       "ir": {
@@ -7719,9 +7686,9 @@
       "type": "Translation",
       "english": "Does the sky look blue or gray?",
       "surface": "[PARTIAL]",
-      "gloss": "sky.NOM gray.ACC LOOK Q",
+      "gloss": "sky.NOM-DEF LOOK or.ACC Q",
       "status": "partial",
-      "reason": "not realized: blue",
+      "reason": "unrecognized: gray; not realized: blue",
       "ir": {
         "tokens": [
           "does",
@@ -7757,10 +7724,6 @@
           {
             "token": "blue",
             "lemma": "blue"
-          },
-          {
-            "token": "gray",
-            "lemma": "gray"
           }
         ],
         "grammatical_items": [
@@ -7778,7 +7741,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "gray"
+        ],
         "normalized_english": "do the sky look blue or gray?",
         "realizer_input": "the sky do look blue or gray?"
       }
@@ -7910,9 +7875,9 @@
       "type": "Translation",
       "english": "He played a tune on his wonderful flute.",
       "surface": "[PARTIAL]",
-      "gloss": "3SG tune.ACC PLAY ON flute.LOC",
+      "gloss": "3SG PLAY ON flute.LOC",
       "status": "partial",
-      "reason": "not realized: wonderful",
+      "reason": "unrecognized: tune; not realized: wonderful",
       "ir": {
         "tokens": [
           "he",
@@ -7939,10 +7904,6 @@
           {
             "token": "played",
             "lemma": "play"
-          },
-          {
-            "token": "tune",
-            "lemma": "tune"
           },
           {
             "token": "wonderful",
@@ -7972,7 +7933,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "tune"
+        ],
         "normalized_english": null,
         "realizer_input": null
       }
@@ -7981,7 +7944,7 @@
       "type": "Translation",
       "english": "Toward the end of August the days grow much shorter.",
       "surface": "[PARTIAL]",
-      "gloss": "day.NOM much.ACC GROW",
+      "gloss": "day.NOM-DEF GROW much.ACC",
       "status": "partial",
       "reason": "not realized: end, shorter, comparison",
       "ir": {
@@ -8068,7 +8031,7 @@
       "type": "Translation",
       "english": "A company of soldiers marched over the hill and across the meadow.",
       "surface": "[PARTIAL]",
-      "gloss": "soldier.NOM meadow.PL.ACC MARCH",
+      "gloss": "soldier.NOM MARCH meadow.PL.ACC-DEF",
       "status": "partial",
       "reason": "not realized: company, hill, across",
       "ir": {
@@ -8165,9 +8128,9 @@
       "type": "Translation",
       "english": "The first part of the story is very interesting.",
       "surface": "[PARTIAL]",
-      "gloss": "story.NOM VERY-PROG",
+      "gloss": "of.NOM-DEF VERY-PROG",
       "status": "partial",
-      "reason": "not realized: first, part, interesting",
+      "reason": "unrecognized: story; not realized: first, part, interesting",
       "ir": {
         "tokens": [
           "the",
@@ -8202,10 +8165,6 @@
             "lemma": "part"
           },
           {
-            "token": "story",
-            "lemma": "story"
-          },
-          {
             "token": "interesting",
             "lemma": "interest"
           }
@@ -8233,7 +8192,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "story"
+        ],
         "normalized_english": null,
         "realizer_input": null
       }
@@ -8242,9 +8203,9 @@
       "type": "Translation",
       "english": "The crow dropped some pebbles into the pitcher and raised the water to the brim.",
       "surface": "[PARTIAL]",
-      "gloss": "and.NOM water.ACC RAISE TO brim.DAT",
+      "gloss": "and.NOM-DEF RAISE water.ACC-DEF",
       "status": "partial",
-      "reason": "not realized: crow, dropped, pebbles, into, pitcher, coordinated clause/predicate",
+      "reason": "unrecognized: crow, pebbles, pitcher, brim; not realized: dropped, into, coordinated clause/predicate",
       "ir": {
         "tokens": [
           "the",
@@ -8285,24 +8246,12 @@
         ],
         "lexical_items": [
           {
-            "token": "crow",
-            "lemma": "crow"
-          },
-          {
             "token": "dropped",
             "lemma": "drop"
           },
           {
-            "token": "pebbles",
-            "lemma": "pebble"
-          },
-          {
             "token": "into",
             "lemma": "into"
-          },
-          {
-            "token": "pitcher",
-            "lemma": "pitcher"
           },
           {
             "token": "raised",
@@ -8311,10 +8260,6 @@
           {
             "token": "water",
             "lemma": "water"
-          },
-          {
-            "token": "brim",
-            "lemma": "brim"
           }
         ],
         "grammatical_items": [
@@ -8348,8 +8293,13 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
-        "normalized_english": "The crow dropped some pebble into the pitcher and raised the water to the brim.",
+        "missing_lexemes": [
+          "crow",
+          "pebbles",
+          "pitcher",
+          "brim"
+        ],
+        "normalized_english": null,
         "realizer_input": null
       }
     },
@@ -8357,9 +8307,9 @@
       "type": "Translation",
       "english": "The baby clapped her hands and laughed in glee.",
       "surface": "[PARTIAL]",
-      "gloss": "and.NOM LAUGH IN glee.LOC",
+      "gloss": "and.NOM-DEF LAUGH",
       "status": "partial",
-      "reason": "not realized: baby, clapped, hands, coordinated clause/predicate",
+      "reason": "unrecognized: glee; not realized: baby, clapped, hands, coordinated clause/predicate",
       "ir": {
         "tokens": [
           "the",
@@ -8402,10 +8352,6 @@
           {
             "token": "laughed",
             "lemma": "laugh"
-          },
-          {
-            "token": "glee",
-            "lemma": "glee"
           }
         ],
         "grammatical_items": [
@@ -8427,7 +8373,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "glee"
+        ],
         "normalized_english": "The baby clapped her hand and laughed in glee.",
         "realizer_input": null
       }
@@ -8498,7 +8446,7 @@
       "type": "Translation",
       "english": "The sound of the drums grew louder and louder.",
       "surface": "[PARTIAL]",
-      "gloss": "drum.NOM and.ACC GROW-PST",
+      "gloss": "drum.NOM-DEF GROW-PST and.ACC",
       "status": "partial",
       "reason": "not realized: sound, louder, comparison",
       "ir": {
@@ -8578,7 +8526,7 @@
       "type": "Translation",
       "english": "Do you like summer or winter better?",
       "surface": "[PARTIAL]",
-      "gloss": "2SG better.ACC LIKE Q",
+      "gloss": "2SG LIKE better.ACC Q",
       "status": "partial",
       "reason": "not realized: summer, winter, comparison",
       "ir": {
@@ -8647,7 +8595,7 @@
       "type": "Translation",
       "english": "That boy will have a wonderful trip.",
       "surface": "[PARTIAL]",
-      "gloss": "THAT boy.NOM trip.ACC HAVE-FUT",
+      "gloss": "THAT boy.NOM HAVE-FUT trip.ACC",
       "status": "partial",
       "reason": "not realized: wonderful",
       "ir": {
@@ -8716,7 +8664,7 @@
       "surface": "[UNRESOLVED]",
       "gloss": "[UNRESOLVED]",
       "status": "unresolved-vocabulary",
-      "reason": "missing vocabulary: popped",
+      "reason": "missing vocabulary: popped, corn",
       "ir": {
         "tokens": [
           "they",
@@ -8750,10 +8698,6 @@
           "coordination"
         ],
         "lexical_items": [
-          {
-            "token": "corn",
-            "lemma": "corn"
-          },
           {
             "token": "then",
             "lemma": "then"
@@ -8799,7 +8743,8 @@
         ],
         "proper_names": [],
         "missing_lexemes": [
-          "popped"
+          "popped",
+          "corn"
         ],
         "normalized_english": "They popped corn and then did sit around the fire and ate it.",
         "realizer_input": null
@@ -8809,7 +8754,7 @@
       "type": "Translation",
       "english": "They won the first two games, but lost the last one.",
       "surface": "[PARTIAL]",
-      "gloss": "3PL TWO one.PL.ACC WIN-PST",
+      "gloss": "3PL WIN-PST one.PL.ACC-DEF TWO",
       "status": "partial",
       "reason": "not realized: first, games, lost, last, coordinated clause/predicate",
       "ir": {
@@ -9088,7 +9033,7 @@
       "type": "Translation",
       "english": "Aha! I have caught you!",
       "surface": "[PARTIAL]",
-      "gloss": "i.NOM you.ACC HAVE",
+      "gloss": "i.NOM HAVE you.ACC",
       "status": "partial",
       "reason": "not realized: caught, imperative mood",
       "ir": {
@@ -9280,7 +9225,7 @@
       "type": "Translation",
       "english": "Alas! that news is sad indeed!",
       "surface": "[PARTIAL]",
-      "gloss": "THAT news.PL.NOM indeed.ACC SAD-PROG",
+      "gloss": "THAT news.PL.NOM SAD-PROG indeed.ACC",
       "status": "partial",
       "reason": "not realized: imperative mood",
       "ir": {
@@ -9343,7 +9288,7 @@
       "type": "Translation",
       "english": "Whew! that cold wind freezes my nose!",
       "surface": "[PARTIAL]",
-      "gloss": "THAT cold.NOM nose.ACC WIND",
+      "gloss": "THAT cold.NOM WIND nose.ACC",
       "status": "partial",
       "reason": "not realized: freezes, imperative mood",
       "ir": {
@@ -9411,8 +9356,8 @@
     {
       "type": "Translation",
       "english": "Are you warm enough now?",
-      "surface": "den osomasanim hejusena nupya",
-      "gloss": "2SG now.ACC WARM-PROG Q",
+      "surface": "kerbera terberu memsarlidejad manaciri",
+      "gloss": "2SG WARM-PROG now.ACC Q",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -9467,7 +9412,7 @@
       "type": "Translation",
       "english": "They heard the warning too late.",
       "surface": "[PARTIAL]",
-      "gloss": "3PL late.ACC HEAR-PST",
+      "gloss": "3PL HEAR-PST late.ACC-DEF",
       "status": "partial",
       "reason": "not realized: warning",
       "ir": {
@@ -9527,8 +9472,8 @@
       "english": "We are a brave people, and love our country.",
       "surface": "[UNRESOLVED]",
       "gloss": "[UNRESOLVED]",
-      "status": "unsupported-grammar",
-      "reason": "unsupported sentence structure",
+      "status": "unresolved-vocabulary",
+      "reason": "missing vocabulary: brave",
       "ir": {
         "tokens": [
           "we",
@@ -9556,10 +9501,6 @@
           "coordination"
         ],
         "lexical_items": [
-          {
-            "token": "brave",
-            "lemma": "brave"
-          },
           {
             "token": "people",
             "lemma": "person"
@@ -9596,7 +9537,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "brave"
+        ],
         "normalized_english": null,
         "realizer_input": null
       }
@@ -9604,8 +9547,8 @@
     {
       "type": "Translation",
       "english": "All the children came except Mary.",
-      "surface": "auta itanim ajimasu",
-      "gloss": "child.PL.NOM except.ACC COME-PST",
+      "surface": "urahnyidel tenemahdenwa manhabirka",
+      "gloss": "child.PL.NOM-DEF COME-PST except.ACC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -9666,9 +9609,9 @@
       "type": "Translation",
       "english": "Jack seized a handful of pebbles and threw them into the lake.",
       "surface": "[PARTIAL]",
-      "gloss": "and.NOM lake.ACC THROW-PST 3PL.DAT ",
+      "gloss": "and.NOM THROW-PST lake.ACC-DEF 3PL.DAT ",
       "status": "partial",
-      "reason": "unrecognized: seized; not realized: handful, pebbles, into",
+      "reason": "unrecognized: seized, handful, pebbles; not realized: into",
       "ir": {
         "tokens": [
           "jack",
@@ -9702,14 +9645,6 @@
           "coordination"
         ],
         "lexical_items": [
-          {
-            "token": "handful",
-            "lemma": "handful"
-          },
-          {
-            "token": "pebbles",
-            "lemma": "pebble"
-          },
           {
             "token": "threw",
             "lemma": "throw"
@@ -9753,9 +9688,11 @@
           "Jack"
         ],
         "missing_lexemes": [
-          "seized"
+          "seized",
+          "handful",
+          "pebbles"
         ],
-        "normalized_english": "Jack seized a handful of pebble and did throw them into the lake.",
+        "normalized_english": "Jack seized a handful of pebbles and did throw them into the lake.",
         "realizer_input": null
       }
     },
@@ -9763,7 +9700,7 @@
       "type": "Translation",
       "english": "This cottage stood on a low hill, at some distance from the village.",
       "surface": "[PARTIAL]",
-      "gloss": "THIS cottage.NOM STAND-PST ON village.LOC",
+      "gloss": "THIS cottage.NOM STAND-PST ON village.LOC-DEF",
       "status": "partial",
       "reason": "not realized: low, hill, distance",
       "ir": {
@@ -10048,8 +9985,8 @@
     {
       "type": "Translation",
       "english": "The river knows the way to the sea.",
-      "surface": "bayuyos modaryonim zuchibu chodasuaro bomasu",
-      "gloss": "river.NOM way.ACC KNOW TO sea.DAT",
+      "surface": "wymingil maksipa manbairikal kelihan kesmanl",
+      "gloss": "river.NOM-DEF KNOW way.ACC-DEF TO sea.DAT-DEF",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -10120,7 +10057,7 @@
       "type": "Translation",
       "english": "The boat sails away, like a bird on the wing.",
       "surface": "[PARTIAL]",
-      "gloss": "boat.NOM bird.ACC SAIL ON wing.LOC",
+      "gloss": "boat.NOM-DEF SAIL bird.ACC ON wing.LOC-DEF",
       "status": "partial",
       "reason": "not realized: like",
       "ir": {
@@ -10203,7 +10140,7 @@
       "type": "Translation",
       "english": "They looked cautiously about, but saw nothing.",
       "surface": "[PARTIAL]",
-      "gloss": "3PL nothing.ACC LOOK",
+      "gloss": "3PL LOOK nothing.ACC",
       "status": "partial",
       "reason": "unrecognized: cautiously; not realized: saw, coordinated clause/predicate",
       "ir": {
@@ -10328,14 +10265,6 @@
             "lemma": "sit"
           },
           {
-            "token": "bedroom",
-            "lemma": "bedroom"
-          },
-          {
-            "token": "tiny",
-            "lemma": "tiny"
-          },
-          {
             "token": "kitchen",
             "lemma": "kitchen"
           }
@@ -10369,7 +10298,9 @@
         "proper_names": [],
         "missing_lexemes": [
           "rooms",
-          "room"
+          "room",
+          "bedroom",
+          "tiny"
         ],
         "normalized_english": null,
         "realizer_input": null
@@ -10379,7 +10310,7 @@
       "type": "Translation",
       "english": "We visited my uncle’s village, the largest village in the world.",
       "surface": "[PARTIAL]",
-      "gloss": "1PL village.ACC VISIT IN world.LOC",
+      "gloss": "1PL VISIT village.ACC-DEF IN world.LOC-DEF",
       "status": "partial",
       "reason": "not realized: uncle's, largest, possessive relation, comparison",
       "ir": {
@@ -10472,7 +10403,7 @@
       "type": "Translation",
       "english": "We learn something new each day.",
       "surface": "[PARTIAL]",
-      "gloss": "1PL day.ACC LEARN",
+      "gloss": "1PL LEARN day.ACC",
       "status": "partial",
       "reason": "not realized: something, new",
       "ir": {
@@ -10531,7 +10462,7 @@
       "type": "Translation",
       "english": "The market begins five minutes earlier this week.",
       "surface": "[PARTIAL]",
-      "gloss": "market.NOM THIS FIVE week.PL.ACC BEGIN",
+      "gloss": "market.NOM-DEF BEGIN THIS week.PL.ACC FIVE",
       "status": "partial",
       "reason": "not realized: minutes, earlier, comparison",
       "ir": {
@@ -10604,7 +10535,7 @@
       "type": "Translation",
       "english": "Did you find the distance too great?",
       "surface": "[PARTIAL]",
-      "gloss": "2SG great.ACC FIND-PST Q",
+      "gloss": "2SG FIND-PST great.ACC-DEF Q",
       "status": "partial",
       "reason": "not realized: distance",
       "ir": {
@@ -10706,8 +10637,8 @@
     {
       "type": "Translation",
       "english": "Madam, I will obey your command.",
-      "surface": "wayorum jamumanim hohomas",
-      "gloss": "i.NOM command.ACC OBEY-FUT",
+      "surface": "perak usainawa mangampik",
+      "gloss": "i.NOM OBEY-FUT command.ACC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -10770,9 +10701,9 @@
       "type": "Translation",
       "english": "Here under this tree they gave their guests a splendid feast.",
       "surface": "[PARTIAL]",
-      "gloss": "THIS they.NOM feast.ACC GIVE-PST",
+      "gloss": "THIS they.NOM GIVE-PST feast.ACC",
       "status": "partial",
-      "reason": "not realized: tree, guests, splendid",
+      "reason": "unrecognized: splendid; not realized: tree, guests",
       "ir": {
         "tokens": [
           "here",
@@ -10815,10 +10746,6 @@
             "lemma": "guest"
           },
           {
-            "token": "splendid",
-            "lemma": "splendid"
-          },
-          {
             "token": "feast",
             "lemma": "feast"
           }
@@ -10850,7 +10777,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "splendid"
+        ],
         "normalized_english": "Here under this tree they did give their guest a splendid feast.",
         "realizer_input": null
       }
@@ -10859,9 +10788,9 @@
       "type": "Translation",
       "english": "In winter I get up at night, and dress by yellow candlelight.",
       "surface": "[PARTIAL]",
-      "gloss": "i.NOM up.ACC GET AT candlelight.PL.LOC",
+      "gloss": "i.NOM GET up.ACC AT yellow.PL.LOC",
       "status": "partial",
-      "reason": "not realized: winter, night, dress, yellow",
+      "reason": "unrecognized: candlelight; not realized: winter, night, dress",
       "ir": {
         "tokens": [
           "in",
@@ -10914,10 +10843,6 @@
           {
             "token": "yellow",
             "lemma": "yellow"
-          },
-          {
-            "token": "candlelight",
-            "lemma": "candlelight"
           }
         ],
         "grammatical_items": [
@@ -10947,7 +10872,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "candlelight"
+        ],
         "normalized_english": null,
         "realizer_input": null
       }
@@ -10956,9 +10883,9 @@
       "type": "Translation",
       "english": "Tell the last part of that story again.",
       "surface": "[PARTIAL]",
-      "gloss": "tell-IMP THAT again.ACC",
+      "gloss": "tell-IMP THAT again.ACC-DEF",
       "status": "partial",
-      "reason": "not realized: last, part, story",
+      "reason": "unrecognized: story; not realized: last, part",
       "ir": {
         "tokens": [
           "tell",
@@ -10995,10 +10922,6 @@
           {
             "token": "part",
             "lemma": "part"
-          },
-          {
-            "token": "story",
-            "lemma": "story"
           }
         ],
         "grammatical_items": [
@@ -11020,7 +10943,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "story"
+        ],
         "normalized_english": null,
         "realizer_input": "Tell the last part of that story again!"
       }
@@ -11221,10 +11146,6 @@
             "lemma": "always"
           },
           {
-            "token": "shabby",
-            "lemma": "shabby"
-          },
-          {
             "token": "ragged",
             "lemma": "rag"
           },
@@ -11235,10 +11156,6 @@
           {
             "token": "days",
             "lemma": "day"
-          },
-          {
-            "token": "uncomfortable",
-            "lemma": "uncomfortable"
           }
         ],
         "grammatical_items": [
@@ -11268,7 +11185,10 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "shabby",
+          "uncomfortable"
+        ],
         "normalized_english": "She was always shabby often ragged and on cold day very uncomfortable.",
         "realizer_input": null
       }
@@ -11393,10 +11313,6 @@
             "lemma": "little"
           },
           {
-            "token": "mite",
-            "lemma": "mite"
-          },
-          {
             "token": "girl",
             "lemma": "girl"
           },
@@ -11461,6 +11377,7 @@
         ],
         "proper_names": [],
         "missing_lexemes": [
+          "mite",
           "snowflakes"
         ],
         "normalized_english": "I did stand a little mite of a girl upon a chair by the window and watched the falling snowflakes.",
@@ -11645,9 +11562,9 @@
       "type": "Translation",
       "english": "We consider them our faithful friends.",
       "surface": "[PARTIAL]",
-      "gloss": "1PL friend.ACC CONSIDER 3PL.DAT ",
+      "gloss": "1PL CONSIDER friend.ACC 3PL.DAT ",
       "status": "partial",
-      "reason": "not realized: faithful",
+      "reason": "unrecognized: faithful",
       "ir": {
         "tokens": [
           "we",
@@ -11672,10 +11589,6 @@
             "lemma": "consider"
           },
           {
-            "token": "faithful",
-            "lemma": "faithful"
-          },
-          {
             "token": "friends",
             "lemma": "friend"
           }
@@ -11695,7 +11608,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "faithful"
+        ],
         "normalized_english": "We consider them our faithful friend.",
         "realizer_input": null
       }
@@ -11704,7 +11619,7 @@
       "type": "Translation",
       "english": "We will make this place our home.",
       "surface": "[PARTIAL]",
-      "gloss": "1PL THIS home.ACC MAKE-FUT",
+      "gloss": "1PL MAKE-FUT THIS home.ACC",
       "status": "partial",
       "reason": "not realized: place",
       "ir": {
@@ -11771,7 +11686,7 @@
       "type": "Translation",
       "english": "The squirrels make their nests warm and snug with soft moss and leaves.",
       "surface": "[PARTIAL]",
-      "gloss": "squirrel.NOM leaf.PL.ACC MAKE",
+      "gloss": "squirrel.NOM-DEF MAKE leaf.PL.ACC",
       "status": "partial",
       "reason": "unrecognized: snug; not realized: nests, warm, soft, moss, coordinated clause/predicate",
       "ir": {
@@ -11872,9 +11787,9 @@
       "type": "Translation",
       "english": "The little girl made the doll’s dress herself.",
       "surface": "[PARTIAL]",
-      "gloss": "girl.NOM dress.PL.ACC MAKE-PST",
+      "gloss": "girl.NOM-DEF MAKE-PST dress.PL.ACC-DEF",
       "status": "partial",
-      "reason": "not realized: little, doll's, possessive relation",
+      "reason": "unrecognized: doll's; not realized: little, possessive relation",
       "ir": {
         "tokens": [
           "the",
@@ -11914,11 +11829,6 @@
             "lemma": "make"
           },
           {
-            "token": "doll's",
-            "lemma": "doll",
-            "feature": "possessive"
-          },
-          {
             "token": "dress",
             "lemma": "dress"
           }
@@ -11939,15 +11849,17 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
-        "normalized_english": "The little girl did make the doll dress herself.",
+        "missing_lexemes": [
+          "doll's"
+        ],
+        "normalized_english": "The little girl did make the doll's dress herself.",
         "realizer_input": null
       }
     },
     {
       "type": "Translation",
       "english": "I hurt myself.",
-      "surface": "dariryo deyuzam",
+      "surface": "pempula kembantad",
       "gloss": "1SG HURT",
       "status": "ok",
       "reason": "complete",
@@ -11991,7 +11903,7 @@
     {
       "type": "Translation",
       "english": "She was talking to herself.",
-      "surface": "hinmasu zemana",
+      "surface": "ang memaninsidena",
       "gloss": "3SG TALK-PST-PROG",
       "status": "ok",
       "reason": "complete",
@@ -12097,7 +12009,7 @@
       "type": "Translation",
       "english": "We could see ourselves in the water.",
       "surface": "[PARTIAL]",
-      "gloss": "1PL see.ACC COULD IN water.LOC",
+      "gloss": "1PL COULD see.ACC IN water.LOC-DEF",
       "status": "partial",
       "reason": "not realized: modal meaning",
       "ir": {
@@ -12210,7 +12122,7 @@
       "type": "Translation",
       "english": "I feel ashamed of myself.",
       "surface": "[PARTIAL]",
-      "gloss": "1SG of.ACC FEEL",
+      "gloss": "1SG FEEL of.ACC",
       "status": "partial",
       "reason": "unrecognized: ashamed",
       "ir": {
@@ -12263,7 +12175,7 @@
     {
       "type": "Translation",
       "english": "Sit here by yourself.",
-      "surface": "jietemas wodasunim",
+      "surface": "berhafabikjad mankahis",
       "gloss": "sit-IMP by.ACC",
       "status": "ok",
       "reason": "complete",
@@ -12429,7 +12341,7 @@
       "type": "Translation",
       "english": "They wore red caps, the symbol of liberty.",
       "surface": "[PARTIAL]",
-      "gloss": "3PL liberty.ACC WEAR-PST",
+      "gloss": "3PL WEAR-PST liberty.ACC-DEF",
       "status": "partial",
       "reason": "not realized: red, caps, symbol",
       "ir": {
@@ -12744,7 +12656,7 @@
       "type": "Translation",
       "english": "Every spring and fall our cousins pay us a long visit.",
       "surface": "[PARTIAL]",
-      "gloss": "every.NOM visit.PL.ACC SPRING",
+      "gloss": "every.NOM SPRING visit.PL.ACC",
       "status": "partial",
       "reason": "not realized: fall, cousins, pay, long, coordinated clause/predicate",
       "ir": {
@@ -13332,7 +13244,7 @@
       "type": "Translation",
       "english": "When he saw me, he stopped.",
       "surface": "[PARTIAL]",
-      "gloss": "he.NOM he.ACC SEE-PST 1SG.DAT ",
+      "gloss": "he.NOM SEE-PST he.ACC 1SG.DAT ",
       "status": "partial",
       "reason": "not realized: stopped",
       "ir": {
@@ -14046,7 +13958,7 @@
       "type": "Translation",
       "english": "I have found the ring I lost.",
       "surface": "[PARTIAL]",
-      "gloss": "1SG lose.ACC HAVE",
+      "gloss": "1SG HAVE lose.ACC-DEF",
       "status": "partial",
       "reason": "not realized: found, ring",
       "ir": {
@@ -14169,8 +14081,8 @@
       "english": "That is the funniest story I ever heard.",
       "surface": "[UNRESOLVED]",
       "gloss": "[UNRESOLVED]",
-      "status": "unsupported-grammar",
-      "reason": "unsupported sentence structure",
+      "status": "unresolved-vocabulary",
+      "reason": "missing vocabulary: story",
       "ir": {
         "tokens": [
           "that",
@@ -14201,10 +14113,6 @@
             "lemma": "funny"
           },
           {
-            "token": "story",
-            "lemma": "story"
-          },
-          {
             "token": "heard",
             "lemma": "hear"
           }
@@ -14232,7 +14140,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "story"
+        ],
         "normalized_english": "That is the funniest story I ever did hear.",
         "realizer_input": null
       }
@@ -14302,7 +14212,7 @@
       "type": "Translation",
       "english": "They are no wiser than we.",
       "surface": "[PARTIAL]",
-      "gloss": "3PL we.ACC NO-PROG",
+      "gloss": "3PL NO-PROG we.ACC",
       "status": "partial",
       "reason": "not realized: wiser, comparison",
       "ir": {
@@ -14419,7 +14329,7 @@
       "type": "Translation",
       "english": "We have more time than they.",
       "surface": "[PARTIAL]",
-      "gloss": "1PL they.ACC HAVE",
+      "gloss": "1PL HAVE they.ACC",
       "status": "partial",
       "reason": "not realized: time, comparison",
       "ir": {
@@ -14541,7 +14451,7 @@
       "type": "Translation",
       "english": "He was very poor, and with his wife and five children lived in a little low cabin of logs and stones.",
       "surface": "[PARTIAL]",
-      "gloss": "3SG FIVE child.PL.ACC VERY-PST-PROG IN stone.LOC",
+      "gloss": "3SG VERY-PST-PROG child.PL.ACC FIVE IN stone.LOC",
       "status": "partial",
       "reason": "unrecognized: logs; not realized: poor, wife, lived, little, low, cabin",
       "ir": {
@@ -14690,7 +14600,7 @@
       "type": "Translation",
       "english": "When the wind blew, the traveler wrapped his mantle more closely around him.",
       "surface": "[PARTIAL]",
-      "gloss": "when.NOM around.ACC WIND",
+      "gloss": "when.NOM-DEF WIND around.ACC-DEF",
       "status": "partial",
       "reason": "unrecognized: mantle; not realized: blew, traveler, wrapped, closely, comparison",
       "ir": {
@@ -14859,7 +14769,7 @@
       "type": "Translation",
       "english": "We went back to the place where we saw the roses.",
       "surface": "[PARTIAL]",
-      "gloss": "1PL back.ACC GO-PST TO rose.DAT",
+      "gloss": "1PL GO-PST back.ACC TO rose.DAT-DEF",
       "status": "partial",
       "reason": "not realized: place, saw",
       "ir": {
@@ -15275,7 +15185,7 @@
       "type": "Translation",
       "english": "The house stands where three roads meet.",
       "surface": "[PARTIAL]",
-      "gloss": "house.NOM THREE meet.PL.ACC STAND",
+      "gloss": "house.NOM-DEF STAND meet.PL.ACC THREE",
       "status": "partial",
       "reason": "not realized: roads",
       "ir": {
@@ -15407,7 +15317,7 @@
       "type": "Translation",
       "english": "Evidently that gate is never opened, for the long grass and the great hemlocks grow close against it.",
       "surface": "[PARTIAL]",
-      "gloss": "THAT gate.NOM against.PL.ACC NEVER-PROG",
+      "gloss": "THAT gate.NOM NEVER-PROG against.PL.ACC-DEF",
       "status": "partial",
       "reason": "unrecognized: hemlocks; not realized: opened, long, grass, great, grow, close, negation, comparison, coordinated clause/predicate",
       "ir": {
@@ -15542,7 +15452,7 @@
       "type": "Translation",
       "english": "I met a little cottage girl; she was eight years old, she said.",
       "surface": "[PARTIAL]",
-      "gloss": "1SG EIGHT old.PL.ACC MEET-PST",
+      "gloss": "1SG MEET-PST old.PL.ACC EIGHT",
       "status": "partial",
       "reason": "not realized: little, cottage, girl, years, said",
       "ir": {
