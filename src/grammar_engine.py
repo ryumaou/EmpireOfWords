@@ -210,6 +210,11 @@ def generate_grammar(root_pool,rng,family='naturalistic',overrides=None):
     if qtype in ('particle','mixed'): particles['yes_no']=word()
     if negation in ('particle','mixed'): particles['negative']=word()
     if comparison in ('particle','mixed'): particles['comparative']=word(); particles['superlative']=word()
+    # Clause-level strategies are generated explicitly so the translator realizes
+    # semantic features through the target grammar instead of English word order.
+    particles['and']=word(); particles['or']=word(); particles['but']=word()
+    particles['ability']=word(); particles['obligation']=word(); particles['possibility']=word()
+    if 'perfect' not in morph: M('perfect',affix_sides)
     g={'family':family,'requested_family':requested,'word_order':order,'adposition_type':adp,'adjective_position':adj,'possessor_position':poss,
        'articles':articles,'gender':gender,'morphology_type':morphology,
        'morphophonemics':{'mode':mp_override or 'auto','rules':mp_rules},
@@ -217,6 +222,12 @@ def generate_grammar(root_pool,rng,family='naturalistic',overrides=None):
        'verb':{'tenses':tenses,'tense_level':tense_level,'aspects':aspects,'aspect_level':aspect_level,'moods':moods,'mood_level':mood_level,'agreement':agreement,'negation':negation},
        'comparison':{'degrees':['positive','comparative','superlative'],'strategy':comparison},
        'questions':{'strategy':qtype,'particle_position':rng.choice(['initial','final']),'wh_strategy':'in_situ' if rng.random()<.55 else 'fronted'},
+       'coordination':{'strategy':'particle','position':'between'},
+       'possession':{'strategy':'genitive' if 'genitive' in cases else 'juxtaposition','position':poss},
+       'modality':{'strategy':'particle','particle_position':'before_verb'},
+       'perfect':{'strategy':'affix'},
+       'relative_clause':{'strategy':'relative_particle','position':rng.choice(['before','after'])},
+       'complement_clause':{'strategy':'juxtaposition'},
        'morphemes':morph,'particles':particles,'pronouns':pronouns,'demonstratives':demonstratives,'interrogatives':interrogatives}
     return g
 
@@ -274,31 +285,39 @@ def _lookup(by, gloss, poses=()):
     return vals[0][1] if vals else None
 
 def _np(words,g,by,case='nominative'):
-    # Deterministic small English NP realizer used by translation-file examples.
-    det=None; demo=None; number='singular'; adjectives=[]; noun=None; gloss=[]
+    """Lemma-aware deterministic English NP realizer."""
+    det=None; demo=None; number='singular'; adjectives=[]; noun=None; noun_gloss=None
     nums={'two':2,'three':3,'four':4,'five':5,'six':6,'seven':7,'eight':8,'nine':9,'ten':10}
-    for w in words:
-        lw=w.lower()
+    cleaned=[w.lower().strip(".,;:!?") for w in words if w.strip(".,;:!?")]
+    # English possessive NP: baby's ball / Henry's dog.
+    if len(cleaned)>=2 and cleaned[0].endswith("'s"):
+        poss_lemma=_lexical_match(by,cleaned[0][:-2]) or cleaned[0][:-2]
+        poss=_lookup(by,poss_lemma,('n',))
+        head,hg=_np(cleaned[1:],g,by,case)
+        if head and poss:
+            return possessive_phrase(poss,head,g), f'{poss_lemma.upper()}-GEN {hg}'
+    poss_det=None
+    for lw in cleaned:
         if lw in ('the','a','an'): det=lw; continue
-        if lw in ('this','that','these','those'): demo=lw; number='plural' if lw in ('these','those') else number; continue
+        if lw in ('my','your','his','her','our','their','its'):
+            poss_det=lw; continue
+        if lw in ('this','that','these','those'):
+            demo=lw; number='plural' if lw in ('these','those') else number; continue
         if lw in nums:
-            number='plural'; nf=_lookup(by,lw,('num',));
+            number='plural'; nf=_lookup(by,lw,('num',))
             if nf: adjectives.append((nf,lw.upper()))
             continue
-        # common English plural fallback
-        candidates=[lw]
-        if lw.endswith('ren'): candidates.append(lw[:-3])
-        if lw.endswith('ies'): candidates.append(lw[:-3]+'y')
-        if lw.endswith('s'): candidates.append(lw[:-1])
-        found_n=None
-        for c in candidates:
-            found_n=_lookup(by,c,('n',))
-            if found_n: noun=found_n; gloss.append(c); number='plural' if c!=lw or lw.endswith('s') else number; break
-        if found_n: continue
-        a=_lookup(by,lw,('adj',))
-        if a: adjectives.append((a,lw)); continue
+        lemma=_lexical_match(by,lw) or lw
+        vals=by.get(lemma,[])
+        n=next((form for pos,form in vals if pos=='n' or pos.startswith('n')),None)
+        if n and noun is None:
+            noun=n; noun_gloss=lemma
+            if lw!=lemma or lw in _IRREGULAR_NOUNS: number='plural'
+            continue
+        a=next((form for pos,form in vals if pos=='adj' or pos.startswith('adj')),None)
+        if a: adjectives.append((a,lemma)); continue
     if not noun: return None,None
-    core=noun_form(noun,g,number,case); ng=(gloss[-1] if gloss else 'noun') + ('.PL' if number=='plural' else '') + ('.'+case[:3].upper() if case!='nominative' else '.NOM')
+    core=noun_form(noun,g,number,case); ng=(noun_gloss or 'noun') + ('.PL' if number=='plural' else '') + ('.'+case[:3].upper() if case!='nominative' else '.NOM')
     parts=[core]; gps=[ng]
     for a,ag in adjectives:
         if g['adjective_position']=='before': parts.insert(0,a); gps.insert(0,ag)
@@ -307,12 +326,15 @@ def _np(words,g,by,case='nominative'):
         key=('proximal_' if demo in ('this','these') else 'distal_')+('plural' if number=='plural' else 'singular')
         d=g['demonstratives'].get(key)
         if d: parts.insert(0,d); gps.insert(0,demo.upper())
-    # Articles are represented by generated bound morphemes where available.
     if det in ('the','a','an'):
         mk='definite_article' if det=='the' else 'indefinite_article'
         if mk in g['morphemes']:
-            # attach to the noun-bearing word
             idx=parts.index(core); parts[idx]=affix(parts[idx],g['morphemes'][mk],g); gps[idx]+='-'+('DEF' if det=='the' else 'INDF')
+    if poss_det:
+        pm={'my':'1sg','your':'2sg','his':'3sg','her':'3sg','our':'1pl','their':'3pl','its':'3sg'}
+        pf=g['pronouns'][pm[poss_det]]
+        phrase=possessive_phrase(pf,' '.join(parts),g)
+        return phrase, f'{pm[poss_det].upper()}-GEN '+' '.join(gps)
     return ' '.join(parts),' '.join(gps)
 
 def _legacy_translate_sentence(sentence,g,entries,forms):
@@ -354,10 +376,30 @@ def _legacy_translate_sentence(sentence,g,entries,forms):
             io=None
             if rest and rest[0] in ('me','him','her','us','them','you'):
                 mp={'me':'1sg','you':'2sg','him':'3sg','her':'3sg','us':'1pl','them':'3pl'}; io=g['pronouns'][mp[rest[0]]]; obj_words=rest[1:]
-            obj,og=_np(obj_words,g,by,'accusative')
-            if obj:
+            # Commands frequently end in particles/adverbials rather than an object
+            # (go away, sit here, come with us).  Realize those conservatively.
+            obj=None; og=''; tail_s=[]; tail_g=[]
+            particle_words={'away','up','down','here','there','around','back','out','off','on','over','through','together','again','now','soon','tomorrow','today','yesterday'}
+            prep_words={'with','by','to','in','at','on','from','for','into','onto','under','over','near','beside','across','through','upon','toward','towards','after','before','until','about'}
+            if obj_words:
+                if obj_words[0] in particle_words:
+                    adv=_lookup(by,obj_words[0],('adv','prep','p')) or obj_words[0]
+                    tail_s.append(adv); tail_g.append(obj_words[0].upper())
+                    obj_words=obj_words[1:]
+                elif obj_words[0] in prep_words:
+                    prep=obj_words[0]; pobj,pg=_np(obj_words[1:],g,by,'dative' if prep in ('to','for') else 'locative')
+                    ad=_lookup(by,prep,('prep','p')) or prep
+                    if pobj:
+                        tail_s.append(ad+' '+pobj if g['adposition_type']=='preposition' else pobj+' '+ad)
+                        tail_g.append(prep.upper()+' '+pg)
+                        obj_words=[]
+            if obj_words:
+                obj,og=_np(obj_words,g,by,'accusative')
+            if obj or not obj_words:
                 v=verb_form(verb,g,'2sg',mood='imperative' if 'imperative' in g['verb']['moods'] else 'indicative')
-                surf=' '.join(x for x in (v,io,obj) if x); return ('Translation',raw,surf,f'{toks[0]}-IMP '+(('1SG.DAT ') if io else '')+og,'ok')
+                surf=' '.join(x for x in (v,io,obj,*tail_s) if x)
+                gloss=' '.join(x for x in (f'{toks[0]}-IMP',(('1SG.DAT') if io else ''),(og or ''),*tail_g) if x)
+                return ('Translation',raw,surf,gloss,'ok')
     # Subject with a present-participial modifier: A tiger wearing a bell will starve.
     m=re.fullmatch(r'(the |a |an )?([a-z -]+?) ([a-z]+ing) (the |a |an )?([a-z -]+?) will ([a-z]+)',low)
     if m:
@@ -381,18 +423,20 @@ def _legacy_translate_sentence(sentence,g,entries,forms):
         if vi is not None:
             subj,sg=_np(toks[:vi],g,by); subj_gloss=sg; subj_person='3pl' if any(w.endswith('s') or w in ('children','men','women') for w in toks[:vi]) else '3sg'; idx=vi
     if subj:
-        tense='present'; aspect='simple'; negative=False
-        while idx<len(toks) and toks[idx] in ('will','do','does','did','not','is','are','am','was','were'):
-            x=toks[idx]; tense='future' if x=='will' else ('past' if x in ('did','was','were') else tense); negative=negative or x=='not'; aspect='progressive' if x in ('is','are','am','was','were') else aspect; idx+=1
+        tense='present'; aspect='simple'; negative=False; perfect=False; modal=None
+        while idx<len(toks) and toks[idx] in ('will','shall','can','could','should','would','must','may','might','do','does','did','not','is','are','am','was','were','has','have','had','been','being'):
+            x=toks[idx]
+            if x in ('will','shall'): tense='future'
+            elif x in ('did','was','were','had'): tense='past'
+            if x in ('can','could','should','would','must','may','might'): modal=x
+            if x in ('has','have','had'): perfect=True
+            if x in ('is','are','am','was','were','being') and idx+1<len(toks) and toks[idx+1].endswith('ing'): aspect='progressive'
+            if x=='been' and idx+1<len(toks) and toks[idx+1].endswith('ing'): aspect='progressive'; perfect=True
+            negative=negative or x=='not'; idx+=1
         if idx<len(toks) and toks[idx]=='not': negative=True; idx+=1
         if idx<len(toks):
-            vw=toks[idx]; basevw=vw[:-3] if vw.endswith('ing') else (vw[:-2] if vw.endswith('ed') else vw)
-            candidates=[vw,basevw, (vw[:-1] if vw.endswith('ed') else ''), (basevw+'e' if vw.endswith('ing') else '')]
-            if basevw.endswith('k') and vw.endswith('ked'): candidates.append(basevw+'e')
-            verb=None; vg=None
-            for c in candidates:
-                verb=_lookup(by,c,('v',))
-                if verb: vg=c; break
+            vw=toks[idx]; vg=_lexical_match(by,vw) or vw
+            verb=_lookup(by,vg,('v',))
             if verb:
                 idx+=1; rest=toks[idx:]
                 # strip common temporal adverb when lexicalized separately
@@ -408,7 +452,7 @@ def _legacy_translate_sentence(sentence,g,entries,forms):
                         if n1 and n2: subj=f'{n1} {conj} {n2}'; subj_gloss=f'{g1} AND {g2}'; subj_person='3pl'
                 obj=None; og=None
                 # prepositional tail
-                prep_i=next((i for i,x in enumerate(rest) if x in ('to','in','at','on')),None)
+                prep_i=next((i for i,x in enumerate(rest) if x in ('to','in','at','on','with','by','from','for','into','onto','under','over','near','beside','across','through','upon','toward','towards','after','before','until','about')),None)
                 pp=''; ppg=''
                 obj_words=rest if prep_i is None else rest[:prep_i]
                 if obj_words:
@@ -417,15 +461,31 @@ def _legacy_translate_sentence(sentence,g,entries,forms):
                         im={'me':'1sg','you':'2sg','him':'3sg','her':'3sg','us':'1pl','them':'3pl'}; pp=g['pronouns'][im[obj_words[0]]]+' '; ppg=im[obj_words[0]].upper()+'.DAT '; obj_words=obj_words[1:]
                     obj,og=_np(obj_words,g,by,'accusative')
                 if prep_i is not None:
-                    prep=rest[prep_i]; pobj,pg=_np(rest[prep_i+1:],g,by,'dative' if prep=='to' else 'locative')
+                    prep=rest[prep_i]; pobj,pg=_np(rest[prep_i+1:],g,by,'dative' if prep in ('to','for') else 'locative')
                     ad=_lookup(by,prep,('prep','p')) or prep
                     if pobj: pp += (ad+' '+pobj if g['adposition_type']=='preposition' else pobj+' '+ad); ppg += prep.upper()+' '+pg
                 v=verb_form(verb,g,subj_person,tense if tense in g['verb']['tenses'] else 'present',aspect if aspect in g['verb']['aspects'] else 'simple',negative=negative)
+                vgl=vg.upper()+('-FUT' if tense=='future' else '-PST' if tense=='past' else '')+('-PROG' if aspect=='progressive' else '')+('-NEG' if negative else '')
+                if perfect:
+                    v=affix(v,g['morphemes']['perfect'],g) if 'perfect' in g['morphemes'] else v
+                    vgl+='-PERF'
+                if modal:
+                    key='ability' if modal in ('can','could') else 'obligation' if modal in ('should','must') else 'possibility'
+                    mp=g.get('particles',{}).get(key)
+                    if mp: v=mp+' '+v
+                    vgl+='-MOD'
                 surf=order_clause(subj,v,obj or '',g).replace('  ',' ').strip(); surf=' '.join(x for x in [surf,pp,*tail] if x)
-                gloss=order_clause(subj_gloss or 'SUBJ',vg.upper()+('-FUT' if tense=='future' else '-PST' if tense=='past' else '')+('-PROG' if aspect=='progressive' else '')+('-NEG' if negative else ''),og or '',g).replace('  ',' ').strip(); gloss=' '.join(x for x in [gloss,ppg] if x)
+                gloss=order_clause(subj_gloss or 'SUBJ',vgl,og or '',g).replace('  ',' ').strip(); gloss=' '.join(x for x in [gloss,ppg] if x)
                 if question:
                     q=g.get('particles',{}).get('yes_no')
-                    if q: surf=(q+' '+surf) if g['questions']['particle_position']=='initial' else (surf+' '+q); gloss+=' Q'
+                    if q:
+                        surf=(q+' '+surf) if g['questions']['particle_position']=='initial' else (surf+' '+q)
+                    elif g.get('questions',{}).get('strategy') in ('word-order','verb','mixed'):
+                        # The target grammar marks interrogation structurally; the
+                        # surface is already in target clause order, so no English
+                        # auxiliary is copied.  The structured receipt records Q.
+                        pass
+                    gloss+=' Q'
                 return ('Translation',raw,surf,gloss,'ok')
     return ('Translation',raw,'[UNRESOLVED]','[UNRESOLVED]','unsupported vocabulary or construction')
 
@@ -434,6 +494,7 @@ def _legacy_translate_sentence(sentence,g,entries,forms):
 from english_analyzer import (
     CAPABILITIES as TRANSLATION_CAPABILITIES,
     IRREGULAR_VERBS as _IRREGULAR_VERBS,
+    IRREGULAR_NOUNS as _IRREGULAR_NOUNS,
     FUNCTION_WORDS as _FUNCTION_WORDS,
     AUX as _AUX,
     tokens as _english_tokens,
@@ -465,19 +526,29 @@ def _normalize_for_legacy(raw,by):
 
 
 def _prepare_for_legacy(raw, constructions, by):
-    """Adapt analyzable English surface syntax to the constrained legacy realizer."""
+    """Map English surface syntax into a neutral clause order for realization."""
     t=raw.strip()
     if 'imperative' in constructions and not t.endswith(('!','?')):
         t=t.rstrip('.')+'!'
     if 'yes_no_question' in constructions:
-        qt=_english_tokens(t)
-        if qt and qt[0].lower() in ('do','does','did'):
-            aux=qt[0].lower(); body=[x.lower() for x in qt[1:]]
-            vi=next((i for i,w in enumerate(body) if any(p=='v' for p,_ in by.get(_lexical_match(by,w) or w,[]))),None)
-            if vi is not None and vi>0:
-                t=' '.join(body[:vi]+[aux]+body[vi:])+'?'
-        elif len(qt)>=3 and qt[0].lower() in ('is','are','am','was','were') and qt[1].lower() in ('i','you','he','she','we','they'):
-            t=' '.join([qt[1].lower(),qt[0].lower()]+[x.lower() for x in qt[2:]])+'?'
+        qt=[x.lower() for x in _english_tokens(t)]
+        if len(qt)>=2 and qt[0] in ('do','does','did','is','are','am','was','were','has','have','had','will','shall','can','could','should','would','must','may','might'):
+            aux=qt[0]
+            # Find the lexical predicate after the fronted auxiliary. Everything
+            # before it is the subject NP; preserve the auxiliary for tense/modal/aspect.
+            vi=None
+            for i,w in enumerate(qt[1:],1):
+                lm=_lexical_match(by,w) or w
+                if any(p=='v' or p.startswith('v') for p,_ in by.get(lm,[])):
+                    vi=i; break
+                if w.endswith(('ing','ed','en')) and _lexical_match(by,w): vi=i; break
+            if vi is not None:
+                subj=qt[1:vi]; pred=qt[vi:]
+                if aux in ('do','does','did'):
+                    pred=([aux] if aux=='did' else [])+pred
+                else:
+                    pred=[aux]+pred
+                t=' '.join(subj+pred)+'?'
     return t
 
 def analyze_translation(sentence,g,entries,forms):
@@ -498,8 +569,15 @@ def analyze_translation(sentence,g,entries,forms):
         status='unsupported-grammar'; surface='[UNRESOLVED]'; gloss='[UNRESOLVED]'
         reason='unsupported construction: '+', '.join(diagnosed)
     elif legacy_status!='ok':
-        status='unresolved-vocabulary' if missing else 'unsupported-grammar'
-        reason=('missing vocabulary: '+', '.join(dict.fromkeys(missing))) if missing else 'unsupported sentence structure'
+        if missing:
+            status='unresolved-vocabulary'; reason='missing vocabulary: '+', '.join(dict.fromkeys(missing))
+        else:
+            # A failed surface-realizer pattern is not proof that the grammar is
+            # unsupported.  Only positively diagnosed constructions above receive
+            # unsupported-grammar.  Preserve the no-false-success rule by withholding
+            # a surface form and reporting this as a partial realization.
+            status='partial'; surface='[PARTIAL]'; gloss='[PARTIAL]'
+            reason='recognized construction not yet fully realized'
     else:
         # Completeness guard: every recognized lexical concept must leave a receipt
         # in the gloss.  v5.5 exempted subject nouns/adjectives because the legacy
@@ -582,7 +660,7 @@ def generate_examples(g, entries, forms, translation_sentences=None):
 
 def write_package(outdir, language_name, grammar, entries, forms, deriv_affixes, seed, translation_sentences=None, translation_source=None):
     outdir.mkdir(parents=True,exist_ok=True); examples=generate_examples(grammar,entries,forms,translation_sentences)
-    data={'schema_version':2,'tool_version':'5.9','name':language_name,'seed':seed,'grammar':grammar,'translation_capabilities':TRANSLATION_CAPABILITIES,'derivational_morphology':{k:{'side':v.side,'form':v.form,'source_rule':v.source_rule} for k,v in deriv_affixes.items()},'lexicon':[{'gloss':e.key.gloss,'pos':e.key.pos,'form':forms.get(e.key,''),'derivation':e.expr} for e in entries],'translation_source':str(translation_source) if translation_source else None,'examples':[{'type':t,'english':en,'surface':s,'gloss':gl,'status':status} for t,en,s,gl,status in examples]}
+    data={'schema_version':2,'tool_version':'6.1','name':language_name,'seed':seed,'grammar':grammar,'translation_capabilities':TRANSLATION_CAPABILITIES,'derivational_morphology':{k:{'side':v.side,'form':v.form,'source_rule':v.source_rule} for k,v in deriv_affixes.items()},'lexicon':[{'gloss':e.key.gloss,'pos':e.key.pos,'form':forms.get(e.key,''),'derivation':e.expr} for e in entries],'translation_source':str(translation_source) if translation_source else None,'examples':[{'type':t,'english':en,'surface':s,'gloss':gl,'status':status} for t,en,s,gl,status in examples]}
     (outdir/'language.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8'); (outdir/'grammar.json').write_text(json.dumps(grammar,ensure_ascii=False,indent=2),encoding='utf-8')
     with (outdir/'paradigms.csv').open('w',encoding='utf-8',newline='') as f:
         w=csv.writer(f); w.writerow(['English','POS','Lemma','Feature','Form'])

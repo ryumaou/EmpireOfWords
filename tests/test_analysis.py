@@ -19,4 +19,8 @@ class AnalyzerTests(unittest.TestCase):
  def test_lexical_have_imperative_not_perfect(self):
   a=analyze('Have some tea.',BY); self.assertIn('imperative',a['constructions']); self.assertNotIn('perfect',a['constructions'])
  def test_be_imperative(self): self.assertIn('imperative',analyze('Be careful.',BY)['constructions'])
+
+ def test_exclamation_not_automatically_imperative(self): self.assertNotIn('imperative',analyze('This string is too short!',BY)['constructions'])
+ def test_interjection_not_imperative(self): self.assertNotIn('imperative',analyze('Alas!',BY)['constructions'])
+
 if __name__=='__main__': unittest.main()

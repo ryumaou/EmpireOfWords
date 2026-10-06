@@ -6,7 +6,7 @@ from pathlib import Path
 import json
 
 SCHEMA_VERSION=2
-TOOL_VERSION='5.9'
+TOOL_VERSION='6.1'
 
 @dataclass(frozen=True)
 class EntryKey:

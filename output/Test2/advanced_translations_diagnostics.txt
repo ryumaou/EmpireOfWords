@@ -1,9 +1,9 @@
-Translation diagnostics: Example
+Translation diagnostics: Test2
 ============================================================
 
 Sentences: 229
-Complete: 67
-Partial: 137
+Complete: 66
+Partial: 138
 Missing vocabulary: 1
 Unsupported grammar: 24
 
@@ -55,9 +55,19 @@ Most common constructions in non-complete sentences:
   quotation: 1
 
 Most common missing/unrecognized English lexemes:
+  wild: 1
   everywhere: 1
+  doll: 1
+  caress: 1
+  gray: 1
+  glee: 1
+  corn: 1
   dear: 1
+  candlelight: 1
+  shabby: 1
+  mite: 1
   snug: 1
+  doll's: 1
   trustworthy: 1
   payment: 1
 
@@ -135,6 +145,12 @@ Per-sentence diagnostics:
   Constructions: simple
   Normalized: I hope the rain stop soon.
 
+#35 Once wild animals lived here.
+  Status: partial
+  Reason: unrecognized: wild
+  Constructions: simple
+  Normalized: Once wild animal lived here.
+
 #36 Slowly she looked around.
   Status: partial
   Reason: recognized construction not yet fully realized
@@ -197,7 +213,7 @@ Per-sentence diagnostics:
 
 #52 The little girl’s doll is broken.
   Status: partial
-  Reason: not realized: doll, possessive relation
+  Reason: unrecognized: doll; not realized: possessive relation
   Constructions: possessive
   Normalized: The little girl doll is broken.
 
@@ -341,7 +357,7 @@ Per-sentence diagnostics:
 
 #90 The west wind blew across my face like a friendly caress.
   Status: partial
-  Reason: not realized: blew, like, caress
+  Reason: unrecognized: caress; not realized: blew, like
   Constructions: simple
   Normalized: The west wind did blow across my face like a friendly caress.
 
@@ -485,7 +501,7 @@ Per-sentence diagnostics:
 
 #127 Does the sky look blue or gray?
   Status: partial
-  Reason: not realized: blue, gray
+  Reason: unrecognized: gray; not realized: blue
   Constructions: coordination, yes_no_question
   Normalized: do the sky look blue or gray?
 
@@ -527,7 +543,7 @@ Per-sentence diagnostics:
 
 #135 The baby clapped her hands and laughed in glee.
   Status: partial
-  Reason: not realized: clapped, hands, coordinated clause/predicate
+  Reason: unrecognized: glee; not realized: clapped, hands, coordinated clause/predicate
   Constructions: coordination
   Normalized: The baby clapped her hand and laughed in glee.
 
@@ -551,7 +567,7 @@ Per-sentence diagnostics:
 
 #140 They popped corn, and then sat around the fire and ate it.
   Status: partial
-  Reason: not realized: then, sat, fire, ate, coordinated clause/predicate
+  Reason: unrecognized: corn; not realized: then, sat, ate, coordinated clause/predicate
   Constructions: coordination
   Normalized: They popped corn and then did sit around the fire and ate it.
 
@@ -695,7 +711,7 @@ Per-sentence diagnostics:
 
 #168 In winter I get up at night, and dress by yellow candlelight.
   Status: partial
-  Reason: not realized: dress, candlelight
+  Reason: unrecognized: candlelight; not realized: dress
   Constructions: coordination
   Normalized: (unchanged)
 
@@ -761,9 +777,9 @@ Per-sentence diagnostics:
 
 #180 The little girl made the doll’s dress herself.
   Status: partial
-  Reason: not realized: dress, possessive relation
+  Reason: unrecognized: doll's; not realized: possessive relation
   Constructions: reflexive, possessive
-  Normalized: The little girl did make the doll dress herself.
+  Normalized: The little girl did make the doll' dress herself.
 
 #183 He proved himself trustworthy.
   Status: partial

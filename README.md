@@ -825,3 +825,33 @@ Empire Of Words favors reproducibility and inspectability over opaque generation
 The grammar-family profiles are broad typological inspirations rather than linguistic simulations of specific real-world languages. The English translator supports a growing inventory of constructions but is not a general-purpose natural-language parser. Unsupported grammar is diagnosed instead of silently approximated, and missing target-language concepts are reported instead of invented.
 
 Personal names are language-shaped but semantically arbitrary. Family/clan names have meanings only when those meanings are grounded in the semantic formulas and vocabulary forms used to construct them.
+
+## Structured translation and grammar realization
+
+Empire Of Words analyzes English before realization and refuses to label a translation complete when recognized lexical or grammatical information was dropped. Generated grammars now record explicit clause-level strategies for coordination, possession, modality, perfect aspect, questions, relative clauses, and complement clauses in addition to word order and morphology.
+
+The translation path is:
+
+```text
+English source
+    -> deterministic English analysis
+    -> normalized clause features
+    -> generated grammar strategies
+    -> target-language realization
+    -> completeness validation
+```
+
+English auxiliary inversion is normalized before realization, so constructions such as `Can you ...?`, `Have they ...?`, and `Will she ...?` are realized according to the generated language's question strategy rather than copied from English. Imperative detection requires verbal evidence; exclamation punctuation alone does not create imperative mood. Noun-phrase realization is lemma-aware and supports inflected nouns, adjectives, possessive determiners, and simple possessive noun phrases.
+
+Translation diagnostics remain the regression mechanism. `complete` means all recognized source features have realization receipts; `partial` means some recognized content was not realized; `unresolved-vocabulary` means a required concept is absent; and `unsupported-grammar` means the analyzer understood a construction that the deterministic realizer cannot yet safely express.
+
+## Translation status semantics (v6.1)
+
+Translation diagnostics distinguish four outcomes:
+
+- `ok` / Complete: every required lexical and grammatical feature has a realization receipt.
+- `partial`: the construction is supported or recognized, but the deterministic realizer could not safely express every required feature. Surface output is withheld as `[PARTIAL]` when necessary.
+- `unresolved-vocabulary`: a genuine lexical concept is absent from the language package; batch translation writes the automatic `*_missing_words.txt` queue when an addable lemma/POS can be inferred safely.
+- `unsupported-grammar`: reserved for positively diagnosed constructions for which no deterministic realization strategy is implemented. A realizer pattern miss by itself is not classified as unsupported grammar.
+
+This distinction is intentional: Empire Of Words does not count a translation as complete merely because it can produce plausible-looking target text.

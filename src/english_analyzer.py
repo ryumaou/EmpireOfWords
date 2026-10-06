@@ -135,7 +135,9 @@ def detect_constructions(raw, low_tokens, by=None):
     first=low_tokens[0] if low_tokens else ''
     first_is_verb=bool(by and first in by and any(p=='v' or p.startswith('v') for p,_ in by[first]))
     aux_imperative = first in ('be','do','have') and not raw.rstrip().endswith('?') and 'perfect' not in found
-    if raw.rstrip().endswith('!') or (first_is_verb and first not in AUX) or aux_imperative: found.append('imperative')
+    # Exclamation marks alone do not make a clause imperative (e.g. 'Alas!' or
+    # 'This string is too short!').  Imperative force requires an initial verb.
+    if (first_is_verb and first not in AUX) or aux_imperative: found.append('imperative')
     if low_tokens[:2] in (['it','is'],['it','was']) and any(w in low_tokens for w in ('rain','raining','snow','snowing')): found.append('weather')
     if any(w.endswith("'s") for w in low_tokens): found.append('possessive')
     return list(dict.fromkeys(found))

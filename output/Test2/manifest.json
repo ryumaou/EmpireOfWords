@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "tool_version": "6.0",
+  "language": "Test2",
+  "seed": 12345,
+  "source": {
+    "path": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\data\\mongolian-sanitized2.txt",
+    "sha256": "a0b81878004bced49f30bb361c504aac8917936d45c75b596b9add21bab695be"
+  },
+  "vocabulary": {
+    "path": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\vocabulary\\UndermountainVocabulary.txt",
+    "sha256": "36163ab1d3b0e1e5a98ea211fb6c613b7ea473ee7f0c299eafcf83921b277545"
+  },
+  "supplemental_vocabulary": [],
+  "grammar_family": "sino-tibetan",
+  "grammar_file": null,
+  "translation_source": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\translations\\sentences_default.txt",
+  "counts": {
+    "entries": 5104,
+    "base_roots": 4729,
+    "modifiers": 18,
+    "derived_resolved": 375,
+    "unresolved_errors": 0
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "family": "sino-tibetan",
+  "requested_family": "sino-tibetan",
+  "word_order": "SVO",
+  "adposition_type": "postposition",
+  "adjective_position": "before",
+  "possessor_position": "after",
+  "articles": "none",
+  "gender": 0,
+  "morphology_type": "analytic",
+  "morphophonemics": {
+    "mode": "auto",
+    "rules": [
+      "tone_like_none"
+    ]
+  },
+  "noun": {
+    "numbers": [
+      "singular"
+    ],
+    "plural_strategy": "none",
+    "cases": [
+      "nominative"
+    ]
+  },
+  "verb": {
+    "tenses": [
+      "present"
+    ],
+    "tense_level": "minimal",
+    "aspects": [
+      "simple",
+      "progressive",
+      "perfect"
+    ],
+    "aspect_level": "rich",
+    "moods": [
+      "indicative",
+      "imperative"
+    ],
+    "mood_level": "minimal",
+    "agreement": "none",
+    "negation": "particle"
+  },
+  "comparison": {
+    "degrees": [
+      "positive",
+      "comparative",
+      "superlative"
+    ],
+    "strategy": "particle"
+  },
+  "questions": {
+    "strategy": "particle",
+    "particle_position": "final",
+    "wh_strategy": "in_situ"
+  },
+  "coordination": {
+    "strategy": "particle",
+    "position": "between"
+  },
+  "possession": {
+    "strategy": "juxtaposition",
+    "position": "after"
+  },
+  "modality": {
+    "strategy": "particle",
+    "particle_position": "before_verb"
+  },
+  "perfect": {
+    "strategy": "affix"
+  },
+  "relative_clause": {
+    "strategy": "relative_particle",
+    "position": "before"
+  },
+  "complement_clause": {
+    "strategy": "juxtaposition"
+  },
+  "morphemes": {
+    "progressive": {
+      "form": "bos",
+      "side": "suffix"
+    },
+    "perfect": {
+      "form": "ul",
+      "side": "prefix"
+    },
+    "imperative": {
+      "form": "s",
+      "side": "suffix"
+    }
+  },
+  "particles": {
+    "yes_no": "koocigh",
+    "negative": "nabuiyi",
+    "comparative": "ebere",
+    "superlative": "bujuuil",
+    "and": "qariusi",
+    "or": "olaqal",
+    "but": "qotodu",
+    "ability": "origuul",
+    "obligation": "neke",
+    "possibility": "oluun"
+  },
+  "pronouns": {
+    "1sg": "orgedem",
+    "2sg": "oonguun",
+    "3sg": "bainudd",
+    "1pl": "oduurui",
+    "2pl": "tooge",
+    "3pl": "juui"
+  },
+  "demonstratives": {
+    "proximal_singular": "bolanu",
+    "distal_singular": "umuuran",
+    "proximal_plural": "amuusal",
+    "distal_plural": "toorono"
+  },
+  "interrogatives": {
+    "who": "maraca",
+    "what": "saiqaiu",
+    "where": "namuunu",
+    "when": "jarabuu",
+    "why": "odun",
+    "how": "jitalai",
+    "which": "oberes"
+  }
+}

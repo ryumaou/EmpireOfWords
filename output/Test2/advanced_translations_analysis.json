@@ -1,8 +1,8 @@
 {
-  "language": "Example",
+  "language": "Test2",
   "summary": {
-    "ok": 67,
-    "partial": 137,
+    "ok": 66,
+    "partial": 138,
     "unsupported-grammar": 24,
     "unresolved-vocabulary": 1
   },
@@ -36,7 +36,7 @@
     {
       "type": "Translation",
       "english": "The big dog is sleeping.",
-      "surface": "yojizoz janni dafusana",
+      "surface": "casuumu oombud ajuurbos",
       "gloss": "big dog.NOM SLEEP-PROG",
       "status": "ok",
       "reason": "complete",
@@ -91,7 +91,7 @@
     {
       "type": "Translation",
       "english": "Where is my book?",
-      "surface": "kyumasu dariryodas hyantte",
+      "surface": "namuunu uuged orgedem",
       "gloss": "WHERE 1SG-GEN book",
       "status": "ok",
       "reason": "complete",
@@ -140,8 +140,8 @@
     {
       "type": "Translation",
       "english": "She will give him water.",
-      "surface": "hinmasu autaranim nyopet hinmasu ",
-      "gloss": "3SG water.ACC GIVE-FUT 3SG.DAT ",
+      "surface": "bainudd ondelgi joorong bainudd ",
+      "gloss": "3SG GIVE-FUT water.ACC 3SG.DAT ",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -195,7 +195,7 @@
     {
       "type": "Translation",
       "english": "This child walked to that house yesterday.",
-      "surface": "pra auta myuzoto soda zattakiaro bomasu akishid",
+      "surface": "bolanu uunigha tuurtin umuuran yongju kemuula qanduun",
       "gloss": "THIS child.NOM WALK TO THAT house.DAT",
       "status": "ok",
       "reason": "complete",
@@ -260,7 +260,7 @@
     {
       "type": "Translation",
       "english": "Are you hungry?",
-      "surface": "den one nupya",
+      "surface": "oonguun enilaul koocigh",
       "gloss": "2SG hungry Q",
       "status": "ok",
       "reason": "complete",
@@ -303,7 +303,7 @@
     {
       "type": "Translation",
       "english": "Give me the red bird!",
-      "surface": "nyopetas dariryo tomasut wopihyunim",
+      "surface": "ondelgis orgedem cighen kuuirtu",
       "gloss": "give-IMP 1SG.DAT red bird.ACC",
       "status": "ok",
       "reason": "complete",
@@ -358,7 +358,7 @@
     {
       "type": "Translation",
       "english": "The woman and the man are talking.",
-      "surface": "wade zemana",
+      "surface": "iruugse golonbos",
       "gloss": "woman.NOM TALK-PROG",
       "status": "ok",
       "reason": "complete",
@@ -426,8 +426,8 @@
     {
       "type": "Translation",
       "english": "I do not see three cats.",
-      "surface": "dariryo sedomas hittasunim karintao",
-      "gloss": "1SG THREE cat.PL.ACC SEE-NEG",
+      "surface": "orgedem nabuiyi saralun catan ajasid",
+      "gloss": "1SG SEE-NEG THREE cat.PL.ACC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -487,7 +487,7 @@
     {
       "type": "Translation",
       "english": "There is a black mountain.",
-      "surface": "ademasu kotoshu reaazap",
+      "surface": "baiqai tng bisquba",
       "gloss": "black mountain.NOM exist-3SG",
       "status": "ok",
       "reason": "complete",
@@ -540,7 +540,7 @@
     {
       "type": "Translation",
       "english": "Two children played in the garden.",
-      "surface": "izumono auta tadorot puwo kyogemy",
+      "surface": "oruulbi uunigha moogsek ejibali maralua",
       "gloss": "TWO child.PL.NOM PLAY IN garden.LOC",
       "status": "ok",
       "reason": "complete",
@@ -666,7 +666,7 @@
     {
       "type": "Translation",
       "english": "The sun shines.",
-      "surface": "datta tochi",
+      "surface": "dasuugi tain",
       "gloss": "sun.NOM SHINE",
       "status": "ok",
       "reason": "complete",
@@ -707,7 +707,7 @@
     {
       "type": "Translation",
       "english": "The sun is shining.",
-      "surface": "datta tochina",
+      "surface": "dasuugi tainbos",
       "gloss": "sun.NOM SHINE-PROG",
       "status": "ok",
       "reason": "complete",
@@ -756,7 +756,7 @@
     {
       "type": "Translation",
       "english": "The sun shone.",
-      "surface": "datta tochi",
+      "surface": "dasuugi tain",
       "gloss": "sun.NOM SHINE-PST",
       "status": "ok",
       "reason": "complete",
@@ -797,7 +797,7 @@
     {
       "type": "Translation",
       "english": "The sun will shine.",
-      "surface": "datta tochi",
+      "surface": "dasuugi tain",
       "gloss": "sun.NOM SHINE-FUT",
       "status": "ok",
       "reason": "complete",
@@ -901,7 +901,7 @@
     {
       "type": "Translation",
       "english": "The sun is shining again.",
-      "surface": "datta tochina",
+      "surface": "dasuugi tainbos",
       "gloss": "sun.NOM SHINE-PROG",
       "status": "ok",
       "reason": "complete",
@@ -956,7 +956,7 @@
     {
       "type": "Translation",
       "english": "The sun will shine tomorrow.",
-      "surface": "datta tochi zui",
+      "surface": "dasuugi tain berisai",
       "gloss": "sun.NOM SHINE-FUT",
       "status": "ok",
       "reason": "complete",
@@ -1058,7 +1058,7 @@
     {
       "type": "Translation",
       "english": "The bright sun shines.",
-      "surface": "yoo datta tochi",
+      "surface": "deci dasuugi tain",
       "gloss": "bright sun.NOM SHINE",
       "status": "ok",
       "reason": "complete",
@@ -1105,7 +1105,7 @@
     {
       "type": "Translation",
       "english": "The sun is rising now.",
-      "surface": "datta sewapyuna",
+      "surface": "dasuugi sighanbos",
       "gloss": "sun.NOM RISE-PROG",
       "status": "ok",
       "reason": "complete",
@@ -1160,7 +1160,7 @@
     {
       "type": "Translation",
       "english": "All the people shouted.",
-      "surface": "hozuare hituru",
+      "surface": "soronga saisqan",
       "gloss": "person.PL.NOM SHOUT",
       "status": "ok",
       "reason": "complete",
@@ -1207,7 +1207,7 @@
     {
       "type": "Translation",
       "english": "Some of the people shouted.",
-      "surface": "hozuare hituru",
+      "surface": "soronga saisqan",
       "gloss": "person.PL.NOM SHOUT",
       "status": "ok",
       "reason": "complete",
@@ -1260,7 +1260,7 @@
     {
       "type": "Translation",
       "english": "Many of the people shouted twice.",
-      "surface": "hozuare hituru",
+      "surface": "soronga saisqan",
       "gloss": "person.PL.NOM SHOUT",
       "status": "ok",
       "reason": "complete",
@@ -1319,7 +1319,7 @@
     {
       "type": "Translation",
       "english": "Happy people often shout.",
-      "surface": "jinatta hozuare hituru",
+      "surface": "danig soronga saisqan",
       "gloss": "happy person.PL.NOM SHOUT",
       "status": "ok",
       "reason": "complete",
@@ -1788,7 +1788,7 @@
       "type": "Translation",
       "english": "I hope the rain stops soon.",
       "surface": "[PARTIAL]",
-      "gloss": "1SG rain.ACC HOPE",
+      "gloss": "1SG HOPE rain.ACC",
       "status": "partial",
       "reason": "not realized: stops",
       "ir": {
@@ -1846,10 +1846,10 @@
     {
       "type": "Translation",
       "english": "Once wild animals lived here.",
-      "surface": "pyuhoch hekya uhezenr",
-      "gloss": "wild animal.NOM LIVE",
-      "status": "ok",
-      "reason": "complete",
+      "surface": "[PARTIAL]",
+      "gloss": "animal.NOM LIVE",
+      "status": "partial",
+      "reason": "unrecognized: wild",
       "ir": {
         "tokens": [
           "once",
@@ -1867,10 +1867,6 @@
         ],
         "constructions": [],
         "lexical_items": [
-          {
-            "token": "wild",
-            "lemma": "wild"
-          },
           {
             "token": "animals",
             "lemma": "animal"
@@ -1891,7 +1887,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "wild"
+        ],
         "normalized_english": "Once wild animal lived here.",
         "realizer_input": null
       }
@@ -1946,7 +1944,7 @@
     {
       "type": "Translation",
       "english": "Go away!",
-      "surface": "hyanos zunseda",
+      "surface": "ebuis otu",
       "gloss": "go-IMP AWAY",
       "status": "ok",
       "reason": "complete",
@@ -2020,7 +2018,7 @@
     {
       "type": "Translation",
       "english": "You should go.",
-      "surface": "den hyano",
+      "surface": "oonguun neke ebui",
       "gloss": "2SG GO-MOD",
       "status": "ok",
       "reason": "complete",
@@ -2124,7 +2122,7 @@
     {
       "type": "Translation",
       "english": "He will arrive soon.",
-      "surface": "hinmasu altis",
+      "surface": "bainudd ebeigsi",
       "gloss": "3SG ARRIVE-FUT",
       "status": "ok",
       "reason": "complete",
@@ -2468,7 +2466,7 @@
     {
       "type": "Translation",
       "english": "You have come too soon.",
-      "surface": "den ajimasu",
+      "surface": "oonguun ulorighac",
       "gloss": "2SG COME-PERF",
       "status": "ok",
       "reason": "complete",
@@ -2577,8 +2575,8 @@
     {
       "type": "Translation",
       "english": "Directly opposite stands a wonderful palace.",
-      "surface": "towaha tumasu hodoru zuyuhonim kande",
-      "gloss": "direct opposite.NOM wonderful palace.ACC STAND",
+      "surface": "bisu jimatai minutur uuilua tuuiyin",
+      "gloss": "direct opposite.NOM STAND wonderful palace.ACC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -2687,7 +2685,7 @@
     {
       "type": "Translation",
       "english": "My cat is black.",
-      "surface": "dariryodas hittasu ademasu",
+      "surface": "ajasid orgedem baiqai",
       "gloss": "1SG-GEN cat.NOM BLACK",
       "status": "ok",
       "reason": "complete",
@@ -2737,7 +2735,7 @@
       "surface": "[PARTIAL]",
       "gloss": "little girl.NOM BROKEN",
       "status": "partial",
-      "reason": "not realized: doll, possessive relation",
+      "reason": "unrecognized: doll; not realized: possessive relation",
       "ir": {
         "tokens": [
           "the",
@@ -2769,10 +2767,6 @@
             "feature": "possessive"
           },
           {
-            "token": "doll",
-            "lemma": "doll"
-          },
-          {
             "token": "broken",
             "lemma": "broken"
           }
@@ -2788,7 +2782,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "doll"
+        ],
         "normalized_english": "The little girl doll is broken.",
         "realizer_input": null
       }
@@ -2797,7 +2793,7 @@
       "type": "Translation",
       "english": "I usually sleep soundly.",
       "surface": "[PARTIAL]",
-      "gloss": "1SG sleep.ACC USUALLY",
+      "gloss": "1SG USUALLY sleep.ACC",
       "status": "partial",
       "reason": "not realized: soundly",
       "ir": {
@@ -2843,7 +2839,7 @@
     {
       "type": "Translation",
       "english": "The children ran after Jack.",
-      "surface": "auta henuzuk",
+      "surface": "uunigha cincuuk",
       "gloss": "child.PL.NOM RUN-PST",
       "status": "ok",
       "reason": "complete",
@@ -2898,7 +2894,7 @@
     {
       "type": "Translation",
       "english": "I can play after school.",
-      "surface": "dariryo tadorot shoheky soo",
+      "surface": "orgedem origuul moogsek nirad keduugu",
       "gloss": "1SG PLAY-MOD AFTER school.LOC",
       "status": "ok",
       "reason": "complete",
@@ -3024,7 +3020,7 @@
     {
       "type": "Translation",
       "english": "We arrived at the river.",
-      "surface": "owa altis bayuyos waminai",
+      "surface": "oduurui ebeigsi nuubisa ali",
       "gloss": "1PL ARRIVE AT river.LOC",
       "status": "ok",
       "reason": "complete",
@@ -3077,7 +3073,7 @@
     {
       "type": "Translation",
       "english": "I have been waiting for you.",
-      "surface": "dariryo judatana",
+      "surface": "orgedem ulsabunbos",
       "gloss": "1SG WAIT-PROG-PERF",
       "status": "ok",
       "reason": "complete",
@@ -3138,8 +3134,8 @@
     {
       "type": "Translation",
       "english": "The campers sat around the fire.",
-      "surface": "hyofumy pyahyatanim jietema",
-      "gloss": "camper.NOM fire.ACC SIT-PST",
+      "surface": "koober juui orgi",
+      "gloss": "camper.NOM SIT-PST fire.ACC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -3497,8 +3493,8 @@
     {
       "type": "Translation",
       "english": "Can your brother dance well?",
-      "surface": "denadas ata soyuzaranim yahyubou nupya",
-      "gloss": "2SG-GEN brother.NOM well.ACC DANCE-MOD Q",
+      "surface": "saidal oonguun origuul amjoobcima jigha koocigh",
+      "gloss": "2SG-GEN brother.NOM DANCE-MOD well.ACC Q",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -3553,7 +3549,7 @@
     {
       "type": "Translation",
       "english": "Did the man leave?",
-      "surface": "anchita heyanyo nupya",
+      "surface": "ouluuju cegei koocigh",
       "gloss": "man.NOM LEAVE-PST Q",
       "status": "ok",
       "reason": "complete",
@@ -3602,7 +3598,7 @@
     {
       "type": "Translation",
       "english": "Is your sister coming for you?",
-      "surface": "denadas ohyohe ufuna nupya",
+      "surface": "miled oonguun turlunbos koocigh",
       "gloss": "2SG-GEN sister.NOM COMING-PROG Q",
       "status": "ok",
       "reason": "complete",
@@ -3663,7 +3659,7 @@
     {
       "type": "Translation",
       "english": "Can you come tomorrow?",
-      "surface": "den ajimasu zui nupya",
+      "surface": "oonguun origuul orighac berisai koocigh",
       "gloss": "2SG COME-MOD Q",
       "status": "ok",
       "reason": "complete",
@@ -3713,7 +3709,7 @@
     {
       "type": "Translation",
       "english": "Have the neighbors gone away for the winter?",
-      "surface": "harimas hyano tsunaro woutte nupya",
+      "surface": "kuugei ulebui suusun gedbuuk koocigh",
       "gloss": "neighbor.NOM GO-PERF FOR winter.DAT Q",
       "status": "ok",
       "reason": "complete",
@@ -3786,7 +3782,7 @@
     {
       "type": "Translation",
       "english": "Does the robin sing in the rain?",
-      "surface": "antas zuheazokez wahedes kyogemy nupya",
+      "surface": "nutuu ajgikinu nabci maralua koocigh",
       "gloss": "robin.NOM SING IN rain.LOC Q",
       "status": "ok",
       "reason": "complete",
@@ -3853,7 +3849,7 @@
     {
       "type": "Translation",
       "english": "Are you going with us to the concert?",
-      "surface": "den wahena chiky zaku nupya",
+      "surface": "oonguun salqarqbos cimui jegdele koocigh",
       "gloss": "2SG GOING-PROG WITH concert.LOC Q",
       "status": "ok",
       "reason": "complete",
@@ -3996,7 +3992,7 @@
       "type": "Translation",
       "english": "We sailed down the river for several miles.",
       "surface": "[PARTIAL]",
-      "gloss": "1PL river.ACC SAIL FOR mile.DAT",
+      "gloss": "1PL SAIL river.ACC FOR mile.DAT",
       "status": "partial",
       "reason": "not realized: several",
       "ir": {
@@ -4275,7 +4271,7 @@
       "type": "Translation",
       "english": "An old man with a walking stick stood beside the fence.",
       "surface": "[PARTIAL]",
-      "gloss": "old man.NOM stand.ACC WALKING BESIDE fence.LOC",
+      "gloss": "old man.NOM WALKING stand.ACC BESIDE fence.LOC",
       "status": "partial",
       "reason": "not realized: stick",
       "ir": {
@@ -4541,7 +4537,7 @@
       "type": "Translation",
       "english": "Many little girls with wreaths of flowers on their heads danced around the bonfire.",
       "surface": "[PARTIAL]",
-      "gloss": "3PL-GEN little girl.NOM dance.PL.ACC HEAD",
+      "gloss": "3PL-GEN little girl.NOM HEAD dance.PL.ACC",
       "status": "partial",
       "reason": "not realized: wreaths, flowers, bonfire",
       "ir": {
@@ -4808,7 +4804,7 @@
       "type": "Translation",
       "english": "On the top of the hill in a little hut lived a wise old woman.",
       "surface": "[PARTIAL]",
-      "gloss": "little top.NOM old wise woman.ACC LIVE",
+      "gloss": "little top.NOM LIVE old wise woman.ACC",
       "status": "partial",
       "reason": "not realized: hill, hut",
       "ir": {
@@ -5190,8 +5186,8 @@
     {
       "type": "Translation",
       "english": "Between the two lofty mountains lay a fertile valley.",
-      "surface": "midasu izumono kotoshu bane domyunim atayaha",
-      "gloss": "lofty TWO mountain.PL.NOM fertile valley.ACC LAY",
+      "surface": "donguur oruulbi tng eledun moobere golusun",
+      "gloss": "lofty TWO mountain.PL.NOM LAY fertile valley.ACC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -5267,8 +5263,8 @@
     {
       "type": "Translation",
       "english": "Among the wheat grew tall red poppies.",
-      "surface": "ogyasu tomasut aran waturunim bekoto",
-      "gloss": "wheat.NOM red tall poppy.ACC GROW-PST",
+      "surface": "kejiged erimala cighen eribili sinaima",
+      "gloss": "wheat.NOM GROW-PST red tall poppy.ACC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -5525,7 +5521,7 @@
       "surface": "[PARTIAL]",
       "gloss": "west.NOM WIND ACROSS 1SG-GEN friendly face.LOC",
       "status": "partial",
-      "reason": "not realized: blew, like, caress",
+      "reason": "unrecognized: caress; not realized: blew, like",
       "ir": {
         "tokens": [
           "the",
@@ -5582,10 +5578,6 @@
           {
             "token": "friendly",
             "lemma": "friendly"
-          },
-          {
-            "token": "caress",
-            "lemma": "caress"
           }
         ],
         "grammatical_items": [
@@ -5603,7 +5595,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "caress"
+        ],
         "normalized_english": "The west wind did blow across my face like a friendly caress.",
         "realizer_input": null
       }
@@ -5683,7 +5677,7 @@
       "type": "Translation",
       "english": "A box of growing plants stood in the Window.",
       "surface": "[PARTIAL]",
-      "gloss": "box.NOM plant.ACC GROW IN window.LOC",
+      "gloss": "box.NOM GROW plant.ACC IN window.LOC",
       "status": "partial",
       "reason": "not realized: stood",
       "ir": {
@@ -5806,7 +5800,7 @@
     {
       "type": "Translation",
       "english": "These oranges are juicy.",
-      "surface": "nataqui owomas goku",
+      "surface": "amuusal olasaiq acigs",
       "gloss": "THESE orange.PL.NOM JUICY",
       "status": "ok",
       "reason": "complete",
@@ -5900,8 +5894,8 @@
     {
       "type": "Translation",
       "english": "The streets are full of people.",
-      "surface": "komuyus hozuarenim hadeshi",
-      "gloss": "street.NOM person.PL.ACC FULL",
+      "surface": "daasair naraala soronga",
+      "gloss": "street.NOM FULL person.PL.ACC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -6179,8 +6173,8 @@
     {
       "type": "Translation",
       "english": "I have lost my blanket.",
-      "surface": "dariryo dariryodas guhododanim danta",
-      "gloss": "1SG 1SG-GEN blanket.ACC LOSE-PERF",
+      "surface": "orgedem ulorberui oronu orgedem",
+      "gloss": "1SG LOSE-PERF 1SG-GEN blanket.ACC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -6315,8 +6309,8 @@
     {
       "type": "Translation",
       "english": "At noon we ate our lunch by the roadside.",
-      "surface": "zosede owadas dasusazanim byasi chibyo wodasu",
-      "gloss": "noon.NOM 1PL-GEN lunch.ACC EAT-PST BY roadside.LOC",
+      "surface": "meregda abuju minglan oduurui medkila oorongk",
+      "gloss": "noon.NOM EAT-PST 1PL-GEN lunch.ACC BY roadside.LOC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -6569,7 +6563,7 @@
     {
       "type": "Translation",
       "english": "Have all the leaves fallen from the tree?",
-      "surface": "hikinar binseki fusokum ehogoz nupya",
+      "surface": "amtei ulpronguu uugilas geriud koocigh",
       "gloss": "leaf.NOM FALL-PERF FROM tree.LOC Q",
       "status": "ok",
       "reason": "complete",
@@ -6704,8 +6698,8 @@
     {
       "type": "Translation",
       "english": "Will you send this message for me?",
-      "surface": "den pra ufuzezunim imi nupya",
-      "gloss": "2SG THIS message.ACC SEND-FUT Q",
+      "surface": "oonguun duudamu bolanu oruiigs koocigh",
+      "gloss": "2SG SEND-FUT THIS message.ACC Q",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -6772,7 +6766,7 @@
     {
       "type": "Translation",
       "english": "Are you waiting for me?",
-      "surface": "den judatana nupya",
+      "surface": "oonguun sabunbos koocigh",
       "gloss": "2SG WAIT-PROG Q",
       "status": "ok",
       "reason": "complete",
@@ -6828,8 +6822,8 @@
     {
       "type": "Translation",
       "english": "Is this the first kitten of the litter?",
-      "surface": "pra desuae hepamanim hittasu nupya",
-      "gloss": "THIS first.NOM litter.ACC KITTEN Q",
+      "surface": "bolanu maljilg teajasid sighand koocigh",
+      "gloss": "THIS first.NOM KITTEN litter.ACC Q",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -7023,7 +7017,7 @@
     {
       "type": "Translation",
       "english": "Listen.",
-      "surface": "kyattas",
+      "surface": "toorongs",
       "gloss": "listen-IMP",
       "status": "ok",
       "reason": "complete",
@@ -7102,7 +7096,7 @@
     {
       "type": "Translation",
       "english": "Keep this secret until tomorrow.",
-      "surface": "nattas pra coruyonim",
+      "surface": "soyuukus bolanu qau",
       "gloss": "keep-IMP THIS secret.ACC",
       "status": "ok",
       "reason": "complete",
@@ -7200,7 +7194,7 @@
     {
       "type": "Translation",
       "english": "Bring your friends with you.",
-      "surface": "kyurus denadas ryazugyanim",
+      "surface": "jaans jilengt oonguun",
       "gloss": "bring-IMP 2SG-GEN friend.ACC",
       "status": "ok",
       "reason": "complete",
@@ -7292,7 +7286,7 @@
     {
       "type": "Translation",
       "english": "Have some tea.",
-      "surface": "sohos onenainim",
+      "surface": "ajauldas berejuu",
       "gloss": "have-IMP tea.ACC",
       "status": "ok",
       "reason": "complete",
@@ -7335,8 +7329,8 @@
     {
       "type": "Translation",
       "english": "Pip and his dog were great friends.",
-      "surface": "hinmasudas janni ryazugyanim nowahya",
-      "gloss": "3SG-GEN dog.NOM friend.ACC GREAT-PST",
+      "surface": "oombud bainudd udelge jilengt",
+      "gloss": "3SG-GEN dog.NOM GREAT-PST friend.ACC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -7475,7 +7469,7 @@
       "type": "Translation",
       "english": "You and I will go together.",
       "surface": "[PARTIAL]",
-      "gloss": "2SG will.ACC AND",
+      "gloss": "2SG AND will.ACC",
       "status": "partial",
       "reason": "not realized: go, comparison, future/modal",
       "ir": {
@@ -7538,7 +7532,7 @@
       "type": "Translation",
       "english": "They opened all the doors and windows.",
       "surface": "[PARTIAL]",
-      "gloss": "3PL door.ACC OPEN",
+      "gloss": "3PL OPEN door.ACC",
       "status": "partial",
       "reason": "not realized: windows",
       "ir": {
@@ -7736,7 +7730,7 @@
       "surface": "[PARTIAL]",
       "gloss": "sky.NOM LOOK Q",
       "status": "partial",
-      "reason": "not realized: blue, gray",
+      "reason": "unrecognized: gray; not realized: blue",
       "ir": {
         "tokens": [
           "does",
@@ -7772,10 +7766,6 @@
           {
             "token": "blue",
             "lemma": "blue"
-          },
-          {
-            "token": "gray",
-            "lemma": "gray"
           }
         ],
         "grammatical_items": [
@@ -7793,7 +7783,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "gray"
+        ],
         "normalized_english": "do the sky look blue or gray?",
         "realizer_input": "the sky look blue or gray?"
       }
@@ -7924,8 +7916,8 @@
     {
       "type": "Translation",
       "english": "He played a tune on his wonderful flute.",
-      "surface": "hinmasu datosanim tadorot hinmasudas hodoru darenai gonsu",
-      "gloss": "3SG tune.ACC PLAY ON 3SG-GEN wonderful flute.LOC",
+      "surface": "bainudd moogsek baaber uuilua bisaiqa bainudd nutumuu",
+      "gloss": "3SG PLAY tune.ACC ON 3SG-GEN wonderful flute.LOC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -8180,7 +8172,7 @@
       "type": "Translation",
       "english": "The first part of the story is very interesting.",
       "surface": "[PARTIAL]",
-      "gloss": "first.NOM interest.PL.ACC VERY",
+      "gloss": "first.NOM VERY interest.PL.ACC",
       "status": "partial",
       "reason": "not realized: part, story",
       "ir": {
@@ -8257,7 +8249,7 @@
       "type": "Translation",
       "english": "The crow dropped some pebbles into the pitcher and raised the water to the brim.",
       "surface": "[PARTIAL]",
-      "gloss": "crow.NOM water.ACC RAISE TO brim.DAT",
+      "gloss": "crow.NOM RAISE water.ACC TO brim.DAT",
       "status": "partial",
       "reason": "not realized: dropped, pebbles, into, pitcher, coordinated clause/predicate",
       "ir": {
@@ -8372,9 +8364,9 @@
       "type": "Translation",
       "english": "The baby clapped her hands and laughed in glee.",
       "surface": "[PARTIAL]",
-      "gloss": "3SG-GEN baby.NOM LAUGH IN glee.LOC",
+      "gloss": "3SG-GEN baby.NOM LAUGH",
       "status": "partial",
-      "reason": "not realized: clapped, hands, coordinated clause/predicate",
+      "reason": "unrecognized: glee; not realized: clapped, hands, coordinated clause/predicate",
       "ir": {
         "tokens": [
           "the",
@@ -8417,10 +8409,6 @@
           {
             "token": "laughed",
             "lemma": "laugh"
-          },
-          {
-            "token": "glee",
-            "lemma": "glee"
           }
         ],
         "grammatical_items": [
@@ -8442,7 +8430,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "glee"
+        ],
         "normalized_english": "The baby clapped her hand and laughed in glee.",
         "realizer_input": null
       }
@@ -8450,7 +8440,7 @@
     {
       "type": "Translation",
       "english": "Stop your game and be quiet.",
-      "surface": "wattebus denadas yotte sohehyunim",
+      "surface": "uugiluus toolund ulju oonguun",
       "gloss": "stop-IMP 2SG-GEN quiet game.ACC",
       "status": "ok",
       "reason": "complete",
@@ -8593,7 +8583,7 @@
       "type": "Translation",
       "english": "Do you like summer or winter better?",
       "surface": "[PARTIAL]",
-      "gloss": "2SG better summer.ACC LIKE Q",
+      "gloss": "2SG LIKE better summer.ACC Q",
       "status": "partial",
       "reason": "not realized: winter, comparison",
       "ir": {
@@ -8729,9 +8719,9 @@
       "type": "Translation",
       "english": "They popped corn, and then sat around the fire and ate it.",
       "surface": "[PARTIAL]",
-      "gloss": "3PL corn.ACC POPPED",
+      "gloss": "3PL POPPED fire.ACC",
       "status": "partial",
-      "reason": "not realized: then, sat, fire, ate, coordinated clause/predicate",
+      "reason": "unrecognized: corn; not realized: then, sat, ate, coordinated clause/predicate",
       "ir": {
         "tokens": [
           "they",
@@ -8768,10 +8758,6 @@
           {
             "token": "popped",
             "lemma": "popped"
-          },
-          {
-            "token": "corn",
-            "lemma": "corn"
           },
           {
             "token": "then",
@@ -8817,7 +8803,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "corn"
+        ],
         "normalized_english": "They popped corn and then did sit around the fire and ate it.",
         "realizer_input": null
       }
@@ -8826,7 +8814,7 @@
       "type": "Translation",
       "english": "They won the first two games, but lost the last one.",
       "surface": "[PARTIAL]",
-      "gloss": "3PL TWO first.PL.ACC WIN-PST",
+      "gloss": "3PL WIN-PST TWO first.PL.ACC",
       "status": "partial",
       "reason": "not realized: games, lost, last, one, coordinated clause/predicate",
       "ir": {
@@ -9161,7 +9149,7 @@
     {
       "type": "Translation",
       "english": "This string is too short!",
-      "surface": "monpyunas gihench heganim",
+      "surface": "duulais todemen tegeduu",
       "gloss": "this-IMP short string.ACC",
       "status": "ok",
       "reason": "complete",
@@ -9614,7 +9602,7 @@
     {
       "type": "Translation",
       "english": "All the children came except Mary.",
-      "surface": "auta ajimasu",
+      "surface": "uunigha orighac",
       "gloss": "child.PL.NOM COME-PST",
       "status": "ok",
       "reason": "complete",
@@ -9876,7 +9864,7 @@
       "type": "Translation",
       "english": "On a fine summer evening, the two old people were sitting outside the door of their cottage.",
       "surface": "[PARTIAL]",
-      "gloss": "old TWO fine summer.PL.NOM 3PL-GEN door.ACC SIT-PST-PROG",
+      "gloss": "old TWO fine summer.PL.NOM SIT-PST-PROG 3PL-GEN door.ACC",
       "status": "partial",
       "reason": "not realized: evening, people, outside, cottage",
       "ir": {
@@ -10060,8 +10048,8 @@
     {
       "type": "Translation",
       "english": "The river knows the way to the sea.",
-      "surface": "bayuyos modaryonim zuchibu chodasuaro bomasu",
-      "gloss": "river.NOM way.ACC KNOW TO sea.DAT",
+      "surface": "nuubisa oktobci orici nuu kemuula",
+      "gloss": "river.NOM KNOW way.ACC TO sea.DAT",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -10132,7 +10120,7 @@
       "type": "Translation",
       "english": "The boat sails away, like a bird on the wing.",
       "surface": "[PARTIAL]",
-      "gloss": "boat.NOM bird.ACC SAIL ON wing.LOC",
+      "gloss": "boat.NOM SAIL bird.ACC ON wing.LOC",
       "status": "partial",
       "reason": "not realized: like",
       "ir": {
@@ -10398,7 +10386,7 @@
       "type": "Translation",
       "english": "We visited my uncle’s village, the largest village in the world.",
       "surface": "[PARTIAL]",
-      "gloss": "1PL 1SG-GEN large uncle.ACC VISIT IN world.LOC",
+      "gloss": "1PL VISIT 1SG-GEN large uncle.ACC IN world.LOC",
       "status": "partial",
       "reason": "not realized: village, comparison",
       "ir": {
@@ -10491,7 +10479,7 @@
       "type": "Translation",
       "english": "We learn something new each day.",
       "surface": "[PARTIAL]",
-      "gloss": "1PL new day.ACC LEARN",
+      "gloss": "1PL LEARN new day.ACC",
       "status": "partial",
       "reason": "not realized: something",
       "ir": {
@@ -10550,7 +10538,7 @@
       "type": "Translation",
       "english": "The market begins five minutes earlier this week.",
       "surface": "[PARTIAL]",
-      "gloss": "market.NOM THIS early FIVE minute.PL.ACC BEGIN",
+      "gloss": "market.NOM BEGIN THIS early FIVE minute.PL.ACC",
       "status": "partial",
       "reason": "not realized: week, comparison",
       "ir": {
@@ -10622,8 +10610,8 @@
     {
       "type": "Translation",
       "english": "Did you find the distance too great?",
-      "surface": "den nowahya nitanim naroo nupya",
-      "gloss": "2SG great distance.ACC FIND-PST Q",
+      "surface": "oonguun oroptur udelge ulabuib koocigh",
+      "gloss": "2SG FIND-PST great distance.ACC Q",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -10789,7 +10777,7 @@
       "type": "Translation",
       "english": "Here under this tree they gave their guests a splendid feast.",
       "surface": "[PARTIAL]",
-      "gloss": "THIS tree.NOM 3PL-GEN splendid guest.ACC GIVE-PST",
+      "gloss": "THIS tree.NOM GIVE-PST 3PL-GEN splendid guest.ACC",
       "status": "partial",
       "reason": "not realized: feast",
       "ir": {
@@ -10880,7 +10868,7 @@
       "surface": "[PARTIAL]",
       "gloss": "winter.NOM GET AT yellow night.LOC",
       "status": "partial",
-      "reason": "not realized: dress, candlelight",
+      "reason": "unrecognized: candlelight; not realized: dress",
       "ir": {
         "tokens": [
           "in",
@@ -10933,10 +10921,6 @@
           {
             "token": "yellow",
             "lemma": "yellow"
-          },
-          {
-            "token": "candlelight",
-            "lemma": "candlelight"
           }
         ],
         "grammatical_items": [
@@ -10966,7 +10950,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "candlelight"
+        ],
         "normalized_english": null,
         "realizer_input": null
       }
@@ -11240,10 +11226,6 @@
             "lemma": "always"
           },
           {
-            "token": "shabby",
-            "lemma": "shabby"
-          },
-          {
             "token": "ragged",
             "lemma": "rag"
           },
@@ -11287,7 +11269,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "shabby"
+        ],
         "normalized_english": "She was always shabby often ragged and on cold day very uncomfortable.",
         "realizer_input": null
       }
@@ -11412,10 +11396,6 @@
             "lemma": "little"
           },
           {
-            "token": "mite",
-            "lemma": "mite"
-          },
-          {
             "token": "girl",
             "lemma": "girl"
           },
@@ -11483,7 +11463,9 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
+        "missing_lexemes": [
+          "mite"
+        ],
         "normalized_english": "I did stand a little mite of a girl upon a chair by the window and watched the falling snowflake.",
         "realizer_input": null
       }
@@ -11665,8 +11647,8 @@
     {
       "type": "Translation",
       "english": "We consider them our faithful friends.",
-      "surface": "owa owadas etur ryazugyanim nitte osaran ",
-      "gloss": "1PL 1PL-GEN faithful friend.ACC CONSIDER 3PL.DAT ",
+      "surface": "oduurui bolunaj barangu jilengt oduurui juui ",
+      "gloss": "1PL CONSIDER 1PL-GEN faithful friend.ACC 3PL.DAT ",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -11725,7 +11707,7 @@
       "type": "Translation",
       "english": "We will make this place our home.",
       "surface": "[PARTIAL]",
-      "gloss": "1PL 1PL-GEN THIS place.ACC MAKE-FUT",
+      "gloss": "1PL MAKE-FUT 1PL-GEN THIS place.ACC",
       "status": "partial",
       "reason": "not realized: home",
       "ir": {
@@ -11792,7 +11774,7 @@
       "type": "Translation",
       "english": "The squirrels make their nests warm and snug with soft moss and leaves.",
       "surface": "[PARTIAL]",
-      "gloss": "squirrel.NOM 3PL-GEN warm nest.ACC MAKE WITH soft moss.LOC",
+      "gloss": "squirrel.NOM MAKE 3PL-GEN warm nest.ACC WITH soft moss.LOC",
       "status": "partial",
       "reason": "unrecognized: snug; not realized: leaves, coordinated clause/predicate",
       "ir": {
@@ -11893,9 +11875,9 @@
       "type": "Translation",
       "english": "The little girl made the doll’s dress herself.",
       "surface": "[PARTIAL]",
-      "gloss": "little girl.NOM doll.ACC MAKE-PST",
+      "gloss": "little girl.NOM MAKE-PST doll' dress.ACC",
       "status": "partial",
-      "reason": "not realized: dress, possessive relation",
+      "reason": "unrecognized: doll's; not realized: possessive relation",
       "ir": {
         "tokens": [
           "the",
@@ -11935,11 +11917,6 @@
             "lemma": "make"
           },
           {
-            "token": "doll's",
-            "lemma": "doll",
-            "feature": "possessive"
-          },
-          {
             "token": "dress",
             "lemma": "dress"
           }
@@ -11960,15 +11937,17 @@
           }
         ],
         "proper_names": [],
-        "missing_lexemes": [],
-        "normalized_english": "The little girl did make the doll dress herself.",
+        "missing_lexemes": [
+          "doll's"
+        ],
+        "normalized_english": "The little girl did make the doll' dress herself.",
         "realizer_input": null
       }
     },
     {
       "type": "Translation",
       "english": "I hurt myself.",
-      "surface": "dariryo deyuzam",
+      "surface": "orgedem uyan",
       "gloss": "1SG HURT",
       "status": "ok",
       "reason": "complete",
@@ -12012,7 +11991,7 @@
     {
       "type": "Translation",
       "english": "She was talking to herself.",
-      "surface": "hinmasu zemana",
+      "surface": "bainudd golonbos",
       "gloss": "3SG TALK-PST-PROG",
       "status": "ok",
       "reason": "complete",
@@ -12117,7 +12096,7 @@
     {
       "type": "Translation",
       "english": "We could see ourselves in the water.",
-      "surface": "owa karinta autara kyogemy",
+      "surface": "oduurui origuul saralun joorong maralua",
       "gloss": "1PL SEE-MOD IN water.LOC",
       "status": "ok",
       "reason": "complete",
@@ -12457,7 +12436,7 @@
       "type": "Translation",
       "english": "They wore red caps, the symbol of liberty.",
       "surface": "[PARTIAL]",
-      "gloss": "3PL red cap.ACC WEAR-PST",
+      "gloss": "3PL WEAR-PST red cap.ACC",
       "status": "partial",
       "reason": "not realized: symbol, liberty",
       "ir": {
@@ -14086,7 +14065,7 @@
       "type": "Translation",
       "english": "I have found the ring I lost.",
       "surface": "[PARTIAL]",
-      "gloss": "1SG ring.ACC FIND-PERF",
+      "gloss": "1SG FIND-PERF ring.ACC",
       "status": "partial",
       "reason": "not realized: lost",
       "ir": {
@@ -14281,7 +14260,7 @@
       "type": "Translation",
       "english": "She is taller than her brother.",
       "surface": "[PARTIAL]",
-      "gloss": "3SG 3SG-GEN brother.ACC TALL",
+      "gloss": "3SG TALL 3SG-GEN brother.ACC",
       "status": "partial",
       "reason": "not realized: comparison",
       "ir": {
@@ -14458,8 +14437,8 @@
     {
       "type": "Translation",
       "english": "We have more time than they.",
-      "surface": "owa lebranonim ochi",
-      "gloss": "1PL time.ACC MORE-PERF",
+      "surface": "oduurui ulsileger yars",
+      "gloss": "1PL MORE-PERF time.ACC",
       "status": "ok",
       "reason": "complete",
       "ir": {
@@ -14520,7 +14499,7 @@
       "type": "Translation",
       "english": "She has more friends than enemies.",
       "surface": "[PARTIAL]",
-      "gloss": "3SG friend.ACC MORE-PERF",
+      "gloss": "3SG MORE-PERF friend.ACC",
       "status": "partial",
       "reason": "not realized: enemies",
       "ir": {
@@ -15326,7 +15305,7 @@
       "type": "Translation",
       "english": "The house stands where three roads meet.",
       "surface": "[PARTIAL]",
-      "gloss": "house.NOM THREE road.PL.ACC STAND",
+      "gloss": "house.NOM STAND THREE road.PL.ACC",
       "status": "partial",
       "reason": "not realized: meet",
       "ir": {
@@ -15391,7 +15370,7 @@
       "type": "Translation",
       "english": "He has far more money than brains.",
       "surface": "[PARTIAL]",
-      "gloss": "3SG money.ACC FAR-PERF",
+      "gloss": "3SG FAR-PERF money.ACC",
       "status": "partial",
       "reason": "not realized: brains, comparison",
       "ir": {
@@ -15595,7 +15574,7 @@
       "type": "Translation",
       "english": "I met a little cottage girl; she was eight years old, she said.",
       "surface": "[PARTIAL]",
-      "gloss": "1SG old EIGHT little cottage.PL.ACC MEET-PST",
+      "gloss": "1SG MEET-PST old EIGHT little cottage.PL.ACC",
       "status": "partial",
       "reason": "not realized: girl, years, said",
       "ir": {

@@ -131,7 +131,7 @@ def main(argv=None):
     additions=[]
     for (gloss,pos),form in zip(todo,generated):
         x={'gloss':gloss,'pos':pos,'form':form,'derivation':None}; data['lexicon'].append(x); additions.append(x)
-    data['tool_version']='5.9'
+    data['tool_version']='6.1'
     history=data.setdefault('lexicon_extensions',[])
     history.append({'source':str(words),'seed':args.seed,'count':len(additions),'origin_language':str(data.get('name',lang.parent.name)),'entries':[f"{x['gloss']}:{x['pos']}" for x in additions]})
     # Back up language.json before changing the package.
