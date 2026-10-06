@@ -30870,6 +30870,210 @@
       "pos": "n",
       "form": "torosookez",
       "derivation": "young-TO.CREATE-QUALITY.OF.BEING"
+    },
+    {
+      "gloss": "story",
+      "pos": "n",
+      "form": "pyam",
+      "derivation": null
+    },
+    {
+      "gloss": "robin",
+      "pos": "n",
+      "form": "antas",
+      "derivation": null
+    },
+    {
+      "gloss": "pebble",
+      "pos": "n",
+      "form": "desuite",
+      "derivation": null
+    },
+    {
+      "gloss": "wild",
+      "pos": "adj",
+      "form": "pyuhoch",
+      "derivation": null
+    },
+    {
+      "gloss": "doll",
+      "pos": "n",
+      "form": "zunakya",
+      "derivation": null
+    },
+    {
+      "gloss": "concert",
+      "pos": "n",
+      "form": "chiky",
+      "derivation": null
+    },
+    {
+      "gloss": "solstice",
+      "pos": "n",
+      "form": "gofuchi",
+      "derivation": null
+    },
+    {
+      "gloss": "bonfire",
+      "pos": "n",
+      "form": "shimyo",
+      "derivation": null
+    },
+    {
+      "gloss": "entrance",
+      "pos": "n",
+      "form": "zama",
+      "derivation": null
+    },
+    {
+      "gloss": "residence",
+      "pos": "n",
+      "form": "temyoma",
+      "derivation": null
+    },
+    {
+      "gloss": "lofty",
+      "pos": "adj",
+      "form": "midasu",
+      "derivation": null
+    },
+    {
+      "gloss": "caress",
+      "pos": "n",
+      "form": "otok",
+      "derivation": null
+    },
+    {
+      "gloss": "spool",
+      "pos": "n",
+      "form": "attasho",
+      "derivation": null
+    },
+    {
+      "gloss": "juicy",
+      "pos": "adj",
+      "form": "goku",
+      "derivation": null
+    },
+    {
+      "gloss": "salty",
+      "pos": "adj",
+      "form": "bozem",
+      "derivation": null
+    },
+    {
+      "gloss": "roadside",
+      "pos": "n",
+      "form": "chibyo",
+      "derivation": null
+    },
+    {
+      "gloss": "litter",
+      "pos": "n",
+      "form": "hepam",
+      "derivation": null
+    },
+    {
+      "gloss": "gray",
+      "pos": "adj",
+      "form": "zumasoy",
+      "derivation": null
+    },
+    {
+      "gloss": "tune",
+      "pos": "n",
+      "form": "datos",
+      "derivation": null
+    },
+    {
+      "gloss": "crow",
+      "pos": "n",
+      "form": "woma",
+      "derivation": null
+    },
+    {
+      "gloss": "pitcher",
+      "pos": "n",
+      "form": "epi",
+      "derivation": null
+    },
+    {
+      "gloss": "brim",
+      "pos": "n",
+      "form": "ohara",
+      "derivation": null
+    },
+    {
+      "gloss": "glee",
+      "pos": "n",
+      "form": "hyazu",
+      "derivation": null
+    },
+    {
+      "gloss": "corn",
+      "pos": "n",
+      "form": "kazopif",
+      "derivation": null
+    },
+    {
+      "gloss": "brave",
+      "pos": "adj",
+      "form": "anumas",
+      "derivation": null
+    },
+    {
+      "gloss": "handful",
+      "pos": "n",
+      "form": "pyudes",
+      "derivation": null
+    },
+    {
+      "gloss": "bedroom",
+      "pos": "n",
+      "form": "hogyun",
+      "derivation": null
+    },
+    {
+      "gloss": "tiny",
+      "pos": "adj",
+      "form": "shirish",
+      "derivation": null
+    },
+    {
+      "gloss": "splendid",
+      "pos": "adj",
+      "form": "goshoch",
+      "derivation": null
+    },
+    {
+      "gloss": "candlelight",
+      "pos": "n",
+      "form": "myozezu",
+      "derivation": null
+    },
+    {
+      "gloss": "shabby",
+      "pos": "adj",
+      "form": "fluttem",
+      "derivation": null
+    },
+    {
+      "gloss": "uncomfortable",
+      "pos": "adj",
+      "form": "mepuptu",
+      "derivation": null
+    },
+    {
+      "gloss": "mite",
+      "pos": "n",
+      "form": "zute",
+      "derivation": null
+    },
+    {
+      "gloss": "faithful",
+      "pos": "adj",
+      "form": "etur",
+      "derivation": null
     }
   ],
   "translation_source": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\translations\\sentences_default.txt",
@@ -30950,6 +31154,49 @@
       "surface": "[PARTIAL]",
       "gloss": "SUBJ WEAR-PART bell.ACC STARVE-FUT",
       "status": "partial"
+    }
+  ],
+  "lexicon_extensions": [
+    {
+      "source": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\vocabulary\\extra_words_example.txt",
+      "seed": 12345,
+      "count": 34,
+      "entries": [
+        "story:n",
+        "robin:n",
+        "pebble:n",
+        "wild:adj",
+        "doll:n",
+        "concert:n",
+        "solstice:n",
+        "bonfire:n",
+        "entrance:n",
+        "residence:n",
+        "lofty:adj",
+        "caress:n",
+        "spool:n",
+        "juicy:adj",
+        "salty:adj",
+        "roadside:n",
+        "litter:n",
+        "gray:adj",
+        "tune:n",
+        "crow:n",
+        "pitcher:n",
+        "brim:n",
+        "glee:n",
+        "corn:n",
+        "brave:adj",
+        "handful:n",
+        "bedroom:n",
+        "tiny:adj",
+        "splendid:adj",
+        "candlelight:n",
+        "shabby:adj",
+        "uncomfortable:adj",
+        "mite:n",
+        "faithful:adj"
+      ]
     }
   ]
 }

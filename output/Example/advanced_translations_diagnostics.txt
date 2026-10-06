@@ -2,10 +2,10 @@ Translation diagnostics: Example
 ============================================================
 
 Sentences: 229
-Complete: 41
-Partial: 113
-Missing vocabulary: 5
-Unsupported grammar: 70
+Complete: 42
+Partial: 114
+Missing vocabulary: 1
+Unsupported grammar: 72
 
 Construction inventory:
   simple_clause: supported
@@ -56,38 +56,10 @@ Most common constructions in non-complete sentences:
 
 Most common missing/unrecognized English lexemes:
   everywhere: 1
-  neatly: 1
-  campers: 1
-  miles: 1
-  hidden: 1
-  drooping: 1
-  boughs: 1
-  wreaths: 1
-  popped: 1
-  hastily: 1
   dear: 1
-  seized: 1
-  cautiously: 1
-  rooms: 1
-  room: 1
-  snowflakes: 1
   snug: 1
   trustworthy: 1
-  ashamed: 1
-  embroidered: 1
-  national: 1
-  protector: 1
-  finery: 1
-  fisherman: 1
-  demanded: 1
   payment: 1
-  hall: 1
-  logs: 1
-  mantle: 1
-  fifty: 1
-  governor: 1
-  grant: 1
-  hemlocks: 1
 
 Per-sentence diagnostics:
 -
@@ -273,7 +245,7 @@ Per-sentence diagnostics:
 
 #48 You must write more neatly.
   Status: partial
-  Reason: unrecognized: neatly; not realized: write, modal meaning
+  Reason: not realized: write, neatly, modal meaning
   Constructions: comparison, modal
   Normalized: (unchanged)
 
@@ -318,12 +290,6 @@ Per-sentence diagnostics:
   Reason: not realized: waiting, perfect aspect
   Constructions: perfect
   Normalized: (unchanged)
-
-#59 The campers sat around the fire.
-  Status: unresolved-vocabulary
-  Reason: missing vocabulary: campers
-  Constructions: simple
-  Normalized: The campers did sit around the fire.
 
 #60 A little girl with a kitten sat near me.
   Status: partial
@@ -381,9 +347,9 @@ Per-sentence diagnostics:
 
 #72 We sailed down the river for several miles.
   Status: partial
-  Reason: unrecognized: miles; not realized: river
+  Reason: not realized: river, several
   Constructions: simple
-  Normalized: (unchanged)
+  Normalized: We sailed down the river for several mile.
 
 #74 On a Sunny morning after the solstice we started for the mountains.
   Status: partial
@@ -407,7 +373,7 @@ Per-sentence diagnostics:
   Status: unsupported-grammar
   Reason: unsupported construction: passive
   Constructions: passive, progressive, possessive
-  Normalized: The squirrel nest was hidden by drooping boughs.
+  Normalized: The squirrel nest was hidden by drooping bough.
 
 #78 The little seeds waited patiently under the snow for the warm spring sun.
   Status: partial
@@ -417,9 +383,9 @@ Per-sentence diagnostics:
 
 #79 Many little girls with wreaths of flowers on their heads danced around the bonfire.
   Status: partial
-  Reason: unrecognized: wreaths; not realized: little, girls, flowers, danced
+  Reason: not realized: little, girls, wreaths, flowers, danced
   Constructions: simple
-  Normalized: Many little girl with wreaths of flower on their head danced around the bonfire.
+  Normalized: Many little girl with wreath of flower on their head danced around the bonfire.
 
 #80 The cover of the basket fell to the floor.
   Status: unsupported-grammar
@@ -722,8 +688,8 @@ Per-sentence diagnostics:
   Normalized: (unchanged)
 
 #140 They popped corn, and then sat around the fire and ate it.
-  Status: unresolved-vocabulary
-  Reason: missing vocabulary: popped
+  Status: partial
+  Reason: not realized: corn, then, sat, fire, ate, coordinated clause/predicate
   Constructions: coordination
   Normalized: They popped corn and then did sit around the fire and ate it.
 
@@ -788,8 +754,8 @@ Per-sentence diagnostics:
   Normalized: (unchanged)
 
 #153 Jack seized a handful of pebbles and threw them into the lake.
-  Status: partial
-  Reason: unrecognized: seized; not realized: handful, pebbles, into
+  Status: unsupported-grammar
+  Reason: unsupported sentence structure
   Constructions: coordination
   Normalized: Jack seized a handful of pebble and did throw them into the lake.
 
@@ -819,7 +785,7 @@ Per-sentence diagnostics:
 
 #159 They looked cautiously about, but saw nothing.
   Status: partial
-  Reason: unrecognized: cautiously; not realized: saw, coordinated clause/predicate
+  Reason: not realized: cautiously, saw, coordinated clause/predicate
   Constructions: coordination
   Normalized: They looked cautiously about but did see nothing.
 
@@ -827,7 +793,7 @@ Per-sentence diagnostics:
   Status: unsupported-grammar
   Reason: unsupported construction: appositive
   Constructions: coordination, appositive
-  Normalized: (unchanged)
+  Normalized: The little house had three room a sitting room a bedroom and a tiny kitchen.
 
 #161 We visited my uncle’s village, the largest village in the world.
   Status: partial
@@ -905,7 +871,7 @@ Per-sentence diagnostics:
   Status: unsupported-grammar
   Reason: unsupported construction: appositive
   Constructions: coordination, appositive
-  Normalized: I did stand a little mite of a girl upon a chair by the window and watched the falling snowflakes.
+  Normalized: I did stand a little mite of a girl upon a chair by the window and watched the falling snowflake.
 
 #175 Show the guests these shells, my son, and tell them their strange history.
   Status: unsupported-grammar
@@ -963,13 +929,13 @@ Per-sentence diagnostics:
 
 #186 I feel ashamed of myself.
   Status: partial
-  Reason: unrecognized: ashamed
+  Reason: not realized: ashamed
   Constructions: reflexive
   Normalized: (unchanged)
 
 #188 The dress of the little princess was embroidered with roses, the national flower of the Country.
-  Status: unresolved-vocabulary
-  Reason: missing vocabulary: embroidered, national
+  Status: partial
+  Reason: not realized: dress, little, roses, national, flower
   Constructions: simple
   Normalized: The dress of the little princess was embroidered with rose the national flower of the Country.
 
@@ -980,8 +946,8 @@ Per-sentence diagnostics:
   Normalized: They did wear red cap the symbol of liberty.
 
 #190 With him as our protector, we fear no danger.
-  Status: unresolved-vocabulary
-  Reason: missing vocabulary: protector
+  Status: unsupported-grammar
+  Reason: unsupported sentence structure
   Constructions: simple
   Normalized: (unchanged)
 
@@ -1149,13 +1115,13 @@ Per-sentence diagnostics:
 
 #218 He was very poor, and with his wife and five children lived in a little low cabin of logs and stones.
   Status: partial
-  Reason: unrecognized: logs; not realized: poor, wife, lived, little, low, cabin
+  Reason: not realized: poor, wife, lived, little, low, cabin, logs
   Constructions: coordination
-  Normalized: He was very poor and with his wife and five children lived in a little low cabin of logs and stone.
+  Normalized: He was very poor and with his wife and five children lived in a little low cabin of log and stone.
 
 #219 When the wind blew, the traveler wrapped his mantle more closely around him.
   Status: partial
-  Reason: unrecognized: mantle; not realized: blew, traveler, wrapped, closely, comparison
+  Reason: not realized: blew, traveler, wrapped, mantle, closely, comparison
   Constructions: comparison
   Normalized: When the wind did blow the traveler wrapped his mantle more closely around him.
 
@@ -1209,9 +1175,9 @@ Per-sentence diagnostics:
 
 #228 Evidently that gate is never opened, for the long grass and the great hemlocks grow close against it.
   Status: partial
-  Reason: unrecognized: hemlocks; not realized: opened, long, grass, great, grow, close, negation, comparison, coordinated clause/predicate
+  Reason: not realized: opened, long, grass, great, hemlocks, grow, close, negation, comparison, coordinated clause/predicate
   Constructions: comparison, negation, coordination
-  Normalized: (unchanged)
+  Normalized: Evidently that gate is never opened for the long grass and the great hemlock grow close against it.
 
 #229 I met a little cottage girl; she was eight years old, she said.
   Status: partial

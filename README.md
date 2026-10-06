@@ -160,7 +160,7 @@ When multiple candidates exist, the builder stops and asks you to select one ins
 
 ## Grammar families
 
-`--grammar-family` selects a typological profile. These are ***inspirations*** and weighted structural defaults, *not attempts to reproduce a particular natural language*.
+`--grammar-family` selects a typological profile. These are inspirations and weighted structural defaults, not attempts to reproduce a particular natural language.
 
 Available profiles are:
 
@@ -420,7 +420,44 @@ unsupported-grammar
 
 An `ok` result is intended to mean that the meaningful analyzed content was realized. `partial` is used when the analyzer recognizes content that the realizer does not preserve.
 
-For a batch translation, diagnostics include status totals, detected constructions, missing/unrecognized English lexemes, and per-sentence reasons. The translation workflow also writes a POS-neutral missing-word review list beside the diagnostic output. Review that list before adding vocabulary: an inflected form may indicate a lemmatizer issue rather than a genuinely absent concept.
+For a batch translation, diagnostics include status totals, detected constructions, missing/unrecognized English lexemes, and per-sentence reasons.
+
+## Automatic missing-vocabulary file
+
+Every batch translation automatically checks for genuinely missing concepts, even when `--diagnostics` is not used. When missing vocabulary is found, the translator writes:
+
+```text
+<translation-stem>_missing_words.txt
+```
+
+The file is directly compatible with `add_words.py`. Confidently normalized lemmas and parts of speech are active `gloss:pos` entries; occurrence counts and provenance are comments. Words whose part of speech cannot be inferred safely remain commented under `REVIEW REQUIRED` and therefore are ignored by `add_words.py` until you edit them.
+
+For example:
+
+```text
+# Empire Of Words - missing vocabulary required by this translation
+# Language: Northern
+
+robin:n  # 2 occurrences
+pebble:n  # 3 occurrences; from pebbles
+seize:v  # 1 occurrence; from seized
+
+# REVIEW REQUIRED - POS could not be inferred safely; not active add_words entries.
+# strangeword  (1)
+```
+
+Apply the reviewed file directly:
+
+```cmd
+python src\add_words.py ^
+  --language output\Northern ^
+  --words output\Northern\translations\sentences_missing_words.txt ^
+  --seed 67890
+```
+
+If no missing concepts are found, no missing-word file is retained. Detailed diagnostic and analysis files still require `--diagnostics`.
+
+The missing-vocabulary pass distinguishes lexical additions from translation-realizer failures as far as the deterministic analyzer can do so. Review the file before applying it: an unusual inflection or ambiguous English word can still require human judgment.
 
 The translation engine is deterministic and intentionally conservative. It does not use an AI model to invent target-language forms.
 
@@ -465,6 +502,8 @@ The script:
 - creates `language.json.bak` before modifying the package.
 
 `add_words.py` currently accepts independent `gloss:pos` roots only. Add derivational definitions to a vocabulary file and rebuild if you need new derived entries.
+
+When the target is a daughter language, additions are local lexical innovations. `add_words.py` updates `lineage.csv` and `lineage.md`, records the current language as the word's origin, and does not modify the parent or sibling languages. Descendants generated afterward inherit both the word and its original point of entry into the family.
 
 # Creating daughter languages
 
@@ -520,7 +559,7 @@ lineage.csv
 lineage.md
 ```
 
-`lineage.csv` records each lexical entry's English gloss, part of speech, parent form, daughter form, inheritance status, and applied changes. The daughter's `dictionary.csv` also includes parent-form and inheritance columns.
+`lineage.csv` records each lexical entry's English gloss, part of speech, parent form, daughter form, inheritance status, applied changes, and origin language. The daughter's `dictionary.csv` carries the same ancestry information. Local additions and lexical replacements are marked as innovations at the language where they entered the family; descendants preserve that origin until a later replacement occurs.
 
 `lineage.md` summarizes the parent, evolution profile, seed, ordered sound changes, grammar changes, and lexical-replacement statistics. `language.json` stores the same ancestry metadata in its `lineage` object.
 

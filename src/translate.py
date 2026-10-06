@@ -12,6 +12,7 @@ import sys
 from pathlib import Path
 
 from grammar_engine import load_translation_sentences, analyze_translation, TRANSLATION_CAPABILITIES
+from english_analyzer import lemma_candidates, lexical_match, IRREGULAR_VERBS, IRREGULAR_NOUNS
 from language_io import resolve_project_path, resolve_language_path, load_language, validate_package
 
 
@@ -25,6 +26,89 @@ def format_result(result) -> str:
         f"Reason: {result['reason']}\n"
     )
 
+
+
+def infer_missing_entry(word: str, sentences: list[str], by_pos: dict):
+    """Return (lemma, pos) when a missing English token can be safely normalized.
+
+    This is deliberately conservative: uncertain words are left for review rather than
+    written into an add_words.py input file with a fabricated part of speech.
+    """
+    w=word.lower().strip("'\"")
+    lemma=(IRREGULAR_VERBS.get(w) or (None,None))[0] if w in IRREGULAR_VERBS else IRREGULAR_NOUNS.get(w)
+    if not lemma:
+        cands=lemma_candidates(w)
+        # Prefer transparent inflectional normalizations; otherwise keep the surface lemma.
+        if w.endswith('ies') and len(w)>3: lemma=w[:-3]+'y'
+        elif w.endswith('ves') and len(w)>3: lemma=cands[0] if cands else w
+        elif w.endswith('ing') and len(w)>4: lemma=cands[1] if len(cands)>1 and cands[1].endswith('e') else cands[0]
+        elif w.endswith('ed') and len(w)>3: lemma=cands[1] if len(cands)>1 and cands[1].endswith('e') else cands[0]
+        elif w.endswith('es') and len(w)>3:
+            if w.endswith('ies'): lemma=w[:-3]+'y'
+            elif w.endswith(('ches','shes','xes','zes','ses')): lemma=w[:-2]
+            else: lemma=w[:-1]
+        elif w.endswith('s') and len(w)>2 and not w.endswith('ss'): lemma=w[:-1]
+        elif w.endswith('ly') and len(w)>3: lemma=cands[-1] if cands else w[:-2]
+        else: lemma=w
+    # Collect local contexts in which the token occurred.
+    contexts=[]
+    import re
+    for sent in sentences:
+        toks=[x.lower() for x in re.findall(r"[A-Za-z]+(?:'[A-Za-z]+)?|\d+",sent.replace('’',"'"))]
+        contexts += [(toks,i) for i,t in enumerate(toks) if t==w]
+    # Strong morphology first.
+    if w in IRREGULAR_VERBS or w.endswith(('ed','ing')): return lemma,'v'
+    if w.endswith('ly'): return lemma,'adv'
+    # Strong syntactic cues.
+    for toks,i in contexts:
+        prev=toks[i-1] if i else '' ; prev2=toks[i-2] if i>1 else '' ; nxt=toks[i+1] if i+1<len(toks) else ''
+        if prev in {'a','an','the','this','that','these','those','my','your','his','her','our','their','its','some','many','three','two','one'}:
+            # If the following token is a known noun, this missing item is very likely an adjective (the wild dog).
+            nm=lexical_match(by_pos,nxt) if nxt else None
+            if nm and any(pos.startswith('n') for pos,_ in by_pos.get(nm,())): return lemma,'adj'
+            return lemma,'n'
+        if prev in {'to','will','shall','can','could','should','would','must','may','might','do','does','did'}: return lemma,'v'
+        if prev in {'very','too','more','less','quite'}: return lemma,'adj'
+        if prev in {'is','are','am','was','were','be','been'} and nxt not in {'a','an','the'}: return lemma,'adj'
+    # Transparent plural morphology is safe enough to classify as a noun.
+    if w in IRREGULAR_NOUNS or (w.endswith('s') and not w.endswith(('ss','us','is'))): return lemma,'n'
+    return None
+
+def write_missing_additions(output_path: Path, results: list[dict], sentences: list[str], language_name: str, entries):
+    from collections import Counter
+    missing=Counter()
+    for r in results:
+        missing.update(r.get('ir',{}).get('missing_lexemes',[]))
+    path=output_path.with_name(output_path.stem+'_missing_words.txt')
+    if not missing:
+        if path.exists(): path.unlink()
+        return None, [], []
+    by_pos={}
+    for e in entries: by_pos.setdefault(e.key.gloss,[]).append((e.key.pos,None))
+    additions=[]; uncertain=[]; seen=set()
+    for word,count in missing.most_common():
+        inferred=infer_missing_entry(word,sentences,by_pos)
+        if inferred:
+            lemma,pos=inferred; key=(lemma,pos)
+            if key not in seen:
+                seen.add(key); additions.append((lemma,pos,word,count))
+        else: uncertain.append((word,count))
+    lines=[
+        '# Empire Of Words - missing vocabulary required by this translation',
+        f'# Language: {language_name}',
+        '# This file is directly compatible with src/add_words.py.',
+        '# Review before applying. Comments and uncertain items are ignored by add_words.py.',
+        ''
+    ]
+    for lemma,pos,source,count in additions:
+        note=f'  # {count} occurrence' + ('s' if count!=1 else '')
+        if source!=lemma: note += f'; from {source}'
+        lines.append(f'{lemma}:{pos}{note}')
+    if uncertain:
+        lines += ['', '# REVIEW REQUIRED - POS could not be inferred safely; not active add_words entries.']
+        for word,count in uncertain: lines.append(f'# {word}  ({count})')
+    path.write_text('\n'.join(lines)+'\n',encoding='utf-8')
+    return path, additions, uncertain
 
 def main(argv=None) -> int:
     root_default = Path(__file__).resolve().parent.parent
@@ -103,6 +187,7 @@ def main(argv=None) -> int:
     else:
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(text, encoding="utf-8")
+        missing_path, addable_missing, uncertain_missing = write_missing_additions(output_path, results, sentences, name, entries)
         try:
             shown = output_path.relative_to(project)
         except ValueError:
@@ -114,6 +199,12 @@ def main(argv=None) -> int:
         print(f"Missing vocabulary: {counts.get('unresolved-vocabulary',0)}")
         print(f"Unsupported grammar: {counts.get('unsupported-grammar',0)}")
         print(f"Output: {shown}")
+        if missing_path is not None:
+            try: mshown=missing_path.relative_to(project)
+            except ValueError: mshown=missing_path
+            print(f"Missing-word additions: {mshown}")
+            print(f"Addable missing concepts: {len(addable_missing)}")
+            if uncertain_missing: print(f"Missing words requiring POS review: {len(uncertain_missing)}")
 
         if args.diagnostics:
             from collections import Counter
@@ -142,12 +233,6 @@ def main(argv=None) -> int:
                           f"  Constructions: {', '.join(r['ir'].get('constructions',[])) or 'simple'}",
                           f"  Normalized: {r['ir'].get('normalized_english') or '(unchanged)'}",""]
             diag_path.write_text("\n".join(lines)+"\n",encoding="utf-8")
-            missing_path=output_path.with_name(output_path.stem+'_missing_words.txt')
-            missing_lines=["# Missing/unrecognized English words from translation diagnostics",
-                           "# Review these and add desired entries to a supplemental vocabulary file as gloss:pos.",
-                           "# Counts are shown after #; this file is intentionally POS-neutral.", ""]
-            for word,n in missing_counts.most_common(): missing_lines.append(f"{word}  # {n}")
-            missing_path.write_text("\n".join(missing_lines)+"\n",encoding="utf-8")
             json_path=output_path.with_name(output_path.stem+'_analysis.json')
             json_path.write_text(json.dumps({
                 'language':name, 'summary':counts,

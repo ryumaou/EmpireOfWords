@@ -285,7 +285,7 @@ English: You must write more neatly.
 Language: [PARTIAL]
 Gloss: 2SG more.ACC MUST
 Status: partial
-Reason: unrecognized: neatly; not realized: write, modal meaning
+Reason: not realized: write, neatly, modal meaning
 [Translation]
 English: Directly opposite stands a wonderful palace.
 Language: [PARTIAL]
@@ -348,10 +348,10 @@ Status: partial
 Reason: not realized: waiting, perfect aspect
 [Translation]
 English: The campers sat around the fire.
-Language: [UNRESOLVED]
-Gloss: [UNRESOLVED]
-Status: unresolved-vocabulary
-Reason: missing vocabulary: campers
+Language: hyofumy pyahyatanim jietema
+Gloss: camper.NOM fire.ACC SIT-PST
+Status: ok
+Reason: complete
 [Translation]
 English: A little girl with a kitten sat near me.
 Language: [PARTIAL]
@@ -427,9 +427,9 @@ Reason: unsupported sentence structure
 [Translation]
 English: We sailed down the river for several miles.
 Language: [PARTIAL]
-Gloss: 1PL several.ACC SAIL
+Gloss: 1PL mile.ACC SAIL
 Status: partial
-Reason: unrecognized: miles; not realized: river
+Reason: not realized: river, several
 [Translation]
 English: Everybody knows about hunting.
 Language: karitsu ettaronim zuchibu
@@ -471,7 +471,7 @@ English: Many little girls with wreaths of flowers on their heads danced around 
 Language: [PARTIAL]
 Gloss: their.NOM bonfire.ACC HEAD
 Status: partial
-Reason: unrecognized: wreaths; not realized: little, girls, flowers, danced
+Reason: not realized: little, girls, wreaths, flowers, danced
 [Translation]
 English: The cover of the basket fell to the floor.
 Language: [UNRESOLVED]
@@ -834,10 +834,10 @@ Status: partial
 Reason: not realized: wonderful
 [Translation]
 English: They popped corn, and then sat around the fire and ate it.
-Language: [UNRESOLVED]
-Gloss: [UNRESOLVED]
-Status: unresolved-vocabulary
-Reason: missing vocabulary: popped
+Language: [PARTIAL]
+Gloss: 3PL and.ACC POPPED
+Status: partial
+Reason: not realized: corn, then, sat, fire, ate, coordinated clause/predicate
 [Translation]
 English: They won the first two games, but lost the last one.
 Language: [PARTIAL]
@@ -912,10 +912,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: Jack seized a handful of pebbles and threw them into the lake.
-Language: [PARTIAL]
-Gloss: and.NOM lake.ACC THROW-PST 3PL.DAT 
-Status: partial
-Reason: unrecognized: seized; not realized: handful, pebbles, into
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported sentence structure
 [Translation]
 English: This cottage stood on a low hill, at some distance from the village.
 Language: [PARTIAL]
@@ -951,7 +951,7 @@ English: They looked cautiously about, but saw nothing.
 Language: [PARTIAL]
 Gloss: 3PL nothing.ACC LOOK
 Status: partial
-Reason: unrecognized: cautiously; not realized: saw, coordinated clause/predicate
+Reason: not realized: cautiously, saw, coordinated clause/predicate
 [Translation]
 English: The little house had three rooms, a sitting room, a bedroom, and a tiny kitchen.
 Language: [UNRESOLVED]
@@ -1113,7 +1113,7 @@ English: I feel ashamed of myself.
 Language: [PARTIAL]
 Gloss: 1SG of.ACC FEEL
 Status: partial
-Reason: unrecognized: ashamed
+Reason: not realized: ashamed
 [Translation]
 English: Sit here by yourself.
 Language: jietemas wodasunim
@@ -1122,10 +1122,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: The dress of the little princess was embroidered with roses, the national flower of the Country.
-Language: [UNRESOLVED]
-Gloss: [UNRESOLVED]
-Status: unresolved-vocabulary
-Reason: missing vocabulary: embroidered, national
+Language: [PARTIAL]
+Gloss: princess.PL.NOM country.ACC EMBROIDERED-PST-PROG
+Status: partial
+Reason: not realized: dress, little, roses, national, flower
 [Translation]
 English: They wore red caps, the symbol of liberty.
 Language: [PARTIAL]
@@ -1136,8 +1136,8 @@ Reason: not realized: red, caps, symbol
 English: With him as our protector, we fear no danger.
 Language: [UNRESOLVED]
 Gloss: [UNRESOLVED]
-Status: unresolved-vocabulary
-Reason: missing vocabulary: protector
+Status: unsupported-grammar
+Reason: unsupported sentence structure
 [Translation]
 English: All her finery, lace, ribbons, and feathers, was packed away in a trunk.
 Language: [UNRESOLVED]
@@ -1305,13 +1305,13 @@ English: He was very poor, and with his wife and five children lived in a little
 Language: [PARTIAL]
 Gloss: 3SG FIVE child.PL.ACC VERY-PST-PROG IN stone.LOC
 Status: partial
-Reason: unrecognized: logs; not realized: poor, wife, lived, little, low, cabin
+Reason: not realized: poor, wife, lived, little, low, cabin, logs
 [Translation]
 English: When the wind blew, the traveler wrapped his mantle more closely around him.
 Language: [PARTIAL]
 Gloss: when.NOM around.ACC WIND
 Status: partial
-Reason: unrecognized: mantle; not realized: blew, traveler, wrapped, closely, comparison
+Reason: not realized: blew, traveler, wrapped, mantle, closely, comparison
 [Translation]
 English: I am sure that we can go.
 Language: [UNRESOLVED]
@@ -1365,7 +1365,7 @@ English: Evidently that gate is never opened, for the long grass and the great h
 Language: [PARTIAL]
 Gloss: THAT gate.NOM against.PL.ACC NEVER-PROG
 Status: partial
-Reason: unrecognized: hemlocks; not realized: opened, long, grass, great, grow, close, negation, comparison, coordinated clause/predicate
+Reason: not realized: opened, long, grass, great, hemlocks, grow, close, negation, comparison, coordinated clause/predicate
 [Translation]
 English: I met a little cottage girl; she was eight years old, she said.
 Language: [PARTIAL]

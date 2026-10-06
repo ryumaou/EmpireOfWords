@@ -113,6 +113,12 @@ def main(argv=None):
     if not parent_path.is_file(): p.error(f'parent language not found: {parent_path}')
     data,grammar,entries,forms=load_language(parent_path); issues,_=validate_package(data,entries,forms)
     if issues:p.error('invalid parent language: '+'; '.join(issues[:5]))
+    parent_origin={}
+    parent_lineage=parent_path.parent/'lineage.csv'
+    if parent_lineage.exists():
+        with parent_lineage.open(encoding='utf-8',newline='') as f:
+            for row in csv.DictReader(f):
+                parent_origin[(row.get('English',''),row.get('POS',''))]=row.get('Origin Language','') or data.get('name',parent_path.parent.name)
     prof=PROFILES[args.profile]; nrules=args.sound_rules if args.sound_rules is not None else prof['sound_rules']
     repl=args.lexical_replacement if args.lexical_replacement is not None else prof['lexical_replacement']
     drift=args.grammar_drift if args.grammar_drift is not None else prof['grammar_drift']
@@ -124,7 +130,7 @@ def main(argv=None):
     daughter_forms={}; history=[]
     for e in entries:
         old=forms.get(e.key,''); new,applied=evolve(old,rules,2); daughter_forms[e.key]=new
-        history.append({'gloss':e.key.gloss,'pos':e.key.pos,'parent':old,'daughter':new,'changes':applied,'status':'inherited'})
+        history.append({'gloss':e.key.gloss,'pos':e.key.pos,'parent':old,'daughter':new,'changes':applied,'status':'inherited','origin_language':parent_origin.get((e.key.gloss,e.key.pos),data.get('name',parent_path.parent.name))})
     root_indices,replacements=replace_roots(data,list(daughter_forms.values()),rng,repl,Path(__file__).resolve().parent)
     roots=[x for x in data['lexicon'] if not x.get('derivation') and x.get('form')]
     root_key_order=[EntryKey(str(x['gloss']),str(x['pos'])) for x in roots]
@@ -132,7 +138,7 @@ def main(argv=None):
         key=root_key_order[idx]; old=daughter_forms[key]; daughter_forms[key]=replacements[j]
         for h in history:
             if h['gloss']==key.gloss and h['pos']==key.pos:
-                h['pre_replacement']=old; h['daughter']=replacements[j]; h['status']='innovated'; h['changes'].append('lexical replacement'); break
+                h['pre_replacement']=old; h['daughter']=replacements[j]; h['status']='innovated'; h['origin_language']=args.language_name; h['changes'].append('lexical replacement'); break
     dgrammar=evolve_grammar(grammar,rules); dgrammar,grammar_changes=drift_grammar(dgrammar,rng,drift)
     # Evolve derivational affixes too, preserving their rule definitions.
     daff={}
@@ -142,18 +148,18 @@ def main(argv=None):
     write_package(out,args.language_name,dgrammar,entries,daughter_forms,daff,args.seed)
     # Add lineage metadata to canonical package.
     lp=out/'language.json'; child=json.loads(lp.read_text(encoding='utf-8'))
-    child['tool_version']='Empire Of Words'
+    child['tool_version']='5.9'
     child['lineage']={'parent_name':data.get('name',parent_path.parent.name),'parent_path':str(parent_path),'parent_seed':data.get('seed'),'daughter_seed':args.seed,'profile':args.profile,'sound_changes':[r[0] for r in rules],'grammar_changes':grammar_changes,'lexical_replacement_rate':repl,'innovated_roots':len(root_indices)}
     lp.write_text(json.dumps(child,ensure_ascii=False,indent=2),encoding='utf-8')
     # Rewrite dictionary with ancestry columns.
     hist={(h['gloss'],h['pos']):h for h in history}
     with (out/'dictionary.csv').open('w',encoding='utf-8',newline='') as f:
-        w=csv.writer(f); w.writerow(['English','POS','Generated','Type','Derivation','Parent Form','Inheritance','Sound Changes'])
+        w=csv.writer(f); w.writerow(['English','POS','Generated','Type','Derivation','Parent Form','Inheritance','Sound Changes','Origin Language'])
         for e in entries:
-            h=hist[(e.key.gloss,e.key.pos)]; w.writerow([e.key.gloss,e.key.pos,daughter_forms.get(e.key,''),'derived' if e.expr else 'root',e.expr or '',h['parent'],h['status'],'; '.join(h['changes'])])
+            h=hist[(e.key.gloss,e.key.pos)]; w.writerow([e.key.gloss,e.key.pos,daughter_forms.get(e.key,''),'derived' if e.expr else 'root',e.expr or '',h['parent'],h['status'],'; '.join(h['changes']),h.get('origin_language','')])
     with (out/'lineage.csv').open('w',encoding='utf-8',newline='') as f:
-        w=csv.writer(f); w.writerow(['English','POS','Parent Form','Daughter Form','Status','Changes'])
-        for h in history:w.writerow([h['gloss'],h['pos'],h['parent'],h['daughter'],h['status'],'; '.join(h['changes'])])
+        w=csv.writer(f); w.writerow(['English','POS','Parent Form','Daughter Form','Status','Changes','Origin Language'])
+        for h in history:w.writerow([h['gloss'],h['pos'],h['parent'],h['daughter'],h['status'],'; '.join(h['changes']),h.get('origin_language','')])
     report=[f'# {args.language_name} — Lineage', '', f"Parent: **{data.get('name',parent_path.parent.name)}**",f'Profile: **{args.profile}**',f'Seed: `{args.seed}`','', '## Ordered sound changes']
     report += [f'{i}. {r[0]}' for i,r in enumerate(rules,1)] or ['No regular sound changes selected.']
     report += ['', '## Grammar changes'] + ([f'- {x}' for x in grammar_changes] or ['- No grammar drift selected.'])

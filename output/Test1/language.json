@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "tool_version": "5.7",
+  "tool_version": "5.9",
   "name": "Test1",
   "seed": 12345,
   "grammar": {
@@ -30922,6 +30922,324 @@
       "pos": "n",
       "form": "dtekerperp",
       "derivation": "young-TO.CREATE-QUALITY.OF.BEING"
+    },
+    {
+      "gloss": "story",
+      "pos": "n",
+      "form": "nasar",
+      "derivation": null
+    },
+    {
+      "gloss": "robin",
+      "pos": "n",
+      "form": "lucumpa",
+      "derivation": null
+    },
+    {
+      "gloss": "pebble",
+      "pos": "n",
+      "form": "tir",
+      "derivation": null
+    },
+    {
+      "gloss": "neat",
+      "pos": "adv",
+      "form": "wakia",
+      "derivation": null
+    },
+    {
+      "gloss": "camper",
+      "pos": "n",
+      "form": "pencama",
+      "derivation": null
+    },
+    {
+      "gloss": "concert",
+      "pos": "n",
+      "form": "perki",
+      "derivation": null
+    },
+    {
+      "gloss": "mile",
+      "pos": "n",
+      "form": "kesamb",
+      "derivation": null
+    },
+    {
+      "gloss": "solstice",
+      "pos": "n",
+      "form": "ciri",
+      "derivation": null
+    },
+    {
+      "gloss": "hidden",
+      "pos": "adj",
+      "form": "memakai",
+      "derivation": null
+    },
+    {
+      "gloss": "drooping",
+      "pos": "v",
+      "form": "menjira",
+      "derivation": null
+    },
+    {
+      "gloss": "bough",
+      "pos": "n",
+      "form": "mukan",
+      "derivation": null
+    },
+    {
+      "gloss": "wreath",
+      "pos": "n",
+      "form": "perlam",
+      "derivation": null
+    },
+    {
+      "gloss": "bonfire",
+      "pos": "n",
+      "form": "telirat",
+      "derivation": null
+    },
+    {
+      "gloss": "entrance",
+      "pos": "n",
+      "form": "penurin",
+      "derivation": null
+    },
+    {
+      "gloss": "residence",
+      "pos": "n",
+      "form": "perian",
+      "derivation": null
+    },
+    {
+      "gloss": "lofty",
+      "pos": "adj",
+      "form": "tampera",
+      "derivation": null
+    },
+    {
+      "gloss": "spool",
+      "pos": "n",
+      "form": "mengat",
+      "derivation": null
+    },
+    {
+      "gloss": "juicy",
+      "pos": "adj",
+      "form": "kelebaj",
+      "derivation": null
+    },
+    {
+      "gloss": "salty",
+      "pos": "adj",
+      "form": "repdjdg",
+      "derivation": null
+    },
+    {
+      "gloss": "roadside",
+      "pos": "n",
+      "form": "hand",
+      "derivation": null
+    },
+    {
+      "gloss": "litter",
+      "pos": "n",
+      "form": "inyi",
+      "derivation": null
+    },
+    {
+      "gloss": "tune",
+      "pos": "n",
+      "form": "tedatih",
+      "derivation": null
+    },
+    {
+      "gloss": "crow",
+      "pos": "n",
+      "form": "perlaw",
+      "derivation": null
+    },
+    {
+      "gloss": "pitcher",
+      "pos": "n",
+      "form": "lebalar",
+      "derivation": null
+    },
+    {
+      "gloss": "brim",
+      "pos": "n",
+      "form": "pergia",
+      "derivation": null
+    },
+    {
+      "gloss": "popped",
+      "pos": "v",
+      "form": "depanj",
+      "derivation": null
+    },
+    {
+      "gloss": "hasty",
+      "pos": "adv",
+      "form": "jarkang",
+      "derivation": null
+    },
+    {
+      "gloss": "brave",
+      "pos": "adj",
+      "form": "pelenan",
+      "derivation": null
+    },
+    {
+      "gloss": "seized",
+      "pos": "v",
+      "form": "ruan",
+      "derivation": null
+    },
+    {
+      "gloss": "handful",
+      "pos": "n",
+      "form": "jakali",
+      "derivation": null
+    },
+    {
+      "gloss": "cautious",
+      "pos": "adv",
+      "form": "tujuta",
+      "derivation": null
+    },
+    {
+      "gloss": "room",
+      "pos": "n",
+      "form": "memanan",
+      "derivation": null
+    },
+    {
+      "gloss": "bedroom",
+      "pos": "n",
+      "form": "cel",
+      "derivation": null
+    },
+    {
+      "gloss": "tiny",
+      "pos": "adj",
+      "form": "seka",
+      "derivation": null
+    },
+    {
+      "gloss": "splendid",
+      "pos": "adj",
+      "form": "telak",
+      "derivation": null
+    },
+    {
+      "gloss": "uncomfortable",
+      "pos": "adj",
+      "form": "pemaya",
+      "derivation": null
+    },
+    {
+      "gloss": "snowflake",
+      "pos": "n",
+      "form": "lin",
+      "derivation": null
+    },
+    {
+      "gloss": "faithful",
+      "pos": "adj",
+      "form": "maluru",
+      "derivation": null
+    },
+    {
+      "gloss": "doll'",
+      "pos": "adj",
+      "form": "lebiar",
+      "derivation": null
+    },
+    {
+      "gloss": "ashamed",
+      "pos": "v",
+      "form": "teruhar",
+      "derivation": null
+    },
+    {
+      "gloss": "embroidered",
+      "pos": "v",
+      "form": "kesamme",
+      "derivation": null
+    },
+    {
+      "gloss": "national",
+      "pos": "adj",
+      "form": "adagam",
+      "derivation": null
+    },
+    {
+      "gloss": "protector",
+      "pos": "n",
+      "form": "serik",
+      "derivation": null
+    },
+    {
+      "gloss": "finery",
+      "pos": "adj",
+      "form": "duta",
+      "derivation": null
+    },
+    {
+      "gloss": "fisherman",
+      "pos": "n",
+      "form": "perha",
+      "derivation": null
+    },
+    {
+      "gloss": "demanded",
+      "pos": "v",
+      "form": "secambu",
+      "derivation": null
+    },
+    {
+      "gloss": "hall",
+      "pos": "n",
+      "form": "beadaft",
+      "derivation": null
+    },
+    {
+      "gloss": "log",
+      "pos": "n",
+      "form": "sedepam",
+      "derivation": null
+    },
+    {
+      "gloss": "mantle",
+      "pos": "n",
+      "form": "sudafat",
+      "derivation": null
+    },
+    {
+      "gloss": "fifty",
+      "pos": "adj",
+      "form": "portah",
+      "derivation": null
+    },
+    {
+      "gloss": "governor",
+      "pos": "adj",
+      "form": "hasihka",
+      "derivation": null
+    },
+    {
+      "gloss": "grant",
+      "pos": "v",
+      "form": "benemak",
+      "derivation": null
+    },
+    {
+      "gloss": "hemlock",
+      "pos": "n",
+      "form": "leni",
+      "derivation": null
     }
   ],
   "translation_source": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\translations\\sentences_default.txt",
@@ -31002,6 +31320,69 @@
       "surface": "[PARTIAL]",
       "gloss": "SUBJ WEAR-PART bell.ACC STARVE-FUT",
       "status": "partial"
+    }
+  ],
+  "lexicon_extensions": [
+    {
+      "source": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\output\\Test1\\advanced_translations_missing_words.txt",
+      "seed": 12345,
+      "count": 53,
+      "origin_language": "Test1",
+      "entries": [
+        "story:n",
+        "robin:n",
+        "pebble:n",
+        "neat:adv",
+        "camper:n",
+        "concert:n",
+        "mile:n",
+        "solstice:n",
+        "hidden:adj",
+        "drooping:v",
+        "bough:n",
+        "wreath:n",
+        "bonfire:n",
+        "entrance:n",
+        "residence:n",
+        "lofty:adj",
+        "spool:n",
+        "juicy:adj",
+        "salty:adj",
+        "roadside:n",
+        "litter:n",
+        "tune:n",
+        "crow:n",
+        "pitcher:n",
+        "brim:n",
+        "popped:v",
+        "hasty:adv",
+        "brave:adj",
+        "seized:v",
+        "handful:n",
+        "cautious:adv",
+        "room:n",
+        "bedroom:n",
+        "tiny:adj",
+        "splendid:adj",
+        "uncomfortable:adj",
+        "snowflake:n",
+        "faithful:adj",
+        "doll':adj",
+        "ashamed:v",
+        "embroidered:v",
+        "national:adj",
+        "protector:n",
+        "finery:adj",
+        "fisherman:n",
+        "demanded:v",
+        "hall:n",
+        "log:n",
+        "mantle:n",
+        "fifty:adj",
+        "governor:adj",
+        "grant:v",
+        "hemlock:n"
+      ]
     }
   ]
 }

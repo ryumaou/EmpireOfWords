@@ -1,37 +1,12 @@
-# Missing/unrecognized English words from translation diagnostics
-# Review these and add desired entries to a supplemental vocabulary file as gloss:pos.
-# Counts are shown after #; this file is intentionally POS-neutral.
+# Empire Of Words - missing vocabulary required by this translation
+# Language: Example
+# This file is directly compatible with src/add_words.py.
+# Review before applying. Comments and uncertain items are ignored by add_words.py.
 
-everywhere  # 1
-neatly  # 1
-campers  # 1
-miles  # 1
-hidden  # 1
-drooping  # 1
-boughs  # 1
-wreaths  # 1
-popped  # 1
-hastily  # 1
-dear  # 1
-seized  # 1
-cautiously  # 1
-rooms  # 1
-room  # 1
-snowflakes  # 1
-snug  # 1
-trustworthy  # 1
-ashamed  # 1
-embroidered  # 1
-national  # 1
-protector  # 1
-finery  # 1
-fisherman  # 1
-demanded  # 1
-payment  # 1
-hall  # 1
-logs  # 1
-mantle  # 1
-fifty  # 1
-governor  # 1
-grant  # 1
-hemlocks  # 1
+
+# REVIEW REQUIRED - POS could not be inferred safely; not active add_words entries.
+# everywhere  (1)
+# dear  (1)
+# snug  (1)
+# trustworthy  (1)
+# payment  (1)

@@ -285,7 +285,7 @@ English: You must write more neatly.
 Language: [PARTIAL]
 Gloss: 2SG MUST more.ACC
 Status: partial
-Reason: unrecognized: neatly; not realized: write, modal meaning
+Reason: not realized: write, neatly, modal meaning
 [Translation]
 English: Directly opposite stands a wonderful palace.
 Language: [PARTIAL]
@@ -348,10 +348,10 @@ Status: partial
 Reason: not realized: waiting, perfect aspect
 [Translation]
 English: The campers sat around the fire.
-Language: [UNRESOLVED]
-Gloss: [UNRESOLVED]
-Status: unresolved-vocabulary
-Reason: missing vocabulary: campers
+Language: pencamal berhafadena manmaimulal
+Gloss: camper.NOM-DEF SIT-PST fire.ACC-DEF
+Status: ok
+Reason: complete
 [Translation]
 English: A little girl with a kitten sat near me.
 Language: [PARTIAL]
@@ -408,16 +408,16 @@ Status: unsupported-grammar
 Reason: unsupported sentence structure
 [Translation]
 English: Does the robin sing in the rain?
-Language: [UNRESOLVED]
-Gloss: [UNRESOLVED]
-Status: unresolved-vocabulary
-Reason: missing vocabulary: robin
+Language: kerbera lucumpal tesekebera keada dikirayl
+Gloss: robin.NOM-DEF SING IN rain.LOC-DEF Q
+Status: ok
+Reason: complete
 [Translation]
 English: Are you going with us to the concert?
-Language: [PARTIAL]
-Gloss: 2SG GOING-PROG us.PL.ACC Q
-Status: partial
-Reason: unrecognized: concert
+Language: kerbera terberu memtaiyajad manmandi kelihan perkil
+Gloss: 2SG GOING-PROG us.PL.ACC TO concert.DAT-DEF Q
+Status: ok
+Reason: complete
 [Translation]
 English: Have you ever travelled in the jungle?
 Language: [UNRESOLVED]
@@ -427,9 +427,9 @@ Reason: unsupported sentence structure
 [Translation]
 English: We sailed down the river for several miles.
 Language: [PARTIAL]
-Gloss: 1PL SAIL several.ACC-DEF
+Gloss: 1PL SAIL mile.ACC-DEF
 Status: partial
-Reason: unrecognized: miles; not realized: river
+Reason: not realized: river, several
 [Translation]
 English: Everybody knows about hunting.
 Language: pingain maksipa mansatirus
@@ -441,7 +441,7 @@ English: On a Sunny morning after the solstice we started for the mountains.
 Language: [PARTIAL]
 Gloss: we.NOM-DEF START mountain.ACC-DEF
 Status: partial
-Reason: unrecognized: solstice; not realized: morning
+Reason: not realized: morning, solstice
 [Translation]
 English: Tom laughed at the monkey’s tricks.
 Language: [UNRESOLVED]
@@ -469,9 +469,9 @@ Reason: not realized: waited, patiently, snow, warm, spring
 [Translation]
 English: Many little girls with wreaths of flowers on their heads danced around the bonfire.
 Language: [PARTIAL]
-Gloss: their.NOM HEAD around.ACC-DEF
+Gloss: their.NOM HEAD bonfire.ACC-DEF
 Status: partial
-Reason: unrecognized: wreaths, bonfire; not realized: little, girls, flowers, danced
+Reason: not realized: little, girls, wreaths, flowers, danced
 [Translation]
 English: The cover of the basket fell to the floor.
 Language: [UNRESOLVED]
@@ -482,8 +482,8 @@ Reason: unsupported sentence structure
 English: The first boy in the line stopped at the entrance.
 Language: [UNRESOLVED]
 Gloss: [UNRESOLVED]
-Status: unresolved-vocabulary
-Reason: missing vocabulary: entrance
+Status: unsupported-grammar
+Reason: unsupported sentence structure
 [Translation]
 English: On the top of the hill in a little hut lived a wise old woman.
 Language: [PARTIAL]
@@ -495,7 +495,7 @@ English: During our residence in the country we often walked in the pastures.
 Language: [PARTIAL]
 Gloss: often.NOM-DEF WALK IN pasture.LOC-DEF
 Status: partial
-Reason: unrecognized: residence; not realized: country
+Reason: not realized: residence, country
 [Translation]
 English: When will your guests from the city arrive?
 Language: [UNRESOLVED]
@@ -513,7 +513,7 @@ English: Between the two lofty mountains lay a fertile valley.
 Language: [PARTIAL]
 Gloss: mountain.PL.NOM-DEF TWO LAY valley.ACC
 Status: partial
-Reason: unrecognized: lofty; not realized: fertile
+Reason: not realized: lofty, fertile
 [Translation]
 English: Among the wheat grew tall red poppies.
 Language: [PARTIAL]
@@ -543,7 +543,7 @@ English: The spool of thread rolled across the floor.
 Language: [PARTIAL]
 Gloss: thread.NOM-DEF ROLL floor.PL.ACC-DEF
 Status: partial
-Reason: unrecognized: spool; not realized: across
+Reason: not realized: spool, across
 [Translation]
 English: A box of growing plants stood in the Window.
 Language: [PARTIAL]
@@ -558,16 +558,16 @@ Status: ok
 Reason: complete
 [Translation]
 English: These oranges are juicy.
-Language: [UNRESOLVED]
-Gloss: [UNRESOLVED]
-Status: unresolved-vocabulary
-Reason: missing vocabulary: juicy
+Language: semakir jakangide memkalibaja
+Gloss: THESE orange.PL.NOM JUICY-PROG
+Status: ok
+Reason: complete
 [Translation]
 English: Sea water is salty.
-Language: [UNRESOLVED]
-Gloss: [UNRESOLVED]
-Status: unresolved-vocabulary
-Reason: missing vocabulary: salty
+Language: [PARTIAL]
+Gloss: water.NOM SALTY-PROG
+Status: partial
+Reason: not realized: sea
 [Translation]
 English: The streets are full of people.
 Language: [PARTIAL]
@@ -606,16 +606,16 @@ Status: partial
 Reason: not realized: lost
 [Translation]
 English: A robin has built his nest in the apple tree.
-Language: [UNRESOLVED]
-Gloss: [UNRESOLVED]
-Status: unresolved-vocabulary
-Reason: missing vocabulary: robin
+Language: [PARTIAL]
+Gloss: robin.NOM NEST IN tree.LOC-DEF
+Status: partial
+Reason: not realized: built, apple
 [Translation]
 English: At noon we ate our lunch by the roadside.
 Language: [PARTIAL]
-Gloss: we.NOM EAT-PST by.ACC-DEF
+Gloss: we.NOM EAT-PST roadside.ACC-DEF
 Status: partial
-Reason: unrecognized: roadside; not realized: noon, lunch
+Reason: not realized: noon, lunch
 [Translation]
 English: Mr. Jones made a knife for his little boy.
 Language: [UNRESOLVED]
@@ -662,8 +662,8 @@ Reason: complete
 English: Is this the first kitten of the litter?
 Language: [UNRESOLVED]
 Gloss: [UNRESOLVED]
-Status: unresolved-vocabulary
-Reason: missing vocabulary: litter
+Status: unsupported-grammar
+Reason: unsupported sentence structure
 [Translation]
 English: Are these shoes too big for you?
 Language: [UNRESOLVED]
@@ -775,9 +775,9 @@ Reason: unsupported sentence structure
 [Translation]
 English: He played a tune on his wonderful flute.
 Language: [PARTIAL]
-Gloss: 3SG PLAY ON flute.LOC
+Gloss: 3SG PLAY tune.ACC ON flute.LOC
 Status: partial
-Reason: unrecognized: tune; not realized: wonderful
+Reason: not realized: wonderful
 [Translation]
 English: Toward the end of August the days grow much shorter.
 Language: [PARTIAL]
@@ -793,15 +793,15 @@ Reason: not realized: company, hill, across
 [Translation]
 English: The first part of the story is very interesting.
 Language: [PARTIAL]
-Gloss: of.NOM-DEF VERY-PROG
+Gloss: story.NOM-DEF VERY-PROG
 Status: partial
-Reason: unrecognized: story; not realized: first, part, interesting
+Reason: not realized: first, part, interesting
 [Translation]
 English: The crow dropped some pebbles into the pitcher and raised the water to the brim.
 Language: [PARTIAL]
-Gloss: and.NOM-DEF RAISE water.ACC-DEF
+Gloss: and.NOM-DEF RAISE water.ACC-DEF TO brim.DAT-DEF
 Status: partial
-Reason: unrecognized: crow, pebbles, pitcher, brim; not realized: dropped, into, coordinated clause/predicate
+Reason: not realized: crow, dropped, pebbles, into, pitcher, coordinated clause/predicate
 [Translation]
 English: The baby clapped her hands and laughed in glee.
 Language: [PARTIAL]
@@ -834,10 +834,10 @@ Status: partial
 Reason: not realized: wonderful
 [Translation]
 English: They popped corn, and then sat around the fire and ate it.
-Language: [UNRESOLVED]
-Gloss: [UNRESOLVED]
-Status: unresolved-vocabulary
-Reason: missing vocabulary: popped, corn
+Language: [PARTIAL]
+Gloss: 3PL POPPED and.ACC-DEF
+Status: partial
+Reason: unrecognized: corn; not realized: then, sat, fire, ate, coordinated clause/predicate
 [Translation]
 English: They won the first two games, but lost the last one.
 Language: [PARTIAL]
@@ -902,8 +902,8 @@ Reason: not realized: warning
 English: We are a brave people, and love our country.
 Language: [UNRESOLVED]
 Gloss: [UNRESOLVED]
-Status: unresolved-vocabulary
-Reason: missing vocabulary: brave
+Status: unsupported-grammar
+Reason: unsupported sentence structure
 [Translation]
 English: All the children came except Mary.
 Language: urahnyidel tenemahdenwa manhabirka
@@ -912,10 +912,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: Jack seized a handful of pebbles and threw them into the lake.
-Language: [PARTIAL]
-Gloss: and.NOM THROW-PST lake.ACC-DEF 3PL.DAT 
-Status: partial
-Reason: unrecognized: seized, handful, pebbles; not realized: into
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported sentence structure
 [Translation]
 English: This cottage stood on a low hill, at some distance from the village.
 Language: [PARTIAL]
@@ -951,7 +951,7 @@ English: They looked cautiously about, but saw nothing.
 Language: [PARTIAL]
 Gloss: 3PL LOOK nothing.ACC
 Status: partial
-Reason: unrecognized: cautiously; not realized: saw, coordinated clause/predicate
+Reason: not realized: cautiously, saw, coordinated clause/predicate
 [Translation]
 English: The little house had three rooms, a sitting room, a bedroom, and a tiny kitchen.
 Language: [UNRESOLVED]
@@ -999,7 +999,7 @@ English: Here under this tree they gave their guests a splendid feast.
 Language: [PARTIAL]
 Gloss: THIS they.NOM GIVE-PST feast.ACC
 Status: partial
-Reason: unrecognized: splendid; not realized: tree, guests
+Reason: not realized: tree, guests, splendid
 [Translation]
 English: In winter I get up at night, and dress by yellow candlelight.
 Language: [PARTIAL]
@@ -1011,7 +1011,7 @@ English: Tell the last part of that story again.
 Language: [PARTIAL]
 Gloss: tell-IMP THAT again.ACC-DEF
 Status: partial
-Reason: unrecognized: story; not realized: last, part
+Reason: not realized: last, part, story
 [Translation]
 English: Be quick or you will be too late.
 Language: [UNRESOLVED]
@@ -1059,7 +1059,7 @@ English: We consider them our faithful friends.
 Language: [PARTIAL]
 Gloss: 1PL CONSIDER friend.ACC 3PL.DAT 
 Status: partial
-Reason: unrecognized: faithful
+Reason: not realized: faithful
 [Translation]
 English: We will make this place our home.
 Language: [PARTIAL]
@@ -1113,7 +1113,7 @@ English: I feel ashamed of myself.
 Language: [PARTIAL]
 Gloss: 1SG FEEL of.ACC
 Status: partial
-Reason: unrecognized: ashamed
+Reason: not realized: ashamed
 [Translation]
 English: Sit here by yourself.
 Language: berhafabikjad mankahis
@@ -1122,10 +1122,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: The dress of the little princess was embroidered with roses, the national flower of the Country.
-Language: [UNRESOLVED]
-Gloss: [UNRESOLVED]
-Status: unresolved-vocabulary
-Reason: missing vocabulary: embroidered, national
+Language: [PARTIAL]
+Gloss: princess.PL.NOM-DEF EMBROIDERED-PST-PROG country.ACC-DEF
+Status: partial
+Reason: not realized: dress, little, roses, national, flower
 [Translation]
 English: They wore red caps, the symbol of liberty.
 Language: [PARTIAL]
@@ -1136,8 +1136,8 @@ Reason: not realized: red, caps, symbol
 English: With him as our protector, we fear no danger.
 Language: [UNRESOLVED]
 Gloss: [UNRESOLVED]
-Status: unresolved-vocabulary
-Reason: missing vocabulary: protector
+Status: unsupported-grammar
+Reason: unsupported sentence structure
 [Translation]
 English: All her finery, lace, ribbons, and feathers, was packed away in a trunk.
 Language: [UNRESOLVED]
@@ -1268,8 +1268,8 @@ Reason: not realized: future/modal, coordinated clause/predicate
 English: That is the funniest story I ever heard.
 Language: [UNRESOLVED]
 Gloss: [UNRESOLVED]
-Status: unresolved-vocabulary
-Reason: missing vocabulary: story
+Status: unsupported-grammar
+Reason: unsupported sentence structure
 [Translation]
 English: She is taller than her brother.
 Language: [UNRESOLVED]
@@ -1305,13 +1305,13 @@ English: He was very poor, and with his wife and five children lived in a little
 Language: [PARTIAL]
 Gloss: 3SG VERY-PST-PROG child.PL.ACC FIVE IN stone.LOC
 Status: partial
-Reason: unrecognized: logs; not realized: poor, wife, lived, little, low, cabin
+Reason: not realized: poor, wife, lived, little, low, cabin, logs
 [Translation]
 English: When the wind blew, the traveler wrapped his mantle more closely around him.
 Language: [PARTIAL]
 Gloss: when.NOM-DEF WIND around.ACC-DEF
 Status: partial
-Reason: unrecognized: mantle; not realized: blew, traveler, wrapped, closely, comparison
+Reason: not realized: blew, traveler, wrapped, mantle, closely, comparison
 [Translation]
 English: I am sure that we can go.
 Language: [UNRESOLVED]
@@ -1365,7 +1365,7 @@ English: Evidently that gate is never opened, for the long grass and the great h
 Language: [PARTIAL]
 Gloss: THAT gate.NOM NEVER-PROG against.PL.ACC-DEF
 Status: partial
-Reason: unrecognized: hemlocks; not realized: opened, long, grass, great, grow, close, negation, comparison, coordinated clause/predicate
+Reason: not realized: opened, long, grass, great, hemlocks, grow, close, negation, comparison, coordinated clause/predicate
 [Translation]
 English: I met a little cottage girl; she was eight years old, she said.
 Language: [PARTIAL]

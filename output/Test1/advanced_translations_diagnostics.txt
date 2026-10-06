@@ -2,10 +2,10 @@ Translation diagnostics: Test1
 ============================================================
 
 Sentences: 229
-Complete: 38
-Partial: 112
-Missing vocabulary: 13
-Unsupported grammar: 66
+Complete: 42
+Partial: 114
+Missing vocabulary: 1
+Unsupported grammar: 72
 
 Construction inventory:
   simple_clause: supported
@@ -38,9 +38,9 @@ Most common constructions in non-complete sentences:
   imperative: 28
   modal: 25
   comparison: 23
-  yes_no_question: 19
+  yes_no_question: 17
   possessive: 10
-  progressive: 8
+  progressive: 7
   relative_clause: 7
   perfect: 6
   appositive: 6
@@ -55,56 +55,21 @@ Most common constructions in non-complete sentences:
   quotation: 1
 
 Most common missing/unrecognized English lexemes:
-  story: 3
-  robin: 2
-  pebbles: 2
   wild: 1
   everywhere: 1
-  neatly: 1
   doll: 1
-  campers: 1
-  concert: 1
-  miles: 1
-  solstice: 1
-  hidden: 1
-  drooping: 1
-  boughs: 1
-  wreaths: 1
-  bonfire: 1
-  entrance: 1
-  residence: 1
-  lofty: 1
   caress: 1
-  spool: 1
-  juicy: 1
-  salty: 1
-  roadside: 1
-  litter: 1
   gray: 1
-  tune: 1
-  crow: 1
-  pitcher: 1
-  brim: 1
   glee: 1
-  popped: 1
   corn: 1
-  hastily: 1
   dear: 1
-  brave: 1
-  seized: 1
-  handful: 1
-  cautiously: 1
-  rooms: 1
-  room: 1
-  bedroom: 1
-  tiny: 1
-  splendid: 1
   candlelight: 1
   shabby: 1
-  uncomfortable: 1
   mite: 1
-  snowflakes: 1
-  faithful: 1
+  snug: 1
+  doll's: 1
+  trustworthy: 1
+  payment: 1
 
 Per-sentence diagnostics:
 -
@@ -290,7 +255,7 @@ Per-sentence diagnostics:
 
 #48 You must write more neatly.
   Status: partial
-  Reason: unrecognized: neatly; not realized: write, modal meaning
+  Reason: not realized: write, neatly, modal meaning
   Constructions: comparison, modal
   Normalized: (unchanged)
 
@@ -335,12 +300,6 @@ Per-sentence diagnostics:
   Reason: not realized: waiting, perfect aspect
   Constructions: perfect
   Normalized: (unchanged)
-
-#59 The campers sat around the fire.
-  Status: unresolved-vocabulary
-  Reason: missing vocabulary: campers
-  Constructions: simple
-  Normalized: The campers did sit around the fire.
 
 #60 A little girl with a kitten sat near me.
   Status: partial
@@ -390,18 +349,6 @@ Per-sentence diagnostics:
   Constructions: yes_no_question
   Normalized: Have the neighbor gone away for the winter?
 
-#69 Does the robin sing in the rain?
-  Status: unresolved-vocabulary
-  Reason: missing vocabulary: robin
-  Constructions: yes_no_question
-  Normalized: do the robin sing in the rain?
-
-#70 Are you going with us to the concert?
-  Status: partial
-  Reason: unrecognized: concert
-  Constructions: progressive, yes_no_question
-  Normalized: (unchanged)
-
 #71 Have you ever travelled in the jungle?
   Status: unsupported-grammar
   Reason: unsupported sentence structure
@@ -410,13 +357,13 @@ Per-sentence diagnostics:
 
 #72 We sailed down the river for several miles.
   Status: partial
-  Reason: unrecognized: miles; not realized: river
+  Reason: not realized: river, several
   Constructions: simple
-  Normalized: (unchanged)
+  Normalized: We sailed down the river for several mile.
 
 #74 On a Sunny morning after the solstice we started for the mountains.
   Status: partial
-  Reason: unrecognized: solstice; not realized: morning
+  Reason: not realized: morning, solstice
   Constructions: simple
   Normalized: On a Sunny morning after the solstice we started for the mountain.
 
@@ -436,7 +383,7 @@ Per-sentence diagnostics:
   Status: unsupported-grammar
   Reason: unsupported construction: passive
   Constructions: passive, progressive, possessive
-  Normalized: The squirrel nest was hidden by drooping boughs.
+  Normalized: The squirrel nest was hidden by drooping bough.
 
 #78 The little seeds waited patiently under the snow for the warm spring sun.
   Status: partial
@@ -446,9 +393,9 @@ Per-sentence diagnostics:
 
 #79 Many little girls with wreaths of flowers on their heads danced around the bonfire.
   Status: partial
-  Reason: unrecognized: wreaths, bonfire; not realized: little, girls, flowers, danced
+  Reason: not realized: little, girls, wreaths, flowers, danced
   Constructions: simple
-  Normalized: Many little girl with wreaths of flower on their head danced around the bonfire.
+  Normalized: Many little girl with wreath of flower on their head danced around the bonfire.
 
 #80 The cover of the basket fell to the floor.
   Status: unsupported-grammar
@@ -457,8 +404,8 @@ Per-sentence diagnostics:
   Normalized: The cover of the basket did fall to the floor.
 
 #81 The first boy in the line stopped at the entrance.
-  Status: unresolved-vocabulary
-  Reason: missing vocabulary: entrance
+  Status: unsupported-grammar
+  Reason: unsupported sentence structure
   Constructions: simple
   Normalized: (unchanged)
 
@@ -470,7 +417,7 @@ Per-sentence diagnostics:
 
 #83 During our residence in the country we often walked in the pastures.
   Status: partial
-  Reason: unrecognized: residence; not realized: country
+  Reason: not realized: residence, country
   Constructions: simple
   Normalized: During our residence in the country we often walked in the pasture.
 
@@ -488,7 +435,7 @@ Per-sentence diagnostics:
 
 #86 Between the two lofty mountains lay a fertile valley.
   Status: partial
-  Reason: unrecognized: lofty; not realized: fertile
+  Reason: not realized: lofty, fertile
   Constructions: simple
   Normalized: Between the two lofty mountain lay a fertile valley.
 
@@ -518,7 +465,7 @@ Per-sentence diagnostics:
 
 #91 The spool of thread rolled across the floor.
   Status: partial
-  Reason: unrecognized: spool; not realized: across
+  Reason: not realized: spool, across
   Constructions: simple
   Normalized: (unchanged)
 
@@ -528,15 +475,9 @@ Per-sentence diagnostics:
   Constructions: simple
   Normalized: A box of growing plant did stand in the Window.
 
-#94 These oranges are juicy.
-  Status: unresolved-vocabulary
-  Reason: missing vocabulary: juicy
-  Constructions: simple
-  Normalized: These orange are juicy.
-
 #95 Sea water is salty.
-  Status: unresolved-vocabulary
-  Reason: missing vocabulary: salty
+  Status: partial
+  Reason: not realized: sea
   Constructions: simple
   Normalized: (unchanged)
 
@@ -571,14 +512,14 @@ Per-sentence diagnostics:
   Normalized: (unchanged)
 
 #102 A robin has built his nest in the apple tree.
-  Status: unresolved-vocabulary
-  Reason: missing vocabulary: robin
+  Status: partial
+  Reason: not realized: built, apple
   Constructions: simple
   Normalized: (unchanged)
 
 #103 At noon we ate our lunch by the roadside.
   Status: partial
-  Reason: unrecognized: roadside; not realized: noon, lunch
+  Reason: not realized: noon, lunch
   Constructions: simple
   Normalized: At noon we did eat our lunch by the roadside.
 
@@ -619,8 +560,8 @@ Per-sentence diagnostics:
   Normalized: (unchanged)
 
 #111 Is this the first kitten of the litter?
-  Status: unresolved-vocabulary
-  Reason: missing vocabulary: litter
+  Status: unsupported-grammar
+  Reason: unsupported sentence structure
   Constructions: yes_no_question
   Normalized: (unchanged)
 
@@ -698,7 +639,7 @@ Per-sentence diagnostics:
 
 #130 He played a tune on his wonderful flute.
   Status: partial
-  Reason: unrecognized: tune; not realized: wonderful
+  Reason: not realized: wonderful
   Constructions: simple
   Normalized: (unchanged)
 
@@ -716,15 +657,15 @@ Per-sentence diagnostics:
 
 #133 The first part of the story is very interesting.
   Status: partial
-  Reason: unrecognized: story; not realized: first, part, interesting
+  Reason: not realized: first, part, interesting
   Constructions: simple
   Normalized: (unchanged)
 
 #134 The crow dropped some pebbles into the pitcher and raised the water to the brim.
   Status: partial
-  Reason: unrecognized: crow, pebbles, pitcher, brim; not realized: dropped, into, coordinated clause/predicate
+  Reason: not realized: crow, dropped, pebbles, into, pitcher, coordinated clause/predicate
   Constructions: coordination
-  Normalized: (unchanged)
+  Normalized: The crow dropped some pebble into the pitcher and raised the water to the brim.
 
 #135 The baby clapped her hands and laughed in glee.
   Status: partial
@@ -757,8 +698,8 @@ Per-sentence diagnostics:
   Normalized: (unchanged)
 
 #140 They popped corn, and then sat around the fire and ate it.
-  Status: unresolved-vocabulary
-  Reason: missing vocabulary: popped, corn
+  Status: partial
+  Reason: unrecognized: corn; not realized: then, sat, fire, ate, coordinated clause/predicate
   Constructions: coordination
   Normalized: They popped corn and then did sit around the fire and ate it.
 
@@ -817,16 +758,16 @@ Per-sentence diagnostics:
   Normalized: They did hear the warning too late.
 
 #151 We are a brave people, and love our country.
-  Status: unresolved-vocabulary
-  Reason: missing vocabulary: brave
+  Status: unsupported-grammar
+  Reason: unsupported sentence structure
   Constructions: coordination
   Normalized: (unchanged)
 
 #153 Jack seized a handful of pebbles and threw them into the lake.
-  Status: partial
-  Reason: unrecognized: seized, handful, pebbles; not realized: into
+  Status: unsupported-grammar
+  Reason: unsupported sentence structure
   Constructions: coordination
-  Normalized: Jack seized a handful of pebbles and did throw them into the lake.
+  Normalized: Jack seized a handful of pebble and did throw them into the lake.
 
 #154 This cottage stood on a low hill, at some distance from the village.
   Status: partial
@@ -854,7 +795,7 @@ Per-sentence diagnostics:
 
 #159 They looked cautiously about, but saw nothing.
   Status: partial
-  Reason: unrecognized: cautiously; not realized: saw, coordinated clause/predicate
+  Reason: not realized: cautiously, saw, coordinated clause/predicate
   Constructions: coordination
   Normalized: They looked cautiously about but did see nothing.
 
@@ -862,7 +803,7 @@ Per-sentence diagnostics:
   Status: unsupported-grammar
   Reason: unsupported construction: appositive
   Constructions: coordination, appositive
-  Normalized: (unchanged)
+  Normalized: The little house had three room a sitting room a bedroom and a tiny kitchen.
 
 #161 We visited my uncle’s village, the largest village in the world.
   Status: partial
@@ -896,7 +837,7 @@ Per-sentence diagnostics:
 
 #167 Here under this tree they gave their guests a splendid feast.
   Status: partial
-  Reason: unrecognized: splendid; not realized: tree, guests
+  Reason: not realized: tree, guests, splendid
   Constructions: simple
   Normalized: Here under this tree they did give their guest a splendid feast.
 
@@ -908,7 +849,7 @@ Per-sentence diagnostics:
 
 #169 Tell the last part of that story again.
   Status: partial
-  Reason: unrecognized: story; not realized: last, part
+  Reason: not realized: last, part, story
   Constructions: imperative
   Normalized: (unchanged)
 
@@ -940,7 +881,7 @@ Per-sentence diagnostics:
   Status: unsupported-grammar
   Reason: unsupported construction: appositive
   Constructions: coordination, appositive
-  Normalized: I did stand a little mite of a girl upon a chair by the window and watched the falling snowflakes.
+  Normalized: I did stand a little mite of a girl upon a chair by the window and watched the falling snowflake.
 
 #175 Show the guests these shells, my son, and tell them their strange history.
   Status: unsupported-grammar
@@ -956,7 +897,7 @@ Per-sentence diagnostics:
 
 #177 We consider them our faithful friends.
   Status: partial
-  Reason: unrecognized: faithful
+  Reason: not realized: faithful
   Constructions: simple
   Normalized: We consider them our faithful friend.
 
@@ -976,7 +917,7 @@ Per-sentence diagnostics:
   Status: partial
   Reason: unrecognized: doll's; not realized: little, possessive relation
   Constructions: reflexive, possessive
-  Normalized: The little girl did make the doll's dress herself.
+  Normalized: The little girl did make the doll' dress herself.
 
 #183 He proved himself trustworthy.
   Status: partial
@@ -998,13 +939,13 @@ Per-sentence diagnostics:
 
 #186 I feel ashamed of myself.
   Status: partial
-  Reason: unrecognized: ashamed
+  Reason: not realized: ashamed
   Constructions: reflexive
   Normalized: (unchanged)
 
 #188 The dress of the little princess was embroidered with roses, the national flower of the Country.
-  Status: unresolved-vocabulary
-  Reason: missing vocabulary: embroidered, national
+  Status: partial
+  Reason: not realized: dress, little, roses, national, flower
   Constructions: simple
   Normalized: The dress of the little princess was embroidered with rose the national flower of the Country.
 
@@ -1015,8 +956,8 @@ Per-sentence diagnostics:
   Normalized: They did wear red cap the symbol of liberty.
 
 #190 With him as our protector, we fear no danger.
-  Status: unresolved-vocabulary
-  Reason: missing vocabulary: protector
+  Status: unsupported-grammar
+  Reason: unsupported sentence structure
   Constructions: simple
   Normalized: (unchanged)
 
@@ -1147,8 +1088,8 @@ Per-sentence diagnostics:
   Normalized: (unchanged)
 
 #212 That is the funniest story I ever heard.
-  Status: unresolved-vocabulary
-  Reason: missing vocabulary: story
+  Status: unsupported-grammar
+  Reason: unsupported sentence structure
   Constructions: comparison
   Normalized: That is the funniest story I ever did hear.
 
@@ -1184,13 +1125,13 @@ Per-sentence diagnostics:
 
 #218 He was very poor, and with his wife and five children lived in a little low cabin of logs and stones.
   Status: partial
-  Reason: unrecognized: logs; not realized: poor, wife, lived, little, low, cabin
+  Reason: not realized: poor, wife, lived, little, low, cabin, logs
   Constructions: coordination
-  Normalized: He was very poor and with his wife and five children lived in a little low cabin of logs and stone.
+  Normalized: He was very poor and with his wife and five children lived in a little low cabin of log and stone.
 
 #219 When the wind blew, the traveler wrapped his mantle more closely around him.
   Status: partial
-  Reason: unrecognized: mantle; not realized: blew, traveler, wrapped, closely, comparison
+  Reason: not realized: blew, traveler, wrapped, mantle, closely, comparison
   Constructions: comparison
   Normalized: When the wind did blow the traveler wrapped his mantle more closely around him.
 
@@ -1244,9 +1185,9 @@ Per-sentence diagnostics:
 
 #228 Evidently that gate is never opened, for the long grass and the great hemlocks grow close against it.
   Status: partial
-  Reason: unrecognized: hemlocks; not realized: opened, long, grass, great, grow, close, negation, comparison, coordinated clause/predicate
+  Reason: not realized: opened, long, grass, great, hemlocks, grow, close, negation, comparison, coordinated clause/predicate
   Constructions: comparison, negation, coordination
-  Normalized: (unchanged)
+  Normalized: Evidently that gate is never opened for the long grass and the great hemlock grow close against it.
 
 #229 I met a little cottage girl; she was eight years old, she said.
   Status: partial
