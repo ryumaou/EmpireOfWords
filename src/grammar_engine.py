@@ -199,6 +199,14 @@ def generate_grammar(root_pool,rng,family='naturalistic',overrides=None):
     if articles in ('indefinite','both'): M('indefinite_article',('prefix','suffix'))
     if agreement!='none':
         for person in PERSONS: M('agr_'+person,('suffix',))
+    # Productive lexical conversion lets one semantic root participate in another POS
+    # without inventing an unrelated root. Languages vary between zero conversion and derivational affixes.
+    lexical_conversion={}
+    for conv in ('noun_to_verb','adjective_to_verb','noun_to_adjective'):
+        strategy=rng.choice(['zero','affix']) if morphology not in ('isolating','analytic') else 'zero'
+        lexical_conversion[conv]={'strategy':strategy}
+        if strategy=='affix':
+            key='convert_'+conv; M(key,affix_sides); lexical_conversion[conv]['morpheme']=key
     available=[x for x in root_pool if len(x)>=2]; rng.shuffle(available)
     def word():
         if not available: raise RuntimeError('not enough grammar words in root pool')
@@ -214,20 +222,69 @@ def generate_grammar(root_pool,rng,family='naturalistic',overrides=None):
     # semantic features through the target grammar instead of English word order.
     particles['and']=word(); particles['or']=word(); particles['but']=word()
     particles['ability']=word(); particles['obligation']=word(); particles['possibility']=word()
-    if 'perfect' not in morph: M('perfect',affix_sides)
+    # Translation-ready analytic fallbacks. These do not force a language to use
+    # analytic grammar when it has morphology; they guarantee every advertised
+    # feature has a deterministic realization path.
+    particles['future']=word(); particles['progressive']=word(); particles['perfect']=word(); particles['imperative']=word()
+    # Independent grammar words used when the generated language chooses analytic
+    # possession/complement/relative strategies.
+    particles['possessive']=word(); particles['complementizer']=word(); particles['relative']=word()
+    particles['conditional']=word(); particles['subordinate']=word(); particles['passive']=word(); particles['quotative']=word(); particles['appositive']=word()
+    # Non-finite strategies are part of the language at creation time. They are not
+    # copied from English: each language chooses bound morphology or an analytic marker.
+    if morphology in ('agglutinative','fusional','mixed') and rng.random()<0.7:
+        M('participle',affix_sides); participial={'strategy':'affix','morpheme':'participle','position':adj}
+    else:
+        particles['participle']=word(); participial={'strategy':'particle','particle':'participle','position':adj}
+    if morphology in ('agglutinative','fusional','mixed') and rng.random()<0.6:
+        M('infinitive',affix_sides); infinitive={'strategy':'affix','morpheme':'infinitive','position':'after_head'}
+    else:
+        particles['infinitive']=word(); infinitive={'strategy':'particle','particle':'infinitive','position':'before_verb'}
     g={'family':family,'requested_family':requested,'word_order':order,'adposition_type':adp,'adjective_position':adj,'possessor_position':poss,
        'articles':articles,'gender':gender,'morphology_type':morphology,
        'morphophonemics':{'mode':mp_override or 'auto','rules':mp_rules},
        'noun':{'numbers':['singular']+([] if plural=='none' else ['plural']),'plural_strategy':plural,'cases':cases},
        'verb':{'tenses':tenses,'tense_level':tense_level,'aspects':aspects,'aspect_level':aspect_level,'moods':moods,'mood_level':mood_level,'agreement':agreement,'negation':negation},
-       'comparison':{'degrees':['positive','comparative','superlative'],'strategy':comparison},
-       'questions':{'strategy':qtype,'particle_position':rng.choice(['initial','final']),'wh_strategy':'in_situ' if rng.random()<.55 else 'fronted'},
-       'coordination':{'strategy':'particle','position':'between'},
-       'possession':{'strategy':'genitive' if 'genitive' in cases else 'juxtaposition','position':poss},
-       'modality':{'strategy':'particle','particle_position':'before_verb'},
-       'perfect':{'strategy':'affix'},
+       'comparison':{'degrees':['positive','comparative','superlative'],'strategy':comparison,'marker_position':rng.choice(['before','after'])},
+       'questions':{'strategy':qtype,'particle_position':rng.choice(['initial','final']),'wh_strategy':'in_situ' if rng.random()<.55 else 'fronted','structural_operation':'verb_fronting' if qtype in ('word-order','verb','mixed') else None},
+       'coordination':{
+           'np':{'strategy':rng.choice(['particle','particle','juxtaposition']),'position':'between'},
+           'predicate':{'strategy':rng.choice(['particle','particle','juxtaposition']),'position':'between','shared_subject':True},
+           'clause':{'strategy':rng.choice(['particle','particle','juxtaposition']),'position':'between'},
+       },
+       'possession':{'strategy':'genitive' if 'genitive' in cases else rng.choice(['juxtaposition','particle']),'position':poss},
+       'modality':{'strategy':'particle','particle_position':rng.choice(['before_verb','after_verb'])},
+       'tense_realization':{'future':'affix' if 'future' in morph else 'particle'},
+       'aspect_realization':{'progressive':'affix' if 'progressive' in morph else 'particle','perfect':'affix' if 'perfect' in morph else 'particle'},
+       'mood_realization':{'imperative':'affix' if 'imperative' in morph else 'particle'},
+       'perfect':{'strategy':'affix' if 'perfect' in morph else 'particle'},
+       'adverbs':{'position':rng.choice(['before_verb','after_verb','clause_final']),'derivation':'zero'},
+       'copular':{'adjective_complement':True,'nominal_complement':True,'copula_position':'verb'},
+       'lexical_conversion':lexical_conversion,
+       'nonfinite':{'participial_modifier':participial,'infinitive_complement':infinitive},
        'relative_clause':{'strategy':'relative_particle','position':rng.choice(['before','after'])},
-       'complement_clause':{'strategy':'juxtaposition'},
+       'complement_clause':{'strategy':rng.choice(['juxtaposition','particle']),'position':rng.choice(['before','after'])},
+       'conditional_clause':{'strategy':'particle','position':rng.choice(['initial','medial'])},
+       'subordinate_clause':{'strategy':'particle','position':rng.choice(['before','after'])},
+       'passive':{'strategy':rng.choice(['particle','morphological']),'agent_position':rng.choice(['before','after'])},
+       'quotation':{'strategy':'quotative_particle','position':rng.choice(['before','after'])},
+       'apposition':{'strategy':rng.choice(['juxtaposition','particle']),'position':'adjacent'},
+       'realization_profile':{
+           'word_order':order,'adposition_type':adp,'adjective_position':adj,'possessor_position':poss,
+           'plural_strategy':plural,'comparison_strategy':comparison,'question_strategy':qtype,
+           'negation_strategy':negation,'morphology_type':morphology,
+           'noun_behavior':{'number':plural,'cases':cases,'possessor_position':poss,'compound_order':'modifier-head' if poss=='before' else 'head-modifier'},
+           'noun_compound_order':'modifier-head' if poss=='before' else 'head-modifier',
+           'adjective_behavior':{'position':adj,'comparison':comparison,'adverb_derivation':'zero'},
+           'verb_behavior':{'agreement':agreement,'negation':negation,'tenses':tenses,'aspects':aspects,'moods':moods},
+           'lexical_conversion':lexical_conversion,
+           'nonfinite':{'participial_modifier':participial,'infinitive_complement':infinitive},
+           'future':'affix' if 'future' in morph else 'particle',
+           'progressive':'affix' if 'progressive' in morph else 'particle',
+           'perfect':'affix' if 'perfect' in morph else 'particle',
+           'imperative':'affix' if 'imperative' in morph else 'particle',
+       },
+       'translation_readiness':{'contract_version':5,'analytic_fallbacks':['future','progressive','perfect','imperative'],'adverb_fallback':'zero'},
        'morphemes':morph,'particles':particles,'pronouns':pronouns,'demonstratives':demonstratives,'interrogatives':interrogatives}
     return g
 
@@ -255,6 +312,10 @@ def verb_form(word,g,person='3sg',tense='present',aspect='simple',mood='indicati
 
 def possessive_phrase(possessor, possessed, g):
     p=noun_form(possessor,g,case='genitive') if 'genitive' in g['noun']['cases'] else possessor
+    spec=g.get('possession',{})
+    if spec.get('strategy')=='particle' and g.get('particles',{}).get('possessive'):
+        mark=g['particles']['possessive']
+        p=f'{p} {mark}' if spec.get('position',g.get('possessor_position'))=='before' else f'{mark} {p}'
     return f'{p} {possessed}' if g['possessor_position']=='before' else f'{possessed} {p}'
 
 def order_clause(s,v,o,g):
@@ -411,6 +472,33 @@ def _legacy_translate_sentence(sentence,g,entries,forms):
             rel=order_clause(subj,verb_form(pv,g,'3sg',aspect='progressive' if 'progressive' in g['verb']['aspects'] else 'simple'),pobj,g)
             mv=verb_form(main,g,'3sg','future' if 'future' in g['verb']['tenses'] else 'present')
             return ('Translation',raw,f'{rel} {mv}',f'SUBJ {stem.upper()}-PART {pg} {m.group(6).upper()}-FUT','ok')
+    # Copular adjective/nominal predicates: I am happy; Sugar tastes sweet;
+    # Their voices sound happy.  These are predicates, not missing objects.
+    cm=re.fullmatch(r'(.+?)\s+(am|is|are|was|were|seem|seems|seemed|feel|feels|felt|sound|sounds|sounded|taste|tastes|tasted|grow|grows|grew)\s+(?:very\s+)?([a-z]+)',low)
+    if cm:
+        sw,cv,pred=cm.groups(); subj,sg=_np(sw.split(),g,by)
+        if not subj and sw in ('i','you','he','she','we','they'):
+            pmc={'i':'1sg','you':'2sg','he':'3sg','she':'3sg','we':'1pl','they':'3pl'}; subj=g['pronouns'][pmc[sw]]; sg=pmc[sw].upper()
+        pl=_lexical_match(by,pred) or pred
+        adj=_lookup(by,pl,('adj','adv'))
+        noun=_lookup(by,pl,('n',))
+        if subj and (adj or noun):
+            person='3pl' if sw in ('we','they') else '1sg' if sw=='i' else '2sg' if sw=='you' else '3sg'
+            past=cv in ('was','were','seemed','felt','sounded','tasted','grew')
+            # Pure BE uses the generated copular verb if present; lexical linking verbs
+            # retain their own lexeme when the dictionary provides one.
+            if cv in ('am','is','are','was','were'):
+                cop=_lookup(by,'be',('v',)) or _lookup(by,'exist',('v',))
+            else:
+                cop=_lookup(by,_lexical_match(by,cv) or cv,('v',))
+            predsurf=adj or noun
+            if cop:
+                vf=verb_form(cop,g,person,'past' if past and 'past' in g['verb']['tenses'] else 'present')
+                surf=order_clause(subj,vf,predsurf,g); gloss=order_clause(sg or 'SUBJ','COP-PST' if past else 'COP',pl.upper(),g)
+            else:
+                surf=f'{subj} {predsurf}'; gloss=f'{sg or "SUBJ"} {pl.upper()}'
+            return ('Translation',raw,surf,gloss,'ok')
+
     # Generic simple clauses: subject + auxiliaries + verb + object/PP.
     toks=low.split(); subj_person=None; subj=None; subj_gloss=None; idx=0
     pm={'i':'1sg','you':'2sg','he':'3sg','she':'3sg','we':'1pl','they':'3pl'}
@@ -491,6 +579,8 @@ def _legacy_translate_sentence(sentence,g,entries,forms):
 
 
 # Translation analysis is shared by build-time examples and standalone translation.
+from structured_realizer import parse_clause as _parse_structured_clause, realize as _realize_structured_clause
+
 from english_analyzer import (
     CAPABILITIES as TRANSLATION_CAPABILITIES,
     IRREGULAR_VERBS as _IRREGULAR_VERBS,
@@ -559,8 +649,19 @@ def analyze_translation(sentence,g,entries,forms):
     lexical=base_ir['lexical_items']; missing=base_ir['missing_lexemes']
     normalized=_normalize_for_legacy(raw,by)
     prepared=_prepare_for_legacy(normalized,constructions,by)
-    legacy=_legacy_translate_sentence(prepared,g,entries,forms)
-    _,_,surface,gloss,legacy_status=legacy
+
+    # v6.3 structured realization.  Parse semantic roles/features first and realize
+    # them through the generated target grammar.  If this conservative first-pass
+    # parser cannot represent the sentence, retain the proven legacy path below.
+    structured_ir=_parse_structured_clause(raw,by,_lexical_match,_english_tokens,_lemma_candidates,constructions,g)
+    structured=None
+    if structured_ir is not None:
+        structured=_realize_structured_clause(structured_ir,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix,adjective_form)
+    if structured:
+        surface=structured['surface']; gloss=structured['gloss']; legacy_status='ok'
+    else:
+        legacy=_legacy_translate_sentence(prepared,g,entries,forms)
+        _,_,surface,gloss,legacy_status=legacy
 
     # Constructions that the current deterministic realizer can identify but not
     # yet safely realize must never be silently flattened into a simple clause.
@@ -584,20 +685,24 @@ def analyze_translation(sentence,g,entries,forms):
         # gloss said only SUBJ; generic clauses now retain the NP gloss, so that
         # exemption would hide lost adjectives and coordinated subjects.
         gu=gloss.lower(); dropped=[]
+        receipts=set(structured.get('receipts',())) if structured else set()
         for item in lexical:
             lemma=item['lemma'].lower()
-            if lemma not in gu and item['token'].lower() not in gu:
+            if structured:
+                if lemma not in receipts and item['token'].lower() not in receipts:
+                    dropped.append(item['token'])
+            elif lemma not in gu and item['token'].lower() not in gu:
                 dropped.append(item['token'])
         # Grammatical features need receipts too. A sentence is not complete merely
         # because all dictionary roots appeared somewhere in the output.
         gl=gloss.upper()
-        if 'progressive' in constructions and 'PROG' not in gl: dropped.append('progressive aspect')
-        if 'perfect' in constructions and 'PERF' not in gl: dropped.append('perfect aspect')
-        if 'negation' in constructions and 'NEG' not in gl: dropped.append('negation')
-        if 'yes_no_question' in constructions and ' Q' not in (' '+gl): dropped.append('question marking')
-        if 'imperative' in constructions and 'IMP' not in gl: dropped.append('imperative mood')
-        if 'possessive' in constructions and 'GEN' not in gl: dropped.append('possessive relation')
-        if 'comparison' in constructions and not any(x in gl for x in ('COMP','SUPER','MORE','LESS','THAN')): dropped.append('comparison')
+        if 'progressive' in constructions and not (structured and 'progressive' in receipts) and 'PROG' not in gl: dropped.append('progressive aspect')
+        if 'perfect' in constructions and not (structured and 'perfect' in receipts) and 'PERF' not in gl: dropped.append('perfect aspect')
+        if 'negation' in constructions and not (structured and 'negation' in receipts) and 'NEG' not in gl: dropped.append('negation')
+        if 'yes_no_question' in constructions and not (structured and 'question' in receipts) and ' Q' not in (' '+gl): dropped.append('question marking')
+        if 'imperative' in constructions and not (structured and 'imperative' in receipts) and 'IMP' not in gl: dropped.append('imperative mood')
+        if 'possessive' in constructions and not (structured and 'possessive' in receipts) and 'GEN' not in gl: dropped.append('possessive relation')
+        if 'comparison' in constructions and not (structured and 'comparison' in receipts) and not any(x in gl for x in ('COMP','SUPER','MORE','LESS','THAN')): dropped.append('comparison')
         if 'modal' in constructions:
             low_tokens=set(base_ir['tokens'])
             if low_tokens & {'will','shall'}:
@@ -606,11 +711,13 @@ def analyze_translation(sentence,g,entries,forms):
                 dropped.append('modal meaning')
         # Explicit coordination with multiple lexical verbs is unsafe in legacy path.
         verb_count=sum(1 for item in lexical if any(p=='v' for p,_ in by.get(item['lemma'],[])))
-        if 'coordination' in constructions and verb_count>1: dropped.append('coordinated clause/predicate')
+        if 'coordination' in constructions and verb_count>1 and not (structured and 'coordination' in receipts): dropped.append('coordinated clause/predicate')
         if missing or dropped:
-            status='partial'; surface='[PARTIAL]'
+            status='unresolved-vocabulary' if missing else 'partial'
+            surface='[UNRESOLVED]' if missing else '[PARTIAL]'
+            gloss='[UNRESOLVED]' if missing else gloss
             reason_parts=[]
-            if missing: reason_parts.append('unrecognized: '+', '.join(dict.fromkeys(missing)))
+            if missing: reason_parts.append('missing vocabulary: '+', '.join(dict.fromkeys(missing)))
             if dropped: reason_parts.append('not realized: '+', '.join(dict.fromkeys(dropped)))
             reason='; '.join(reason_parts)
         else:
@@ -618,6 +725,9 @@ def analyze_translation(sentence,g,entries,forms):
     ir=dict(base_ir)
     ir['normalized_english']=normalized if normalized!=raw else None
     ir['realizer_input']=prepared if prepared!=normalized else None
+    ir['structured_clause']=structured.get('ir') if structured else (structured_ir.to_dict() if structured_ir is not None else None)
+    ir['realization_receipts']=sorted(structured.get('receipts',())) if structured else []
+    ir['realization_strategies']=structured.get('strategies',{}) if structured else {}
     return {'type':'Translation','english':raw,'surface':surface,'gloss':gloss,'status':status,'reason':reason,'ir':ir}
 
 
@@ -660,7 +770,7 @@ def generate_examples(g, entries, forms, translation_sentences=None):
 
 def write_package(outdir, language_name, grammar, entries, forms, deriv_affixes, seed, translation_sentences=None, translation_source=None):
     outdir.mkdir(parents=True,exist_ok=True); examples=generate_examples(grammar,entries,forms,translation_sentences)
-    data={'schema_version':2,'tool_version':'6.1','name':language_name,'seed':seed,'grammar':grammar,'translation_capabilities':TRANSLATION_CAPABILITIES,'derivational_morphology':{k:{'side':v.side,'form':v.form,'source_rule':v.source_rule} for k,v in deriv_affixes.items()},'lexicon':[{'gloss':e.key.gloss,'pos':e.key.pos,'form':forms.get(e.key,''),'derivation':e.expr} for e in entries],'translation_source':str(translation_source) if translation_source else None,'examples':[{'type':t,'english':en,'surface':s,'gloss':gl,'status':status} for t,en,s,gl,status in examples]}
+    data={'schema_version':2,'tool_version':'6.8','name':language_name,'seed':seed,'grammar':grammar,'translation_capabilities':TRANSLATION_CAPABILITIES,'derivational_morphology':{k:{'side':v.side,'form':v.form,'source_rule':v.source_rule} for k,v in deriv_affixes.items()},'lexicon':[{'gloss':e.key.gloss,'pos':e.key.pos,'form':forms.get(e.key,''),'derivation':e.expr} for e in entries],'translation_source':str(translation_source) if translation_source else None,'examples':[{'type':t,'english':en,'surface':s,'gloss':gl,'status':status} for t,en,s,gl,status in examples]}
     (outdir/'language.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8'); (outdir/'grammar.json').write_text(json.dumps(grammar,ensure_ascii=False,indent=2),encoding='utf-8')
     with (outdir/'paradigms.csv').open('w',encoding='utf-8',newline='') as f:
         w=csv.writer(f); w.writerow(['English','POS','Lemma','Feature','Form'])

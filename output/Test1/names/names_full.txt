@@ -1,204 +1,204 @@
 Proper names: Test1
 ============================================================
 
-1. Perjelam Sumpik Kehilinbalasa
-   Personal name: Perjelam Sumpik
-   Personal generation: perjelam+sumpik
-   Family name: Kehilinbalasa
-   Meaning: blue flower
-   Formula: blue+flower
-   Language roots: kehilin+balasa
+1. Silaulge Tsai Cingriyajubida
+   Personal name: Silaulge Tsai
+   Personal generation: silaulge+tsai
+   Family name: Cingriyajubida
+   Meaning: scorpion soldier
+   Formula: scorpion+soldier
+   Language roots: cingriy+ajubida
 
-2. Mentiwaks Terha Relihbayum
-   Personal name: Mentiwaks Terha
-   Personal generation: mentiwaks+terha
-   Family name: Relihbayum
-   Meaning: wolf kin
-   Formula: wolf+kin
-   Language roots: relih+bayum
+2. Boltarbel Bud Kilangajubida
+   Personal name: Boltarbel Bud
+   Personal generation: boltarbel+bud
+   Family name: Kilangajubida
+   Meaning: ivory soldier
+   Formula: ivory+soldier
+   Language roots: kilango+ajubida
 
-3. Kelebajan Menya Kedafatmului
-   Personal name: Kelebajan Menya
-   Personal generation: kelebajan+menya
-   Family name: Kedafatmului
-   Meaning: jewel lake
-   Formula: jewel+lake
-   Language roots: kedafat+mului
+3. Jasan Ousutuldu Siunuubisa
+   Personal name: Jasan Ousutuldu
+   Personal generation: jasan+ousutuldu
+   Family name: Siunuubisa
+   Meaning: snake river
+   Formula: snake+river
+   Language roots: siun+nuubisa
 
-4. Depanj Benemakan Seumukaperhai
-   Personal name: Depanj Benemakan
-   Personal generation: depanj+benemakan
-   Family name: Seumukaperhai
-   Meaning: hawk master
-   Formula: hawk+master
-   Language roots: seumuka+perhai
-
-5. Berbung Memanan Menitapmului
-   Personal name: Berbung Memanan
-   Personal generation: berbung+memanan
-   Family name: Menitapmului
-   Meaning: castle lake
-   Formula: castle+lake
-   Language roots: menitap+mului
-
-6. Sen Tedatih Hafalamlampaya
-   Personal name: Sen Tedatih
-   Personal generation: sen+tedatih
-   Family name: Hafalamlampaya
-   Meaning: cave soldier
-   Formula: cave+soldier
-   Language roots: hafalam+lampaya
-
-7. Kempamben Telak Balasabersamp
-   Personal name: Kempamben Telak
-   Personal generation: kempamben+telak
-   Family name: Balasabersamp
-   Meaning: flower goblin
-   Formula: flower+goblin
-   Language roots: balasa+bersamp
-
-8. Setarasay Diat Luatinspunyanlampaya
-   Personal name: Setarasay Diat
-   Personal generation: setarasay+diat
-   Family name: Luatinspunyanlampaya
-   Meaning: black shield soldier
-   Formula: black+shield+soldier
-   Language roots: luatins+punyan+lampaya
-
-9. Rebuasama Peru Balasamului
-   Personal name: Rebuasama Peru
-   Personal generation: rebuasama+peru
-   Family name: Balasamului
-   Meaning: flower lake
-   Formula: flower+lake
-   Language roots: balasa+mului
-
-10. Perupai Portah Menetuslikanur
-   Personal name: Perupai Portah
-   Personal generation: perupai+portah
-   Family name: Menetuslikanur
-   Meaning: purple bird
-   Formula: purple+bird
-   Language roots: menetus+likanur
-
-11. Inyi Penuring Membarpambir
-   Personal name: Inyi Penuring
-   Personal generation: inyi+penuring
-   Family name: Membarpambir
-   Meaning: poison blade
-   Formula: poison+blade
-   Language roots: membar+pambir
-
-12. Dengkipem Ber Adistimesukanmului
-   Personal name: Dengkipem Ber
-   Personal generation: dengkipem+ber
-   Family name: Adistimesukanmului
-   Meaning: silver knife lake
-   Formula: silver+knife+lake
-   Language roots: adisti+mesukan+mului
-
-13. Wakia Sar Maumulatengr
-   Personal name: Wakia Sar
-   Personal generation: wakia+sar
-   Family name: Maumulatengr
-   Meaning: fire artist
-   Formula: fire+artist
-   Language roots: maumula+tengr
-
-14. Kerjuan Kqti Cembaulwymingi
-   Personal name: Kerjuan Kqti
-   Personal generation: kerjuan+kqti
-   Family name: Cembaulwymingi
-   Meaning: rat river
-   Formula: rat+river
-   Language roots: cembaul+wymingi
-
-15. Serik Mencara Keanglampaya
-   Personal name: Serik Mencara
-   Personal generation: serik+mencara
-   Family name: Keanglampaya
+4. Toononi Kolun Sairtinajubida
+   Personal name: Toononi Kolun
+   Personal generation: toononi+kolun
+   Family name: Sairtinajubida
    Meaning: horse soldier
    Formula: horse+soldier
-   Language roots: keang+lampaya
+   Language roots: sairtin+ajubida
 
-16. Pin Senyuku Balasabesalal
-   Personal name: Pin Senyuku
-   Personal generation: pin+senyuku
-   Family name: Balasabesalal
+5. Ciki Toorongt Dalewrongg
+   Personal name: Ciki Toorongt
+   Personal generation: ciki+toorongt
+   Family name: Dalewrongg
    Meaning: flower elf
    Formula: flower+elf
-   Language roots: balasa+besalal
+   Language roots: dali+ewrongg
 
-17. Hapatang Dak Siklesecar
-   Personal name: Hapatang Dak
-   Personal generation: hapatang+dak
-   Family name: Siklesecar
-   Meaning: skull mountain
-   Formula: skull+mountain
-   Language roots: sik+lesecar
+6. Oorim Emu Jeguongritu
+   Personal name: Oorim Emu
+   Personal generation: oorim+emu
+   Family name: Jeguongritu
+   Meaning: ear blade
+   Formula: ear+blade
+   Language roots: jegui+ongritu
 
-18. Tujuta Ker Mendarmengsiulesecar
-   Personal name: Tujuta Ker
-   Personal generation: tujuta+ker
-   Family name: Mendarmengsiulesecar
-   Meaning: blind dwarf mountain
-   Formula: blind+dwarf+mountain
-   Language roots: mendar+mengsiu+lesecar
+7. Sira Oronutu Deyuunongqani
+   Personal name: Sira Oronutu
+   Personal generation: sira+oronutu
+   Family name: Deyuunongqani
+   Meaning: lightning eye
+   Formula: lightning+eye
+   Language roots: deyuuni+ongqani
 
-19. Peselur Kesamb Kesmankelaimp
-   Personal name: Peselur Kesamb
-   Personal generation: peselur+kesamb
-   Family name: Kesmankelaimp
-   Meaning: sea dragon
-   Formula: sea+dragon
-   Language roots: kesman+kelaimp
+8. Kuuge Irq Erdegajubida
+   Personal name: Kuuge Irq
+   Personal generation: kuuge+irq
+   Family name: Erdegajubida
+   Meaning: island soldier
+   Formula: island+soldier
+   Language roots: erdege+ajubida
 
-20. Lebacatk Tuh Pulubayum
-   Personal name: Lebacatk Tuh
-   Personal generation: lebacatk+tuh
-   Family name: Pulubayum
-   Meaning: eel kin
-   Formula: eel+kin
-   Language roots: pulu+bayum
+9. Mongai Aur Sonutajubida
+   Personal name: Mongai Aur
+   Personal generation: mongai+aur
+   Family name: Sonutajubida
+   Meaning: cave soldier
+   Formula: cave+soldier
+   Language roots: sonutu+ajubida
 
-21. Hit Lesempera Tamacarterpikihitikanr
-   Personal name: Hit Lesempera
-   Personal generation: hit+lesempera
-   Family name: Tamacarterpikihitikanr
-   Meaning: book wizard
-   Formula: book+wizard
-   Language roots: tamacar+terpikihitikanr
+10. Tutur Ajasaucuu Otainkuul
+   Personal name: Tutur Ajasaucuu
+   Personal generation: tutur+ajasaucuu
+   Family name: Otainkuul
+   Meaning: iron fish
+   Formula: iron+fish
+   Language roots: otain+kuul
 
-22. Tampera Wat Kcabiaberbuan
-   Personal name: Tampera Wat
-   Personal generation: tampera+wat
-   Family name: Kcabiaberbuan
-   Meaning: death ear
-   Formula: death+ear
-   Language roots: kcabia+berbuan
+11. Oosuu Tei Ouatunuubisa
+   Personal name: Oosuu Tei
+   Personal generation: oosuu+tei
+   Family name: Ouatunuubisa
+   Meaning: purple river
+   Formula: purple+river
+   Language roots: ouatu+nuubisa
 
-23. Ruan Lucumpana Suratwymingi
-   Personal name: Ruan Lucumpana
-   Personal generation: ruan+lucumpana
-   Family name: Suratwymingi
-   Meaning: lightning river
-   Formula: lightning+river
-   Language roots: surat+wymingi
+12. Emui Nir Oruljuleighe
+   Personal name: Emui Nir
+   Personal generation: emui+nir
+   Family name: Oruljuleighe
+   Meaning: sword lake
+   Formula: sword+lake
+   Language roots: oruljuu+uleighe
 
-24. Mekepa Kenuh Keingamlampaya
-   Personal name: Mekepa Kenuh
-   Personal generation: mekepa+kenuh
-   Family name: Keingamlampaya
-   Meaning: light soldier
-   Formula: light+soldier
-   Language roots: keingam+lampaya
+13. Orberuun Nuu Jincuubaugig
+   Personal name: Orberuun Nuu
+   Personal generation: orberuun+nuu
+   Family name: Jincuubaugig
+   Meaning: small land dragon
+   Formula: small+land+dragon
+   Language roots: jincuu+bau+gig
 
-25. Sam Berspelin Kemamtonkelaimp
-   Personal name: Sam Berspelin
-   Personal generation: sam+berspelin
-   Family name: Kemamtonkelaimp
-   Meaning: small sky dragon
-   Formula: small+sky+dragon
-   Language roots: kemam+ton+kelaimp
+14. Bolusun Cin Ongqanimooru
+   Personal name: Bolusun Cin
+   Personal generation: bolusun+cin
+   Family name: Ongqanimooru
+   Meaning: eye axe
+   Formula: eye+axe
+   Language roots: ongqani+mooru
 
-Unavailable formulas (missing one or more lexical roots): 101
+15. Nig Nabuyauld Ongerdegesitu
+   Personal name: Nig Nabuyauld
+   Personal generation: nig+nabuyauld
+   Family name: Ongerdegesitu
+   Meaning: goblin island bay
+   Formula: goblin+island+bay
+   Language roots: ong+erdege+situ
+
+16. Kooari Beyi Uluniruugse
+   Personal name: Kooari Beyi
+   Personal generation: kooari+beyi
+   Family name: Uluniruugse
+   Meaning: castle woman
+   Formula: castle+woman
+   Language roots: ulun+iruugse
+
+17. Raungkerg Sore Baiqaorusutunarlusuaracaer
+   Personal name: Raungkerg Sore
+   Personal generation: raungkerg+sore
+   Family name: Baiqaorusutunarlusuaracaer
+   Meaning: black robe wizard
+   Formula: black+robe+wizard
+   Language roots: baiqai+orusutu+narlusuaracaer
+
+18. Jiturtin Med Ilanuleighe
+   Personal name: Jiturtin Med
+   Personal generation: jiturtin+med
+   Family name: Ilanuleighe
+   Meaning: demon lake
+   Formula: demon+lake
+   Language roots: ilan+uleighe
+
+19. Ceger Kolaacida Yanjaulart
+   Personal name: Ceger Kolaacida
+   Personal generation: ceger+kolaacida
+   Family name: Yanjaulart
+   Meaning: alchemy seed
+   Formula: alchemy+seed
+   Language roots: yan+jaulart
+
+20. Tai Dasaid Gigtng
+   Personal name: Tai Dasaid
+   Personal generation: tai+dasaid
+   Family name: Gigtng
+   Meaning: dragon mountain
+   Formula: dragon+mountain
+   Language roots: gig+tng
+
+21. Nirtu Minuur Sonutouluuju
+   Personal name: Nirtu Minuur
+   Personal generation: nirtu+minuur
+   Family name: Sonutouluuju
+   Meaning: cave man
+   Formula: cave+man
+   Language roots: sonutu+ouluuju
+
+22. Uun Odcuuleni Qoulaartng
+   Personal name: Uun Odcuuleni
+   Personal generation: uun+odcuuleni
+   Family name: Qoulaartng
+   Meaning: dwarf mountain
+   Formula: dwarf+mountain
+   Language roots: qoulaar+tng
+
+23. Qubenu Gilar Qonduundotan
+   Personal name: Qubenu Gilar
+   Personal generation: qubenu+gilar
+   Family name: Qonduundotan
+   Meaning: rabbit lord
+   Formula: rabbit+lord
+   Language roots: qonduun+dotan
+
+24. Ten Nabuun Ouatuyauljudotan
+   Personal name: Ten Nabuun
+   Personal generation: ten+nabuun
+   Family name: Ouatuyauljudotan
+   Meaning: purple shield lord
+   Formula: purple+shield+lord
+   Language roots: ouatu+uyaulju+dotan
+
+25. Minuu Malan Umbudorusutudotan
+   Personal name: Minuu Malan
+   Personal generation: minuu+malan
+   Family name: Umbudorusutudotan
+   Meaning: blue robe lord
+   Formula: blue+robe+lord
+   Language roots: umbud+orusutu+dotan
+
+Unavailable formulas (missing one or more lexical roots): 99

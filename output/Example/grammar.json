@@ -7,7 +7,7 @@
   "possessor_position": "before",
   "articles": "none",
   "gender": 0,
-  "morphology_type": "agglutinative",
+  "morphology_type": "mixed",
   "morphophonemics": {
     "mode": "auto",
     "rules": [
@@ -17,21 +17,26 @@
   },
   "noun": {
     "numbers": [
-      "singular"
+      "singular",
+      "plural"
     ],
-    "plural_strategy": "none",
+    "plural_strategy": "suffix",
     "cases": [
       "nominative",
       "accusative",
       "genitive",
-      "dative"
+      "dative",
+      "instrumental",
+      "locative"
     ]
   },
   "verb": {
     "tenses": [
-      "present"
+      "present",
+      "past",
+      "future"
     ],
-    "tense_level": "minimal",
+    "tense_level": "standard",
     "aspects": [
       "simple",
       "progressive"
@@ -53,73 +58,306 @@
       "comparative",
       "superlative"
     ],
-    "strategy": "particle"
+    "strategy": "particle",
+    "marker_position": "before"
   },
   "questions": {
     "strategy": "particle",
     "particle_position": "final",
-    "wh_strategy": "in_situ"
+    "wh_strategy": "in_situ",
+    "structural_operation": null
+  },
+  "coordination": {
+    "np": {
+      "strategy": "particle",
+      "position": "between"
+    },
+    "predicate": {
+      "strategy": "particle",
+      "position": "between",
+      "shared_subject": true
+    },
+    "clause": {
+      "strategy": "juxtaposition",
+      "position": "between"
+    }
+  },
+  "possession": {
+    "strategy": "genitive",
+    "position": "before"
+  },
+  "modality": {
+    "strategy": "particle",
+    "particle_position": "before_verb"
+  },
+  "tense_realization": {
+    "future": "affix"
+  },
+  "aspect_realization": {
+    "progressive": "affix",
+    "perfect": "particle"
+  },
+  "mood_realization": {
+    "imperative": "affix"
+  },
+  "perfect": {
+    "strategy": "particle"
+  },
+  "adverbs": {
+    "position": "after_verb",
+    "derivation": "zero"
+  },
+  "copular": {
+    "adjective_complement": true,
+    "nominal_complement": true,
+    "copula_position": "verb"
+  },
+  "lexical_conversion": {
+    "noun_to_verb": {
+      "strategy": "zero"
+    },
+    "adjective_to_verb": {
+      "strategy": "zero"
+    },
+    "noun_to_adjective": {
+      "strategy": "affix",
+      "morpheme": "convert_noun_to_adjective"
+    }
+  },
+  "nonfinite": {
+    "participial_modifier": {
+      "strategy": "particle",
+      "particle": "participle",
+      "position": "before"
+    },
+    "infinitive_complement": {
+      "strategy": "affix",
+      "morpheme": "infinitive",
+      "position": "after_head"
+    }
+  },
+  "relative_clause": {
+    "strategy": "relative_particle",
+    "position": "after"
+  },
+  "complement_clause": {
+    "strategy": "particle",
+    "position": "before"
+  },
+  "conditional_clause": {
+    "strategy": "particle",
+    "position": "initial"
+  },
+  "subordinate_clause": {
+    "strategy": "particle",
+    "position": "before"
+  },
+  "passive": {
+    "strategy": "particle",
+    "agent_position": "after"
+  },
+  "quotation": {
+    "strategy": "quotative_particle",
+    "position": "before"
+  },
+  "apposition": {
+    "strategy": "juxtaposition",
+    "position": "adjacent"
+  },
+  "realization_profile": {
+    "word_order": "SOV",
+    "adposition_type": "postposition",
+    "adjective_position": "before",
+    "possessor_position": "before",
+    "plural_strategy": "suffix",
+    "comparison_strategy": "particle",
+    "question_strategy": "particle",
+    "negation_strategy": "affix",
+    "morphology_type": "mixed",
+    "noun_behavior": {
+      "number": "suffix",
+      "cases": [
+        "nominative",
+        "accusative",
+        "genitive",
+        "dative",
+        "instrumental",
+        "locative"
+      ],
+      "possessor_position": "before",
+      "compound_order": "modifier-head"
+    },
+    "noun_compound_order": "modifier-head",
+    "adjective_behavior": {
+      "position": "before",
+      "comparison": "particle",
+      "adverb_derivation": "zero"
+    },
+    "verb_behavior": {
+      "agreement": "none",
+      "negation": "affix",
+      "tenses": [
+        "present",
+        "past",
+        "future"
+      ],
+      "aspects": [
+        "simple",
+        "progressive"
+      ],
+      "moods": [
+        "indicative",
+        "imperative",
+        "subjunctive",
+        "conditional"
+      ]
+    },
+    "lexical_conversion": {
+      "noun_to_verb": {
+        "strategy": "zero"
+      },
+      "adjective_to_verb": {
+        "strategy": "zero"
+      },
+      "noun_to_adjective": {
+        "strategy": "affix",
+        "morpheme": "convert_noun_to_adjective"
+      }
+    },
+    "nonfinite": {
+      "participial_modifier": {
+        "strategy": "particle",
+        "particle": "participle",
+        "position": "before"
+      },
+      "infinitive_complement": {
+        "strategy": "affix",
+        "morpheme": "infinitive",
+        "position": "after_head"
+      }
+    },
+    "future": "affix",
+    "progressive": "affix",
+    "perfect": "particle",
+    "imperative": "affix"
+  },
+  "translation_readiness": {
+    "contract_version": 5,
+    "analytic_fallbacks": [
+      "future",
+      "progressive",
+      "perfect",
+      "imperative"
+    ],
+    "adverb_fallback": "zero"
   },
   "morphemes": {
-    "accusative": {
-      "form": "nim",
+    "plural": {
+      "form": "de",
       "side": "suffix"
+    },
+    "accusative": {
+      "form": "zum",
+      "side": "prefix"
     },
     "genitive": {
-      "form": "das",
-      "side": "suffix"
+      "form": "alt",
+      "side": "prefix"
     },
     "dative": {
-      "form": "aro",
+      "form": "q",
       "side": "suffix"
+    },
+    "instrumental": {
+      "form": "hos",
+      "side": "suffix"
+    },
+    "locative": {
+      "form": "zen",
+      "side": "suffix"
+    },
+    "past": {
+      "form": "hi",
+      "side": "suffix"
+    },
+    "future": {
+      "form": "ude",
+      "side": "prefix"
     },
     "progressive": {
-      "form": "na",
-      "side": "suffix"
+      "form": "wam",
+      "side": "prefix"
     },
     "imperative": {
-      "form": "s",
-      "side": "suffix"
+      "form": "su",
+      "side": "prefix"
     },
     "subjunctive": {
-      "form": "n",
-      "side": "suffix"
+      "form": "k",
+      "side": "prefix"
     },
     "conditional": {
-      "form": "zoh",
+      "form": "z",
       "side": "suffix"
     },
     "negative": {
-      "form": "o",
+      "form": "m",
+      "side": "prefix"
+    },
+    "convert_noun_to_adjective": {
+      "form": "ya",
       "side": "suffix"
+    },
+    "infinitive": {
+      "form": "ode",
+      "side": "prefix"
     }
   },
   "particles": {
-    "yes_no": "nupya",
-    "comparative": "pyamasu",
-    "superlative": "aruhohy"
+    "yes_no": "takinak",
+    "comparative": "dezu",
+    "superlative": "desopyo",
+    "and": "nyumumu",
+    "or": "yamasu",
+    "but": "luporu",
+    "ability": "hia",
+    "obligation": "biteheg",
+    "possibility": "tsuarim",
+    "future": "futsu",
+    "progressive": "oyofu",
+    "perfect": "aripyam",
+    "imperative": "usarise",
+    "possessive": "kyaputa",
+    "complementizer": "ryozeze",
+    "relative": "nemasha",
+    "conditional": "nyujuda",
+    "subordinate": "modemas",
+    "passive": "chitako",
+    "quotative": "nienhad",
+    "appositive": "desuzag",
+    "participle": "daputte"
   },
   "pronouns": {
-    "1sg": "dariryo",
-    "2sg": "den",
-    "3sg": "hinmasu",
-    "1pl": "owa",
-    "2pl": "hosa",
-    "3pl": "osaran"
+    "1sg": "adatte",
+    "2sg": "pijudic",
+    "3sg": "hitou",
+    "1pl": "zahasu",
+    "2pl": "nakinch",
+    "3pl": "hyapyob"
   },
   "demonstratives": {
-    "proximal_singular": "pra",
-    "distal_singular": "soda",
-    "proximal_plural": "nataqui",
-    "distal_plural": "yuho"
+    "proximal_singular": "rosoo",
+    "distal_singular": "hyanta",
+    "proximal_plural": "quibuin",
+    "distal_plural": "akiguma"
   },
   "interrogatives": {
-    "who": "yonti",
-    "what": "ada",
-    "where": "kyumasu",
-    "when": "sorusad",
-    "why": "tokutta",
-    "how": "fure",
-    "which": "hegyasu"
+    "who": "omukid",
+    "what": "tsu",
+    "where": "ishiyot",
+    "when": "antapap",
+    "why": "jisoyur",
+    "how": "devinji",
+    "which": "upyanar"
   }
 }

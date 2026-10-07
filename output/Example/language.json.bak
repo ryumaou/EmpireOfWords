@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "tool_version": "5.7",
+  "tool_version": "6.7",
   "name": "Example",
   "seed": 12345,
   "grammar": {
@@ -58,12 +58,169 @@
         "comparative",
         "superlative"
       ],
-      "strategy": "particle"
+      "strategy": "particle",
+      "marker_position": "after"
     },
     "questions": {
       "strategy": "particle",
-      "particle_position": "final",
-      "wh_strategy": "in_situ"
+      "particle_position": "initial",
+      "wh_strategy": "fronted"
+    },
+    "coordination": {
+      "np": {
+        "strategy": "particle",
+        "position": "between"
+      },
+      "predicate": {
+        "strategy": "particle",
+        "position": "between",
+        "shared_subject": true
+      },
+      "clause": {
+        "strategy": "juxtaposition",
+        "position": "between"
+      }
+    },
+    "possession": {
+      "strategy": "genitive",
+      "position": "before"
+    },
+    "modality": {
+      "strategy": "particle",
+      "particle_position": "after_verb"
+    },
+    "tense_realization": {
+      "future": "particle"
+    },
+    "aspect_realization": {
+      "progressive": "affix",
+      "perfect": "affix"
+    },
+    "mood_realization": {
+      "imperative": "affix"
+    },
+    "perfect": {
+      "strategy": "affix"
+    },
+    "adverbs": {
+      "position": "after_verb",
+      "derivation": "zero"
+    },
+    "copular": {
+      "adjective_complement": true,
+      "nominal_complement": true,
+      "copula_position": "verb"
+    },
+    "lexical_conversion": {
+      "noun_to_verb": {
+        "strategy": "affix",
+        "morpheme": "convert_noun_to_verb"
+      },
+      "adjective_to_verb": {
+        "strategy": "zero"
+      },
+      "noun_to_adjective": {
+        "strategy": "zero"
+      }
+    },
+    "relative_clause": {
+      "strategy": "relative_particle",
+      "position": "before"
+    },
+    "complement_clause": {
+      "strategy": "particle",
+      "position": "before"
+    },
+    "conditional_clause": {
+      "strategy": "particle",
+      "position": "medial"
+    },
+    "subordinate_clause": {
+      "strategy": "particle",
+      "position": "before"
+    },
+    "passive": {
+      "strategy": "particle",
+      "agent_position": "after"
+    },
+    "quotation": {
+      "strategy": "quotative_particle",
+      "position": "after"
+    },
+    "apposition": {
+      "strategy": "particle",
+      "position": "adjacent"
+    },
+    "realization_profile": {
+      "word_order": "SOV",
+      "adposition_type": "postposition",
+      "adjective_position": "before",
+      "possessor_position": "before",
+      "plural_strategy": "none",
+      "comparison_strategy": "particle",
+      "question_strategy": "particle",
+      "negation_strategy": "affix",
+      "morphology_type": "agglutinative",
+      "noun_behavior": {
+        "number": "none",
+        "cases": [
+          "nominative",
+          "accusative",
+          "genitive",
+          "dative"
+        ],
+        "possessor_position": "before",
+        "compound_order": "modifier-head"
+      },
+      "noun_compound_order": "modifier-head",
+      "adjective_behavior": {
+        "position": "before",
+        "comparison": "particle",
+        "adverb_derivation": "zero"
+      },
+      "verb_behavior": {
+        "agreement": "none",
+        "negation": "affix",
+        "tenses": [
+          "present"
+        ],
+        "aspects": [
+          "simple",
+          "progressive"
+        ],
+        "moods": [
+          "indicative",
+          "imperative",
+          "subjunctive",
+          "conditional"
+        ]
+      },
+      "lexical_conversion": {
+        "noun_to_verb": {
+          "strategy": "affix",
+          "morpheme": "convert_noun_to_verb"
+        },
+        "adjective_to_verb": {
+          "strategy": "zero"
+        },
+        "noun_to_adjective": {
+          "strategy": "zero"
+        }
+      },
+      "future": "particle",
+      "progressive": "affix",
+      "perfect": "affix",
+      "imperative": "affix"
+    },
+    "translation_readiness": {
+      "contract_version": 4,
+      "analytic_fallbacks": [
+        "future",
+        "progressive",
+        "perfect",
+        "imperative"
+      ],
+      "adverb_fallback": "zero"
     },
     "morphemes": {
       "accusative": {
@@ -97,35 +254,61 @@
       "negative": {
         "form": "o",
         "side": "suffix"
+      },
+      "convert_noun_to_verb": {
+        "form": "d",
+        "side": "suffix"
+      },
+      "perfect": {
+        "form": "y",
+        "side": "suffix"
       }
     },
     "particles": {
-      "yes_no": "nupya",
-      "comparative": "pyamasu",
-      "superlative": "aruhohy"
+      "yes_no": "jimasi",
+      "comparative": "anarima",
+      "superlative": "joru",
+      "and": "pubyata",
+      "or": "yuku",
+      "but": "moheryu",
+      "ability": "toi",
+      "obligation": "zururu",
+      "possibility": "ozemom",
+      "future": "yamasi",
+      "progressive": "nataku",
+      "perfect": "gyoyazo",
+      "imperative": "huyatte",
+      "possessive": "chii",
+      "complementizer": "waro",
+      "relative": "hodesu",
+      "conditional": "diciven",
+      "subordinate": "kishoda",
+      "passive": "moneyom",
+      "quotative": "ouzu",
+      "appositive": "nakyoha"
     },
     "pronouns": {
-      "1sg": "dariryo",
-      "2sg": "den",
-      "3sg": "hinmasu",
-      "1pl": "owa",
-      "2pl": "hosa",
-      "3pl": "osaran"
+      "1sg": "nataqui",
+      "2sg": "yuho",
+      "3sg": "yonti",
+      "1pl": "ada",
+      "2pl": "kyumasu",
+      "3pl": "sorusad"
     },
     "demonstratives": {
-      "proximal_singular": "pra",
-      "distal_singular": "soda",
-      "proximal_plural": "nataqui",
-      "distal_plural": "yuho"
+      "proximal_singular": "tokutta",
+      "distal_singular": "fure",
+      "proximal_plural": "hegyasu",
+      "distal_plural": "nupya"
     },
     "interrogatives": {
-      "who": "yonti",
-      "what": "ada",
-      "where": "kyumasu",
-      "when": "sorusad",
-      "why": "tokutta",
-      "how": "fure",
-      "which": "hegyasu"
+      "who": "pyamasu",
+      "what": "aruhohy",
+      "where": "zesam",
+      "when": "ryanyug",
+      "why": "naridas",
+      "how": "sute",
+      "which": "tsunequ"
     }
   },
   "translation_capabilities": {
@@ -30870,210 +31053,6 @@
       "pos": "n",
       "form": "torosookez",
       "derivation": "young-TO.CREATE-QUALITY.OF.BEING"
-    },
-    {
-      "gloss": "story",
-      "pos": "n",
-      "form": "pyam",
-      "derivation": null
-    },
-    {
-      "gloss": "robin",
-      "pos": "n",
-      "form": "antas",
-      "derivation": null
-    },
-    {
-      "gloss": "pebble",
-      "pos": "n",
-      "form": "desuite",
-      "derivation": null
-    },
-    {
-      "gloss": "wild",
-      "pos": "adj",
-      "form": "pyuhoch",
-      "derivation": null
-    },
-    {
-      "gloss": "doll",
-      "pos": "n",
-      "form": "zunakya",
-      "derivation": null
-    },
-    {
-      "gloss": "concert",
-      "pos": "n",
-      "form": "chiky",
-      "derivation": null
-    },
-    {
-      "gloss": "solstice",
-      "pos": "n",
-      "form": "gofuchi",
-      "derivation": null
-    },
-    {
-      "gloss": "bonfire",
-      "pos": "n",
-      "form": "shimyo",
-      "derivation": null
-    },
-    {
-      "gloss": "entrance",
-      "pos": "n",
-      "form": "zama",
-      "derivation": null
-    },
-    {
-      "gloss": "residence",
-      "pos": "n",
-      "form": "temyoma",
-      "derivation": null
-    },
-    {
-      "gloss": "lofty",
-      "pos": "adj",
-      "form": "midasu",
-      "derivation": null
-    },
-    {
-      "gloss": "caress",
-      "pos": "n",
-      "form": "otok",
-      "derivation": null
-    },
-    {
-      "gloss": "spool",
-      "pos": "n",
-      "form": "attasho",
-      "derivation": null
-    },
-    {
-      "gloss": "juicy",
-      "pos": "adj",
-      "form": "goku",
-      "derivation": null
-    },
-    {
-      "gloss": "salty",
-      "pos": "adj",
-      "form": "bozem",
-      "derivation": null
-    },
-    {
-      "gloss": "roadside",
-      "pos": "n",
-      "form": "chibyo",
-      "derivation": null
-    },
-    {
-      "gloss": "litter",
-      "pos": "n",
-      "form": "hepam",
-      "derivation": null
-    },
-    {
-      "gloss": "gray",
-      "pos": "adj",
-      "form": "zumasoy",
-      "derivation": null
-    },
-    {
-      "gloss": "tune",
-      "pos": "n",
-      "form": "datos",
-      "derivation": null
-    },
-    {
-      "gloss": "crow",
-      "pos": "n",
-      "form": "woma",
-      "derivation": null
-    },
-    {
-      "gloss": "pitcher",
-      "pos": "n",
-      "form": "epi",
-      "derivation": null
-    },
-    {
-      "gloss": "brim",
-      "pos": "n",
-      "form": "ohara",
-      "derivation": null
-    },
-    {
-      "gloss": "glee",
-      "pos": "n",
-      "form": "hyazu",
-      "derivation": null
-    },
-    {
-      "gloss": "corn",
-      "pos": "n",
-      "form": "kazopif",
-      "derivation": null
-    },
-    {
-      "gloss": "brave",
-      "pos": "adj",
-      "form": "anumas",
-      "derivation": null
-    },
-    {
-      "gloss": "handful",
-      "pos": "n",
-      "form": "pyudes",
-      "derivation": null
-    },
-    {
-      "gloss": "bedroom",
-      "pos": "n",
-      "form": "hogyun",
-      "derivation": null
-    },
-    {
-      "gloss": "tiny",
-      "pos": "adj",
-      "form": "shirish",
-      "derivation": null
-    },
-    {
-      "gloss": "splendid",
-      "pos": "adj",
-      "form": "goshoch",
-      "derivation": null
-    },
-    {
-      "gloss": "candlelight",
-      "pos": "n",
-      "form": "myozezu",
-      "derivation": null
-    },
-    {
-      "gloss": "shabby",
-      "pos": "adj",
-      "form": "fluttem",
-      "derivation": null
-    },
-    {
-      "gloss": "uncomfortable",
-      "pos": "adj",
-      "form": "mepuptu",
-      "derivation": null
-    },
-    {
-      "gloss": "mite",
-      "pos": "n",
-      "form": "zute",
-      "derivation": null
-    },
-    {
-      "gloss": "faithful",
-      "pos": "adj",
-      "form": "etur",
-      "derivation": null
     }
   ],
   "translation_source": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\translations\\sentences_default.txt",
@@ -31081,122 +31060,79 @@
     {
       "type": "Translation",
       "english": "The big dog is sleeping.",
-      "surface": "[PARTIAL]",
-      "gloss": "dog.NOM SLEEP-PROG",
-      "status": "partial"
+      "surface": "yojizoz janni  dafusana",
+      "gloss": "BIG DOG  SLEEP-PROG",
+      "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Where is my book?",
-      "surface": "kyumasu dariryodas hyantte",
+      "surface": "zesam nataquidas hyantte",
       "gloss": "WHERE 1SG-GEN book",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "She will give him water.",
-      "surface": "hinmasu autaranim nyopet hinmasu ",
-      "gloss": "3SG water.ACC GIVE-FUT 3SG.DAT ",
+      "surface": "yonti autaranim yamasi nyopet",
+      "gloss": "3SG WATER:ACCUSATIVE GIVE-FUT",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "This child walked to that house yesterday.",
-      "surface": "pra auta myuzoto soda zattakiaro bomasu akishid",
-      "gloss": "THIS child.NOM WALK TO THAT house.DAT",
+      "surface": "tokutta auta  myuzoto fure zattaki bomasu",
+      "gloss": "PROXIMAL_SINGULAR CHILD  WALK TO DISTAL_SINGULAR HOUSE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Are you hungry?",
-      "surface": "den onena nupya",
-      "gloss": "2SG HUNGRY-PROG Q",
+      "surface": "jimasi yuho one uuge",
+      "gloss": "2SG HUNGRY BE (TEMPORARY STATE) Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Give me the red bird!",
-      "surface": "[PARTIAL]",
-      "gloss": "give-IMP 1SG.DAT bird.ACC",
-      "status": "partial"
+      "surface": "nyopetas tomasut wopihyunim",
+      "gloss": "GIVE-IMP RED BIRD:ACCUSATIVE",
+      "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The woman and the man are talking.",
-      "surface": "[PARTIAL]",
-      "gloss": "man.NOM TALK-PROG",
-      "status": "partial"
+      "surface": "wade pubyata anchita  zemana",
+      "gloss": "WOMAN.PL AND MAN  TALK-PROG",
+      "status": "ok"
     },
     {
       "type": "Translation",
       "english": "I do not see three cats.",
-      "surface": "dariryo sedomas hittasunim karintao",
-      "gloss": "1SG THREE cat.PL.ACC SEE-NEG",
+      "surface": "nataqui sedomas hittasunim karintao samumas",
+      "gloss": "1SG THREE CAT.PL:ACCUSATIVE SEE-NEG NOT",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "There is a black mountain.",
-      "surface": "[PARTIAL]",
-      "gloss": "mountain.NOM exist-3SG",
-      "status": "partial"
+      "surface": "ademasu kotoshu reaazap",
+      "gloss": "black mountain.NOM exist-3SG",
+      "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Two children played in the garden.",
-      "surface": "izumono auta tadorot puwo kyogemy",
-      "gloss": "TWO child.PL.NOM PLAY IN garden.LOC",
+      "surface": "izumono auta  tadorot puwo kyogemy",
+      "gloss": "TWO CHILD.PL  PLAY IN GARDEN",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "A Tiger wearing a bell will starve.",
       "surface": "[PARTIAL]",
-      "gloss": "SUBJ WEAR-PART bell.ACC STARVE-FUT",
+      "gloss": "TIGER BELL  STARVE-FUT",
       "status": "partial"
-    }
-  ],
-  "lexicon_extensions": [
-    {
-      "source": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\vocabulary\\extra_words_example.txt",
-      "seed": 12345,
-      "count": 34,
-      "entries": [
-        "story:n",
-        "robin:n",
-        "pebble:n",
-        "wild:adj",
-        "doll:n",
-        "concert:n",
-        "solstice:n",
-        "bonfire:n",
-        "entrance:n",
-        "residence:n",
-        "lofty:adj",
-        "caress:n",
-        "spool:n",
-        "juicy:adj",
-        "salty:adj",
-        "roadside:n",
-        "litter:n",
-        "gray:adj",
-        "tune:n",
-        "crow:n",
-        "pitcher:n",
-        "brim:n",
-        "glee:n",
-        "corn:n",
-        "brave:adj",
-        "handful:n",
-        "bedroom:n",
-        "tiny:adj",
-        "splendid:adj",
-        "candlelight:n",
-        "shabby:adj",
-        "uncomfortable:adj",
-        "mite:n",
-        "faithful:adj"
-      ]
     }
   ]
 }

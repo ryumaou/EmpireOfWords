@@ -104,8 +104,16 @@ def detect_constructions(raw, low_tokens, by=None):
     elif by:
         for w in low_tokens:
             if not w.endswith(('er','est')): continue
+            # An exact lexical item such as 'together' is not comparative merely
+            # because its spelling ends in -er. Only a derived candidate may
+            # license comparative analysis.
+            exact=by.get(w,[])
+            if exact:
+                continue
             for cand in lemma_candidates(w):
-                if any(p.startswith('adj') or p.startswith('adv') for p,_ in by.get(cand,[])):
+                if cand == w:
+                    continue
+                if any(pos.startswith('adj') or pos.startswith('adv') for pos,_ in by.get(cand,[])):
                     comp=True; break
             if comp: break
     if comp: found.append('comparison')
@@ -127,7 +135,16 @@ def detect_constructions(raw, low_tokens, by=None):
                 found.append('progressive'); break
     if 'not' in low_tokens or 'never' in low_tokens: found.append('negation')
     if any(w in low_tokens for w in ('and','or','but')): found.append('coordination')
-    if raw.count(',')>=2: found.append('appositive')
+    # Multiple commas often mark coordinated predicates or introductory phrases,
+    # not apposition. Diagnose apposition only for a bounded nominal interruption.
+    comma_parts=[x.strip() for x in raw.split(',')]
+    if len(comma_parts)>=3:
+        middle=comma_parts[1].lower()
+        outer=(comma_parts[0]+' '+comma_parts[-1]).lower()
+        # Conservative: vocative/appositive NP interruptions, not adverbial predicates.
+        if middle and not any(w.endswith('ly') for w in middle.split()) and not any(v in middle.split() for v in ('dressed','went','watched','saw','sat','stood','looked')):
+            if any(x in middle.split() for x in ('son','madam','girl','room','bedroom','kitchen','mite')):
+                found.append('appositive')
     if any(q in raw for q in ('“','”','"')): found.append('quotation')
     if raw.rstrip().endswith('?'): found.append('wh_question' if low_tokens and low_tokens[0] in WH else 'yes_no_question')
     # Imperative requires imperative punctuation or an initial lexical verb; sentence
@@ -137,9 +154,9 @@ def detect_constructions(raw, low_tokens, by=None):
     aux_imperative = first in ('be','do','have') and not raw.rstrip().endswith('?') and 'perfect' not in found
     # Exclamation marks alone do not make a clause imperative (e.g. 'Alas!' or
     # 'This string is too short!').  Imperative force requires an initial verb.
-    if (first_is_verb and first not in AUX) or aux_imperative: found.append('imperative')
+    if (first_is_verb and first not in AUX) or aux_imperative or first in ("let's",'lets'): found.append('imperative')
     if low_tokens[:2] in (['it','is'],['it','was']) and any(w in low_tokens for w in ('rain','raining','snow','snowing')): found.append('weather')
-    if any(w.endswith("'s") for w in low_tokens): found.append('possessive')
+    if any(w.endswith("'s") and w not in ("let's",) for w in low_tokens): found.append('possessive')
     return list(dict.fromkeys(found))
 
 def analyze(raw, by):
@@ -147,9 +164,11 @@ def analyze(raw, by):
     constructions=detect_constructions(raw,low,by)
     lexical=[]; missing=[]; grammatical=[]; proper=[]
     for i,(surface,w) in enumerate(zip(original,low)):
+        if w in ("let's",'lets'):
+            grammatical.append({'token':w,'role':'hortative'}); continue
         if w in REFLEXIVES:
             grammatical.append({'token':w,'role':'reflexive','person':REFLEXIVES[w]}); continue
-        if w.endswith("'s"):
+        if w.endswith("'s") and w not in ("let's",):
             stem=w[:-2]; m=lexical_match(by,stem)
             if m: lexical.append({'token':w,'lemma':m,'feature':'possessive'})
             elif _is_proper(surface,i): proper.append(surface[:-2]); grammatical.append({'token':w,'role':'proper_possessive'})

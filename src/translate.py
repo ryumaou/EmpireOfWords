@@ -35,6 +35,8 @@ def infer_missing_entry(word: str, sentences: list[str], by_pos: dict):
     written into an add_words.py input file with a fabricated part of speech.
     """
     w=word.lower().strip("'\"")
+    possessive_source=w.endswith("'s")
+    if possessive_source: w=w[:-2]
     lemma=(IRREGULAR_VERBS.get(w) or (None,None))[0] if w in IRREGULAR_VERBS else IRREGULAR_NOUNS.get(w)
     if not lemma:
         cands=lemma_candidates(w)
@@ -56,9 +58,10 @@ def infer_missing_entry(word: str, sentences: list[str], by_pos: dict):
     for sent in sentences:
         toks=[x.lower() for x in re.findall(r"[A-Za-z]+(?:'[A-Za-z]+)?|\d+",sent.replace('’',"'"))]
         contexts += [(toks,i) for i,t in enumerate(toks) if t==w]
-    # Strong morphology first.
+    # Strong morphology and closed-class lexical cues first.
     if w in IRREGULAR_VERBS or w.endswith(('ed','ing')): return lemma,'v'
-    if w.endswith('ly'): return lemma,'adv'
+    if w.endswith('ly') or w in {'everywhere','somewhere','nowhere','here','there'}: return lemma,'adv'
+    if w in {'dear','alas','oh','hello','goodbye'}: return lemma,'interj'
     # Strong syntactic cues.
     for toks,i in contexts:
         prev=toks[i-1] if i else '' ; prev2=toks[i-2] if i>1 else '' ; nxt=toks[i+1] if i+1<len(toks) else ''
@@ -67,9 +70,35 @@ def infer_missing_entry(word: str, sentences: list[str], by_pos: dict):
             nm=lexical_match(by_pos,nxt) if nxt else None
             if nm and any(pos.startswith('n') for pos,_ in by_pos.get(nm,())): return lemma,'adj'
             return lemma,'n'
+        nm=lexical_match(by_pos,nxt) if nxt else None
+        if nm and any(pos.startswith('n') for pos,_ in by_pos.get(nm,())):
+            # Bare prenominal modifier: wild animals, yellow candlelight, friendly caress.
+            return lemma,'adj'
         if prev in {'to','will','shall','can','could','should','would','must','may','might','do','does','did'}: return lemma,'v'
+        if prev in {'then'}: return lemma,'v'
+        if prev.endswith(('ed','ing')): return lemma,'n'
         if prev in {'very','too','more','less','quite'}: return lemma,'adj'
-        if prev in {'is','are','am','was','were','be','been'} and nxt not in {'a','an','the'}: return lemma,'adj'
+        if prev in {'is','are','am','was','were','be','been','seem','seems','seemed','feel','feels','felt','look','looks','looked','sound','sounds','sounded','grow','grows','grew','become','became','prove','proved'} and nxt not in {'a','an','the'}: return lemma,'adj'
+        if prev in {'myself','yourself','himself','herself','itself','ourselves','yourselves','themselves'} and prev2 in {'prove','proved','consider','considered','make','made'}: return lemma,'adj'
+        if any(x in {'is','are','am','was','were','be','been','seem','seems','seemed','feel','feels','felt','look','looks','looked','sound','sounds','sounded','grow','grows','grew','become','became'} for x in toks[max(0,i-4):i]):
+            if prev not in {'a','an','the'}: return lemma,'adj'
+        if prev in {'in','on','at','by','with','from','for','into','onto','under','over','near','beside','across','through','upon','toward','towards','after','before','about','of','like','during'}: return lemma,'n'
+        if prev in {'and','or','but'}:
+            # Coordinate with the adjacent known adjective/noun when possible.
+            pm=lexical_match(by_pos,prev2) if prev2 else None
+            if pm:
+                poses=[p for p,_ in by_pos.get(pm,())]
+                if any(p.startswith('adj') for p in poses): return lemma,'adj'
+                if any(p.startswith('n') for p in poses): return lemma,'n'
+        # Object-like position after a known lexical verb is safely nominal for the
+        # missing-word queue; this does not affect parsing until the user applies it.
+        pm=lexical_match(by_pos,prev) if prev else None
+        if pm and any(p.startswith('v') for p,_ in by_pos.get(pm,())): return lemma,'n'
+        if pm and any(p.startswith('adj') for p,_ in by_pos.get(pm,())): return lemma,'n'
+        if prev.endswith("'s"): return lemma,'n'
+        nm=lexical_match(by_pos,nxt) if nxt else None
+        if nm and any(p.startswith('v') for p,_ in by_pos.get(nm,())): return lemma,'n'
+    if possessive_source: return lemma,'n'
     # Transparent plural morphology is safe enough to classify as a noun.
     if w in IRREGULAR_NOUNS or (w.endswith('s') and not w.endswith(('ss','us','is'))): return lemma,'n'
     return None
@@ -220,7 +249,14 @@ def main(argv=None) -> int:
                    f"Partial: {counts.get('partial',0)}",
                    f"Missing vocabulary: {counts.get('unresolved-vocabulary',0)}",
                    f"Unsupported grammar: {counts.get('unsupported-grammar',0)}","",
-                   "Construction inventory:"]
+                   "Target language realization profile:"]
+            rp=grammar.get('realization_profile',{})
+            for k in ('word_order','adposition_type','adjective_position','possessor_position','plural_strategy','comparison_strategy','question_strategy','negation_strategy','morphology_type','future','progressive','perfect','imperative'):
+                if k in rp: lines.append(f"  {k}: {rp[k]}")
+            coord=grammar.get('coordination',{})
+            for k in ('np','predicate','clause'):
+                if isinstance(coord.get(k),dict): lines.append(f"  {k}_coordination: {coord[k].get('strategy')}")
+            lines += ["", "Construction inventory:"]
             for k,v in TRANSLATION_CAPABILITIES.items(): lines.append(f"  {k}: {v}")
             lines += ["","Most common constructions in non-complete sentences:"]
             for k,n in construction_counts.most_common(): lines.append(f"  {k}: {n}")
@@ -231,7 +267,12 @@ def main(argv=None) -> int:
                 if r['status']=='ok': continue
                 lines += [f"#{i} {r['english']}",f"  Status: {r['status']}",f"  Reason: {r['reason']}",
                           f"  Constructions: {', '.join(r['ir'].get('constructions',[])) or 'simple'}",
-                          f"  Normalized: {r['ir'].get('normalized_english') or '(unchanged)'}",""]
+                          f"  Normalized: {r['ir'].get('normalized_english') or '(unchanged)'}"]
+                rs=r['ir'].get('realization_strategies',{})
+                if rs:
+                    compact=', '.join(f"{k}={v}" for k,v in rs.items() if v not in (None,{},[]))
+                    lines.append(f"  Target strategies: {compact}")
+                lines.append("")
             diag_path.write_text("\n".join(lines)+"\n",encoding="utf-8")
             json_path=output_path.with_name(output_path.stem+'_analysis.json')
             json_path.write_text(json.dumps({

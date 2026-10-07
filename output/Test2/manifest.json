@@ -1,25 +1,29 @@
 {
   "schema_version": 2,
-  "tool_version": "6.0",
+  "tool_version": "6.8",
   "language": "Test2",
   "seed": 12345,
   "source": {
-    "path": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\data\\mongolian-sanitized2.txt",
-    "sha256": "a0b81878004bced49f30bb361c504aac8917936d45c75b596b9add21bab695be"
+    "path": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\data\\StandardImperialModern3.txt",
+    "sha256": "290b915cd53c596b4a82ed8c29fea669c17b9cf8dd75cb876b48141474a75765"
   },
   "vocabulary": {
-    "path": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\vocabulary\\UndermountainVocabulary.txt",
-    "sha256": "36163ab1d3b0e1e5a98ea211fb6c613b7ea473ee7f0c299eafcf83921b277545"
+    "path": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\vocabulary\\ImperialVocabulary.txt",
+    "sha256": "9436a4d27b50081d7ce6f28e6e3ba53d03b4a1b4ee55a11e7b3f57835955f448"
   },
   "supplemental_vocabulary": [],
+  "translation_vocabulary_preflight": {
+    "enabled": true,
+    "added": 254
+  },
   "grammar_family": "sino-tibetan",
   "grammar_file": null,
-  "translation_source": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\translations\\sentences_default.txt",
+  "translation_source": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\translations\\sentences_advanced.txt",
   "counts": {
-    "entries": 5104,
-    "base_roots": 4729,
+    "entries": 5293,
+    "base_roots": 4963,
     "modifiers": 18,
-    "derived_resolved": 375,
+    "derived_resolved": 330,
     "unresolved_errors": 0
   }
 }

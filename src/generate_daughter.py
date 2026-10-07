@@ -148,7 +148,7 @@ def main(argv=None):
     write_package(out,args.language_name,dgrammar,entries,daughter_forms,daff,args.seed)
     # Add lineage metadata to canonical package.
     lp=out/'language.json'; child=json.loads(lp.read_text(encoding='utf-8'))
-    child['tool_version']='6.1'
+    child['tool_version']='6.8'
     child['lineage']={'parent_name':data.get('name',parent_path.parent.name),'parent_path':str(parent_path),'parent_seed':data.get('seed'),'daughter_seed':args.seed,'profile':args.profile,'sound_changes':[r[0] for r in rules],'grammar_changes':grammar_changes,'lexical_replacement_rate':repl,'innovated_roots':len(root_indices)}
     lp.write_text(json.dumps(child,ensure_ascii=False,indent=2),encoding='utf-8')
     # Rewrite dictionary with ancestry columns.

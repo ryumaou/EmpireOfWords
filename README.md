@@ -3,6 +3,18 @@ A set of Python scripts that allow a technically literate worldbuilder to create
 
 Based, in part, on Perl scripts originally created by Chris Pound, with additional inspiration from other conlanging sources.
 
+## v6.8 translation-ready creation
+
+v6.8 moves another layer of translation readiness into initial language creation. When `--translations` is supplied, the builder now performs a conservative lexical/POS preflight and creates safely inferred independent roots before the language is generated. Use `--no-translation-vocabulary-preflight` to retain the older build-then-add workflow. This does not weaken translation completeness checks; it moves known corpus requirements earlier in the pipeline.
+
+The grammar realization contract is now version 5. New languages explicitly choose strategies for participial modifiers and infinitive complements, and structural yes/no question systems record an actual operation rather than a label alone. Native perfect morphology is no longer forced into languages whose aspect inventory does not grammaticalize perfect; those languages use their generated analytic fallback. The structured IR can preserve simple participial NP modifiers such as *a tiger wearing a bell*.
+
+## v6.7 morphosyntactic realization contract
+
+v6.7 makes generated grammar choices first-class translation inputs. Each new language records a `realization_profile` describing word order, adposition and adjective placement, possession, noun number/case behavior, adjective comparison/adverb behavior, verb TAM/agreement behavior, questions, negation, and independently generated NP/predicate/clause coordination strategies. Translation diagnostics print this profile and record the target strategies attempted.
+
+The structured realizer now handles shared-subject predicate coordination, preserves coordination receipts, and represents English *let's* as a first-person-plural hortative rather than lexical *let*. The analyzer no longer diagnoses apposition merely from comma count. Unsupported constructions remain unsupported unless a safe structured realizer exists.
+
 ## Overview
 
 Empire Of Words is a deterministic, file-based conlang toolkit. It can generate a lexicon from the statistical character of a source corpus, construct a configurable grammar, create inflectional paradigms and reference material, translate supported English constructions, diagnose translation gaps, extend an existing language without regenerating it, validate generated packages, and create language-shaped personal and family names.
@@ -845,7 +857,11 @@ English auxiliary inversion is normalized before realization, so constructions s
 
 Translation diagnostics remain the regression mechanism. `complete` means all recognized source features have realization receipts; `partial` means some recognized content was not realized; `unresolved-vocabulary` means a required concept is absent; and `unsupported-grammar` means the analyzer understood a construction that the deterministic realizer cannot yet safely express.
 
-## Translation status semantics (v6.1)
+## Structured realization (v6.3)
+
+v6.3 introduces an explicit intermediate representation (`ClauseIR`, `NPIR`, `PredicateIR`, and `PPIR`) and a conservative grammar-driven structured realizer. Supported simple clauses are parsed into semantic roles and grammatical features before target-language realization. Each successful structured realization records receipts for lexical and grammatical content; completeness validation uses those receipts to prevent silent loss of meaning. Sentences outside the current structured subset fall back to the established legacy realizer, while positively diagnosed complex constructions remain unsupported rather than being flattened.
+
+## Translation status semantics (v6.3)
 
 Translation diagnostics distinguish four outcomes:
 
@@ -855,3 +871,28 @@ Translation diagnostics distinguish four outcomes:
 - `unsupported-grammar`: reserved for positively diagnosed constructions for which no deterministic realization strategy is implemented. A realizer pattern miss by itself is not classified as unsupported grammar.
 
 This distinction is intentional: Empire Of Words does not count a translation as complete merely because it can produce plausible-looking target text.
+
+
+## Translation-ready grammar generation (v6.4)
+
+v6.4 validates a realization contract when a language is created. A grammar feature that advertises a particle or inflectional strategy must have the material required to realize it. Generated languages also receive analytic fallback particles for future, progressive, perfect, and imperative meanings. These fallbacks do not change the typological profile: native morphology remains preferred when present, while the fallback gives the deterministic translator a way to preserve an English grammatical meaning that the target language does not encode with the same inflection. Structured noun phrases also preserve lexical numerals.
+
+## Structured realization and lexical convergence (v6.7)
+
+v6.7 tightens the contract between generated grammar, the English analyzer, structured IR, and the target-language realizer. Modifiers, comparisons, coordinated noun phrases, possessors, numerals, tense/aspect/mood features, and question marking now carry explicit realization receipts. A translation is complete only when those represented features are actually realized.
+
+Generated grammars now record an adverb derivation strategy. The default translation-ready strategy is zero derivation: when English `-ly` maps to an existing adjective lemma (for example `brightly` -> `bright`), the target may use that adjective form adverbially rather than requiring a redundant independent adverb root.
+
+The missing-vocabulary loop is also stricter. Analyzer-confirmed absent lexemes are classified as missing vocabulary, and the batch `*_missing_words.txt` file uses contextual POS inference to make substantially more entries directly consumable by `add_words.py`. The intended cycle remains:
+
+```cmd
+python src\translate.py --language output\Example --input translations\sentences_advanced.txt --diagnostics
+python src\add_words.py --language output\Example --words output\Example\translations\sentences_advanced_missing_words.txt --seed 67890
+python src\translate.py --language output\Example --input translations\sentences_advanced.txt --diagnostics
+```
+
+After the second translation, a remaining missing-vocabulary count represents a real unresolved lexical-analysis case rather than a partial sentence hidden by legacy realization.
+
+
+## Realization contract v4 (v6.7)
+Generated languages now specify productive lexical conversion and noun-compound behavior in addition to the v6.6 morphosyntactic profile. The structured realizer also applies target article morphology and available grammatical cases. Lexical conversion is context-sensitive: it may satisfy a required verbal/adjectival sense from an existing semantic root, but it is not used as a generic predicate guess.

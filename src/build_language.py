@@ -11,6 +11,7 @@ Example:
 from __future__ import annotations
 import argparse, csv, importlib.util, random, re, sys, json, hashlib
 from grammar_engine import FAMILIES, generate_grammar, load_grammar, write_package, load_translation_sentences
+from language_io import validate_grammar_contract
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -225,6 +226,7 @@ def main(argv=None):
     p.add_argument("--supplemental-vocabulary", dest="supplemental_vocabulary", action="append", type=Path, default=[], help="additional vocabulary file to merge after the main vocabulary; may be repeated")
     p.add_argument("--source", dest="source_file", type=Path, help="source/base language corpus to analyze; relative paths resolve from the project root")
     p.add_argument("--translations", dest="translations_file", type=Path, help="English sentence file under ./translations (or another project-relative path); replaces built-in examples")
+    p.add_argument("--no-translation-vocabulary-preflight", action="store_true", help="do not seed safely inferred lexical roots required by --translations during initial language creation")
     p.add_argument("--project-root", type=Path, default=root_default)
     p.add_argument("--language-name", default="Generated Language")
     p.add_argument("--grammar", dest="legacy_grammar", choices=["naturalistic","random"], help="legacy alias for --grammar-family")
@@ -325,6 +327,28 @@ def main(argv=None):
                 p.error(f"supplemental vocabulary redefines modifier {name} with a different rule")
             mod_rules.setdefault(name,rule)
         entries.extend(extra_entries)
+    # When a translation corpus is supplied, seed safely inferable lexical concepts
+    # before roots are generated. This makes the initial language translation-ready
+    # without changing existing MagicVocabulary derivations or requiring add_words.py.
+    preflight_entries=[]
+    if translation_sentences and not args.no_translation_vocabulary_preflight:
+        from translate import infer_missing_entry
+        from english_analyzer import tokens as english_tokens, FUNCTION_WORDS
+        by_pos={}
+        for e in entries: by_pos.setdefault(e.key.gloss,[]).append((e.key.pos,None))
+        existing={e.key for e in entries}
+        seen_tokens=[]
+        for sent in translation_sentences:
+            for tok in english_tokens(sent):
+                low=tok.lower().strip("'\"")
+                if low and low not in FUNCTION_WORDS and low not in seen_tokens: seen_tokens.append(low)
+        for tok in seen_tokens:
+            inferred=infer_missing_entry(tok,translation_sentences,by_pos)
+            if not inferred: continue
+            lemma,pos=inferred; key=EntryKey(lemma,pos)
+            if key in existing: continue
+            e=Entry(key,None,0); entries.append(e); preflight_entries.append(e); existing.add(key)
+            by_pos.setdefault(lemma,[]).append((pos,None))
     lc=load_lc_module(args.lc)
     by_key={e.key:e for e in entries}
     by_gloss={}
@@ -400,6 +424,11 @@ def main(argv=None):
     else:
         family=args.legacy_grammar or args.grammar_family
         grammar=generate_grammar(roots,rng,family,overrides)
+    contract_errors,contract_warnings=validate_grammar_contract(grammar)
+    if contract_errors:
+        raise RuntimeError('generated grammar failed realization contract: '+ '; '.join(contract_errors))
+    for warning in contract_warnings:
+        print('Grammar warning:',warning)
     write_package(package_dir,args.language_name,grammar,entries,forms,affixes,args.seed,translation_sentences,translation_source)
     def sha256_file(path):
         h=hashlib.sha256()
@@ -407,10 +436,11 @@ def main(argv=None):
             for chunk in iter(lambda:fh.read(1024*1024),b''): h.update(chunk)
         return h.hexdigest()
     manifest={
-        'schema_version':2,'tool_version':'6.1','language':args.language_name,'seed':args.seed,
+        'schema_version':2,'tool_version':'6.8','language':args.language_name,'seed':args.seed,
         'source':{'path':str(args.corpus),'sha256':sha256_file(args.corpus)},
         'vocabulary':{'path':str(args.vocabulary),'sha256':sha256_file(args.vocabulary)},
         'supplemental_vocabulary':[{'path':str(x),'sha256':sha256_file(x)} for x in supplemental_paths],
+        'translation_vocabulary_preflight':{'enabled':bool(translation_sentences and not args.no_translation_vocabulary_preflight),'added':len(preflight_entries)},
         'grammar_family':args.legacy_grammar or args.grammar_family,
         'grammar_file':str(args.grammar_file) if args.grammar_file else None,
         'translation_source':str(translation_source) if translation_source else None,
@@ -420,6 +450,7 @@ def main(argv=None):
     }
     (package_dir/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
     print(f"Entries: {len(entries)}")
+    if preflight_entries: print(f"Translation preflight roots: {len(preflight_entries)}")
     print(f"Base roots: {len(base)}")
     print(f"Modifiers: {len(mod_rules)}")
     print(f"Derived resolved: {sum(1 for e in entries if e.expr and e.key in forms)}")

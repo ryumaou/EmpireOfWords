@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "tool_version": "5.7",
+  "tool_version": "6.8",
   "language": "Example",
   "seed": 12345,
   "source": {
@@ -12,12 +12,16 @@
     "sha256": "36163ab1d3b0e1e5a98ea211fb6c613b7ea473ee7f0c299eafcf83921b277545"
   },
   "supplemental_vocabulary": [],
+  "translation_vocabulary_preflight": {
+    "enabled": true,
+    "added": 253
+  },
   "grammar_family": "japanese",
   "grammar_file": null,
-  "translation_source": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\translations\\sentences_default.txt",
+  "translation_source": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\translations\\sentences_advanced.txt",
   "counts": {
-    "entries": 5104,
-    "base_roots": 4729,
+    "entries": 5357,
+    "base_roots": 4982,
     "modifiers": 18,
     "derived_resolved": 375,
     "unresolved_errors": 0

@@ -1,7 +1,7 @@
 {
   "family": "arabic",
   "requested_family": "arabic",
-  "word_order": "SVO",
+  "word_order": "VSO",
   "adposition_type": "preposition",
   "adjective_position": "after",
   "possessor_position": "after",
@@ -29,11 +29,9 @@
   },
   "verb": {
     "tenses": [
-      "present",
-      "past",
-      "future"
+      "present"
     ],
-    "tense_level": "standard",
+    "tense_level": "minimal",
     "aspects": [
       "simple",
       "progressive",
@@ -44,11 +42,12 @@
       "indicative",
       "imperative",
       "subjunctive",
-      "conditional"
+      "conditional",
+      "optative"
     ],
-    "mood_level": "standard",
+    "mood_level": "rich",
     "agreement": "subject",
-    "negation": "mixed"
+    "negation": "particle"
   },
   "comparison": {
     "degrees": [
@@ -56,122 +55,321 @@
       "comparative",
       "superlative"
     ],
-    "strategy": "mixed"
+    "strategy": "mixed",
+    "marker_position": "before"
   },
   "questions": {
+    "strategy": "mixed",
+    "particle_position": "final",
+    "wh_strategy": "fronted",
+    "structural_operation": "verb_fronting"
+  },
+  "coordination": {
+    "np": {
+      "strategy": "juxtaposition",
+      "position": "between"
+    },
+    "predicate": {
+      "strategy": "particle",
+      "position": "between",
+      "shared_subject": true
+    },
+    "clause": {
+      "strategy": "particle",
+      "position": "between"
+    }
+  },
+  "possession": {
+    "strategy": "genitive",
+    "position": "after"
+  },
+  "modality": {
     "strategy": "particle",
-    "particle_position": "initial",
-    "wh_strategy": "fronted"
+    "particle_position": "before_verb"
+  },
+  "tense_realization": {
+    "future": "particle"
+  },
+  "aspect_realization": {
+    "progressive": "affix",
+    "perfect": "affix"
+  },
+  "mood_realization": {
+    "imperative": "affix"
+  },
+  "perfect": {
+    "strategy": "affix"
+  },
+  "adverbs": {
+    "position": "clause_final",
+    "derivation": "zero"
+  },
+  "copular": {
+    "adjective_complement": true,
+    "nominal_complement": true,
+    "copula_position": "verb"
+  },
+  "lexical_conversion": {
+    "noun_to_verb": {
+      "strategy": "zero"
+    },
+    "adjective_to_verb": {
+      "strategy": "affix",
+      "morpheme": "convert_adjective_to_verb"
+    },
+    "noun_to_adjective": {
+      "strategy": "zero"
+    }
+  },
+  "nonfinite": {
+    "participial_modifier": {
+      "strategy": "particle",
+      "particle": "participle",
+      "position": "after"
+    },
+    "infinitive_complement": {
+      "strategy": "particle",
+      "particle": "infinitive",
+      "position": "before_verb"
+    }
+  },
+  "relative_clause": {
+    "strategy": "relative_particle",
+    "position": "before"
+  },
+  "complement_clause": {
+    "strategy": "juxtaposition",
+    "position": "before"
+  },
+  "conditional_clause": {
+    "strategy": "particle",
+    "position": "medial"
+  },
+  "subordinate_clause": {
+    "strategy": "particle",
+    "position": "after"
+  },
+  "passive": {
+    "strategy": "morphological",
+    "agent_position": "after"
+  },
+  "quotation": {
+    "strategy": "quotative_particle",
+    "position": "before"
+  },
+  "apposition": {
+    "strategy": "particle",
+    "position": "adjacent"
+  },
+  "realization_profile": {
+    "word_order": "VSO",
+    "adposition_type": "preposition",
+    "adjective_position": "after",
+    "possessor_position": "after",
+    "plural_strategy": "mixed",
+    "comparison_strategy": "mixed",
+    "question_strategy": "mixed",
+    "negation_strategy": "particle",
+    "morphology_type": "mixed",
+    "noun_behavior": {
+      "number": "mixed",
+      "cases": [
+        "nominative",
+        "accusative",
+        "genitive"
+      ],
+      "possessor_position": "after",
+      "compound_order": "head-modifier"
+    },
+    "noun_compound_order": "head-modifier",
+    "adjective_behavior": {
+      "position": "after",
+      "comparison": "mixed",
+      "adverb_derivation": "zero"
+    },
+    "verb_behavior": {
+      "agreement": "subject",
+      "negation": "particle",
+      "tenses": [
+        "present"
+      ],
+      "aspects": [
+        "simple",
+        "progressive",
+        "perfect"
+      ],
+      "moods": [
+        "indicative",
+        "imperative",
+        "subjunctive",
+        "conditional",
+        "optative"
+      ]
+    },
+    "lexical_conversion": {
+      "noun_to_verb": {
+        "strategy": "zero"
+      },
+      "adjective_to_verb": {
+        "strategy": "affix",
+        "morpheme": "convert_adjective_to_verb"
+      },
+      "noun_to_adjective": {
+        "strategy": "zero"
+      }
+    },
+    "nonfinite": {
+      "participial_modifier": {
+        "strategy": "particle",
+        "particle": "participle",
+        "position": "after"
+      },
+      "infinitive_complement": {
+        "strategy": "particle",
+        "particle": "infinitive",
+        "position": "before_verb"
+      }
+    },
+    "future": "particle",
+    "progressive": "affix",
+    "perfect": "affix",
+    "imperative": "affix"
+  },
+  "translation_readiness": {
+    "contract_version": 5,
+    "analytic_fallbacks": [
+      "future",
+      "progressive",
+      "perfect",
+      "imperative"
+    ],
+    "adverb_fallback": "zero"
   },
   "morphemes": {
     "plural": {
-      "form": "de",
-      "side": "suffix"
+      "form": "buu",
+      "side": "prefix"
     },
     "accusative": {
-      "form": "man",
-      "side": "prefix"
-    },
-    "genitive": {
-      "form": "cir",
-      "side": "prefix"
-    },
-    "past": {
-      "form": "den",
+      "form": "o",
       "side": "suffix"
     },
-    "future": {
+    "genitive": {
+      "form": "ko",
+      "side": "suffix"
+    },
+    "progressive": {
       "form": "u",
       "side": "prefix"
     },
-    "progressive": {
-      "form": "mem",
-      "side": "prefix"
-    },
     "perfect": {
-      "form": "si",
+      "form": "otu",
       "side": "suffix"
     },
     "imperative": {
-      "form": "bik",
+      "form": "d",
       "side": "suffix"
     },
     "subjunctive": {
+      "form": "dal",
+      "side": "suffix"
+    },
+    "conditional": {
+      "form": "uub",
+      "side": "suffix"
+    },
+    "optative": {
+      "form": "ci",
+      "side": "suffix"
+    },
+    "comparative": {
+      "form": "mi",
+      "side": "prefix"
+    },
+    "superlative": {
       "form": "s",
       "side": "prefix"
     },
-    "conditional": {
-      "form": "ke",
-      "side": "suffix"
-    },
-    "negative": {
-      "form": "pa",
-      "side": "prefix"
-    },
-    "comparative": {
-      "form": "te",
-      "side": "suffix"
-    },
-    "superlative": {
+    "definite_article": {
       "form": "b",
       "side": "suffix"
     },
-    "definite_article": {
-      "form": "l",
-      "side": "suffix"
-    },
     "agr_1sg": {
-      "form": "ad",
+      "form": "al",
       "side": "suffix"
     },
     "agr_2sg": {
-      "form": "jad",
+      "form": "e",
       "side": "suffix"
     },
     "agr_3sg": {
-      "form": "a",
+      "form": "bu",
       "side": "suffix"
     },
     "agr_1pl": {
-      "form": "st",
+      "form": "jam",
       "side": "suffix"
     },
     "agr_2pl": {
-      "form": "pe",
+      "form": "tai",
       "side": "suffix"
     },
     "agr_3pl": {
-      "form": "wa",
+      "form": "tu",
       "side": "suffix"
+    },
+    "convert_adjective_to_verb": {
+      "form": "ala",
+      "side": "prefix"
     }
   },
   "particles": {
-    "yes_no": "kerbera",
-    "negative": "sakusam",
-    "comparative": "bahap",
-    "superlative": "hap"
+    "yes_no": "tencud",
+    "negative": "mongun",
+    "comparative": "bui",
+    "superlative": "berisai",
+    "and": "irabuya",
+    "or": "kuuudau",
+    "but": "qoni",
+    "ability": "aunudi",
+    "obligation": "obarani",
+    "possibility": "orinski",
+    "future": "yeeceni",
+    "progressive": "saluuru",
+    "perfect": "danggen",
+    "imperative": "cegen",
+    "possessive": "delende",
+    "complementizer": "qaltebu",
+    "relative": "qubasun",
+    "conditional": "naracin",
+    "subordinate": "toorici",
+    "passive": "ebeled",
+    "quotative": "buurun",
+    "appositive": "kilun",
+    "participle": "tegei",
+    "infinitive": "aulaqu"
   },
   "pronouns": {
-    "1sg": "pempula",
-    "2sg": "terberu",
-    "3sg": "ang",
-    "1pl": "unan",
-    "2pl": "mekok",
-    "3pl": "lendaks"
+    "1sg": "usaiqan",
+    "2sg": "qaica",
+    "3sg": "irtinut",
+    "1pl": "daligur",
+    "2pl": "yinuteg",
+    "3pl": "alaqu"
   },
   "demonstratives": {
-    "proximal_singular": "tampa",
-    "distal_singular": "pekepem",
-    "proximal_plural": "semakir",
-    "distal_plural": "persema"
+    "proximal_singular": "aaca",
+    "distal_singular": "jegere",
+    "proximal_plural": "sonigen",
+    "distal_plural": "talaira"
   },
   "interrogatives": {
-    "who": "pot",
-    "what": "desumpa",
-    "where": "kempa",
-    "when": "mung",
-    "why": "baumpun",
-    "how": "lahulan",
-    "which": "memisti"
+    "who": "koobqu",
+    "what": "ajasuu",
+    "where": "monainu",
+    "when": "oruui",
+    "why": "yinacas",
+    "how": "mondun",
+    "which": "uleniul"
   }
 }
