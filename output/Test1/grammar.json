@@ -88,6 +88,7 @@
     "particle_position": "before_verb"
   },
   "tense_realization": {
+    "past": "particle",
     "future": "particle"
   },
   "aspect_realization": {
@@ -236,7 +237,15 @@
     "imperative": "affix"
   },
   "translation_readiness": {
-    "contract_version": 5,
+    "contract_version": 9,
+    "capabilities": [
+      "stacked_aspect",
+      "constituent_coordination",
+      "copular_imperative",
+      "nominal_predicate",
+      "irregular_comparison",
+      "single_negation"
+    ],
     "analytic_fallbacks": [
       "future",
       "progressive",
@@ -324,30 +333,31 @@
     }
   },
   "particles": {
-    "yes_no": "tencud",
-    "negative": "mongun",
-    "comparative": "bui",
-    "superlative": "berisai",
-    "and": "irabuya",
-    "or": "kuuudau",
-    "but": "qoni",
-    "ability": "aunudi",
-    "obligation": "obarani",
-    "possibility": "orinski",
-    "future": "yeeceni",
-    "progressive": "saluuru",
-    "perfect": "danggen",
-    "imperative": "cegen",
-    "possessive": "delende",
-    "complementizer": "qaltebu",
-    "relative": "qubasun",
-    "conditional": "naracin",
-    "subordinate": "toorici",
-    "passive": "ebeled",
-    "quotative": "buurun",
-    "appositive": "kilun",
-    "participle": "tegei",
-    "infinitive": "aulaqu"
+    "past": "tencud",
+    "yes_no": "mongun",
+    "negative": "bui",
+    "comparative": "berisai",
+    "superlative": "irabuya",
+    "and": "kuuudau",
+    "or": "qoni",
+    "but": "aunudi",
+    "ability": "obarani",
+    "obligation": "orinski",
+    "possibility": "yeeceni",
+    "future": "saluuru",
+    "progressive": "danggen",
+    "perfect": "cegen",
+    "imperative": "delende",
+    "possessive": "qaltebu",
+    "complementizer": "qubasun",
+    "relative": "naracin",
+    "conditional": "toorici",
+    "subordinate": "ebeled",
+    "passive": "buurun",
+    "quotative": "kilun",
+    "appositive": "tegei",
+    "participle": "aulaqu",
+    "infinitive": "emenege"
   },
   "pronouns": {
     "1sg": "usaiqan",

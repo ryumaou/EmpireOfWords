@@ -116,10 +116,14 @@ def morphophonemic_join(stem, aff, side, rules):
         if right[:1].lower() in 'pbm': left=left[:-1]+'m'
         elif right[:1].lower() in 'kg': left=left[:-1]+'ng'
     if 'consonant_assimilation' in rules and left and right and left[-1:].lower() not in 'aeiou' and right[:1].lower()==left[-1:].lower():
-        right=right[1:]
+        # Do not erase a grammatical prefix when it shares the stem's first
+        # consonant. Preserve the contrast as a geminate instead.
+        # Keep a doubled consonant at the morpheme boundary: deleting either
+        # segment could erase the only exponent of number or tense.
+        pass
     if 'epenthesis' in rules and left and right and left[-1:].lower() not in 'aeiou' and right[:1].lower() not in 'aeiou':
         left += 'a'
-    result=join(left,right)
+    result=(left+right) if left[-1:]==right[:1] else join(left,right)
     if 'reduplication' in rules and side=='prefix' and stem:
         # Productive light reduplication: repeat the first CV (or first two letters).
         unit=stem[:2]
@@ -215,6 +219,7 @@ def generate_grammar(root_pool,rng,family='naturalistic',overrides=None):
     demonstratives={k:word() for k in ['proximal_singular','distal_singular','proximal_plural','distal_plural']}
     interrogatives={k:word() for k in ['who','what','where','when','why','how','which']}
     particles={}
+    particles['past']=word()  # analytic past fallback for minimal-tense languages
     if qtype in ('particle','mixed'): particles['yes_no']=word()
     if negation in ('particle','mixed'): particles['negative']=word()
     if comparison in ('particle','mixed'): particles['comparative']=word(); particles['superlative']=word()
@@ -254,7 +259,7 @@ def generate_grammar(root_pool,rng,family='naturalistic',overrides=None):
        },
        'possession':{'strategy':'genitive' if 'genitive' in cases else rng.choice(['juxtaposition','particle']),'position':poss},
        'modality':{'strategy':'particle','particle_position':rng.choice(['before_verb','after_verb'])},
-       'tense_realization':{'future':'affix' if 'future' in morph else 'particle'},
+       'tense_realization':{'past':'affix' if 'past' in morph else 'particle','future':'affix' if 'future' in morph else 'particle'},
        'aspect_realization':{'progressive':'affix' if 'progressive' in morph else 'particle','perfect':'affix' if 'perfect' in morph else 'particle'},
        'mood_realization':{'imperative':'affix' if 'imperative' in morph else 'particle'},
        'perfect':{'strategy':'affix' if 'perfect' in morph else 'particle'},
@@ -284,7 +289,7 @@ def generate_grammar(root_pool,rng,family='naturalistic',overrides=None):
            'perfect':'affix' if 'perfect' in morph else 'particle',
            'imperative':'affix' if 'imperative' in morph else 'particle',
        },
-       'translation_readiness':{'contract_version':5,'analytic_fallbacks':['future','progressive','perfect','imperative'],'adverb_fallback':'zero'},
+       'translation_readiness':{'contract_version':9,'capabilities':['stacked_aspect','constituent_coordination','copular_imperative','nominal_predicate','irregular_comparison','single_negation'],'analytic_fallbacks':['future','progressive','perfect','imperative'],'adverb_fallback':'zero'},
        'morphemes':morph,'particles':particles,'pronouns':pronouns,'demonstratives':demonstratives,'interrogatives':interrogatives}
     return g
 
@@ -305,8 +310,20 @@ def verb_form(word,g,person='3sg',tense='present',aspect='simple',mood='indicati
     for feature in (tense,aspect,mood):
         if feature not in ('present','simple','indicative') and feature in m: x=affix(x,m[feature],g)
     if negative:
-        if 'negative' in m: x=affix(x,m['negative'],g)
-        elif g.get('particles',{}).get('negative'): x=g['particles']['negative']+' '+x
+        strategy=g.get('verb',{}).get('negation','particle')
+        if strategy=='particle':
+            particle=g.get('particles',{}).get('negative')
+            if not particle: raise ValueError('particle negation has no particle')
+            x=particle+' '+x
+        elif strategy=='affix':
+            if 'negative' not in m: raise ValueError('affix negation has no morpheme')
+            x=affix(x,m['negative'],g)
+        elif strategy=='mixed':
+            # A mixed grammar selects one licensed strategy per clause, not both.
+            if 'negative' in m: x=affix(x,m['negative'],g)
+            elif g.get('particles',{}).get('negative'): x=g['particles']['negative']+' '+x
+            else: raise ValueError('mixed negation has no realization')
+        else: raise ValueError('unknown negation strategy: '+str(strategy))
     if 'agr_'+person in m: x=affix(x,m['agr_'+person],g)
     return x
 
@@ -653,7 +670,8 @@ def analyze_translation(sentence,g,entries,forms):
     # v6.3 structured realization.  Parse semantic roles/features first and realize
     # them through the generated target grammar.  If this conservative first-pass
     # parser cannot represent the sentence, retain the proven legacy path below.
-    structured_ir=_parse_structured_clause(raw,by,_lexical_match,_english_tokens,_lemma_candidates,constructions,g)
+    structured_source=normalized if ' did ' in (' '+normalized.lower()+' ') and ' did ' not in (' '+raw.lower()+' ') else raw
+    structured_ir=_parse_structured_clause(structured_source,by,_lexical_match,_english_tokens,_lemma_candidates,constructions,g)
     structured=None
     if structured_ir is not None:
         structured=_realize_structured_clause(structured_ir,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix,adjective_form)

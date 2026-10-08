@@ -7,13 +7,15 @@ and reuses grammar_engine.translate_sentence() for deterministic translation.
 from __future__ import annotations
 
 import argparse
+import hashlib
+import sys
 import json
 import sys
 from pathlib import Path
 
 from grammar_engine import load_translation_sentences, analyze_translation, TRANSLATION_CAPABILITIES
 from english_analyzer import lemma_candidates, lexical_match, IRREGULAR_VERBS, IRREGULAR_NOUNS
-from language_io import resolve_project_path, resolve_language_path, load_language, validate_package
+from language_io import resolve_project_path, resolve_language_path, load_language, validate_package, TOOL_VERSION
 
 
 def format_result(result) -> str:
@@ -204,6 +206,13 @@ def main(argv=None) -> int:
     unresolved = len(results) - counts.get('ok',0)
     name = str(data.get("name") or language_path.parent.name)
 
+    package_sha = hashlib.sha256(language_path.read_bytes()).hexdigest()
+    translator_sha = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+    grammar_sha = hashlib.sha256(json.dumps(grammar, sort_keys=True, ensure_ascii=False).encode('utf-8')).hexdigest()
+    manifest_path = language_path.parent / 'manifest.json'
+    manifest = json.loads(manifest_path.read_text(encoding='utf-8')) if manifest_path.exists() else {}
+    package_version = manifest.get('tool_version', data.get('tool_version', 'unknown'))
+    contract_version = grammar.get('translation_readiness', {}).get('contract_version', 'unknown')
     if args.output is not None:
         output_path = resolve_project_path(project, args.output)
     elif input_path is not None:
@@ -245,6 +254,13 @@ def main(argv=None) -> int:
                     missing_counts.update(r['ir'].get('missing_lexemes',[]))
             diag_path=output_path.with_name(output_path.stem+'_diagnostics.txt')
             lines=[f"Translation diagnostics: {name}","="*60,"",
+                   f"Translator version: {TOOL_VERSION}",
+                   f"Language build version: {package_version}",
+                   f"Language schema version: {data.get('schema_version', 'unknown')}",
+                   f"Grammar contract version: {contract_version}",
+                   f"Language package SHA256: {package_sha}",
+                   f"Grammar SHA256: {grammar_sha}",
+                   f"Translator SHA256: {translator_sha}", "",
                    f"Sentences: {len(results)}",f"Complete: {counts.get('ok',0)}",
                    f"Partial: {counts.get('partial',0)}",
                    f"Missing vocabulary: {counts.get('unresolved-vocabulary',0)}",
@@ -276,7 +292,7 @@ def main(argv=None) -> int:
             diag_path.write_text("\n".join(lines)+"\n",encoding="utf-8")
             json_path=output_path.with_name(output_path.stem+'_analysis.json')
             json_path.write_text(json.dumps({
-                'language':name, 'summary':counts,
+                'language':name, 'summary':counts, 'provenance': {'translator_version': TOOL_VERSION, 'language_build_version': package_version, 'package_sha256': package_sha, 'grammar_sha256': grammar_sha, 'translator_sha256': translator_sha, 'contract_version': contract_version},
                 'capabilities':TRANSLATION_CAPABILITIES, 'sentences':results
             },ensure_ascii=False,indent=2),encoding='utf-8')
             try: dshown=diag_path.relative_to(project)

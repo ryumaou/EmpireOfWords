@@ -6,7 +6,7 @@ from pathlib import Path
 import json
 
 SCHEMA_VERSION=2
-TOOL_VERSION='6.6'
+TOOL_VERSION='7.4'
 
 @dataclass(frozen=True)
 class EntryKey:
@@ -116,4 +116,14 @@ def validate_grammar_contract(grammar):
     for key in ('future','progressive','perfect','imperative'):
         if not particles.get(key) and key not in morph:
             warnings.append(f'no analytic fallback for {key}; some English inputs may remain partial')
+    if grammar.get('translation_readiness',{}).get('contract_version',0)>=6:
+        caps=set(grammar.get('translation_readiness',{}).get('capabilities',[]))
+        required={'stacked_aspect','constituent_coordination','copular_imperative','nominal_predicate','irregular_comparison'}
+        missing=sorted(required-caps)
+        if missing: issues.append('contract v6 capabilities missing: '+', '.join(missing))
+    if grammar.get('translation_readiness',{}).get('contract_version',0)>=7:
+        if 'past' not in morph and not particles.get('past'):
+            issues.append('contract v7 requires past tense realization or analytic past marker')
+        if grammar.get('verb',{}).get('negation') in ('affix','mixed') and 'negative' not in morph:
+            issues.append('contract v7 requires a negative affix for affix/mixed negation')
     return issues,warnings

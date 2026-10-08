@@ -72,34 +72,35 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 - infinitive: **ode-**
 
 ## Particles
-- yes_no: **takinak**
-- comparative: **dezu**
-- superlative: **desopyo**
-- and: **nyumumu**
-- or: **yamasu**
-- but: **luporu**
-- ability: **hia**
-- obligation: **biteheg**
-- possibility: **tsuarim**
-- future: **futsu**
-- progressive: **oyofu**
-- perfect: **aripyam**
-- imperative: **usarise**
-- possessive: **kyaputa**
-- complementizer: **ryozeze**
-- relative: **nemasha**
-- conditional: **nyujuda**
-- subordinate: **modemas**
-- passive: **chitako**
-- quotative: **nienhad**
-- appositive: **desuzag**
-- participle: **daputte**
+- past: **takinak**
+- yes_no: **dezu**
+- comparative: **desopyo**
+- superlative: **nyumumu**
+- and: **yamasu**
+- or: **luporu**
+- but: **hia**
+- ability: **biteheg**
+- obligation: **tsuarim**
+- possibility: **futsu**
+- future: **oyofu**
+- progressive: **aripyam**
+- perfect: **usarise**
+- imperative: **kyaputa**
+- possessive: **ryozeze**
+- complementizer: **nemasha**
+- relative: **nyujuda**
+- conditional: **modemas**
+- subordinate: **chitako**
+- passive: **nienhad**
+- quotative: **desuzag**
+- appositive: **daputte**
+- participle: **hitades**
 
 ## Generated Examples
 ### Translation
 - English: The big dog is sleeping.
-- Language: **yojizoz janni  wamakyutte**
-- Gloss: `BIG DOG  SLEEPING-PROG`
+- Language: **yojizoz janni  wamadafus**
+- Gloss: `BIG DOG  SLEEP-PROG`
 - Status: `ok`
 
 ### Translation
@@ -116,13 +117,13 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: This child walked to that house yesterday.
-- Language: **rosoo auta  qiamash hyanta zattakizen bomasu**
-- Gloss: `PROXIMAL_SINGULAR CHILD  WALKED TO DISTAL_SINGULAR HOUSE:LOCATIVE`
+- Language: **rosoo auta  myuzotohi hyanta zattakizen bomasu**
+- Gloss: `PROXIMAL_SINGULAR CHILD  WALK-PST TO DISTAL_SINGULAR HOUSE:LOCATIVE`
 - Status: `ok`
 
 ### Translation
 - English: Are you hungry?
-- Language: **pijudic one uuge takinak**
+- Language: **pijudic one uuge dezu**
 - Gloss: `2SG HUNGRY BE (TEMPORARY STATE) Q`
 - Status: `ok`
 
@@ -134,8 +135,8 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: The woman and the man are talking.
-- Language: **wadede nyumumu anchita  wamatoyoru**
-- Gloss: `WOMAN.PL AND MAN  TALKING-PROG`
+- Language: **wade yamasu anchita  wamazem**
+- Gloss: `WOMAN AND MAN  TALK-PROG`
 - Status: `ok`
 
 ### Translation
@@ -152,13 +153,13 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: Two children played in the garden.
-- Language: **izumono autade  paaza puwozen kyogemy**
-- Gloss: `TWO CHILD.PL  PLAYED IN GARDEN:LOCATIVE`
+- Language: **izumono autade  tadorotahi puwozen kyogemy**
+- Gloss: `TWO CHILD.PL  PLAY-PST IN GARDEN:LOCATIVE`
 - Status: `ok`
 
 ### Translation
 - English: A Tiger wearing a bell will starve.
-- Language: **daputte niumasu zumatamashi kotatas  udesetta**
+- Language: **hitades niumasu zumatamashi kotatas  udesetta**
 - Gloss: `WEARING-PTCP BELL:ACCUSATIVE TIGER  STARVE-FUT`
 - Status: `ok`
 
@@ -170,14 +171,14 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: The sun is shining.
-- Language: **datta  wamajizeyur**
-- Gloss: `SUN  SHINING-PROG`
+- Language: **datta  wamatochi**
+- Gloss: `SUN  SHINE-PROG`
 - Status: `ok`
 
 ### Translation
 - English: The sun shone.
-- Language: **datta  tochi**
-- Gloss: `SUN  SHINE`
+- Language: **datta  tochihi**
+- Gloss: `SUN  SHINE-PST`
 - Status: `ok`
 
 ### Translation
@@ -188,14 +189,14 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: The sun has been shining.
-- Language: **datta  aripyam jizeyur**
-- Gloss: `SUN  SHINING-PERF`
+- Language: **datta  usarise wamatochi**
+- Gloss: `SUN  SHINE-PROG-PERF`
 - Status: `ok`
 
 ### Translation
 - English: The sun is shining again.
-- Language: **datta  wamajizeyur aru**
-- Gloss: `SUN  SHINING-PROG AGAIN`
+- Language: **datta  wamatochi aru**
+- Gloss: `SUN  SHINE-PROG AGAIN`
 - Status: `ok`
 
 ### Translation
@@ -218,14 +219,14 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: The sun is rising now.
-- Language: **datta  wamodeshi osomas**
-- Gloss: `SUN  RISING-PROG NOW`
+- Language: **datta  wamasewapyu osomas**
+- Gloss: `SUN  RISE-PROG NOW`
 - Status: `ok`
 
 ### Translation
 - English: All the people shouted.
-- Language: **kotta hozuarede  kotakit**
-- Gloss: `ALL PERSON.PL  SHOUTED`
+- Language: **kotta hozuarede  hituruhi**
+- Gloss: `ALL PERSON.PL  SHOUT-PST`
 - Status: `ok`
 
 ### Translation
@@ -248,44 +249,44 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: The kitten jumped up.
-- Language: **anahittasu  wozuno yaroo**
-- Gloss: `KITTEN  JUMPED UP`
+- Language: **anahittasu  byawohi yaroo**
+- Gloss: `KITTEN  JUMP-PST UP`
 - Status: `ok`
 
 ### Translation
 - English: The kitten jumped onto the table.
-- Language: **anahittasu  wozuno fumazen anakis**
-- Gloss: `KITTEN  JUMPED ONTO TABLE:LOCATIVE`
+- Language: **anahittasu  byawohi fumazen anakis**
+- Gloss: `KITTEN  JUMP-PST ONTO TABLE:LOCATIVE`
 - Status: `ok`
 
 ### Translation
 - English: My little kitten walked away.
-- Language: **altadatte yokunta anahittasu  qiamash zunseda**
-- Gloss: `1SG-GEN LITTLE KITTEN  WALKED AWAY`
+- Language: **altadatte yokunta anahittasu  myuzotohi zunseda**
+- Gloss: `1SG-GEN LITTLE KITTEN  WALK-PST AWAY`
 - Status: `ok`
 
 ### Translation
 - English: It’s raining.
-- Language: **hitou  wamanatogyu**
-- Gloss: `3SG  RAINING-PROG`
+- Language: **hitou  wamawahedesc**
+- Gloss: `3SG  RAIN-PROG`
 - Status: `ok`
 
 ### Translation
 - English: The rain came down.
-- Language: **wahedes  ajimasu myoto**
-- Gloss: `RAIN  COME DOWN`
+- Language: **wahedes  ajimasuhi myoto**
+- Gloss: `RAIN  COME-PST DOWN`
 - Status: `ok`
 
 ### Translation
 - English: The kitten is playing in the rain.
-- Language: **anahittasu  wamasujipyo wahedesazen kyogemy**
-- Gloss: `KITTEN  PLAYING-PROG IN RAIN:LOCATIVE`
+- Language: **anahittasu  wamatadorot wahedesazen kyogemy**
+- Gloss: `KITTEN  PLAY-PROG IN RAIN:LOCATIVE`
 - Status: `ok`
 
 ### Translation
 - English: The rain has stopped.
-- Language: **wahedes  aripyam fuyawa**
-- Gloss: `RAIN  STOPPED-PERF`
+- Language: **wahedes  usarise wattebuhi**
+- Gloss: `RAIN  STOP-PST-PERF`
 - Status: `ok`
 
 ### Translation
@@ -302,14 +303,14 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: Once wild animals lived here.
-- Language: **jinanak hekyade  toa chokimy nihange**
-- Gloss: `WILD ANIMAL.PL  LIVED ONCE HERE`
+- Language: **jinanak hekyade  uhezenrahi chokimy nihange**
+- Gloss: `WILD ANIMAL.PL  LIVE-PST ONCE HERE`
 - Status: `ok`
 
 ### Translation
 - English: Slowly she looked around.
-- Language: **hitou  gyoshit gozota shinaki**
-- Gloss: `3SG  LOOKED SLOW AROUND`
+- Language: **hitou  karisejahi gozota shinaki**
+- Gloss: `3SG  LOOK-PST SLOW AROUND`
 - Status: `ok`
 
 ### Translation
@@ -320,13 +321,13 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: Let’s go!
-- Language: **usarise zahasu  suhyano**
+- Language: **kyaputa zahasu  suhyano**
 - Gloss: `1PL  GO-IMP HORT`
 - Status: `ok`
 
 ### Translation
 - English: You should go.
-- Language: **pijudic  biteheg hyano**
+- Language: **pijudic  tsuarim hyano**
 - Gloss: `2SG  GO-MOD`
 - Status: `ok`
 
@@ -344,14 +345,14 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: The baby’s ball has rolled away.
-- Language: **altaltahinmasu ode  aripyam satteyu zunseda**
-- Gloss: `BABY:GENITIVE-GEN BALL  ROLLED-PERF AWAY`
+- Language: **altaltahinmasu ode  usarise yujuhi zunseda**
+- Gloss: `BABY:GENITIVE-GEN BALL  ROLL-PST-PERF AWAY`
 - Status: `ok`
 
 ### Translation
 - English: The two boys are working together.
-- Language: **izumono yojiishade  wamakanatar hihono**
-- Gloss: `TWO BOY.PL  WORKING-PROG TOGETHER`
+- Language: **izumono yojiishade  wamatetent hihono**
+- Gloss: `TWO BOY.PL  WORK-PROG TOGETHER`
 - Status: `ok`
 
 ### Translation
@@ -362,13 +363,13 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: Lovely flowers are growing everywhere.
-- Language: **semaside  wamahajifus zunbyoy monripi**
-- Gloss: `FLOWER.PL  GROWING-PROG LOVELY EVERYWHERE`
+- Language: **semaside  wamabekoto zunbyoy monripi**
+- Gloss: `FLOWER.PL  GROW-PROG LOVELY EVERYWHERE`
 - Status: `ok`
 
 ### Translation
 - English: We should eat more slowly.
-- Language: **zahasu  biteheg byasi dezu gozota**
+- Language: **zahasu  tsuarim byasi desopyo gozota**
 - Gloss: `1PL  EAT-MOD SLOW`
 - Status: `ok`
 
@@ -380,7 +381,7 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: You must write more neatly.
-- Language: **pijudic  biteheg aryuzem dezu eshazej**
+- Language: **pijudic  tsuarim aryuzem desopyo eshazej**
 - Gloss: `2SG  WRITE-MOD NEAT`
 - Status: `ok`
 
@@ -392,8 +393,8 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: Henry’s dog is lost.
-- Language: **altaltochuzu janni  danta**
-- Gloss: `HENRY:GENITIVE-GEN DOG  LOSE`
+- Language: **altaltochuzu janni  dantahi**
+- Gloss: `HENRY:GENITIVE-GEN DOG  LOSE-PST`
 - Status: `ok`
 
 ### Translation
@@ -416,123 +417,123 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: The children ran after Jack.
-- Language: **autade  henuzuk kyonhyazen soo**
-- Gloss: `CHILD.PL  RUN AFTER JACK:LOCATIVE`
+- Language: **autade  henuzukahi kyonhyazen soo**
+- Gloss: `CHILD.PL  RUN-PST AFTER JACK:LOCATIVE`
 - Status: `ok`
 
 ### Translation
 - English: I can play after school.
-- Language: **adatte  hia tadorot shohekyazen soo**
+- Language: **adatte  biteheg tadorot shohekyazen soo**
 - Gloss: `1SG  PLAY-MOD AFTER SCHOOL:LOCATIVE`
 - Status: `ok`
 
 ### Translation
 - English: We went to the village for a visit.
-- Language: **zahasu  hyano aribyumazen bomasu erenyomazen woutte**
-- Gloss: `1PL  GO TO VILLAGE:LOCATIVE FOR VISIT:LOCATIVE`
+- Language: **zahasu  hyanohi aribyumazen bomasu erenyomazen woutte**
+- Gloss: `1PL  GO-PST TO VILLAGE:LOCATIVE FOR VISIT:LOCATIVE`
 - Status: `ok`
 
 ### Translation
 - English: We arrived at the river.
-- Language: **zahasu  otasi bayuyosazen waminai**
-- Gloss: `1PL  ARRIVED AT RIVER:LOCATIVE`
+- Language: **zahasu  altisahi bayuyosazen waminai**
+- Gloss: `1PL  ARRIVE-PST AT RIVER:LOCATIVE`
 - Status: `ok`
 
 ### Translation
 - English: I have been waiting for you.
-- Language: **adatte  aripyam iyoro pijudic woutte**
-- Gloss: `1SG  WAITING-PERF FOR 2SG`
+- Language: **adatte  usarise wamajudata pijudic woutte**
+- Gloss: `1SG  WAIT-PROG-PERF FOR 2SG`
 - Status: `ok`
 
 ### Translation
 - English: The campers sat around the fire.
-- Language: **doyajimade zumapyahyat jietema shinaki**
-- Gloss: `CAMPER.PL FIRE:ACCUSATIVE SIT AROUND`
+- Language: **doyajim zumapyahyat jietemahi shinaki**
+- Gloss: `CAMPER FIRE:ACCUSATIVE SIT-PST AROUND`
 - Status: `ok`
 
 ### Translation
 - English: A little girl with a kitten sat near me.
-- Language: **yokunta colevit anahittasu  jietema adatte kyoshuc**
-- Gloss: `LITTLE GIRL KITTEN  SIT NEAR 1SG`
+- Language: **yokunta colevit anahittasu  jietemahi adatte kyoshuc**
+- Gloss: `LITTLE GIRL KITTEN  SIT-PST NEAR 1SG`
 - Status: `ok`
 
 ### Translation
 - English: The child waited at the door for her father.
-- Language: **auta  higoyu jinakyuzen waminai altahitou quatezen woutte**
-- Gloss: `CHILD  WAITED AT DOOR:LOCATIVE FOR 3SG-GEN FATHER:LOCATIVE`
+- Language: **auta  judatahi jinakyuzen waminai altahitou quatezen woutte**
+- Gloss: `CHILD  WAIT-PST AT DOOR:LOCATIVE FOR 3SG-GEN FATHER:LOCATIVE`
 - Status: `ok`
 
 ### Translation
 - English: Yesterday the oldest girl in the village lost her kitten.
-- Language: **nigyuzo colevit aribyum altahitou zumanahittasu danta akishid**
-- Gloss: `OLDEST GIRL VILLAGE 3SG-GEN KITTEN:ACCUSATIVE LOSE YESTERDAY`
+- Language: **nigyuzo colevit aribyum altahitou zumanahittasu dantahi akishid**
+- Gloss: `OLDEST GIRL VILLAGE 3SG-GEN KITTEN:ACCUSATIVE LOSE-PST YESTERDAY`
 - Status: `ok`
 
 ### Translation
 - English: Were you born in this village?
-- Language: **pijudic  hinakarahi rosoo aribyumazen kyogemy takinak**
-- Gloss: `2SG  BEAR IN PROXIMAL_SINGULAR VILLAGE:LOCATIVE Q`
+- Language: **pijudic  hinakarahi rosoo aribyumazen kyogemy dezu**
+- Gloss: `2SG  BEAR-PST IN PROXIMAL_SINGULAR VILLAGE:LOCATIVE Q`
 - Status: `ok`
 
 ### Translation
 - English: Can your brother dance well?
-- Language: **altapijudic ata  hia yahyuc nayojih takinak**
+- Language: **altapijudic ata  biteheg yahyuc nayojih dezu**
 - Gloss: `2SG-GEN BROTHER  DANCE-MOD WELL Q`
 - Status: `ok`
 
 ### Translation
 - English: Did the man leave?
-- Language: **anchita  heyanyohi takinak**
-- Gloss: `MAN  LEAVE Q`
+- Language: **anchita  heyanyohi dezu**
+- Gloss: `MAN  LEAVE-PST Q`
 - Status: `ok`
 
 ### Translation
 - English: Is your sister coming for you?
-- Language: **altapijudic ohyohe  wamapanochi pijudic woutte takinak**
-- Gloss: `2SG-GEN SISTER  COMING-PROG FOR 2SG Q`
+- Language: **altapijudic ohyohe  ajimasu pijudic woutte dezu**
+- Gloss: `2SG-GEN SISTER  COME FOR 2SG Q`
 - Status: `ok`
 
 ### Translation
 - English: Can you come tomorrow?
-- Language: **pijudic  hia ajimasu zui takinak**
+- Language: **pijudic  biteheg ajimasu zui dezu**
 - Gloss: `2SG  COME-MOD TOMORROW Q`
 - Status: `ok`
 
 ### Translation
 - English: Have the neighbors gone away for the winter?
-- Language: **harimasade  hyano zunseda tsunazen woutte takinak**
+- Language: **harimasade  hyano zunseda tsunazen woutte dezu**
 - Gloss: `NEIGHBOR.PL  GO AWAY FOR WINTER:LOCATIVE Q`
 - Status: `ok`
 
 ### Translation
 - English: Does the robin sing in the rain?
-- Language: **dezu  zuheazoni wahedesazen kyogemy takinak**
+- Language: **dezu  zuheazoni wahedesazen kyogemy dezu**
 - Gloss: `ROBIN  SING IN RAIN:LOCATIVE Q`
 - Status: `ok`
 
 ### Translation
 - English: Are you going with us to the concert?
-- Language: **pijudic  wamawahe zahasu zaku watteyazen bomasu takinak**
-- Gloss: `2SG  GOING-PROG WITH 1PL TO CONCERT:LOCATIVE Q`
+- Language: **pijudic  hyano zahasu zaku watteyazen bomasu dezu**
+- Gloss: `2SG  GO WITH 1PL TO CONCERT:LOCATIVE Q`
 - Status: `ok`
 
 ### Translation
 - English: Have you ever travelled in the jungle?
-- Language: **pijudic  somasia anata heonozen kyogemy takinak**
-- Gloss: `2SG  TRAVELLED EVER IN JUNGLE:LOCATIVE Q`
+- Language: **pijudic  cumyonahi anata heonozen kyogemy dezu**
+- Gloss: `2SG  TRAVEL-PST EVER IN JUNGLE:LOCATIVE Q`
 - Status: `ok`
 
 ### Translation
 - English: We sailed down the river for several miles.
-- Language: **zahasu zumabayuyos ewamasu myoto chitaaz sazojikadezen woutte**
-- Gloss: `1PL RIVER:ACCUSATIVE SAILED DOWN FOR SEVERAL MILE.PL:LOCATIVE`
+- Language: **zahasu zumabayuyos wohyohi myoto chitaaz sazojikadezen woutte**
+- Gloss: `1PL RIVER:ACCUSATIVE SAIL-PST DOWN FOR SEVERAL MILE.PL:LOCATIVE`
 - Status: `ok`
 
 ### Translation
 - English: Everybody knows about hunting.
-- Language: **[PARTIAL]**
-- Gloss: `everybody.NOM KNOW`
-- Status: `partial`
+- Language: **omo oobyode  tozu shitibe**
+- Gloss: `EVERYBODY KNOW.PL  HUNT ABOUT`
+- Status: `ok`
 
 ### Translation
 - English: On a Sunny morning after the solstice we started for the mountains.
@@ -542,15 +543,15 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: Tom laughed at the monkey’s tricks.
-- Language: **gyawa  waboku altaltanyumumu soryodezen waminai**
-- Gloss: `TOM  LAUGHED AT MONKEY:GENITIVE-GEN TRICK.PL:LOCATIVE`
+- Language: **gyawa  zerokuhi altaltanyumumu soryodezen waminai**
+- Gloss: `TOM  LAUGH-PST AT MONKEY:GENITIVE-GEN TRICK.PL:LOCATIVE`
 - Status: `ok`
 
 ### Translation
 - English: An old man with a walking stick stood beside the fence.
-- Language: **monyuzu anchita arachao zumoopyom najimas netozen zutsu**
-- Gloss: `OLD MAN STICK STAND:ACCUSATIVE WALKING BESIDE FENCE:LOCATIVE`
-- Status: `ok`
+- Language: **[PARTIAL]**
+- Gloss: `WALKING-PTCP OLD MAN  STAND-PST BESIDE FENCE:LOCATIVE`
+- Status: `partial`
 
 ### Translation
 - English: The squirrel’s nest was hidden by drooping boughs.
@@ -560,39 +561,39 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: The little seeds waited patiently under the snow for the warm spring sun.
-- Language: **yokunta geheikade  higoyu deshosa wokuruzen bamasub daputte payoto zumadatta shubezen woutte**
-- Gloss: `LITTLE SEED.PL  WAITED PATIENT UNDER SNOW:LOCATIVE FOR SPRING-PTCP SUN:ACCUSATIVE WARM:LOCATIVE`
+- Language: **yokunta geheikade  judatahi deshosa wokuruzen bamasub hitades payoto zumadatta shubezen woutte**
+- Gloss: `LITTLE SEED.PL  WAIT-PST PATIENT UNDER SNOW:LOCATIVE FOR SPRING-PTCP SUN:ACCUSATIVE WARM:LOCATIVE`
 - Status: `ok`
 
 ### Translation
 - English: Many little girls with wreaths of flowers on their heads danced around the bonfire.
 - Language: **[PARTIAL]**
-- Gloss: `LITTLE MANY WREATH GIRL FLOWER.PL BONFIRE:ACCUSATIVE HEAD AROUND`
+- Gloss: `3PL-GEN little girl.NOM bonfire.ACC HEAD`
 - Status: `partial`
 
 ### Translation
 - English: The cover of the basket fell to the floor.
-- Language: **kariish nio  binseki chazuozen bomasu**
-- Gloss: `COVER BASKET  FALL TO FLOOR:LOCATIVE`
+- Language: **kariish nio  binsekihi chazuozen bomasu**
+- Gloss: `COVER BASKET  FALL-PST TO FLOOR:LOCATIVE`
 - Status: `ok`
 
 ### Translation
 - English: The first boy in the line stopped at the entrance.
-- Language: **yojiish myozohe  fuyawa otewo gozahozen waminai**
-- Gloss: `BOY LINE  STOPPED FIRST AT ENTRANCE:LOCATIVE`
+- Language: **yojiish myozohe  wattebuhi otewo gozahozen waminai**
+- Gloss: `BOY LINE  STOP-PST FIRST AT ENTRANCE:LOCATIVE`
 - Status: `ok`
 
 ### Translation
 - English: On the top of the hill in a little hut lived a wise old woman.
-- Language: **yokunta kotimas gudesu bya monyuzu nakiwa zumawade toa**
-- Gloss: `LITTLE HILL TOP HUT OLD WISE WOMAN:ACCUSATIVE LIVED`
-- Status: `ok`
+- Language: **[PARTIAL]**
+- Gloss: `little top.NOM old wise.ACC LIVED`
+- Status: `partial`
 
 ### Translation
 - English: During our residence in the country we often walked in the pastures.
-- Language: **arederu kyaha  qiamash gufucur chayuaudezen kyogemy**
-- Gloss: `RESIDENCE COUNTRY  WALKED OFTEN IN PASTURE.PL:LOCATIVE`
-- Status: `ok`
+- Language: **[PARTIAL]**
+- Gloss: `1PL-GEN residence.NOM WALKED IN pasture.LOC`
+- Status: `partial`
 
 ### Translation
 - English: When will your guests from the city arrive?
@@ -614,14 +615,14 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: Among the wheat grew tall red poppies.
-- Language: **ogyasu tomasut aran zumawaturude bekoto**
-- Gloss: `WHEAT RED TALL POPPY.PL:ACCUSATIVE GROW`
+- Language: **ogyasu tomasut aran zumawaturu bekotohi**
+- Gloss: `WHEAT RED TALL POPPY:ACCUSATIVE GROW-PST`
 - Status: `ok`
 
 ### Translation
 - English: The strong roots of the oak trees were torn from the ground.
 - Language: **goha apyogyo hogyose fusokumade  kaguyuyahi kyonezen ehogoz**
-- Gloss: `OAK STRONG ROOT TREE.PL  TEAR FROM GROUND:LOCATIVE`
+- Gloss: `OAK STRONG ROOT TREE.PL  TEAR-PST FROM GROUND:LOCATIVE`
 - Status: `ok`
 
 ### Translation
@@ -632,20 +633,20 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: The west wind blew across my face like a friendly caress.
-- Language: **[PARTIAL]**
-- Gloss: `WEST  WIND ACROSS 1SG-GEN FACE:LOCATIVE LIKE FRIENDLY CARESS.PL:LOCATIVE`
-- Status: `partial`
+- Language: **fuka wanyo  heyohi altadatte hyumasezen byodo chryazugy moshimazen omarima**
+- Gloss: `WEST WIND  BLOW-PST ACROSS 1SG-GEN FACE:LOCATIVE LIKE FRIENDLY CARESS:LOCATIVE`
+- Status: `ok`
 
 ### Translation
 - English: The spool of thread rolled across the floor.
-- Language: **kototo zudatte  satteyu chazuozen byodo**
-- Gloss: `SPOOL THREAD  ROLLED ACROSS FLOOR:LOCATIVE`
+- Language: **kototo zudatte  yujuhi chazuozen byodo**
+- Gloss: `SPOOL THREAD  ROLL-PST ACROSS FLOOR:LOCATIVE`
 - Status: `ok`
 
 ### Translation
 - English: A box of growing plants stood in the Window.
-- Language: **chauzom mubyo zumoopyom hajifus sechumazen kyogemy**
-- Gloss: `BOX PLANT STAND:ACCUSATIVE GROWING IN WINDOW:LOCATIVE`
+- Language: **hitades hajifus zumahipukin chauzom  kandehi sechumazen kyogemy**
+- Gloss: `GROWING-PTCP PLANT:ACCUSATIVE BOX  STAND-PST IN WINDOW:LOCATIVE`
 - Status: `ok`
 
 ### Translation
@@ -686,38 +687,38 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: The little girl seemed lonely.
-- Language: **yokunta colevit  domasut eshonma**
-- Gloss: `LITTLE GIRL  SEEMED LONE`
+- Language: **yokunta colevit  anmasuyahi eshonma**
+- Gloss: `LITTLE GIRL  SEEM-PST LONE`
 - Status: `ok`
 
 ### Translation
 - English: The little boy’s father had once been a sailor.
 - Language: **altayokunta altayojiish quate zumawohyoer uugehi chokimy**
-- Gloss: `LITTLE BOY:GENITIVE-GEN FATHER SAILOR:ACCUSATIVE BE (TEMPORARY STATE) ONCE`
+- Gloss: `LITTLE BOY:GENITIVE-GEN FATHER SAILOR:ACCUSATIVE BE (TEMPORARY STATE)-PST ONCE`
 - Status: `ok`
 
 ### Translation
 - English: I have lost my blanket.
-- Language: **adatte altadatte zumaguhodod danta**
-- Gloss: `1SG 1SG-GEN BLANKET:ACCUSATIVE LOSE`
+- Language: **adatte altadatte zumaguhodod dantahi**
+- Gloss: `1SG 1SG-GEN BLANKET:ACCUSATIVE LOSE-PST`
 - Status: `ok`
 
 ### Translation
 - English: A robin has built his nest in the apple tree.
-- Language: **dezu altahitou zumashidara puzusan abyoede fusokumazen kyogemy**
-- Gloss: `ROBIN 3SG-GEN NEST:ACCUSATIVE BUILD IN APPLE TREE:LOCATIVE`
+- Language: **dezu altahitou zumashidara puzusanahi abyoede fusokumazen kyogemy**
+- Gloss: `ROBIN 3SG-GEN NEST:ACCUSATIVE BUILD-PST IN APPLE TREE:LOCATIVE`
 - Status: `ok`
 
 ### Translation
 - English: At noon we ate our lunch by the roadside.
-- Language: **zosede altazahasu zumadasusaz byasi oyatezen wodasu**
-- Gloss: `NOON 1PL-GEN LUNCH:ACCUSATIVE EAT BY ROADSIDE:LOCATIVE`
+- Language: **zosede altazahasu zumadasusaz byasihi oyatezen wodasu**
+- Gloss: `NOON 1PL-GEN LUNCH:ACCUSATIVE EAT-PST BY ROADSIDE:LOCATIVE`
 - Status: `ok`
 
 ### Translation
 - English: Mr. Jones made a knife for his little boy.
-- Language: **lonyade zumashawo nyuzum altahitou yokunta yojiishazen woutte**
-- Gloss: `JONE.PL KNIFE:ACCUSATIVE MAKE FOR 3SG-GEN LITTLE BOY:LOCATIVE`
+- Language: **lonya zumashawo nyuzumahi altahitou yokunta yojiishazen woutte**
+- Gloss: `JONE KNIFE:ACCUSATIVE MAKE-PST FOR 3SG-GEN LITTLE BOY:LOCATIVE`
 - Status: `ok`
 
 ### Translation
@@ -734,37 +735,37 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: Have all the leaves fallen from the tree?
-- Language: **kotta hikinarade  binseki fusokumazen ehogoz takinak**
+- Language: **kotta hikinarade  binseki fusokumazen ehogoz dezu**
 - Gloss: `ALL LEAF.PL  FALL FROM TREE:LOCATIVE Q`
 - Status: `ok`
 
 ### Translation
 - English: Will you be ready on time?
-- Language: **pijudic seku udeuuge lebranozen gonsu takinak**
+- Language: **pijudic seku udeuuge lebranozen gonsu dezu**
 - Gloss: `2SG READY BE (TEMPORARY STATE)-FUT ON TIME:LOCATIVE Q`
 - Status: `ok`
 
 ### Translation
 - English: Will you send this message for me?
-- Language: **pijudic rosoo zumufuzezu udeimi adatte woutte takinak**
+- Language: **pijudic rosoo zumufuzezu udeimi adatte woutte dezu**
 - Gloss: `2SG PROXIMAL_SINGULAR MESSAGE:ACCUSATIVE SEND-FUT FOR 1SG Q`
 - Status: `ok`
 
 ### Translation
 - English: Are you waiting for me?
-- Language: **pijudic  wamiyoro adatte woutte takinak**
-- Gloss: `2SG  WAITING-PROG FOR 1SG Q`
+- Language: **pijudic  judata adatte woutte dezu**
+- Gloss: `2SG  WAIT FOR 1SG Q`
 - Status: `ok`
 
 ### Translation
 - English: Is this the first kitten of the litter?
-- Language: **rosoo desuae zumogyu anahittasu takinak**
+- Language: **rosoo desuae zumogyu anahittasu dezu**
 - Gloss: `THIS first.NOM litter.ACC KITTEN Q`
 - Status: `ok`
 
 ### Translation
 - English: Are these shoes too big for you?
-- Language: **quibuin byonode yojizoz uuge oesu pijudic woutte takinak**
+- Language: **quibuin byonode yojizoz uuge oesu pijudic woutte dezu**
 - Gloss: `PROXIMAL_PLURAL SHOE.PL BIG BE (TEMPORARY STATE) TOO FOR 2SG Q`
 - Status: `ok`
 
@@ -806,9 +807,9 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: Be careful.
-- Language: **[PARTIAL]**
-- Gloss: `[PARTIAL]`
-- Status: `partial`
+- Language: **suuuge jiajitoda**
+- Gloss: `BE (TEMPORARY STATE)-IMP CAREFUL`
+- Status: `ok`
 
 ### Translation
 - English: Have some tea.
@@ -819,7 +820,7 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 ### Translation
 - English: Pip and his dog were great friends.
 - Language: **janni nowahya uugehi ountul**
-- Gloss: `DOG GREAT BE (TEMPORARY STATE) FRIEND`
+- Gloss: `DOG GREAT BE (TEMPORARY STATE)-PST FRIEND`
 - Status: `ok`
 
 ### Translation
@@ -836,32 +837,32 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: They opened all the doors and windows.
-- Language: **hyapyob kotta zumajinakyude nyumumu zumasechumade ceda**
-- Gloss: `3PL ALL DOOR.PL:ACCUSATIVE AND WINDOW.PL:ACCUSATIVE OPENED`
+- Language: **hyapyob kotta zumajinakyude yamasu zumasechumade konahi**
+- Gloss: `3PL ALL DOOR.PL:ACCUSATIVE AND WINDOW.PL:ACCUSATIVE OPEN-PST`
 - Status: `ok`
 
 ### Translation
 - English: He is small, but strong.
-- Language: **[PARTIAL]**
-- Gloss: `3SG  BE (TEMPORARY STATE)`
-- Status: `partial`
+- Language: **hitou jijocho hia apyogyo uuge**
+- Gloss: `3SG SMALL BUT STRONG BE (TEMPORARY STATE)`
+- Status: `ok`
 
 ### Translation
 - English: Is this tree an oak or a maple?
-- Language: **rosoo fusokum zumanemashade yamasu zumatissi uuge takinak**
-- Gloss: `PROXIMAL_SINGULAR TREE OAK.PL:ACCUSATIVE OR MAPLE:ACCUSATIVE BE (TEMPORARY STATE) Q`
+- Language: **rosoo fusokum zumanemasha luporu zumatissi uuge dezu**
+- Gloss: `PROXIMAL_SINGULAR TREE OAK:ACCUSATIVE OR MAPLE:ACCUSATIVE BE (TEMPORARY STATE) Q`
 - Status: `ok`
 
 ### Translation
 - English: Does the sky look blue or gray?
-- Language: **[PARTIAL]**
-- Gloss: `SKY  LOOK Q`
-- Status: `partial`
+- Language: **ozakiz deshito luporu defuode karisej dezu**
+- Gloss: `SKY BLUE OR GRAY LOOK Q`
+- Status: `ok`
 
 ### Translation
 - English: Come with your father or mother.
-- Language: **suajimasu altapijudic quatedezen yamasu sokamasazen zaku**
-- Gloss: `COME-IMP WITH 2SG-GEN FATHER.PL:LOCATIVE OR MOTHER:LOCATIVE`
+- Language: **suajimasu altapijudic quatezen luporu sokamasazen zaku**
+- Gloss: `COME-IMP WITH 2SG-GEN FATHER:LOCATIVE OR MOTHER:LOCATIVE`
 - Status: `ok`
 
 ### Translation
@@ -872,26 +873,26 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: He played a tune on his wonderful flute.
-- Language: **hitou zumanyahasu paaza altahitou hodoru darenaizen gonsu**
-- Gloss: `3SG TUNE:ACCUSATIVE PLAYED ON 3SG-GEN WONDERFUL FLUTE:LOCATIVE`
+- Language: **hitou zumanyahasu tadorotahi altahitou hodoru darenaizen gonsu**
+- Gloss: `3SG TUNE:ACCUSATIVE PLAY-PST ON 3SG-GEN WONDERFUL FLUTE:LOCATIVE`
 - Status: `ok`
 
 ### Translation
 - English: Toward the end of August the days grow much shorter.
-- Language: **yajam hayude fatade dewa bekoto**
-- Gloss: `AUGUST END DAY.PL SHORTER GROW`
-- Status: `ok`
+- Language: **[PARTIAL]**
+- Gloss: `end.NOM GROW`
+- Status: `partial`
 
 ### Translation
 - English: A company of soldiers marched over the hill and across the meadow.
-- Language: **atakyaa hezemasade  humasub kotimasazen ogyude diimasuzen byodo**
-- Gloss: `COMPANY SOLDIER.PL  MARCHED OVER HILL:LOCATIVE ACROSS MEADOW:LOCATIVE`
+- Language: **atakyaa hezemasade  onarehi kotimasazen ogyude diimasuzen byodo**
+- Gloss: `COMPANY SOLDIER.PL  MARCH-PST OVER HILL:LOCATIVE ACROSS MEADOW:LOCATIVE`
 - Status: `ok`
 
 ### Translation
 - English: The first part of the story is very interesting.
-- Language: **hishiis mororyu  wamayam otewo rimuzua**
-- Gloss: `PART STORY  INTERESTING-PROG FIRST VERY`
+- Language: **hishiis mororyu  yam otewo rimuzua**
+- Gloss: `PART STORY  INTERESTING FIRST VERY`
 - Status: `ok`
 
 ### Translation
@@ -902,26 +903,26 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: The baby clapped her hands and laughed in glee.
-- Language: **hinmasu altahitou zumurude asunwa nyumumu hinmasu waboku wazehamazen kyogemy**
-- Gloss: `BABY 3SG-GEN HAND.PL:ACCUSATIVE CLAPPED AND BABY  LAUGHED IN GLEE:LOCATIVE`
+- Language: **hinmasu altahitou zumurude newahi yamasu hinmasu zerokuhi wazehamazen kyogemy**
+- Gloss: `BABY 3SG-GEN HAND.PL:ACCUSATIVE CLAP-PST AND BABY  LAUGH-PST IN GLEE:LOCATIVE`
 - Status: `ok`
 
 ### Translation
 - English: Stop your game and be quiet.
-- Language: **suwattebu altapijudic zumasohehyu nyumumu suuge yotte**
+- Language: **suwattebu altapijudic zumasohehyu yamasu suuuge yotte**
 - Gloss: `STOP-IMP 2SG-GEN GAME:ACCUSATIVE AND BE (TEMPORARY STATE)-IMP QUIET`
 - Status: `ok`
 
 ### Translation
 - English: The sound of the drums grew louder and louder.
-- Language: **[PARTIAL]**
-- Gloss: `DRUM.PL  GROW SOUND`
-- Status: `partial`
+- Language: **chumash hitayuz yamasu hitayuz bekotohi hiwomas**
+- Gloss: `DRUM LOUDER AND LOUDER GROW-PST SOUND`
+- Status: `ok`
 
 ### Translation
 - English: Do you like summer or winter better?
 - Language: **[PARTIAL]**
-- Gloss: `2SG SUMMER.PL:ACCUSATIVE OR WINTER:ACCUSATIVE LIKE Q`
+- Gloss: `2SG SUMMER:ACCUSATIVE OR WINTER:ACCUSATIVE LIKE Q`
 - Status: `partial`
 
 ### Translation
@@ -932,14 +933,14 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: They popped corn, and then sat around the fire and ate it.
-- Language: **hyapyob zumazuyojid kosohyo nyumumu hyapyob zumapyahyat jietema wantter shinaki nyumumu hyapyob hitou byasi**
-- Gloss: `3PL CORN:ACCUSATIVE POPPED AND 3PL FIRE:ACCUSATIVE SIT THEN AROUND AND 3PL 3SG EAT`
+- Language: **hyapyob zumazuyojid kosohyo yamasu hyapyob zumapyahyat jietemahi wantter shinaki yamasu hyapyob hitou byasihi**
+- Gloss: `3PL CORN:ACCUSATIVE POPPED AND 3PL FIRE:ACCUSATIVE SIT-PST THEN AROUND AND 3PL 3SG EAT-PST`
 - Status: `ok`
 
 ### Translation
 - English: They won the first two games, but lost the last one.
-- Language: **hyapyob izumono zumasohehyude wosete otewo luporu hyapyob bayoto zumakanyama danta**
-- Gloss: `3PL TWO GAME.PL:ACCUSATIVE WIN FIRST BUT 3PL LAST ONE:ACCUSATIVE LOSE`
+- Language: **hyapyob izumono zumasohehyude wosetehi otewo hia hyapyob bayoto zumakanyama dantahi**
+- Gloss: `3PL TWO GAME.PL:ACCUSATIVE WIN-PST FIRST BUT 3PL LAST ONE:ACCUSATIVE LOSE-PST`
 - Status: `ok`
 
 ### Translation
@@ -951,7 +952,7 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 ### Translation
 - English: I awoke early, dressed hastily, and went down to breakfast.
 - Language: **[PARTIAL]**
-- Gloss: `1SG  AWAKE EARLY HASTY AND 1SG  GO DOWN TO BREAKFAST:LOCATIVE`
+- Gloss: `1SG  AWAKE-PST EARLY HASTY AND 1SG  GO-PST DOWN TO BREAKFAST:LOCATIVE`
 - Status: `partial`
 
 ### Translation
@@ -962,9 +963,9 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: This string is too short!
-- Language: **[PARTIAL]**
+- Language: **sumonpyun gihench zumahega**
 - Gloss: `this-IMP short string.ACC`
-- Status: `partial`
+- Status: `ok`
 
 ### Translation
 - English: Oh, dear! the wind has blown my hat away!
@@ -975,14 +976,14 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 ### Translation
 - English: Alas! that news is sad indeed!
 - Language: **[PARTIAL]**
-- Gloss: `NEWS.PL  INDE THAT`
+- Gloss: `NEWS.PL  INDE-PST THAT`
 - Status: `partial`
 
 ### Translation
 - English: Whew! that cold wind freezes my nose!
-- Language: **[PARTIAL]**
+- Language: **jasu wanyo altadatte zumimashim gozema behazun**
 - Gloss: `COLD WIND 1SG-GEN NOSE:ACCUSATIVE FREEZE THAT`
-- Status: `partial`
+- Status: `ok`
 
 ### Translation
 - English: Are you warm enough now?
@@ -993,25 +994,25 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 ### Translation
 - English: They heard the warning too late.
 - Language: **[PARTIAL]**
-- Gloss: `3PL  HEAR TOO`
+- Gloss: `3PL  HEAR-PST TOO`
 - Status: `partial`
 
 ### Translation
 - English: We are a brave people, and love our country.
-- Language: **zahasu zonhyab zumahozuarede uuge nyumumu zahasu altazahasu zumakyaha somne**
+- Language: **zahasu zonhyab zumahozuarede uuge yamasu zahasu altazahasu zumakyaha somne**
 - Gloss: `1PL BRAVE PERSON.PL:ACCUSATIVE BE (TEMPORARY STATE) AND 1PL 1PL-GEN COUNTRY:ACCUSATIVE LOVE`
 - Status: `ok`
 
 ### Translation
 - English: All the children came except Mary.
-- Language: **kotta autade  ajimasu**
-- Gloss: `ALL CHILD.PL  COME`
+- Language: **kotta autade  ajimasuhi**
+- Gloss: `ALL CHILD.PL  COME-PST`
 - Status: `ok`
 
 ### Translation
 - English: Jack seized a handful of pebbles and threw them into the lake.
-- Language: **kyonhya zumadate jara edattedezen hiyopyu nyumumu kyonhya hyapyob dachufu ohesuzen shitagy**
-- Gloss: `JACK HANDFUL:ACCUSATIVE SEIZED OF PEBBLE.PL:LOCATIVE AND JACK 3PL THROW INTO LAKE:LOCATIVE`
+- Language: **kyonhya zumadate jara edattezen hiyopyu yamasu kyonhya hyapyob dachufuhi ohesuzen shitagy**
+- Gloss: `JACK HANDFUL:ACCUSATIVE SEIZED OF PEBBLE:LOCATIVE AND JACK 3PL THROW-PST INTO LAKE:LOCATIVE`
 - Status: `ok`
 
 ### Translation
@@ -1022,8 +1023,8 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: On a fine summer evening, the two old people were sitting outside the door of their cottage.
-- Language: **chupawa eijudes daputte jiono wayamas zumajinakyu izumono monyuzu zumahozuarede wameopyaki altahyapyob ejizen hiyopyu**
-- Gloss: `FINE SUMMER SITTING-PTCP OUTSIDE DOOR:ACCUSATIVE TWO OLD PERSON.PL:ACCUSATIVE EVENING-PROG OF 3PL-GEN COTTAGE:LOCATIVE`
+- Language: **hitades eopyaki izumono monyuzu zumahozuarede chupawa eijudes wayamas zumajinakyu wamajietemahi altahyapyob ejizen hiyopyu**
+- Gloss: `EVENING-PTCP TWO OLD PERSON.PL:ACCUSATIVE FINE SUMMER OUTSIDE DOOR:ACCUSATIVE SIT-PST-PROG OF 3PL-GEN COTTAGE:LOCATIVE`
 - Status: `ok`
 
 ### Translation
@@ -1034,7 +1035,7 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: The river knows the way to the sea.
-- Language: **bayuyos zumodaryo zuchibu chodasuzen bomasu**
+- Language: **bayuyos zumamodaryo zuchibu chodasuzen bomasu**
 - Gloss: `RIVER WAY:ACCUSATIVE KNOW TO SEA:LOCATIVE`
 - Status: `ok`
 
@@ -1058,8 +1059,8 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: We visited my uncle’s village, the largest village in the world.
-- Language: **zahasu altaltantedes monha aribyum zumaribyum jizabyu ryuzabyazen kyogemy**
-- Gloss: `1PL UNCLE:GENITIVE-GEN LARGEST VILLAGE VILLAGE:ACCUSATIVE VISITED IN WORLD:LOCATIVE`
+- Language: **zahasu altaltantedes monha aribyum zumaribyum deshifuhi ryuzabyazen kyogemy**
+- Gloss: `1PL UNCLE:GENITIVE-GEN LARGEST VILLAGE VILLAGE:ACCUSATIVE VISIT-PST IN WORLD:LOCATIVE`
 - Status: `ok`
 
 ### Translation
@@ -1070,14 +1071,14 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: The market begins five minutes earlier this week.
-- Language: **dashiru satte dezu hodabya monpyun nakus zumashihyotade hajiro**
+- Language: **dashiru satte desopyo hodabya monpyun nakus zumashihyotade hajiro**
 - Gloss: `MARKET FIVE EARLY-COMP THIS MINUTE WEEK.PL:ACCUSATIVE BEGIN`
 - Status: `ok`
 
 ### Translation
 - English: Did you find the distance too great?
 - Language: **[PARTIAL]**
-- Gloss: `2SG DISTANCE:ACCUSATIVE FIND TOO Q`
+- Gloss: `2SG DISTANCE:ACCUSATIVE FIND-PST TOO Q`
 - Status: `partial`
 
 ### Translation
@@ -1094,14 +1095,14 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: Here under this tree they gave their guests a splendid feast.
-- Language: **monpyun fusokum altahyapyob nue aus zumarosotte nyopet nihange**
-- Gloss: `THIS TREE 3PL-GEN SPLENDID GUEST FEAST:ACCUSATIVE GIVE HERE`
+- Language: **monpyun fusokum altahyapyob nue aus zumarosotte nyopetahi nihange**
+- Gloss: `THIS TREE 3PL-GEN SPLENDID GUEST FEAST:ACCUSATIVE GIVE-PST HERE`
 - Status: `ok`
 
 ### Translation
 - English: In winter I get up at night, and dress by yellow candlelight.
-- Language: **tsun  zuitasu yaroo dattamadezen nyumumu muntsudezen waminai soma takinakazen wodasu**
-- Gloss: `WINTER  GET UP AT NIGHT.PL:LOCATIVE AND DRESS.PL:LOCATIVE BY YELLOW CANDLELIGHT:LOCATIVE`
+- Language: **tsun  zuitasu yaroo dattamazen yamasu muntsuzen waminai soma takinakazen wodasu**
+- Gloss: `WINTER  GET UP AT NIGHT:LOCATIVE AND DRESS:LOCATIVE BY YELLOW CANDLELIGHT:LOCATIVE`
 - Status: `ok`
 
 ### Translation
@@ -1112,9 +1113,9 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: Be quick or you will be too late.
-- Language: **[PARTIAL]**
-- Gloss: `[PARTIAL]`
-- Status: `partial`
+- Language: **suuuge zakinma luporu suudeada oesu**
+- Gloss: `BE (TEMPORARY STATE)-IMP QUICK OR LATE-FUT-IMP TOO`
+- Status: `ok`
 
 ### Translation
 - English: Will you go with us or wait here?
@@ -1130,7 +1131,7 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: Think first and then act.
-- Language: **susoota otewo nyumumu suaruodat wantter**
+- Language: **susoota otewo yamasu suaruodat wantter**
 - Gloss: `THINK-IMP FIRST AND ACT-IMP THEN`
 - Status: `ok`
 
@@ -1172,9 +1173,9 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: The little girl made the doll’s dress herself.
-- Language: **yokunta colevit altaltakeao zumuntsude nyuzum**
-- Gloss: `LITTLE GIRL DOLL:GENITIVE-GEN DRESS.PL:ACCUSATIVE MAKE`
-- Status: `ok`
+- Language: **[PARTIAL]**
+- Gloss: `LITTLE GIRL DOLL DRESS:ACCUSATIVE MAKE-PST`
+- Status: `partial`
 
 ### Translation
 - English: I hurt myself.
@@ -1191,12 +1192,12 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 ### Translation
 - English: He proved himself trustworthy.
 - Language: **[PARTIAL]**
-- Gloss: `3SG HIMSELF:ACCUSATIVE PROVED`
+- Gloss: `3SG HIMSELF:ACCUSATIVE PROVE-PST`
 - Status: `partial`
 
 ### Translation
 - English: We could see ourselves in the water.
-- Language: **zahasu zumayanade hia karinta autarazen kyogemy**
+- Language: **zahasu zumayanade biteheg karinta autarazen kyogemy**
 - Gloss: `1PL OURSELVES.PL:ACCUSATIVE SEE-MOD IN WATER:LOCATIVE`
 - Status: `ok`
 
@@ -1220,14 +1221,14 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: The dress of the little princess was embroidered with roses, the national flower of the Country.
-- Language: **yokunta muntsu doshude  anfudatahi porugyu gyukyas semasizen zaku kyahazen hiyopyu**
-- Gloss: `LITTLE DRESS PRINCESS.PL  EMBROIDERED WITH NATIONAL ROS FLOWER:LOCATIVE OF COUNTRY:LOCATIVE`
+- Language: **yokunta muntsu doshu  anfudatahi porugyu gyukyas semasizen zaku kyahazen hiyopyu**
+- Gloss: `LITTLE DRESS PRINCESS  EMBROIDERED-PST WITH NATIONAL ROS FLOWER:LOCATIVE OF COUNTRY:LOCATIVE`
 - Status: `ok`
 
 ### Translation
 - English: They wore red caps, the symbol of liberty.
-- Language: **hyapyob tomasut myunai zumayoni deshama wayutozen hiyopyu**
-- Gloss: `3PL RED CAP SYMBOL:ACCUSATIVE WEAR OF LIBERTY:LOCATIVE`
+- Language: **hyapyob tomasut myunai zumayoni deshamahi wayutozen hiyopyu**
+- Gloss: `3PL RED CAP SYMBOL:ACCUSATIVE WEAR-PST OF LIBERTY:LOCATIVE`
 - Status: `ok`
 
 ### Translation
@@ -1238,8 +1239,8 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: All her finery, lace, ribbons, and feathers, was packed away in a trunk.
-- Language: **dullo homagik kotta jizumasade nyumumu chazomade  hyujibehi zunseda jibokujazen kyogemy**
-- Gloss: `LACE FINERY ALL RIBBON.PL AND FEATHER.PL  PACKED AWAY IN TRUNK:LOCATIVE`
+- Language: **dullo homagik kotta jizumasade yamasu chazomade  memyotohi zunseda jibokujazen kyogemy**
+- Gloss: `LACE FINERY ALL RIBBON.PL AND FEATHER.PL  PACK-PST AWAY IN TRUNK:LOCATIVE`
 - Status: `ok`
 
 ### Translation
@@ -1257,7 +1258,7 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 ### Translation
 - English: In our climate the grass remains green all winter.
 - Language: **[PARTIAL]**
-- Gloss: `CLIMATE GRASS.PL GREEN ALL WINTER.PL:ACCUSATIVE REMAIN`
+- Gloss: `CLIMATE GRASS GREEN ALL WINTER.PL:ACCUSATIVE REMAIN`
 - Status: `partial`
 
 ### Translation
@@ -1353,24 +1354,24 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 ### Translation
 - English: I have found the ring I lost.
 - Language: **[PARTIAL]**
-- Gloss: `1SG RING:ACCUSATIVE FIND`
+- Gloss: `1SG ring.ACC FIND-PERF`
 - Status: `partial`
 
 ### Translation
 - English: Play and I will sing.
-- Language: **sutadorot nyumumu sudezuheazoni**
+- Language: **sutadorot yamasu suudezuheazoni**
 - Gloss: `PLAY-IMP AND SING-FUT-IMP`
 - Status: `ok`
 
 ### Translation
 - English: That is the funniest story I ever heard.
-- Language: **fuwosec mororyu  hyujide behazun anata**
-- Gloss: `FUNNIEST STORY  HEAR THAT EVER`
+- Language: **fuwosec mororyu  hyujidehi behazun anata**
+- Gloss: `FUNNIEST STORY  HEAR-PST THAT EVER`
 - Status: `ok`
 
 ### Translation
 - English: She is taller than her brother.
-- Language: **hitou dezu dotte uuge dezu altahitou ata**
+- Language: **hitou desopyo dotte uuge desopyo altahitou ata**
 - Gloss: `3SG TALLER-COMP BE (TEMPORARY STATE) COMP-STD 3SG-GEN BROTHER`
 - Status: `ok`
 
@@ -1382,7 +1383,7 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: Light travels faster than sound.
-- Language: **suyomono uwo zumesara dezu mijulli**
+- Language: **suyomono uwo zumesara desopyo mijulli**
 - Gloss: `LIGHT-IMP TRAVEL FASTER:ACCUSATIVE COMP-STD SOUND`
 - Status: `ok`
 
@@ -1401,13 +1402,13 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 ### Translation
 - English: He was very poor, and with his wife and five children lived in a little low cabin of logs and stones.
 - Language: **[PARTIAL]**
-- Gloss: `3SG POOR BE (TEMPORARY STATE) VERY AND 3SG  LIVED IN LOW LITTLE CABIN:LOCATIVE OF LOG.PL:LOCATIVE AND STONE.PL:LOCATIVE`
+- Gloss: `3SG POOR BE (TEMPORARY STATE)-PST VERY AND 3SG  LIVE-PST IN LOW LITTLE CABIN:LOCATIVE OF LOG.PL:LOCATIVE AND STONE.PL:LOCATIVE`
 - Status: `partial`
 
 ### Translation
 - English: When the wind blew, the traveler wrapped his mantle more closely around him.
 - Language: **[PARTIAL]**
-- Gloss: `WIND TRAVELER MANTLE:ACCUSATIVE BLOW CLOSE AROUND`
+- Gloss: `WIND TRAVELER MANTLE:ACCUSATIVE BLOW-PST CLOSE AROUND`
 - Status: `partial`
 
 ### Translation
@@ -1419,7 +1420,7 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 ### Translation
 - English: We went back to the place where we saw the roses.
 - Language: **[PARTIAL]**
-- Gloss: `1PL  GO BACK TO PLACE:LOCATIVE`
+- Gloss: `1PL  GO-PST BACK TO PLACE:LOCATIVE`
 - Status: `partial`
 
 ### Translation
@@ -1442,8 +1443,8 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: Why he has left the city is a mystery.
-- Language: **hitou wato zumahesu heyanyo gyaa**
-- Gloss: `3SG CITY MYSTERY:ACCUSATIVE LEAVE WHY`
+- Language: **hitou wato zumahesu heyanyohi gyaa**
+- Gloss: `3SG CITY MYSTERY:ACCUSATIVE LEAVE-PST WHY`
 - Status: `ok`
 
 ### Translation
@@ -1461,12 +1462,12 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 ### Translation
 - English: Evidently that gate is never opened, for the long grass and the great hemlocks grow close against it.
 - Language: **[PARTIAL]**
-- Gloss: `GATE  OPENED-NEG EVIDENT THAT NEVER FOR LONG GRASS.PL:LOCATIVE AND GATE  CLOSE-NEG`
+- Gloss: `GATE  OPEN-PST-NEG EVIDENT THAT NEVER FOR LONG GRASS:LOCATIVE AND GATE  CLOSE-NEG`
 - Status: `partial`
 
 ### Translation
 - English: I met a little cottage girl; she was eight years old, she said.
 - Language: **[PARTIAL]**
-- Gloss: `1SG EIGHT COTTAGE LITTLE GIRL YEAR.PL:ACCUSATIVE MEET`
+- Gloss: `1SG EIGHT COTTAGE LITTLE GIRL YEAR.PL:ACCUSATIVE MEET-PST`
 - Status: `partial`
 

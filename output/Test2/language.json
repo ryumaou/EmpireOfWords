@@ -90,6 +90,7 @@
       "particle_position": "before_verb"
     },
     "tense_realization": {
+      "past": "particle",
       "future": "particle"
     },
     "aspect_realization": {
@@ -234,7 +235,15 @@
       "imperative": "affix"
     },
     "translation_readiness": {
-      "contract_version": 5,
+      "contract_version": 9,
+      "capabilities": [
+        "stacked_aspect",
+        "constituent_coordination",
+        "copular_imperative",
+        "nominal_predicate",
+        "irregular_comparison",
+        "single_negation"
+      ],
       "analytic_fallbacks": [
         "future",
         "progressive",
@@ -274,29 +283,30 @@
       }
     },
     "particles": {
-      "negative": "todou",
-      "comparative": "kuumonu",
-      "superlative": "kuhun",
-      "and": "wang",
-      "or": "soodurc",
-      "but": "gumdalj",
-      "ability": "sig",
-      "obligation": "talriya",
-      "possibility": "laralmo",
-      "future": "shanzho",
-      "progressive": "zhanliu",
-      "perfect": "kunge",
-      "imperative": "umogei",
-      "possessive": "kuumoog",
-      "complementizer": "chow",
-      "relative": "diqalji",
-      "conditional": "drancin",
-      "subordinate": "dalaa",
-      "passive": "tngoosa",
-      "quotative": "laanna",
-      "appositive": "wanil",
-      "participle": "ulai",
-      "infinitive": "baixi"
+      "past": "todou",
+      "negative": "kuumonu",
+      "comparative": "kuhun",
+      "superlative": "wang",
+      "and": "soodurc",
+      "or": "gumdalj",
+      "but": "sig",
+      "ability": "talriya",
+      "obligation": "laralmo",
+      "possibility": "shanzho",
+      "future": "zhanliu",
+      "progressive": "kunge",
+      "perfect": "umogei",
+      "imperative": "kuumoog",
+      "possessive": "chow",
+      "complementizer": "diqalji",
+      "relative": "drancin",
+      "conditional": "dalaa",
+      "subordinate": "tngoosa",
+      "passive": "laanna",
+      "quotative": "wanil",
+      "appositive": "ulai",
+      "participle": "baixi",
+      "infinitive": "baiy"
     },
     "pronouns": {
       "1sg": "zaoyang",
@@ -32205,8 +32215,8 @@
     {
       "type": "Translation",
       "english": "The big dog is sleeping.",
-      "surface": "che uljashe  durlis",
-      "gloss": "BIG DOG  SLEEPING-PROG",
+      "surface": "che uljashe  yicinjis",
+      "gloss": "BIG DOG  SLEEP-PROG",
       "status": "ok"
     },
     {
@@ -32219,15 +32229,15 @@
     {
       "type": "Translation",
       "english": "She will give him water.",
-      "surface": "shuno boyanen shanzho deban",
+      "surface": "shuno boyanen zhanliu deban",
       "gloss": "3SG WATER:ACCUSATIVE GIVE-FUT",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "This child walked to that house yesterday.",
-      "surface": "daqob beliumo  auun dotuluu guuludi pekab",
-      "gloss": "PROXIMAL_SINGULAR CHILD  WALKED TO DISTAL_SINGULAR HOUSE",
+      "surface": "daqob beliumo  todou ulusin dotuluu guuludi pekab",
+      "gloss": "PROXIMAL_SINGULAR CHILD  WALK-PST TO DISTAL_SINGULAR HOUSE",
       "status": "ok"
     },
     {
@@ -32247,14 +32257,14 @@
     {
       "type": "Translation",
       "english": "The woman and the man are talking.",
-      "surface": "otaqaliudu alaruod  shirts",
-      "gloss": "WOMAN.PL AND MAN  TALKING-PROG",
+      "surface": "qaliudu alaruod  qoturass",
+      "gloss": "WOMAN AND MAN  TALK-PROG",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "I do not see three cats.",
-      "surface": "sheubaa zaoyang shunbe otasheunen todou mjasixi",
+      "surface": "sheubaa zaoyang shunbe otasheunen kuumonu mjasixi",
       "gloss": "NOT 1SG THREE CAT.PL:ACCUSATIVE SEE-NEG",
       "status": "ok"
     },
@@ -32268,14 +32278,14 @@
     {
       "type": "Translation",
       "english": "Two children played in the garden.",
-      "surface": "orine otabeliumo  nalig mongkeg otu",
-      "gloss": "TWO CHILD.PL  PLAYED IN GARDEN",
+      "surface": "orine otabeliumo  todou mengeie mongkeg otu",
+      "gloss": "TWO CHILD.PL  PLAY-PST IN GARDEN",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "A Tiger wearing a bell will starve.",
-      "surface": "ulai oturang ranen moqing  shanzho delemuu",
+      "surface": "baixi oturang ranen moqing  zhanliu delemuu",
       "gloss": "WEARING-PTCP BELL:ACCUSATIVE TIGER  STARVE-FUT",
       "status": "ok"
     },
@@ -32289,42 +32299,42 @@
     {
       "type": "Translation",
       "english": "The sun is shining.",
-      "surface": "bannait  bataicos",
-      "gloss": "SUN  SHINING-PROG",
+      "surface": "bannait  laitawes",
+      "gloss": "SUN  SHINE-PROG",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The sun shone.",
-      "surface": "bannait  laitawe",
-      "gloss": "SUN  SHINE",
+      "surface": "bannait  todou laitawe",
+      "gloss": "SUN  SHINE-PST",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The sun will shine.",
-      "surface": "bannait  shanzho laitawe",
+      "surface": "bannait  zhanliu laitawe",
       "gloss": "SUN  SHINE-FUT",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The sun has been shining.",
-      "surface": "bannait  kbataico",
-      "gloss": "SUN  SHINING-PERF",
+      "surface": "bannait  klaitawes",
+      "gloss": "SUN  SHINE-PROG-PERF",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The sun is shining again.",
-      "surface": "guun bannait  bataicos",
-      "gloss": "AGAIN SUN  SHINING-PROG",
+      "surface": "guun bannait  laitawes",
+      "gloss": "AGAIN SUN  SHINE-PROG",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The sun will shine tomorrow.",
-      "surface": "sheecec bannait  shanzho laitawe",
+      "surface": "sheecec bannait  zhanliu laitawe",
       "gloss": "TOMORROW SUN  SHINE-FUT",
       "status": "ok"
     },
@@ -32345,15 +32355,15 @@
     {
       "type": "Translation",
       "english": "The sun is rising now.",
-      "surface": "nyas bannait  najildus",
-      "gloss": "NOW SUN  RISING-PROG",
+      "surface": "nyas bannait  jamus",
+      "gloss": "NOW SUN  RISE-PROG",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "All the people shouted.",
-      "surface": "fen otakoochoo  dalangz",
-      "gloss": "ALL PERSON.PL  SHOUTED",
+      "surface": "fen otakoochoo  todou cinjian",
+      "gloss": "ALL PERSON.PL  SHOUT-PST",
       "status": "ok"
     },
     {
@@ -32380,56 +32390,56 @@
     {
       "type": "Translation",
       "english": "The kitten jumped up.",
-      "surface": "xusheun  aucilin jiece",
-      "gloss": "KITTEN  JUMPED UP",
+      "surface": "xusheun  todou sheune jiece",
+      "gloss": "KITTEN  JUMP-PST UP",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The kitten jumped onto the table.",
-      "surface": "xusheun  aucilin mongzu qangqar",
-      "gloss": "KITTEN  JUMPED ONTO TABLE",
+      "surface": "xusheun  todou sheune mongzu qangqar",
+      "gloss": "KITTEN  JUMP-PST ONTO TABLE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "My little kitten walked away.",
-      "surface": "zaoyang idas xusheun  auun bid",
-      "gloss": "1SG-GEN LITTLE KITTEN  WALKED AWAY",
+      "surface": "zaoyang idas xusheun  todou ulusin bid",
+      "gloss": "1SG-GEN LITTLE KITTEN  WALK-PST AWAY",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "It’s raining.",
-      "surface": "shuno  odurans",
-      "gloss": "3SG  RAINING-PROG",
+      "surface": "shuno  dashiijas",
+      "gloss": "3SG  RAIN-PROG",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The rain came down.",
-      "surface": "dashii  ide cid",
-      "gloss": "RAIN  COME DOWN",
+      "surface": "dashii  todou ide cid",
+      "gloss": "RAIN  COME-PST DOWN",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The kitten is playing in the rain.",
-      "surface": "xusheun  pekoorcs dashii otu",
-      "gloss": "KITTEN  PLAYING-PROG IN RAIN",
+      "surface": "xusheun  mengeies dashii otu",
+      "gloss": "KITTEN  PLAY-PROG IN RAIN",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The rain has stopped.",
-      "surface": "dashii  kgumutoo",
-      "gloss": "RAIN  STOPPED-PERF",
+      "surface": "dashii  todou kdaqatur",
+      "gloss": "RAIN  STOP-PST-PERF",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Soon the rain will stop.",
-      "surface": "eberi dashii  shanzho daqatur",
+      "surface": "eberi dashii  zhanliu daqatur",
       "gloss": "SOON RAIN  STOP-FUT",
       "status": "ok"
     },
@@ -32443,15 +32453,15 @@
     {
       "type": "Translation",
       "english": "Once wild animals lived here.",
-      "surface": "daraldu jianjii yicizi otamong  kejildu",
-      "gloss": "ONCE HERE WILD ANIMAL.PL  LIVED",
+      "surface": "daraldu jianjii yicizi otamong  todou yorgalb",
+      "gloss": "ONCE HERE WILD ANIMAL.PL  LIVE-PST",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Slowly she looked around.",
-      "surface": "bosusai shuno  naminli uluui",
-      "gloss": "SLOW 3SG  LOOKED AROUND",
+      "surface": "bosusai shuno  todou dalal uluui",
+      "gloss": "SLOW 3SG  LOOK-PST AROUND",
       "status": "ok"
     },
     {
@@ -32464,63 +32474,63 @@
     {
       "type": "Translation",
       "english": "Let’s go!",
-      "surface": "umogei otoo  baijimut",
+      "surface": "kuumoog otoo  baijimut",
       "gloss": "1PL  GO-IMP HORT",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "You should go.",
-      "surface": "menged  talriya baiji",
+      "surface": "menged  laralmo baiji",
       "gloss": "2SG  GO-MOD",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "I will be happy to go.",
-      "surface": "zaoyang  shanzho gyemuun cuugsek pekab",
+      "surface": "zaoyang  zhanliu gyemuun cuugsek pekab",
       "gloss": "1SG  HAPPY-FUT TO GO",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "He will arrive soon.",
-      "surface": "eberi shuno  shanzho medeged",
+      "surface": "eberi shuno  zhanliu medeged",
       "gloss": "SOON 3SG  ARRIVE-FUT",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The baby’s ball has rolled away.",
-      "surface": "laduran golus  knamthul bid",
-      "gloss": "BABY-GEN BALL  ROLLED-PERF AWAY",
+      "surface": "laduran golus  todou klaideja bid",
+      "gloss": "BABY-GEN BALL  ROLL-PST-PERF AWAY",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The two boys are working together.",
-      "surface": "laidang orine otaboboriy  tooruuls",
-      "gloss": "TOGETHER TWO BOY.PL  WORKING-PROG",
+      "surface": "laidang orine otaboboriy  cidenams",
+      "gloss": "TOGETHER TWO BOY.PL  WORK-PROG",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "This mist will probably clear away.",
-      "surface": "jilduu daqob qacbaiu  shanzho cigc bid",
+      "surface": "jilduu daqob qacbaiu  zhanliu cigc bid",
       "gloss": "PROBABLY PROXIMAL_SINGULAR MIST  CLEAR-FUT AWAY",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Lovely flowers are growing everywhere.",
-      "surface": "shan how otaodoui  laliqals",
-      "gloss": "LOVELY EVERYWHERE FLOWER.PL  GROWING-PROG",
+      "surface": "shan how otaodoui  qangumus",
+      "gloss": "LOVELY EVERYWHERE FLOWER.PL  GROW-PROG",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "We should eat more slowly.",
-      "surface": "kuumonu bosusai otoo  talriya qot",
+      "surface": "kuhun bosusai otoo  laralmo qot",
       "gloss": "SLOW 1PL  EAT-MOD",
       "status": "ok"
     },
@@ -32534,7 +32544,7 @@
     {
       "type": "Translation",
       "english": "You must write more neatly.",
-      "surface": "kuumonu saljin menged  talriya nil",
+      "surface": "kuhun saljin menged  laralmo nil",
       "gloss": "NEAT 2SG  WRITE-MOD",
       "status": "ok"
     },
@@ -32548,8 +32558,8 @@
     {
       "type": "Translation",
       "english": "Henry’s dog is lost.",
-      "surface": "hune uljashe  ulja",
-      "gloss": "HENRY-GEN DOG  LOSE",
+      "surface": "hune uljashe  todou ulja",
+      "gloss": "HENRY-GEN DOG  LOSE-PST",
       "status": "ok"
     },
     {
@@ -32576,98 +32586,98 @@
     {
       "type": "Translation",
       "english": "The children ran after Jack.",
-      "surface": "otabeliumo  tengate dalarau laliudi",
-      "gloss": "CHILD.PL  RUN AFTER JACK",
+      "surface": "otabeliumo  todou tengate dalarau laliudi",
+      "gloss": "CHILD.PL  RUN-PST AFTER JACK",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "I can play after school.",
-      "surface": "zaoyang  sig mengeie mogeiez laliudi",
+      "surface": "zaoyang  talriya mengeie mogeiez laliudi",
       "gloss": "1SG  PLAY-MOD AFTER SCHOOL",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "We went to the village for a visit.",
-      "surface": "otoo  baiji mangkeg pekab biyisal lakili",
-      "gloss": "1PL  GO TO VILLAGE FOR VISIT",
+      "surface": "otoo  todou baiji mangkeg pekab biyisal lakili",
+      "gloss": "1PL  GO-PST TO VILLAGE FOR VISIT",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "We arrived at the river.",
-      "surface": "otoo  kabangm wujildu berejal",
-      "gloss": "1PL  ARRIVED AT RIVER",
+      "surface": "otoo  todou medeged wujildu berejal",
+      "gloss": "1PL  ARRIVE-PST AT RIVER",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "I have been waiting for you.",
-      "surface": "zaoyang  klakuuul menged lakili",
-      "gloss": "1SG  WAITING-PERF FOR 2SG",
+      "surface": "zaoyang  keriyis menged lakili",
+      "gloss": "1SG  WAIT-PROG-PERF FOR 2SG",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The campers sat around the fire.",
-      "surface": "otakoocigh aulaien sannam uluui",
-      "gloss": "CAMPER.PL FIRE:ACCUSATIVE SIT AROUND",
+      "surface": "koocigh aulaien todou sannam uluui",
+      "gloss": "CAMPER FIRE:ACCUSATIVE SIT-PST AROUND",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "A little girl with a kitten sat near me.",
-      "surface": "idas shuodu xusheun  sannam zaoyang lanu",
-      "gloss": "LITTLE GIRL KITTEN  SIT NEAR 1SG",
+      "surface": "idas shuodu xusheun  todou sannam zaoyang lanu",
+      "gloss": "LITTLE GIRL KITTEN  SIT-PST NEAR 1SG",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The child waited at the door for her father.",
-      "surface": "beliumo  baisi ebe berejal shuno nighii lakili",
-      "gloss": "CHILD  WAITED AT DOOR FOR 3SG-GEN FATHER",
+      "surface": "beliumo  todou eriyi ebe berejal shuno nighii lakili",
+      "gloss": "CHILD  WAIT-PST AT DOOR FOR 3SG-GEN FATHER",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Yesterday the oldest girl in the village lost her kitten.",
-      "surface": "baisqar cigcite shuodu mangkeg shuno xusheunen ulja",
-      "gloss": "YESTERDAY OLDEST GIRL VILLAGE 3SG-GEN KITTEN:ACCUSATIVE LOSE",
+      "surface": "baisqar cigcite shuodu mangkeg shuno xusheunen todou ulja",
+      "gloss": "YESTERDAY OLDEST GIRL VILLAGE 3SG-GEN KITTEN:ACCUSATIVE LOSE-PST",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Were you born in this village?",
-      "surface": "tooruha daqob mangkeg otu menged",
-      "gloss": "2SG  BEAR IN PROXIMAL_SINGULAR VILLAGE Q",
+      "surface": "todou tooruha daqob mangkeg otu menged",
+      "gloss": "2SG  BEAR-PST IN PROXIMAL_SINGULAR VILLAGE Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Can your brother dance well?",
-      "surface": "qalmo menged chaoya  sig dangalja",
+      "surface": "qalmo menged chaoya  talriya dangalja",
       "gloss": "WELL 2SG-GEN BROTHER  DANCE-MOD Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Did the man leave?",
-      "surface": "balinu alaruod",
-      "gloss": "MAN  LEAVE Q",
+      "surface": "todou balinu alaruod",
+      "gloss": "MAN  LEAVE-PST Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Is your sister coming for you?",
-      "surface": "saliuds menged lakili menged nyemutu",
-      "gloss": "2SG-GEN SISTER  COMING-PROG FOR 2SG Q",
+      "surface": "ide menged lakili menged nyemutu",
+      "gloss": "2SG-GEN SISTER  COME FOR 2SG Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Can you come tomorrow?",
-      "surface": "sheecec menged  sig ide",
+      "surface": "sheecec menged  talriya ide",
       "gloss": "TOMORROW 2SG  COME-MOD Q",
       "status": "ok"
     },
@@ -32688,30 +32698,30 @@
     {
       "type": "Translation",
       "english": "Are you going with us to the concert?",
-      "surface": "sobeubas otoo gumdra qinlig pekab menged",
-      "gloss": "2SG  GOING-PROG WITH 1PL TO CONCERT Q",
+      "surface": "baiji otoo gumdra qinlig pekab menged",
+      "gloss": "2SG  GO WITH 1PL TO CONCERT Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Have you ever travelled in the jungle?",
-      "surface": "fosung menged  tenqin engge otu",
-      "gloss": "EVER 2SG  TRAVELLED IN JUNGLE Q",
+      "surface": "fosung menged  todou goluun engge otu",
+      "gloss": "EVER 2SG  TRAVEL-PST IN JUNGLE Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "We sailed down the river for several miles.",
-      "surface": "otoo wujilduen uludiq cid dasina otajasene lakili",
-      "gloss": "1PL RIVER:ACCUSATIVE SAILED DOWN FOR SEVERAL MILE.PL",
+      "surface": "otoo wujilduen todou gyebe cid dasina otajasene lakili",
+      "gloss": "1PL RIVER:ACCUSATIVE SAIL-PST DOWN FOR SEVERAL MILE.PL",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Everybody knows about hunting.",
-      "surface": "[PARTIAL]",
-      "gloss": "everybody.NOM KNOW",
-      "status": "partial"
+      "surface": "bobei kuuijoo otameguu  cheniq",
+      "gloss": "ABOUT EVERYBODY KNOW.PL  HUNT",
+      "status": "ok"
     },
     {
       "type": "Translation",
@@ -32723,16 +32733,16 @@
     {
       "type": "Translation",
       "english": "Tom laughed at the monkey’s tricks.",
-      "surface": "gumonga  koorber alian otauluugmo berejal",
-      "gloss": "TOM  LAUGHED AT MONKEY-GEN TRICK.PL",
+      "surface": "gumonga  todou nain alian otauluugmo berejal",
+      "gloss": "TOM  LAUGH-PST AT MONKEY-GEN TRICK.PL",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "An old man with a walking stick stood beside the fence.",
-      "surface": "bangei alaruod fosusai desengen ereledu joori ladu",
-      "gloss": "OLD MAN STICK STAND:ACCUSATIVE WALKING BESIDE FENCE",
-      "status": "ok"
+      "surface": "[PARTIAL]",
+      "gloss": "WALKING-PTCP OLD MAN  STAND-PST BESIDE FENCE",
+      "status": "partial"
     },
     {
       "type": "Translation",
@@ -32744,44 +32754,44 @@
     {
       "type": "Translation",
       "english": "The little seeds waited patiently under the snow for the warm spring sun.",
-      "surface": "batu idas otanakdura  baisi qongcit chyemo ulai uuguinu bannaiten cinegex lakili",
-      "gloss": "PATIENT LITTLE SEED.PL  WAITED UNDER SNOW FOR SPRING-PTCP SUN:ACCUSATIVE WARM",
+      "surface": "batu idas otanakdura  todou eriyi qongcit chyemo baixi uuguinu bannaiten cinegex lakili",
+      "gloss": "PATIENT LITTLE SEED.PL  WAIT-PST UNDER SNOW FOR SPRING-PTCP SUN:ACCUSATIVE WARM",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Many little girls with wreaths of flowers on their heads danced around the bonfire.",
       "surface": "[PARTIAL]",
-      "gloss": "LITTLE MANY WREATH GIRL FLOWER.PL BONFIRE:ACCUSATIVE HEAD AROUND",
+      "gloss": "3PL-GEN little girl.NOM bonfire.ACC HEAD",
       "status": "partial"
     },
     {
       "type": "Translation",
       "english": "The cover of the basket fell to the floor.",
-      "surface": "melemuu shunber  koorca chek pekab",
-      "gloss": "COVER BASKET  FALL TO FLOOR",
+      "surface": "melemuu shunber  todou koorca chek pekab",
+      "gloss": "COVER BASKET  FALL-PST TO FLOOR",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The first boy in the line stopped at the entrance.",
-      "surface": "nutei boboriy cituruu  gumutoo qaday berejal",
-      "gloss": "FIRST BOY LINE  STOPPED AT ENTRANCE",
+      "surface": "nutei boboriy cituruu  todou daqatur qaday berejal",
+      "gloss": "FIRST BOY LINE  STOP-PST AT ENTRANCE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "On the top of the hill in a little hut lived a wise old woman.",
-      "surface": "idas orc bhunami nigui bangei orgildu qaliuduen kejildu",
-      "gloss": "LITTLE HILL TOP HUT OLD WISE WOMAN:ACCUSATIVE LIVED",
-      "status": "ok"
+      "surface": "[PARTIAL]",
+      "gloss": "little top.NOM old wise.ACC LIVED",
+      "status": "partial"
     },
     {
       "type": "Translation",
       "english": "During our residence in the country we often walked in the pastures.",
-      "surface": "niliu dasheub asalait  auun otauugsek otu",
-      "gloss": "OFTEN RESIDENCE COUNTRY  WALKED IN PASTURE.PL",
-      "status": "ok"
+      "surface": "[PARTIAL]",
+      "gloss": "1PL-GEN residence.NOM WALKED IN pasture.LOC",
+      "status": "partial"
     },
     {
       "type": "Translation",
@@ -32807,15 +32817,15 @@
     {
       "type": "Translation",
       "english": "Among the wheat grew tall red poppies.",
-      "surface": "cebenpr chen turinli otaqosanen qangumu",
-      "gloss": "WHEAT RED TALL POPPY.PL:ACCUSATIVE GROW",
+      "surface": "cebenpr chen turinli qosanen todou qangumu",
+      "gloss": "WHEAT RED TALL POPPY:ACCUSATIVE GROW-PST",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The strong roots of the oak trees were torn from the ground.",
-      "surface": "cilaiju qubang daljuug otasaqoirt  guil buukua umui",
-      "gloss": "OAK STRONG ROOT TREE.PL  TEAR FROM GROUND",
+      "surface": "cilaiju qubang daljuug otasaqoirt  todou guil buukua umui",
+      "gloss": "OAK STRONG ROOT TREE.PL  TEAR-PST FROM GROUND",
       "status": "ok"
     },
     {
@@ -32828,22 +32838,22 @@
     {
       "type": "Translation",
       "english": "The west wind blew across my face like a friendly caress.",
-      "surface": "[PARTIAL]",
-      "gloss": "WEST  WIND ACROSS 1SG-GEN FACE LIKE FRIENDLY CARESS.PL",
-      "status": "partial"
+      "surface": "soorusi ciyi  todou wen zaoyang lian otan cebeina niqadal uuruug",
+      "gloss": "WEST WIND  BLOW-PST ACROSS 1SG-GEN FACE LIKE FRIENDLY CARESS",
+      "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The spool of thread rolled across the floor.",
-      "surface": "baifen keiqaci  namthul chek otan",
-      "gloss": "SPOOL THREAD  ROLLED ACROSS FLOOR",
+      "surface": "baifen keiqaci  todou laideja chek otan",
+      "gloss": "SPOOL THREAD  ROLL-PST ACROSS FLOOR",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "A box of growing plants stood in the Window.",
-      "surface": "uuge wujii desengen laliqal dessina otu",
-      "gloss": "BOX PLANT STAND:ACCUSATIVE GROWING IN WINDOW",
+      "surface": "baixi laliqal saljuugen uuge  todou baldu dessina otu",
+      "gloss": "GROWING-PTCP PLANT:ACCUSATIVE BOX  STAND-PST IN WINDOW",
       "status": "ok"
     },
     {
@@ -32891,43 +32901,43 @@
     {
       "type": "Translation",
       "english": "The little girl seemed lonely.",
-      "surface": "aljasix idas shuodu  lakildu",
-      "gloss": "LONE LITTLE GIRL  SEEMED",
+      "surface": "aljasix idas shuodu  todou saneg",
+      "gloss": "LONE LITTLE GIRL  SEEM-PST",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The little boy’s father had once been a sailor.",
-      "surface": "daraldu idas boboriy nighii gyeberen uluun",
-      "gloss": "ONCE LITTLE BOY-GEN FATHER SAILOR:ACCUSATIVE BE (TEMPORARY STATE)",
+      "surface": "daraldu idas boboriy nighii gyeberen todou uluun",
+      "gloss": "ONCE LITTLE BOY-GEN FATHER SAILOR:ACCUSATIVE BE (TEMPORARY STATE)-PST",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "I have lost my blanket.",
-      "surface": "zaoyang zaoyang dayien ulja",
-      "gloss": "1SG 1SG-GEN BLANKET:ACCUSATIVE LOSE",
+      "surface": "zaoyang zaoyang dayien todou ulja",
+      "gloss": "1SG 1SG-GEN BLANKET:ACCUSATIVE LOSE-PST",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "A robin has built his nest in the apple tree.",
-      "surface": "nyanu shuno buunaben maneg cuijuui saqoirt otu",
-      "gloss": "ROBIN 3SG-GEN NEST:ACCUSATIVE BUILD IN APPLE TREE",
+      "surface": "nyanu shuno buunaben todou maneg cuijuui saqoirt otu",
+      "gloss": "ROBIN 3SG-GEN NEST:ACCUSATIVE BUILD-PST IN APPLE TREE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "At noon we ate our lunch by the roadside.",
-      "surface": "youwei otoo yosurgen qot ortai kecheek",
-      "gloss": "NOON 1PL-GEN LUNCH:ACCUSATIVE EAT BY ROADSIDE",
+      "surface": "youwei otoo yosurgeen todou qot ortai kecheek",
+      "gloss": "NOON 1PL-GEN LUNCH:ACCUSATIVE EAT-PST BY ROADSIDE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Mr. Jones made a knife for his little boy.",
-      "surface": "otairgi nabanmaen nuturiq shuno idas boboriy lakili",
-      "gloss": "JONE.PL KNIFE:ACCUSATIVE MAKE FOR 3SG-GEN LITTLE BOY",
+      "surface": "irgi nabanmaen todou nuturiq shuno idas boboriy lakili",
+      "gloss": "JONE KNIFE:ACCUSATIVE MAKE-PST FOR 3SG-GEN LITTLE BOY",
       "status": "ok"
     },
     {
@@ -32954,22 +32964,22 @@
     {
       "type": "Translation",
       "english": "Will you be ready on time?",
-      "surface": "shouwen shanzho uluun qoicin bidura menged",
+      "surface": "shouwen zhanliu uluun qoicin bidura menged",
       "gloss": "2SG READY BE (TEMPORARY STATE)-FUT ON TIME Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Will you send this message for me?",
-      "surface": "daqob salemuuen shanzho jiriyan zaoyang lakili menged",
+      "surface": "daqob salemuuen zhanliu jiriyan zaoyang lakili menged",
       "gloss": "2SG PROXIMAL_SINGULAR MESSAGE:ACCUSATIVE SEND-FUT FOR 1SG Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Are you waiting for me?",
-      "surface": "lakuuuls zaoyang lakili menged",
-      "gloss": "2SG  WAITING-PROG FOR 1SG Q",
+      "surface": "eriyi zaoyang lakili menged",
+      "gloss": "2SG  WAIT FOR 1SG Q",
       "status": "ok"
     },
     {
@@ -33003,7 +33013,7 @@
     {
       "type": "Translation",
       "english": "Sit here by me.",
-      "surface": "jianjii sannamut zaoyang kecheek",
+      "surface": "jianjii sannammut zaoyang kecheek",
       "gloss": "HERE SIT-IMP BY 1SG",
       "status": "ok"
     },
@@ -33031,9 +33041,9 @@
     {
       "type": "Translation",
       "english": "Be careful.",
-      "surface": "[PARTIAL]",
-      "gloss": "[PARTIAL]",
-      "status": "partial"
+      "surface": "uluunmut bayek",
+      "gloss": "BE (TEMPORARY STATE)-IMP CAREFUL",
+      "status": "ok"
     },
     {
       "type": "Translation",
@@ -33045,8 +33055,8 @@
     {
       "type": "Translation",
       "english": "Pip and his dog were great friends.",
-      "surface": "auruu uljashe baitulj uluun",
-      "gloss": "FRIEND DOG GREAT BE (TEMPORARY STATE)",
+      "surface": "auruu uljashe baitulj todou uluun",
+      "gloss": "FRIEND DOG GREAT BE (TEMPORARY STATE)-PST",
       "status": "ok"
     },
     {
@@ -33059,43 +33069,43 @@
     {
       "type": "Translation",
       "english": "You and I will go together.",
-      "surface": "laidang menged  shanzho baiji",
+      "surface": "laidang menged  zhanliu baiji",
       "gloss": "TOGETHER 2SG  GO-FUT",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "They opened all the doors and windows.",
-      "surface": "bori fen otaeben otadessinaen yikoori",
-      "gloss": "3PL ALL DOOR.PL:ACCUSATIVE AND WINDOW.PL:ACCUSATIVE OPENED",
+      "surface": "bori fen otaebeen otadessinaen todou qubeipi",
+      "gloss": "3PL ALL DOOR.PL:ACCUSATIVE AND WINDOW.PL:ACCUSATIVE OPEN-PST",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "He is small, but strong.",
-      "surface": "[PARTIAL]",
-      "gloss": "3SG  BE (TEMPORARY STATE)",
-      "status": "partial"
+      "surface": "shuno wujuuba sig qubang uluun",
+      "gloss": "3SG SMALL BUT STRONG BE (TEMPORARY STATE)",
+      "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Is this tree an oak or a maple?",
-      "surface": "otaduanglen banuturen uluun daqob saqoirt",
-      "gloss": "PROXIMAL_SINGULAR TREE OAK.PL:ACCUSATIVE OR MAPLE:ACCUSATIVE BE (TEMPORARY STATE) Q",
+      "surface": "duangleen banuturen uluun daqob saqoirt",
+      "gloss": "PROXIMAL_SINGULAR TREE OAK:ACCUSATIVE OR MAPLE:ACCUSATIVE BE (TEMPORARY STATE) Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Does the sky look blue or gray?",
-      "surface": "[PARTIAL]",
-      "gloss": "SKY  LOOK Q",
-      "status": "partial"
+      "surface": "lalju gumdalj alakuad dalal emo",
+      "gloss": "SKY BLUE OR GRAY LOOK Q",
+      "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Come with your father or mother.",
-      "surface": "idemut menged otanighii cilig gumdra",
-      "gloss": "COME-IMP WITH 2SG-GEN FATHER.PL OR MOTHER",
+      "surface": "idemut menged nighii cilig gumdra",
+      "gloss": "COME-IMP WITH 2SG-GEN FATHER OR MOTHER",
       "status": "ok"
     },
     {
@@ -33108,29 +33118,29 @@
     {
       "type": "Translation",
       "english": "He played a tune on his wonderful flute.",
-      "surface": "shuno fenegen nalig shuno gyena turaulj bidura",
-      "gloss": "3SG TUNE:ACCUSATIVE PLAYED ON 3SG-GEN WONDERFUL FLUTE",
+      "surface": "shuno fenegeen todou mengeie shuno gyena turaulj bidura",
+      "gloss": "3SG TUNE:ACCUSATIVE PLAY-PST ON 3SG-GEN WONDERFUL FLUTE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Toward the end of August the days grow much shorter.",
-      "surface": "gyek moqingy otabaa alaji qangumu",
-      "gloss": "AUGUST END DAY.PL SHORTER GROW",
-      "status": "ok"
+      "surface": "[PARTIAL]",
+      "gloss": "end.NOM GROW",
+      "status": "partial"
     },
     {
       "type": "Translation",
       "english": "A company of soldiers marched over the hill and across the meadow.",
-      "surface": "uluudun otadariya  qulun orc uqad mengdar otan",
-      "gloss": "COMPANY SOLDIER.PL  MARCHED OVER HILL ACROSS MEADOW",
+      "surface": "uluudun otadariya  todou kuuge orc uqad mengdar otan",
+      "gloss": "COMPANY SOLDIER.PL  MARCH-PST OVER HILL ACROSS MEADOW",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The first part of the story is very interesting.",
-      "surface": "nutei cituran meipi bangumu  laisangs",
-      "gloss": "FIRST VERY PART STORY  INTERESTING-PROG",
+      "surface": "nutei cituran meipi bangumu  laisang",
+      "gloss": "FIRST VERY PART STORY  INTERESTING",
       "status": "ok"
     },
     {
@@ -33143,50 +33153,50 @@
     {
       "type": "Translation",
       "english": "The baby clapped her hands and laughed in glee.",
-      "surface": "laduran shuno otamuuien saruodu wang laduran koorber khen otu",
-      "gloss": "BABY 3SG-GEN HAND.PL:ACCUSATIVE CLAPPED AND BABY  LAUGHED IN GLEE",
+      "surface": "laduran shuno otamuuien todou nyeng soodurc laduran todou nain khen otu",
+      "gloss": "BABY 3SG-GEN HAND.PL:ACCUSATIVE CLAP-PST AND BABY  LAUGH-PST IN GLEE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Stop your game and be quiet.",
-      "surface": "daqaturmut menged banengzen wang uluunmut koorqa",
+      "surface": "daqaturmut menged banengzen soodurc uluunmut koorqa",
       "gloss": "STOP-IMP 2SG-GEN GAME:ACCUSATIVE AND BE (TEMPORARY STATE)-IMP QUIET",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The sound of the drums grew louder and louder.",
-      "surface": "[PARTIAL]",
-      "gloss": "SOUND DRUM.PL  GROW",
-      "status": "partial"
+      "surface": "moqinuu tobie kuuruuk soodurc kuuruuk todou qangumu",
+      "gloss": "SOUND DRUM LOUDER AND LOUDER GROW-PST",
+      "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Do you like summer or winter better?",
       "surface": "[PARTIAL]",
-      "gloss": "2SG SUMMER.PL:ACCUSATIVE OR WINTER:ACCUSATIVE LIKE Q",
+      "gloss": "2SG SUMMER:ACCUSATIVE OR WINTER:ACCUSATIVE LIKE Q",
       "status": "partial"
     },
     {
       "type": "Translation",
       "english": "That boy will have a wonderful trip.",
-      "surface": "taifei boboriy gyena ebkoomen shanzho laldu",
+      "surface": "taifei boboriy gyena ebkoomen zhanliu laldu",
       "gloss": "THAT BOY WONDERFUL TRIP:ACCUSATIVE HAVE-FUT",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "They popped corn, and then sat around the fire and ate it.",
-      "surface": "bori daqotaken laba wang dagatei bori aulaien sannam uluui wang bori shuno qot",
-      "gloss": "3PL CORN:ACCUSATIVE POPPED AND THEN 3PL FIRE:ACCUSATIVE SIT AROUND AND 3PL 3SG EAT",
+      "surface": "bori daqotaken laba soodurc dagatei bori aulaien todou sannam uluui soodurc bori shuno todou qot",
+      "gloss": "3PL CORN:ACCUSATIVE POPPED AND THEN 3PL FIRE:ACCUSATIVE SIT-PST AROUND AND 3PL 3SG EAT-PST",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "They won the first two games, but lost the last one.",
-      "surface": "nutei bori orine otabanengzen douwen gumdalj bori uugsemu cebuunen ulja",
-      "gloss": "FIRST 3PL TWO GAME.PL:ACCUSATIVE WIN BUT 3PL LAST ONE:ACCUSATIVE LOSE",
+      "surface": "nutei bori orine otabanengzen todou douwen sig bori uugsemu cebuunen todou ulja",
+      "gloss": "FIRST 3PL TWO GAME.PL:ACCUSATIVE WIN-PST BUT 3PL LAST ONE:ACCUSATIVE LOSE-PST",
       "status": "ok"
     },
     {
@@ -33200,7 +33210,7 @@
       "type": "Translation",
       "english": "I awoke early, dressed hastily, and went down to breakfast.",
       "surface": "[PARTIAL]",
-      "gloss": "EARLY HASTY 1SG  AWAKE AND 1SG  GO DOWN TO BREAKFAST",
+      "gloss": "EARLY HASTY 1SG  AWAKE-PST AND 1SG  GO-PST DOWN TO BREAKFAST",
       "status": "partial"
     },
     {
@@ -33213,9 +33223,9 @@
     {
       "type": "Translation",
       "english": "This string is too short!",
-      "surface": "[PARTIAL]",
+      "surface": "qaliangmut banmnu bingzuen",
       "gloss": "this-IMP short string.ACC",
-      "status": "partial"
+      "status": "ok"
     },
     {
       "type": "Translation",
@@ -33228,15 +33238,15 @@
       "type": "Translation",
       "english": "Alas! that news is sad indeed!",
       "surface": "[PARTIAL]",
-      "gloss": "THAT NEWS.PL  INDE",
+      "gloss": "THAT NEWS.PL  INDE-PST",
       "status": "partial"
     },
     {
       "type": "Translation",
       "english": "Whew! that cold wind freezes my nose!",
-      "surface": "[PARTIAL]",
+      "surface": "taifei qalbcig ciyi zaoyang gyemuuren boljuur",
       "gloss": "THAT COLD WIND 1SG-GEN NOSE:ACCUSATIVE FREEZE",
-      "status": "partial"
+      "status": "ok"
     },
     {
       "type": "Translation",
@@ -33249,28 +33259,28 @@
       "type": "Translation",
       "english": "They heard the warning too late.",
       "surface": "[PARTIAL]",
-      "gloss": "TOO 3PL  HEAR",
+      "gloss": "TOO 3PL  HEAR-PST",
       "status": "partial"
     },
     {
       "type": "Translation",
       "english": "We are a brave people, and love our country.",
-      "surface": "otoo tngong otakoochooen uluun wang otoo otoo asalaiten yobosus",
+      "surface": "otoo tngong otakoochooen uluun soodurc otoo otoo asalaiten yobosus",
       "gloss": "1PL BRAVE PERSON.PL:ACCUSATIVE BE (TEMPORARY STATE) AND 1PL 1PL-GEN COUNTRY:ACCUSATIVE LOVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "All the children came except Mary.",
-      "surface": "fen otabeliumo  ide",
-      "gloss": "ALL CHILD.PL  COME",
+      "surface": "fen otabeliumo  todou ide",
+      "gloss": "ALL CHILD.PL  COME-PST",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Jack seized a handful of pebbles and threw them into the lake.",
-      "surface": "dalarau daqalduen engtur otabangyek bicildu wang dalarau bori zhong kaca nuuxi",
-      "gloss": "JACK HANDFUL:ACCUSATIVE SEIZED OF PEBBLE.PL AND JACK 3PL THROW INTO LAKE",
+      "surface": "dalarau daqalduen engtur bangyek bicildu soodurc dalarau bori todou zhong kaca nuuxi",
+      "gloss": "JACK HANDFUL:ACCUSATIVE SEIZED OF PEBBLE AND JACK 3PL THROW-PST INTO LAKE",
       "status": "ok"
     },
     {
@@ -33283,8 +33293,8 @@
     {
       "type": "Translation",
       "english": "On a fine summer evening, the two old people were sitting outside the door of their cottage.",
-      "surface": "cecegei lon ulai turi qoiraul eben orine bangei otakoochooen tngoljis bori dauluu bicildu",
-      "gloss": "FINE SUMMER SITTING-PTCP OUTSIDE DOOR:ACCUSATIVE TWO OLD PERSON.PL:ACCUSATIVE EVENING-PROG OF 3PL-GEN COTTAGE",
+      "surface": "baixi tngolji orine bangei otakoochooen cecegei lon qoiraul ebeen todou sannams bori dauluu bicildu",
+      "gloss": "EVENING-PTCP TWO OLD PERSON.PL:ACCUSATIVE FINE SUMMER OUTSIDE DOOR:ACCUSATIVE SIT-PST-PROG OF 3PL-GEN COTTAGE",
       "status": "ok"
     },
     {
@@ -33325,8 +33335,8 @@
     {
       "type": "Translation",
       "english": "We visited my uncle’s village, the largest village in the world.",
-      "surface": "otoo shunbeu pekongn mangkeg mangkegen dagal bisixi otu",
-      "gloss": "1PL UNCLE-GEN LARGEST VILLAGE VILLAGE:ACCUSATIVE VISITED IN WORLD",
+      "surface": "otoo shunbeu pekongn mangkeg mangkegen todou meipiu bisixi otu",
+      "gloss": "1PL UNCLE-GEN LARGEST VILLAGE VILLAGE:ACCUSATIVE VISIT-PST IN WORLD",
       "status": "ok"
     },
     {
@@ -33339,7 +33349,7 @@
     {
       "type": "Translation",
       "english": "The market begins five minutes earlier this week.",
-      "surface": "moruou aljilde kuumonu wekiyas qaliang boro otaqawekooen gus",
+      "surface": "moruou aljilde kuhun wekiyas qaliang boro otaqawekooen gus",
       "gloss": "MARKET FIVE EARLY-COMP THIS MINUTE WEEK.PL:ACCUSATIVE BEGIN",
       "status": "ok"
     },
@@ -33347,7 +33357,7 @@
       "type": "Translation",
       "english": "Did you find the distance too great?",
       "surface": "[PARTIAL]",
-      "gloss": "TOO 2SG DISTANCE:ACCUSATIVE FIND Q",
+      "gloss": "TOO 2SG DISTANCE:ACCUSATIVE FIND-PST Q",
       "status": "partial"
     },
     {
@@ -33367,15 +33377,15 @@
     {
       "type": "Translation",
       "english": "Here under this tree they gave their guests a splendid feast.",
-      "surface": "jianjii qaliang saqoirt bori chaa uludu changen deban",
-      "gloss": "HERE THIS TREE 3PL-GEN SPLENDID GUEST FEAST:ACCUSATIVE GIVE",
+      "surface": "jianjii qaliang saqoirt bori chaa uludu changen todou deban",
+      "gloss": "HERE THIS TREE 3PL-GEN SPLENDID GUEST FEAST:ACCUSATIVE GIVE-PST",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "In winter I get up at night, and dress by yellow candlelight.",
-      "surface": "kuurasi  buuuj jiece otasob otauuminil berejal xiangna qangzit kecheek",
-      "gloss": "WINTER  GET UP AT NIGHT.PL AND DRESS.PL BY YELLOW CANDLELIGHT",
+      "surface": "kuurasi  buuuj jiece sob uuminil berejal xiangna qangzit kecheek",
+      "gloss": "WINTER  GET UP AT NIGHT AND DRESS BY YELLOW CANDLELIGHT",
       "status": "ok"
     },
     {
@@ -33388,9 +33398,9 @@
     {
       "type": "Translation",
       "english": "Be quick or you will be too late.",
-      "surface": "[PARTIAL]",
-      "gloss": "[PARTIAL]",
-      "status": "partial"
+      "surface": "uluunmut teno gumdalj dasanmn zhanliu chobosmut",
+      "gloss": "BE (TEMPORARY STATE)-IMP QUICK OR TOO LATE-FUT-IMP",
+      "status": "ok"
     },
     {
       "type": "Translation",
@@ -33409,7 +33419,7 @@
     {
       "type": "Translation",
       "english": "Think first and then act.",
-      "surface": "nutei namdramut wang dagatei bieimut",
+      "surface": "nutei namdramut soodurc dagatei bieimut",
       "gloss": "FIRST THINK-IMP AND THEN ACT-IMP",
       "status": "ok"
     },
@@ -33444,7 +33454,7 @@
     {
       "type": "Translation",
       "english": "We will make this place our home.",
-      "surface": "otoo bangols daqob fosuriyen shanzho nuturiq",
+      "surface": "otoo bangols daqob fosuriyen zhanliu nuturiq",
       "gloss": "1PL PLACE PROXIMAL_SINGULAR HOME:ACCUSATIVE MAKE-FUT",
       "status": "ok"
     },
@@ -33458,9 +33468,9 @@
     {
       "type": "Translation",
       "english": "The little girl made the doll’s dress herself.",
-      "surface": "idas shuodu kuha otauuminilen nuturiq",
-      "gloss": "LITTLE GIRL DOLL-GEN DRESS.PL:ACCUSATIVE MAKE",
-      "status": "ok"
+      "surface": "[PARTIAL]",
+      "gloss": "LITTLE GIRL DOLL DRESS:ACCUSATIVE MAKE-PST",
+      "status": "partial"
     },
     {
       "type": "Translation",
@@ -33480,13 +33490,13 @@
       "type": "Translation",
       "english": "He proved himself trustworthy.",
       "surface": "[PARTIAL]",
-      "gloss": "3SG HIMSELF:ACCUSATIVE PROVED",
+      "gloss": "3SG HIMSELF:ACCUSATIVE PROVE-PST",
       "status": "partial"
     },
     {
       "type": "Translation",
       "english": "We could see ourselves in the water.",
-      "surface": "otoo otadanggen sig mjasixi boyan otu",
+      "surface": "otoo otadanggeen talriya mjasixi boyan otu",
       "gloss": "1PL OURSELVES.PL:ACCUSATIVE SEE-MOD IN WATER",
       "status": "ok"
     },
@@ -33507,22 +33517,22 @@
     {
       "type": "Translation",
       "english": "Sit here by yourself.",
-      "surface": "jianjii sannamut berdeph kecheek",
+      "surface": "jianjii sannammut berdeph kecheek",
       "gloss": "HERE SIT-IMP BY YOURSELF",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The dress of the little princess was embroidered with roses, the national flower of the Country.",
-      "surface": "idas uuminil otadaganna  manutue jirang tuyan odoui gumdra asalait bicildu",
-      "gloss": "LITTLE DRESS PRINCESS.PL  EMBROIDERED WITH NATIONAL ROS FLOWER OF COUNTRY",
+      "surface": "idas uuminil daganna  todou manutue jirang tuyan odoui gumdra asalait bicildu",
+      "gloss": "LITTLE DRESS PRINCESS  EMBROIDERED-PST WITH NATIONAL ROS FLOWER OF COUNTRY",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "They wore red caps, the symbol of liberty.",
-      "surface": "bori chen kashide dasigoen chob qoiraur bicildu",
-      "gloss": "3PL RED CAP SYMBOL:ACCUSATIVE WEAR OF LIBERTY",
+      "surface": "bori chen kashide dasigoen todou chob qoiraur bicildu",
+      "gloss": "3PL RED CAP SYMBOL:ACCUSATIVE WEAR-PST OF LIBERTY",
       "status": "ok"
     },
     {
@@ -33535,8 +33545,8 @@
     {
       "type": "Translation",
       "english": "All her finery, lace, ribbons, and feathers, was packed away in a trunk.",
-      "surface": "siyisqa sancui fen otajooruug otatacbaii  ebmaoji bid dongzhe otu",
-      "gloss": "LACE FINERY ALL RIBBON.PL AND FEATHER.PL  PACKED AWAY IN TRUNK",
+      "surface": "siyisqa sancui fen otajooruug otatacbaii  todou qiayi bid dongzhe otu",
+      "gloss": "LACE FINERY ALL RIBBON.PL AND FEATHER.PL  PACK-PST AWAY IN TRUNK",
       "status": "ok"
     },
     {
@@ -33557,7 +33567,7 @@
       "type": "Translation",
       "english": "In our climate the grass remains green all winter.",
       "surface": "[PARTIAL]",
-      "gloss": "CLIMATE GRASS.PL GREEN ALL WINTER.PL:ACCUSATIVE REMAIN",
+      "gloss": "CLIMATE GRASS GREEN ALL WINTER.PL:ACCUSATIVE REMAIN",
       "status": "partial"
     },
     {
@@ -33669,27 +33679,27 @@
       "type": "Translation",
       "english": "I have found the ring I lost.",
       "surface": "[PARTIAL]",
-      "gloss": "1SG RING:ACCUSATIVE FIND",
+      "gloss": "1SG ring.ACC FIND-PERF",
       "status": "partial"
     },
     {
       "type": "Translation",
       "english": "Play and I will sing.",
-      "surface": "mengeiemut wang shanzho mbaishunmut",
+      "surface": "mengeiemut soodurc zhanliu mbaishunmut",
       "gloss": "PLAY-IMP AND SING-FUT-IMP",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "That is the funniest story I ever heard.",
-      "surface": "taifei fosung kebeyi bangumu  jirge",
-      "gloss": "THAT EVER FUNNIEST STORY  HEAR",
+      "surface": "taifei fosung kebeyi bangumu  todou jirge",
+      "gloss": "THAT EVER FUNNIEST STORY  HEAR-PST",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "She is taller than her brother.",
-      "surface": "shuno kuumonu benpriy uluun kuumonu shuno chaoya",
+      "surface": "shuno kuhun benpriy uluun kuhun shuno chaoya",
       "gloss": "3SG TALLER-COMP BE (TEMPORARY STATE) COMP-STD 3SG-GEN BROTHER",
       "status": "ok"
     },
@@ -33703,14 +33713,14 @@
     {
       "type": "Translation",
       "english": "Light travels faster than sound.",
-      "surface": "medessimut tooru koongcien kuumonu tngumoq",
+      "surface": "medessimut tooru koongcien kuhun tngumoq",
       "gloss": "LIGHT-IMP TRAVEL FASTER:ACCUSATIVE COMP-STD SOUND",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "We have more time than they.",
-      "surface": "otoo qoicinen koosa",
+      "surface": "otoo qoicinen kkoosa",
       "gloss": "1PL time.ACC MORE-PERF",
       "status": "ok"
     },
@@ -33725,14 +33735,14 @@
       "type": "Translation",
       "english": "He was very poor, and with his wife and five children lived in a little low cabin of logs and stones.",
       "surface": "[PARTIAL]",
-      "gloss": "VERY 3SG POOR BE (TEMPORARY STATE) AND 3SG  LIVED IN LOW LITTLE CABIN OF LOG.PL AND STONE.PL",
+      "gloss": "VERY 3SG POOR BE (TEMPORARY STATE)-PST AND 3SG  LIVE-PST IN LOW LITTLE CABIN OF LOG.PL AND STONE.PL",
       "status": "partial"
     },
     {
       "type": "Translation",
       "english": "When the wind blew, the traveler wrapped his mantle more closely around him.",
       "surface": "[PARTIAL]",
-      "gloss": "CLOSE WIND TRAVELER MANTLE:ACCUSATIVE BLOW AROUND",
+      "gloss": "CLOSE WIND TRAVELER MANTLE:ACCUSATIVE BLOW-PST AROUND",
       "status": "partial"
     },
     {
@@ -33746,7 +33756,7 @@
       "type": "Translation",
       "english": "We went back to the place where we saw the roses.",
       "surface": "[PARTIAL]",
-      "gloss": "1PL  GO BACK TO PLACE",
+      "gloss": "1PL  GO-PST BACK TO PLACE",
       "status": "partial"
     },
     {
@@ -33773,8 +33783,8 @@
     {
       "type": "Translation",
       "english": "Why he has left the city is a mystery.",
-      "surface": "cebman shuno gao wujinoen balinu",
-      "gloss": "WHY 3SG CITY MYSTERY:ACCUSATIVE LEAVE",
+      "surface": "cebman shuno gao wujinoen todou balinu",
+      "gloss": "WHY 3SG CITY MYSTERY:ACCUSATIVE LEAVE-PST",
       "status": "ok"
     },
     {
@@ -33795,14 +33805,14 @@
       "type": "Translation",
       "english": "Evidently that gate is never opened, for the long grass and the great hemlocks grow close against it.",
       "surface": "[PARTIAL]",
-      "gloss": "EVIDENT THAT NEVER GATE  OPENED-NEG FOR LONG GRASS.PL AND GATE  CLOSE-NEG",
+      "gloss": "EVIDENT THAT NEVER GATE  OPEN-PST-NEG FOR LONG GRASS AND GATE  CLOSE-NEG",
       "status": "partial"
     },
     {
       "type": "Translation",
       "english": "I met a little cottage girl; she was eight years old, she said.",
       "surface": "[PARTIAL]",
-      "gloss": "1SG EIGHT COTTAGE LITTLE GIRL YEAR.PL:ACCUSATIVE MEET",
+      "gloss": "1SG EIGHT COTTAGE LITTLE GIRL YEAR.PL:ACCUSATIVE MEET-PST",
       "status": "partial"
     }
   ]

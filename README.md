@@ -3,6 +3,49 @@ A set of Python scripts that allow a technically literate worldbuilder to create
 
 Based, in part, on Perl scripts originally created by Chris Pound, with additional inspiration from other conlanging sources.
 
+## v7.4: regression accountability and conservative lexical analysis
+
+This release introduces `src/compare_diagnostics.py` to identify exactly which sentence IDs became partial or unsupported and which recovered. The v7.2-to-v7.3 transition lost previously complete sentences even while other sentences improved; a single total hid that churn. The comparator validates corpus length and diagnostic completeness and refuses inconsistent reports. It also prevents irregular English plurals (such as *leaves*) from being preferentially interpreted as verbs during lexical preflight. **This is a diagnostic and correctness-oriented iteration, not a claim of higher translation coverage.**
+
+Windows example:
+
+```cmd
+python src\compare_diagnostics.py --before previous_diagnostics.txt --after current_diagnostics.txt --output regression_report.txt
+```
+
+## v7.3: English inflection and predicate disambiguation
+
+English inflected verb lookup now favors attested verbal lemmas over accidental surface homographs. Structured predicate selection prioritizes overtly inflected verbs (e.g., *blew* over the homographic verb *wind*), and retains past tense in the grammatical IR. New packages advertise realization contract 9. Morpheme boundaries preserve grammatical affixes when the stem begins or ends with the same consonant, avoiding silent future/plural homophony. Complex prepositional subjects that cannot be represented reliably are withheld from structured realization. The audit remains a structural diagnostic rather than a semantic correctness certificate. Review benchmark deltas and unresolved constructions before accepting any increase in completion as verified accuracy.
+
+## v7.1: grammar fidelity and overt past reference
+
+New language packages use realization contract v7 and include an analytic past marker even when past is not a native tense. Structured realization now applies native past morphology or the generated analytic marker and records a past-tense receipt; coordinated singular noun phrases retain their individual singular number instead of being silently pluralized. The language audit includes minimal-pair past/present and coordinated-noun number checks. These checks are deliberately limited and do not certify overall translation correctness.
+
+## v7.0: verifiable language diversity and provenance
+
+v7.0 adds **runtime provenance** to every `translate.py --diagnostics` report: translator version and source hash, language build version, language package and grammar SHA-256 hashes, schema version, and realization-contract version. This makes stale script/package combinations immediately visible.
+
+A new `src/audit_languages.py` compares actual generated language packages rather than their completion counts. It checks lexicon overlap by lemma/POS and surface form, compares grammar profiles and fingerprints, validates packages, and translates a fixed set of contrast probes using each language's real grammar and vocabulary. It emits a Markdown report and side-by-side CSV. A successful translation status does **not** certify semantic fidelity; inspect the contrast CSV for actual word order, morphology, and feature realization.
+
+Windows example (run from project root):
+
+```cmd
+python src\audit_languages.py ^
+  --languages output\Test1 output\Test2 output\Example ^
+  --output output\language_audit
+```
+
+To audit the full advanced corpus rather than just the short contrast set, append `--corpus translations\sentences_advanced.txt`.
+
+**Important:** If the diagnostics still say `Translator version: 6.9` or omit provenance entirely, you're executing an older translator. Also check that the language build version says `7.0` after regenerating from scratch.
+
+## v6.9: capability-complete realization
+
+v6.9 keeps v6.8's creation-time translation vocabulary preflight and raises the realization contract to version 6. New languages explicitly advertise stacked aspect, constituent-level coordination, copular imperatives, nominal predicates, and irregular comparison support. The analyzer now requires BE to directly license a verbal `-ing` form before diagnosing progressive aspect, preventing nouns such as *string* from creating false aspect requirements. Perfect+progressive stacks deterministically, and NP/adjective coordination is preserved inside the constituent so each generated language's NP/predicate/clause coordination strategy can actually be used.
+
+The design goal remains creation-first: the generated package records the grammatical capabilities the realizer may rely on, while translation completeness remains strict.
+
+
 ## v6.8 translation-ready creation
 
 v6.8 moves another layer of translation readiness into initial language creation. When `--translations` is supplied, the builder now performs a conservative lexical/POS preflight and creates safely inferred independent roots before the language is generated. Use `--no-translation-vocabulary-preflight` to retain the older build-then-add workflow. This does not weaken translation completeness checks; it moves known corpus requirements earlier in the pipeline.
@@ -896,3 +939,13 @@ After the second translation, a remaining missing-vocabulary count represents a 
 
 ## Realization contract v4 (v6.7)
 Generated languages now specify productive lexical conversion and noun-compound behavior in addition to the v6.6 morphosyntactic profile. The structured realizer also applies target article morphology and available grammatical cases. Lexical conversion is context-sensitive: it may satisfy a required verbal/adjectival sense from an existing semantic root, but it is not used as a generic predicate guess.
+
+
+## v7.2: grammatical integrity
+
+- Negation follows the generated particle/affix/mixed strategy, with one licensed marker per clause.
+- Comparison audit includes negation, future tense, and number minimal pairs.
+- Expanded English candidate lemmatization for inflected forms; no new roots are fabricated.
+- Contract version 8 declares single-negation realization.
+
+Run `python src/audit_languages.py --languages output/Test1 output/Test2 output/Example --output output/language_audit` after regenerating language packages.

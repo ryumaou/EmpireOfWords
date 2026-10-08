@@ -24,6 +24,7 @@ IRREGULAR_VERBS = {
  'drew':('draw','past'),'drawn':('draw','participle'),'flew':('fly','past'),'flown':('fly','participle'),
 }
 IRREGULAR_NOUNS={'children':'child','men':'man','women':'woman','people':'person','feet':'foot','teeth':'tooth','mice':'mouse','geese':'goose','leaves':'leaf'}
+IRREGULAR_DEGREES={'better':'good','best':'good','worse':'bad','worst':'bad','farther':'far','farthest':'far','further':'far','furthest':'far'}
 FUNCTION_WORDS=set('the a an of to in at on by for from with as and or but if when while because than that who whose where which what why how is are am was were be been being do does did have has had will shall can could should would must may might not no this these those my your his her our their its me him us them it i you he she we they there all every each some many much more less very too enough ever never often once twice again now soon today tomorrow yesterday here away together about around down up out over under through upon toward towards after before during between among except near until'.split())
 AUX=set('is are am was were be been being do does did have has had will shall can could should would must may might'.split())
 MODALS=set('can could should would must may might will shall'.split())
@@ -51,6 +52,7 @@ def lemma_candidates(word:str):
     if w in REFLEXIVES: out.append(w)
     if w in IRREGULAR_VERBS: out.append(IRREGULAR_VERBS[w][0])
     if w in IRREGULAR_NOUNS: out.append(IRREGULAR_NOUNS[w])
+    if w in IRREGULAR_DEGREES: out.append(IRREGULAR_DEGREES[w])
     out.append(w)
     if w.endswith('iest') and len(w)>4: out.append(w[:-4]+'y')
     if w.endswith('ier') and len(w)>3: out.append(w[:-3]+'y')
@@ -58,13 +60,19 @@ def lemma_candidates(word:str):
     if w.endswith('er') and len(w)>3: out.extend([w[:-2],w[:-2]+'e'])
     if w.endswith('ies') and len(w)>3: out.append(w[:-3]+'y')
     if w.endswith('ves') and len(w)>3: out.extend([w[:-3]+'f',w[:-3]+'fe'])
-    if w.endswith('es') and len(w)>3: out.extend([w[:-2],w[:-1]])
+    if w.endswith('es') and len(w)>3:
+        out.extend([w[:-2],w[:-1]])
+        # freezes -> freeze; dances -> dance; fixes -> fix
+        if w.endswith('zes'): out.append(w[:-1])
+    if w.endswith('ied') and len(w)>4: out.append(w[:-3]+'y')
     if w.endswith('s') and len(w)>2 and not w.endswith('ss'): out.append(w[:-1])
     if w.endswith('ing') and len(w)>4:
         b=w[:-3]; out.extend([b,b+'e'])
         if len(b)>2 and b[-1]==b[-2]: out.append(b[:-1])
     if w.endswith('ed') and len(w)>3:
         b=w[:-2]; out.extend([b,b+'e'])
+        # danced -> dance, dressed -> dress (already covered), carried -> carry
+        if b.endswith('c'): out.append(b+'e')
         if b.endswith('i'): out.append(b[:-1]+'y')
         if len(b)>2 and b[-1]==b[-2]: out.append(b[:-1])
     if w.endswith('ly') and len(w)>3:
@@ -75,9 +83,23 @@ def lemma_candidates(word:str):
         if x and x not in seen: seen.append(x)
     return seen
 
-def lexical_match(by,word):
-    for c in lemma_candidates(word):
-        if c in by: return c
+def lexical_match(by,word,preferred_pos=None):
+    """Resolve an English token without allowing an unrelated homograph to
+    override an inflected verb. A context-free lookup retains its old behavior.
+    """
+    candidates=lemma_candidates(word)
+    if preferred_pos:
+        matches=[c for c in candidates if any(pos==preferred_pos or pos.startswith(preferred_pos) for pos,_ in by.get(c,()))]
+        if matches:
+            # For explicit inflections, prefer a dictionary lemma over a spurious
+            # separately seeded surface form (danced:v vs dance:v).
+            w=word.lower()
+            if w.endswith(('ed','ing','es')) or w in IRREGULAR_VERBS:
+                derived=[c for c in matches if c!=w]
+                if derived:return derived[0]
+            return matches[0]
+    for c in candidates:
+        if c in by:return c
     return None
 
 def _is_proper(raw_token, index):
@@ -126,13 +148,17 @@ def detect_constructions(raw, low_tokens, by=None):
         nxt=low_tokens[i+1]
         if nxt=='been' or nxt in IRREGULAR_VERBS and IRREGULAR_VERBS[nxt][1]=='participle' or nxt.endswith(('ed','en')):
             found.append('perfect'); break
-    if any(w in low_tokens for w in ('is','are','am','was','were')):
-        for w in low_tokens:
-            if not w.endswith('ing'): continue
-            lemma=lexical_match(by,w) if by else None
-            vals=by.get(lemma,[]) if by and lemma else []
-            if not vals or any(p=='v' for p,_ in vals):
-                found.append('progressive'); break
+    # Progressive requires a BE auxiliary immediately licensing a verbal -ing form.
+    # A noun such as STRING in 'This string is too short' is not progressive merely
+    # because its spelling ends in -ing.
+    for i,w in enumerate(low_tokens[:-1]):
+        if w not in ('is','are','am','was','were','be','been','being'): continue
+        nxt=low_tokens[i+1]
+        if not nxt.endswith('ing'): continue
+        lemma=lexical_match(by,nxt) if by else None
+        vals=by.get(lemma,[]) if by and lemma else []
+        if not vals or any(p=='v' for p,_ in vals):
+            found.append('progressive'); break
     if 'not' in low_tokens or 'never' in low_tokens: found.append('negation')
     if any(w in low_tokens for w in ('and','or','but')): found.append('coordination')
     # Multiple commas often mark coordinated predicates or introductory phrases,
@@ -175,7 +201,11 @@ def analyze(raw, by):
             else: missing.append(w)
             continue
         if w in FUNCTION_WORDS or w.isdigit(): grammatical.append({'token':w,'role':'function'}); continue
-        m=lexical_match(by,w)
+        # Inflected predicates require a verbal lemma, not an accidental noun
+        # homograph (freezes -> freeze, rather than freez:n).
+        verbal_inflection=(w in IRREGULAR_VERBS or (w.endswith(('ed','ing','es')) and w not in IRREGULAR_NOUNS))
+        verb=lexical_match(by,w,'v') if verbal_inflection else None
+        m=verb or lexical_match(by,w)
         if m: lexical.append({'token':w,'lemma':m})
         elif _is_proper(surface,i): proper.append(surface); grammatical.append({'token':w,'role':'proper_name'})
         else: missing.append(w)

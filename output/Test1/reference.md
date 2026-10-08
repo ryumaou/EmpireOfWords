@@ -76,36 +76,37 @@ Morphophonemics: **templatic_light, vowel_elision**
 - convert_adjective_to_verb: **ala-**
 
 ## Particles
-- yes_no: **tencud**
-- negative: **mongun**
-- comparative: **bui**
-- superlative: **berisai**
-- and: **irabuya**
-- or: **kuuudau**
-- but: **qoni**
-- ability: **aunudi**
-- obligation: **obarani**
-- possibility: **orinski**
-- future: **yeeceni**
-- progressive: **saluuru**
-- perfect: **danggen**
-- imperative: **cegen**
-- possessive: **delende**
-- complementizer: **qaltebu**
-- relative: **qubasun**
-- conditional: **naracin**
-- subordinate: **toorici**
-- passive: **ebeled**
-- quotative: **buurun**
-- appositive: **kilun**
-- participle: **tegei**
-- infinitive: **aulaqu**
+- past: **tencud**
+- yes_no: **mongun**
+- negative: **bui**
+- comparative: **berisai**
+- superlative: **irabuya**
+- and: **kuuudau**
+- or: **qoni**
+- but: **aunudi**
+- ability: **obarani**
+- obligation: **orinski**
+- possibility: **yeeceni**
+- future: **saluuru**
+- progressive: **danggen**
+- perfect: **cegen**
+- imperative: **delende**
+- possessive: **qaltebu**
+- complementizer: **qubasun**
+- relative: **naracin**
+- conditional: **toorici**
+- subordinate: **ebeled**
+- passive: **buurun**
+- quotative: **kilun**
+- appositive: **tegei**
+- participle: **aulaqu**
+- infinitive: **emenege**
 
 ## Generated Examples
 ### Translation
 - English: The big dog is sleeping.
-- Language: **uganibu oombudb casuumu**
-- Gloss: `SLEEPING-PROG DOG-DEF BIG`
+- Language: **ajairbu oombudb casuumu**
+- Gloss: `SLEEP-PROG DOG-DEF BIG`
 - Status: `ok`
 
 ### Translation
@@ -116,19 +117,19 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: She will give him water.
-- Language: **yeeceni ondelgibu irtinut joorongo**
+- Language: **saluuru ondelgibu irtinut joorongo**
 - Gloss: `GIVE-FUT 3SG WATER:ACCUSATIVE`
 - Status: `ok`
 
 ### Translation
 - English: This child walked to that house yesterday.
-- Language: **onguubu aaca uunigha kemuula jegere yongju**
-- Gloss: `WALKED PROXIMAL_SINGULAR CHILD TO DISTAL_SINGULAR HOUSE`
+- Language: **tencud tuurtinbu aaca uunigha kemuula jegere yongju**
+- Gloss: `WALK-PST PROXIMAL_SINGULAR CHILD TO DISTAL_SINGULAR HOUSE`
 - Status: `ok`
 
 ### Translation
 - English: Are you hungry?
-- Language: **bolusue qaica enilaul tencud**
+- Language: **bolusue qaica enilaul mongun**
 - Gloss: `BE (TEMPORARY STATE) 2SG HUNGRY Q`
 - Status: `ok`
 
@@ -140,13 +141,13 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: The woman and the man are talking.
-- Language: **oasiuitu buiraigseb ouluujub**
-- Gloss: `TALKING-PROG WOMAN.PL-DEF AND MAN-DEF`
+- Language: **ugalinbu iruugseb ouluujub**
+- Gloss: `TALK-PROG WOMAN-DEF AND MAN-DEF`
 - Status: `ok`
 
 ### Translation
 - English: I do not see three cats.
-- Language: **mongun saralunal usaiqan catan buajasido naud**
+- Language: **bui saralunal usaiqan catan buajasido naud**
 - Gloss: `SEE-NEG 1SG THREE CAT.PL:ACCUSATIVE NOT`
 - Status: `ok`
 
@@ -158,13 +159,13 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: Two children played in the garden.
-- Language: **bosiradtu oruulbi buunaghi maralua ejibalib**
-- Gloss: `PLAYED TWO CHILD.PL IN GARDEN-DEF`
+- Language: **tencud moogsektu oruulbi buuanigha maralua ejibalib**
+- Gloss: `PLAY-PST TWO CHILD.PL IN GARDEN-DEF`
 - Status: `ok`
 
 ### Translation
 - English: A Tiger wearing a bell will starve.
-- Language: **yeeceni bosuujubu delekuu tegei amjijin senigho**
+- Language: **saluuru bosuujubu delekuu aulaqu amjijin senigho**
 - Gloss: `STARVE-FUT TIGER WEARING-PTCP BELL:ACCUSATIVE`
 - Status: `ok`
 
@@ -176,37 +177,37 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: The sun is shining.
-- Language: **uyanciurbu dasuugib**
-- Gloss: `SHINING-PROG SUN-DEF`
+- Language: **utainbu dasuugib**
+- Gloss: `SHINE-PROG SUN-DEF`
 - Status: `ok`
 
 ### Translation
 - English: The sun shone.
-- Language: **tainbu dasuugib**
-- Gloss: `SHINE SUN-DEF`
+- Language: **tencud tainbu dasuugib**
+- Gloss: `SHINE-PST SUN-DEF`
 - Status: `ok`
 
 ### Translation
 - English: The sun will shine.
-- Language: **yeeceni tainbu dasuugib**
+- Language: **saluuru tainbu dasuugib**
 - Gloss: `SHINE-FUT SUN-DEF`
 - Status: `ok`
 
 ### Translation
 - English: The sun has been shining.
-- Language: **yoncuurotubu dasuugib**
-- Gloss: `SHINING-PERF SUN-DEF`
+- Language: **utainbotu dasuugib**
+- Gloss: `SHINE-PROG-PERF SUN-DEF`
 - Status: `ok`
 
 ### Translation
 - English: The sun is shining again.
-- Language: **uyanciurbu dasuugib mongke**
-- Gloss: `SHINING-PROG SUN-DEF AGAIN`
+- Language: **utainbu dasuugib mongke**
+- Gloss: `SHINE-PROG SUN-DEF AGAIN`
 - Status: `ok`
 
 ### Translation
 - English: The sun will shine tomorrow.
-- Language: **yeeceni tainbu dasuugib berisai**
+- Language: **saluuru tainbu dasuugib berisai**
 - Gloss: `SHINE-FUT SUN-DEF TOMORROW`
 - Status: `ok`
 
@@ -224,14 +225,14 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: The sun is rising now.
-- Language: **urganbu dasuugib keuuges**
-- Gloss: `RISING-PROG SUN-DEF NOW`
+- Language: **usaghinbu dasuugib keuuges**
+- Gloss: `RISE-PROG SUN-DEF NOW`
 - Status: `ok`
 
 ### Translation
 - English: All the people shouted.
-- Language: **oberuurtu kejirgu buusaringa**
-- Gloss: `SHOUTED ALL PERSON.PL`
+- Language: **tencud saisqantu kejirgu buusaringa**
+- Gloss: `SHOUT-PST ALL PERSON.PL`
 - Status: `ok`
 
 ### Translation
@@ -254,49 +255,49 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: The kitten jumped up.
-- Language: **qaiqandbu ajasidmob ciyiras**
-- Gloss: `JUMPED KITTEN-DEF UP`
+- Language: **tencud keijuunbu ajasidmob ciyiras**
+- Gloss: `JUMP-PST KITTEN-DEF UP`
 - Status: `ok`
 
 ### Translation
 - English: The kitten jumped onto the table.
-- Language: **qaiqandbu ajasidmob ousan okeuuyub**
-- Gloss: `JUMPED KITTEN-DEF ONTO TABLE-DEF`
+- Language: **tencud keijuunbu ajasidmob ousan okeuuyub**
+- Gloss: `JUMP-PST KITTEN-DEF ONTO TABLE-DEF`
 - Status: `ok`
 
 ### Translation
 - English: My little kitten walked away.
-- Language: **onguubu ajasidmo qoljime usaiqanko otu**
-- Gloss: `WALKED 1SG-GEN KITTEN LITTLE AWAY`
+- Language: **tencud tuurtinbu ajasidmo qoljime usaiqanko otu**
+- Gloss: `WALK-PST 1SG-GEN KITTEN LITTLE AWAY`
 - Status: `ok`
 
 ### Translation
 - English: It’s raining.
-- Language: **utaimuibu irtinut**
-- Gloss: `RAINING-PROG 3SG`
+- Language: **ucanibcibu irtinut**
+- Gloss: `RAIN-PROG 3SG`
 - Status: `ok`
 
 ### Translation
 - English: The rain came down.
-- Language: **orighacbu nabcib tartu**
-- Gloss: `COME RAIN-DEF DOWN`
+- Language: **tencud orighacbu nabcib tartu**
+- Gloss: `COME-PST RAIN-DEF DOWN`
 - Status: `ok`
 
 ### Translation
 - English: The kitten is playing in the rain.
-- Language: **ularbu ajasidmob maralua nabcib**
-- Gloss: `PLAYING-PROG KITTEN-DEF IN RAIN-DEF`
+- Language: **umaigsekbu ajasidmob maralua nabcib**
+- Gloss: `PLAY-PROG KITTEN-DEF IN RAIN-DEF`
 - Status: `ok`
 
 ### Translation
 - English: The rain has stopped.
-- Language: **keuumuotubu nabcib**
-- Gloss: `STOPPED-PERF RAIN-DEF`
+- Language: **tencud uugiluotubu nabcib**
+- Gloss: `STOP-PST-PERF RAIN-DEF`
 - Status: `ok`
 
 ### Translation
 - English: Soon the rain will stop.
-- Language: **yeeceni uugiluubu nabcib todud**
+- Language: **saluuru uugiluubu nabcib todud**
 - Gloss: `STOP-FUT RAIN-DEF SOON`
 - Status: `ok`
 
@@ -308,14 +309,14 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: Once wild animals lived here.
-- Language: **jedumuutu buutaisuu baidams toduugs nuten**
-- Gloss: `LIVED ANIMAL.PL WILD ONCE HERE`
+- Language: **tencud teretu buutaisuu baidams toduugs nuten**
+- Gloss: `LIVE-PST ANIMAL.PL WILD ONCE HERE`
 - Status: `ok`
 
 ### Translation
 - English: Slowly she looked around.
-- Language: **yonbu irtinut siuni ulaud**
-- Gloss: `LOOKED 3SG SLOW AROUND`
+- Language: **tencud balanbu irtinut siuni ulaud**
+- Gloss: `LOOK-PST 3SG SLOW AROUND`
 - Status: `ok`
 
 ### Translation
@@ -326,55 +327,55 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: Let’s go!
-- Language: **cegen ebuidjam daligur**
+- Language: **delende ebuidjam daligur**
 - Gloss: `GO-IMP 1PL HORT`
 - Status: `ok`
 
 ### Translation
 - English: You should go.
-- Language: **obarani ebue qaica**
+- Language: **orinski ebue qaica**
 - Gloss: `GO-MOD 2SG`
 - Status: `ok`
 
 ### Translation
 - English: I will be happy to go.
-- Language: **yeeceni aladanigal usaiqan kemuula qain**
+- Language: **saluuru aladanigal usaiqan kemuula qain**
 - Gloss: `HAPPY-FUT 1SG TO GO`
 - Status: `ok`
 
 ### Translation
 - English: He will arrive soon.
-- Language: **yeeceni ebeigsibu irtinut todud**
+- Language: **saluuru ebeigsibu irtinut todud**
 - Gloss: `ARRIVE-FUT 3SG SOON`
 - Status: `ok`
 
 ### Translation
 - English: The baby’s ball has rolled away.
-- Language: **casinotubu qatanb toolungkoko otu**
-- Gloss: `ROLLED-PERF BABY:GENITIVE-GEN BALL-DEF AWAY`
+- Language: **tencud obisqanotubu qatanb toolungkoko otu**
+- Gloss: `ROLL-PST-PERF BABY:GENITIVE-GEN BALL-DEF AWAY`
 - Status: `ok`
 
 ### Translation
 - English: The two boys are working together.
-- Language: **ubaincintu oruulbi buusanb nuurui**
-- Gloss: `WORKING-PROG TWO BOY.PL-DEF TOGETHER`
+- Language: **ukaimbaitu oruulbi buuasinb nuurui**
+- Gloss: `WORK-PROG TWO BOY.PL-DEF TOGETHER`
 - Status: `ok`
 
 ### Translation
 - English: This mist will probably clear away.
-- Language: **yeeceni alanaiqalkbu aaca kuukeri mantura otu**
+- Language: **saluuru alanaiqalkbu aaca kuukeri mantura otu**
 - Gloss: `CLEAR-FUT PROXIMAL_SINGULAR MIST PROBABLY AWAY`
 - Status: `ok`
 
 ### Translation
 - English: Lovely flowers are growing everywhere.
-- Language: **usalisuntu buudali buaduu oruuiyi**
-- Gloss: `GROWING-PROG FLOWER.PL LOVELY EVERYWHERE`
+- Language: **eramilatu buudali buaduu oruuiyi**
+- Gloss: `GROW-PROG FLOWER.PL LOVELY EVERYWHERE`
 - Status: `ok`
 
 ### Translation
 - English: We should eat more slowly.
-- Language: **obarani abujujam daligur bui siuni**
+- Language: **orinski abujujam daligur berisai siuni**
 - Gloss: `EAT-MOD 1PL SLOW`
 - Status: `ok`
 
@@ -386,7 +387,7 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: You must write more neatly.
-- Language: **obarani tale qaica bui abkeuui**
+- Language: **orinski tale qaica berisai abkeuui**
 - Gloss: `WRITE-MOD 2SG NEAT`
 - Status: `ok`
 
@@ -398,8 +399,8 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: Henry’s dog is lost.
-- Language: **orberuibu oombud ciayauckoko**
-- Gloss: `LOSE HENRY:GENITIVE-GEN DOG`
+- Language: **tencud orberuibu oombud ciayauckoko**
+- Gloss: `LOSE-PST HENRY:GENITIVE-GEN DOG`
 - Status: `ok`
 
 ### Translation
@@ -422,123 +423,123 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: The children ran after Jack.
-- Language: **cincuuktu buunaghib keduugu mooroni**
-- Gloss: `RUN CHILD.PL-DEF AFTER JACK`
+- Language: **tencud cincuuktu buuanighab keduugu mooroni**
+- Gloss: `RUN-PST CHILD.PL-DEF AFTER JACK`
 - Status: `ok`
 
 ### Translation
 - English: I can play after school.
-- Language: **aunudi moogsekal usaiqan keduugu nirad**
+- Language: **obarani moogsekal usaiqan keduugu nirad**
 - Gloss: `PLAY-MOD 1SG AFTER SCHOOL`
 - Status: `ok`
 
 ### Translation
 - English: We went to the village for a visit.
-- Language: **ebuijam daligur kemuula quyeeceb gedbuuk buugene**
-- Gloss: `GO 1PL TO VILLAGE-DEF FOR VISIT`
+- Language: **tencud ebuijam daligur kemuula quyeeceb gedbuuk buugene**
+- Gloss: `GO-PST 1PL TO VILLAGE-DEF FOR VISIT`
 - Status: `ok`
 
 ### Translation
 - English: We arrived at the river.
-- Language: **naraangjam daligur ali nuubisab**
-- Gloss: `ARRIVED 1PL AT RIVER-DEF`
+- Language: **tencud ebeigsijam daligur ali nuubisab**
+- Gloss: `ARRIVE-PST 1PL AT RIVER-DEF`
 - Status: `ok`
 
 ### Translation
 - English: I have been waiting for you.
-- Language: **eduugsotal usaiqan gedbuuk qaica**
-- Gloss: `WAITING-PERF 1SG FOR 2SG`
+- Language: **usabinalotu usaiqan gedbuuk qaica**
+- Gloss: `WAIT-PROG-PERF 1SG FOR 2SG`
 - Status: `ok`
 
 ### Translation
 - English: The campers sat around the fire.
-- Language: **juuitu buunalinb orgob ulaud**
-- Gloss: `SIT CAMPER.PL-DEF FIRE:ACCUSATIVE-DEF AROUND`
+- Language: **tencud juuibu nilenb orgob ulaud**
+- Gloss: `SIT-PST CAMPER-DEF FIRE:ACCUSATIVE-DEF AROUND`
 - Status: `ok`
 
 ### Translation
 - English: A little girl with a kitten sat near me.
-- Language: **juuibu ajasidmo uluujer qoljime ooni usaiqan**
-- Gloss: `SIT KITTEN GIRL LITTLE NEAR 1SG`
+- Language: **tencud juuibu ajasidmo uluujer qoljime ooni usaiqan**
+- Gloss: `SIT-PST KITTEN GIRL LITTLE NEAR 1SG`
 - Status: `ok`
 
 ### Translation
 - English: The child waited at the door for her father.
-- Language: **oruukerbu uunighab ali moniyirb gedbuuk tangang irtinutko**
-- Gloss: `WAITED CHILD-DEF AT DOOR-DEF FOR 3SG-GEN FATHER`
+- Language: **tencud sabunbu uunighab ali moniyirb gedbuuk tangang irtinutko**
+- Gloss: `WAIT-PST CHILD-DEF AT DOOR-DEF FOR 3SG-GEN FATHER`
 - Status: `ok`
 
 ### Translation
 - English: Yesterday the oldest girl in the village lost her kitten.
-- Language: **orberuibu quyeeceb uluujer qalaiqa ajasidmo irtinutko qanduun**
-- Gloss: `LOSE VILLAGE-DEF GIRL OLDEST 3SG-GEN KITTEN:ACCUSATIVE YESTERDAY`
+- Language: **tencud orberuibu quyeeceb uluujer qalaiqa ajasidmo irtinutko qanduun**
+- Gloss: `LOSE-PST VILLAGE-DEF GIRL OLDEST 3SG-GEN KITTEN:ACCUSATIVE YESTERDAY`
 - Status: `ok`
 
 ### Translation
 - English: Were you born in this village?
-- Language: **cecegse qaica maralua aaca quyeece tencud**
-- Gloss: `BEAR 2SG IN PROXIMAL_SINGULAR VILLAGE Q`
+- Language: **tencud cecegse qaica maralua aaca quyeece mongun**
+- Gloss: `BEAR-PST 2SG IN PROXIMAL_SINGULAR VILLAGE Q`
 - Status: `ok`
 
 ### Translation
 - English: Can your brother dance well?
-- Language: **aunudi cioobcimabu saidal qaicako qubituu tencud**
+- Language: **obarani cioobcimabu saidal qaicako qubituu mongun**
 - Gloss: `DANCE-MOD 2SG-GEN BROTHER WELL Q`
 - Status: `ok`
 
 ### Translation
 - English: Did the man leave?
-- Language: **cegeibu ouluujub tencud**
-- Gloss: `LEAVE MAN-DEF Q`
+- Language: **tencud cegeibu ouluujub mongun**
+- Gloss: `LEAVE-PST MAN-DEF Q`
 - Status: `ok`
 
 ### Translation
 - English: Is your sister coming for you?
-- Language: **usanigetbu miled qaicako gedbuuk qaica tencud**
-- Gloss: `COMING-PROG 2SG-GEN SISTER FOR 2SG Q`
+- Language: **orighacbu miled qaicako gedbuuk qaica mongun**
+- Gloss: `COME 2SG-GEN SISTER FOR 2SG Q`
 - Status: `ok`
 
 ### Translation
 - English: Can you come tomorrow?
-- Language: **aunudi orighace qaica berisai tencud**
+- Language: **obarani orighace qaica berisai mongun**
 - Gloss: `COME-MOD 2SG TOMORROW Q`
 - Status: `ok`
 
 ### Translation
 - English: Have the neighbors gone away for the winter?
-- Language: **ebuitu buukaigeib otu gedbuuk suusunb tencud**
+- Language: **ebuitu buukaigeib otu gedbuuk suusunb mongun**
 - Gloss: `GO NEIGHBOR.PL-DEF AWAY FOR WINTER-DEF Q`
 - Status: `ok`
 
 ### Translation
 - English: Does the robin sing in the rain?
-- Language: **gikinuoobu kejigb maralua nabcib tencud**
+- Language: **gikinuoobu kejigb maralua nabcib mongun**
 - Gloss: `SING ROBIN-DEF IN RAIN-DEF Q`
 - Status: `ok`
 
 ### Translation
 - English: Are you going with us to the concert?
-- Language: **usalqirqe qaica jegdele daligur kemuula nabkilub tencud**
-- Gloss: `GOING-PROG 2SG WITH 1PL TO CONCERT-DEF Q`
+- Language: **ebue qaica jegdele daligur kemuula nabkilub mongun**
+- Gloss: `GO 2SG WITH 1PL TO CONCERT-DEF Q`
 - Status: `ok`
 
 ### Translation
 - English: Have you ever travelled in the jungle?
-- Language: **ciayane qaica totur maralua siruukub tencud**
-- Gloss: `TRAVELLED 2SG EVER IN JUNGLE-DEF Q`
+- Language: **tencud bulakije qaica totur maralua siruukub mongun**
+- Gloss: `TRAVEL-PST 2SG EVER IN JUNGLE-DEF Q`
 - Status: `ok`
 
 ### Translation
 - English: We sailed down the river for several miles.
-- Language: **joropjam daligur nuubisob tartu gedbuuk gemuung buutaikerg**
-- Gloss: `SAILED 1PL RIVER:ACCUSATIVE-DEF DOWN FOR SEVERAL MILE.PL`
+- Language: **tencud koocighjam daligur nuubisob tartu gedbuuk gemuung buutaikerg**
+- Gloss: `SAIL-PST 1PL RIVER:ACCUSATIVE-DEF DOWN FOR SEVERAL MILE.PL`
 - Status: `ok`
 
 ### Translation
 - English: Everybody knows about hunting.
-- Language: **[PARTIAL]**
-- Gloss: `KNOW everybody.NOM`
-- Status: `partial`
+- Language: **otaiqaltu buubaili berdun ene**
+- Gloss: `HUNT KNOW.PL EVERYBODY ABOUT`
+- Status: `ok`
 
 ### Translation
 - English: On a Sunny morning after the solstice we started for the mountains.
@@ -548,15 +549,15 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: Tom laughed at the monkey’s tricks.
-- Language: **ouluyabu buurgi ali buumaikoorb duruukoko**
-- Gloss: `LAUGHED TOM AT MONKEY:GENITIVE-GEN TRICK.PL-DEF`
+- Language: **tencud jaberiybu buurgi ali buumaikoorb duruukoko**
+- Gloss: `LAUGH-PST TOM AT MONKEY:GENITIVE-GEN TRICK.PL-DEF`
 - Status: `ok`
 
 ### Translation
 - English: An old man with a walking stick stood beside the fence.
-- Language: **usidbu ouluuju matariu orusundo monooru olon orolanb**
-- Gloss: `WALKING MAN OLD STAND:ACCUSATIVE STICK BESIDE FENCE-DEF`
-- Status: `ok`
+- Language: **[PARTIAL]**
+- Gloss: `STAND-PST MAN OLD WALKING-PTCP BESIDE FENCE-DEF`
+- Status: `partial`
 
 ### Translation
 - English: The squirrel’s nest was hidden by drooping boughs.
@@ -566,39 +567,39 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: The little seeds waited patiently under the snow for the warm spring sun.
-- Language: **oruukertu buujailartb qoljime daligur toorici gikuugeb gedbuuk daaruib tegei abaisai dasuugo**
-- Gloss: `WAITED SEED.PL-DEF LITTLE PATIENT UNDER SNOW-DEF FOR WARM-DEF SPRING-PTCP SUN:ACCUSATIVE`
+- Language: **tencud sabuntu buujailartb qoljime daligur toorici gikuugeb gedbuuk daaruib aulaqu abaisai dasuugo**
+- Gloss: `WAIT-PST SEED.PL-DEF LITTLE PATIENT UNDER SNOW-DEF FOR WARM-DEF SPRING-PTCP SUN:ACCUSATIVE`
 - Status: `ok`
 
 ### Translation
 - English: Many little girls with wreaths of flowers on their heads danced around the bonfire.
 - Language: **[PARTIAL]**
-- Gloss: `HEAD MANY FLOWER.PL GIRL WREATH LITTLE BONFIRE:ACCUSATIVE AROUND`
+- Gloss: `HEAD 3PL-GEN girl.NOM little bonfire.ACC-DEF`
 - Status: `partial`
 
 ### Translation
 - English: The cover of the basket fell to the floor.
-- Language: **pronguubu caadb tobleki kemuula eriqaulb**
-- Gloss: `FALL BASKET-DEF COVER TO FLOOR-DEF`
+- Language: **tencud pronguubu caadb tobleki kemuula eriqaulb**
+- Gloss: `FALL-PST BASKET-DEF COVER TO FLOOR-DEF`
 - Status: `ok`
 
 ### Translation
 - English: The first boy in the line stopped at the entrance.
-- Language: **keuumuubu edeb uusan tenguuu ali tooreyib**
-- Gloss: `STOPPED LINE-DEF BOY FIRST AT ENTRANCE-DEF`
+- Language: **tencud uugiluubu edeb uusan tenguuu ali tooreyib**
+- Gloss: `STOP-PST LINE-DEF BOY FIRST AT ENTRANCE-DEF`
 - Status: `ok`
 
 ### Translation
 - English: On the top of the hill in a little hut lived a wise old woman.
-- Language: **jedumuubu nii bilan dol qoljime iruugso narlusu matariu**
-- Gloss: `LIVED HUT TOP HILL LITTLE WOMAN:ACCUSATIVE WISE OLD`
-- Status: `ok`
+- Language: **[PARTIAL]**
+- Gloss: `LIVED top.NOM little wise.ACC old`
+- Status: `partial`
 
 ### Translation
 - English: During our residence in the country we often walked in the pastures.
-- Language: **onguubu quriqan jegene moduuge maralua buunagidb**
-- Gloss: `WALKED COUNTRY RESIDENCE OFTEN IN PASTURE.PL-DEF`
-- Status: `ok`
+- Language: **[PARTIAL]**
+- Gloss: `WALKED 1PL-GEN residence.NOM-DEF IN pasture.LOC-DEF`
+- Status: `partial`
 
 ### Translation
 - English: When will your guests from the city arrive?
@@ -620,14 +621,14 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: Among the wheat grew tall red poppies.
-- Language: **erimalabu kejiged buusaniimo eribili cighen**
-- Gloss: `GROW WHEAT POPPY.PL:ACCUSATIVE TALL RED`
+- Language: **tencud erimalabu kejiged sinaimo eribili cighen**
+- Gloss: `GROW-PST WHEAT POPPY:ACCUSATIVE TALL RED`
 - Status: `ok`
 
 ### Translation
 - English: The strong roots of the oak trees were torn from the ground.
-- Language: **orcasutu buugalisb qulju mongleg suulun geriud dolusuub**
-- Gloss: `TEAR TREE.PL-DEF ROOT STRONG OAK FROM GROUND-DEF`
+- Language: **tencud orcasuttu buuagilasb qulju mongleg suulun geriud dolusuub**
+- Gloss: `TEAR-PST TREE.PL-DEF ROOT STRONG OAK FROM GROUND-DEF`
 - Status: `ok`
 
 ### Translation
@@ -638,20 +639,20 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: The west wind blew across my face like a friendly caress.
-- Language: **[PARTIAL]**
-- Gloss: `WIND WEST-DEF ACROSS 1SG-GEN FACE LIKE CARESS.PL FRIENDLY`
-- Status: `partial`
+- Language: **tencud buruuibu soruitab ariusu degedun bookigt usaiqanko yalun otuudal jilengtm**
+- Gloss: `BLOW-PST WIND-DEF WEST ACROSS 1SG-GEN FACE LIKE CARESS FRIENDLY`
+- Status: `ok`
 
 ### Translation
 - English: The spool of thread rolled across the floor.
-- Language: **casinbu cegeriub tooncuu degedun eriqaulb**
-- Gloss: `ROLLED THREAD-DEF SPOOL ACROSS FLOOR-DEF`
+- Language: **tencud obisqanbu cegeriub tooncuu degedun eriqaulb**
+- Gloss: `ROLL-PST THREAD-DEF SPOOL ACROSS FLOOR-DEF`
 - Status: `ok`
 
 ### Translation
 - English: A box of growing plants stood in the Window.
-- Language: **salusunbu ubidara orusundo aljilek maralua yinacasb**
-- Gloss: `GROWING BOX STAND:ACCUSATIVE PLANT IN WINDOW-DEF`
+- Language: **tencud minuturbu ubidara aulaqu salusun nuturao maralua yinacasb**
+- Gloss: `STAND-PST BOX GROWING-PTCP PLANT:ACCUSATIVE IN WINDOW-DEF`
 - Status: `ok`
 
 ### Translation
@@ -692,38 +693,38 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: The little girl seemed lonely.
-- Language: **oonggelbu uluujerb qoljime uyi**
-- Gloss: `SEEMED GIRL-DEF LITTLE LONE`
+- Language: **tencud nooljarbu uluujerb qoljime uyi**
+- Gloss: `SEEM-PST GIRL-DEF LITTLE LONE`
 - Status: `ok`
 
 ### Translation
 - English: The little boy’s father had once been a sailor.
-- Language: **bolusuubu tangangb uusanko qoljimeko koocighro toduugs**
-- Gloss: `BE (TEMPORARY STATE) BOY:GENITIVE LITTLE-GEN FATHER-DEF SAILOR:ACCUSATIVE ONCE`
+- Language: **tencud bolusuubu tangangb uusanko qoljimeko koocighro toduugs**
+- Gloss: `BE (TEMPORARY STATE)-PST BOY:GENITIVE LITTLE-GEN FATHER-DEF SAILOR:ACCUSATIVE ONCE`
 - Status: `ok`
 
 ### Translation
 - English: I have lost my blanket.
-- Language: **orberual usaiqan orono usaiqanko**
-- Gloss: `LOSE 1SG 1SG-GEN BLANKET:ACCUSATIVE`
+- Language: **tencud orberual usaiqan orono usaiqanko**
+- Gloss: `LOSE-PST 1SG 1SG-GEN BLANKET:ACCUSATIVE`
 - Status: `ok`
 
 ### Translation
 - English: A robin has built his nest in the apple tree.
-- Language: **aladaasbu kejig jalo irtinutko maralua uugilasb degetuu**
-- Gloss: `BUILD ROBIN 3SG-GEN NEST:ACCUSATIVE IN TREE-DEF APPLE`
+- Language: **tencud aladaasbu kejig jalo irtinutko maralua uugilasb degetuu**
+- Gloss: `BUILD-PST ROBIN 3SG-GEN NEST:ACCUSATIVE IN TREE-DEF APPLE`
 - Status: `ok`
 
 ### Translation
 - English: At noon we ate our lunch by the roadside.
-- Language: **abujubu meregda minglano daligurko oorongk yirab**
-- Gloss: `EAT NOON 1PL-GEN LUNCH:ACCUSATIVE BY ROADSIDE-DEF`
+- Language: **tencud abujubu meregda minglano daligurko oorongk yirab**
+- Gloss: `EAT-PST NOON 1PL-GEN LUNCH:ACCUSATIVE BY ROADSIDE-DEF`
 - Status: `ok`
 
 ### Translation
 - English: Mr. Jones made a knife for his little boy.
-- Language: **silduatu buaraldis irtuumo gedbuuk uusan qoljime irtinutko**
-- Gloss: `MAKE JONE.PL KNIFE:ACCUSATIVE FOR 3SG-GEN BOY LITTLE`
+- Language: **tencud silduabu arildus irtuumo gedbuuk uusan qoljime irtinutko**
+- Gloss: `MAKE-PST JONE KNIFE:ACCUSATIVE FOR 3SG-GEN BOY LITTLE`
 - Status: `ok`
 
 ### Translation
@@ -740,37 +741,37 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: Have all the leaves fallen from the tree?
-- Language: **pronguutu kejirgu buamtai geriud uugilasb tencud**
+- Language: **pronguutu kejirgu buamtai geriud uugilasb mongun**
 - Gloss: `FALL ALL LEAF.PL FROM TREE-DEF Q`
 - Status: `ok`
 
 ### Translation
 - English: Will you be ready on time?
-- Language: **yeeceni bolusue qaica orunari nutumuu yars tencud**
+- Language: **saluuru bolusue qaica orunari nutumuu yars mongun**
 - Gloss: `BE (TEMPORARY STATE)-FUT 2SG READY ON TIME Q`
 - Status: `ok`
 
 ### Translation
 - English: Will you send this message for me?
-- Language: **yeeceni duudame qaica aaca oruiigso gedbuuk usaiqan tencud**
+- Language: **saluuru duudame qaica aaca oruiigso gedbuuk usaiqan mongun**
 - Gloss: `SEND-FUT 2SG PROXIMAL_SINGULAR MESSAGE:ACCUSATIVE FOR 1SG Q`
 - Status: `ok`
 
 ### Translation
 - English: Are you waiting for me?
-- Language: **edaigse qaica gedbuuk usaiqan tencud**
-- Gloss: `WAITING-PROG 2SG FOR 1SG Q`
+- Language: **sabune qaica gedbuuk usaiqan mongun**
+- Gloss: `WAIT 2SG FOR 1SG Q`
 - Status: `ok`
 
 ### Translation
 - English: Is this the first kitten of the litter?
-- Language: **ajasidmotu aaca maljilgb mangolob tencud**
+- Language: **ajasidmotu aaca maljilgb mangolob mongun**
 - Gloss: `KITTEN THIS first.NOM-DEF litter.ACC-DEF Q`
 - Status: `ok`
 
 ### Translation
 - English: Are these shoes too big for you?
-- Language: **bolusuutu sonigen buuyalilju casuumu ebuuldu gedbuuk qaica tencud**
+- Language: **bolusuutu sonigen buuyalilju casuumu ebuuldu gedbuuk qaica mongun**
 - Gloss: `BE (TEMPORARY STATE) PROXIMAL_PLURAL SHOE.PL BIG TOO FOR 2SG Q`
 - Status: `ok`
 
@@ -812,9 +813,9 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: Be careful.
-- Language: **[PARTIAL]**
-- Gloss: `[PARTIAL]`
-- Status: `partial`
+- Language: **bolusuude toonmo**
+- Gloss: `BE (TEMPORARY STATE)-IMP CAREFUL`
+- Status: `ok`
 
 ### Translation
 - English: Have some tea.
@@ -824,8 +825,8 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: Pip and his dog were great friends.
-- Language: **bolusuubu oombud udelge meri**
-- Gloss: `BE (TEMPORARY STATE) DOG GREAT FRIEND`
+- Language: **tencud bolusuubu oombud udelge meri**
+- Gloss: `BE (TEMPORARY STATE)-PST DOG GREAT FRIEND`
 - Status: `ok`
 
 ### Translation
@@ -836,38 +837,38 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: You and I will go together.
-- Language: **yeeceni ebue qaica nuurui**
+- Language: **saluuru ebue qaica nuurui**
 - Gloss: `GO-FUT 2SG TOGETHER`
 - Status: `ok`
 
 ### Translation
 - English: They opened all the doors and windows.
-- Language: **orondumtu alaqu kejirgu buumaniyiro buuyanicaso**
-- Gloss: `OPENED 3PL ALL DOOR.PL:ACCUSATIVE AND WINDOW.PL:ACCUSATIVE`
+- Language: **tencud teuutu alaqu kejirgu buumaniyiro buuyanicaso**
+- Gloss: `OPEN-PST 3PL ALL DOOR.PL:ACCUSATIVE AND WINDOW.PL:ACCUSATIVE`
 - Status: `ok`
 
 ### Translation
 - English: He is small, but strong.
-- Language: **[PARTIAL]**
-- Gloss: `BE (TEMPORARY STATE) 3SG`
-- Status: `partial`
+- Language: **bolusuubu irtinut jincuu aunudi mongleg**
+- Gloss: `BE (TEMPORARY STATE) 3SG SMALL BUT STRONG`
+- Status: `ok`
 
 ### Translation
 - English: Is this tree an oak or a maple?
-- Language: **bolusuubu aaca uugilas buusatino qaraduro tencud**
-- Gloss: `BE (TEMPORARY STATE) PROXIMAL_SINGULAR TREE OAK.PL:ACCUSATIVE OR MAPLE:ACCUSATIVE Q`
+- Language: **bolusuubu aaca uugilas sutuno qaraduro mongun**
+- Gloss: `BE (TEMPORARY STATE) PROXIMAL_SINGULAR TREE OAK:ACCUSATIVE OR MAPLE:ACCUSATIVE Q`
 - Status: `ok`
 
 ### Translation
 - English: Does the sky look blue or gray?
-- Language: **[PARTIAL]**
-- Gloss: `LOOK SKY-DEF Q`
-- Status: `partial`
+- Language: **balanbu koolanab umbud qoni amsuulk mongun**
+- Gloss: `LOOK SKY-DEF BLUE OR GRAY Q`
+- Status: `ok`
 
 ### Translation
 - English: Come with your father or mother.
-- Language: **orighacde jegdele buutanging qaicako buuguuj**
-- Gloss: `COME-IMP WITH 2SG-GEN FATHER.PL OR MOTHER`
+- Language: **orighacde jegdele tangang qaicako buuguuj**
+- Gloss: `COME-IMP WITH 2SG-GEN FATHER OR MOTHER`
 - Status: `ok`
 
 ### Translation
@@ -878,26 +879,26 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: He played a tune on his wonderful flute.
-- Language: **bosiradbu irtinut aruo nutumuu bisaiqa uuilua irtinutko**
-- Gloss: `PLAYED 3SG TUNE:ACCUSATIVE ON 3SG-GEN FLUTE WONDERFUL`
+- Language: **tencud moogsekbu irtinut aruo nutumuu bisaiqa uuilua irtinutko**
+- Gloss: `PLAY-PST 3SG TUNE:ACCUSATIVE ON 3SG-GEN FLUTE WONDERFUL`
 - Status: `ok`
 
 ### Translation
 - English: Toward the end of August the days grow much shorter.
-- Language: **erimalatu buumai keijila dakineg olgilau**
-- Gloss: `GROW DAY.PL END AUGUST SHORTER`
-- Status: `ok`
+- Language: **[PARTIAL]**
+- Gloss: `GROW end.NOM-DEF`
+- Status: `partial`
 
 ### Translation
 - English: A company of soldiers marched over the hill and across the meadow.
-- Language: **cegesintu buajabida sigekuu oruumui dolb degedun tegenb**
-- Gloss: `MARCHED SOLDIER.PL COMPANY OVER HILL-DEF ACROSS MEADOW-DEF`
+- Language: **tencud kegtu buajabida sigekuu oruumui dolb degedun tegenb**
+- Gloss: `MARCH-PST SOLDIER.PL COMPANY OVER HILL-DEF ACROSS MEADOW-DEF`
 - Status: `ok`
 
 ### Translation
 - English: The first part of the story is very interesting.
-- Language: **uyaigenbu bulkilab comui tenguuu caulayi**
-- Gloss: `INTERESTING-PROG STORY-DEF PART FIRST VERY`
+- Language: **yuugenbu bulkilab comui tenguuu caulayi**
+- Gloss: `INTERESTING STORY-DEF PART FIRST VERY`
 - Status: `ok`
 
 ### Translation
@@ -908,44 +909,44 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: The baby clapped her hands and laughed in glee.
-- Language: **giladabu toolungb buuqabilemo irtinutko irabuya ouluyabu toolungb maralua arasai**
-- Gloss: `CLAPPED BABY-DEF 3SG-GEN HAND.PL:ACCUSATIVE AND LAUGHED BABY-DEF IN GLEE`
+- Language: **tencud buumanbu toolungb buuqabilemo irtinutko kuuudau tencud jaberiybu toolungb maralua arasai**
+- Gloss: `CLAP-PST BABY-DEF 3SG-GEN HAND.PL:ACCUSATIVE AND LAUGH-PST BABY-DEF IN GLEE`
 - Status: `ok`
 
 ### Translation
 - English: Stop your game and be quiet.
-- Language: **uugiluude uljo qaicako irabuya bolusuudbu toolund**
+- Language: **uugiluude uljo qaicako kuuudau bolusuudbu toolund**
 - Gloss: `STOP-IMP 2SG-GEN GAME:ACCUSATIVE AND BE (TEMPORARY STATE)-IMP QUIET`
 - Status: `ok`
 
 ### Translation
 - English: The sound of the drums grew louder and louder.
-- Language: **[PARTIAL]**
-- Gloss: `GROW DRUM.PL-DEF SOUND`
-- Status: `partial`
+- Language: **tencud erimalabu daunb caan kuuudau caan buruul**
+- Gloss: `GROW-PST DRUM-DEF LOUDER AND LOUDER SOUND`
+- Status: `ok`
 
 ### Translation
 - English: Do you like summer or winter better?
 - Language: **[PARTIAL]**
-- Gloss: `LIKE 2SG SUMMER.PL:ACCUSATIVE OR WINTER:ACCUSATIVE Q`
+- Gloss: `LIKE 2SG SUMMER:ACCUSATIVE OR WINTER:ACCUSATIVE Q`
 - Status: `partial`
 
 ### Translation
 - English: That boy will have a wonderful trip.
-- Language: **yeeceni ajauldabu uusan sidabco uuilua elekeri**
+- Language: **saluuru ajauldabu uusan sidabco uuilua elekeri**
 - Gloss: `HAVE-FUT BOY TRIP:ACCUSATIVE WONDERFUL THAT`
 - Status: `ok`
 
 ### Translation
 - English: They popped corn, and then sat around the fire and ate it.
-- Language: **qubidaytu alaqu aso irabuya juuitu alaqu orgob toturuu ulaud irabuya abujutu alaqu irtinut**
-- Gloss: `POPPED 3PL CORN:ACCUSATIVE AND SIT 3PL FIRE:ACCUSATIVE-DEF THEN AROUND AND EAT 3PL 3SG`
+- Language: **qubidaytu alaqu aso kuuudau tencud juuitu alaqu orgob toturuu ulaud kuuudau tencud abujutu alaqu irtinut**
+- Gloss: `POPPED 3PL CORN:ACCUSATIVE AND SIT-PST 3PL FIRE:ACCUSATIVE-DEF THEN AROUND AND EAT-PST 3PL 3SG`
 - Status: `ok`
 
 ### Translation
 - English: They won the first two games, but lost the last one.
-- Language: **nouatantu alaqu oruulbi buljob tenguuu qoni orberuitu alaqu jikinutob susuu**
-- Gloss: `WIN 3PL TWO GAME.PL:ACCUSATIVE-DEF FIRST BUT LOSE 3PL ONE:ACCUSATIVE-DEF LAST`
+- Language: **tencud nouatantu alaqu oruulbi buuljob tenguuu aunudi tencud orberuitu alaqu jikinutob susuu**
+- Gloss: `WIN-PST 3PL TWO GAME.PL:ACCUSATIVE-DEF FIRST BUT LOSE-PST 3PL ONE:ACCUSATIVE-DEF LAST`
 - Status: `ok`
 
 ### Translation
@@ -957,7 +958,7 @@ Morphophonemics: **templatic_light, vowel_elision**
 ### Translation
 - English: I awoke early, dressed hastily, and went down to breakfast.
 - Language: **[PARTIAL]**
-- Gloss: `AWAKE 1SG EARLY HASTY AND GO 1SG DOWN TO BREAKFAST`
+- Gloss: `AWAKE-PST 1SG EARLY HASTY AND GO-PST 1SG DOWN TO BREAKFAST`
 - Status: `partial`
 
 ### Translation
@@ -968,9 +969,9 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: This string is too short!
-- Language: **[PARTIAL]**
+- Language: **duulaide tegeduo todemen**
 - Gloss: `this-IMP string.ACC short`
-- Status: `partial`
+- Status: `ok`
 
 ### Translation
 - English: Oh, dear! the wind has blown my hat away!
@@ -981,14 +982,14 @@ Morphophonemics: **templatic_light, vowel_elision**
 ### Translation
 - English: Alas! that news is sad indeed!
 - Language: **[PARTIAL]**
-- Gloss: `INDE NEWS.PL THAT`
+- Gloss: `INDE-PST NEWS.PL THAT`
 - Status: `partial`
 
 ### Translation
 - English: Whew! that cold wind freezes my nose!
-- Language: **[PARTIAL]**
+- Language: **oosunbu soruita tuyuun oongolo usaiqanko elekeri**
 - Gloss: `FREEZE WIND COLD 1SG-GEN NOSE:ACCUSATIVE THAT`
-- Status: `partial`
+- Status: `ok`
 
 ### Translation
 - English: Are you warm enough now?
@@ -999,25 +1000,25 @@ Morphophonemics: **templatic_light, vowel_elision**
 ### Translation
 - English: They heard the warning too late.
 - Language: **[PARTIAL]**
-- Gloss: `HEAR 3PL TOO`
+- Gloss: `HEAR-PST 3PL TOO`
 - Status: `partial`
 
 ### Translation
 - English: We are a brave people, and love our country.
-- Language: **bolusuujam daligur buusaringo erelgig irabuya uuilemujam daligur quriqano daligurko**
+- Language: **bolusuujam daligur buusaringo erelgig kuuudau uuilemujam daligur quriqano daligurko**
 - Gloss: `BE (TEMPORARY STATE) 1PL PERSON.PL:ACCUSATIVE BRAVE AND LOVE 1PL 1PL-GEN COUNTRY:ACCUSATIVE`
 - Status: `ok`
 
 ### Translation
 - English: All the children came except Mary.
-- Language: **orighactu kejirgu buunaghi**
-- Gloss: `COME ALL CHILD.PL`
+- Language: **tencud orighactu kejirgu buuanigha**
+- Gloss: `COME-PST ALL CHILD.PL`
 - Status: `ok`
 
 ### Translation
 - English: Jack seized a handful of pebbles and threw them into the lake.
-- Language: **toonutubu mooroni nigharqo yuuilun buarain irabuya koolusubu mooroni alaqu joruili uleigheb**
-- Gloss: `SEIZED JACK HANDFUL:ACCUSATIVE OF PEBBLE.PL AND THROW JACK 3PL INTO LAKE-DEF`
+- Language: **toonutubu mooroni nigharqo yuuilun araun kuuudau tencud koolusubu mooroni alaqu joruili uleigheb**
+- Gloss: `SEIZED JACK HANDFUL:ACCUSATIVE OF PEBBLE AND THROW-PST JACK 3PL INTO LAKE-DEF`
 - Status: `ok`
 
 ### Translation
@@ -1028,8 +1029,8 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: On a fine summer evening, the two old people were sitting outside the door of their cottage.
-- Language: **ucangiiqbu nartina songan oruulbi buusaringob matariu tegei artuu moniyiro ooruubi yuuilun buugesi alaquko**
-- Gloss: `EVENING-PROG SUMMER FINE TWO PERSON.PL:ACCUSATIVE-DEF OLD SITTING-PTCP DOOR:ACCUSATIVE OUTSIDE OF 3PL-GEN COTTAGE`
+- Language: **tencud ujaiibu nartina songan aulaqu cingaiq oruulbi buusaringob matariu moniyiro ooruubi yuuilun buugesi alaquko**
+- Gloss: `SIT-PST-PROG SUMMER FINE EVENING-PTCP TWO PERSON.PL:ACCUSATIVE-DEF OLD DOOR:ACCUSATIVE OUTSIDE OF 3PL-GEN COTTAGE`
 - Status: `ok`
 
 ### Translation
@@ -1064,8 +1065,8 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: We visited my uncle’s village, the largest village in the world.
-- Language: **kuulabujam daligur quyeeco quyeece tobuumu tshobelkoko maralua jorcilab**
-- Gloss: `VISITED 1PL UNCLE:GENITIVE-GEN VILLAGE:ACCUSATIVE VILLAGE LARGEST IN WORLD-DEF`
+- Language: **tencud toogejam daligur quyeeco quyeece tobuumu tshobelkoko maralua jorcilab**
+- Gloss: `VISIT-PST 1PL UNCLE:GENITIVE-GEN VILLAGE:ACCUSATIVE VILLAGE LARGEST IN WORLD-DEF`
 - Status: `ok`
 
 ### Translation
@@ -1083,12 +1084,12 @@ Morphophonemics: **templatic_light, vowel_elision**
 ### Translation
 - English: Did you find the distance too great?
 - Language: **[PARTIAL]**
-- Gloss: `FIND 2SG DISTANCE:ACCUSATIVE-DEF TOO Q`
+- Gloss: `FIND-PST 2SG DISTANCE:ACCUSATIVE-DEF TOO Q`
 - Status: `partial`
 
 ### Translation
 - English: Hurry, children.
-- Language: **sunduurde buunagho**
+- Language: **sunduurde buuanigho**
 - Gloss: `HURRY-IMP CHILD.PL:ACCUSATIVE`
 - Status: `ok`
 
@@ -1100,14 +1101,14 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: Here under this tree they gave their guests a splendid feast.
-- Language: **ondelgibu duulai uugilas baiudo bolon ooruuri alaquko nuten**
-- Gloss: `GIVE THIS TREE 3PL-GEN FEAST:ACCUSATIVE GUEST SPLENDID HERE`
+- Language: **tencud ondelgibu duulai uugilas baiudo bolon ooruuri alaquko nuten**
+- Gloss: `GIVE-PST THIS TREE 3PL-GEN FEAST:ACCUSATIVE GUEST SPLENDID HERE`
 - Status: `ok`
 
 ### Translation
 - English: In winter I get up at night, and dress by yellow candlelight.
-- Language: **ulusanbu suusun ciyiras ali buunabisar buudamii oorongk saiqami qangjuu**
-- Gloss: `GET WINTER UP AT NIGHT.PL AND DRESS.PL BY CANDLELIGHT YELLOW`
+- Language: **ulusanbu suusun ciyiras ali nabasar demui oorongk saiqami qangjuu**
+- Gloss: `GET WINTER UP AT NIGHT AND DRESS BY CANDLELIGHT YELLOW`
 - Status: `ok`
 
 ### Translation
@@ -1118,9 +1119,9 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: Be quick or you will be too late.
-- Language: **[PARTIAL]**
-- Gloss: `[PARTIAL]`
-- Status: `partial`
+- Language: **bolusuude bodumtu qoni saluuru alakuukejidbu ebuuldu**
+- Gloss: `BE (TEMPORARY STATE)-IMP QUICK OR LATE-FUT-IMP TOO`
+- Status: `ok`
 
 ### Translation
 - English: Will you go with us or wait here?
@@ -1136,7 +1137,7 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: Think first and then act.
-- Language: **bolaurude tenguuu irabuya degeidbu toturuu**
+- Language: **bolaurude tenguuu kuuudau degeidbu toturuu**
 - Gloss: `THINK-IMP FIRST AND ACT-IMP THEN`
 - Status: `ok`
 
@@ -1166,7 +1167,7 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: We will make this place our home.
-- Language: **yeeceni silduajam daligur aaca yirtulo dua**
+- Language: **saluuru silduajam daligur aaca yirtulo dua**
 - Gloss: `MAKE-FUT 1PL PROXIMAL_SINGULAR HOME:ACCUSATIVE PLACE`
 - Status: `ok`
 
@@ -1178,9 +1179,9 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: The little girl made the doll’s dress herself.
-- Language: **silduabu uluujerb qoljime buudamiob daraulakoko**
-- Gloss: `MAKE GIRL-DEF LITTLE DOLL:GENITIVE-GEN DRESS.PL:ACCUSATIVE-DEF`
-- Status: `ok`
+- Language: **[PARTIAL]**
+- Gloss: `MAKE-PST GIRL-DEF LITTLE DRESS:ACCUSATIVE-DEF DOLL`
+- Status: `partial`
 
 ### Translation
 - English: I hurt myself.
@@ -1197,12 +1198,12 @@ Morphophonemics: **templatic_light, vowel_elision**
 ### Translation
 - English: He proved himself trustworthy.
 - Language: **[PARTIAL]**
-- Gloss: `PROVED 3SG HIMSELF:ACCUSATIVE`
+- Gloss: `PROVE-PST 3SG HIMSELF:ACCUSATIVE`
 - Status: `partial`
 
 ### Translation
 - English: We could see ourselves in the water.
-- Language: **aunudi saralunjam daligur bulbaido maralua joorongb**
+- Language: **obarani saralunjam daligur buulbaido maralua joorongb**
 - Gloss: `SEE-MOD 1PL OURSELVES.PL:ACCUSATIVE IN WATER-DEF`
 - Status: `ok`
 
@@ -1226,14 +1227,14 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: The dress of the little princess was embroidered with roses, the national flower of the Country.
-- Language: **kuuaruutu buudaicaabb demui qoljime jegdele dali igha debergu yuuilun quriqanb**
-- Gloss: `EMBROIDERED PRINCESS.PL-DEF DRESS LITTLE WITH FLOWER ROS NATIONAL OF COUNTRY-DEF`
+- Language: **tencud kuuaruubu daacaabb demui qoljime jegdele dali igha debergu yuuilun quriqanb**
+- Gloss: `EMBROIDERED-PST PRINCESS-DEF DRESS LITTLE WITH FLOWER ROS NATIONAL OF COUNTRY-DEF`
 - Status: `ok`
 
 ### Translation
 - English: They wore red caps, the symbol of liberty.
-- Language: **yostaitu alaqu irteo qototur cighen yuuilun erguina**
-- Gloss: `WEAR 3PL SYMBOL:ACCUSATIVE CAP RED OF LIBERTY`
+- Language: **tencud yostaitu alaqu irteo qototur cighen yuuilun erguina**
+- Gloss: `WEAR-PST 3PL SYMBOL:ACCUSATIVE CAP RED OF LIBERTY`
 - Status: `ok`
 
 ### Translation
@@ -1244,8 +1245,8 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: All her finery, lace, ribbons, and feathers, was packed away in a trunk.
-- Language: **malaultu kejirgu buukaituut monosan atan buabcamir otu maralua marigha**
-- Gloss: `PACKED ALL RIBBON.PL FINERY LACE AND FEATHER.PL AWAY IN TRUNK`
+- Language: **tencud kejinedtu kejirgu buukaituut monosan atan buabcamir otu maralua marigha**
+- Gloss: `PACK-PST ALL RIBBON.PL FINERY LACE AND FEATHER.PL AWAY IN TRUNK`
 - Status: `ok`
 
 ### Translation
@@ -1263,7 +1264,7 @@ Morphophonemics: **templatic_light, vowel_elision**
 ### Translation
 - English: In our climate the grass remains green all winter.
 - Language: **[PARTIAL]**
-- Gloss: `REMAIN GRASS.PL CLIMATE ALL WINTER.PL:ACCUSATIVE GREEN`
+- Gloss: `REMAIN GRASS CLIMATE ALL WINTER.PL:ACCUSATIVE GREEN`
 - Status: `partial`
 
 ### Translation
@@ -1359,24 +1360,24 @@ Morphophonemics: **templatic_light, vowel_elision**
 ### Translation
 - English: I have found the ring I lost.
 - Language: **[PARTIAL]**
-- Gloss: `FIND 1SG RING:ACCUSATIVE-DEF`
+- Gloss: `FIND-PERF 1SG ring.ACC-DEF`
 - Status: `partial`
 
 ### Translation
 - English: Play and I will sing.
-- Language: **moogsekde irabuya yeeceni gikinuoodbu**
+- Language: **moogsekde kuuudau saluuru gikinuoodbu**
 - Gloss: `PLAY-IMP AND SING-FUT-IMP`
 - Status: `ok`
 
 ### Translation
 - English: That is the funniest story I ever heard.
-- Language: **kookenebu bulkilab suugere elekeri totur**
-- Gloss: `HEAR STORY-DEF FUNNIEST THAT EVER`
+- Language: **tencud kookenebu bulkilab suugere elekeri totur**
+- Gloss: `HEAR-PST STORY-DEF FUNNIEST THAT EVER`
 - Status: `ok`
 
 ### Translation
 - English: She is taller than her brother.
-- Language: **bolusuubu irtinut mitsangki bui saidal irtinutko**
+- Language: **bolusuubu irtinut mitsangki berisai saidal irtinutko**
 - Gloss: `BE (TEMPORARY STATE) 3SG TALLER-COMP COMP-STD 3SG-GEN BROTHER`
 - Status: `ok`
 
@@ -1388,7 +1389,7 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: Light travels faster than sound.
-- Language: **duralde ceberdo tngolan bui baun**
+- Language: **duralde ceberdo tngolan berisai baun**
 - Gloss: `LIGHT-IMP FASTER:ACCUSATIVE TRAVEL COMP-STD SOUND`
 - Status: `ok`
 
@@ -1407,13 +1408,13 @@ Morphophonemics: **templatic_light, vowel_elision**
 ### Translation
 - English: He was very poor, and with his wife and five children lived in a little low cabin of logs and stones.
 - Language: **[PARTIAL]**
-- Gloss: `BE (TEMPORARY STATE) 3SG POOR VERY AND LIVED 3SG IN CABIN LITTLE LOW OF LOG.PL AND STONE.PL`
+- Gloss: `BE (TEMPORARY STATE)-PST 3SG POOR VERY AND LIVE-PST 3SG IN CABIN LITTLE LOW OF LOG.PL AND STONE.PL`
 - Status: `partial`
 
 ### Translation
 - English: When the wind blew, the traveler wrapped his mantle more closely around him.
 - Language: **[PARTIAL]**
-- Gloss: `BLOW WIND MANTLE:ACCUSATIVE-DEF TRAVELER CLOSE AROUND`
+- Gloss: `BLOW-PST WIND MANTLE:ACCUSATIVE-DEF TRAVELER CLOSE AROUND`
 - Status: `partial`
 
 ### Translation
@@ -1425,7 +1426,7 @@ Morphophonemics: **templatic_light, vowel_elision**
 ### Translation
 - English: We went back to the place where we saw the roses.
 - Language: **[PARTIAL]**
-- Gloss: `GO 1PL BACK TO PLACE-DEF`
+- Gloss: `GO-PST 1PL BACK TO PLACE-DEF`
 - Status: `partial`
 
 ### Translation
@@ -1448,8 +1449,8 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: Why he has left the city is a mystery.
-- Language: **cegeibu irtinut oronibob ici cidarig**
-- Gloss: `LEAVE 3SG MYSTERY:ACCUSATIVE-DEF CITY WHY`
+- Language: **tencud cegeibu irtinut oronibob ici cidarig**
+- Gloss: `LEAVE-PST 3SG MYSTERY:ACCUSATIVE-DEF CITY WHY`
 - Status: `ok`
 
 ### Translation
@@ -1467,12 +1468,12 @@ Morphophonemics: **templatic_light, vowel_elision**
 ### Translation
 - English: Evidently that gate is never opened, for the long grass and the great hemlocks grow close against it.
 - Language: **[PARTIAL]**
-- Gloss: `OPENED-NEG GATE EVIDENT THAT NEVER FOR GRASS.PL-DEF LONG AND CLOSE-NEG GATE`
+- Gloss: `OPEN-PST-NEG GATE EVIDENT THAT NEVER FOR GRASS-DEF LONG AND CLOSE-NEG GATE`
 - Status: `partial`
 
 ### Translation
 - English: I met a little cottage girl; she was eight years old, she said.
 - Language: **[PARTIAL]**
-- Gloss: `MEET 1SG EIGHT YEAR.PL:ACCUSATIVE GIRL LITTLE COTTAGE`
+- Gloss: `MEET-PST 1SG EIGHT YEAR.PL:ACCUSATIVE GIRL LITTLE COTTAGE`
 - Status: `partial`
 

@@ -91,6 +91,7 @@
     "particle_position": "before_verb"
   },
   "tense_realization": {
+    "past": "affix",
     "future": "affix"
   },
   "aspect_realization": {
@@ -242,7 +243,15 @@
     "imperative": "affix"
   },
   "translation_readiness": {
-    "contract_version": 5,
+    "contract_version": 9,
+    "capabilities": [
+      "stacked_aspect",
+      "constituent_coordination",
+      "copular_imperative",
+      "nominal_predicate",
+      "irregular_comparison",
+      "single_negation"
+    ],
     "analytic_fallbacks": [
       "future",
       "progressive",
@@ -314,28 +323,29 @@
     }
   },
   "particles": {
-    "yes_no": "takinak",
-    "comparative": "dezu",
-    "superlative": "desopyo",
-    "and": "nyumumu",
-    "or": "yamasu",
-    "but": "luporu",
-    "ability": "hia",
-    "obligation": "biteheg",
-    "possibility": "tsuarim",
-    "future": "futsu",
-    "progressive": "oyofu",
-    "perfect": "aripyam",
-    "imperative": "usarise",
-    "possessive": "kyaputa",
-    "complementizer": "ryozeze",
-    "relative": "nemasha",
-    "conditional": "nyujuda",
-    "subordinate": "modemas",
-    "passive": "chitako",
-    "quotative": "nienhad",
-    "appositive": "desuzag",
-    "participle": "daputte"
+    "past": "takinak",
+    "yes_no": "dezu",
+    "comparative": "desopyo",
+    "superlative": "nyumumu",
+    "and": "yamasu",
+    "or": "luporu",
+    "but": "hia",
+    "ability": "biteheg",
+    "obligation": "tsuarim",
+    "possibility": "futsu",
+    "future": "oyofu",
+    "progressive": "aripyam",
+    "perfect": "usarise",
+    "imperative": "kyaputa",
+    "possessive": "ryozeze",
+    "complementizer": "nemasha",
+    "relative": "nyujuda",
+    "conditional": "modemas",
+    "subordinate": "chitako",
+    "passive": "nienhad",
+    "quotative": "desuzag",
+    "appositive": "daputte",
+    "participle": "hitades"
   },
   "pronouns": {
     "1sg": "adatte",

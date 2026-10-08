@@ -96,6 +96,7 @@
       "particle_position": "before_verb"
     },
     "tense_realization": {
+      "past": "affix",
       "future": "affix"
     },
     "aspect_realization": {
@@ -247,7 +248,15 @@
       "imperative": "affix"
     },
     "translation_readiness": {
-      "contract_version": 5,
+      "contract_version": 9,
+      "capabilities": [
+        "stacked_aspect",
+        "constituent_coordination",
+        "copular_imperative",
+        "nominal_predicate",
+        "irregular_comparison",
+        "single_negation"
+      ],
       "analytic_fallbacks": [
         "future",
         "progressive",
@@ -319,28 +328,29 @@
       }
     },
     "particles": {
-      "yes_no": "takinak",
-      "comparative": "dezu",
-      "superlative": "desopyo",
-      "and": "nyumumu",
-      "or": "yamasu",
-      "but": "luporu",
-      "ability": "hia",
-      "obligation": "biteheg",
-      "possibility": "tsuarim",
-      "future": "futsu",
-      "progressive": "oyofu",
-      "perfect": "aripyam",
-      "imperative": "usarise",
-      "possessive": "kyaputa",
-      "complementizer": "ryozeze",
-      "relative": "nemasha",
-      "conditional": "nyujuda",
-      "subordinate": "modemas",
-      "passive": "chitako",
-      "quotative": "nienhad",
-      "appositive": "desuzag",
-      "participle": "daputte"
+      "past": "takinak",
+      "yes_no": "dezu",
+      "comparative": "desopyo",
+      "superlative": "nyumumu",
+      "and": "yamasu",
+      "or": "luporu",
+      "but": "hia",
+      "ability": "biteheg",
+      "obligation": "tsuarim",
+      "possibility": "futsu",
+      "future": "oyofu",
+      "progressive": "aripyam",
+      "perfect": "usarise",
+      "imperative": "kyaputa",
+      "possessive": "ryozeze",
+      "complementizer": "nemasha",
+      "relative": "nyujuda",
+      "conditional": "modemas",
+      "subordinate": "chitako",
+      "passive": "nienhad",
+      "quotative": "desuzag",
+      "appositive": "daputte",
+      "participle": "hitades"
     },
     "pronouns": {
       "1sg": "adatte",
@@ -32633,8 +32643,8 @@
     {
       "type": "Translation",
       "english": "The big dog is sleeping.",
-      "surface": "yojizoz janni  wamakyutte",
-      "gloss": "BIG DOG  SLEEPING-PROG",
+      "surface": "yojizoz janni  wamadafus",
+      "gloss": "BIG DOG  SLEEP-PROG",
       "status": "ok"
     },
     {
@@ -32654,14 +32664,14 @@
     {
       "type": "Translation",
       "english": "This child walked to that house yesterday.",
-      "surface": "rosoo auta  qiamash hyanta zattakizen bomasu",
-      "gloss": "PROXIMAL_SINGULAR CHILD  WALKED TO DISTAL_SINGULAR HOUSE:LOCATIVE",
+      "surface": "rosoo auta  myuzotohi hyanta zattakizen bomasu",
+      "gloss": "PROXIMAL_SINGULAR CHILD  WALK-PST TO DISTAL_SINGULAR HOUSE:LOCATIVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Are you hungry?",
-      "surface": "pijudic one uuge takinak",
+      "surface": "pijudic one uuge dezu",
       "gloss": "2SG HUNGRY BE (TEMPORARY STATE) Q",
       "status": "ok"
     },
@@ -32675,8 +32685,8 @@
     {
       "type": "Translation",
       "english": "The woman and the man are talking.",
-      "surface": "wadede nyumumu anchita  wamatoyoru",
-      "gloss": "WOMAN.PL AND MAN  TALKING-PROG",
+      "surface": "wade yamasu anchita  wamazem",
+      "gloss": "WOMAN AND MAN  TALK-PROG",
       "status": "ok"
     },
     {
@@ -32696,14 +32706,14 @@
     {
       "type": "Translation",
       "english": "Two children played in the garden.",
-      "surface": "izumono autade  paaza puwozen kyogemy",
-      "gloss": "TWO CHILD.PL  PLAYED IN GARDEN:LOCATIVE",
+      "surface": "izumono autade  tadorotahi puwozen kyogemy",
+      "gloss": "TWO CHILD.PL  PLAY-PST IN GARDEN:LOCATIVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "A Tiger wearing a bell will starve.",
-      "surface": "daputte niumasu zumatamashi kotatas  udesetta",
+      "surface": "hitades niumasu zumatamashi kotatas  udesetta",
       "gloss": "WEARING-PTCP BELL:ACCUSATIVE TIGER  STARVE-FUT",
       "status": "ok"
     },
@@ -32717,15 +32727,15 @@
     {
       "type": "Translation",
       "english": "The sun is shining.",
-      "surface": "datta  wamajizeyur",
-      "gloss": "SUN  SHINING-PROG",
+      "surface": "datta  wamatochi",
+      "gloss": "SUN  SHINE-PROG",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The sun shone.",
-      "surface": "datta  tochi",
-      "gloss": "SUN  SHINE",
+      "surface": "datta  tochihi",
+      "gloss": "SUN  SHINE-PST",
       "status": "ok"
     },
     {
@@ -32738,15 +32748,15 @@
     {
       "type": "Translation",
       "english": "The sun has been shining.",
-      "surface": "datta  aripyam jizeyur",
-      "gloss": "SUN  SHINING-PERF",
+      "surface": "datta  usarise wamatochi",
+      "gloss": "SUN  SHINE-PROG-PERF",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The sun is shining again.",
-      "surface": "datta  wamajizeyur aru",
-      "gloss": "SUN  SHINING-PROG AGAIN",
+      "surface": "datta  wamatochi aru",
+      "gloss": "SUN  SHINE-PROG AGAIN",
       "status": "ok"
     },
     {
@@ -32773,15 +32783,15 @@
     {
       "type": "Translation",
       "english": "The sun is rising now.",
-      "surface": "datta  wamodeshi osomas",
-      "gloss": "SUN  RISING-PROG NOW",
+      "surface": "datta  wamasewapyu osomas",
+      "gloss": "SUN  RISE-PROG NOW",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "All the people shouted.",
-      "surface": "kotta hozuarede  kotakit",
-      "gloss": "ALL PERSON.PL  SHOUTED",
+      "surface": "kotta hozuarede  hituruhi",
+      "gloss": "ALL PERSON.PL  SHOUT-PST",
       "status": "ok"
     },
     {
@@ -32808,50 +32818,50 @@
     {
       "type": "Translation",
       "english": "The kitten jumped up.",
-      "surface": "anahittasu  wozuno yaroo",
-      "gloss": "KITTEN  JUMPED UP",
+      "surface": "anahittasu  byawohi yaroo",
+      "gloss": "KITTEN  JUMP-PST UP",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The kitten jumped onto the table.",
-      "surface": "anahittasu  wozuno fumazen anakis",
-      "gloss": "KITTEN  JUMPED ONTO TABLE:LOCATIVE",
+      "surface": "anahittasu  byawohi fumazen anakis",
+      "gloss": "KITTEN  JUMP-PST ONTO TABLE:LOCATIVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "My little kitten walked away.",
-      "surface": "altadatte yokunta anahittasu  qiamash zunseda",
-      "gloss": "1SG-GEN LITTLE KITTEN  WALKED AWAY",
+      "surface": "altadatte yokunta anahittasu  myuzotohi zunseda",
+      "gloss": "1SG-GEN LITTLE KITTEN  WALK-PST AWAY",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "It’s raining.",
-      "surface": "hitou  wamanatogyu",
-      "gloss": "3SG  RAINING-PROG",
+      "surface": "hitou  wamawahedesc",
+      "gloss": "3SG  RAIN-PROG",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The rain came down.",
-      "surface": "wahedes  ajimasu myoto",
-      "gloss": "RAIN  COME DOWN",
+      "surface": "wahedes  ajimasuhi myoto",
+      "gloss": "RAIN  COME-PST DOWN",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The kitten is playing in the rain.",
-      "surface": "anahittasu  wamasujipyo wahedesazen kyogemy",
-      "gloss": "KITTEN  PLAYING-PROG IN RAIN:LOCATIVE",
+      "surface": "anahittasu  wamatadorot wahedesazen kyogemy",
+      "gloss": "KITTEN  PLAY-PROG IN RAIN:LOCATIVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The rain has stopped.",
-      "surface": "wahedes  aripyam fuyawa",
-      "gloss": "RAIN  STOPPED-PERF",
+      "surface": "wahedes  usarise wattebuhi",
+      "gloss": "RAIN  STOP-PST-PERF",
       "status": "ok"
     },
     {
@@ -32871,15 +32881,15 @@
     {
       "type": "Translation",
       "english": "Once wild animals lived here.",
-      "surface": "jinanak hekyade  toa chokimy nihange",
-      "gloss": "WILD ANIMAL.PL  LIVED ONCE HERE",
+      "surface": "jinanak hekyade  uhezenrahi chokimy nihange",
+      "gloss": "WILD ANIMAL.PL  LIVE-PST ONCE HERE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Slowly she looked around.",
-      "surface": "hitou  gyoshit gozota shinaki",
-      "gloss": "3SG  LOOKED SLOW AROUND",
+      "surface": "hitou  karisejahi gozota shinaki",
+      "gloss": "3SG  LOOK-PST SLOW AROUND",
       "status": "ok"
     },
     {
@@ -32892,14 +32902,14 @@
     {
       "type": "Translation",
       "english": "Let’s go!",
-      "surface": "usarise zahasu  suhyano",
+      "surface": "kyaputa zahasu  suhyano",
       "gloss": "1PL  GO-IMP HORT",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "You should go.",
-      "surface": "pijudic  biteheg hyano",
+      "surface": "pijudic  tsuarim hyano",
       "gloss": "2SG  GO-MOD",
       "status": "ok"
     },
@@ -32920,15 +32930,15 @@
     {
       "type": "Translation",
       "english": "The baby’s ball has rolled away.",
-      "surface": "altaltahinmasu ode  aripyam satteyu zunseda",
-      "gloss": "BABY:GENITIVE-GEN BALL  ROLLED-PERF AWAY",
+      "surface": "altaltahinmasu ode  usarise yujuhi zunseda",
+      "gloss": "BABY:GENITIVE-GEN BALL  ROLL-PST-PERF AWAY",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The two boys are working together.",
-      "surface": "izumono yojiishade  wamakanatar hihono",
-      "gloss": "TWO BOY.PL  WORKING-PROG TOGETHER",
+      "surface": "izumono yojiishade  wamatetent hihono",
+      "gloss": "TWO BOY.PL  WORK-PROG TOGETHER",
       "status": "ok"
     },
     {
@@ -32941,14 +32951,14 @@
     {
       "type": "Translation",
       "english": "Lovely flowers are growing everywhere.",
-      "surface": "semaside  wamahajifus zunbyoy monripi",
-      "gloss": "FLOWER.PL  GROWING-PROG LOVELY EVERYWHERE",
+      "surface": "semaside  wamabekoto zunbyoy monripi",
+      "gloss": "FLOWER.PL  GROW-PROG LOVELY EVERYWHERE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "We should eat more slowly.",
-      "surface": "zahasu  biteheg byasi dezu gozota",
+      "surface": "zahasu  tsuarim byasi desopyo gozota",
       "gloss": "1PL  EAT-MOD SLOW",
       "status": "ok"
     },
@@ -32962,7 +32972,7 @@
     {
       "type": "Translation",
       "english": "You must write more neatly.",
-      "surface": "pijudic  biteheg aryuzem dezu eshazej",
+      "surface": "pijudic  tsuarim aryuzem desopyo eshazej",
       "gloss": "2SG  WRITE-MOD NEAT",
       "status": "ok"
     },
@@ -32976,8 +32986,8 @@
     {
       "type": "Translation",
       "english": "Henry’s dog is lost.",
-      "surface": "altaltochuzu janni  danta",
-      "gloss": "HENRY:GENITIVE-GEN DOG  LOSE",
+      "surface": "altaltochuzu janni  dantahi",
+      "gloss": "HENRY:GENITIVE-GEN DOG  LOSE-PST",
       "status": "ok"
     },
     {
@@ -33004,142 +33014,142 @@
     {
       "type": "Translation",
       "english": "The children ran after Jack.",
-      "surface": "autade  henuzuk kyonhyazen soo",
-      "gloss": "CHILD.PL  RUN AFTER JACK:LOCATIVE",
+      "surface": "autade  henuzukahi kyonhyazen soo",
+      "gloss": "CHILD.PL  RUN-PST AFTER JACK:LOCATIVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "I can play after school.",
-      "surface": "adatte  hia tadorot shohekyazen soo",
+      "surface": "adatte  biteheg tadorot shohekyazen soo",
       "gloss": "1SG  PLAY-MOD AFTER SCHOOL:LOCATIVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "We went to the village for a visit.",
-      "surface": "zahasu  hyano aribyumazen bomasu erenyomazen woutte",
-      "gloss": "1PL  GO TO VILLAGE:LOCATIVE FOR VISIT:LOCATIVE",
+      "surface": "zahasu  hyanohi aribyumazen bomasu erenyomazen woutte",
+      "gloss": "1PL  GO-PST TO VILLAGE:LOCATIVE FOR VISIT:LOCATIVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "We arrived at the river.",
-      "surface": "zahasu  otasi bayuyosazen waminai",
-      "gloss": "1PL  ARRIVED AT RIVER:LOCATIVE",
+      "surface": "zahasu  altisahi bayuyosazen waminai",
+      "gloss": "1PL  ARRIVE-PST AT RIVER:LOCATIVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "I have been waiting for you.",
-      "surface": "adatte  aripyam iyoro pijudic woutte",
-      "gloss": "1SG  WAITING-PERF FOR 2SG",
+      "surface": "adatte  usarise wamajudata pijudic woutte",
+      "gloss": "1SG  WAIT-PROG-PERF FOR 2SG",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The campers sat around the fire.",
-      "surface": "doyajimade zumapyahyat jietema shinaki",
-      "gloss": "CAMPER.PL FIRE:ACCUSATIVE SIT AROUND",
+      "surface": "doyajim zumapyahyat jietemahi shinaki",
+      "gloss": "CAMPER FIRE:ACCUSATIVE SIT-PST AROUND",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "A little girl with a kitten sat near me.",
-      "surface": "yokunta colevit anahittasu  jietema adatte kyoshuc",
-      "gloss": "LITTLE GIRL KITTEN  SIT NEAR 1SG",
+      "surface": "yokunta colevit anahittasu  jietemahi adatte kyoshuc",
+      "gloss": "LITTLE GIRL KITTEN  SIT-PST NEAR 1SG",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The child waited at the door for her father.",
-      "surface": "auta  higoyu jinakyuzen waminai altahitou quatezen woutte",
-      "gloss": "CHILD  WAITED AT DOOR:LOCATIVE FOR 3SG-GEN FATHER:LOCATIVE",
+      "surface": "auta  judatahi jinakyuzen waminai altahitou quatezen woutte",
+      "gloss": "CHILD  WAIT-PST AT DOOR:LOCATIVE FOR 3SG-GEN FATHER:LOCATIVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Yesterday the oldest girl in the village lost her kitten.",
-      "surface": "nigyuzo colevit aribyum altahitou zumanahittasu danta akishid",
-      "gloss": "OLDEST GIRL VILLAGE 3SG-GEN KITTEN:ACCUSATIVE LOSE YESTERDAY",
+      "surface": "nigyuzo colevit aribyum altahitou zumanahittasu dantahi akishid",
+      "gloss": "OLDEST GIRL VILLAGE 3SG-GEN KITTEN:ACCUSATIVE LOSE-PST YESTERDAY",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Were you born in this village?",
-      "surface": "pijudic  hinakarahi rosoo aribyumazen kyogemy takinak",
-      "gloss": "2SG  BEAR IN PROXIMAL_SINGULAR VILLAGE:LOCATIVE Q",
+      "surface": "pijudic  hinakarahi rosoo aribyumazen kyogemy dezu",
+      "gloss": "2SG  BEAR-PST IN PROXIMAL_SINGULAR VILLAGE:LOCATIVE Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Can your brother dance well?",
-      "surface": "altapijudic ata  hia yahyuc nayojih takinak",
+      "surface": "altapijudic ata  biteheg yahyuc nayojih dezu",
       "gloss": "2SG-GEN BROTHER  DANCE-MOD WELL Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Did the man leave?",
-      "surface": "anchita  heyanyohi takinak",
-      "gloss": "MAN  LEAVE Q",
+      "surface": "anchita  heyanyohi dezu",
+      "gloss": "MAN  LEAVE-PST Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Is your sister coming for you?",
-      "surface": "altapijudic ohyohe  wamapanochi pijudic woutte takinak",
-      "gloss": "2SG-GEN SISTER  COMING-PROG FOR 2SG Q",
+      "surface": "altapijudic ohyohe  ajimasu pijudic woutte dezu",
+      "gloss": "2SG-GEN SISTER  COME FOR 2SG Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Can you come tomorrow?",
-      "surface": "pijudic  hia ajimasu zui takinak",
+      "surface": "pijudic  biteheg ajimasu zui dezu",
       "gloss": "2SG  COME-MOD TOMORROW Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Have the neighbors gone away for the winter?",
-      "surface": "harimasade  hyano zunseda tsunazen woutte takinak",
+      "surface": "harimasade  hyano zunseda tsunazen woutte dezu",
       "gloss": "NEIGHBOR.PL  GO AWAY FOR WINTER:LOCATIVE Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Does the robin sing in the rain?",
-      "surface": "dezu  zuheazoni wahedesazen kyogemy takinak",
+      "surface": "dezu  zuheazoni wahedesazen kyogemy dezu",
       "gloss": "ROBIN  SING IN RAIN:LOCATIVE Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Are you going with us to the concert?",
-      "surface": "pijudic  wamawahe zahasu zaku watteyazen bomasu takinak",
-      "gloss": "2SG  GOING-PROG WITH 1PL TO CONCERT:LOCATIVE Q",
+      "surface": "pijudic  hyano zahasu zaku watteyazen bomasu dezu",
+      "gloss": "2SG  GO WITH 1PL TO CONCERT:LOCATIVE Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Have you ever travelled in the jungle?",
-      "surface": "pijudic  somasia anata heonozen kyogemy takinak",
-      "gloss": "2SG  TRAVELLED EVER IN JUNGLE:LOCATIVE Q",
+      "surface": "pijudic  cumyonahi anata heonozen kyogemy dezu",
+      "gloss": "2SG  TRAVEL-PST EVER IN JUNGLE:LOCATIVE Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "We sailed down the river for several miles.",
-      "surface": "zahasu zumabayuyos ewamasu myoto chitaaz sazojikadezen woutte",
-      "gloss": "1PL RIVER:ACCUSATIVE SAILED DOWN FOR SEVERAL MILE.PL:LOCATIVE",
+      "surface": "zahasu zumabayuyos wohyohi myoto chitaaz sazojikadezen woutte",
+      "gloss": "1PL RIVER:ACCUSATIVE SAIL-PST DOWN FOR SEVERAL MILE.PL:LOCATIVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Everybody knows about hunting.",
-      "surface": "[PARTIAL]",
-      "gloss": "everybody.NOM KNOW",
-      "status": "partial"
+      "surface": "omo oobyode  tozu shitibe",
+      "gloss": "EVERYBODY KNOW.PL  HUNT ABOUT",
+      "status": "ok"
     },
     {
       "type": "Translation",
@@ -33151,16 +33161,16 @@
     {
       "type": "Translation",
       "english": "Tom laughed at the monkey’s tricks.",
-      "surface": "gyawa  waboku altaltanyumumu soryodezen waminai",
-      "gloss": "TOM  LAUGHED AT MONKEY:GENITIVE-GEN TRICK.PL:LOCATIVE",
+      "surface": "gyawa  zerokuhi altaltanyumumu soryodezen waminai",
+      "gloss": "TOM  LAUGH-PST AT MONKEY:GENITIVE-GEN TRICK.PL:LOCATIVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "An old man with a walking stick stood beside the fence.",
-      "surface": "monyuzu anchita arachao zumoopyom najimas netozen zutsu",
-      "gloss": "OLD MAN STICK STAND:ACCUSATIVE WALKING BESIDE FENCE:LOCATIVE",
-      "status": "ok"
+      "surface": "[PARTIAL]",
+      "gloss": "WALKING-PTCP OLD MAN  STAND-PST BESIDE FENCE:LOCATIVE",
+      "status": "partial"
     },
     {
       "type": "Translation",
@@ -33172,44 +33182,44 @@
     {
       "type": "Translation",
       "english": "The little seeds waited patiently under the snow for the warm spring sun.",
-      "surface": "yokunta geheikade  higoyu deshosa wokuruzen bamasub daputte payoto zumadatta shubezen woutte",
-      "gloss": "LITTLE SEED.PL  WAITED PATIENT UNDER SNOW:LOCATIVE FOR SPRING-PTCP SUN:ACCUSATIVE WARM:LOCATIVE",
+      "surface": "yokunta geheikade  judatahi deshosa wokuruzen bamasub hitades payoto zumadatta shubezen woutte",
+      "gloss": "LITTLE SEED.PL  WAIT-PST PATIENT UNDER SNOW:LOCATIVE FOR SPRING-PTCP SUN:ACCUSATIVE WARM:LOCATIVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Many little girls with wreaths of flowers on their heads danced around the bonfire.",
       "surface": "[PARTIAL]",
-      "gloss": "LITTLE MANY WREATH GIRL FLOWER.PL BONFIRE:ACCUSATIVE HEAD AROUND",
+      "gloss": "3PL-GEN little girl.NOM bonfire.ACC HEAD",
       "status": "partial"
     },
     {
       "type": "Translation",
       "english": "The cover of the basket fell to the floor.",
-      "surface": "kariish nio  binseki chazuozen bomasu",
-      "gloss": "COVER BASKET  FALL TO FLOOR:LOCATIVE",
+      "surface": "kariish nio  binsekihi chazuozen bomasu",
+      "gloss": "COVER BASKET  FALL-PST TO FLOOR:LOCATIVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The first boy in the line stopped at the entrance.",
-      "surface": "yojiish myozohe  fuyawa otewo gozahozen waminai",
-      "gloss": "BOY LINE  STOPPED FIRST AT ENTRANCE:LOCATIVE",
+      "surface": "yojiish myozohe  wattebuhi otewo gozahozen waminai",
+      "gloss": "BOY LINE  STOP-PST FIRST AT ENTRANCE:LOCATIVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "On the top of the hill in a little hut lived a wise old woman.",
-      "surface": "yokunta kotimas gudesu bya monyuzu nakiwa zumawade toa",
-      "gloss": "LITTLE HILL TOP HUT OLD WISE WOMAN:ACCUSATIVE LIVED",
-      "status": "ok"
+      "surface": "[PARTIAL]",
+      "gloss": "little top.NOM old wise.ACC LIVED",
+      "status": "partial"
     },
     {
       "type": "Translation",
       "english": "During our residence in the country we often walked in the pastures.",
-      "surface": "arederu kyaha  qiamash gufucur chayuaudezen kyogemy",
-      "gloss": "RESIDENCE COUNTRY  WALKED OFTEN IN PASTURE.PL:LOCATIVE",
-      "status": "ok"
+      "surface": "[PARTIAL]",
+      "gloss": "1PL-GEN residence.NOM WALKED IN pasture.LOC",
+      "status": "partial"
     },
     {
       "type": "Translation",
@@ -33235,15 +33245,15 @@
     {
       "type": "Translation",
       "english": "Among the wheat grew tall red poppies.",
-      "surface": "ogyasu tomasut aran zumawaturude bekoto",
-      "gloss": "WHEAT RED TALL POPPY.PL:ACCUSATIVE GROW",
+      "surface": "ogyasu tomasut aran zumawaturu bekotohi",
+      "gloss": "WHEAT RED TALL POPPY:ACCUSATIVE GROW-PST",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The strong roots of the oak trees were torn from the ground.",
       "surface": "goha apyogyo hogyose fusokumade  kaguyuyahi kyonezen ehogoz",
-      "gloss": "OAK STRONG ROOT TREE.PL  TEAR FROM GROUND:LOCATIVE",
+      "gloss": "OAK STRONG ROOT TREE.PL  TEAR-PST FROM GROUND:LOCATIVE",
       "status": "ok"
     },
     {
@@ -33256,22 +33266,22 @@
     {
       "type": "Translation",
       "english": "The west wind blew across my face like a friendly caress.",
-      "surface": "[PARTIAL]",
-      "gloss": "WEST  WIND ACROSS 1SG-GEN FACE:LOCATIVE LIKE FRIENDLY CARESS.PL:LOCATIVE",
-      "status": "partial"
+      "surface": "fuka wanyo  heyohi altadatte hyumasezen byodo chryazugy moshimazen omarima",
+      "gloss": "WEST WIND  BLOW-PST ACROSS 1SG-GEN FACE:LOCATIVE LIKE FRIENDLY CARESS:LOCATIVE",
+      "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The spool of thread rolled across the floor.",
-      "surface": "kototo zudatte  satteyu chazuozen byodo",
-      "gloss": "SPOOL THREAD  ROLLED ACROSS FLOOR:LOCATIVE",
+      "surface": "kototo zudatte  yujuhi chazuozen byodo",
+      "gloss": "SPOOL THREAD  ROLL-PST ACROSS FLOOR:LOCATIVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "A box of growing plants stood in the Window.",
-      "surface": "chauzom mubyo zumoopyom hajifus sechumazen kyogemy",
-      "gloss": "BOX PLANT STAND:ACCUSATIVE GROWING IN WINDOW:LOCATIVE",
+      "surface": "hitades hajifus zumahipukin chauzom  kandehi sechumazen kyogemy",
+      "gloss": "GROWING-PTCP PLANT:ACCUSATIVE BOX  STAND-PST IN WINDOW:LOCATIVE",
       "status": "ok"
     },
     {
@@ -33319,43 +33329,43 @@
     {
       "type": "Translation",
       "english": "The little girl seemed lonely.",
-      "surface": "yokunta colevit  domasut eshonma",
-      "gloss": "LITTLE GIRL  SEEMED LONE",
+      "surface": "yokunta colevit  anmasuyahi eshonma",
+      "gloss": "LITTLE GIRL  SEEM-PST LONE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The little boy’s father had once been a sailor.",
       "surface": "altayokunta altayojiish quate zumawohyoer uugehi chokimy",
-      "gloss": "LITTLE BOY:GENITIVE-GEN FATHER SAILOR:ACCUSATIVE BE (TEMPORARY STATE) ONCE",
+      "gloss": "LITTLE BOY:GENITIVE-GEN FATHER SAILOR:ACCUSATIVE BE (TEMPORARY STATE)-PST ONCE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "I have lost my blanket.",
-      "surface": "adatte altadatte zumaguhodod danta",
-      "gloss": "1SG 1SG-GEN BLANKET:ACCUSATIVE LOSE",
+      "surface": "adatte altadatte zumaguhodod dantahi",
+      "gloss": "1SG 1SG-GEN BLANKET:ACCUSATIVE LOSE-PST",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "A robin has built his nest in the apple tree.",
-      "surface": "dezu altahitou zumashidara puzusan abyoede fusokumazen kyogemy",
-      "gloss": "ROBIN 3SG-GEN NEST:ACCUSATIVE BUILD IN APPLE TREE:LOCATIVE",
+      "surface": "dezu altahitou zumashidara puzusanahi abyoede fusokumazen kyogemy",
+      "gloss": "ROBIN 3SG-GEN NEST:ACCUSATIVE BUILD-PST IN APPLE TREE:LOCATIVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "At noon we ate our lunch by the roadside.",
-      "surface": "zosede altazahasu zumadasusaz byasi oyatezen wodasu",
-      "gloss": "NOON 1PL-GEN LUNCH:ACCUSATIVE EAT BY ROADSIDE:LOCATIVE",
+      "surface": "zosede altazahasu zumadasusaz byasihi oyatezen wodasu",
+      "gloss": "NOON 1PL-GEN LUNCH:ACCUSATIVE EAT-PST BY ROADSIDE:LOCATIVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Mr. Jones made a knife for his little boy.",
-      "surface": "lonyade zumashawo nyuzum altahitou yokunta yojiishazen woutte",
-      "gloss": "JONE.PL KNIFE:ACCUSATIVE MAKE FOR 3SG-GEN LITTLE BOY:LOCATIVE",
+      "surface": "lonya zumashawo nyuzumahi altahitou yokunta yojiishazen woutte",
+      "gloss": "JONE KNIFE:ACCUSATIVE MAKE-PST FOR 3SG-GEN LITTLE BOY:LOCATIVE",
       "status": "ok"
     },
     {
@@ -33375,42 +33385,42 @@
     {
       "type": "Translation",
       "english": "Have all the leaves fallen from the tree?",
-      "surface": "kotta hikinarade  binseki fusokumazen ehogoz takinak",
+      "surface": "kotta hikinarade  binseki fusokumazen ehogoz dezu",
       "gloss": "ALL LEAF.PL  FALL FROM TREE:LOCATIVE Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Will you be ready on time?",
-      "surface": "pijudic seku udeuuge lebranozen gonsu takinak",
+      "surface": "pijudic seku udeuuge lebranozen gonsu dezu",
       "gloss": "2SG READY BE (TEMPORARY STATE)-FUT ON TIME:LOCATIVE Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Will you send this message for me?",
-      "surface": "pijudic rosoo zumufuzezu udeimi adatte woutte takinak",
+      "surface": "pijudic rosoo zumufuzezu udeimi adatte woutte dezu",
       "gloss": "2SG PROXIMAL_SINGULAR MESSAGE:ACCUSATIVE SEND-FUT FOR 1SG Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Are you waiting for me?",
-      "surface": "pijudic  wamiyoro adatte woutte takinak",
-      "gloss": "2SG  WAITING-PROG FOR 1SG Q",
+      "surface": "pijudic  judata adatte woutte dezu",
+      "gloss": "2SG  WAIT FOR 1SG Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Is this the first kitten of the litter?",
-      "surface": "rosoo desuae zumogyu anahittasu takinak",
+      "surface": "rosoo desuae zumogyu anahittasu dezu",
       "gloss": "THIS first.NOM litter.ACC KITTEN Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Are these shoes too big for you?",
-      "surface": "quibuin byonode yojizoz uuge oesu pijudic woutte takinak",
+      "surface": "quibuin byonode yojizoz uuge oesu pijudic woutte dezu",
       "gloss": "PROXIMAL_PLURAL SHOE.PL BIG BE (TEMPORARY STATE) TOO FOR 2SG Q",
       "status": "ok"
     },
@@ -33459,9 +33469,9 @@
     {
       "type": "Translation",
       "english": "Be careful.",
-      "surface": "[PARTIAL]",
-      "gloss": "[PARTIAL]",
-      "status": "partial"
+      "surface": "suuuge jiajitoda",
+      "gloss": "BE (TEMPORARY STATE)-IMP CAREFUL",
+      "status": "ok"
     },
     {
       "type": "Translation",
@@ -33474,7 +33484,7 @@
       "type": "Translation",
       "english": "Pip and his dog were great friends.",
       "surface": "janni nowahya uugehi ountul",
-      "gloss": "DOG GREAT BE (TEMPORARY STATE) FRIEND",
+      "gloss": "DOG GREAT BE (TEMPORARY STATE)-PST FRIEND",
       "status": "ok"
     },
     {
@@ -33494,36 +33504,36 @@
     {
       "type": "Translation",
       "english": "They opened all the doors and windows.",
-      "surface": "hyapyob kotta zumajinakyude nyumumu zumasechumade ceda",
-      "gloss": "3PL ALL DOOR.PL:ACCUSATIVE AND WINDOW.PL:ACCUSATIVE OPENED",
+      "surface": "hyapyob kotta zumajinakyude yamasu zumasechumade konahi",
+      "gloss": "3PL ALL DOOR.PL:ACCUSATIVE AND WINDOW.PL:ACCUSATIVE OPEN-PST",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "He is small, but strong.",
-      "surface": "[PARTIAL]",
-      "gloss": "3SG  BE (TEMPORARY STATE)",
-      "status": "partial"
+      "surface": "hitou jijocho hia apyogyo uuge",
+      "gloss": "3SG SMALL BUT STRONG BE (TEMPORARY STATE)",
+      "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Is this tree an oak or a maple?",
-      "surface": "rosoo fusokum zumanemashade yamasu zumatissi uuge takinak",
-      "gloss": "PROXIMAL_SINGULAR TREE OAK.PL:ACCUSATIVE OR MAPLE:ACCUSATIVE BE (TEMPORARY STATE) Q",
+      "surface": "rosoo fusokum zumanemasha luporu zumatissi uuge dezu",
+      "gloss": "PROXIMAL_SINGULAR TREE OAK:ACCUSATIVE OR MAPLE:ACCUSATIVE BE (TEMPORARY STATE) Q",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Does the sky look blue or gray?",
-      "surface": "[PARTIAL]",
-      "gloss": "SKY  LOOK Q",
-      "status": "partial"
+      "surface": "ozakiz deshito luporu defuode karisej dezu",
+      "gloss": "SKY BLUE OR GRAY LOOK Q",
+      "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Come with your father or mother.",
-      "surface": "suajimasu altapijudic quatedezen yamasu sokamasazen zaku",
-      "gloss": "COME-IMP WITH 2SG-GEN FATHER.PL:LOCATIVE OR MOTHER:LOCATIVE",
+      "surface": "suajimasu altapijudic quatezen luporu sokamasazen zaku",
+      "gloss": "COME-IMP WITH 2SG-GEN FATHER:LOCATIVE OR MOTHER:LOCATIVE",
       "status": "ok"
     },
     {
@@ -33536,29 +33546,29 @@
     {
       "type": "Translation",
       "english": "He played a tune on his wonderful flute.",
-      "surface": "hitou zumanyahasu paaza altahitou hodoru darenaizen gonsu",
-      "gloss": "3SG TUNE:ACCUSATIVE PLAYED ON 3SG-GEN WONDERFUL FLUTE:LOCATIVE",
+      "surface": "hitou zumanyahasu tadorotahi altahitou hodoru darenaizen gonsu",
+      "gloss": "3SG TUNE:ACCUSATIVE PLAY-PST ON 3SG-GEN WONDERFUL FLUTE:LOCATIVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Toward the end of August the days grow much shorter.",
-      "surface": "yajam hayude fatade dewa bekoto",
-      "gloss": "AUGUST END DAY.PL SHORTER GROW",
-      "status": "ok"
+      "surface": "[PARTIAL]",
+      "gloss": "end.NOM GROW",
+      "status": "partial"
     },
     {
       "type": "Translation",
       "english": "A company of soldiers marched over the hill and across the meadow.",
-      "surface": "atakyaa hezemasade  humasub kotimasazen ogyude diimasuzen byodo",
-      "gloss": "COMPANY SOLDIER.PL  MARCHED OVER HILL:LOCATIVE ACROSS MEADOW:LOCATIVE",
+      "surface": "atakyaa hezemasade  onarehi kotimasazen ogyude diimasuzen byodo",
+      "gloss": "COMPANY SOLDIER.PL  MARCH-PST OVER HILL:LOCATIVE ACROSS MEADOW:LOCATIVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The first part of the story is very interesting.",
-      "surface": "hishiis mororyu  wamayam otewo rimuzua",
-      "gloss": "PART STORY  INTERESTING-PROG FIRST VERY",
+      "surface": "hishiis mororyu  yam otewo rimuzua",
+      "gloss": "PART STORY  INTERESTING FIRST VERY",
       "status": "ok"
     },
     {
@@ -33571,29 +33581,29 @@
     {
       "type": "Translation",
       "english": "The baby clapped her hands and laughed in glee.",
-      "surface": "hinmasu altahitou zumurude asunwa nyumumu hinmasu waboku wazehamazen kyogemy",
-      "gloss": "BABY 3SG-GEN HAND.PL:ACCUSATIVE CLAPPED AND BABY  LAUGHED IN GLEE:LOCATIVE",
+      "surface": "hinmasu altahitou zumurude newahi yamasu hinmasu zerokuhi wazehamazen kyogemy",
+      "gloss": "BABY 3SG-GEN HAND.PL:ACCUSATIVE CLAP-PST AND BABY  LAUGH-PST IN GLEE:LOCATIVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Stop your game and be quiet.",
-      "surface": "suwattebu altapijudic zumasohehyu nyumumu suuge yotte",
+      "surface": "suwattebu altapijudic zumasohehyu yamasu suuuge yotte",
       "gloss": "STOP-IMP 2SG-GEN GAME:ACCUSATIVE AND BE (TEMPORARY STATE)-IMP QUIET",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "The sound of the drums grew louder and louder.",
-      "surface": "[PARTIAL]",
-      "gloss": "DRUM.PL  GROW SOUND",
-      "status": "partial"
+      "surface": "chumash hitayuz yamasu hitayuz bekotohi hiwomas",
+      "gloss": "DRUM LOUDER AND LOUDER GROW-PST SOUND",
+      "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Do you like summer or winter better?",
       "surface": "[PARTIAL]",
-      "gloss": "2SG SUMMER.PL:ACCUSATIVE OR WINTER:ACCUSATIVE LIKE Q",
+      "gloss": "2SG SUMMER:ACCUSATIVE OR WINTER:ACCUSATIVE LIKE Q",
       "status": "partial"
     },
     {
@@ -33606,15 +33616,15 @@
     {
       "type": "Translation",
       "english": "They popped corn, and then sat around the fire and ate it.",
-      "surface": "hyapyob zumazuyojid kosohyo nyumumu hyapyob zumapyahyat jietema wantter shinaki nyumumu hyapyob hitou byasi",
-      "gloss": "3PL CORN:ACCUSATIVE POPPED AND 3PL FIRE:ACCUSATIVE SIT THEN AROUND AND 3PL 3SG EAT",
+      "surface": "hyapyob zumazuyojid kosohyo yamasu hyapyob zumapyahyat jietemahi wantter shinaki yamasu hyapyob hitou byasihi",
+      "gloss": "3PL CORN:ACCUSATIVE POPPED AND 3PL FIRE:ACCUSATIVE SIT-PST THEN AROUND AND 3PL 3SG EAT-PST",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "They won the first two games, but lost the last one.",
-      "surface": "hyapyob izumono zumasohehyude wosete otewo luporu hyapyob bayoto zumakanyama danta",
-      "gloss": "3PL TWO GAME.PL:ACCUSATIVE WIN FIRST BUT 3PL LAST ONE:ACCUSATIVE LOSE",
+      "surface": "hyapyob izumono zumasohehyude wosetehi otewo hia hyapyob bayoto zumakanyama dantahi",
+      "gloss": "3PL TWO GAME.PL:ACCUSATIVE WIN-PST FIRST BUT 3PL LAST ONE:ACCUSATIVE LOSE-PST",
       "status": "ok"
     },
     {
@@ -33628,7 +33638,7 @@
       "type": "Translation",
       "english": "I awoke early, dressed hastily, and went down to breakfast.",
       "surface": "[PARTIAL]",
-      "gloss": "1SG  AWAKE EARLY HASTY AND 1SG  GO DOWN TO BREAKFAST:LOCATIVE",
+      "gloss": "1SG  AWAKE-PST EARLY HASTY AND 1SG  GO-PST DOWN TO BREAKFAST:LOCATIVE",
       "status": "partial"
     },
     {
@@ -33641,9 +33651,9 @@
     {
       "type": "Translation",
       "english": "This string is too short!",
-      "surface": "[PARTIAL]",
+      "surface": "sumonpyun gihench zumahega",
       "gloss": "this-IMP short string.ACC",
-      "status": "partial"
+      "status": "ok"
     },
     {
       "type": "Translation",
@@ -33656,15 +33666,15 @@
       "type": "Translation",
       "english": "Alas! that news is sad indeed!",
       "surface": "[PARTIAL]",
-      "gloss": "NEWS.PL  INDE THAT",
+      "gloss": "NEWS.PL  INDE-PST THAT",
       "status": "partial"
     },
     {
       "type": "Translation",
       "english": "Whew! that cold wind freezes my nose!",
-      "surface": "[PARTIAL]",
+      "surface": "jasu wanyo altadatte zumimashim gozema behazun",
       "gloss": "COLD WIND 1SG-GEN NOSE:ACCUSATIVE FREEZE THAT",
-      "status": "partial"
+      "status": "ok"
     },
     {
       "type": "Translation",
@@ -33677,28 +33687,28 @@
       "type": "Translation",
       "english": "They heard the warning too late.",
       "surface": "[PARTIAL]",
-      "gloss": "3PL  HEAR TOO",
+      "gloss": "3PL  HEAR-PST TOO",
       "status": "partial"
     },
     {
       "type": "Translation",
       "english": "We are a brave people, and love our country.",
-      "surface": "zahasu zonhyab zumahozuarede uuge nyumumu zahasu altazahasu zumakyaha somne",
+      "surface": "zahasu zonhyab zumahozuarede uuge yamasu zahasu altazahasu zumakyaha somne",
       "gloss": "1PL BRAVE PERSON.PL:ACCUSATIVE BE (TEMPORARY STATE) AND 1PL 1PL-GEN COUNTRY:ACCUSATIVE LOVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "All the children came except Mary.",
-      "surface": "kotta autade  ajimasu",
-      "gloss": "ALL CHILD.PL  COME",
+      "surface": "kotta autade  ajimasuhi",
+      "gloss": "ALL CHILD.PL  COME-PST",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "Jack seized a handful of pebbles and threw them into the lake.",
-      "surface": "kyonhya zumadate jara edattedezen hiyopyu nyumumu kyonhya hyapyob dachufu ohesuzen shitagy",
-      "gloss": "JACK HANDFUL:ACCUSATIVE SEIZED OF PEBBLE.PL:LOCATIVE AND JACK 3PL THROW INTO LAKE:LOCATIVE",
+      "surface": "kyonhya zumadate jara edattezen hiyopyu yamasu kyonhya hyapyob dachufuhi ohesuzen shitagy",
+      "gloss": "JACK HANDFUL:ACCUSATIVE SEIZED OF PEBBLE:LOCATIVE AND JACK 3PL THROW-PST INTO LAKE:LOCATIVE",
       "status": "ok"
     },
     {
@@ -33711,8 +33721,8 @@
     {
       "type": "Translation",
       "english": "On a fine summer evening, the two old people were sitting outside the door of their cottage.",
-      "surface": "chupawa eijudes daputte jiono wayamas zumajinakyu izumono monyuzu zumahozuarede wameopyaki altahyapyob ejizen hiyopyu",
-      "gloss": "FINE SUMMER SITTING-PTCP OUTSIDE DOOR:ACCUSATIVE TWO OLD PERSON.PL:ACCUSATIVE EVENING-PROG OF 3PL-GEN COTTAGE:LOCATIVE",
+      "surface": "hitades eopyaki izumono monyuzu zumahozuarede chupawa eijudes wayamas zumajinakyu wamajietemahi altahyapyob ejizen hiyopyu",
+      "gloss": "EVENING-PTCP TWO OLD PERSON.PL:ACCUSATIVE FINE SUMMER OUTSIDE DOOR:ACCUSATIVE SIT-PST-PROG OF 3PL-GEN COTTAGE:LOCATIVE",
       "status": "ok"
     },
     {
@@ -33725,7 +33735,7 @@
     {
       "type": "Translation",
       "english": "The river knows the way to the sea.",
-      "surface": "bayuyos zumodaryo zuchibu chodasuzen bomasu",
+      "surface": "bayuyos zumamodaryo zuchibu chodasuzen bomasu",
       "gloss": "RIVER WAY:ACCUSATIVE KNOW TO SEA:LOCATIVE",
       "status": "ok"
     },
@@ -33753,8 +33763,8 @@
     {
       "type": "Translation",
       "english": "We visited my uncle’s village, the largest village in the world.",
-      "surface": "zahasu altaltantedes monha aribyum zumaribyum jizabyu ryuzabyazen kyogemy",
-      "gloss": "1PL UNCLE:GENITIVE-GEN LARGEST VILLAGE VILLAGE:ACCUSATIVE VISITED IN WORLD:LOCATIVE",
+      "surface": "zahasu altaltantedes monha aribyum zumaribyum deshifuhi ryuzabyazen kyogemy",
+      "gloss": "1PL UNCLE:GENITIVE-GEN LARGEST VILLAGE VILLAGE:ACCUSATIVE VISIT-PST IN WORLD:LOCATIVE",
       "status": "ok"
     },
     {
@@ -33767,7 +33777,7 @@
     {
       "type": "Translation",
       "english": "The market begins five minutes earlier this week.",
-      "surface": "dashiru satte dezu hodabya monpyun nakus zumashihyotade hajiro",
+      "surface": "dashiru satte desopyo hodabya monpyun nakus zumashihyotade hajiro",
       "gloss": "MARKET FIVE EARLY-COMP THIS MINUTE WEEK.PL:ACCUSATIVE BEGIN",
       "status": "ok"
     },
@@ -33775,7 +33785,7 @@
       "type": "Translation",
       "english": "Did you find the distance too great?",
       "surface": "[PARTIAL]",
-      "gloss": "2SG DISTANCE:ACCUSATIVE FIND TOO Q",
+      "gloss": "2SG DISTANCE:ACCUSATIVE FIND-PST TOO Q",
       "status": "partial"
     },
     {
@@ -33795,15 +33805,15 @@
     {
       "type": "Translation",
       "english": "Here under this tree they gave their guests a splendid feast.",
-      "surface": "monpyun fusokum altahyapyob nue aus zumarosotte nyopet nihange",
-      "gloss": "THIS TREE 3PL-GEN SPLENDID GUEST FEAST:ACCUSATIVE GIVE HERE",
+      "surface": "monpyun fusokum altahyapyob nue aus zumarosotte nyopetahi nihange",
+      "gloss": "THIS TREE 3PL-GEN SPLENDID GUEST FEAST:ACCUSATIVE GIVE-PST HERE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "In winter I get up at night, and dress by yellow candlelight.",
-      "surface": "tsun  zuitasu yaroo dattamadezen nyumumu muntsudezen waminai soma takinakazen wodasu",
-      "gloss": "WINTER  GET UP AT NIGHT.PL:LOCATIVE AND DRESS.PL:LOCATIVE BY YELLOW CANDLELIGHT:LOCATIVE",
+      "surface": "tsun  zuitasu yaroo dattamazen yamasu muntsuzen waminai soma takinakazen wodasu",
+      "gloss": "WINTER  GET UP AT NIGHT:LOCATIVE AND DRESS:LOCATIVE BY YELLOW CANDLELIGHT:LOCATIVE",
       "status": "ok"
     },
     {
@@ -33816,9 +33826,9 @@
     {
       "type": "Translation",
       "english": "Be quick or you will be too late.",
-      "surface": "[PARTIAL]",
-      "gloss": "[PARTIAL]",
-      "status": "partial"
+      "surface": "suuuge zakinma luporu suudeada oesu",
+      "gloss": "BE (TEMPORARY STATE)-IMP QUICK OR LATE-FUT-IMP TOO",
+      "status": "ok"
     },
     {
       "type": "Translation",
@@ -33837,7 +33847,7 @@
     {
       "type": "Translation",
       "english": "Think first and then act.",
-      "surface": "susoota otewo nyumumu suaruodat wantter",
+      "surface": "susoota otewo yamasu suaruodat wantter",
       "gloss": "THINK-IMP FIRST AND ACT-IMP THEN",
       "status": "ok"
     },
@@ -33886,9 +33896,9 @@
     {
       "type": "Translation",
       "english": "The little girl made the doll’s dress herself.",
-      "surface": "yokunta colevit altaltakeao zumuntsude nyuzum",
-      "gloss": "LITTLE GIRL DOLL:GENITIVE-GEN DRESS.PL:ACCUSATIVE MAKE",
-      "status": "ok"
+      "surface": "[PARTIAL]",
+      "gloss": "LITTLE GIRL DOLL DRESS:ACCUSATIVE MAKE-PST",
+      "status": "partial"
     },
     {
       "type": "Translation",
@@ -33908,13 +33918,13 @@
       "type": "Translation",
       "english": "He proved himself trustworthy.",
       "surface": "[PARTIAL]",
-      "gloss": "3SG HIMSELF:ACCUSATIVE PROVED",
+      "gloss": "3SG HIMSELF:ACCUSATIVE PROVE-PST",
       "status": "partial"
     },
     {
       "type": "Translation",
       "english": "We could see ourselves in the water.",
-      "surface": "zahasu zumayanade hia karinta autarazen kyogemy",
+      "surface": "zahasu zumayanade biteheg karinta autarazen kyogemy",
       "gloss": "1PL OURSELVES.PL:ACCUSATIVE SEE-MOD IN WATER:LOCATIVE",
       "status": "ok"
     },
@@ -33942,15 +33952,15 @@
     {
       "type": "Translation",
       "english": "The dress of the little princess was embroidered with roses, the national flower of the Country.",
-      "surface": "yokunta muntsu doshude  anfudatahi porugyu gyukyas semasizen zaku kyahazen hiyopyu",
-      "gloss": "LITTLE DRESS PRINCESS.PL  EMBROIDERED WITH NATIONAL ROS FLOWER:LOCATIVE OF COUNTRY:LOCATIVE",
+      "surface": "yokunta muntsu doshu  anfudatahi porugyu gyukyas semasizen zaku kyahazen hiyopyu",
+      "gloss": "LITTLE DRESS PRINCESS  EMBROIDERED-PST WITH NATIONAL ROS FLOWER:LOCATIVE OF COUNTRY:LOCATIVE",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "They wore red caps, the symbol of liberty.",
-      "surface": "hyapyob tomasut myunai zumayoni deshama wayutozen hiyopyu",
-      "gloss": "3PL RED CAP SYMBOL:ACCUSATIVE WEAR OF LIBERTY:LOCATIVE",
+      "surface": "hyapyob tomasut myunai zumayoni deshamahi wayutozen hiyopyu",
+      "gloss": "3PL RED CAP SYMBOL:ACCUSATIVE WEAR-PST OF LIBERTY:LOCATIVE",
       "status": "ok"
     },
     {
@@ -33963,8 +33973,8 @@
     {
       "type": "Translation",
       "english": "All her finery, lace, ribbons, and feathers, was packed away in a trunk.",
-      "surface": "dullo homagik kotta jizumasade nyumumu chazomade  hyujibehi zunseda jibokujazen kyogemy",
-      "gloss": "LACE FINERY ALL RIBBON.PL AND FEATHER.PL  PACKED AWAY IN TRUNK:LOCATIVE",
+      "surface": "dullo homagik kotta jizumasade yamasu chazomade  memyotohi zunseda jibokujazen kyogemy",
+      "gloss": "LACE FINERY ALL RIBBON.PL AND FEATHER.PL  PACK-PST AWAY IN TRUNK:LOCATIVE",
       "status": "ok"
     },
     {
@@ -33985,7 +33995,7 @@
       "type": "Translation",
       "english": "In our climate the grass remains green all winter.",
       "surface": "[PARTIAL]",
-      "gloss": "CLIMATE GRASS.PL GREEN ALL WINTER.PL:ACCUSATIVE REMAIN",
+      "gloss": "CLIMATE GRASS GREEN ALL WINTER.PL:ACCUSATIVE REMAIN",
       "status": "partial"
     },
     {
@@ -34097,27 +34107,27 @@
       "type": "Translation",
       "english": "I have found the ring I lost.",
       "surface": "[PARTIAL]",
-      "gloss": "1SG RING:ACCUSATIVE FIND",
+      "gloss": "1SG ring.ACC FIND-PERF",
       "status": "partial"
     },
     {
       "type": "Translation",
       "english": "Play and I will sing.",
-      "surface": "sutadorot nyumumu sudezuheazoni",
+      "surface": "sutadorot yamasu suudezuheazoni",
       "gloss": "PLAY-IMP AND SING-FUT-IMP",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "That is the funniest story I ever heard.",
-      "surface": "fuwosec mororyu  hyujide behazun anata",
-      "gloss": "FUNNIEST STORY  HEAR THAT EVER",
+      "surface": "fuwosec mororyu  hyujidehi behazun anata",
+      "gloss": "FUNNIEST STORY  HEAR-PST THAT EVER",
       "status": "ok"
     },
     {
       "type": "Translation",
       "english": "She is taller than her brother.",
-      "surface": "hitou dezu dotte uuge dezu altahitou ata",
+      "surface": "hitou desopyo dotte uuge desopyo altahitou ata",
       "gloss": "3SG TALLER-COMP BE (TEMPORARY STATE) COMP-STD 3SG-GEN BROTHER",
       "status": "ok"
     },
@@ -34131,7 +34141,7 @@
     {
       "type": "Translation",
       "english": "Light travels faster than sound.",
-      "surface": "suyomono uwo zumesara dezu mijulli",
+      "surface": "suyomono uwo zumesara desopyo mijulli",
       "gloss": "LIGHT-IMP TRAVEL FASTER:ACCUSATIVE COMP-STD SOUND",
       "status": "ok"
     },
@@ -34153,14 +34163,14 @@
       "type": "Translation",
       "english": "He was very poor, and with his wife and five children lived in a little low cabin of logs and stones.",
       "surface": "[PARTIAL]",
-      "gloss": "3SG POOR BE (TEMPORARY STATE) VERY AND 3SG  LIVED IN LOW LITTLE CABIN:LOCATIVE OF LOG.PL:LOCATIVE AND STONE.PL:LOCATIVE",
+      "gloss": "3SG POOR BE (TEMPORARY STATE)-PST VERY AND 3SG  LIVE-PST IN LOW LITTLE CABIN:LOCATIVE OF LOG.PL:LOCATIVE AND STONE.PL:LOCATIVE",
       "status": "partial"
     },
     {
       "type": "Translation",
       "english": "When the wind blew, the traveler wrapped his mantle more closely around him.",
       "surface": "[PARTIAL]",
-      "gloss": "WIND TRAVELER MANTLE:ACCUSATIVE BLOW CLOSE AROUND",
+      "gloss": "WIND TRAVELER MANTLE:ACCUSATIVE BLOW-PST CLOSE AROUND",
       "status": "partial"
     },
     {
@@ -34174,7 +34184,7 @@
       "type": "Translation",
       "english": "We went back to the place where we saw the roses.",
       "surface": "[PARTIAL]",
-      "gloss": "1PL  GO BACK TO PLACE:LOCATIVE",
+      "gloss": "1PL  GO-PST BACK TO PLACE:LOCATIVE",
       "status": "partial"
     },
     {
@@ -34201,8 +34211,8 @@
     {
       "type": "Translation",
       "english": "Why he has left the city is a mystery.",
-      "surface": "hitou wato zumahesu heyanyo gyaa",
-      "gloss": "3SG CITY MYSTERY:ACCUSATIVE LEAVE WHY",
+      "surface": "hitou wato zumahesu heyanyohi gyaa",
+      "gloss": "3SG CITY MYSTERY:ACCUSATIVE LEAVE-PST WHY",
       "status": "ok"
     },
     {
@@ -34223,14 +34233,14 @@
       "type": "Translation",
       "english": "Evidently that gate is never opened, for the long grass and the great hemlocks grow close against it.",
       "surface": "[PARTIAL]",
-      "gloss": "GATE  OPENED-NEG EVIDENT THAT NEVER FOR LONG GRASS.PL:LOCATIVE AND GATE  CLOSE-NEG",
+      "gloss": "GATE  OPEN-PST-NEG EVIDENT THAT NEVER FOR LONG GRASS:LOCATIVE AND GATE  CLOSE-NEG",
       "status": "partial"
     },
     {
       "type": "Translation",
       "english": "I met a little cottage girl; she was eight years old, she said.",
       "surface": "[PARTIAL]",
-      "gloss": "1SG EIGHT COTTAGE LITTLE GIRL YEAR.PL:ACCUSATIVE MEET",
+      "gloss": "1SG EIGHT COTTAGE LITTLE GIRL YEAR.PL:ACCUSATIVE MEET-PST",
       "status": "partial"
     }
   ]

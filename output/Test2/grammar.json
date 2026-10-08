@@ -85,6 +85,7 @@
     "particle_position": "before_verb"
   },
   "tense_realization": {
+    "past": "particle",
     "future": "particle"
   },
   "aspect_realization": {
@@ -229,7 +230,15 @@
     "imperative": "affix"
   },
   "translation_readiness": {
-    "contract_version": 5,
+    "contract_version": 9,
+    "capabilities": [
+      "stacked_aspect",
+      "constituent_coordination",
+      "copular_imperative",
+      "nominal_predicate",
+      "irregular_comparison",
+      "single_negation"
+    ],
     "analytic_fallbacks": [
       "future",
       "progressive",
@@ -269,29 +278,30 @@
     }
   },
   "particles": {
-    "negative": "todou",
-    "comparative": "kuumonu",
-    "superlative": "kuhun",
-    "and": "wang",
-    "or": "soodurc",
-    "but": "gumdalj",
-    "ability": "sig",
-    "obligation": "talriya",
-    "possibility": "laralmo",
-    "future": "shanzho",
-    "progressive": "zhanliu",
-    "perfect": "kunge",
-    "imperative": "umogei",
-    "possessive": "kuumoog",
-    "complementizer": "chow",
-    "relative": "diqalji",
-    "conditional": "drancin",
-    "subordinate": "dalaa",
-    "passive": "tngoosa",
-    "quotative": "laanna",
-    "appositive": "wanil",
-    "participle": "ulai",
-    "infinitive": "baixi"
+    "past": "todou",
+    "negative": "kuumonu",
+    "comparative": "kuhun",
+    "superlative": "wang",
+    "and": "soodurc",
+    "or": "gumdalj",
+    "but": "sig",
+    "ability": "talriya",
+    "obligation": "laralmo",
+    "possibility": "shanzho",
+    "future": "zhanliu",
+    "progressive": "kunge",
+    "perfect": "umogei",
+    "imperative": "kuumoog",
+    "possessive": "chow",
+    "complementizer": "diqalji",
+    "relative": "drancin",
+    "conditional": "dalaa",
+    "subordinate": "tngoosa",
+    "passive": "laanna",
+    "quotative": "wanil",
+    "appositive": "ulai",
+    "participle": "baixi",
+    "infinitive": "baiy"
   },
   "pronouns": {
     "1sg": "zaoyang",

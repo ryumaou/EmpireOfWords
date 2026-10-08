@@ -7,6 +7,7 @@ accepted only when every represented lexical/grammatical feature receives a rece
 from __future__ import annotations
 import re
 import copy
+from english_analyzer import IRREGULAR_VERBS
 from ir import NPIR, PPIR, PredicateIR, ClauseIR, ModifierIR, ComparisonIR, ParticipialModifierIR
 
 PRON={'i':'1sg','me':'1sg','you':'2sg','he':'3sg','him':'3sg','she':'3sg','her':'3sg','we':'1pl','us':'1pl','they':'3pl','them':'3pl','it':'3sg'}
@@ -54,7 +55,11 @@ def _convert_form(by,lemma,target,g):
     return None
 
 def _lemma_for_pos(word,by,lemma_candidates,target,g):
-    for cand in lemma_candidates(word):
+    candidates=lemma_candidates(word)
+    if target=='v' and (word.endswith(('ed','ing','es')) or word in IRREGULAR_VERBS):
+        # Prefer canonical verbal stems over preflight-created surface lexemes.
+        candidates=[x for x in candidates if x!=word]+[word]
+    for cand in candidates:
         if _convert_form(by,cand,target,g): return cand
     return None
 
@@ -87,7 +92,7 @@ def parse_np(words,by,lexical_match):
     if cj and left and right:
         a=parse_np(left,by,lexical_match); b=parse_np(right,by,lexical_match)
         if a and b:
-            a.conjunction=cj; a.coordinated=[b]; a.number='plural'; return a
+            a.conjunction=cj; a.coordinated=[b]; return a
     if len(words)==1 and words[0] in PRON: return NPIR(words,person=PRON[words[0]],head=words[0])
     poss=None
     if words and words[0] in POSS:
@@ -136,7 +141,7 @@ def parse_np(words,by,lexical_match):
         elif _pos(by,lm,'n'):
             # English productive noun adjunct: sea water, apple tree, spring sun.
             noun_modifiers.append(lm)
-    plural=raw.endswith('s') or raw in ('children','men','women','people') or numeral not in (None,'one') or quantifier in ('many','several','all','both','few')
+    plural=(raw.endswith('s') and not raw.endswith(('ss','us','is'))) or raw in ('children','men','women','people') or numeral not in (None,'one') or quantifier in ('many','several','all','both','few')
     return NPIR(words,head=head,determiner=det,number='plural' if plural else 'singular',adjectives=adjectives,noun_modifiers=noun_modifiers,participial_modifiers=participial,numeral=numeral,quantifier=quantifier,possessor=poss,comparison=comparison)
 
 def _modifier(word,by,lexical_match):
@@ -171,6 +176,12 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
         if not m: continue
         left_raw=raw[:m.start()].strip(' ,;'); right_raw=raw[m.end():].strip(' ,;.!?')
         if not left_raw or not right_raw: continue
+        # Only split here when both sides actually contain predicates. NP and
+        # adjective coordination belong inside their containing constituent.
+        lt=[x.lower() for x in english_tokens(left_raw)]; rt=[x.lower() for x in english_tokens(right_raw)]
+        def has_pred(xs):
+            return any(x in AUX or any(_form(by,c,('v',)) for c in lemma_candidates(x)) for x in xs)
+        if not (has_pred(lt) and has_pred(rt)): continue
         subcons=[c for c in constructions if c!='coordination']
         left=parse_clause(left_raw+'.',by,lexical_match,english_tokens,lemma_candidates,subcons,g)
         if left:
@@ -192,12 +203,16 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
     cop_i=next((i for i,w in enumerate(toks) if w in COPULA),None)
     vi=None; verb_lemma=None; copular=False
     if imp and toks:
-        lm=_lemma_for_pos(toks[0],by,lemma_candidates,'v',g or {}) or _lemma(toks[0],by,lexical_match)
-        if _convert_form(by,lm,'v',g or {}) or toks[0]=='be': vi=0; verb_lemma=lm; copular=toks[0]=='be'
+        if toks[0]=='be':
+            lm=_copula_lemma(by)
+        else:
+            lm=_lemma_for_pos(toks[0],by,lemma_candidates,'v',g or {}) or _lemma(toks[0],by,lexical_match)
+        if lm and (_convert_form(by,lm,'v',g or {}) or toks[0]=='be'):
+            vi=0; verb_lemma=lm; copular=toks[0]=='be'
     if vi is None:
         # When a modal/future auxiliary is present, the lexical predicate after it
         # outranks an earlier participial modifier (A tiger wearing ... will starve).
-        modal_i=next((i for i,w in enumerate(toks) if w in MODALS or w in ('will','shall')),None)
+        modal_i=next((i for i,w in enumerate(toks) if w in MODALS or w in ('will','shall','did','do','does')),None)
         if modal_i is not None:
             for i in range(modal_i+1,len(toks)):
                 lm=_lemma_for_pos(toks[i],by,lemma_candidates,'v',g or {})
@@ -209,11 +224,20 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
             if w in LINKING or any(w.startswith(x) for x in ('seem','feel','sound')):
                 lm=_lemma_for_pos(w,by,lemma_candidates,'v',g or {})
             else:
-                lm=next((c for c in lemma_candidates(w) if _form(by,c,('v',))),None)
+                lm=next((c for c in ([x for x in lemma_candidates(w) if x!=w]+[w] if w.endswith(('ed','ing','es')) else lemma_candidates(w)) if _form(by,c,('v',))),None)
             if lm: verb_candidates.append((i,w,lm))
         # Prefer a verb whose left edge forms a plausible subject NP. This prevents
         # homographs such as FIRE in 'the fire feels hot' from stealing the predicate slot.
-        chosen=next(((i,w,lm) for i,w,lm in verb_candidates if i>0 and parse_np([x for x in toks[:i] if x not in AUX],by,lexical_match)),None)
+        # Prefer overtly inflected lexical predicates over homographic bare
+        # nouns (the west wind BLEW; WIND can also be a verb).
+        def verb_score(item):
+            i,w,lm=item
+            explicit=(w in IRREGULAR_VERBS or
+                      (w.endswith(('ed','ing','es')) and lm!=w))
+            return (int(explicit), i)
+        eligible=[item for item in verb_candidates if item[0]>0 and
+                  parse_np([x for x in toks[:item[0]] if x not in AUX],by,lexical_match)]
+        chosen=max(eligible,key=verb_score) if any(verb_score(item)[0] for item in eligible) else (eligible[0] if eligible else None)
         if chosen is None and verb_candidates: chosen=verb_candidates[0]
         if chosen:
             vi,w,verb_lemma=chosen; copular=verb_lemma in LINKING or w.rstrip('s') in LINKING
@@ -236,6 +260,11 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
         m=_modifier(w,by,lexical_match)
         if m: premods.append(m)
         else: subject_words.append(w)
+    # A prepositional phrase embedded in the English subject cannot safely be
+    # flattened into noun adjuncts (girls WITH wreaths OF flowers). The legacy
+    # analyzer may diagnose it, but structured realization must not claim success.
+    if sum(w in PREP for w in subject_words)>=2:
+        return None
     subject=None if imp else parse_np(subject_words,by,lexical_match)
     if not imp and subject is None:return None
     pred=PredicateIR(verb_lemma,mood='imperative' if imp else 'indicative',modifiers=leading+premods)
@@ -243,6 +272,14 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
     if front_aux: auxiliaries.append(front_aux)
     auxiliaries += [w for w in toks[:vi] if w in AUX]
     if vi < len(toks) and toks[vi] in AUX: auxiliaries.append(toks[vi])
+    # A lexical English past form must carry tense even when it has not been
+    # normalized to an auxiliary construction.
+    if vi<len(toks):
+        verb_token=toks[vi]
+        if verb_token in IRREGULAR_VERBS and IRREGULAR_VERBS[verb_token][1]=='past':
+            pred.tense='past'
+        elif verb_token.endswith('ed') and verb_lemma!=verb_token:
+            pred.tense='past'
     for a in auxiliaries:
         if a in ('will','shall'): pred.tense='future'
         elif a in ('did','was','were','had'): pred.tense='past'
@@ -269,8 +306,18 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
             if m: pred.modifiers.append(m)
             else: npwords.append(w)
     if npwords:
+        # Coordinated predicative adjectives: small but strong; blue or gray.
+        cidx=next((i for i,w in enumerate(npwords) if w in CONJ),None)
+        if cidx is not None and cidx>0 and cidx+1<len(npwords):
+            leftv=[x for x in npwords[:cidx] if x not in DEGREE]; rightv=[x for x in npwords[cidx+1:] if x not in DEGREE]
+            if len(leftv)==1 and len(rightv)==1:
+                la=_lemma(leftv[0],by,lexical_match); ra=_lemma(rightv[0],by,lexical_match)
+                if _pos(by,la,'adj') and _pos(by,ra,'adj'):
+                    pred.complement=NPIR(leftv,head=la); pred.complement_kind='adjective'; copular=True
+                    pred.complement_conjunction=npwords[cidx]; pred.coordinated_complements=[NPIR(rightv,head=ra)]
+                    npwords=[]
         # Predicate/adjective comparison: more slowly is handled as modifiers; taller etc as complement.
-        np=parse_np(npwords,by,lexical_match)
+        np=parse_np(npwords,by,lexical_match) if npwords else None
         if np: pred.object=np
         else:
             # remove degree marker before adjective complement
@@ -281,6 +328,8 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
                     pred.complement=NPIR(vals,head=lm); pred.complement_kind='adjective'; copular=True
                     d='comparative' if any(x in ('more','less') for x in npwords) else _degree_for(vals[0],lm,by)
                     if d!='positive': pred.comparison=pred.comparison or ComparisonIR(d,marker=vals[0])
+                elif _pos(by,lm,'n'):
+                    pred.complement=NPIR(vals,head=lm); pred.complement_kind='nominal'; copular=True
     while ppwords:
         ad=ppwords.pop(0); nxt=next((i for i,w in enumerate(ppwords) if w in PREP),len(ppwords))
         obj=parse_np(ppwords[:nxt],by,lexical_match)
@@ -391,20 +440,34 @@ def realize(clause,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix
     morph=g.get('morphemes',{})
     native_tense=p.tense in g.get('verb',{}).get('tenses',[]) and (p.tense=='present' or p.tense in morph)
     tense=p.tense if native_tense else 'present'
-    requested_aspect='perfect' if 'perfect' in p.aspect else 'progressive' if 'progressive' in p.aspect else 'simple'
-    native_aspect=requested_aspect in g.get('verb',{}).get('aspects',[]) and (requested_aspect=='simple' or requested_aspect in morph)
-    aspect=requested_aspect if native_aspect else 'simple'
+    requested_aspects=[x for x in ('progressive','perfect') if x in p.aspect]
+    primary_aspect=requested_aspects[0] if requested_aspects else 'simple'
+    native_aspect=primary_aspect in g.get('verb',{}).get('aspects',[]) and (primary_aspect=='simple' or primary_aspect in morph)
+    aspect=primary_aspect if native_aspect else 'simple'
     native_mood=p.mood in g.get('verb',{}).get('moods',[]) and (p.mood=='indicative' or p.mood in morph)
     mood=p.mood if native_mood else 'indicative'
+    # Negation is realized once by the grammar engine. A gloss must describe
+    # the single licensed operation, not add a second independent NOT token.
     v=verb_form(vf,g,person,tense,aspect,mood,p.negative); vg=p.lemma.upper(); receipts.add(p.lemma)
+    if p.tense=='past' and not native_tense:
+        mark=g.get('particles',{}).get('past')
+        if not mark:return None
+        v=mark+' '+v
+    if p.tense=='past':
+        receipts.add('past'); vg+='-PST'
     if p.tense=='future':
         if not native_tense:
             mark=g.get('particles',{}).get('future');
             if not mark:return None
             v=mark+' '+v
         receipts.add('future'); vg+='-FUT'
-    if requested_aspect!='simple':
-        if not native_aspect:
+    for ai,requested_aspect in enumerate(requested_aspects):
+        native=(requested_aspect in g.get('verb',{}).get('aspects',[]) and requested_aspect in morph)
+        if ai==0 and requested_aspect==primary_aspect and native_aspect:
+            pass
+        elif native:
+            mm=morph[requested_aspect]; v=affix(v,mm,g)
+        else:
             mark=g.get('particles',{}).get(requested_aspect)
             if not mark:return None
             v=mark+' '+v
@@ -415,7 +478,8 @@ def realize(clause,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix
             if not mark:return None
             v=mark+' '+v
         receipts.add('imperative'); vg+='-IMP'
-    if p.negative: receipts.add('negation'); vg+='-NEG'
+    if p.negative:
+        receipts.add('negation'); vg+='-NEG'
     if p.modal:
         key='ability' if p.modal in ('can','could') else 'obligation' if p.modal in ('should','must') else 'possibility'
         mp=g.get('particles',{}).get(key)
@@ -437,6 +501,21 @@ def realize(clause,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix
         comp_s=af; comp_g=p.complement.head.upper()+('-COMP' if degree=='comparative' else '-SUPER' if degree=='superlative' else '')
         receipts.add(p.complement.head)
         if degree!='positive': receipts.add('comparison')
+        os=comp_s if not os else os+' '+comp_s; og=comp_g if not og else og+' '+comp_g
+        if p.coordinated_complements:
+            cs=g.get('coordination',{}).get('predicate',{}); strategy=cs.get('strategy','particle')
+            cj=_conj_form(g,p.complement_conjunction or 'and',by) if strategy=='particle' else ''
+            if strategy=='particle' and not cj:return None
+            for cc in p.coordinated_complements:
+                caf=_form(by,cc.head,('adj',))
+                if not caf:return None
+                os=(os+' '+cj+' '+caf).replace('  ',' ').strip(); og=og+' '+(p.complement_conjunction or 'and').upper()+' '+cc.head.upper()
+                receipts.add(cc.head)
+            receipts.add('coordination')
+    elif p.complement and p.complement_kind=='nominal':
+        comp_s,comp_g,cr=realize_np(p.complement,g,by,noun_form,possessive_phrase,adjective_form,'nominative')
+        if not comp_s:return None
+        receipts|=cr
         os=comp_s if not os else os+' '+comp_s; og=comp_g if not og else og+' '+comp_g
     surf=order_clause(ss,v,os,g).strip() if ss else ' '.join(x for x in (v,os) if x)
     gloss=order_clause(sg,vg,og,g).strip() if sg else ' '.join(x for x in (vg,og) if x)

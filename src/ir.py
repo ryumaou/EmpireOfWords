@@ -55,6 +55,8 @@ class PredicateIR:
     indirect_object: Optional[NPIR]=None
     complement: Optional[NPIR]=None
     complement_kind: Optional[str]=None # adjective|nominal
+    complement_conjunction: Optional[str]=None
+    coordinated_complements: list['NPIR']=field(default_factory=list)
     modifiers: list[ModifierIR]=field(default_factory=list)
     particles: list[str]=field(default_factory=list)
     pps: list[PPIR]=field(default_factory=list)
@@ -75,5 +77,6 @@ class ClauseIR:
     conjunction: Optional[str]=None
     coordinated: Optional['ClauseIR']=None
     source_tokens: list[str]=field(default_factory=list)
+    wh_word: Optional[str]=None
 
     def to_dict(self): return asdict(self)

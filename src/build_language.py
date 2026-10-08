@@ -436,7 +436,7 @@ def main(argv=None):
             for chunk in iter(lambda:fh.read(1024*1024),b''): h.update(chunk)
         return h.hexdigest()
     manifest={
-        'schema_version':2,'tool_version':'6.8','language':args.language_name,'seed':args.seed,
+        'schema_version':2,'tool_version':'7.4','language':args.language_name,'seed':args.seed,
         'source':{'path':str(args.corpus),'sha256':sha256_file(args.corpus)},
         'vocabulary':{'path':str(args.vocabulary),'sha256':sha256_file(args.vocabulary)},
         'supplemental_vocabulary':[{'path':str(x),'sha256':sha256_file(x)} for x in supplemental_paths],

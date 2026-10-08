@@ -208,7 +208,7 @@ class V66GenerationVariationTests(unittest.TestCase):
         pool=[''.join(x) for x in itertools.product('ptkmnslr','aeiou','ptkmnslr','aeiou')]
         a=generate_grammar(pool,random.Random(1),'japanese',{})
         b=generate_grammar(pool,random.Random(2),'romance',{})
-        self.assertEqual(a['translation_readiness']['contract_version'],5)
+        self.assertEqual(a['translation_readiness']['contract_version'],9)
         self.assertNotEqual(a['realization_profile'],b['realization_profile'])
         self.assertIn('predicate',a['coordination']); self.assertIn('clause',b['coordination'])
 
@@ -219,7 +219,7 @@ class V66CoordinationRealizationTests(unittest.TestCase):
         by={'crow':[('n','cr')],'drop':[('v','dr')],'pebble':[('n','pe')],'raise':[('v','ra')],'water':[('n','wa')],'and':[('conj','an')]}
         ir=parse_clause('The crow dropped pebbles and raised water.',by,ea.lexical_match,ea.tokens,ea.lemma_candidates,['coordination'])
         g={'pronouns':{'3pl':'te'},'morphemes':{},'noun':{'cases':['nominative']},'verb':{'tenses':['present'],'aspects':['simple'],'moods':['indicative'],'agreement':'none'},
-           'particles':{'and':'ka'},'word_order':'SVO','adjective_position':'before','possessor_position':'before','possession':{'strategy':'juxtaposition'},
+           'particles':{'and':'ka','past':'pa'},'word_order':'SVO','adjective_position':'before','possessor_position':'before','possession':{'strategy':'juxtaposition'},
            'adposition_type':'preposition','adverbs':{'position':'after_verb','derivation':'zero'},'questions':{'strategy':'word-order'},
            'coordination':{'predicate':{'strategy':'particle'},'np':{'strategy':'particle'},'clause':{'strategy':'particle'}}}
         nf=lambda w,g,number='singular',case='nominative':w
@@ -254,7 +254,7 @@ class V68CreationContractTests(unittest.TestCase):
         import random,itertools
         pool=[''.join(x) for x in itertools.product('ptkmnslr','aeiou','ptkmnslr','aeiou')]
         g=generate_grammar(pool,random.Random(9),'japanese',{'aspect_level':'minimal'})
-        self.assertEqual(g['translation_readiness']['contract_version'],5)
+        self.assertEqual(g['translation_readiness']['contract_version'],9)
         self.assertIn('participial_modifier',g['nonfinite'])
         self.assertIn('infinitive_complement',g['nonfinite'])
         self.assertNotIn('perfect',g['morphemes'])
@@ -280,3 +280,92 @@ class V68CreationContractTests(unittest.TestCase):
         self.assertIsNotNone(ir); self.assertEqual(ir.subject.head,'tiger')
         self.assertEqual(ir.subject.participial_modifiers[0].lemma,'wear')
         self.assertEqual(ir.subject.participial_modifiers[0].object.head,'bell')
+
+
+class V69RegressionTests(unittest.TestCase):
+    def test_string_is_not_false_progressive(self):
+        from english_analyzer import detect_constructions
+        by={"string":[("n","x")],"short":[("adj","y")],"be":[("v","z")]}
+        self.assertNotIn("progressive", detect_constructions("This string is too short!", ["this","string","is","too","short"], by))
+
+    def test_irregular_degree_candidates(self):
+        self.assertIn("good", lemma_candidates("better"))
+        self.assertIn("bad", lemma_candidates("worst"))
+
+    def test_contract_v6_capabilities(self):
+        import random
+        from grammar_engine import generate_grammar
+        from language_io import validate_grammar_contract
+        roots=["ka"+str(i) for i in range(300)]
+        g=generate_grammar(roots, random.Random(77), "naturalistic", {})
+        self.assertEqual(g["translation_readiness"]["contract_version"],9)
+        self.assertIn("stacked_aspect",g["translation_readiness"]["capabilities"])
+        errors,_=validate_grammar_contract(g)
+        self.assertEqual(errors,[])
+
+class V71FidelityTests(unittest.TestCase):
+    def test_np_coordination_preserves_individual_number(self):
+        from structured_realizer import parse_np
+        by={'cat':[('n','katu')], 'bird':[('n','birdu')]}
+        np=parse_np(['the','cat','and','the','bird'],by,lexical_match)
+        self.assertEqual(np.number,'singular')
+        self.assertEqual(np.coordinated[0].number,'singular')
+    def test_creation_guarantees_past_strategy(self):
+        from grammar_engine import generate_grammar
+        import random
+        g=generate_grammar(['maka','talu','ranu','sena','katu','mori','pala','nako']*200,random.Random(712),family='random')
+        self.assertTrue('past' in g['morphemes'] or g['particles'].get('past'))
+        self.assertEqual(g['translation_readiness']['contract_version'],9)
+
+class V71PastSourceTests(unittest.TestCase):
+    def test_irregular_past_is_not_discarded_before_structured_parse(self):
+        from grammar_engine import _normalize_for_legacy
+        from structured_realizer import parse_clause
+        by={'dog':[('n','doga')],'cat':[('n','cata')],'see':[('v','seva')]}
+        normalized=_normalize_for_legacy('The dog saw the cat.',by)
+        clause=parse_clause(normalized,by,lexical_match,tokens,lemma_candidates,[],{})
+        self.assertIsNotNone(clause)
+        self.assertEqual(clause.predicate.tense,'past')
+
+class V72NegationContractTests(unittest.TestCase):
+    def test_particle_negation_ignores_stray_affix(self):
+        from grammar_engine import verb_form
+        g={'verb':{'negation':'particle'},'morphemes':{'negative':{'form':'zz','side':'suffix'}},'particles':{'negative':'naka'}}
+        self.assertEqual(verb_form('mora',g,negative=True),'naka mora')
+
+    def test_affix_negation_ignores_stray_particle(self):
+        from grammar_engine import verb_form
+        g={'verb':{'negation':'affix'},'morphemes':{'negative':{'form':'zz','side':'suffix'}},'particles':{'negative':'naka'},'morphophonemics':{'rules':[]}}
+        self.assertEqual(verb_form('mora',g,negative=True),'morazz')
+
+    def test_inflection_candidates(self):
+        from english_analyzer import lemma_candidates
+        self.assertIn('freeze',lemma_candidates('freezes'))
+        self.assertIn('dance',lemma_candidates('danced'))
+        self.assertIn('carry',lemma_candidates('carried'))
+
+class V73InflectionIntegrityTests(unittest.TestCase):
+    def test_inflected_verb_avoids_noun_homograph(self):
+        by={'freez':[('n','fz')],'freeze':[('v','fr')], 'danced':[('v','dc')],'dance':[('v','da')]}
+        self.assertEqual(lexical_match(by,'freezes','v'),'freeze')
+        self.assertEqual(lexical_match(by,'danced','v'),'dance')
+
+    def test_irregular_past_over_verb_homograph(self):
+        by={'west':[('n','we')],'wind':[('n','wi'),('v','wv')], 'blow':[('v','bl')],
+            'face':[('n','fa')], 'across':[('prep','ac')], 'my':[('pron','my')]}
+        ir=parse_clause('The west wind blew across my face.',by,lexical_match,tokens,lemma_candidates,[])
+        self.assertIsNotNone(ir)
+        self.assertEqual(ir.predicate.lemma,'blow')
+        self.assertEqual(ir.predicate.tense,'past')
+
+    def test_caress_is_singular(self):
+        from structured_realizer import parse_np
+        np=parse_np(['a','caress'],{'caress':[('n','ca')]},lexical_match)
+        self.assertEqual(np.number,'singular')
+
+class V73MorphemeCollisionTests(unittest.TestCase):
+    def test_prefix_suffix_do_not_disappear_at_identical_boundary(self):
+        from grammar_engine import affix
+        g={'morphophonemics':{'rules':['initial_mutation','lenition','consonant_assimilation']}}
+        self.assertNotEqual(affix('cat',{'form':'c','side':'prefix'},g),'cat')
+        self.assertNotEqual(affix('cat',{'form':'t','side':'suffix'},g),'cat')

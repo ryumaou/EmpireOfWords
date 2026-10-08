@@ -1,7 +1,7 @@
 [Translation]
 English: The big dog is sleeping.
-Language: che uljashe  durlis
-Gloss: BIG DOG  SLEEPING-PROG
+Language: che uljashe  yicinjis
+Gloss: BIG DOG  SLEEP-PROG
 Status: ok
 
 [Translation]
@@ -12,14 +12,14 @@ Status: ok
 
 [Translation]
 English: She will give him water.
-Language: shuno boyanen shanzho deban
+Language: shuno boyanen zhanliu deban
 Gloss: 3SG WATER:ACCUSATIVE GIVE-FUT
 Status: ok
 
 [Translation]
 English: This child walked to that house yesterday.
-Language: daqob beliumo  auun dotuluu guuludi pekab
-Gloss: PROXIMAL_SINGULAR CHILD  WALKED TO DISTAL_SINGULAR HOUSE
+Language: daqob beliumo  todou ulusin dotuluu guuludi pekab
+Gloss: PROXIMAL_SINGULAR CHILD  WALK-PST TO DISTAL_SINGULAR HOUSE
 Status: ok
 
 [Translation]
@@ -36,13 +36,13 @@ Status: ok
 
 [Translation]
 English: The woman and the man are talking.
-Language: otaqaliudu alaruod  shirts
-Gloss: WOMAN.PL AND MAN  TALKING-PROG
+Language: qaliudu alaruod  qoturass
+Gloss: WOMAN AND MAN  TALK-PROG
 Status: ok
 
 [Translation]
 English: I do not see three cats.
-Language: sheubaa zaoyang shunbe otasheunen todou mjasixi
+Language: sheubaa zaoyang shunbe otasheunen kuumonu mjasixi
 Gloss: NOT 1SG THREE CAT.PL:ACCUSATIVE SEE-NEG
 Status: ok
 
@@ -54,13 +54,13 @@ Status: ok
 
 [Translation]
 English: Two children played in the garden.
-Language: orine otabeliumo  nalig mongkeg otu
-Gloss: TWO CHILD.PL  PLAYED IN GARDEN
+Language: orine otabeliumo  todou mengeie mongkeg otu
+Gloss: TWO CHILD.PL  PLAY-PST IN GARDEN
 Status: ok
 
 [Translation]
 English: A Tiger wearing a bell will starve.
-Language: ulai oturang ranen moqing  shanzho delemuu
+Language: baixi oturang ranen moqing  zhanliu delemuu
 Gloss: WEARING-PTCP BELL:ACCUSATIVE TIGER  STARVE-FUT
 Status: ok
 
@@ -72,37 +72,37 @@ Status: ok
 
 [Translation]
 English: The sun is shining.
-Language: bannait  bataicos
-Gloss: SUN  SHINING-PROG
+Language: bannait  laitawes
+Gloss: SUN  SHINE-PROG
 Status: ok
 
 [Translation]
 English: The sun shone.
-Language: bannait  laitawe
-Gloss: SUN  SHINE
+Language: bannait  todou laitawe
+Gloss: SUN  SHINE-PST
 Status: ok
 
 [Translation]
 English: The sun will shine.
-Language: bannait  shanzho laitawe
+Language: bannait  zhanliu laitawe
 Gloss: SUN  SHINE-FUT
 Status: ok
 
 [Translation]
 English: The sun has been shining.
-Language: bannait  kbataico
-Gloss: SUN  SHINING-PERF
+Language: bannait  klaitawes
+Gloss: SUN  SHINE-PROG-PERF
 Status: ok
 
 [Translation]
 English: The sun is shining again.
-Language: guun bannait  bataicos
-Gloss: AGAIN SUN  SHINING-PROG
+Language: guun bannait  laitawes
+Gloss: AGAIN SUN  SHINE-PROG
 Status: ok
 
 [Translation]
 English: The sun will shine tomorrow.
-Language: sheecec bannait  shanzho laitawe
+Language: sheecec bannait  zhanliu laitawe
 Gloss: TOMORROW SUN  SHINE-FUT
 Status: ok
 
@@ -120,14 +120,14 @@ Status: ok
 
 [Translation]
 English: The sun is rising now.
-Language: nyas bannait  najildus
-Gloss: NOW SUN  RISING-PROG
+Language: nyas bannait  jamus
+Gloss: NOW SUN  RISE-PROG
 Status: ok
 
 [Translation]
 English: All the people shouted.
-Language: fen otakoochoo  dalangz
-Gloss: ALL PERSON.PL  SHOUTED
+Language: fen otakoochoo  todou cinjian
+Gloss: ALL PERSON.PL  SHOUT-PST
 Status: ok
 
 [Translation]
@@ -150,49 +150,49 @@ Status: ok
 
 [Translation]
 English: The kitten jumped up.
-Language: xusheun  aucilin jiece
-Gloss: KITTEN  JUMPED UP
+Language: xusheun  todou sheune jiece
+Gloss: KITTEN  JUMP-PST UP
 Status: ok
 
 [Translation]
 English: The kitten jumped onto the table.
-Language: xusheun  aucilin mongzu qangqar
-Gloss: KITTEN  JUMPED ONTO TABLE
+Language: xusheun  todou sheune mongzu qangqar
+Gloss: KITTEN  JUMP-PST ONTO TABLE
 Status: ok
 
 [Translation]
 English: My little kitten walked away.
-Language: zaoyang idas xusheun  auun bid
-Gloss: 1SG-GEN LITTLE KITTEN  WALKED AWAY
+Language: zaoyang idas xusheun  todou ulusin bid
+Gloss: 1SG-GEN LITTLE KITTEN  WALK-PST AWAY
 Status: ok
 
 [Translation]
 English: It’s raining.
-Language: shuno  odurans
-Gloss: 3SG  RAINING-PROG
+Language: shuno  dashiijas
+Gloss: 3SG  RAIN-PROG
 Status: ok
 
 [Translation]
 English: The rain came down.
-Language: dashii  ide cid
-Gloss: RAIN  COME DOWN
+Language: dashii  todou ide cid
+Gloss: RAIN  COME-PST DOWN
 Status: ok
 
 [Translation]
 English: The kitten is playing in the rain.
-Language: xusheun  pekoorcs dashii otu
-Gloss: KITTEN  PLAYING-PROG IN RAIN
+Language: xusheun  mengeies dashii otu
+Gloss: KITTEN  PLAY-PROG IN RAIN
 Status: ok
 
 [Translation]
 English: The rain has stopped.
-Language: dashii  kgumutoo
-Gloss: RAIN  STOPPED-PERF
+Language: dashii  todou kdaqatur
+Gloss: RAIN  STOP-PST-PERF
 Status: ok
 
 [Translation]
 English: Soon the rain will stop.
-Language: eberi dashii  shanzho daqatur
+Language: eberi dashii  zhanliu daqatur
 Gloss: SOON RAIN  STOP-FUT
 Status: ok
 
@@ -204,14 +204,14 @@ Status: ok
 
 [Translation]
 English: Once wild animals lived here.
-Language: daraldu jianjii yicizi otamong  kejildu
-Gloss: ONCE HERE WILD ANIMAL.PL  LIVED
+Language: daraldu jianjii yicizi otamong  todou yorgalb
+Gloss: ONCE HERE WILD ANIMAL.PL  LIVE-PST
 Status: ok
 
 [Translation]
 English: Slowly she looked around.
-Language: bosusai shuno  naminli uluui
-Gloss: SLOW 3SG  LOOKED AROUND
+Language: bosusai shuno  todou dalal uluui
+Gloss: SLOW 3SG  LOOK-PST AROUND
 Status: ok
 
 [Translation]
@@ -222,55 +222,55 @@ Status: ok
 
 [Translation]
 English: Let’s go!
-Language: umogei otoo  baijimut
+Language: kuumoog otoo  baijimut
 Gloss: 1PL  GO-IMP HORT
 Status: ok
 
 [Translation]
 English: You should go.
-Language: menged  talriya baiji
+Language: menged  laralmo baiji
 Gloss: 2SG  GO-MOD
 Status: ok
 
 [Translation]
 English: I will be happy to go.
-Language: zaoyang  shanzho gyemuun cuugsek pekab
+Language: zaoyang  zhanliu gyemuun cuugsek pekab
 Gloss: 1SG  HAPPY-FUT TO GO
 Status: ok
 
 [Translation]
 English: He will arrive soon.
-Language: eberi shuno  shanzho medeged
+Language: eberi shuno  zhanliu medeged
 Gloss: SOON 3SG  ARRIVE-FUT
 Status: ok
 
 [Translation]
 English: The baby’s ball has rolled away.
-Language: laduran golus  knamthul bid
-Gloss: BABY-GEN BALL  ROLLED-PERF AWAY
+Language: laduran golus  todou klaideja bid
+Gloss: BABY-GEN BALL  ROLL-PST-PERF AWAY
 Status: ok
 
 [Translation]
 English: The two boys are working together.
-Language: laidang orine otaboboriy  tooruuls
-Gloss: TOGETHER TWO BOY.PL  WORKING-PROG
+Language: laidang orine otaboboriy  cidenams
+Gloss: TOGETHER TWO BOY.PL  WORK-PROG
 Status: ok
 
 [Translation]
 English: This mist will probably clear away.
-Language: jilduu daqob qacbaiu  shanzho cigc bid
+Language: jilduu daqob qacbaiu  zhanliu cigc bid
 Gloss: PROBABLY PROXIMAL_SINGULAR MIST  CLEAR-FUT AWAY
 Status: ok
 
 [Translation]
 English: Lovely flowers are growing everywhere.
-Language: shan how otaodoui  laliqals
-Gloss: LOVELY EVERYWHERE FLOWER.PL  GROWING-PROG
+Language: shan how otaodoui  qangumus
+Gloss: LOVELY EVERYWHERE FLOWER.PL  GROW-PROG
 Status: ok
 
 [Translation]
 English: We should eat more slowly.
-Language: kuumonu bosusai otoo  talriya qot
+Language: kuhun bosusai otoo  laralmo qot
 Gloss: SLOW 1PL  EAT-MOD
 Status: ok
 
@@ -282,7 +282,7 @@ Status: ok
 
 [Translation]
 English: You must write more neatly.
-Language: kuumonu saljin menged  talriya nil
+Language: kuhun saljin menged  laralmo nil
 Gloss: NEAT 2SG  WRITE-MOD
 Status: ok
 
@@ -294,8 +294,8 @@ Status: ok
 
 [Translation]
 English: Henry’s dog is lost.
-Language: hune uljashe  ulja
-Gloss: HENRY-GEN DOG  LOSE
+Language: hune uljashe  todou ulja
+Gloss: HENRY-GEN DOG  LOSE-PST
 Status: ok
 
 [Translation]
@@ -318,85 +318,85 @@ Status: ok
 
 [Translation]
 English: The children ran after Jack.
-Language: otabeliumo  tengate dalarau laliudi
-Gloss: CHILD.PL  RUN AFTER JACK
+Language: otabeliumo  todou tengate dalarau laliudi
+Gloss: CHILD.PL  RUN-PST AFTER JACK
 Status: ok
 
 [Translation]
 English: I can play after school.
-Language: zaoyang  sig mengeie mogeiez laliudi
+Language: zaoyang  talriya mengeie mogeiez laliudi
 Gloss: 1SG  PLAY-MOD AFTER SCHOOL
 Status: ok
 
 [Translation]
 English: We went to the village for a visit.
-Language: otoo  baiji mangkeg pekab biyisal lakili
-Gloss: 1PL  GO TO VILLAGE FOR VISIT
+Language: otoo  todou baiji mangkeg pekab biyisal lakili
+Gloss: 1PL  GO-PST TO VILLAGE FOR VISIT
 Status: ok
 
 [Translation]
 English: We arrived at the river.
-Language: otoo  kabangm wujildu berejal
-Gloss: 1PL  ARRIVED AT RIVER
+Language: otoo  todou medeged wujildu berejal
+Gloss: 1PL  ARRIVE-PST AT RIVER
 Status: ok
 
 [Translation]
 English: I have been waiting for you.
-Language: zaoyang  klakuuul menged lakili
-Gloss: 1SG  WAITING-PERF FOR 2SG
+Language: zaoyang  keriyis menged lakili
+Gloss: 1SG  WAIT-PROG-PERF FOR 2SG
 Status: ok
 
 [Translation]
 English: The campers sat around the fire.
-Language: otakoocigh aulaien sannam uluui
-Gloss: CAMPER.PL FIRE:ACCUSATIVE SIT AROUND
+Language: koocigh aulaien todou sannam uluui
+Gloss: CAMPER FIRE:ACCUSATIVE SIT-PST AROUND
 Status: ok
 
 [Translation]
 English: A little girl with a kitten sat near me.
-Language: idas shuodu xusheun  sannam zaoyang lanu
-Gloss: LITTLE GIRL KITTEN  SIT NEAR 1SG
+Language: idas shuodu xusheun  todou sannam zaoyang lanu
+Gloss: LITTLE GIRL KITTEN  SIT-PST NEAR 1SG
 Status: ok
 
 [Translation]
 English: The child waited at the door for her father.
-Language: beliumo  baisi ebe berejal shuno nighii lakili
-Gloss: CHILD  WAITED AT DOOR FOR 3SG-GEN FATHER
+Language: beliumo  todou eriyi ebe berejal shuno nighii lakili
+Gloss: CHILD  WAIT-PST AT DOOR FOR 3SG-GEN FATHER
 Status: ok
 
 [Translation]
 English: Yesterday the oldest girl in the village lost her kitten.
-Language: baisqar cigcite shuodu mangkeg shuno xusheunen ulja
-Gloss: YESTERDAY OLDEST GIRL VILLAGE 3SG-GEN KITTEN:ACCUSATIVE LOSE
+Language: baisqar cigcite shuodu mangkeg shuno xusheunen todou ulja
+Gloss: YESTERDAY OLDEST GIRL VILLAGE 3SG-GEN KITTEN:ACCUSATIVE LOSE-PST
 Status: ok
 
 [Translation]
 English: Were you born in this village?
-Language: tooruha daqob mangkeg otu menged
-Gloss: 2SG  BEAR IN PROXIMAL_SINGULAR VILLAGE Q
+Language: todou tooruha daqob mangkeg otu menged
+Gloss: 2SG  BEAR-PST IN PROXIMAL_SINGULAR VILLAGE Q
 Status: ok
 
 [Translation]
 English: Can your brother dance well?
-Language: qalmo menged chaoya  sig dangalja
+Language: qalmo menged chaoya  talriya dangalja
 Gloss: WELL 2SG-GEN BROTHER  DANCE-MOD Q
 Status: ok
 
 [Translation]
 English: Did the man leave?
-Language: balinu alaruod
-Gloss: MAN  LEAVE Q
+Language: todou balinu alaruod
+Gloss: MAN  LEAVE-PST Q
 Status: ok
 
 [Translation]
 English: Is your sister coming for you?
-Language: saliuds menged lakili menged nyemutu
-Gloss: 2SG-GEN SISTER  COMING-PROG FOR 2SG Q
+Language: ide menged lakili menged nyemutu
+Gloss: 2SG-GEN SISTER  COME FOR 2SG Q
 Status: ok
 
 [Translation]
 English: Can you come tomorrow?
-Language: sheecec menged  sig ide
+Language: sheecec menged  talriya ide
 Gloss: TOMORROW 2SG  COME-MOD Q
 Status: ok
 
@@ -414,27 +414,27 @@ Status: ok
 
 [Translation]
 English: Are you going with us to the concert?
-Language: sobeubas otoo gumdra qinlig pekab menged
-Gloss: 2SG  GOING-PROG WITH 1PL TO CONCERT Q
+Language: baiji otoo gumdra qinlig pekab menged
+Gloss: 2SG  GO WITH 1PL TO CONCERT Q
 Status: ok
 
 [Translation]
 English: Have you ever travelled in the jungle?
-Language: fosung menged  tenqin engge otu
-Gloss: EVER 2SG  TRAVELLED IN JUNGLE Q
+Language: fosung menged  todou goluun engge otu
+Gloss: EVER 2SG  TRAVEL-PST IN JUNGLE Q
 Status: ok
 
 [Translation]
 English: We sailed down the river for several miles.
-Language: otoo wujilduen uludiq cid dasina otajasene lakili
-Gloss: 1PL RIVER:ACCUSATIVE SAILED DOWN FOR SEVERAL MILE.PL
+Language: otoo wujilduen todou gyebe cid dasina otajasene lakili
+Gloss: 1PL RIVER:ACCUSATIVE SAIL-PST DOWN FOR SEVERAL MILE.PL
 Status: ok
 
 [Translation]
 English: Everybody knows about hunting.
-Language: [PARTIAL]
-Gloss: everybody.NOM KNOW
-Status: partial
+Language: bobei kuuijoo otameguu  cheniq
+Gloss: ABOUT EVERYBODY KNOW.PL  HUNT
+Status: ok
 
 [Translation]
 English: On a Sunny morning after the solstice we started for the mountains.
@@ -444,15 +444,15 @@ Status: partial
 
 [Translation]
 English: Tom laughed at the monkey’s tricks.
-Language: gumonga  koorber alian otauluugmo berejal
-Gloss: TOM  LAUGHED AT MONKEY-GEN TRICK.PL
+Language: gumonga  todou nain alian otauluugmo berejal
+Gloss: TOM  LAUGH-PST AT MONKEY-GEN TRICK.PL
 Status: ok
 
 [Translation]
 English: An old man with a walking stick stood beside the fence.
-Language: bangei alaruod fosusai desengen ereledu joori ladu
-Gloss: OLD MAN STICK STAND:ACCUSATIVE WALKING BESIDE FENCE
-Status: ok
+Language: [PARTIAL]
+Gloss: WALKING-PTCP OLD MAN  STAND-PST BESIDE FENCE
+Status: partial
 
 [Translation]
 English: The squirrel’s nest was hidden by drooping boughs.
@@ -462,39 +462,39 @@ Status: unsupported-grammar
 
 [Translation]
 English: The little seeds waited patiently under the snow for the warm spring sun.
-Language: batu idas otanakdura  baisi qongcit chyemo ulai uuguinu bannaiten cinegex lakili
-Gloss: PATIENT LITTLE SEED.PL  WAITED UNDER SNOW FOR SPRING-PTCP SUN:ACCUSATIVE WARM
+Language: batu idas otanakdura  todou eriyi qongcit chyemo baixi uuguinu bannaiten cinegex lakili
+Gloss: PATIENT LITTLE SEED.PL  WAIT-PST UNDER SNOW FOR SPRING-PTCP SUN:ACCUSATIVE WARM
 Status: ok
 
 [Translation]
 English: Many little girls with wreaths of flowers on their heads danced around the bonfire.
 Language: [PARTIAL]
-Gloss: LITTLE MANY WREATH GIRL FLOWER.PL BONFIRE:ACCUSATIVE HEAD AROUND
+Gloss: 3PL-GEN little girl.NOM bonfire.ACC HEAD
 Status: partial
 
 [Translation]
 English: The cover of the basket fell to the floor.
-Language: melemuu shunber  koorca chek pekab
-Gloss: COVER BASKET  FALL TO FLOOR
+Language: melemuu shunber  todou koorca chek pekab
+Gloss: COVER BASKET  FALL-PST TO FLOOR
 Status: ok
 
 [Translation]
 English: The first boy in the line stopped at the entrance.
-Language: nutei boboriy cituruu  gumutoo qaday berejal
-Gloss: FIRST BOY LINE  STOPPED AT ENTRANCE
+Language: nutei boboriy cituruu  todou daqatur qaday berejal
+Gloss: FIRST BOY LINE  STOP-PST AT ENTRANCE
 Status: ok
 
 [Translation]
 English: On the top of the hill in a little hut lived a wise old woman.
-Language: idas orc bhunami nigui bangei orgildu qaliuduen kejildu
-Gloss: LITTLE HILL TOP HUT OLD WISE WOMAN:ACCUSATIVE LIVED
-Status: ok
+Language: [PARTIAL]
+Gloss: little top.NOM old wise.ACC LIVED
+Status: partial
 
 [Translation]
 English: During our residence in the country we often walked in the pastures.
-Language: niliu dasheub asalait  auun otauugsek otu
-Gloss: OFTEN RESIDENCE COUNTRY  WALKED IN PASTURE.PL
-Status: ok
+Language: [PARTIAL]
+Gloss: 1PL-GEN residence.NOM WALKED IN pasture.LOC
+Status: partial
 
 [Translation]
 English: When will your guests from the city arrive?
@@ -516,14 +516,14 @@ Status: ok
 
 [Translation]
 English: Among the wheat grew tall red poppies.
-Language: cebenpr chen turinli otaqosanen qangumu
-Gloss: WHEAT RED TALL POPPY.PL:ACCUSATIVE GROW
+Language: cebenpr chen turinli qosanen todou qangumu
+Gloss: WHEAT RED TALL POPPY:ACCUSATIVE GROW-PST
 Status: ok
 
 [Translation]
 English: The strong roots of the oak trees were torn from the ground.
-Language: cilaiju qubang daljuug otasaqoirt  guil buukua umui
-Gloss: OAK STRONG ROOT TREE.PL  TEAR FROM GROUND
+Language: cilaiju qubang daljuug otasaqoirt  todou guil buukua umui
+Gloss: OAK STRONG ROOT TREE.PL  TEAR-PST FROM GROUND
 Status: ok
 
 [Translation]
@@ -534,20 +534,20 @@ Status: partial
 
 [Translation]
 English: The west wind blew across my face like a friendly caress.
-Language: [PARTIAL]
-Gloss: WEST  WIND ACROSS 1SG-GEN FACE LIKE FRIENDLY CARESS.PL
-Status: partial
+Language: soorusi ciyi  todou wen zaoyang lian otan cebeina niqadal uuruug
+Gloss: WEST WIND  BLOW-PST ACROSS 1SG-GEN FACE LIKE FRIENDLY CARESS
+Status: ok
 
 [Translation]
 English: The spool of thread rolled across the floor.
-Language: baifen keiqaci  namthul chek otan
-Gloss: SPOOL THREAD  ROLLED ACROSS FLOOR
+Language: baifen keiqaci  todou laideja chek otan
+Gloss: SPOOL THREAD  ROLL-PST ACROSS FLOOR
 Status: ok
 
 [Translation]
 English: A box of growing plants stood in the Window.
-Language: uuge wujii desengen laliqal dessina otu
-Gloss: BOX PLANT STAND:ACCUSATIVE GROWING IN WINDOW
+Language: baixi laliqal saljuugen uuge  todou baldu dessina otu
+Gloss: GROWING-PTCP PLANT:ACCUSATIVE BOX  STAND-PST IN WINDOW
 Status: ok
 
 [Translation]
@@ -588,38 +588,38 @@ Status: ok
 
 [Translation]
 English: The little girl seemed lonely.
-Language: aljasix idas shuodu  lakildu
-Gloss: LONE LITTLE GIRL  SEEMED
+Language: aljasix idas shuodu  todou saneg
+Gloss: LONE LITTLE GIRL  SEEM-PST
 Status: ok
 
 [Translation]
 English: The little boy’s father had once been a sailor.
-Language: daraldu idas boboriy nighii gyeberen uluun
-Gloss: ONCE LITTLE BOY-GEN FATHER SAILOR:ACCUSATIVE BE (TEMPORARY STATE)
+Language: daraldu idas boboriy nighii gyeberen todou uluun
+Gloss: ONCE LITTLE BOY-GEN FATHER SAILOR:ACCUSATIVE BE (TEMPORARY STATE)-PST
 Status: ok
 
 [Translation]
 English: I have lost my blanket.
-Language: zaoyang zaoyang dayien ulja
-Gloss: 1SG 1SG-GEN BLANKET:ACCUSATIVE LOSE
+Language: zaoyang zaoyang dayien todou ulja
+Gloss: 1SG 1SG-GEN BLANKET:ACCUSATIVE LOSE-PST
 Status: ok
 
 [Translation]
 English: A robin has built his nest in the apple tree.
-Language: nyanu shuno buunaben maneg cuijuui saqoirt otu
-Gloss: ROBIN 3SG-GEN NEST:ACCUSATIVE BUILD IN APPLE TREE
+Language: nyanu shuno buunaben todou maneg cuijuui saqoirt otu
+Gloss: ROBIN 3SG-GEN NEST:ACCUSATIVE BUILD-PST IN APPLE TREE
 Status: ok
 
 [Translation]
 English: At noon we ate our lunch by the roadside.
-Language: youwei otoo yosurgen qot ortai kecheek
-Gloss: NOON 1PL-GEN LUNCH:ACCUSATIVE EAT BY ROADSIDE
+Language: youwei otoo yosurgeen todou qot ortai kecheek
+Gloss: NOON 1PL-GEN LUNCH:ACCUSATIVE EAT-PST BY ROADSIDE
 Status: ok
 
 [Translation]
 English: Mr. Jones made a knife for his little boy.
-Language: otairgi nabanmaen nuturiq shuno idas boboriy lakili
-Gloss: JONE.PL KNIFE:ACCUSATIVE MAKE FOR 3SG-GEN LITTLE BOY
+Language: irgi nabanmaen todou nuturiq shuno idas boboriy lakili
+Gloss: JONE KNIFE:ACCUSATIVE MAKE-PST FOR 3SG-GEN LITTLE BOY
 Status: ok
 
 [Translation]
@@ -642,20 +642,20 @@ Status: ok
 
 [Translation]
 English: Will you be ready on time?
-Language: shouwen shanzho uluun qoicin bidura menged
+Language: shouwen zhanliu uluun qoicin bidura menged
 Gloss: 2SG READY BE (TEMPORARY STATE)-FUT ON TIME Q
 Status: ok
 
 [Translation]
 English: Will you send this message for me?
-Language: daqob salemuuen shanzho jiriyan zaoyang lakili menged
+Language: daqob salemuuen zhanliu jiriyan zaoyang lakili menged
 Gloss: 2SG PROXIMAL_SINGULAR MESSAGE:ACCUSATIVE SEND-FUT FOR 1SG Q
 Status: ok
 
 [Translation]
 English: Are you waiting for me?
-Language: lakuuuls zaoyang lakili menged
-Gloss: 2SG  WAITING-PROG FOR 1SG Q
+Language: eriyi zaoyang lakili menged
+Gloss: 2SG  WAIT FOR 1SG Q
 Status: ok
 
 [Translation]
@@ -684,7 +684,7 @@ Status: ok
 
 [Translation]
 English: Sit here by me.
-Language: jianjii sannamut zaoyang kecheek
+Language: jianjii sannammut zaoyang kecheek
 Gloss: HERE SIT-IMP BY 1SG
 Status: ok
 
@@ -708,9 +708,9 @@ Status: ok
 
 [Translation]
 English: Be careful.
-Language: [PARTIAL]
-Gloss: [PARTIAL]
-Status: partial
+Language: uluunmut bayek
+Gloss: BE (TEMPORARY STATE)-IMP CAREFUL
+Status: ok
 
 [Translation]
 English: Have some tea.
@@ -720,8 +720,8 @@ Status: ok
 
 [Translation]
 English: Pip and his dog were great friends.
-Language: auruu uljashe baitulj uluun
-Gloss: FRIEND DOG GREAT BE (TEMPORARY STATE)
+Language: auruu uljashe baitulj todou uluun
+Gloss: FRIEND DOG GREAT BE (TEMPORARY STATE)-PST
 Status: ok
 
 [Translation]
@@ -732,38 +732,38 @@ Status: partial
 
 [Translation]
 English: You and I will go together.
-Language: laidang menged  shanzho baiji
+Language: laidang menged  zhanliu baiji
 Gloss: TOGETHER 2SG  GO-FUT
 Status: ok
 
 [Translation]
 English: They opened all the doors and windows.
-Language: bori fen otaeben otadessinaen yikoori
-Gloss: 3PL ALL DOOR.PL:ACCUSATIVE AND WINDOW.PL:ACCUSATIVE OPENED
+Language: bori fen otaebeen otadessinaen todou qubeipi
+Gloss: 3PL ALL DOOR.PL:ACCUSATIVE AND WINDOW.PL:ACCUSATIVE OPEN-PST
 Status: ok
 
 [Translation]
 English: He is small, but strong.
-Language: [PARTIAL]
-Gloss: 3SG  BE (TEMPORARY STATE)
-Status: partial
+Language: shuno wujuuba sig qubang uluun
+Gloss: 3SG SMALL BUT STRONG BE (TEMPORARY STATE)
+Status: ok
 
 [Translation]
 English: Is this tree an oak or a maple?
-Language: otaduanglen banuturen uluun daqob saqoirt
-Gloss: PROXIMAL_SINGULAR TREE OAK.PL:ACCUSATIVE OR MAPLE:ACCUSATIVE BE (TEMPORARY STATE) Q
+Language: duangleen banuturen uluun daqob saqoirt
+Gloss: PROXIMAL_SINGULAR TREE OAK:ACCUSATIVE OR MAPLE:ACCUSATIVE BE (TEMPORARY STATE) Q
 Status: ok
 
 [Translation]
 English: Does the sky look blue or gray?
-Language: [PARTIAL]
-Gloss: SKY  LOOK Q
-Status: partial
+Language: lalju gumdalj alakuad dalal emo
+Gloss: SKY BLUE OR GRAY LOOK Q
+Status: ok
 
 [Translation]
 English: Come with your father or mother.
-Language: idemut menged otanighii cilig gumdra
-Gloss: COME-IMP WITH 2SG-GEN FATHER.PL OR MOTHER
+Language: idemut menged nighii cilig gumdra
+Gloss: COME-IMP WITH 2SG-GEN FATHER OR MOTHER
 Status: ok
 
 [Translation]
@@ -774,26 +774,26 @@ Status: partial
 
 [Translation]
 English: He played a tune on his wonderful flute.
-Language: shuno fenegen nalig shuno gyena turaulj bidura
-Gloss: 3SG TUNE:ACCUSATIVE PLAYED ON 3SG-GEN WONDERFUL FLUTE
+Language: shuno fenegeen todou mengeie shuno gyena turaulj bidura
+Gloss: 3SG TUNE:ACCUSATIVE PLAY-PST ON 3SG-GEN WONDERFUL FLUTE
 Status: ok
 
 [Translation]
 English: Toward the end of August the days grow much shorter.
-Language: gyek moqingy otabaa alaji qangumu
-Gloss: AUGUST END DAY.PL SHORTER GROW
-Status: ok
+Language: [PARTIAL]
+Gloss: end.NOM GROW
+Status: partial
 
 [Translation]
 English: A company of soldiers marched over the hill and across the meadow.
-Language: uluudun otadariya  qulun orc uqad mengdar otan
-Gloss: COMPANY SOLDIER.PL  MARCHED OVER HILL ACROSS MEADOW
+Language: uluudun otadariya  todou kuuge orc uqad mengdar otan
+Gloss: COMPANY SOLDIER.PL  MARCH-PST OVER HILL ACROSS MEADOW
 Status: ok
 
 [Translation]
 English: The first part of the story is very interesting.
-Language: nutei cituran meipi bangumu  laisangs
-Gloss: FIRST VERY PART STORY  INTERESTING-PROG
+Language: nutei cituran meipi bangumu  laisang
+Gloss: FIRST VERY PART STORY  INTERESTING
 Status: ok
 
 [Translation]
@@ -804,44 +804,44 @@ Status: partial
 
 [Translation]
 English: The baby clapped her hands and laughed in glee.
-Language: laduran shuno otamuuien saruodu wang laduran koorber khen otu
-Gloss: BABY 3SG-GEN HAND.PL:ACCUSATIVE CLAPPED AND BABY  LAUGHED IN GLEE
+Language: laduran shuno otamuuien todou nyeng soodurc laduran todou nain khen otu
+Gloss: BABY 3SG-GEN HAND.PL:ACCUSATIVE CLAP-PST AND BABY  LAUGH-PST IN GLEE
 Status: ok
 
 [Translation]
 English: Stop your game and be quiet.
-Language: daqaturmut menged banengzen wang uluunmut koorqa
+Language: daqaturmut menged banengzen soodurc uluunmut koorqa
 Gloss: STOP-IMP 2SG-GEN GAME:ACCUSATIVE AND BE (TEMPORARY STATE)-IMP QUIET
 Status: ok
 
 [Translation]
 English: The sound of the drums grew louder and louder.
-Language: [PARTIAL]
-Gloss: SOUND DRUM.PL  GROW
-Status: partial
+Language: moqinuu tobie kuuruuk soodurc kuuruuk todou qangumu
+Gloss: SOUND DRUM LOUDER AND LOUDER GROW-PST
+Status: ok
 
 [Translation]
 English: Do you like summer or winter better?
 Language: [PARTIAL]
-Gloss: 2SG SUMMER.PL:ACCUSATIVE OR WINTER:ACCUSATIVE LIKE Q
+Gloss: 2SG SUMMER:ACCUSATIVE OR WINTER:ACCUSATIVE LIKE Q
 Status: partial
 
 [Translation]
 English: That boy will have a wonderful trip.
-Language: taifei boboriy gyena ebkoomen shanzho laldu
+Language: taifei boboriy gyena ebkoomen zhanliu laldu
 Gloss: THAT BOY WONDERFUL TRIP:ACCUSATIVE HAVE-FUT
 Status: ok
 
 [Translation]
 English: They popped corn, and then sat around the fire and ate it.
-Language: bori daqotaken laba wang dagatei bori aulaien sannam uluui wang bori shuno qot
-Gloss: 3PL CORN:ACCUSATIVE POPPED AND THEN 3PL FIRE:ACCUSATIVE SIT AROUND AND 3PL 3SG EAT
+Language: bori daqotaken laba soodurc dagatei bori aulaien todou sannam uluui soodurc bori shuno todou qot
+Gloss: 3PL CORN:ACCUSATIVE POPPED AND THEN 3PL FIRE:ACCUSATIVE SIT-PST AROUND AND 3PL 3SG EAT-PST
 Status: ok
 
 [Translation]
 English: They won the first two games, but lost the last one.
-Language: nutei bori orine otabanengzen douwen gumdalj bori uugsemu cebuunen ulja
-Gloss: FIRST 3PL TWO GAME.PL:ACCUSATIVE WIN BUT 3PL LAST ONE:ACCUSATIVE LOSE
+Language: nutei bori orine otabanengzen todou douwen sig bori uugsemu cebuunen todou ulja
+Gloss: FIRST 3PL TWO GAME.PL:ACCUSATIVE WIN-PST BUT 3PL LAST ONE:ACCUSATIVE LOSE-PST
 Status: ok
 
 [Translation]
@@ -853,7 +853,7 @@ Status: partial
 [Translation]
 English: I awoke early, dressed hastily, and went down to breakfast.
 Language: [PARTIAL]
-Gloss: EARLY HASTY 1SG  AWAKE AND 1SG  GO DOWN TO BREAKFAST
+Gloss: EARLY HASTY 1SG  AWAKE-PST AND 1SG  GO-PST DOWN TO BREAKFAST
 Status: partial
 
 [Translation]
@@ -864,9 +864,9 @@ Status: partial
 
 [Translation]
 English: This string is too short!
-Language: [PARTIAL]
+Language: qaliangmut banmnu bingzuen
 Gloss: this-IMP short string.ACC
-Status: partial
+Status: ok
 
 [Translation]
 English: Oh, dear! the wind has blown my hat away!
@@ -877,14 +877,14 @@ Status: partial
 [Translation]
 English: Alas! that news is sad indeed!
 Language: [PARTIAL]
-Gloss: THAT NEWS.PL  INDE
+Gloss: THAT NEWS.PL  INDE-PST
 Status: partial
 
 [Translation]
 English: Whew! that cold wind freezes my nose!
-Language: [PARTIAL]
+Language: taifei qalbcig ciyi zaoyang gyemuuren boljuur
 Gloss: THAT COLD WIND 1SG-GEN NOSE:ACCUSATIVE FREEZE
-Status: partial
+Status: ok
 
 [Translation]
 English: Are you warm enough now?
@@ -895,25 +895,25 @@ Status: partial
 [Translation]
 English: They heard the warning too late.
 Language: [PARTIAL]
-Gloss: TOO 3PL  HEAR
+Gloss: TOO 3PL  HEAR-PST
 Status: partial
 
 [Translation]
 English: We are a brave people, and love our country.
-Language: otoo tngong otakoochooen uluun wang otoo otoo asalaiten yobosus
+Language: otoo tngong otakoochooen uluun soodurc otoo otoo asalaiten yobosus
 Gloss: 1PL BRAVE PERSON.PL:ACCUSATIVE BE (TEMPORARY STATE) AND 1PL 1PL-GEN COUNTRY:ACCUSATIVE LOVE
 Status: ok
 
 [Translation]
 English: All the children came except Mary.
-Language: fen otabeliumo  ide
-Gloss: ALL CHILD.PL  COME
+Language: fen otabeliumo  todou ide
+Gloss: ALL CHILD.PL  COME-PST
 Status: ok
 
 [Translation]
 English: Jack seized a handful of pebbles and threw them into the lake.
-Language: dalarau daqalduen engtur otabangyek bicildu wang dalarau bori zhong kaca nuuxi
-Gloss: JACK HANDFUL:ACCUSATIVE SEIZED OF PEBBLE.PL AND JACK 3PL THROW INTO LAKE
+Language: dalarau daqalduen engtur bangyek bicildu soodurc dalarau bori todou zhong kaca nuuxi
+Gloss: JACK HANDFUL:ACCUSATIVE SEIZED OF PEBBLE AND JACK 3PL THROW-PST INTO LAKE
 Status: ok
 
 [Translation]
@@ -924,8 +924,8 @@ Status: partial
 
 [Translation]
 English: On a fine summer evening, the two old people were sitting outside the door of their cottage.
-Language: cecegei lon ulai turi qoiraul eben orine bangei otakoochooen tngoljis bori dauluu bicildu
-Gloss: FINE SUMMER SITTING-PTCP OUTSIDE DOOR:ACCUSATIVE TWO OLD PERSON.PL:ACCUSATIVE EVENING-PROG OF 3PL-GEN COTTAGE
+Language: baixi tngolji orine bangei otakoochooen cecegei lon qoiraul ebeen todou sannams bori dauluu bicildu
+Gloss: EVENING-PTCP TWO OLD PERSON.PL:ACCUSATIVE FINE SUMMER OUTSIDE DOOR:ACCUSATIVE SIT-PST-PROG OF 3PL-GEN COTTAGE
 Status: ok
 
 [Translation]
@@ -960,8 +960,8 @@ Status: unsupported-grammar
 
 [Translation]
 English: We visited my uncle’s village, the largest village in the world.
-Language: otoo shunbeu pekongn mangkeg mangkegen dagal bisixi otu
-Gloss: 1PL UNCLE-GEN LARGEST VILLAGE VILLAGE:ACCUSATIVE VISITED IN WORLD
+Language: otoo shunbeu pekongn mangkeg mangkegen todou meipiu bisixi otu
+Gloss: 1PL UNCLE-GEN LARGEST VILLAGE VILLAGE:ACCUSATIVE VISIT-PST IN WORLD
 Status: ok
 
 [Translation]
@@ -972,14 +972,14 @@ Status: partial
 
 [Translation]
 English: The market begins five minutes earlier this week.
-Language: moruou aljilde kuumonu wekiyas qaliang boro otaqawekooen gus
+Language: moruou aljilde kuhun wekiyas qaliang boro otaqawekooen gus
 Gloss: MARKET FIVE EARLY-COMP THIS MINUTE WEEK.PL:ACCUSATIVE BEGIN
 Status: ok
 
 [Translation]
 English: Did you find the distance too great?
 Language: [PARTIAL]
-Gloss: TOO 2SG DISTANCE:ACCUSATIVE FIND Q
+Gloss: TOO 2SG DISTANCE:ACCUSATIVE FIND-PST Q
 Status: partial
 
 [Translation]
@@ -996,14 +996,14 @@ Status: partial
 
 [Translation]
 English: Here under this tree they gave their guests a splendid feast.
-Language: jianjii qaliang saqoirt bori chaa uludu changen deban
-Gloss: HERE THIS TREE 3PL-GEN SPLENDID GUEST FEAST:ACCUSATIVE GIVE
+Language: jianjii qaliang saqoirt bori chaa uludu changen todou deban
+Gloss: HERE THIS TREE 3PL-GEN SPLENDID GUEST FEAST:ACCUSATIVE GIVE-PST
 Status: ok
 
 [Translation]
 English: In winter I get up at night, and dress by yellow candlelight.
-Language: kuurasi  buuuj jiece otasob otauuminil berejal xiangna qangzit kecheek
-Gloss: WINTER  GET UP AT NIGHT.PL AND DRESS.PL BY YELLOW CANDLELIGHT
+Language: kuurasi  buuuj jiece sob uuminil berejal xiangna qangzit kecheek
+Gloss: WINTER  GET UP AT NIGHT AND DRESS BY YELLOW CANDLELIGHT
 Status: ok
 
 [Translation]
@@ -1014,9 +1014,9 @@ Status: ok
 
 [Translation]
 English: Be quick or you will be too late.
-Language: [PARTIAL]
-Gloss: [PARTIAL]
-Status: partial
+Language: uluunmut teno gumdalj dasanmn zhanliu chobosmut
+Gloss: BE (TEMPORARY STATE)-IMP QUICK OR TOO LATE-FUT-IMP
+Status: ok
 
 [Translation]
 English: Will you go with us or wait here?
@@ -1032,7 +1032,7 @@ Status: partial
 
 [Translation]
 English: Think first and then act.
-Language: nutei namdramut wang dagatei bieimut
+Language: nutei namdramut soodurc dagatei bieimut
 Gloss: FIRST THINK-IMP AND THEN ACT-IMP
 Status: ok
 
@@ -1062,7 +1062,7 @@ Status: partial
 
 [Translation]
 English: We will make this place our home.
-Language: otoo bangols daqob fosuriyen shanzho nuturiq
+Language: otoo bangols daqob fosuriyen zhanliu nuturiq
 Gloss: 1PL PLACE PROXIMAL_SINGULAR HOME:ACCUSATIVE MAKE-FUT
 Status: ok
 
@@ -1074,9 +1074,9 @@ Status: partial
 
 [Translation]
 English: The little girl made the doll’s dress herself.
-Language: idas shuodu kuha otauuminilen nuturiq
-Gloss: LITTLE GIRL DOLL-GEN DRESS.PL:ACCUSATIVE MAKE
-Status: ok
+Language: [PARTIAL]
+Gloss: LITTLE GIRL DOLL DRESS:ACCUSATIVE MAKE-PST
+Status: partial
 
 [Translation]
 English: I hurt myself.
@@ -1093,12 +1093,12 @@ Status: ok
 [Translation]
 English: He proved himself trustworthy.
 Language: [PARTIAL]
-Gloss: 3SG HIMSELF:ACCUSATIVE PROVED
+Gloss: 3SG HIMSELF:ACCUSATIVE PROVE-PST
 Status: partial
 
 [Translation]
 English: We could see ourselves in the water.
-Language: otoo otadanggen sig mjasixi boyan otu
+Language: otoo otadanggeen talriya mjasixi boyan otu
 Gloss: 1PL OURSELVES.PL:ACCUSATIVE SEE-MOD IN WATER
 Status: ok
 
@@ -1116,20 +1116,20 @@ Status: partial
 
 [Translation]
 English: Sit here by yourself.
-Language: jianjii sannamut berdeph kecheek
+Language: jianjii sannammut berdeph kecheek
 Gloss: HERE SIT-IMP BY YOURSELF
 Status: ok
 
 [Translation]
 English: The dress of the little princess was embroidered with roses, the national flower of the Country.
-Language: idas uuminil otadaganna  manutue jirang tuyan odoui gumdra asalait bicildu
-Gloss: LITTLE DRESS PRINCESS.PL  EMBROIDERED WITH NATIONAL ROS FLOWER OF COUNTRY
+Language: idas uuminil daganna  todou manutue jirang tuyan odoui gumdra asalait bicildu
+Gloss: LITTLE DRESS PRINCESS  EMBROIDERED-PST WITH NATIONAL ROS FLOWER OF COUNTRY
 Status: ok
 
 [Translation]
 English: They wore red caps, the symbol of liberty.
-Language: bori chen kashide dasigoen chob qoiraur bicildu
-Gloss: 3PL RED CAP SYMBOL:ACCUSATIVE WEAR OF LIBERTY
+Language: bori chen kashide dasigoen todou chob qoiraur bicildu
+Gloss: 3PL RED CAP SYMBOL:ACCUSATIVE WEAR-PST OF LIBERTY
 Status: ok
 
 [Translation]
@@ -1140,8 +1140,8 @@ Status: partial
 
 [Translation]
 English: All her finery, lace, ribbons, and feathers, was packed away in a trunk.
-Language: siyisqa sancui fen otajooruug otatacbaii  ebmaoji bid dongzhe otu
-Gloss: LACE FINERY ALL RIBBON.PL AND FEATHER.PL  PACKED AWAY IN TRUNK
+Language: siyisqa sancui fen otajooruug otatacbaii  todou qiayi bid dongzhe otu
+Gloss: LACE FINERY ALL RIBBON.PL AND FEATHER.PL  PACK-PST AWAY IN TRUNK
 Status: ok
 
 [Translation]
@@ -1159,7 +1159,7 @@ Status: partial
 [Translation]
 English: In our climate the grass remains green all winter.
 Language: [PARTIAL]
-Gloss: CLIMATE GRASS.PL GREEN ALL WINTER.PL:ACCUSATIVE REMAIN
+Gloss: CLIMATE GRASS GREEN ALL WINTER.PL:ACCUSATIVE REMAIN
 Status: partial
 
 [Translation]
@@ -1255,24 +1255,24 @@ Status: unsupported-grammar
 [Translation]
 English: I have found the ring I lost.
 Language: [PARTIAL]
-Gloss: 1SG RING:ACCUSATIVE FIND
+Gloss: 1SG ring.ACC FIND-PERF
 Status: partial
 
 [Translation]
 English: Play and I will sing.
-Language: mengeiemut wang shanzho mbaishunmut
+Language: mengeiemut soodurc zhanliu mbaishunmut
 Gloss: PLAY-IMP AND SING-FUT-IMP
 Status: ok
 
 [Translation]
 English: That is the funniest story I ever heard.
-Language: taifei fosung kebeyi bangumu  jirge
-Gloss: THAT EVER FUNNIEST STORY  HEAR
+Language: taifei fosung kebeyi bangumu  todou jirge
+Gloss: THAT EVER FUNNIEST STORY  HEAR-PST
 Status: ok
 
 [Translation]
 English: She is taller than her brother.
-Language: shuno kuumonu benpriy uluun kuumonu shuno chaoya
+Language: shuno kuhun benpriy uluun kuhun shuno chaoya
 Gloss: 3SG TALLER-COMP BE (TEMPORARY STATE) COMP-STD 3SG-GEN BROTHER
 Status: ok
 
@@ -1284,13 +1284,13 @@ Status: partial
 
 [Translation]
 English: Light travels faster than sound.
-Language: medessimut tooru koongcien kuumonu tngumoq
+Language: medessimut tooru koongcien kuhun tngumoq
 Gloss: LIGHT-IMP TRAVEL FASTER:ACCUSATIVE COMP-STD SOUND
 Status: ok
 
 [Translation]
 English: We have more time than they.
-Language: otoo qoicinen koosa
+Language: otoo qoicinen kkoosa
 Gloss: 1PL time.ACC MORE-PERF
 Status: ok
 
@@ -1303,13 +1303,13 @@ Status: partial
 [Translation]
 English: He was very poor, and with his wife and five children lived in a little low cabin of logs and stones.
 Language: [PARTIAL]
-Gloss: VERY 3SG POOR BE (TEMPORARY STATE) AND 3SG  LIVED IN LOW LITTLE CABIN OF LOG.PL AND STONE.PL
+Gloss: VERY 3SG POOR BE (TEMPORARY STATE)-PST AND 3SG  LIVE-PST IN LOW LITTLE CABIN OF LOG.PL AND STONE.PL
 Status: partial
 
 [Translation]
 English: When the wind blew, the traveler wrapped his mantle more closely around him.
 Language: [PARTIAL]
-Gloss: CLOSE WIND TRAVELER MANTLE:ACCUSATIVE BLOW AROUND
+Gloss: CLOSE WIND TRAVELER MANTLE:ACCUSATIVE BLOW-PST AROUND
 Status: partial
 
 [Translation]
@@ -1321,7 +1321,7 @@ Status: unsupported-grammar
 [Translation]
 English: We went back to the place where we saw the roses.
 Language: [PARTIAL]
-Gloss: 1PL  GO BACK TO PLACE
+Gloss: 1PL  GO-PST BACK TO PLACE
 Status: partial
 
 [Translation]
@@ -1344,8 +1344,8 @@ Status: unsupported-grammar
 
 [Translation]
 English: Why he has left the city is a mystery.
-Language: cebman shuno gao wujinoen balinu
-Gloss: WHY 3SG CITY MYSTERY:ACCUSATIVE LEAVE
+Language: cebman shuno gao wujinoen todou balinu
+Gloss: WHY 3SG CITY MYSTERY:ACCUSATIVE LEAVE-PST
 Status: ok
 
 [Translation]
@@ -1363,12 +1363,12 @@ Status: partial
 [Translation]
 English: Evidently that gate is never opened, for the long grass and the great hemlocks grow close against it.
 Language: [PARTIAL]
-Gloss: EVIDENT THAT NEVER GATE  OPENED-NEG FOR LONG GRASS.PL AND GATE  CLOSE-NEG
+Gloss: EVIDENT THAT NEVER GATE  OPEN-PST-NEG FOR LONG GRASS AND GATE  CLOSE-NEG
 Status: partial
 
 [Translation]
 English: I met a little cottage girl; she was eight years old, she said.
 Language: [PARTIAL]
-Gloss: 1SG EIGHT COTTAGE LITTLE GIRL YEAR.PL:ACCUSATIVE MEET
+Gloss: 1SG EIGHT COTTAGE LITTLE GIRL YEAR.PL:ACCUSATIVE MEET-PST
 Status: partial
 

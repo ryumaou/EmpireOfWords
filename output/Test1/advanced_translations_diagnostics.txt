@@ -1,9 +1,17 @@
 Translation diagnostics: Test1
 ============================================================
 
+Translator version: 7.4
+Language build version: 7.4
+Language schema version: 2
+Grammar contract version: 9
+Language package SHA256: be06a7b1379f56945fcd41c16efe3b7985d65e240718f54114fd4cc3cb2e58d2
+Grammar SHA256: 52bd4c413e40f23a05716cf904a17a13dc8c66c4eccf9a75d8b9276115c89f29
+Translator SHA256: 17d351183fa5f419ddae593c78985087c4e620175142120c295a64293a4213d0
+
 Sentences: 229
-Complete: 153
-Partial: 55
+Complete: 157
+Partial: 51
 Missing vocabulary: 0
 Unsupported grammar: 21
 
@@ -52,53 +60,64 @@ Construction inventory:
   proper_name: limited
 
 Most common constructions in non-complete sentences:
-  coordination: 22
-  imperative: 10
-  modal: 9
+  coordination: 18
+  modal: 8
+  imperative: 8
   relative_clause: 7
-  yes_no_question: 6
   comparison: 6
+  yes_no_question: 5
   appositive: 3
+  reflexive: 3
   conditional_clause: 3
   subordinate_clause: 3
   complement_clause: 3
   passive: 2
-  progressive: 2
+  possessive: 2
   wh_question: 2
   perfect: 2
-  reflexive: 2
   negation: 2
-  possessive: 1
   quotation: 1
 
 Most common missing/unrecognized English lexemes:
 
 Per-sentence diagnostics:
 -
-#73 Everybody knows about hunting.
-  Status: partial
-  Reason: not realized: hunting
-  Constructions: simple
-  Normalized: Everybody know about hunting.
-
 #74 On a Sunny morning after the solstice we started for the mountains.
   Status: partial
   Reason: recognized construction not yet fully realized
   Constructions: simple
   Normalized: On a Sunny morning after the solstice we started for the mountain.
 
+#76 An old man with a walking stick stood beside the fence.
+  Status: partial
+  Reason: not realized: stick
+  Constructions: simple
+  Normalized: An old man with a walking stick did stand beside the fence.
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
 #77 The squirrel’s nest was hidden by drooping boughs.
   Status: unsupported-grammar
   Reason: unsupported construction: passive
-  Constructions: passive, progressive, possessive
+  Constructions: passive, possessive
   Normalized: The squirrel nest was hidden by drooping bough.
 
 #79 Many little girls with wreaths of flowers on their heads danced around the bonfire.
   Status: partial
-  Reason: not realized: danced
+  Reason: not realized: wreaths, flowers, danced
   Constructions: simple
   Normalized: Many little girl with wreath of flower on their head danced around the bonfire.
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#82 On the top of the hill in a little hut lived a wise old woman.
+  Status: partial
+  Reason: not realized: hill, hut, woman
+  Constructions: simple
+  Normalized: (unchanged)
+
+#83 During our residence in the country we often walked in the pastures.
+  Status: partial
+  Reason: not realized: country
+  Constructions: simple
+  Normalized: During our residence in the country we often walked in the pasture.
 
 #84 When will your guests from the city arrive?
   Status: partial
@@ -118,13 +137,6 @@ Per-sentence diagnostics:
   Constructions: simple
   Normalized: The sun looked down through the branch upon the children at play.
 
-#90 The west wind blew across my face like a friendly caress.
-  Status: partial
-  Reason: not realized: blew
-  Constructions: simple
-  Normalized: The west wind did blow across my face like a friendly caress.
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
-
 #106 Is today Monday?
   Status: partial
   Reason: recognized construction not yet fully realized
@@ -137,38 +149,24 @@ Per-sentence diagnostics:
   Constructions: wh_question
   Normalized: (unchanged)
 
-#119 Be careful.
-  Status: partial
-  Reason: recognized construction not yet fully realized
-  Constructions: imperative
-  Normalized: (unchanged)
-
 #122 John and Elizabeth are brother and sister.
   Status: partial
   Reason: recognized construction not yet fully realized
   Constructions: coordination
   Normalized: (unchanged)
 
-#125 He is small, but strong.
-  Status: partial
-  Reason: not realized: small, strong
-  Constructions: coordination
-  Normalized: (unchanged)
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
-
-#127 Does the sky look blue or gray?
-  Status: partial
-  Reason: not realized: blue, gray
-  Constructions: coordination, yes_no_question
-  Normalized: do the sky look blue or gray?
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
-
 #129 I am tired, but very happy.
   Status: partial
   Reason: not realized: happy
   Constructions: coordination
   Normalized: (unchanged)
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#131 Toward the end of August the days grow much shorter.
+  Status: partial
+  Reason: not realized: august, days, shorter
+  Constructions: simple
+  Normalized: Toward the end of August the day grow much shorter.
 
 #134 The crow dropped some pebbles into the pitcher and raised the water to the brim.
   Status: partial
@@ -176,33 +174,26 @@ Per-sentence diagnostics:
   Constructions: coordination
   Normalized: The crow dropped some pebble into the pitcher and raised the water to the brim.
 
-#137 The sound of the drums grew louder and louder.
-  Status: partial
-  Reason: not realized: louder
-  Constructions: coordination
-  Normalized: The sound of the drum did grow louder and louder.
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
-
 #138 Do you like summer or winter better?
   Status: partial
   Reason: not realized: better, comparison
   Constructions: comparison, coordination, yes_no_question
   Normalized: (unchanged)
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #142 Take this note, carry it to your mother; and wait for an answer.
   Status: partial
   Reason: not realized: carry
   Constructions: coordination, imperative
   Normalized: (unchanged)
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #143 I awoke early, dressed hastily, and went down to breakfast.
   Status: partial
   Reason: not realized: dressed
   Constructions: coordination
   Normalized: I did awake early dressed hastily and went down to breakfast.
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #144 Aha! I have caught you!
   Status: partial
@@ -210,32 +201,19 @@ Per-sentence diagnostics:
   Constructions: simple
   Normalized: (unchanged)
 
-#145 This string is too short!
-  Status: partial
-  Reason: not realized: progressive aspect
-  Constructions: progressive
-  Normalized: this string is too short!
-
 #146 Oh, dear! the wind has blown my hat away!
   Status: partial
   Reason: not realized: oh, dear
   Constructions: perfect
   Normalized: (unchanged)
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #147 Alas! that news is sad indeed!
   Status: partial
-  Reason: not realized: alas, sad, indeed
+  Reason: not realized: alas, sad
   Constructions: simple
   Normalized: ala that news is sad indeed!
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
-
-#148 Whew! that cold wind freezes my nose!
-  Status: partial
-  Reason: not realized: freezes
-  Constructions: simple
-  Normalized: Whew that cold wind freez my nose!
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #149 Are you warm enough now?
   Status: partial
@@ -248,7 +226,7 @@ Per-sentence diagnostics:
   Reason: not realized: warning, late
   Constructions: simple
   Normalized: They did hear the warning too late.
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #154 This cottage stood on a low hill, at some distance from the village.
   Status: partial
@@ -273,14 +251,14 @@ Per-sentence diagnostics:
   Reason: not realized: something
   Constructions: simple
   Normalized: (unchanged)
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #164 Did you find the distance too great?
   Status: partial
   Reason: not realized: great
   Constructions: yes_no_question
   Normalized: (unchanged)
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #166 Madam, I will obey your command.
   Status: partial
@@ -288,18 +266,12 @@ Per-sentence diagnostics:
   Constructions: modal
   Normalized: (unchanged)
 
-#170 Be quick or you will be too late.
-  Status: partial
-  Reason: recognized construction not yet fully realized
-  Constructions: modal, coordination, imperative
-  Normalized: (unchanged)
-
 #171 Will you go with us or wait here?
   Status: partial
   Reason: not realized: question marking
   Constructions: modal, coordination, yes_no_question
   Normalized: (unchanged)
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #172 She was always, shabby, often ragged, and on cold days very uncomfortable.
   Status: partial
@@ -330,28 +302,35 @@ Per-sentence diagnostics:
   Reason: not realized: faithful
   Constructions: simple
   Normalized: We consider them our faithful friend.
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #179 The squirrels make their nests warm and snug with soft moss and leaves.
   Status: partial
   Reason: not realized: snug, soft, moss, leaves
   Constructions: coordination
   Normalized: The squirrel make their nest warm and snug with soft moss and leaf.
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#180 The little girl made the doll’s dress herself.
+  Status: partial
+  Reason: not realized: possessive relation
+  Constructions: reflexive, possessive
+  Normalized: The little girl did make the doll dress herself.
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #183 He proved himself trustworthy.
   Status: partial
   Reason: not realized: trustworthy
   Constructions: reflexive
   Normalized: (unchanged)
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #186 I feel ashamed of myself.
   Status: partial
   Reason: not realized: ashamed
   Constructions: reflexive
   Normalized: (unchanged)
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #190 With him as our protector, we fear no danger.
   Status: partial
@@ -364,7 +343,7 @@ Per-sentence diagnostics:
   Reason: not realized: thought
   Constructions: imperative
   Normalized: Light he did think her like a feather.
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #193 Every spring and fall our cousins pay us a long visit.
   Status: partial
@@ -377,7 +356,7 @@ Per-sentence diagnostics:
   Reason: not realized: remains
   Constructions: simple
   Normalized: (unchanged)
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #195 The boy who brought the book has gone.
   Status: unsupported-grammar
@@ -408,7 +387,7 @@ Per-sentence diagnostics:
   Reason: not realized: called
   Constructions: imperative
   Normalized: (unchanged)
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #200 I shall stay at home if it rains.
   Status: unsupported-grammar
@@ -475,14 +454,13 @@ Per-sentence diagnostics:
   Reason: not realized: lost
   Constructions: simple
   Normalized: I have found the ring I did lose.
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #214 They are no wiser than we.
   Status: partial
   Reason: not realized: wiser
   Constructions: comparison
   Normalized: (unchanged)
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #217 She has more friends than enemies.
   Status: partial
@@ -495,14 +473,14 @@ Per-sentence diagnostics:
   Reason: not realized: wife, five, children
   Constructions: coordination
   Normalized: He was very poor and with his wife and five children lived in a little low cabin of log and stone.
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #219 When the wind blew, the traveler wrapped his mantle more closely around him.
   Status: partial
   Reason: not realized: wrapped
   Constructions: comparison
   Normalized: When the wind did blow the traveler wrapped his mantle more closely around him.
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #220 I am sure that we can go.
   Status: unsupported-grammar
@@ -515,7 +493,7 @@ Per-sentence diagnostics:
   Reason: not realized: saw, roses
   Constructions: simple
   Normalized: We did go back to the place where we saw the ros.
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #222 “This tree is fifty feet high,” said the gardener.
   Status: unsupported-grammar
@@ -540,7 +518,7 @@ Per-sentence diagnostics:
   Reason: not realized: meet
   Constructions: simple
   Normalized: The house stand where three road meet.
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #227 He has far more money than brains.
   Status: partial
@@ -553,12 +531,12 @@ Per-sentence diagnostics:
   Reason: not realized: great, hemlocks, grow, against
   Constructions: negation, coordination
   Normalized: Evidently that gate is never opened for the long grass and the great hemlock grow close against it.
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #229 I met a little cottage girl; she was eight years old, she said.
   Status: partial
   Reason: not realized: old, said
   Constructions: simple
   Normalized: I did meet a little cottage girl she was eight year old she said.
-  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
