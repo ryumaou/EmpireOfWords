@@ -78,28 +78,28 @@ Status: ok
 Reason: complete
 [Translation]
 English: Is today Monday?
-Language: [PARTIAL]
-Gloss: [PARTIAL]
-Status: partial
-Reason: recognized construction not yet fully realized
+Language: qualiao uluun yirangg
+Gloss: TODAY MONDAY BE (TEMPORARY STATE) Q
+Status: ok
+Reason: complete
 [Translation]
 English: Where is the dog?
-Language: [PARTIAL]
-Gloss: [PARTIAL]
-Status: partial
-Reason: recognized construction not yet fully realized
+Language: uljashe  uluun cechan
+Gloss: DOG  BE (TEMPORARY STATE) WH-WHERE
+Status: ok
+Reason: complete
 [Translation]
 English: When will the guests arrive?
-Language: [PARTIAL]
-Gloss: [PARTIAL]
-Status: partial
-Reason: recognized construction not yet fully realized
+Language: otauludu  zhanliu medeged qadiliu
+Gloss: GUEST.PL  ARRIVE-FUT WH-WHEN
+Status: ok
+Reason: complete
 [Translation]
 English: How wide is the river?
-Language: [PARTIAL]
-Gloss: [PARTIAL]
-Status: partial
-Reason: recognized construction not yet fully realized
+Language: wujildu naidak uluun ene
+Gloss: RIVER WIDE BE (TEMPORARY STATE) DEG-WIDE WH-HOW
+Status: ok
+Reason: complete
 [Translation]
 English: The dog sees the cat and the bird.
 Language: uljashe sheunen guijen mjasixi
@@ -132,10 +132,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: The dog sees the cat, and the bird sees the dog.
-Language: [PARTIAL]
-Gloss: DOG CAT:ACCUSATIVE SEE AND DOG DOG:ACCUSATIVE SEE
-Status: partial
-Reason: not realized: bird
+Language: uljashe sheunen mjasixi guij uljasheen mjasixi
+Gloss: DOG CAT:ACCUSATIVE SEE AND BIRD DOG:ACCUSATIVE SEE
+Status: ok
+Reason: complete
 [Translation]
 English: John and Elizabeth are friends.
 Language: [PARTIAL]
@@ -156,10 +156,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: I awoke early, dressed hastily, and went to breakfast.
-Language: [PARTIAL]
-Gloss: EARLY HASTY 1SG  AWAKE-PST AND 1SG  GO-PST TO BREAKFAST
-Status: partial
-Reason: not realized: dressed
+Language: wekiyas zaoyang todou kooruhu soodurc buurgi zaoyang laidur soodurc zaoyang todou baiji kuan pekab
+Gloss: EARLY 1SG  AWAKE-PST AND HASTY 1SG  DRESSED AND 1SG  GO-PST TO BREAKFAST
+Status: ok
+Reason: complete
 [Translation]
 English: See the cat.
 Language: mjasiximut sheunen
@@ -180,10 +180,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: Take this note, carry it to your mother, and wait for an answer.
-Language: [PARTIAL]
-Gloss: TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE TO 2SG-GEN MOTHER AND WAIT-IMP FOR ANSWER
-Status: partial
-Reason: not realized: carry
+Language: yingonmut daqob zhiranen soodurc alaimut shuno menged cilig pekab soodurc eriyimut daqoici lakili
+Gloss: TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE AND CARRY-IMP 3SG TO 2SG-GEN MOTHER AND WAIT-IMP FOR ANSWER
+Status: ok
+Reason: complete
 [Translation]
 English: Be happy.
 Language: uluunmut gyemuun
@@ -204,10 +204,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: The little girl made the doll's dress herself.
-Language: [PARTIAL]
-Gloss: LITTLE GIRL DOLL DRESS:ACCUSATIVE MAKE-PST
-Status: partial
-Reason: not realized: possessive relation
+Language: idas shuodu kuha uuminilen todou nuturiq
+Gloss: LITTLE GIRL DOLL-GEN DRESS:ACCUSATIVE MAKE-PST
+Status: ok
+Reason: complete
 [Translation]
 English: The dog sees its house.
 Language: uljashe shuno guuludien mjasixi
@@ -246,10 +246,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: The old man with a stick stood beside the fence.
-Language: [PARTIAL]
-Gloss: OLD MAN  STAND-PST BESIDE FENCE
-Status: partial
-Reason: not realized: stick
+Language: bangei alaruod desengeen uural joori ladu
+Gloss: old man.NOM stand.ACC STICK BESIDE fence.LOC
+Status: ok
+Reason: complete
 [Translation]
 English: On a sunny morning we started for the mountains.
 Language: [PARTIAL]
@@ -258,10 +258,10 @@ Status: partial
 Reason: recognized construction not yet fully realized
 [Translation]
 English: The girls with wreaths of flowers danced.
-Language: [PARTIAL]
-Gloss: girl.NOM DANCED
-Status: partial
-Reason: not realized: wreaths, flowers
+Language: otashuodu otaboruutu otaodoui bicildu gumdra  todou dangalja
+Gloss: GIRL.PL WITH WREATH.PL OF FLOWER.PL  DANCE-PST
+Status: ok
+Reason: complete
 [Translation]
 English: The sun looked through the branches.
 Language: bannait  todou dalal otabohe qalaii
@@ -324,10 +324,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: Will you go with us or wait here?
-Language: [PARTIAL]
-Gloss: 2SG  GO-FUT WITH 1PL OR HERE 2SG  WAIT
-Status: partial
-Reason: not realized: question marking
+Language: zhanliu baiji otoo gumdra gumdalj jianjii menged eriyi menged
+Gloss: 2SG  GO-FUT WITH 1PL OR HERE 2SG  WAIT Q
+Status: ok
+Reason: complete
 [Translation]
 English: The dog is big.
 Language: uljashe che uluun

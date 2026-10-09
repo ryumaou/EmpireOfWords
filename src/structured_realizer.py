@@ -109,6 +109,21 @@ def parse_np(words,by,lexical_match):
             pobj=parse_np(words[ing_i+1:],by,lexical_match) if words[ing_i+1:] else None
             participial=[ParticipialModifierIR(vl,pobj)]
             words=words[:ing_i]
+    # Preserve recursive PP attachments inside noun phrases: man WITH a stick,
+    # girls WITH wreaths OF flowers. These belong to the NP, not the predicate.
+    attached_pps=[]
+    prep_i=next((i for i,w in enumerate(words) if w in PREP),None)
+    if prep_i is not None:
+        remaining=words[prep_i:]
+        words=words[:prep_i]
+        while remaining:
+            ad=remaining[0]
+            if ad not in PREP:return None
+            # The entire tail belongs to the next NP; recursion handles OF flowers.
+            obj=parse_np(remaining[1:],by,lexical_match)
+            if obj is None:return None
+            attached_pps.append(PPIR(ad,obj))
+            remaining=[]
     # English genitive can itself be a multiword NP: the little girl's doll.
     poss_i=next((i for i,w in enumerate(words[:-1]) if w.endswith("'s") or w.endswith('’s')),None)
     if poss_i is not None:
@@ -142,7 +157,7 @@ def parse_np(words,by,lexical_match):
             # English productive noun adjunct: sea water, apple tree, spring sun.
             noun_modifiers.append(lm)
     plural=(raw.endswith('s') and not raw.endswith(('ss','us','is'))) or raw in ('children','men','women','people') or numeral not in (None,'one') or quantifier in ('many','several','all','both','few')
-    return NPIR(words,head=head,determiner=det,number='plural' if plural else 'singular',adjectives=adjectives,noun_modifiers=noun_modifiers,participial_modifiers=participial,numeral=numeral,quantifier=quantifier,possessor=poss,comparison=comparison)
+    return NPIR(words,head=head,determiner=det,number='plural' if plural else 'singular',adjectives=adjectives,noun_modifiers=noun_modifiers,participial_modifiers=participial,attached_pps=attached_pps,numeral=numeral,quantifier=quantifier,possessor=poss,comparison=comparison)
 
 def _modifier(word,by,lexical_match):
     lm=_lemma(word,by,lexical_match)
@@ -157,7 +172,35 @@ def _modifier(word,by,lexical_match):
 def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructions,g=None):
     toks=[x.lower() for x in english_tokens(raw)]
     if not toks:return None
-    if any(c in constructions for c in ('relative_clause','appositive','conditional_clause','subordinate_clause','passive','quotation','complement_clause')): return None
+    # Causal subordination is preserved in the IR, but deliberately remains
+    # diagnosed/unsupported until a licensed target-language linker is available.
+    # Do not flatten the reason clause into a single predicate.
+    if 'subordinate_clause' in constructions and re.search(r'\bbecause\b',raw,re.I):
+        left,right=re.split(r'\bbecause\b',raw,maxsplit=1,flags=re.I)
+        limited=[c for c in constructions if c!='subordinate_clause']
+        main=parse_clause(left.strip()+'.',by,lexical_match,english_tokens,lemma_candidates,limited,g)
+        reason=parse_clause(right.strip(' .!?')+'.',by,lexical_match,english_tokens,lemma_candidates,[],g)
+        if main and reason:
+            main.subordinate=reason
+            main.subordinate_relation='cause'
+            main.source_tokens=english_tokens(raw)
+            return main
+        return None
+    if any(c in constructions for c in ('relative_clause','appositive','conditional_clause','passive','quotation','complement_clause')): return None
+    # Degree questions are not ordinary WHERE/WHEN adjunct questions. Preserve
+    # both HOW and its adjective; reconstruct the uninverted copular clause.
+    degree_match=re.match(r'^\s*how\s+([a-z]+)\s+(is|are|was|were)\s+(.+?)\s*\?\s*$',raw,re.I)
+    if degree_match:
+        adjective,aux,subject=degree_match.groups()
+        lemma=_lemma(adjective,by,lexical_match)
+        if not _pos(by,lemma,'adj'):return None
+        statement=subject+' '+aux+' '+adjective+'.'
+        base=parse_clause(statement,by,lexical_match,english_tokens,lemma_candidates,[],g)
+        if not base or base.predicate.complement_kind!='adjective' or base.predicate.complement.head!=lemma:
+            return None
+        base.clause_type='wh_question';base.wh_word='how';base.wh_degree=lemma
+        base.source_tokens=english_tokens(raw)
+        return base
     # Let's is a hortative, not possessive; keep it outside structured pass until a
     # dedicated inclusive imperative strategy exists.
     if toks[:2]==['let','s'] or (toks and toks[0] in ("let's",'lets')):
@@ -168,7 +211,37 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
             if _convert_form(by,lm,'v',g or {}):
                 return ClauseIR(NPIR(['we'],head='we',person='1pl'),PredicateIR(lm,mood='imperative'),'hortative',source_tokens=english_tokens(raw))
         return None
+    # Comma-separated action series: retain each finite predicate, rather than
+    # silently reducing an A, B, and C series to its first and last verbs.
+    # Only enter this branch when the initial segment and EVERY subsequent
+    # segment can be parsed as a predicate; ordinary comma modifiers fall back.
+    if ',' in raw and re.search(r'\b(?:and|or|but)\b', raw, re.I):
+        segments=[part.strip(' ,;.!?') for part in raw.split(',')]
+        if len(segments)>=3:
+            last=segments[-1]
+            match=re.match(r'^(and|or|but)\s+(.+)$',last,re.I)
+            if match:
+                conjunction=match.group(1).lower()
+                segments[-1]=match.group(2)
+                subcons=[c for c in constructions if c!='coordination']
+                first=parse_clause(segments[0]+'.',by,lexical_match,english_tokens,lemma_candidates,subcons,g)
+                if first and first.predicate and first.predicate.lemma:
+                    parsed=[]
+                    for segment in segments[1:]:
+                        # This construction shares its subject across the series.
+                        # The synthetic subject is discarded after parsing.
+                        child=parse_clause('They '+segment+'.',by,lexical_match,english_tokens,lemma_candidates,subcons,g)
+                        if not child or not child.predicate or not child.predicate.lemma:
+                            parsed=[]; break
+                        parsed.append(child.predicate)
+                    if len(parsed)==len(segments)-1:
+                        first.predicate.conjunction=conjunction
+                        first.predicate.coordinated.extend(parsed)
+                        first.source_tokens=english_tokens(raw)
+                        return first
     # Predicate/clause coordination: parse both predicates and preserve the conjunction.
+    # Preserve sentence-level interrogative scope across the coordinated predicate.
+    # A question about A OR B must mark the entire construction, not just a child.
     # Right-hand predicate may omit the shared English subject; supply a temporary
     # pronoun only for analysis, then discard it and inherit the real subject.
     for cj in ('and','but','or'):
@@ -183,18 +256,43 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
             return any(x in AUX or any(_form(by,c,('v',)) for c in lemma_candidates(x)) for x in xs)
         if not (has_pred(lt) and has_pred(rt)): continue
         subcons=[c for c in constructions if c!='coordination']
-        left=parse_clause(left_raw+'.',by,lexical_match,english_tokens,lemma_candidates,subcons,g)
+        left=parse_clause(left_raw+('?' if raw.rstrip().endswith('?') else '.'),by,lexical_match,english_tokens,lemma_candidates,subcons,g)
         if left:
+            # A complete right-hand clause must retain its OWN subject. The old
+            # synthetic "They" silently replaced explicit subjects such as BIRD.
+            explicit=parse_clause(right_raw+'.',by,lexical_match,english_tokens,lemma_candidates,subcons,g)
+            if explicit and explicit.subject and explicit.predicate and explicit.predicate.lemma:
+                # Reject a bare predicate misread as a nominal subject.
+                right_first=rt[0] if rt else ''
+                if right_first in DET or right_first in PRON or right_first in POSS or right_raw[:1].isupper():
+                    left.conjunction=cj; left.coordinated=explicit
+                    left.source_tokens=english_tokens(raw)
+                    if raw.rstrip().endswith('?'):
+                        left.clause_type='yes_no_question'
+                    return left
+            # Shared-subject coordination is a distinct grammatical operation.
             right=parse_clause('They '+right_raw+'.',by,lexical_match,english_tokens,lemma_candidates,subcons,g)
             if right and right.predicate and right.predicate.lemma:
                 left.predicate.conjunction=cj; left.predicate.coordinated=[right.predicate]
-                left.source_tokens=english_tokens(raw); return left
+                left.source_tokens=english_tokens(raw)
+                if raw.rstrip().endswith('?'):
+                    left.clause_type='yes_no_question'
+                return left
     q=raw.rstrip().endswith('?'); imp='imperative' in constructions
+    # WH-fronting is represented as an interrogative feature, not a subject.
+    # Restrict to adjunct questions whose missing constituent can be realized
+    # without inventing an object or a copular predicate.
+    wh_word=None
+    if q and toks and toks[0] in ('where','when'):
+        wh_word=toks.pop(0)
+        if not toks:return None
     front_aux=None
     if q and toks and toks[0] in AUX: front_aux=toks.pop(0)
     # leading sentence adverbs are modifiers, not subject material
     leading=[]
     while toks:
+        if front_aux in COPULA and toks[0] in ('today','tomorrow','yesterday'):
+            break
         m=_modifier(toks[0],by,lexical_match)
         if not m: break
         leading.append(m); toks.pop(0)
@@ -246,7 +344,7 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
         # first NP/pronoun is subject; remainder is handled as complement below
         for cut in range(1,len(toks)+1):
             cand=parse_np(toks[:cut],by,lexical_match)
-            if cand:
+            if cand or (cut==1 and toks[0] in ('today','tomorrow','yesterday') and _form(by,toks[0],('adv','n'))):
                 vi=cut; verb_lemma=_copula_lemma(by); copular=True; break
         if not verb_lemma or not _pos(by,verb_lemma,'v'): return None
     if vi is None and cop_i is not None:
@@ -257,15 +355,12 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
     subject_words=[]; premods=[]
     for w in toks[:vi]:
         if w in AUX: continue
-        m=_modifier(w,by,lexical_match)
+        m=None if front_aux in COPULA and w in ('today','tomorrow','yesterday') else _modifier(w,by,lexical_match)
         if m: premods.append(m)
         else: subject_words.append(w)
-    # A prepositional phrase embedded in the English subject cannot safely be
-    # flattened into noun adjuncts (girls WITH wreaths OF flowers). The legacy
-    # analyzer may diagnose it, but structured realization must not claim success.
-    if sum(w in PREP for w in subject_words)>=2:
-        return None
     subject=None if imp else parse_np(subject_words,by,lexical_match)
+    if not imp and subject is None and front_aux in COPULA and len(subject_words)==1 and subject_words[0] in ('today','tomorrow','yesterday'):
+        subject=NPIR(subject_words,head=subject_words[0])
     if not imp and subject is None:return None
     pred=PredicateIR(verb_lemma,mood='imperative' if imp else 'indicative',modifiers=leading+premods)
     auxiliaries=[]
@@ -349,7 +444,7 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
         if obj: pred.pps.append(PPIR(ad,obj))
         else: return None
         ppwords=ppwords[nxt:]
-    return ClauseIR(subject,pred,'yes_no_question' if q else 'imperative' if imp else 'declarative',source_tokens=english_tokens(raw))
+    return ClauseIR(subject,pred,'wh_question' if wh_word else 'yes_no_question' if q else 'imperative' if imp else 'declarative',source_tokens=english_tokens(raw),wh_word=wh_word)
 
 def _conj_form(g,cj,by): return g.get('particles',{}).get(cj) or _form(by,cj,('conj',))
 
@@ -358,6 +453,9 @@ def realize_np(np,g,by,noun_form,possessive_phrase,adjective_form=None,case='nom
     if np.person:
         f=g.get('pronouns',{}).get(np.person); return (f,np.person.upper(),{np.head or np.person}) if f else (None,None,set())
     nf=_form(by,np.head,('n',)) if np.head else None
+    if not nf and np.head in ('today','tomorrow','yesterday') and np.tokens==[np.head]:
+        adv=_form(by,np.head,('adv',))
+        if adv:return adv,np.head.upper(),{np.head}
     if not nf:return None,None,set()
     surf=noun_form(nf,g,np.number,case if case in g.get('noun',{}).get('cases',[]) else 'nominative'); gloss=np.head.upper()+('.PL' if np.number=='plural' else '')+(':'+case.upper() if case!='nominative' and case in g.get('noun',{}).get('cases',[]) else ''); receipts={np.head}
     # Articles/demonstratives are target-grammar morphology, not discarded English scaffolding.
@@ -417,6 +515,14 @@ def realize_np(np,g,by,noun_form,possessive_phrase,adjective_form=None,case='nom
         if spec.get('position','after')=='before': surf=chunk+' '+surf; gloss=cgl+' '+gloss
         else: surf=surf+' '+chunk; gloss=gloss+' '+cgl
         receipts.add(pm.lemma); receipts.add('participial modifier'); receipts|=pr
+    for pp in np.attached_pps:
+        pf,pg,pr=realize_np(pp.object,g,by,noun_form,possessive_phrase,adjective_form,'locative')
+        ad=_form(by,pp.adposition,('prep','p'))
+        if not pf or not ad:return None,None,set()
+        chunk=ad+' '+pf if g.get('adposition_type')=='preposition' else pf+' '+ad
+        surf=surf+' '+chunk
+        gloss=gloss+' '+pp.adposition.upper()+' '+pg
+        receipts|=pr; receipts.add(pp.adposition); receipts.add('np attachment')
     if np.possessor:
         pf,pg,pr=realize_np(np.possessor,g,by,noun_form,possessive_phrase,adjective_form,'genitive')
         if not pf:return None,None,set()
@@ -581,10 +687,44 @@ def realize(clause,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix
             gloss=gloss+' '+(p.conjunction or 'and').upper()+' '+out['gloss']
             receipts.update(out['receipts'])
         receipts.add('coordination'); receipts.add('coordinated predicate')
+    if clause.coordinated is not None:
+        # Independent clauses use the target language's CLAUSE coordination
+        # strategy, never predicate coordination or inherited subjects.
+        cs=g.get('coordination',{}).get('clause',{})
+        strategy=cs.get('strategy','juxtaposition')
+        cj=_conj_form(g,clause.conjunction or 'and',by) if strategy=='particle' else ''
+        if strategy=='particle' and not cj:return None
+        out=realize(clause.coordinated,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix,adjective_form)
+        if not out:return None
+        surf=' '.join(x for x in (surf,cj,out['surface']) if x)
+        gloss+=' '+(clause.conjunction or 'and').upper()+' '+out['gloss']
+        receipts.update(out['receipts'])
+        receipts.add('coordination'); receipts.add('coordinated clause')
     if clause.clause_type=='hortative':
         mark=g.get('particles',{}).get('imperative')
         if mark and mark not in surf.split(): surf=mark+' '+surf
         receipts.add('imperative'); receipts.add('hortative'); gloss+=' HORT'
+    if clause.subordinate is not None:
+        # This semantic structure is available for auditing, not yet realized.
+        # The causal connective requires a target grammar contract; refusing to
+        # invent one is safer than claiming a faithful translation.
+        return None
+    if clause.clause_type=='wh_question':
+        interrogative=g.get('interrogatives',{}).get(clause.wh_word)
+        if not interrogative:return None
+        if clause.wh_degree:
+            # The adjective has already been realized as the predicate
+            # complement. HOW scopes over its degree, not over the subject.
+            if p.complement_kind!='adjective' or p.complement.head!=clause.wh_degree:
+                return None
+            receipts.add('degree_question');receipts.add('degree');receipts.add('how')
+            gloss+=' DEG-'+clause.wh_degree.upper()
+        if g.get('questions',{}).get('wh_strategy')=='fronted':
+            surf=interrogative+' '+surf
+        else:
+            surf=surf+' '+interrogative
+        receipts.add('question'); receipts.add('wh_question'); receipts.add(clause.wh_word)
+        gloss+=' WH-'+clause.wh_word.upper()
     if clause.clause_type=='yes_no_question':
         q=g.get('particles',{}).get('yes_no')
         strategy=g.get('questions',{}).get('strategy')

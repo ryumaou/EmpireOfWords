@@ -1,3 +1,9 @@
+## v7.6.5
+
+See ITERATION_REVIEW_v7_6_5.md for interrogative scope and copular question changes.
+
+> **v7.6.3:** Original-English-first structured realization and trace metadata. See `ITERATION_REVIEW_v7_6_3.md`.
+
 ## 2026-10-09 quality-gate and controlled contrast-suite update
 
 A separate `translations/contrast_suite_v1.txt` and annotated `translations/contrast_suite_v1_manifest.csv` isolate tense, coordination, questions, possession, PP attachment, and unsupported syntax. The original 229-sentence advanced benchmark is unchanged.
@@ -975,3 +981,7 @@ Exit code 0 = no newly non-complete sentences; 1 = regression; 2 = invalid
 inputs. A gain elsewhere does **not** excuse a regression by default. This gate
 checks status classifications, not semantic fidelity; keep inspecting the
 language audit's minimal pairs and actual translated text.
+
+
+## v7.6.0 architecture-first milestone
+See `ARCHITECTURE_v7_6.md` for the new independent-clause IR, semantic fixture runner, known failing fixture, and validation workflow.

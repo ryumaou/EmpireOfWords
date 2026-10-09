@@ -23,6 +23,7 @@ class NPIR:
     adjectives: list[str]=field(default_factory=list)
     noun_modifiers: list[str]=field(default_factory=list)
     participial_modifiers: list[ParticipialModifierIR]=field(default_factory=list)
+    attached_pps: list['PPIR']=field(default_factory=list)
     proper_name: bool=False
     quantifier: Optional[str]=None
     numeral: Optional[str]=None
@@ -78,5 +79,8 @@ class ClauseIR:
     coordinated: Optional['ClauseIR']=None
     source_tokens: list[str]=field(default_factory=list)
     wh_word: Optional[str]=None
+    wh_degree: Optional[str]=None  # how + adjective, e.g. HOW WIDE
+    subordinate: Optional['ClauseIR']=None
+    subordinate_relation: Optional[str]=None
 
     def to_dict(self): return asdict(self)

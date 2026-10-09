@@ -1,17 +1,17 @@
 Translation diagnostics: Test2
 ============================================================
 
-Translator version: 7.5.2
-Language build version: 7.5.2
+Translator version: 7.6.6
+Language build version: 7.6.1
 Language schema version: 2
 Grammar contract version: 9
-Language package SHA256: f2a3b55fe8f45c02813fa639100872e472054419ffd4a8f14ab9b174aaad11d9
+Language package SHA256: 1614ab40862004232a7392c48082a0085741736bc47db22c5c37d4982e32cc4e
 Grammar SHA256: a3a309b6f7422bf9de5591afba30ef015f9b13ca756feb1ff837a13cb7b18622
 Translator SHA256: 68188b51eb2da5cdea9c5780b5defefd0fc7c57335210033db0aec6e25cf4b7c
 
 Sentences: 80
-Complete: 55
-Partial: 20
+Complete: 66
+Partial: 9
 Missing vocabulary: 0
 Unsupported grammar: 5
 
@@ -60,14 +60,10 @@ Construction inventory:
   proper_name: limited
 
 Most common constructions in non-complete sentences:
-  coordination: 6
-  modal: 4
-  yes_no_question: 3
-  wh_question: 3
+  coordination: 2
   comparison: 2
-  imperative: 1
-  reflexive: 1
-  possessive: 1
+  modal: 2
+  yes_no_question: 1
   subordinate_clause: 1
   conditional_clause: 1
   relative_clause: 1
@@ -79,89 +75,17 @@ Most common missing/unrecognized English lexemes:
 
 Per-sentence diagnostics:
 -
-#14 Is today Monday?
-  Status: partial
-  Reason: recognized construction not yet fully realized
-  Constructions: yes_no_question
-  Normalized: (unchanged)
-
-#15 Where is the dog?
-  Status: partial
-  Reason: recognized construction not yet fully realized
-  Constructions: wh_question
-  Normalized: (unchanged)
-
-#16 When will the guests arrive?
-  Status: partial
-  Reason: recognized construction not yet fully realized
-  Constructions: modal, wh_question
-  Normalized: When will the guest arrive?
-
-#17 How wide is the river?
-  Status: partial
-  Reason: recognized construction not yet fully realized
-  Constructions: wh_question
-  Normalized: (unchanged)
-
-#23 The dog sees the cat, and the bird sees the dog.
-  Status: partial
-  Reason: not realized: bird
-  Constructions: coordination
-  Normalized: The dog see the cat and the bird see the dog.
-  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
-
 #24 John and Elizabeth are friends.
   Status: partial
   Reason: recognized construction not yet fully realized
   Constructions: coordination
   Normalized: John and Elizabeth are friend.
 
-#27 I awoke early, dressed hastily, and went to breakfast.
-  Status: partial
-  Reason: not realized: dressed
-  Constructions: coordination
-  Normalized: I did awake early dressed hastily and went to breakfast.
-  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
-
-#31 Take this note, carry it to your mother, and wait for an answer.
-  Status: partial
-  Reason: not realized: carry
-  Constructions: coordination, imperative
-  Normalized: (unchanged)
-  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
-
-#35 The little girl made the doll's dress herself.
-  Status: partial
-  Reason: not realized: possessive relation
-  Constructions: reflexive, possessive
-  Normalized: The little girl did make the doll dress herself.
-  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
-
-#42 The old man with a stick stood beside the fence.
-  Status: partial
-  Reason: not realized: stick
-  Constructions: simple
-  Normalized: The old man with a stick did stand beside the fence.
-  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
-
 #43 On a sunny morning we started for the mountains.
   Status: partial
   Reason: recognized construction not yet fully realized
   Constructions: simple
   Normalized: On a sunny morning we started for the mountain.
-
-#44 The girls with wreaths of flowers danced.
-  Status: partial
-  Reason: not realized: wreaths, flowers
-  Constructions: simple
-  Normalized: The girl with wreath of flower danced.
-
-#55 Will you go with us or wait here?
-  Status: partial
-  Reason: not realized: question marking
-  Constructions: modal, coordination, yes_no_question
-  Normalized: (unchanged)
-  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
 
 #59 Do you like summer or winter better?
   Status: partial

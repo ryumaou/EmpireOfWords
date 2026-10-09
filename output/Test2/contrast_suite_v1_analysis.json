@@ -1,14 +1,14 @@
 {
   "language": "Test2",
   "summary": {
-    "ok": 55,
-    "partial": 20,
+    "ok": 66,
+    "partial": 9,
     "unsupported-grammar": 5
   },
   "provenance": {
-    "translator_version": "7.5.2",
-    "language_build_version": "7.5.2",
-    "package_sha256": "f2a3b55fe8f45c02813fa639100872e472054419ffd4a8f14ab9b174aaad11d9",
+    "translator_version": "7.6.6",
+    "language_build_version": "7.6.1",
+    "package_sha256": "1614ab40862004232a7392c48082a0085741736bc47db22c5c37d4982e32cc4e",
     "grammar_sha256": "a3a309b6f7422bf9de5591afba30ef015f9b13ca756feb1ff837a13cb7b18622",
     "translator_sha256": "68188b51eb2da5cdea9c5780b5defefd0fc7c57335210033db0aec6e25cf4b7c",
     "contract_version": 9
@@ -91,6 +91,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog see the cat.",
         "realizer_input": null,
+        "structured_source": "The dog sees the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -102,6 +104,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -128,6 +131,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -159,7 +163,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -253,6 +260,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog did see the cat.",
         "realizer_input": null,
+        "structured_source": "The dog saw the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -264,6 +273,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -290,6 +300,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -317,12 +328,14 @@
           "source_tokens": [
             "The",
             "dog",
-            "did",
-            "see",
+            "saw",
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -425,6 +438,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
+        "structured_source": "The dog will see the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -436,6 +451,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -462,6 +478,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -494,7 +511,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -603,6 +623,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
+        "structured_source": "The dog did not see the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -614,6 +636,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -640,6 +663,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -679,7 +703,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -791,6 +818,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
+        "structured_source": "The dog will not see the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -802,6 +831,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -828,6 +858,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -867,7 +898,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -964,6 +998,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog see the cat.",
         "realizer_input": null,
+        "structured_source": "The dog sees the cats.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -975,6 +1011,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -1001,6 +1038,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -1032,7 +1070,10 @@
             "the",
             "cats"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -1126,6 +1167,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog see the cat.",
         "realizer_input": null,
+        "structured_source": "The dogs see the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -1137,6 +1180,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -1163,6 +1207,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -1194,7 +1239,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -1308,6 +1356,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog see the cat and the bird.",
         "realizer_input": null,
+        "structured_source": "The dog sees the cat and the bird.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -1319,6 +1369,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -1345,6 +1396,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -1362,6 +1414,7 @@
                   "adjectives": [],
                   "noun_modifiers": [],
                   "participial_modifiers": [],
+                  "attached_pps": [],
                   "proper_name": false,
                   "quantifier": null,
                   "numeral": null,
@@ -1399,7 +1452,10 @@
             "the",
             "bird"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "bird",
@@ -1515,6 +1571,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog see the cat and the bird.",
         "realizer_input": null,
+        "structured_source": "The dog sees the cats and the bird.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -1526,6 +1584,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -1552,6 +1611,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -1569,6 +1629,7 @@
                   "adjectives": [],
                   "noun_modifiers": [],
                   "participial_modifiers": [],
+                  "attached_pps": [],
                   "proper_name": false,
                   "quantifier": null,
                   "numeral": null,
@@ -1606,7 +1667,10 @@
             "the",
             "bird"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "bird",
@@ -1710,6 +1774,8 @@
         "missing_lexemes": [],
         "normalized_english": "do the dog see the cat?",
         "realizer_input": "the dog see the cat?",
+        "structured_source": "Does the dog see the cat?",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -1721,6 +1787,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -1747,6 +1814,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -1779,7 +1847,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -1882,6 +1953,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": "the dog did see the cat?",
+        "structured_source": "Did the dog see the cat?",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -1893,6 +1966,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -1919,6 +1993,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -1951,7 +2026,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -2056,6 +2134,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": "the dog will see the cat?",
+        "structured_source": "Will the dog see the cat?",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -2067,6 +2147,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -2093,6 +2174,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -2125,7 +2207,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -2217,6 +2302,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
+        "structured_source": "Is the dog happy?",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -2228,6 +2315,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -2256,6 +2344,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -2284,7 +2373,10 @@
             "dog",
             "happy"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "be (temporary state)",
@@ -2331,10 +2423,10 @@
     {
       "type": "Translation",
       "english": "Is today Monday?",
-      "surface": "[PARTIAL]",
-      "gloss": "[PARTIAL]",
-      "status": "partial",
-      "reason": "recognized construction not yet fully realized",
+      "surface": "qualiao uluun yirangg",
+      "gloss": "TODAY MONDAY BE (TEMPORARY STATE) Q",
+      "status": "ok",
+      "reason": "complete",
       "ir": {
         "tokens": [
           "is",
@@ -2369,18 +2461,130 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
-        "structured_clause": null,
-        "realization_receipts": [],
-        "realization_strategies": {}
+        "structured_source": "Is today Monday?",
+        "structured_realized": true,
+        "structured_clause": {
+          "subject": {
+            "tokens": [
+              "today"
+            ],
+            "head": "today",
+            "determiner": null,
+            "number": "singular",
+            "adjectives": [],
+            "noun_modifiers": [],
+            "participial_modifiers": [],
+            "attached_pps": [],
+            "proper_name": false,
+            "quantifier": null,
+            "numeral": null,
+            "possessor": null,
+            "person": null,
+            "conjunction": null,
+            "coordinated": [],
+            "comparison": null
+          },
+          "predicate": {
+            "lemma": "be (temporary state)",
+            "tense": "present",
+            "aspect": [],
+            "mood": "indicative",
+            "negative": false,
+            "modal": null,
+            "object": null,
+            "indirect_object": null,
+            "complement": {
+              "tokens": [
+                "monday"
+              ],
+              "head": "monday",
+              "determiner": null,
+              "number": "singular",
+              "adjectives": [],
+              "noun_modifiers": [],
+              "participial_modifiers": [],
+              "attached_pps": [],
+              "proper_name": false,
+              "quantifier": null,
+              "numeral": null,
+              "possessor": null,
+              "person": null,
+              "conjunction": null,
+              "coordinated": [],
+              "comparison": null
+            },
+            "complement_kind": "adjective",
+            "complement_conjunction": null,
+            "coordinated_complements": [],
+            "modifiers": [],
+            "particles": [],
+            "pps": [],
+            "comparison": null,
+            "conjunction": null,
+            "coordinated": []
+          },
+          "clause_type": "yes_no_question",
+          "conjunction": null,
+          "coordinated": null,
+          "source_tokens": [
+            "Is",
+            "today",
+            "Monday"
+          ],
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
+        },
+        "realization_receipts": [
+          "be (temporary state)",
+          "monday",
+          "question",
+          "today"
+        ],
+        "realization_strategies": {
+          "word_order": "SOV",
+          "adposition": "postposition",
+          "adjective_position": "before",
+          "possession": "juxtaposition",
+          "comparison": "particle",
+          "question": "word-order",
+          "coordination": {
+            "np": {
+              "strategy": "juxtaposition",
+              "position": "between"
+            },
+            "predicate": {
+              "strategy": "particle",
+              "position": "between",
+              "shared_subject": true
+            },
+            "clause": {
+              "strategy": "juxtaposition",
+              "position": "between"
+            }
+          },
+          "tense": {
+            "past": "particle",
+            "future": "particle"
+          },
+          "aspect": {
+            "progressive": "affix",
+            "perfect": "affix"
+          },
+          "mood": {
+            "imperative": "affix"
+          }
+        }
       }
     },
     {
       "type": "Translation",
       "english": "Where is the dog?",
-      "surface": "[PARTIAL]",
-      "gloss": "[PARTIAL]",
-      "status": "partial",
-      "reason": "recognized construction not yet fully realized",
+      "surface": "uljashe  uluun cechan",
+      "gloss": "DOG  BE (TEMPORARY STATE) WH-WHERE",
+      "status": "ok",
+      "reason": "complete",
       "ir": {
         "tokens": [
           "where",
@@ -2421,18 +2625,113 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
-        "structured_clause": null,
-        "realization_receipts": [],
-        "realization_strategies": {}
+        "structured_source": "Where is the dog?",
+        "structured_realized": true,
+        "structured_clause": {
+          "subject": {
+            "tokens": [
+              "dog"
+            ],
+            "head": "dog",
+            "determiner": "the",
+            "number": "singular",
+            "adjectives": [],
+            "noun_modifiers": [],
+            "participial_modifiers": [],
+            "attached_pps": [],
+            "proper_name": false,
+            "quantifier": null,
+            "numeral": null,
+            "possessor": null,
+            "person": null,
+            "conjunction": null,
+            "coordinated": [],
+            "comparison": null
+          },
+          "predicate": {
+            "lemma": "be (temporary state)",
+            "tense": "present",
+            "aspect": [],
+            "mood": "indicative",
+            "negative": false,
+            "modal": null,
+            "object": null,
+            "indirect_object": null,
+            "complement": null,
+            "complement_kind": null,
+            "complement_conjunction": null,
+            "coordinated_complements": [],
+            "modifiers": [],
+            "particles": [],
+            "pps": [],
+            "comparison": null,
+            "conjunction": null,
+            "coordinated": []
+          },
+          "clause_type": "wh_question",
+          "conjunction": null,
+          "coordinated": null,
+          "source_tokens": [
+            "Where",
+            "is",
+            "the",
+            "dog"
+          ],
+          "wh_word": "where",
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
+        },
+        "realization_receipts": [
+          "be (temporary state)",
+          "dog",
+          "question",
+          "wh_question",
+          "where"
+        ],
+        "realization_strategies": {
+          "word_order": "SOV",
+          "adposition": "postposition",
+          "adjective_position": "before",
+          "possession": "juxtaposition",
+          "comparison": "particle",
+          "question": "word-order",
+          "coordination": {
+            "np": {
+              "strategy": "juxtaposition",
+              "position": "between"
+            },
+            "predicate": {
+              "strategy": "particle",
+              "position": "between",
+              "shared_subject": true
+            },
+            "clause": {
+              "strategy": "juxtaposition",
+              "position": "between"
+            }
+          },
+          "tense": {
+            "past": "particle",
+            "future": "particle"
+          },
+          "aspect": {
+            "progressive": "affix",
+            "perfect": "affix"
+          },
+          "mood": {
+            "imperative": "affix"
+          }
+        }
       }
     },
     {
       "type": "Translation",
       "english": "When will the guests arrive?",
-      "surface": "[PARTIAL]",
-      "gloss": "[PARTIAL]",
-      "status": "partial",
-      "reason": "recognized construction not yet fully realized",
+      "surface": "otauludu  zhanliu medeged qadiliu",
+      "gloss": "GUEST.PL  ARRIVE-FUT WH-WHEN",
+      "status": "ok",
+      "reason": "complete",
       "ir": {
         "tokens": [
           "when",
@@ -2480,18 +2779,115 @@
         "missing_lexemes": [],
         "normalized_english": "When will the guest arrive?",
         "realizer_input": null,
-        "structured_clause": null,
-        "realization_receipts": [],
-        "realization_strategies": {}
+        "structured_source": "When will the guests arrive?",
+        "structured_realized": true,
+        "structured_clause": {
+          "subject": {
+            "tokens": [
+              "guests"
+            ],
+            "head": "guest",
+            "determiner": "the",
+            "number": "plural",
+            "adjectives": [],
+            "noun_modifiers": [],
+            "participial_modifiers": [],
+            "attached_pps": [],
+            "proper_name": false,
+            "quantifier": null,
+            "numeral": null,
+            "possessor": null,
+            "person": null,
+            "conjunction": null,
+            "coordinated": [],
+            "comparison": null
+          },
+          "predicate": {
+            "lemma": "arrive",
+            "tense": "future",
+            "aspect": [],
+            "mood": "indicative",
+            "negative": false,
+            "modal": null,
+            "object": null,
+            "indirect_object": null,
+            "complement": null,
+            "complement_kind": null,
+            "complement_conjunction": null,
+            "coordinated_complements": [],
+            "modifiers": [],
+            "particles": [],
+            "pps": [],
+            "comparison": null,
+            "conjunction": null,
+            "coordinated": []
+          },
+          "clause_type": "wh_question",
+          "conjunction": null,
+          "coordinated": null,
+          "source_tokens": [
+            "When",
+            "will",
+            "the",
+            "guests",
+            "arrive"
+          ],
+          "wh_word": "when",
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
+        },
+        "realization_receipts": [
+          "arrive",
+          "future",
+          "guest",
+          "question",
+          "wh_question",
+          "when"
+        ],
+        "realization_strategies": {
+          "word_order": "SOV",
+          "adposition": "postposition",
+          "adjective_position": "before",
+          "possession": "juxtaposition",
+          "comparison": "particle",
+          "question": "word-order",
+          "coordination": {
+            "np": {
+              "strategy": "juxtaposition",
+              "position": "between"
+            },
+            "predicate": {
+              "strategy": "particle",
+              "position": "between",
+              "shared_subject": true
+            },
+            "clause": {
+              "strategy": "juxtaposition",
+              "position": "between"
+            }
+          },
+          "tense": {
+            "past": "particle",
+            "future": "particle"
+          },
+          "aspect": {
+            "progressive": "affix",
+            "perfect": "affix"
+          },
+          "mood": {
+            "imperative": "affix"
+          }
+        }
       }
     },
     {
       "type": "Translation",
       "english": "How wide is the river?",
-      "surface": "[PARTIAL]",
-      "gloss": "[PARTIAL]",
-      "status": "partial",
-      "reason": "recognized construction not yet fully realized",
+      "surface": "wujildu naidak uluun ene",
+      "gloss": "RIVER WIDE BE (TEMPORARY STATE) DEG-WIDE WH-HOW",
+      "status": "ok",
+      "reason": "complete",
       "ir": {
         "tokens": [
           "how",
@@ -2538,9 +2934,127 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
-        "structured_clause": null,
-        "realization_receipts": [],
-        "realization_strategies": {}
+        "structured_source": "How wide is the river?",
+        "structured_realized": true,
+        "structured_clause": {
+          "subject": {
+            "tokens": [
+              "river"
+            ],
+            "head": "river",
+            "determiner": "the",
+            "number": "singular",
+            "adjectives": [],
+            "noun_modifiers": [],
+            "participial_modifiers": [],
+            "attached_pps": [],
+            "proper_name": false,
+            "quantifier": null,
+            "numeral": null,
+            "possessor": null,
+            "person": null,
+            "conjunction": null,
+            "coordinated": [],
+            "comparison": null
+          },
+          "predicate": {
+            "lemma": "be (temporary state)",
+            "tense": "present",
+            "aspect": [],
+            "mood": "indicative",
+            "negative": false,
+            "modal": null,
+            "object": null,
+            "indirect_object": null,
+            "complement": {
+              "tokens": [
+                "wide"
+              ],
+              "head": "wide",
+              "determiner": null,
+              "number": "singular",
+              "adjectives": [],
+              "noun_modifiers": [],
+              "participial_modifiers": [],
+              "attached_pps": [],
+              "proper_name": false,
+              "quantifier": null,
+              "numeral": null,
+              "possessor": null,
+              "person": null,
+              "conjunction": null,
+              "coordinated": [],
+              "comparison": null
+            },
+            "complement_kind": "adjective",
+            "complement_conjunction": null,
+            "coordinated_complements": [],
+            "modifiers": [],
+            "particles": [],
+            "pps": [],
+            "comparison": null,
+            "conjunction": null,
+            "coordinated": []
+          },
+          "clause_type": "wh_question",
+          "conjunction": null,
+          "coordinated": null,
+          "source_tokens": [
+            "How",
+            "wide",
+            "is",
+            "the",
+            "river"
+          ],
+          "wh_word": "how",
+          "wh_degree": "wide",
+          "subordinate": null,
+          "subordinate_relation": null
+        },
+        "realization_receipts": [
+          "be (temporary state)",
+          "degree",
+          "degree_question",
+          "how",
+          "question",
+          "river",
+          "wh_question",
+          "wide"
+        ],
+        "realization_strategies": {
+          "word_order": "SOV",
+          "adposition": "postposition",
+          "adjective_position": "before",
+          "possession": "juxtaposition",
+          "comparison": "particle",
+          "question": "word-order",
+          "coordination": {
+            "np": {
+              "strategy": "juxtaposition",
+              "position": "between"
+            },
+            "predicate": {
+              "strategy": "particle",
+              "position": "between",
+              "shared_subject": true
+            },
+            "clause": {
+              "strategy": "juxtaposition",
+              "position": "between"
+            }
+          },
+          "tense": {
+            "past": "particle",
+            "future": "particle"
+          },
+          "aspect": {
+            "progressive": "affix",
+            "perfect": "affix"
+          },
+          "mood": {
+            "imperative": "affix"
+          }
+        }
       }
     },
     {
@@ -2614,6 +3128,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog see the cat and the bird.",
         "realizer_input": null,
+        "structured_source": "The dog sees the cat and the bird.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -2625,6 +3141,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -2651,6 +3168,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -2668,6 +3186,7 @@
                   "adjectives": [],
                   "noun_modifiers": [],
                   "participial_modifiers": [],
+                  "attached_pps": [],
                   "proper_name": false,
                   "quantifier": null,
                   "numeral": null,
@@ -2705,7 +3224,10 @@
             "the",
             "bird"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "bird",
@@ -2821,6 +3343,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog see the cat or the bird.",
         "realizer_input": null,
+        "structured_source": "The dog sees the cat or the bird.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -2832,6 +3356,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -2858,6 +3383,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -2875,6 +3401,7 @@
                   "adjectives": [],
                   "noun_modifiers": [],
                   "participial_modifiers": [],
+                  "attached_pps": [],
                   "proper_name": false,
                   "quantifier": null,
                   "numeral": null,
@@ -2912,7 +3439,10 @@
             "the",
             "bird"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "bird",
@@ -3034,6 +3564,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog see the cat and hear the bird.",
         "realizer_input": null,
+        "structured_source": "The dog sees the cat and hears the bird.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -3045,6 +3577,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -3071,6 +3604,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -3108,6 +3642,7 @@
                   "adjectives": [],
                   "noun_modifiers": [],
                   "participial_modifiers": [],
+                  "attached_pps": [],
                   "proper_name": false,
                   "quantifier": null,
                   "numeral": null,
@@ -3145,7 +3680,10 @@
             "the",
             "bird"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "bird",
@@ -3269,6 +3807,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog did see the cat and heard the bird.",
         "realizer_input": null,
+        "structured_source": "The dog saw the cat and heard the bird.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -3280,6 +3820,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -3306,6 +3847,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -3343,6 +3885,7 @@
                   "adjectives": [],
                   "noun_modifiers": [],
                   "participial_modifiers": [],
+                  "attached_pps": [],
                   "proper_name": false,
                   "quantifier": null,
                   "numeral": null,
@@ -3372,8 +3915,7 @@
           "source_tokens": [
             "The",
             "dog",
-            "did",
-            "see",
+            "saw",
             "the",
             "cat",
             "and",
@@ -3381,7 +3923,10 @@
             "the",
             "bird"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "bird",
@@ -3506,6 +4051,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog see the cat but hear the bird.",
         "realizer_input": null,
+        "structured_source": "The dog sees the cat but hears the bird.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -3517,6 +4064,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -3543,6 +4091,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -3580,6 +4129,7 @@
                   "adjectives": [],
                   "noun_modifiers": [],
                   "participial_modifiers": [],
+                  "attached_pps": [],
                   "proper_name": false,
                   "quantifier": null,
                   "numeral": null,
@@ -3617,7 +4167,10 @@
             "the",
             "bird"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "bird",
@@ -3667,10 +4220,10 @@
     {
       "type": "Translation",
       "english": "The dog sees the cat, and the bird sees the dog.",
-      "surface": "[PARTIAL]",
-      "gloss": "DOG CAT:ACCUSATIVE SEE AND DOG DOG:ACCUSATIVE SEE",
-      "status": "partial",
-      "reason": "not realized: bird",
+      "surface": "uljashe sheunen mjasixi guij uljasheen mjasixi",
+      "gloss": "DOG CAT:ACCUSATIVE SEE AND BIRD DOG:ACCUSATIVE SEE",
+      "status": "ok",
+      "reason": "complete",
       "ir": {
         "tokens": [
           "the",
@@ -3753,6 +4306,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog see the cat and the bird see the dog.",
         "realizer_input": null,
+        "structured_source": "The dog sees the cat, and the bird sees the dog.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -3764,6 +4319,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -3790,6 +4346,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -3808,51 +4365,86 @@
             "particles": [],
             "pps": [],
             "comparison": null,
-            "conjunction": "and",
-            "coordinated": [
-              {
-                "lemma": "see",
-                "tense": "present",
-                "aspect": [],
-                "mood": "indicative",
-                "negative": false,
-                "modal": null,
-                "object": {
-                  "tokens": [
-                    "dog"
-                  ],
-                  "head": "dog",
-                  "determiner": "the",
-                  "number": "singular",
-                  "adjectives": [],
-                  "noun_modifiers": [],
-                  "participial_modifiers": [],
-                  "proper_name": false,
-                  "quantifier": null,
-                  "numeral": null,
-                  "possessor": null,
-                  "person": null,
-                  "conjunction": null,
-                  "coordinated": [],
-                  "comparison": null
-                },
-                "indirect_object": null,
-                "complement": null,
-                "complement_kind": null,
-                "complement_conjunction": null,
-                "coordinated_complements": [],
-                "modifiers": [],
-                "particles": [],
-                "pps": [],
-                "comparison": null,
-                "conjunction": null,
-                "coordinated": []
-              }
-            ]
+            "conjunction": null,
+            "coordinated": []
           },
           "clause_type": "declarative",
-          "conjunction": null,
-          "coordinated": null,
+          "conjunction": "and",
+          "coordinated": {
+            "subject": {
+              "tokens": [
+                "bird"
+              ],
+              "head": "bird",
+              "determiner": "the",
+              "number": "singular",
+              "adjectives": [],
+              "noun_modifiers": [],
+              "participial_modifiers": [],
+              "attached_pps": [],
+              "proper_name": false,
+              "quantifier": null,
+              "numeral": null,
+              "possessor": null,
+              "person": null,
+              "conjunction": null,
+              "coordinated": [],
+              "comparison": null
+            },
+            "predicate": {
+              "lemma": "see",
+              "tense": "present",
+              "aspect": [],
+              "mood": "indicative",
+              "negative": false,
+              "modal": null,
+              "object": {
+                "tokens": [
+                  "dog"
+                ],
+                "head": "dog",
+                "determiner": "the",
+                "number": "singular",
+                "adjectives": [],
+                "noun_modifiers": [],
+                "participial_modifiers": [],
+                "attached_pps": [],
+                "proper_name": false,
+                "quantifier": null,
+                "numeral": null,
+                "possessor": null,
+                "person": null,
+                "conjunction": null,
+                "coordinated": [],
+                "comparison": null
+              },
+              "indirect_object": null,
+              "complement": null,
+              "complement_kind": null,
+              "complement_conjunction": null,
+              "coordinated_complements": [],
+              "modifiers": [],
+              "particles": [],
+              "pps": [],
+              "comparison": null,
+              "conjunction": null,
+              "coordinated": []
+            },
+            "clause_type": "declarative",
+            "conjunction": null,
+            "coordinated": null,
+            "source_tokens": [
+              "the",
+              "bird",
+              "sees",
+              "the",
+              "dog"
+            ],
+            "wh_word": null,
+            "wh_degree": null,
+            "subordinate": null,
+            "subordinate_relation": null
+          },
           "source_tokens": [
             "The",
             "dog",
@@ -3866,11 +4458,15 @@
             "the",
             "dog"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
+          "bird",
           "cat",
-          "coordinated predicate",
+          "coordinated clause",
           "coordination",
           "dog",
           "see"
@@ -3967,6 +4563,8 @@
         "missing_lexemes": [],
         "normalized_english": "John and Elizabeth are friend.",
         "realizer_input": null,
+        "structured_source": null,
+        "structured_realized": false,
         "structured_clause": null,
         "realization_receipts": [],
         "realization_strategies": {}
@@ -4031,6 +4629,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
+        "structured_source": "The dog is small but strong.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -4042,6 +4642,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -4070,6 +4671,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -4092,6 +4694,7 @@
                 "adjectives": [],
                 "noun_modifiers": [],
                 "participial_modifiers": [],
+                "attached_pps": [],
                 "proper_name": false,
                 "quantifier": null,
                 "numeral": null,
@@ -4120,7 +4723,10 @@
             "but",
             "strong"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "be (temporary state)",
@@ -4230,6 +4836,8 @@
         "missing_lexemes": [],
         "normalized_english": "The crow dropped pebble and raised water.",
         "realizer_input": null,
+        "structured_source": "The crow dropped pebbles and raised water.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -4241,6 +4849,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -4267,6 +4876,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -4304,6 +4914,7 @@
                   "adjectives": [],
                   "noun_modifiers": [],
                   "participial_modifiers": [],
+                  "attached_pps": [],
                   "proper_name": false,
                   "quantifier": null,
                   "numeral": null,
@@ -4339,7 +4950,10 @@
             "raised",
             "water"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "coordinated predicate",
@@ -4390,10 +5004,10 @@
     {
       "type": "Translation",
       "english": "I awoke early, dressed hastily, and went to breakfast.",
-      "surface": "[PARTIAL]",
-      "gloss": "EARLY HASTY 1SG  AWAKE-PST AND 1SG  GO-PST TO BREAKFAST",
-      "status": "partial",
-      "reason": "not realized: dressed",
+      "surface": "wekiyas zaoyang todou kooruhu soodurc buurgi zaoyang laidur soodurc zaoyang todou baiji kuan pekab",
+      "gloss": "EARLY 1SG  AWAKE-PST AND HASTY 1SG  DRESSED AND 1SG  GO-PST TO BREAKFAST",
+      "status": "ok",
+      "reason": "complete",
       "ir": {
         "tokens": [
           "i",
@@ -4464,6 +5078,8 @@
         "missing_lexemes": [],
         "normalized_english": "I did awake early dressed hastily and went to breakfast.",
         "realizer_input": null,
+        "structured_source": "I awoke early, dressed hastily, and went to breakfast.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -4475,6 +5091,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -4502,11 +5119,6 @@
                 "lemma": "early",
                 "kind": "temporal",
                 "source": "early"
-              },
-              {
-                "lemma": "hasty",
-                "kind": "manner",
-                "source": "hastily"
               }
             ],
             "particles": [],
@@ -4514,6 +5126,32 @@
             "comparison": null,
             "conjunction": "and",
             "coordinated": [
+              {
+                "lemma": "dressed",
+                "tense": "present",
+                "aspect": [],
+                "mood": "indicative",
+                "negative": false,
+                "modal": null,
+                "object": null,
+                "indirect_object": null,
+                "complement": null,
+                "complement_kind": null,
+                "complement_conjunction": null,
+                "coordinated_complements": [],
+                "modifiers": [
+                  {
+                    "lemma": "hasty",
+                    "kind": "manner",
+                    "source": "hastily"
+                  }
+                ],
+                "particles": [],
+                "pps": [],
+                "comparison": null,
+                "conjunction": null,
+                "coordinated": []
+              },
               {
                 "lemma": "go",
                 "tense": "past",
@@ -4542,6 +5180,7 @@
                       "adjectives": [],
                       "noun_modifiers": [],
                       "participial_modifiers": [],
+                      "attached_pps": [],
                       "proper_name": false,
                       "quantifier": null,
                       "numeral": null,
@@ -4564,8 +5203,7 @@
           "coordinated": null,
           "source_tokens": [
             "I",
-            "did",
-            "awake",
+            "awoke",
             "early",
             "dressed",
             "hastily",
@@ -4574,13 +5212,17 @@
             "to",
             "breakfast"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "awake",
           "breakfast",
           "coordinated predicate",
           "coordination",
+          "dressed",
           "early",
           "go",
           "hastily",
@@ -4666,6 +5308,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": "See the cat!",
+        "structured_source": "See the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": null,
           "predicate": {
@@ -4685,6 +5329,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -4714,7 +5359,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -4811,6 +5459,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": "Do not see the cat!",
+        "structured_source": "Do not see the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": null,
           "predicate": {
@@ -4834,6 +5484,7 @@
               ],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -4865,7 +5516,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -4964,6 +5618,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": "Take the note and wait!",
+        "structured_source": "Take the note and wait.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": null,
           "predicate": {
@@ -4983,6 +5639,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -5035,7 +5692,10 @@
             "and",
             "wait"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "coordinated predicate",
@@ -5084,10 +5744,10 @@
     {
       "type": "Translation",
       "english": "Take this note, carry it to your mother, and wait for an answer.",
-      "surface": "[PARTIAL]",
-      "gloss": "TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE TO 2SG-GEN MOTHER AND WAIT-IMP FOR ANSWER",
-      "status": "partial",
-      "reason": "not realized: carry",
+      "surface": "yingonmut daqob zhiranen soodurc alaimut shuno menged cilig pekab soodurc eriyimut daqoici lakili",
+      "gloss": "TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE AND CARRY-IMP 3SG TO 2SG-GEN MOTHER AND WAIT-IMP FOR ANSWER",
+      "status": "ok",
+      "reason": "complete",
       "ir": {
         "tokens": [
           "take",
@@ -5183,6 +5843,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": "Take this note, carry it to your mother, and wait for an answer!",
+        "structured_source": "Take this note, carry it to your mother, and wait for an answer.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": null,
           "predicate": {
@@ -5194,9 +5856,7 @@
             "modal": null,
             "object": {
               "tokens": [
-                "note",
-                "carry",
-                "it"
+                "note"
               ],
               "head": "note",
               "determiner": "this",
@@ -5204,6 +5864,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -5220,51 +5881,92 @@
             "coordinated_complements": [],
             "modifiers": [],
             "particles": [],
-            "pps": [
+            "pps": [],
+            "comparison": null,
+            "conjunction": "and",
+            "coordinated": [
               {
-                "adposition": "to",
+                "lemma": "carry",
+                "tense": "present",
+                "aspect": [],
+                "mood": "imperative",
+                "negative": false,
+                "modal": null,
                 "object": {
                   "tokens": [
-                    "mother"
+                    "it"
                   ],
-                  "head": "mother",
+                  "head": "it",
                   "determiner": null,
                   "number": "singular",
                   "adjectives": [],
                   "noun_modifiers": [],
                   "participial_modifiers": [],
+                  "attached_pps": [],
                   "proper_name": false,
                   "quantifier": null,
                   "numeral": null,
-                  "possessor": {
-                    "tokens": [
-                      "your"
-                    ],
-                    "head": "your",
-                    "determiner": null,
-                    "number": "singular",
-                    "adjectives": [],
-                    "noun_modifiers": [],
-                    "participial_modifiers": [],
-                    "proper_name": false,
-                    "quantifier": null,
-                    "numeral": null,
-                    "possessor": null,
-                    "person": "2sg",
-                    "conjunction": null,
-                    "coordinated": [],
-                    "comparison": null
-                  },
-                  "person": null,
+                  "possessor": null,
+                  "person": "3sg",
                   "conjunction": null,
                   "coordinated": [],
                   "comparison": null
-                }
-              }
-            ],
-            "comparison": null,
-            "conjunction": "and",
-            "coordinated": [
+                },
+                "indirect_object": null,
+                "complement": null,
+                "complement_kind": null,
+                "complement_conjunction": null,
+                "coordinated_complements": [],
+                "modifiers": [],
+                "particles": [],
+                "pps": [
+                  {
+                    "adposition": "to",
+                    "object": {
+                      "tokens": [
+                        "mother"
+                      ],
+                      "head": "mother",
+                      "determiner": null,
+                      "number": "singular",
+                      "adjectives": [],
+                      "noun_modifiers": [],
+                      "participial_modifiers": [],
+                      "attached_pps": [],
+                      "proper_name": false,
+                      "quantifier": null,
+                      "numeral": null,
+                      "possessor": {
+                        "tokens": [
+                          "your"
+                        ],
+                        "head": "your",
+                        "determiner": null,
+                        "number": "singular",
+                        "adjectives": [],
+                        "noun_modifiers": [],
+                        "participial_modifiers": [],
+                        "attached_pps": [],
+                        "proper_name": false,
+                        "quantifier": null,
+                        "numeral": null,
+                        "possessor": null,
+                        "person": "2sg",
+                        "conjunction": null,
+                        "coordinated": [],
+                        "comparison": null
+                      },
+                      "person": null,
+                      "conjunction": null,
+                      "coordinated": [],
+                      "comparison": null
+                    }
+                  }
+                ],
+                "comparison": null,
+                "conjunction": null,
+                "coordinated": []
+              },
               {
                 "lemma": "wait",
                 "tense": "present",
@@ -5293,6 +5995,7 @@
                       "adjectives": [],
                       "noun_modifiers": [],
                       "participial_modifiers": [],
+                      "attached_pps": [],
                       "proper_name": false,
                       "quantifier": null,
                       "numeral": null,
@@ -5328,14 +6031,19 @@
             "an",
             "answer"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "answer",
+          "carry",
           "coordinated predicate",
           "coordination",
           "for",
           "imperative",
+          "it",
           "mother",
           "note",
           "possessive",
@@ -5415,6 +6123,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": "Be happy!",
+        "structured_source": "Be happy.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": null,
           "predicate": {
@@ -5436,6 +6146,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -5462,7 +6173,10 @@
             "Be",
             "happy"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "be (temporary state)",
@@ -5556,6 +6270,8 @@
         "missing_lexemes": [],
         "normalized_english": "The girl see the doll.",
         "realizer_input": null,
+        "structured_source": "The girl sees the doll.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -5567,6 +6283,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -5593,6 +6310,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -5624,7 +6342,10 @@
             "the",
             "doll"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "doll",
@@ -5727,6 +6448,8 @@
         "missing_lexemes": [],
         "normalized_english": "The girl see the doll dress.",
         "realizer_input": null,
+        "structured_source": "The girl sees the doll's dress.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -5738,6 +6461,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -5764,6 +6488,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -5777,6 +6502,7 @@
                 "adjectives": [],
                 "noun_modifiers": [],
                 "participial_modifiers": [],
+                "attached_pps": [],
                 "proper_name": false,
                 "quantifier": null,
                 "numeral": null,
@@ -5814,7 +6540,10 @@
             "doll's",
             "dress"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "doll",
@@ -5862,10 +6591,10 @@
     {
       "type": "Translation",
       "english": "The little girl made the doll's dress herself.",
-      "surface": "[PARTIAL]",
-      "gloss": "LITTLE GIRL DOLL DRESS:ACCUSATIVE MAKE-PST",
-      "status": "partial",
-      "reason": "not realized: possessive relation",
+      "surface": "idas shuodu kuha uuminilen todou nuturiq",
+      "gloss": "LITTLE GIRL DOLL-GEN DRESS:ACCUSATIVE MAKE-PST",
+      "status": "ok",
+      "reason": "complete",
       "ir": {
         "tokens": [
           "the",
@@ -5933,6 +6662,8 @@
         "missing_lexemes": [],
         "normalized_english": "The little girl did make the doll dress herself.",
         "realizer_input": null,
+        "structured_source": "The little girl made the doll's dress herself.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -5947,6 +6678,7 @@
             ],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -5965,7 +6697,6 @@
             "modal": null,
             "object": {
               "tokens": [
-                "doll",
                 "dress",
                 "herself"
               ],
@@ -5973,14 +6704,32 @@
               "determiner": "the",
               "number": "singular",
               "adjectives": [],
-              "noun_modifiers": [
-                "doll"
-              ],
+              "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
-              "possessor": null,
+              "possessor": {
+                "tokens": [
+                  "doll"
+                ],
+                "head": "doll",
+                "determiner": null,
+                "number": "singular",
+                "adjectives": [],
+                "noun_modifiers": [],
+                "participial_modifiers": [],
+                "attached_pps": [],
+                "proper_name": false,
+                "quantifier": null,
+                "numeral": null,
+                "possessor": null,
+                "person": null,
+                "conjunction": null,
+                "coordinated": [],
+                "comparison": null
+              },
               "person": null,
               "conjunction": null,
               "coordinated": [],
@@ -6005,14 +6754,16 @@
             "The",
             "little",
             "girl",
-            "did",
-            "make",
+            "made",
             "the",
-            "doll",
+            "doll's",
             "dress",
             "herself"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "doll",
@@ -6020,7 +6771,8 @@
           "girl",
           "little",
           "make",
-          "past"
+          "past",
+          "possessive"
         ],
         "realization_strategies": {
           "word_order": "SOV",
@@ -6109,6 +6861,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog see its house.",
         "realizer_input": null,
+        "structured_source": "The dog sees its house.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -6120,6 +6874,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -6146,6 +6901,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -6159,6 +6915,7 @@
                 "adjectives": [],
                 "noun_modifiers": [],
                 "participial_modifiers": [],
+                "attached_pps": [],
                 "proper_name": false,
                 "quantifier": null,
                 "numeral": null,
@@ -6195,7 +6952,10 @@
             "its",
             "house"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "dog",
@@ -6291,6 +7051,8 @@
         "missing_lexemes": [],
         "normalized_english": "The man see his dog.",
         "realizer_input": null,
+        "structured_source": "The man sees his dog.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -6302,6 +7064,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -6328,6 +7091,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -6341,6 +7105,7 @@
                 "adjectives": [],
                 "noun_modifiers": [],
                 "participial_modifiers": [],
+                "attached_pps": [],
                 "proper_name": false,
                 "quantifier": null,
                 "numeral": null,
@@ -6377,7 +7142,10 @@
             "his",
             "dog"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "dog",
@@ -6473,6 +7241,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog see the cat.",
         "realizer_input": null,
+        "structured_source": "The dog sees the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -6484,6 +7254,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -6510,6 +7281,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -6541,7 +7313,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -6641,6 +7416,8 @@
         "missing_lexemes": [],
         "normalized_english": "The small dog see the cat.",
         "realizer_input": null,
+        "structured_source": "The small dog sees the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -6655,6 +7432,7 @@
             ],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -6681,6 +7459,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -6713,7 +7492,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -6814,6 +7596,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog see the small cat.",
         "realizer_input": null,
+        "structured_source": "The dog sees the small cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -6825,6 +7609,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -6854,6 +7639,7 @@
               ],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -6886,7 +7672,10 @@
             "small",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -6999,6 +7788,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog see the cat in the house.",
         "realizer_input": null,
+        "structured_source": "The dog sees the cat in the house.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -7010,6 +7801,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -7036,6 +7828,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -7065,6 +7858,7 @@
                   "adjectives": [],
                   "noun_modifiers": [],
                   "participial_modifiers": [],
+                  "attached_pps": [],
                   "proper_name": false,
                   "quantifier": null,
                   "numeral": null,
@@ -7093,7 +7887,10 @@
             "the",
             "house"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -7141,10 +7938,10 @@
     {
       "type": "Translation",
       "english": "The old man with a stick stood beside the fence.",
-      "surface": "[PARTIAL]",
-      "gloss": "OLD MAN  STAND-PST BESIDE FENCE",
-      "status": "partial",
-      "reason": "not realized: stick",
+      "surface": "bangei alaruod desengeen uural joori ladu",
+      "gloss": "old man.NOM stand.ACC STICK BESIDE fence.LOC",
+      "status": "ok",
+      "reason": "complete",
       "ir": {
         "tokens": [
           "the",
@@ -7219,135 +8016,11 @@
         "missing_lexemes": [],
         "normalized_english": "The old man with a stick did stand beside the fence.",
         "realizer_input": null,
-        "structured_clause": {
-          "subject": {
-            "tokens": [
-              "old",
-              "man",
-              "with",
-              "a",
-              "stick"
-            ],
-            "head": "man",
-            "determiner": "the",
-            "number": "singular",
-            "adjectives": [
-              "old"
-            ],
-            "noun_modifiers": [],
-            "participial_modifiers": [],
-            "proper_name": false,
-            "quantifier": null,
-            "numeral": null,
-            "possessor": null,
-            "person": null,
-            "conjunction": null,
-            "coordinated": [],
-            "comparison": null
-          },
-          "predicate": {
-            "lemma": "stand",
-            "tense": "past",
-            "aspect": [],
-            "mood": "indicative",
-            "negative": false,
-            "modal": null,
-            "object": null,
-            "indirect_object": null,
-            "complement": null,
-            "complement_kind": null,
-            "complement_conjunction": null,
-            "coordinated_complements": [],
-            "modifiers": [],
-            "particles": [],
-            "pps": [
-              {
-                "adposition": "beside",
-                "object": {
-                  "tokens": [
-                    "fence"
-                  ],
-                  "head": "fence",
-                  "determiner": "the",
-                  "number": "singular",
-                  "adjectives": [],
-                  "noun_modifiers": [],
-                  "participial_modifiers": [],
-                  "proper_name": false,
-                  "quantifier": null,
-                  "numeral": null,
-                  "possessor": null,
-                  "person": null,
-                  "conjunction": null,
-                  "coordinated": [],
-                  "comparison": null
-                }
-              }
-            ],
-            "comparison": null,
-            "conjunction": null,
-            "coordinated": []
-          },
-          "clause_type": "declarative",
-          "conjunction": null,
-          "coordinated": null,
-          "source_tokens": [
-            "The",
-            "old",
-            "man",
-            "with",
-            "a",
-            "stick",
-            "did",
-            "stand",
-            "beside",
-            "the",
-            "fence"
-          ],
-          "wh_word": null
-        },
-        "realization_receipts": [
-          "beside",
-          "fence",
-          "man",
-          "old",
-          "past",
-          "stand"
-        ],
-        "realization_strategies": {
-          "word_order": "SOV",
-          "adposition": "postposition",
-          "adjective_position": "before",
-          "possession": "juxtaposition",
-          "comparison": "particle",
-          "question": "word-order",
-          "coordination": {
-            "np": {
-              "strategy": "juxtaposition",
-              "position": "between"
-            },
-            "predicate": {
-              "strategy": "particle",
-              "position": "between",
-              "shared_subject": true
-            },
-            "clause": {
-              "strategy": "juxtaposition",
-              "position": "between"
-            }
-          },
-          "tense": {
-            "past": "particle",
-            "future": "particle"
-          },
-          "aspect": {
-            "progressive": "affix",
-            "perfect": "affix"
-          },
-          "mood": {
-            "imperative": "affix"
-          }
-        }
+        "structured_source": null,
+        "structured_realized": false,
+        "structured_clause": null,
+        "realization_receipts": [],
+        "realization_strategies": {}
       }
     },
     {
@@ -7425,6 +8098,8 @@
         "missing_lexemes": [],
         "normalized_english": "On a sunny morning we started for the mountain.",
         "realizer_input": null,
+        "structured_source": null,
+        "structured_realized": false,
         "structured_clause": null,
         "realization_receipts": [],
         "realization_strategies": {}
@@ -7433,10 +8108,10 @@
     {
       "type": "Translation",
       "english": "The girls with wreaths of flowers danced.",
-      "surface": "[PARTIAL]",
-      "gloss": "girl.NOM DANCED",
-      "status": "partial",
-      "reason": "not realized: wreaths, flowers",
+      "surface": "otashuodu otaboruutu otaodoui bicildu gumdra  todou dangalja",
+      "gloss": "GIRL.PL WITH WREATH.PL OF FLOWER.PL  DANCE-PST",
+      "status": "ok",
+      "reason": "complete",
       "ir": {
         "tokens": [
           "the",
@@ -7493,9 +8168,158 @@
         "missing_lexemes": [],
         "normalized_english": "The girl with wreath of flower danced.",
         "realizer_input": null,
-        "structured_clause": null,
-        "realization_receipts": [],
-        "realization_strategies": {}
+        "structured_source": "The girls with wreaths of flowers danced.",
+        "structured_realized": true,
+        "structured_clause": {
+          "subject": {
+            "tokens": [
+              "girls"
+            ],
+            "head": "girl",
+            "determiner": "the",
+            "number": "plural",
+            "adjectives": [],
+            "noun_modifiers": [],
+            "participial_modifiers": [],
+            "attached_pps": [
+              {
+                "adposition": "with",
+                "object": {
+                  "tokens": [
+                    "wreaths"
+                  ],
+                  "head": "wreath",
+                  "determiner": null,
+                  "number": "plural",
+                  "adjectives": [],
+                  "noun_modifiers": [],
+                  "participial_modifiers": [],
+                  "attached_pps": [
+                    {
+                      "adposition": "of",
+                      "object": {
+                        "tokens": [
+                          "flowers"
+                        ],
+                        "head": "flower",
+                        "determiner": null,
+                        "number": "plural",
+                        "adjectives": [],
+                        "noun_modifiers": [],
+                        "participial_modifiers": [],
+                        "attached_pps": [],
+                        "proper_name": false,
+                        "quantifier": null,
+                        "numeral": null,
+                        "possessor": null,
+                        "person": null,
+                        "conjunction": null,
+                        "coordinated": [],
+                        "comparison": null
+                      }
+                    }
+                  ],
+                  "proper_name": false,
+                  "quantifier": null,
+                  "numeral": null,
+                  "possessor": null,
+                  "person": null,
+                  "conjunction": null,
+                  "coordinated": [],
+                  "comparison": null
+                }
+              }
+            ],
+            "proper_name": false,
+            "quantifier": null,
+            "numeral": null,
+            "possessor": null,
+            "person": null,
+            "conjunction": null,
+            "coordinated": [],
+            "comparison": null
+          },
+          "predicate": {
+            "lemma": "dance",
+            "tense": "past",
+            "aspect": [],
+            "mood": "indicative",
+            "negative": false,
+            "modal": null,
+            "object": null,
+            "indirect_object": null,
+            "complement": null,
+            "complement_kind": null,
+            "complement_conjunction": null,
+            "coordinated_complements": [],
+            "modifiers": [],
+            "particles": [],
+            "pps": [],
+            "comparison": null,
+            "conjunction": null,
+            "coordinated": []
+          },
+          "clause_type": "declarative",
+          "conjunction": null,
+          "coordinated": null,
+          "source_tokens": [
+            "The",
+            "girls",
+            "with",
+            "wreaths",
+            "of",
+            "flowers",
+            "danced"
+          ],
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
+        },
+        "realization_receipts": [
+          "dance",
+          "flower",
+          "girl",
+          "np attachment",
+          "of",
+          "past",
+          "with",
+          "wreath"
+        ],
+        "realization_strategies": {
+          "word_order": "SOV",
+          "adposition": "postposition",
+          "adjective_position": "before",
+          "possession": "juxtaposition",
+          "comparison": "particle",
+          "question": "word-order",
+          "coordination": {
+            "np": {
+              "strategy": "juxtaposition",
+              "position": "between"
+            },
+            "predicate": {
+              "strategy": "particle",
+              "position": "between",
+              "shared_subject": true
+            },
+            "clause": {
+              "strategy": "juxtaposition",
+              "position": "between"
+            }
+          },
+          "tense": {
+            "past": "particle",
+            "future": "particle"
+          },
+          "aspect": {
+            "progressive": "affix",
+            "perfect": "affix"
+          },
+          "mood": {
+            "imperative": "affix"
+          }
+        }
       }
     },
     {
@@ -7555,6 +8379,8 @@
         "missing_lexemes": [],
         "normalized_english": "The sun looked through the branch.",
         "realizer_input": null,
+        "structured_source": "The sun looked through the branches.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -7566,6 +8392,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -7603,6 +8430,7 @@
                   "adjectives": [],
                   "noun_modifiers": [],
                   "participial_modifiers": [],
+                  "attached_pps": [],
                   "proper_name": false,
                   "quantifier": null,
                   "numeral": null,
@@ -7629,7 +8457,10 @@
             "the",
             "branches"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "branch",
@@ -7725,6 +8556,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog see the cat.",
         "realizer_input": null,
+        "structured_source": "The dog sees the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -7736,6 +8569,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -7762,6 +8596,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -7793,7 +8628,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -7895,6 +8733,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
+        "structured_source": "The dog is seeing the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -7906,6 +8746,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -7934,6 +8775,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -7966,7 +8808,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -8069,6 +8914,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
+        "structured_source": "The dog has seen the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -8080,6 +8927,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -8108,6 +8956,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -8140,7 +8989,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -8250,6 +9102,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
+        "structured_source": "The dog has been seeing the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -8261,6 +9115,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -8290,6 +9145,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -8323,7 +9179,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -8427,6 +9286,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
+        "structured_source": "The dog was seeing the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -8438,6 +9299,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -8466,6 +9328,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -8498,7 +9361,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -8602,6 +9468,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
+        "structured_source": "The dog can see the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -8613,6 +9481,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -8639,6 +9508,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -8671,7 +9541,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -8774,6 +9647,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
+        "structured_source": "The dog must see the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -8785,6 +9660,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -8811,6 +9687,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -8843,7 +9720,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -8946,6 +9826,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
+        "structured_source": "The dog should see the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -8957,6 +9839,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -8983,6 +9866,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -9015,7 +9899,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -9118,6 +10005,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
+        "structured_source": "The dog might see the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -9129,6 +10018,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -9155,6 +10045,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -9187,7 +10078,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -9234,10 +10128,10 @@
     {
       "type": "Translation",
       "english": "Will you go with us or wait here?",
-      "surface": "[PARTIAL]",
-      "gloss": "2SG  GO-FUT WITH 1PL OR HERE 2SG  WAIT",
-      "status": "partial",
-      "reason": "not realized: question marking",
+      "surface": "zhanliu baiji otoo gumdra gumdalj jianjii menged eriyi menged",
+      "gloss": "2SG  GO-FUT WITH 1PL OR HERE 2SG  WAIT Q",
+      "status": "ok",
+      "reason": "complete",
       "ir": {
         "tokens": [
           "will",
@@ -9304,6 +10198,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": "you will go with us or wait here?",
+        "structured_source": "Will you go with us or wait here?",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -9315,6 +10211,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -9352,6 +10249,7 @@
                   "adjectives": [],
                   "noun_modifiers": [],
                   "participial_modifiers": [],
+                  "attached_pps": [],
                   "proper_name": false,
                   "quantifier": null,
                   "numeral": null,
@@ -9394,7 +10292,7 @@
               }
             ]
           },
-          "clause_type": "declarative",
+          "clause_type": "yes_no_question",
           "conjunction": null,
           "coordinated": null,
           "source_tokens": [
@@ -9407,7 +10305,10 @@
             "wait",
             "here"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "coordinated predicate",
@@ -9415,6 +10316,7 @@
           "future",
           "go",
           "here",
+          "question",
           "us",
           "wait",
           "with",
@@ -9501,6 +10403,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
+        "structured_source": "The dog is big.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -9512,6 +10416,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -9540,6 +10445,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -9568,7 +10474,10 @@
             "is",
             "big"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "be (temporary state)",
@@ -9676,6 +10585,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
+        "structured_source": "The dog is bigger than the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -9687,6 +10598,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -9715,6 +10627,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -9742,6 +10655,7 @@
                 "adjectives": [],
                 "noun_modifiers": [],
                 "participial_modifiers": [],
+                "attached_pps": [],
                 "proper_name": false,
                 "quantifier": null,
                 "numeral": null,
@@ -9768,7 +10682,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "be (temporary state)",
@@ -9866,6 +10783,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
+        "structured_source": "The dog is the biggest.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -9877,6 +10796,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -9906,6 +10826,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -9939,7 +10860,10 @@
             "the",
             "biggest"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "be (temporary state)",
@@ -10050,6 +10974,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": "you like summer or winter better?",
+        "structured_source": "Do you like summer or winter better?",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -10061,6 +10987,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -10087,6 +11014,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -10105,6 +11033,7 @@
                   "adjectives": [],
                   "noun_modifiers": [],
                   "participial_modifiers": [],
+                  "attached_pps": [],
                   "proper_name": false,
                   "quantifier": null,
                   "numeral": null,
@@ -10141,7 +11070,10 @@
             "winter",
             "better"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "coordination",
@@ -10234,6 +11166,8 @@
         "missing_lexemes": [],
         "normalized_english": "The day grow shorter.",
         "realizer_input": null,
+        "structured_source": "The days grow shorter.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -10245,6 +11179,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -10273,6 +11208,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -10301,7 +11237,10 @@
             "grow",
             "shorter"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "day",
@@ -10427,7 +11366,161 @@
         "missing_lexemes": [],
         "normalized_english": "The dog see the cat because the cat is small.",
         "realizer_input": null,
-        "structured_clause": null,
+        "structured_source": "The dog sees the cat because the cat is small.",
+        "structured_realized": false,
+        "structured_clause": {
+          "subject": {
+            "tokens": [
+              "dog"
+            ],
+            "head": "dog",
+            "determiner": "the",
+            "number": "singular",
+            "adjectives": [],
+            "noun_modifiers": [],
+            "participial_modifiers": [],
+            "attached_pps": [],
+            "proper_name": false,
+            "quantifier": null,
+            "numeral": null,
+            "possessor": null,
+            "person": null,
+            "conjunction": null,
+            "coordinated": [],
+            "comparison": null
+          },
+          "predicate": {
+            "lemma": "see",
+            "tense": "present",
+            "aspect": [],
+            "mood": "indicative",
+            "negative": false,
+            "modal": null,
+            "object": {
+              "tokens": [
+                "cat"
+              ],
+              "head": "cat",
+              "determiner": "the",
+              "number": "singular",
+              "adjectives": [],
+              "noun_modifiers": [],
+              "participial_modifiers": [],
+              "attached_pps": [],
+              "proper_name": false,
+              "quantifier": null,
+              "numeral": null,
+              "possessor": null,
+              "person": null,
+              "conjunction": null,
+              "coordinated": [],
+              "comparison": null
+            },
+            "indirect_object": null,
+            "complement": null,
+            "complement_kind": null,
+            "complement_conjunction": null,
+            "coordinated_complements": [],
+            "modifiers": [],
+            "particles": [],
+            "pps": [],
+            "comparison": null,
+            "conjunction": null,
+            "coordinated": []
+          },
+          "clause_type": "declarative",
+          "conjunction": null,
+          "coordinated": null,
+          "source_tokens": [
+            "The",
+            "dog",
+            "sees",
+            "the",
+            "cat",
+            "because",
+            "the",
+            "cat",
+            "is",
+            "small"
+          ],
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": {
+            "subject": {
+              "tokens": [
+                "cat"
+              ],
+              "head": "cat",
+              "determiner": "the",
+              "number": "singular",
+              "adjectives": [],
+              "noun_modifiers": [],
+              "participial_modifiers": [],
+              "attached_pps": [],
+              "proper_name": false,
+              "quantifier": null,
+              "numeral": null,
+              "possessor": null,
+              "person": null,
+              "conjunction": null,
+              "coordinated": [],
+              "comparison": null
+            },
+            "predicate": {
+              "lemma": "be (temporary state)",
+              "tense": "present",
+              "aspect": [],
+              "mood": "indicative",
+              "negative": false,
+              "modal": null,
+              "object": null,
+              "indirect_object": null,
+              "complement": {
+                "tokens": [
+                  "small"
+                ],
+                "head": "small",
+                "determiner": null,
+                "number": "singular",
+                "adjectives": [],
+                "noun_modifiers": [],
+                "participial_modifiers": [],
+                "attached_pps": [],
+                "proper_name": false,
+                "quantifier": null,
+                "numeral": null,
+                "possessor": null,
+                "person": null,
+                "conjunction": null,
+                "coordinated": [],
+                "comparison": null
+              },
+              "complement_kind": "adjective",
+              "complement_conjunction": null,
+              "coordinated_complements": [],
+              "modifiers": [],
+              "particles": [],
+              "pps": [],
+              "comparison": null,
+              "conjunction": null,
+              "coordinated": []
+            },
+            "clause_type": "declarative",
+            "conjunction": null,
+            "coordinated": null,
+            "source_tokens": [
+              "the",
+              "cat",
+              "is",
+              "small"
+            ],
+            "wh_word": null,
+            "wh_degree": null,
+            "subordinate": null,
+            "subordinate_relation": null
+          },
+          "subordinate_relation": "cause"
+        },
         "realization_receipts": [],
         "realization_strategies": {}
       }
@@ -10516,6 +11609,8 @@
         "missing_lexemes": [],
         "normalized_english": "If the dog see the cat the bird will fly.",
         "realizer_input": null,
+        "structured_source": null,
+        "structured_realized": false,
         "structured_clause": null,
         "realization_receipts": [],
         "realization_strategies": {}
@@ -10592,6 +11687,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog that see the cat is happy.",
         "realizer_input": null,
+        "structured_source": null,
+        "structured_realized": false,
         "structured_clause": null,
         "realization_receipts": [],
         "realization_strategies": {}
@@ -10668,6 +11765,8 @@
         "missing_lexemes": [],
         "normalized_english": "I know that the dog see the cat.",
         "realizer_input": null,
+        "structured_source": null,
+        "structured_realized": false,
         "structured_clause": null,
         "realization_receipts": [],
         "realization_strategies": {}
@@ -10738,6 +11837,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
+        "structured_source": null,
+        "structured_realized": false,
         "structured_clause": null,
         "realization_receipts": [],
         "realization_strategies": {}
@@ -10796,6 +11897,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
+        "structured_source": null,
+        "structured_realized": false,
         "structured_clause": null,
         "realization_receipts": [],
         "realization_strategies": {}
@@ -10852,6 +11955,8 @@
         "missing_lexemes": [],
         "normalized_english": "ala That news is sad.",
         "realizer_input": null,
+        "structured_source": "Alas! That news is sad.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -10864,6 +11969,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -10892,6 +11998,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -10927,7 +12034,10 @@
             "is",
             "sad"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "be (temporary state)",
@@ -11048,6 +12158,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
+        "structured_source": "Oh dear! The wind has blown my hat away!",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -11062,6 +12174,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -11090,6 +12203,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -11103,6 +12217,7 @@
                 "adjectives": [],
                 "noun_modifiers": [],
                 "participial_modifiers": [],
+                "attached_pps": [],
                 "proper_name": false,
                 "quantifier": null,
                 "numeral": null,
@@ -11145,7 +12260,10 @@
             "hat",
             "away"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "away",
@@ -11253,6 +12371,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
+        "structured_source": null,
+        "structured_realized": false,
         "structured_clause": null,
         "realization_receipts": [],
         "realization_strategies": {}
@@ -11323,6 +12443,8 @@
         "missing_lexemes": [],
         "normalized_english": "Show the guest these shell my son.",
         "realizer_input": "Show the guest these shell my son!",
+        "structured_source": "Show the guests these shells, my son.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": null,
           "predicate": {
@@ -11349,6 +12471,7 @@
                 "shell"
               ],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": "these",
               "numeral": null,
@@ -11382,7 +12505,10 @@
             "my",
             "son"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "guest",
@@ -11479,6 +12605,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog see the cat.",
         "realizer_input": null,
+        "structured_source": "The dog sees the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -11490,6 +12618,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -11516,6 +12645,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -11547,7 +12677,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -11655,6 +12788,8 @@
         "missing_lexemes": [],
         "normalized_english": null,
         "realizer_input": null,
+        "structured_source": "The dog does not see the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -11666,6 +12801,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -11692,6 +12828,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -11731,7 +12868,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -11835,6 +12975,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog never see the cat.",
         "realizer_input": null,
+        "structured_source": "The dog never sees the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -11846,6 +12988,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -11872,6 +13015,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -11910,7 +13054,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -12006,6 +13153,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog see no cat.",
         "realizer_input": null,
+        "structured_source": "The dog sees no cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -12017,6 +13166,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -12044,6 +13194,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -12075,7 +13226,10 @@
             "no",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -12163,6 +13317,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog see nothing.",
         "realizer_input": null,
+        "structured_source": "The dog sees nothing.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -12174,6 +13330,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -12212,7 +13369,10 @@
             "sees",
             "nothing"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "dog",
@@ -12305,6 +13465,8 @@
         "missing_lexemes": [],
         "normalized_english": "The cat see the dog.",
         "realizer_input": null,
+        "structured_source": "The cat sees the dog.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -12316,6 +13478,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -12342,6 +13505,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -12373,7 +13537,10 @@
             "the",
             "dog"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -12467,6 +13634,8 @@
         "missing_lexemes": [],
         "normalized_english": "The dog see the cat.",
         "realizer_input": null,
+        "structured_source": "The dog sees the cat.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -12478,6 +13647,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -12504,6 +13674,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -12535,7 +13706,10 @@
             "the",
             "cat"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "cat",
@@ -12641,6 +13815,8 @@
         "missing_lexemes": [],
         "normalized_english": "The girl give the boy a book.",
         "realizer_input": null,
+        "structured_source": "The girl gives the boy a book.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -12652,6 +13828,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -12682,6 +13859,7 @@
                 "boy"
               ],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -12715,7 +13893,10 @@
             "a",
             "book"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "book",
@@ -12828,6 +14009,8 @@
         "missing_lexemes": [],
         "normalized_english": "The girl give a book to the boy.",
         "realizer_input": null,
+        "structured_source": "The girl gives a book to the boy.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -12839,6 +14022,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -12865,6 +14049,7 @@
               "adjectives": [],
               "noun_modifiers": [],
               "participial_modifiers": [],
+              "attached_pps": [],
               "proper_name": false,
               "quantifier": null,
               "numeral": null,
@@ -12894,6 +14079,7 @@
                   "adjectives": [],
                   "noun_modifiers": [],
                   "participial_modifiers": [],
+                  "attached_pps": [],
                   "proper_name": false,
                   "quantifier": null,
                   "numeral": null,
@@ -12922,7 +14108,10 @@
             "the",
             "boy"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "book",
@@ -13024,6 +14213,8 @@
         "missing_lexemes": [],
         "normalized_english": "The man did stand beside the fence.",
         "realizer_input": null,
+        "structured_source": "The man stood beside the fence.",
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -13035,6 +14226,7 @@
             "adjectives": [],
             "noun_modifiers": [],
             "participial_modifiers": [],
+            "attached_pps": [],
             "proper_name": false,
             "quantifier": null,
             "numeral": null,
@@ -13072,6 +14264,7 @@
                   "adjectives": [],
                   "noun_modifiers": [],
                   "participial_modifiers": [],
+                  "attached_pps": [],
                   "proper_name": false,
                   "quantifier": null,
                   "numeral": null,
@@ -13093,13 +14286,15 @@
           "source_tokens": [
             "The",
             "man",
-            "did",
-            "stand",
+            "stood",
             "beside",
             "the",
             "fence"
           ],
-          "wh_word": null
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
         },
         "realization_receipts": [
           "beside",

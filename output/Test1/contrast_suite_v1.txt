@@ -78,28 +78,28 @@ Status: ok
 Reason: complete
 [Translation]
 English: Is today Monday?
-Language: [PARTIAL]
-Gloss: [PARTIAL]
-Status: partial
-Reason: recognized construction not yet fully realized
+Language: bolusuubu coongnu yauduuy mongun
+Gloss: BE (TEMPORARY STATE) TODAY MONDAY Q
+Status: ok
+Reason: complete
 [Translation]
 English: Where is the dog?
-Language: [PARTIAL]
-Gloss: [PARTIAL]
-Status: partial
-Reason: recognized construction not yet fully realized
+Language: monainu bolusuubu oombudb
+Gloss: BE (TEMPORARY STATE) DOG-DEF WH-WHERE
+Status: ok
+Reason: complete
 [Translation]
 English: When will the guests arrive?
-Language: [PARTIAL]
-Gloss: [PARTIAL]
-Status: partial
-Reason: recognized construction not yet fully realized
+Language: oruui saluuru ebeigsitu buubalinb
+Gloss: ARRIVE-FUT GUEST.PL-DEF WH-WHEN
+Status: ok
+Reason: complete
 [Translation]
 English: How wide is the river?
-Language: [PARTIAL]
-Gloss: [PARTIAL]
-Status: partial
-Reason: recognized construction not yet fully realized
+Language: mondun bolusuubu nuubisab qadakil
+Gloss: BE (TEMPORARY STATE) RIVER-DEF WIDE DEG-WIDE WH-HOW
+Status: ok
+Reason: complete
 [Translation]
 English: The dog sees the cat and the bird.
 Language: saralunbu oombudb ajasidob kuuirtob
@@ -132,10 +132,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: The dog sees the cat, and the bird sees the dog.
-Language: [PARTIAL]
-Gloss: SEE DOG-DEF CAT:ACCUSATIVE-DEF AND SEE DOG-DEF DOG:ACCUSATIVE-DEF
-Status: partial
-Reason: not realized: bird
+Language: saralunbu oombudb ajasidob kuuudau saralunbu kuuirtub oombudob
+Gloss: SEE DOG-DEF CAT:ACCUSATIVE-DEF AND SEE BIRD-DEF DOG:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
 [Translation]
 English: John and Elizabeth are friends.
 Language: [PARTIAL]
@@ -156,10 +156,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: I awoke early, dressed hastily, and went to breakfast.
-Language: [PARTIAL]
-Gloss: AWAKE-PST 1SG EARLY HASTY AND GO-PST 1SG TO BREAKFAST
-Status: partial
-Reason: not realized: dressed
+Language: tencud jaulal usaiqan nabcins kuuudau mookilal usaiqan sarun kuuudau tencud ebual usaiqan kemuula uugsen
+Gloss: AWAKE-PST 1SG EARLY AND DRESSED 1SG HASTY AND GO-PST 1SG TO BREAKFAST
+Status: ok
+Reason: complete
 [Translation]
 English: See the cat.
 Language: saralunde ajasidob
@@ -180,10 +180,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: Take this note, carry it to your mother, and wait for an answer.
-Language: [PARTIAL]
-Gloss: TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE TO 2SG-GEN MOTHER AND WAIT-IMP FOR ANSWER
-Status: partial
-Reason: not realized: carry
+Language: totande aaca tanigho kuuudau ooroljidbu irtinut kemuula buuguuj qaicako kuuudau sabundbu gedbuuk bitalte
+Gloss: TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE AND CARRY-IMP 3SG TO 2SG-GEN MOTHER AND WAIT-IMP FOR ANSWER
+Status: ok
+Reason: complete
 [Translation]
 English: Be happy.
 Language: bolusuude danig
@@ -204,10 +204,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: The little girl made the doll's dress herself.
-Language: [PARTIAL]
-Gloss: MAKE-PST GIRL-DEF LITTLE DRESS:ACCUSATIVE-DEF DOLL
-Status: partial
-Reason: not realized: possessive relation
+Language: tencud silduabu uluujerb qoljime demuob daraulakoko
+Gloss: MAKE-PST GIRL-DEF LITTLE DOLL:GENITIVE-GEN DRESS:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
 [Translation]
 English: The dog sees its house.
 Language: saralunbu oombudb yongjo irtinutko
@@ -246,10 +246,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: The old man with a stick stood beside the fence.
-Language: [PARTIAL]
-Gloss: STAND-PST MAN-DEF OLD BESIDE FENCE-DEF
-Status: partial
-Reason: not realized: stick
+Language: odujubu ouluuju matariu orusundo olon orolanb
+Gloss: STICK man.NOM old stand.ACC BESIDE fence.LOC-DEF
+Status: ok
+Reason: complete
 [Translation]
 English: On a sunny morning we started for the mountains.
 Language: [PARTIAL]
@@ -258,10 +258,10 @@ Status: partial
 Reason: recognized construction not yet fully realized
 [Translation]
 English: The girls with wreaths of flowers danced.
-Language: [PARTIAL]
-Gloss: DANCED girl.NOM-DEF
-Status: partial
-Reason: not realized: wreaths, flowers
+Language: tencud cioobcimatu buulaijerb jegdele buusairkuu yuuilun buudali
+Gloss: DANCE-PST GIRL.PL-DEF WITH WREATH.PL OF FLOWER.PL
+Status: ok
+Reason: complete
 [Translation]
 English: The sun looked through the branches.
 Language: tencud balanbu dasuugib uunid buorailenb
@@ -324,10 +324,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: Will you go with us or wait here?
-Language: [PARTIAL]
-Gloss: GO-FUT 2SG WITH 1PL OR WAIT 2SG HERE
-Status: partial
-Reason: not realized: question marking
+Language: saluuru ebue qaica jegdele daligur qoni sabune qaica nuten mongun
+Gloss: GO-FUT 2SG WITH 1PL OR WAIT 2SG HERE Q
+Status: ok
+Reason: complete
 [Translation]
 English: The dog is big.
 Language: bolusuubu oombudb casuumu

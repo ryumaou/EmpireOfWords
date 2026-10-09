@@ -1455,7 +1455,7 @@ Morphophonemics: **tone_like_none**
 ### Translation
 - English: Evidently that gate is never opened, for the long grass and the great hemlocks grow close against it.
 - Language: **[PARTIAL]**
-- Gloss: `EVIDENT THAT NEVER GATE  OPEN-PST-NEG FOR LONG GRASS AND GATE  CLOSE-NEG`
+- Gloss: `EVIDENT THAT NEVER GATE  OPEN-PST-NEG FOR LONG GRASS AND HEMLOCK GREAT GROW  CLOSE-NEG`
 - Status: `partial`
 
 ### Translation

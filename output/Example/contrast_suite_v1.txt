@@ -78,28 +78,28 @@ Status: ok
 Reason: complete
 [Translation]
 English: Is today Monday?
-Language: [PARTIAL]
-Gloss: [PARTIAL]
-Status: partial
-Reason: recognized construction not yet fully realized
+Language: goyahab botasu uuge dezu
+Gloss: TODAY MONDAY BE (TEMPORARY STATE) Q
+Status: ok
+Reason: complete
 [Translation]
 English: Where is the dog?
-Language: [PARTIAL]
-Gloss: [PARTIAL]
-Status: partial
-Reason: recognized construction not yet fully realized
+Language: janni  uuge ishiyot
+Gloss: DOG  BE (TEMPORARY STATE) WH-WHERE
+Status: ok
+Reason: complete
 [Translation]
 English: When will the guests arrive?
-Language: [PARTIAL]
-Gloss: [PARTIAL]
-Status: partial
-Reason: recognized construction not yet fully realized
+Language: ausade  udealtis antapap
+Gloss: GUEST.PL  ARRIVE-FUT WH-WHEN
+Status: ok
+Reason: complete
 [Translation]
 English: How wide is the river?
-Language: [PARTIAL]
-Gloss: [PARTIAL]
-Status: partial
-Reason: recognized construction not yet fully realized
+Language: bayuyos todasha uuge devinji
+Gloss: RIVER WIDE BE (TEMPORARY STATE) DEG-WIDE WH-HOW
+Status: ok
+Reason: complete
 [Translation]
 English: The dog sees the cat and the bird.
 Language: janni zumahittasu yamasu zumawopihyu karinta
@@ -132,10 +132,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: The dog sees the cat, and the bird sees the dog.
-Language: [PARTIAL]
-Gloss: DOG CAT:ACCUSATIVE SEE AND DOG DOG:ACCUSATIVE SEE
-Status: partial
-Reason: not realized: bird
+Language: janni zumahittasu karinta wopihyu zumajanni karinta
+Gloss: DOG CAT:ACCUSATIVE SEE AND BIRD DOG:ACCUSATIVE SEE
+Status: ok
+Reason: complete
 [Translation]
 English: John and Elizabeth are friends.
 Language: [PARTIAL]
@@ -156,10 +156,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: I awoke early, dressed hastily, and went to breakfast.
-Language: [PARTIAL]
-Gloss: 1SG  AWAKE-PST EARLY HASTY AND 1SG  GO-PST TO BREAKFAST:LOCATIVE
-Status: partial
-Reason: not realized: dressed
+Language: adatte gabyahi hodabya yamasu adatte seyawo pyujita yamasu adatte hyanohi bonsilizen bomasu
+Gloss: 1SG  AWAKE-PST EARLY AND 1SG  DRESSED HASTY AND 1SG  GO-PST TO BREAKFAST:LOCATIVE
+Status: ok
+Reason: complete
 [Translation]
 English: See the cat.
 Language: sukarinta zumahittasu
@@ -180,10 +180,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: Take this note, carry it to your mother, and wait for an answer.
-Language: [PARTIAL]
-Gloss: TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE TO 2SG-GEN MOTHER:LOCATIVE AND WAIT-IMP FOR ANSWER:LOCATIVE
-Status: partial
-Reason: not realized: carry
+Language: suowatak rosoo zumitte yamasu sukamashi hitou altapijudic sokamasazen bomasu yamasu sujudata tsuzen woutte
+Gloss: TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE AND CARRY-IMP 3SG TO 2SG-GEN MOTHER:LOCATIVE AND WAIT-IMP FOR ANSWER:LOCATIVE
+Status: ok
+Reason: complete
 [Translation]
 English: Be happy.
 Language: suuuge jinatta
@@ -204,10 +204,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: The little girl made the doll's dress herself.
-Language: [PARTIAL]
-Gloss: LITTLE GIRL DOLL DRESS:ACCUSATIVE MAKE-PST
-Status: partial
-Reason: not realized: possessive relation
+Language: yokunta colevit altaltakeao zumamuntsu nyuzumahi
+Gloss: LITTLE GIRL DOLL:GENITIVE-GEN DRESS:ACCUSATIVE MAKE-PST
+Status: ok
+Reason: complete
 [Translation]
 English: The dog sees its house.
 Language: janni altahitou zumazattaki karinta
@@ -246,10 +246,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: The old man with a stick stood beside the fence.
-Language: [PARTIAL]
-Gloss: OLD MAN  STAND-PST BESIDE FENCE:LOCATIVE
-Status: partial
-Reason: not realized: stick
+Language: monyuzu anchita zumoopyom kagyuma netozen zutsu
+Gloss: old man.NOM stand.ACC STICK BESIDE fence.LOC
+Status: ok
+Reason: complete
 [Translation]
 English: On a sunny morning we started for the mountains.
 Language: [PARTIAL]
@@ -258,10 +258,10 @@ Status: partial
 Reason: recognized construction not yet fully realized
 [Translation]
 English: The girls with wreaths of flowers danced.
-Language: [PARTIAL]
-Gloss: girl.NOM DANCED
-Status: partial
-Reason: not realized: wreaths, flowers
+Language: colevitade yodatedezen semasidezen hiyopyu zaku  yahyucahi
+Gloss: GIRL.PL WITH WREATH.PL:LOCATIVE OF FLOWER.PL:LOCATIVE  DANCE-PST
+Status: ok
+Reason: complete
 [Translation]
 English: The sun looked through the branches.
 Language: datta  karisejahi ukudezen shisqui
@@ -324,10 +324,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: Will you go with us or wait here?
-Language: [PARTIAL]
-Gloss: 2SG  GO-FUT WITH 1PL OR 2SG  WAIT HERE
-Status: partial
-Reason: not realized: question marking
+Language: pijudic udehyano zahasu zaku luporu pijudic judata nihange dezu
+Gloss: 2SG  GO-FUT WITH 1PL OR 2SG  WAIT HERE Q
+Status: ok
+Reason: complete
 [Translation]
 English: The dog is big.
 Language: janni yojizoz uuge

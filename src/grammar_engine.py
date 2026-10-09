@@ -670,11 +670,26 @@ def analyze_translation(sentence,g,entries,forms):
     # v6.3 structured realization.  Parse semantic roles/features first and realize
     # them through the generated target grammar.  If this conservative first-pass
     # parser cannot represent the sentence, retain the proven legacy path below.
-    structured_source=normalized if ' did ' in (' '+normalized.lower()+' ') and ' did ' not in (' '+raw.lower()+' ') else raw
-    structured_ir=_parse_structured_clause(structured_source,by,_lexical_match,_english_tokens,_lemma_candidates,constructions,g)
+    # The original sentence is authoritative for coordinated predicates and tense.
+    # Legacy normalization can insert DID and change lexical verb forms, which
+    # previously broke an otherwise successful three-predicate semantic parse.
+    # Try original English first; use normalized English only as a fallback.
+    structured_ir=None
     structured=None
-    if structured_ir is not None:
-        structured=_realize_structured_clause(structured_ir,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix,adjective_form)
+    structured_source=None
+    for candidate in dict.fromkeys((raw, normalized)):
+        candidate_ir=_parse_structured_clause(candidate,by,_lexical_match,_english_tokens,_lemma_candidates,constructions,g)
+        if candidate_ir is None:
+            continue
+        if structured_ir is None:
+            structured_ir=candidate_ir
+            structured_source=candidate
+        candidate_output=_realize_structured_clause(candidate_ir,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix,adjective_form)
+        if candidate_output is not None:
+            structured_ir=candidate_ir
+            structured_source=candidate
+            structured=candidate_output
+            break
     if structured:
         surface=structured['surface']; gloss=structured['gloss']; legacy_status='ok'
     else:
@@ -743,6 +758,8 @@ def analyze_translation(sentence,g,entries,forms):
     ir=dict(base_ir)
     ir['normalized_english']=normalized if normalized!=raw else None
     ir['realizer_input']=prepared if prepared!=normalized else None
+    ir['structured_source']=structured_source
+    ir['structured_realized']=structured is not None
     ir['structured_clause']=structured.get('ir') if structured else (structured_ir.to_dict() if structured_ir is not None else None)
     ir['realization_receipts']=sorted(structured.get('receipts',())) if structured else []
     ir['realization_strategies']=structured.get('strategies',{}) if structured else {}

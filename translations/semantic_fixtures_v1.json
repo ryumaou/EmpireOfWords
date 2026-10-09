@@ -1,0 +1,291 @@
+[
+  {
+    "id": "contrast-23-independent-clauses",
+    "sentence": "The dog sees the cat, and the bird sees the dog.",
+    "lexicon": {
+      "dog": "n",
+      "cat": "n",
+      "bird": "n",
+      "see": "v"
+    },
+    "expected_roles": [
+      {
+        "subject": "dog",
+        "predicate": "see",
+        "object": "cat",
+        "tense": "present"
+      },
+      {
+        "subject": "bird",
+        "predicate": "see",
+        "object": "dog",
+        "tense": "present"
+      }
+    ]
+  },
+  {
+    "id": "contrast-27-three-predicates",
+    "sentence": "I awoke early, dressed hastily, and went to breakfast.",
+    "lexicon": {
+      "awake": "v",
+      "dress": "v",
+      "go": "v",
+      "early": "adv",
+      "hastily": "adv",
+      "breakfast": "n"
+    },
+    "expected_roles": [
+      {
+        "subject": "i",
+        "predicate": "awake",
+        "object": null,
+        "tense": "past"
+      },
+      {
+        "subject": "i",
+        "predicate": "dress",
+        "object": null,
+        "tense": "past"
+      },
+      {
+        "subject": "i",
+        "predicate": "go",
+        "object": null,
+        "tense": "past"
+      }
+    ]
+  },
+  {
+    "id": "contrast-31-three-imperatives",
+    "sentence": "Take this note, carry it to your mother, and wait for an answer.",
+    "lexicon": {
+      "take": "v",
+      "note": "n",
+      "carry": "v",
+      "mother": "n",
+      "wait": "v",
+      "answer": "n"
+    },
+    "expected_roles": [
+      {
+        "subject": null,
+        "predicate": "take",
+        "object": "note",
+        "tense": "present"
+      },
+      {
+        "subject": null,
+        "predicate": "carry",
+        "object": "it",
+        "tense": "present"
+      },
+      {
+        "subject": null,
+        "predicate": "wait",
+        "object": null,
+        "tense": "present"
+      }
+    ]
+  },
+  {
+    "id": "contrast-42-np-attachment",
+    "sentence": "The old man with a stick stood beside the fence.",
+    "lexicon": {
+      "old": "adj",
+      "man": "n",
+      "stick": "n",
+      "stand": "v",
+      "fence": "n",
+      "with": "prep",
+      "beside": "prep"
+    },
+    "expected_roles": [
+      {
+        "subject": "man",
+        "predicate": "stand",
+        "object": null,
+        "tense": "past"
+      }
+    ],
+    "expected_attachments": [
+      {
+        "owner": "man",
+        "adposition": "with",
+        "object": "stick"
+      }
+    ]
+  },
+  {
+    "id": "contrast-44-nested-np-attachment",
+    "sentence": "The girls with wreaths of flowers danced.",
+    "lexicon": {
+      "girl": "n",
+      "wreath": "n",
+      "flower": "n",
+      "dance": "v",
+      "with": "prep",
+      "of": "prep"
+    },
+    "expected_roles": [
+      {
+        "subject": "girl",
+        "predicate": "dance",
+        "object": null,
+        "tense": "past"
+      }
+    ],
+    "expected_attachments": [
+      {
+        "owner": "girl",
+        "adposition": "with",
+        "object": "wreath"
+      },
+      {
+        "owner": "wreath",
+        "adposition": "of",
+        "object": "flower"
+      }
+    ]
+  },
+  {
+    "id": "contrast-15-where-question",
+    "sentence": "Where is the dog?",
+    "lexicon": {
+      "dog": "n",
+      "be": "v"
+    },
+    "expected_roles": [
+      {
+        "subject": "dog",
+        "predicate": "be",
+        "object": null,
+        "tense": "present"
+      }
+    ],
+    "expected_question": {
+      "type": "wh_question",
+      "word": "where"
+    }
+  },
+  {
+    "id": "contrast-16-when-future-question",
+    "sentence": "When will the guests arrive?",
+    "lexicon": {
+      "guest": "n",
+      "arrive": "v"
+    },
+    "expected_roles": [
+      {
+        "subject": "guest",
+        "predicate": "arrive",
+        "object": null,
+        "tense": "future"
+      }
+    ],
+    "expected_question": {
+      "type": "wh_question",
+      "word": "when"
+    }
+  },
+  {
+    "id": "contrast-14-inverted-copular-question",
+    "sentence": "Is today Monday?",
+    "lexicon": {
+      "today": "adv",
+      "monday": "n",
+      "be": "v"
+    },
+    "expected_roles": [
+      {
+        "subject": "today",
+        "predicate": "be",
+        "object": "monday",
+        "tense": "present"
+      }
+    ],
+    "expected_question": {
+      "type": "yes_no_question",
+      "word": null
+    }
+  },
+  {
+    "id": "contrast-55-coordinated-modal-question",
+    "sentence": "Will you go with us or wait here?",
+    "lexicon": {
+      "go": "v",
+      "wait": "v",
+      "with": "prep",
+      "here": "adv"
+    },
+    "expected_roles": [
+      {
+        "subject": "you",
+        "predicate": "go",
+        "object": null,
+        "tense": "future"
+      },
+      {
+        "subject": "you",
+        "predicate": "wait",
+        "object": null,
+        "tense": "present"
+      }
+    ],
+    "expected_question": {
+      "type": "yes_no_question",
+      "word": null
+    }
+  },
+  {
+    "id": "contrast-17-degree-question",
+    "sentence": "How wide is the river?",
+    "lexicon": {
+      "wide": "adj",
+      "river": "n",
+      "be": "v"
+    },
+    "expected_roles": [
+      {
+        "subject": "river",
+        "predicate": "be",
+        "object": null,
+        "tense": "present"
+      }
+    ],
+    "expected_question": {
+      "type": "wh_question",
+      "word": "how"
+    },
+    "expected_degree_question": "wide"
+  },
+  {
+    "id": "contrast-61-causal-subordination-ir",
+    "sentence": "The dog sees the cat because the cat is small.",
+    "lexicon": {
+      "dog": "n",
+      "see": "v",
+      "cat": "n",
+      "be": "v",
+      "small": "adj"
+    },
+    "expected_roles": [
+      {
+        "subject": "dog",
+        "predicate": "see",
+        "object": "cat",
+        "tense": "present"
+      }
+    ],
+    "expected_subordination": {
+      "relation": "cause",
+      "roles": [
+        {
+          "subject": "cat",
+          "predicate": "be",
+          "object": null,
+          "tense": "present"
+        }
+      ]
+    }
+  }
+]
