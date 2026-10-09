@@ -471,9 +471,9 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: Yesterday the oldest girl in the village lost her kitten.
-- Language: **tencud orberuibu quyeeceb uluujer qalaiqa ajasidmo irtinutko qanduun**
+- Language: **[PARTIAL]**
 - Gloss: `LOSE-PST VILLAGE-DEF GIRL OLDEST 3SG-GEN KITTEN:ACCUSATIVE YESTERDAY`
-- Status: `ok`
+- Status: `partial`
 
 ### Translation
 - English: Were you born in this village?
@@ -921,9 +921,9 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: The sound of the drums grew louder and louder.
-- Language: **tencud erimalabu daunb caan kuuudau caan buruul**
+- Language: **[PARTIAL]**
 - Gloss: `GROW-PST DRUM-DEF LOUDER AND LOUDER SOUND`
-- Status: `ok`
+- Status: `partial`
 
 ### Translation
 - English: Do you like summer or winter better?
@@ -1065,9 +1065,9 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: We visited my uncle’s village, the largest village in the world.
-- Language: **tencud toogejam daligur quyeeco quyeece tobuumu tshobelkoko maralua jorcilab**
+- Language: **[PARTIAL]**
 - Gloss: `VISIT-PST 1PL UNCLE:GENITIVE-GEN VILLAGE:ACCUSATIVE VILLAGE LARGEST IN WORLD-DEF`
-- Status: `ok`
+- Status: `partial`
 
 ### Translation
 - English: We learn something new each day.
@@ -1371,9 +1371,9 @@ Morphophonemics: **templatic_light, vowel_elision**
 
 ### Translation
 - English: That is the funniest story I ever heard.
-- Language: **tencud kookenebu bulkilab suugere elekeri totur**
+- Language: **[PARTIAL]**
 - Gloss: `HEAR-PST STORY-DEF FUNNIEST THAT EVER`
-- Status: `ok`
+- Status: `partial`
 
 ### Translation
 - English: She is taller than her brother.

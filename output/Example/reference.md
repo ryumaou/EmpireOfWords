@@ -465,9 +465,9 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: Yesterday the oldest girl in the village lost her kitten.
-- Language: **nigyuzo colevit aribyum altahitou zumanahittasu dantahi akishid**
+- Language: **[PARTIAL]**
 - Gloss: `OLDEST GIRL VILLAGE 3SG-GEN KITTEN:ACCUSATIVE LOSE-PST YESTERDAY`
-- Status: `ok`
+- Status: `partial`
 
 ### Translation
 - English: Were you born in this village?
@@ -915,9 +915,9 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: The sound of the drums grew louder and louder.
-- Language: **chumash hitayuz yamasu hitayuz bekotohi hiwomas**
+- Language: **[PARTIAL]**
 - Gloss: `DRUM LOUDER AND LOUDER GROW-PST SOUND`
-- Status: `ok`
+- Status: `partial`
 
 ### Translation
 - English: Do you like summer or winter better?
@@ -1059,9 +1059,9 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: We visited my uncle’s village, the largest village in the world.
-- Language: **zahasu altaltantedes monha aribyum zumaribyum deshifuhi ryuzabyazen kyogemy**
+- Language: **[PARTIAL]**
 - Gloss: `1PL UNCLE:GENITIVE-GEN LARGEST VILLAGE VILLAGE:ACCUSATIVE VISIT-PST IN WORLD:LOCATIVE`
-- Status: `ok`
+- Status: `partial`
 
 ### Translation
 - English: We learn something new each day.
@@ -1365,9 +1365,9 @@ Morphophonemics: **epenthesis, consonant_assimilation**
 
 ### Translation
 - English: That is the funniest story I ever heard.
-- Language: **fuwosec mororyu  hyujidehi behazun anata**
+- Language: **[PARTIAL]**
 - Gloss: `FUNNIEST STORY  HEAR-PST THAT EVER`
-- Status: `ok`
+- Status: `partial`
 
 ### Translation
 - English: She is taller than her brother.

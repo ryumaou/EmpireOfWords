@@ -33070,9 +33070,9 @@
     {
       "type": "Translation",
       "english": "Yesterday the oldest girl in the village lost her kitten.",
-      "surface": "nigyuzo colevit aribyum altahitou zumanahittasu dantahi akishid",
+      "surface": "[PARTIAL]",
       "gloss": "OLDEST GIRL VILLAGE 3SG-GEN KITTEN:ACCUSATIVE LOSE-PST YESTERDAY",
-      "status": "ok"
+      "status": "partial"
     },
     {
       "type": "Translation",
@@ -33595,9 +33595,9 @@
     {
       "type": "Translation",
       "english": "The sound of the drums grew louder and louder.",
-      "surface": "chumash hitayuz yamasu hitayuz bekotohi hiwomas",
+      "surface": "[PARTIAL]",
       "gloss": "DRUM LOUDER AND LOUDER GROW-PST SOUND",
-      "status": "ok"
+      "status": "partial"
     },
     {
       "type": "Translation",
@@ -33763,9 +33763,9 @@
     {
       "type": "Translation",
       "english": "We visited my uncle’s village, the largest village in the world.",
-      "surface": "zahasu altaltantedes monha aribyum zumaribyum deshifuhi ryuzabyazen kyogemy",
+      "surface": "[PARTIAL]",
       "gloss": "1PL UNCLE:GENITIVE-GEN LARGEST VILLAGE VILLAGE:ACCUSATIVE VISIT-PST IN WORLD:LOCATIVE",
-      "status": "ok"
+      "status": "partial"
     },
     {
       "type": "Translation",
@@ -34120,9 +34120,9 @@
     {
       "type": "Translation",
       "english": "That is the funniest story I ever heard.",
-      "surface": "fuwosec mororyu  hyujidehi behazun anata",
+      "surface": "[PARTIAL]",
       "gloss": "FUNNIEST STORY  HEAR-PST THAT EVER",
-      "status": "ok"
+      "status": "partial"
     },
     {
       "type": "Translation",

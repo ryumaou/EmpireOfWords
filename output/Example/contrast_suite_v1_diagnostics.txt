@@ -1,0 +1,242 @@
+Translation diagnostics: Example
+============================================================
+
+Translator version: 7.5.2
+Language build version: 7.5.2
+Language schema version: 2
+Grammar contract version: 9
+Language package SHA256: 2c4f077a9f86dfa9c6a5cc1486ad7eb43eea8fa19b0f454fb2f09ec040587d4d
+Grammar SHA256: fe67258bf348f344bc25634be3a189e6ac01e737a0156e1b0dcfd4610a3f2eb6
+Translator SHA256: 68188b51eb2da5cdea9c5780b5defefd0fc7c57335210033db0aec6e25cf4b7c
+
+Sentences: 80
+Complete: 55
+Partial: 20
+Missing vocabulary: 0
+Unsupported grammar: 5
+
+Target language realization profile:
+  word_order: SOV
+  adposition_type: postposition
+  adjective_position: before
+  possessor_position: before
+  plural_strategy: suffix
+  comparison_strategy: particle
+  question_strategy: particle
+  negation_strategy: affix
+  morphology_type: mixed
+  future: affix
+  progressive: affix
+  perfect: particle
+  imperative: affix
+  np_coordination: particle
+  predicate_coordination: particle
+  clause_coordination: juxtaposition
+
+Construction inventory:
+  simple_clause: supported
+  copular_clause: supported
+  existential: supported
+  imperative: supported
+  yes_no_question: limited
+  wh_question: limited
+  coordination: limited
+  modal: limited
+  perfect: limited
+  progressive: supported
+  negation: supported
+  possessive: limited
+  reflexive: limited
+  comparison: limited
+  relative_clause: diagnosed
+  complement_clause: diagnosed
+  conditional_clause: diagnosed
+  subordinate_clause: diagnosed
+  passive: diagnosed
+  quotation: diagnosed
+  appositive: diagnosed
+  phrasal_verb: limited
+  weather: limited
+  proper_name: limited
+
+Most common constructions in non-complete sentences:
+  coordination: 6
+  modal: 4
+  yes_no_question: 3
+  wh_question: 3
+  comparison: 2
+  imperative: 1
+  reflexive: 1
+  possessive: 1
+  subordinate_clause: 1
+  conditional_clause: 1
+  relative_clause: 1
+  complement_clause: 1
+  passive: 1
+  perfect: 1
+
+Most common missing/unrecognized English lexemes:
+
+Per-sentence diagnostics:
+-
+#14 Is today Monday?
+  Status: partial
+  Reason: recognized construction not yet fully realized
+  Constructions: yes_no_question
+  Normalized: (unchanged)
+
+#15 Where is the dog?
+  Status: partial
+  Reason: recognized construction not yet fully realized
+  Constructions: wh_question
+  Normalized: (unchanged)
+
+#16 When will the guests arrive?
+  Status: partial
+  Reason: recognized construction not yet fully realized
+  Constructions: modal, wh_question
+  Normalized: When will the guest arrive?
+
+#17 How wide is the river?
+  Status: partial
+  Reason: recognized construction not yet fully realized
+  Constructions: wh_question
+  Normalized: (unchanged)
+
+#23 The dog sees the cat, and the bird sees the dog.
+  Status: partial
+  Reason: not realized: bird
+  Constructions: coordination
+  Normalized: The dog see the cat and the bird see the dog.
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=genitive, comparison=particle, question=particle, coordination={'np': {'strategy': 'particle', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'affix', 'future': 'affix'}, aspect={'progressive': 'affix', 'perfect': 'particle'}, mood={'imperative': 'affix'}
+
+#24 John and Elizabeth are friends.
+  Status: partial
+  Reason: recognized construction not yet fully realized
+  Constructions: coordination
+  Normalized: John and Elizabeth are friend.
+
+#27 I awoke early, dressed hastily, and went to breakfast.
+  Status: partial
+  Reason: not realized: dressed
+  Constructions: coordination
+  Normalized: I did awake early dressed hastily and went to breakfast.
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=genitive, comparison=particle, question=particle, coordination={'np': {'strategy': 'particle', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'affix', 'future': 'affix'}, aspect={'progressive': 'affix', 'perfect': 'particle'}, mood={'imperative': 'affix'}
+
+#31 Take this note, carry it to your mother, and wait for an answer.
+  Status: partial
+  Reason: not realized: carry
+  Constructions: coordination, imperative
+  Normalized: (unchanged)
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=genitive, comparison=particle, question=particle, coordination={'np': {'strategy': 'particle', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'affix', 'future': 'affix'}, aspect={'progressive': 'affix', 'perfect': 'particle'}, mood={'imperative': 'affix'}
+
+#35 The little girl made the doll's dress herself.
+  Status: partial
+  Reason: not realized: possessive relation
+  Constructions: reflexive, possessive
+  Normalized: The little girl did make the doll dress herself.
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=genitive, comparison=particle, question=particle, coordination={'np': {'strategy': 'particle', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'affix', 'future': 'affix'}, aspect={'progressive': 'affix', 'perfect': 'particle'}, mood={'imperative': 'affix'}
+
+#42 The old man with a stick stood beside the fence.
+  Status: partial
+  Reason: not realized: stick
+  Constructions: simple
+  Normalized: The old man with a stick did stand beside the fence.
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=genitive, comparison=particle, question=particle, coordination={'np': {'strategy': 'particle', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'affix', 'future': 'affix'}, aspect={'progressive': 'affix', 'perfect': 'particle'}, mood={'imperative': 'affix'}
+
+#43 On a sunny morning we started for the mountains.
+  Status: partial
+  Reason: recognized construction not yet fully realized
+  Constructions: simple
+  Normalized: On a sunny morning we started for the mountain.
+
+#44 The girls with wreaths of flowers danced.
+  Status: partial
+  Reason: not realized: wreaths, flowers
+  Constructions: simple
+  Normalized: The girl with wreath of flower danced.
+
+#55 Will you go with us or wait here?
+  Status: partial
+  Reason: not realized: question marking
+  Constructions: modal, coordination, yes_no_question
+  Normalized: (unchanged)
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=genitive, comparison=particle, question=particle, coordination={'np': {'strategy': 'particle', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'affix', 'future': 'affix'}, aspect={'progressive': 'affix', 'perfect': 'particle'}, mood={'imperative': 'affix'}
+
+#59 Do you like summer or winter better?
+  Status: partial
+  Reason: not realized: better, comparison
+  Constructions: comparison, coordination, yes_no_question
+  Normalized: (unchanged)
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=genitive, comparison=particle, question=particle, coordination={'np': {'strategy': 'particle', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'affix', 'future': 'affix'}, aspect={'progressive': 'affix', 'perfect': 'particle'}, mood={'imperative': 'affix'}
+
+#60 The days grow shorter.
+  Status: partial
+  Reason: not realized: comparison
+  Constructions: comparison
+  Normalized: The day grow shorter.
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=genitive, comparison=particle, question=particle, coordination={'np': {'strategy': 'particle', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'affix', 'future': 'affix'}, aspect={'progressive': 'affix', 'perfect': 'particle'}, mood={'imperative': 'affix'}
+
+#61 The dog sees the cat because the cat is small.
+  Status: unsupported-grammar
+  Reason: unsupported construction: subordinate_clause
+  Constructions: subordinate_clause
+  Normalized: The dog see the cat because the cat is small.
+
+#62 If the dog sees the cat, the bird will fly.
+  Status: unsupported-grammar
+  Reason: unsupported construction: conditional_clause
+  Constructions: conditional_clause, modal
+  Normalized: If the dog see the cat the bird will fly.
+
+#63 The dog that sees the cat is happy.
+  Status: unsupported-grammar
+  Reason: unsupported construction: relative_clause
+  Constructions: relative_clause
+  Normalized: The dog that see the cat is happy.
+
+#64 I know that the dog sees the cat.
+  Status: unsupported-grammar
+  Reason: unsupported construction: complement_clause
+  Constructions: complement_clause
+  Normalized: I know that the dog see the cat.
+
+#65 The cat was seen by the dog.
+  Status: unsupported-grammar
+  Reason: unsupported construction: passive
+  Constructions: passive
+  Normalized: (unchanged)
+
+#66 Aha! I have caught you!
+  Status: partial
+  Reason: recognized construction not yet fully realized
+  Constructions: simple
+  Normalized: (unchanged)
+
+#67 Alas! That news is sad.
+  Status: partial
+  Reason: not realized: alas
+  Constructions: simple
+  Normalized: ala That news is sad.
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=genitive, comparison=particle, question=particle, coordination={'np': {'strategy': 'particle', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'affix', 'future': 'affix'}, aspect={'progressive': 'affix', 'perfect': 'particle'}, mood={'imperative': 'affix'}
+
+#68 Oh dear! The wind has blown my hat away!
+  Status: partial
+  Reason: not realized: oh, dear
+  Constructions: perfect
+  Normalized: (unchanged)
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=genitive, comparison=particle, question=particle, coordination={'np': {'strategy': 'particle', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'affix', 'future': 'affix'}, aspect={'progressive': 'affix', 'perfect': 'particle'}, mood={'imperative': 'affix'}
+
+#69 Madam, I will obey your command.
+  Status: partial
+  Reason: recognized construction not yet fully realized
+  Constructions: modal
+  Normalized: (unchanged)
+
+#75 The dog sees nothing.
+  Status: partial
+  Reason: not realized: nothing
+  Constructions: simple
+  Normalized: The dog see nothing.
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=genitive, comparison=particle, question=particle, coordination={'np': {'strategy': 'particle', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'affix', 'future': 'affix'}, aspect={'progressive': 'affix', 'perfect': 'particle'}, mood={'imperative': 'affix'}
+

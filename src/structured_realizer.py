@@ -317,9 +317,22 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
                     pred.complement_conjunction=npwords[cidx]; pred.coordinated_complements=[NPIR(rightv,head=ra)]
                     npwords=[]
         # Predicate/adjective comparison: more slowly is handled as modifiers; taller etc as complement.
+        # A definite superlative is an adjective predicate, not a noun object:
+        # "the dog is the biggest" must not silently drop THE/BIGGEST.
+        # Only consume the article here when an overt superlative is present.
+        superlative_adj=None
+        if copular and len(npwords)==2 and npwords[0]=='the':
+            candidate=_lemma(npwords[1],by,lexical_match)
+            if _pos(by,candidate,'adj') and _degree_for(npwords[1],candidate,by)=='superlative':
+                superlative_adj=candidate
+        if superlative_adj:
+            pred.complement=NPIR(npwords,head=superlative_adj)
+            pred.complement_kind='adjective'
+            pred.comparison=ComparisonIR('superlative',marker=npwords[1])
+            npwords=[]
         np=parse_np(npwords,by,lexical_match) if npwords else None
         if np: pred.object=np
-        else:
+        elif not superlative_adj:
             # remove degree marker before adjective complement
             vals=[x for x in npwords if x not in DEGREE]
             if len(vals)==1:

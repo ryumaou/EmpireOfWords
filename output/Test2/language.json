@@ -32642,9 +32642,9 @@
     {
       "type": "Translation",
       "english": "Yesterday the oldest girl in the village lost her kitten.",
-      "surface": "baisqar cigcite shuodu mangkeg shuno xusheunen todou ulja",
+      "surface": "[PARTIAL]",
       "gloss": "YESTERDAY OLDEST GIRL VILLAGE 3SG-GEN KITTEN:ACCUSATIVE LOSE-PST",
-      "status": "ok"
+      "status": "partial"
     },
     {
       "type": "Translation",
@@ -33167,9 +33167,9 @@
     {
       "type": "Translation",
       "english": "The sound of the drums grew louder and louder.",
-      "surface": "moqinuu tobie kuuruuk soodurc kuuruuk todou qangumu",
+      "surface": "[PARTIAL]",
       "gloss": "SOUND DRUM LOUDER AND LOUDER GROW-PST",
-      "status": "ok"
+      "status": "partial"
     },
     {
       "type": "Translation",
@@ -33335,9 +33335,9 @@
     {
       "type": "Translation",
       "english": "We visited my uncle’s village, the largest village in the world.",
-      "surface": "otoo shunbeu pekongn mangkeg mangkegen todou meipiu bisixi otu",
+      "surface": "[PARTIAL]",
       "gloss": "1PL UNCLE-GEN LARGEST VILLAGE VILLAGE:ACCUSATIVE VISIT-PST IN WORLD",
-      "status": "ok"
+      "status": "partial"
     },
     {
       "type": "Translation",
@@ -33692,9 +33692,9 @@
     {
       "type": "Translation",
       "english": "That is the funniest story I ever heard.",
-      "surface": "taifei fosung kebeyi bangumu  todou jirge",
+      "surface": "[PARTIAL]",
       "gloss": "THAT EVER FUNNIEST STORY  HEAR-PST",
-      "status": "ok"
+      "status": "partial"
     },
     {
       "type": "Translation",

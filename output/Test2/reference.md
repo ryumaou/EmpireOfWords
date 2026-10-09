@@ -458,9 +458,9 @@ Morphophonemics: **tone_like_none**
 
 ### Translation
 - English: Yesterday the oldest girl in the village lost her kitten.
-- Language: **baisqar cigcite shuodu mangkeg shuno xusheunen todou ulja**
+- Language: **[PARTIAL]**
 - Gloss: `YESTERDAY OLDEST GIRL VILLAGE 3SG-GEN KITTEN:ACCUSATIVE LOSE-PST`
-- Status: `ok`
+- Status: `partial`
 
 ### Translation
 - English: Were you born in this village?
@@ -908,9 +908,9 @@ Morphophonemics: **tone_like_none**
 
 ### Translation
 - English: The sound of the drums grew louder and louder.
-- Language: **moqinuu tobie kuuruuk soodurc kuuruuk todou qangumu**
+- Language: **[PARTIAL]**
 - Gloss: `SOUND DRUM LOUDER AND LOUDER GROW-PST`
-- Status: `ok`
+- Status: `partial`
 
 ### Translation
 - English: Do you like summer or winter better?
@@ -1052,9 +1052,9 @@ Morphophonemics: **tone_like_none**
 
 ### Translation
 - English: We visited my uncle’s village, the largest village in the world.
-- Language: **otoo shunbeu pekongn mangkeg mangkegen todou meipiu bisixi otu**
+- Language: **[PARTIAL]**
 - Gloss: `1PL UNCLE-GEN LARGEST VILLAGE VILLAGE:ACCUSATIVE VISIT-PST IN WORLD`
-- Status: `ok`
+- Status: `partial`
 
 ### Translation
 - English: We learn something new each day.
@@ -1358,9 +1358,9 @@ Morphophonemics: **tone_like_none**
 
 ### Translation
 - English: That is the funniest story I ever heard.
-- Language: **taifei fosung kebeyi bangumu  todou jirge**
+- Language: **[PARTIAL]**
 - Gloss: `THAT EVER FUNNIEST STORY  HEAR-PST`
-- Status: `ok`
+- Status: `partial`
 
 ### Translation
 - English: She is taller than her brother.

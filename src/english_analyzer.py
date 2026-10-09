@@ -56,8 +56,12 @@ def lemma_candidates(word:str):
     out.append(w)
     if w.endswith('iest') and len(w)>4: out.append(w[:-4]+'y')
     if w.endswith('ier') and len(w)>3: out.append(w[:-3]+'y')
-    if w.endswith('est') and len(w)>4: out.extend([w[:-3],w[:-3]+'e'])
-    if w.endswith('er') and len(w)>3: out.extend([w[:-2],w[:-2]+'e'])
+    if w.endswith('est') and len(w)>4:
+        base=w[:-3]; out.extend([base,base+'e'])
+        if len(base)>2 and base[-1]==base[-2]: out.append(base[:-1])
+    if w.endswith('er') and len(w)>3:
+        base=w[:-2]; out.extend([base,base+'e'])
+        if len(base)>2 and base[-1]==base[-2]: out.append(base[:-1])
     if w.endswith('ies') and len(w)>3: out.append(w[:-3]+'y')
     if w.endswith('ves') and len(w)>3: out.extend([w[:-3]+'f',w[:-3]+'fe'])
     if w.endswith('es') and len(w)>3:
@@ -118,11 +122,11 @@ def detect_constructions(raw, low_tokens, by=None):
         prev=low_tokens[i-1] if i else '' ; nxt=low_tokens[i+1] if i+1<len(low_tokens) else ''
         if prev in COMPLEMENT_HEADS or any(x in COMPLEMENT_HEADS for x in low_tokens[max(0,i-4):i]):
             found.append('complement_clause')
-        elif i>0 and prev not in AUX|MODALS|{'to','and','or','but'} and nxt in {'i','you','he','she','we','they','it'}:
+        elif i>0 and prev not in AUX|MODALS|{'to','and','or','but'} and (nxt in {'i','you','he','she','we','they','it'} or (by and any(p.startswith('v') for p,_ in by.get(lexical_match(by,nxt,'v'),[])))):
             found.append('relative_clause')
     if re.search(r'\b(?:is|are|was|were|be|been|being)\s+\w+(?:ed|en)\b',low) and ' by ' in ' '+low+' ': found.append('passive')
     comp=False
-    if ' than ' in ' '+low+' ' or any(w in low_tokens for w in ('more','less','better','worse')): comp=True
+    if ' than ' in ' '+low+' ' or any(w in low_tokens for w in ('more','less','better','worse','best','worst')): comp=True
     elif by:
         for w in low_tokens:
             if not w.endswith(('er','est')): continue
@@ -130,7 +134,7 @@ def detect_constructions(raw, low_tokens, by=None):
             # because its spelling ends in -er. Only a derived candidate may
             # license comparative analysis.
             exact=by.get(w,[])
-            if exact:
+            if exact and not any(pos.startswith(('adj','adv')) for pos,_ in exact):
                 continue
             for cand in lemma_candidates(w):
                 if cand == w:

@@ -33082,9 +33082,9 @@
     {
       "type": "Translation",
       "english": "Yesterday the oldest girl in the village lost her kitten.",
-      "surface": "tencud orberuibu quyeeceb uluujer qalaiqa ajasidmo irtinutko qanduun",
+      "surface": "[PARTIAL]",
       "gloss": "LOSE-PST VILLAGE-DEF GIRL OLDEST 3SG-GEN KITTEN:ACCUSATIVE YESTERDAY",
-      "status": "ok"
+      "status": "partial"
     },
     {
       "type": "Translation",
@@ -33607,9 +33607,9 @@
     {
       "type": "Translation",
       "english": "The sound of the drums grew louder and louder.",
-      "surface": "tencud erimalabu daunb caan kuuudau caan buruul",
+      "surface": "[PARTIAL]",
       "gloss": "GROW-PST DRUM-DEF LOUDER AND LOUDER SOUND",
-      "status": "ok"
+      "status": "partial"
     },
     {
       "type": "Translation",
@@ -33775,9 +33775,9 @@
     {
       "type": "Translation",
       "english": "We visited my uncle’s village, the largest village in the world.",
-      "surface": "tencud toogejam daligur quyeeco quyeece tobuumu tshobelkoko maralua jorcilab",
+      "surface": "[PARTIAL]",
       "gloss": "VISIT-PST 1PL UNCLE:GENITIVE-GEN VILLAGE:ACCUSATIVE VILLAGE LARGEST IN WORLD-DEF",
-      "status": "ok"
+      "status": "partial"
     },
     {
       "type": "Translation",
@@ -34132,9 +34132,9 @@
     {
       "type": "Translation",
       "english": "That is the funniest story I ever heard.",
-      "surface": "tencud kookenebu bulkilab suugere elekeri totur",
+      "surface": "[PARTIAL]",
       "gloss": "HEAR-PST STORY-DEF FUNNIEST THAT EVER",
-      "status": "ok"
+      "status": "partial"
     },
     {
       "type": "Translation",

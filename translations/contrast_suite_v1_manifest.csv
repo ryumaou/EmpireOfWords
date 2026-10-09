@@ -1,0 +1,81 @@
+id,category,contrast_role,english,expected_status,notes
+1,tense,present,The dog sees the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+2,tense,past,The dog saw the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+3,tense,future,The dog will see the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+4,tense,past_negative,The dog did not see the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+5,tense,future_negative,The dog will not see the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+6,number,plural_object,The dog sees the cats.,,Manually review surface/gloss; no automatic semantic pass implied
+7,number,plural_subject,The dogs see the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+8,number,singular_coordination,The dog sees the cat and the bird.,,Manually review surface/gloss; no automatic semantic pass implied
+9,number,mixed_number_coordination,The dog sees the cats and the bird.,,Manually review surface/gloss; no automatic semantic pass implied
+10,questions,yes_no,Does the dog see the cat?,,Manually review surface/gloss; no automatic semantic pass implied
+11,questions,past_yes_no,Did the dog see the cat?,,Manually review surface/gloss; no automatic semantic pass implied
+12,questions,future_yes_no,Will the dog see the cat?,,Manually review surface/gloss; no automatic semantic pass implied
+13,questions,copular_yes_no,Is the dog happy?,,Manually review surface/gloss; no automatic semantic pass implied
+14,questions,copular_nominal_yes_no,Is today Monday?,,Manually review surface/gloss; no automatic semantic pass implied
+15,questions,wh_location,Where is the dog?,,Manually review surface/gloss; no automatic semantic pass implied
+16,questions,wh_future,When will the guests arrive?,,Manually review surface/gloss; no automatic semantic pass implied
+17,questions,wh_degree,How wide is the river?,,Manually review surface/gloss; no automatic semantic pass implied
+18,coordination,np_and,The dog sees the cat and the bird.,,Manually review surface/gloss; no automatic semantic pass implied
+19,coordination,np_or,The dog sees the cat or the bird.,,Manually review surface/gloss; no automatic semantic pass implied
+20,coordination,predicate_and,The dog sees the cat and hears the bird.,,Manually review surface/gloss; no automatic semantic pass implied
+21,coordination,past_predicate_and,The dog saw the cat and heard the bird.,,Manually review surface/gloss; no automatic semantic pass implied
+22,coordination,predicate_but,The dog sees the cat but hears the bird.,,Manually review surface/gloss; no automatic semantic pass implied
+23,coordination,two_clauses,"The dog sees the cat, and the bird sees the dog.",,Manually review surface/gloss; no automatic semantic pass implied
+24,coordination,subject_np,John and Elizabeth are friends.,,Manually review surface/gloss; no automatic semantic pass implied
+25,coordination,adjective_coordination,The dog is small but strong.,,Manually review surface/gloss; no automatic semantic pass implied
+26,coordination,two_past_verbs,The crow dropped pebbles and raised water.,,Manually review surface/gloss; no automatic semantic pass implied
+27,coordination,three_past_verbs,"I awoke early, dressed hastily, and went to breakfast.",,Manually review surface/gloss; no automatic semantic pass implied
+28,imperative,simple,See the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+29,imperative,negative,Do not see the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+30,imperative,coordinated,Take the note and wait.,,Manually review surface/gloss; no automatic semantic pass implied
+31,imperative,three_actions,"Take this note, carry it to your mother, and wait for an answer.",,Manually review surface/gloss; no automatic semantic pass implied
+32,imperative,copular,Be happy.,,Manually review surface/gloss; no automatic semantic pass implied
+33,possession,plain_np,The girl sees the doll.,,Manually review surface/gloss; no automatic semantic pass implied
+34,possession,genitive_object,The girl sees the doll's dress.,,Manually review surface/gloss; no automatic semantic pass implied
+35,possession,genitive_reflexive,The little girl made the doll's dress herself.,,Manually review surface/gloss; no automatic semantic pass implied
+36,possession,possessive_pronoun,The dog sees its house.,,Manually review surface/gloss; no automatic semantic pass implied
+37,possession,possessive_pronoun_2,The man sees his dog.,,Manually review surface/gloss; no automatic semantic pass implied
+38,modifiers,unmodified,The dog sees the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+39,modifiers,subject_adjective,The small dog sees the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+40,modifiers,object_adjective,The dog sees the small cat.,,Manually review surface/gloss; no automatic semantic pass implied
+41,modifiers,prepositional,The dog sees the cat in the house.,,Manually review surface/gloss; no automatic semantic pass implied
+42,modifiers,subject_pp,The old man with a stick stood beside the fence.,,Manually review surface/gloss; no automatic semantic pass implied
+43,modifiers,fronted_pp,On a sunny morning we started for the mountains.,,Manually review surface/gloss; no automatic semantic pass implied
+44,modifiers,nested_pp,The girls with wreaths of flowers danced.,,Manually review surface/gloss; no automatic semantic pass implied
+45,modifiers,verb_pp,The sun looked through the branches.,,Manually review surface/gloss; no automatic semantic pass implied
+46,aspect,simple,The dog sees the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+47,aspect,progressive,The dog is seeing the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+48,aspect,perfect,The dog has seen the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+49,aspect,perfect_progressive,The dog has been seeing the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+50,aspect,past_progressive,The dog was seeing the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+51,modality,can,The dog can see the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+52,modality,must,The dog must see the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+53,modality,should,The dog should see the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+54,modality,might,The dog might see the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+55,modality,modal_question_coordination,Will you go with us or wait here?,,Manually review surface/gloss; no automatic semantic pass implied
+56,comparison,positive,The dog is big.,,Manually review surface/gloss; no automatic semantic pass implied
+57,comparison,comparative,The dog is bigger than the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+58,comparison,superlative,The dog is the biggest.,,Manually review surface/gloss; no automatic semantic pass implied
+59,comparison,comparative_question,Do you like summer or winter better?,,Manually review surface/gloss; no automatic semantic pass implied
+60,comparison,inflected_comparative,The days grow shorter.,,Manually review surface/gloss; no automatic semantic pass implied
+61,subordination,because,The dog sees the cat because the cat is small.,,Manually review surface/gloss; no automatic semantic pass implied
+62,subordination,conditional,"If the dog sees the cat, the bird will fly.",,Manually review surface/gloss; no automatic semantic pass implied
+63,subordination,relative,The dog that sees the cat is happy.,,Manually review surface/gloss; no automatic semantic pass implied
+64,subordination,complement,I know that the dog sees the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+65,subordination,passive,The cat was seen by the dog.,,Manually review surface/gloss; no automatic semantic pass implied
+66,pragmatics,interjection_perfect,Aha! I have caught you!,,Manually review surface/gloss; no automatic semantic pass implied
+67,pragmatics,interjection_copular,Alas! That news is sad.,,Manually review surface/gloss; no automatic semantic pass implied
+68,pragmatics,interjection_phrasal,Oh dear! The wind has blown my hat away!,,Manually review surface/gloss; no automatic semantic pass implied
+69,pragmatics,vocative_modal,"Madam, I will obey your command.",,Manually review surface/gloss; no automatic semantic pass implied
+70,pragmatics,vocative_imperative,"Show the guests these shells, my son.",,Manually review surface/gloss; no automatic semantic pass implied
+71,negation,positive,The dog sees the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+72,negation,negative,The dog does not see the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+73,negation,never,The dog never sees the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+74,negation,negative_determiner,The dog sees no cat.,,Manually review surface/gloss; no automatic semantic pass implied
+75,negation,negative_pronoun,The dog sees nothing.,,Manually review surface/gloss; no automatic semantic pass implied
+76,roles,reversed_agent,The cat sees the dog.,,Manually review surface/gloss; no automatic semantic pass implied
+77,roles,base_agent,The dog sees the cat.,,Manually review surface/gloss; no automatic semantic pass implied
+78,roles,ditransitive,The girl gives the boy a book.,,Manually review surface/gloss; no automatic semantic pass implied
+79,roles,pp_dative,The girl gives a book to the boy.,,Manually review surface/gloss; no automatic semantic pass implied
+80,roles,locative,The man stood beside the fence.,,Manually review surface/gloss; no automatic semantic pass implied

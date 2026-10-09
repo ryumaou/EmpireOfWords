@@ -369,3 +369,21 @@ class V73MorphemeCollisionTests(unittest.TestCase):
         g={'morphophonemics':{'rules':['initial_mutation','lenition','consonant_assimilation']}}
         self.assertNotEqual(affix('cat',{'form':'c','side':'prefix'},g),'cat')
         self.assertNotEqual(affix('cat',{'form':'t','side':'suffix'},g),'cat')
+
+class ContrastSuiteRegressions(unittest.TestCase):
+ def test_doubled_consonant_comparison(self):
+  self.assertIn('big',lemma_candidates('bigger'))
+  self.assertIn('big',lemma_candidates('biggest'))
+  by={'big':[('adj','x')], 'dog':[('n','y')], 'cat':[('n','z')]}
+  for sentence in ('The dog is bigger than the cat.','The dog is the biggest.'):
+   a=analyze(sentence,by)
+   self.assertNotIn('bigger',a['missing_lexemes'])
+   self.assertNotIn('biggest',a['missing_lexemes'])
+   self.assertIn('comparison',a['constructions'])
+ def test_relative_that_detected(self):
+  by={'dog':[('n','x')],'see':[('v','x')],'cat':[('n','x')],'happy':[('adj','x')]}
+  a=analyze('The dog that sees the cat is happy.',by)
+  self.assertIn('relative_clause',a['constructions'])
+ def test_demonstrative_that_still_not_relative(self):
+  by={'dog':[('n','x')],'see':[('v','x')],'cat':[('n','x')]}
+  self.assertNotIn('relative_clause',analyze('That dog sees the cat.',by)['constructions'])

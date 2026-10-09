@@ -1,3 +1,15 @@
+## 2026-10-09 quality-gate and controlled contrast-suite update
+
+A separate `translations/contrast_suite_v1.txt` and annotated `translations/contrast_suite_v1_manifest.csv` isolate tense, coordination, questions, possession, PP attachment, and unsupported syntax. The original 229-sentence advanced benchmark is unchanged.
+
+For strict comparisons, provide both corpus paths (the same file is valid for both when unchanged):
+
+```cmd
+python src\quality_gate.py --before old_example.txt old_test1.txt old_test2.txt --after new_example.txt new_test1.txt new_test2.txt --before-corpus translations\sentences_advanced.txt --after-corpus translations\sentences_advanced.txt
+```
+
+Without corpus files, the gate warns that edits to already-complete sentences cannot be detected. See `ITERATION_REVIEW_2026-10-09.md`. **This update does not claim an increase in translation coverage.**
+
 # Empire Of Words
 A set of Python scripts that allow a technically literate worldbuilder to create languages and language families for imagined worlds.
 
@@ -949,3 +961,17 @@ Generated languages now specify productive lexical conversion and noun-compound 
 - Contract version 8 declares single-negation realization.
 
 Run `python src/audit_languages.py --languages output/Test1 output/Test2 output/Example --output output/language_audit` after regenerating language packages.
+
+### Preventing translation backsliding
+
+Run the new `src/quality_gate.py` against **one diagnostics file per language** for
+both the baseline and the candidate. For example (Windows PowerShell):
+
+```powershell
+python src\quality_gate.py --before output\baseline\Example_diagnostics.txt output\baseline\Test1_diagnostics.txt output\baseline\Test2_diagnostics.txt --after output\candidate\Example_diagnostics.txt output\candidate\Test1_diagnostics.txt output\candidate\Test2_diagnostics.txt --json-output output\quality_gate.json
+```
+
+Exit code 0 = no newly non-complete sentences; 1 = regression; 2 = invalid
+inputs. A gain elsewhere does **not** excuse a regression by default. This gate
+checks status classifications, not semantic fidelity; keep inspecting the
+language audit's minimal pairs and actual translated text.

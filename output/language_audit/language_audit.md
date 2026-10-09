@@ -2,9 +2,9 @@
 
 ## Package provenance and validity
 
-- **Example**: 5327 lexical entries; build version 7.4; package SHA256 `aaa5f7a0e3d0c4d54cbd4bd8eaa050da82bd0f74a5be79881ab253f58d55fcce`; validation errors 0; warnings 2
-- **Test1**: 5327 lexical entries; build version 7.4; package SHA256 `be06a7b1379f56945fcd41c16efe3b7985d65e240718f54114fd4cc3cb2e58d2`; validation errors 0; warnings 8
-- **Test2**: 5279 lexical entries; build version 7.4; package SHA256 `7a3ba21ad6edeb0c750da23b98a71edd64f119f8aa2b8a627769a425618388fb`; validation errors 0; warnings 4
+- **Example**: 5327 lexical entries; build version 7.5.2; package SHA256 `2c4f077a9f86dfa9c6a5cc1486ad7eb43eea8fa19b0f454fb2f09ec040587d4d`; validation errors 0; warnings 2
+- **Test1**: 5327 lexical entries; build version 7.5.2; package SHA256 `68599068fe359eea738b14779d38c5c9bc421ca33f29d1cf024a3c11293af131`; validation errors 0; warnings 8
+- **Test2**: 5279 lexical entries; build version 7.5.2; package SHA256 `f2a3b55fe8f45c02813fa639100872e472054419ffd4a8f14ab9b174aaad11d9`; validation errors 0; warnings 4
 
 ## Declared grammatical contrasts
 

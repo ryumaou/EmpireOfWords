@@ -146,6 +146,7 @@ def main(argv=None) -> int:
     p = argparse.ArgumentParser(
         description="Translate English sentences using an existing generated language.json"
     )
+    p.add_argument("--version", action="version", version=f"Empire Of Words translator {TOOL_VERSION} | {Path(__file__).resolve()}")
     p.add_argument(
         "--language", required=True, type=Path,
         help="existing language.json or its output/<Language> directory"
