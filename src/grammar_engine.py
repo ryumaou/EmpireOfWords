@@ -661,13 +661,24 @@ def _prepare_for_legacy(raw, constructions, by):
 def analyze_translation(sentence,g,entries,forms):
     """Return a structured deterministic analysis plus translation result."""
     by=_lexicon(entries,forms); raw=sentence.strip()
-    # Punctuation inside this fixed discourse expression does not change its
-    # meaning. Reuse the ordinary discourse path, retaining the original source
-    # and all of its lexical availability / completeness checks.
-    punctuated_disourse=re.match(r'^\s*oh\s*,\s*dear\s*!\s*(.+)$',raw,re.I|re.S)
-    if punctuated_disourse:
-        result=analyze_translation('Oh dear! '+punctuated_disourse.group(1),g,entries,forms)
-        result['english']=raw
+    # Retain both lexical interjections when punctuation separates OH and DEAR.
+    # The following clause must succeed independently; unavailable interjections
+    # never disappear merely because the clause itself can be translated.
+    punctuated_discourse=re.match(r'^\s*oh\s*,\s*dear\s*!\s*(.+)$',raw,re.I|re.S)
+    if punctuated_discourse:
+        base=analyze_translation(punctuated_discourse.group(1),g,entries,forms)
+        result=dict(base); result['english']=raw; result['ir']=dict(base['ir'])
+        words=['oh','dear']; markers=[_lookup(by,w,('interj',)) for w in words]
+        result['ir']['discourse_expression']='oh dear'
+        result['ir']['discourse_forms_available']=all(markers)
+        if base['status']=='ok' and all(markers):
+            result['surface']=' '.join(markers)+'! '+base['surface']
+            result['gloss']='OH DEAR! '+base['gloss']
+            result['ir']['discourse_receipts']=words
+        elif base['status']=='ok':
+            result['status']='partial'; result['surface']='[PARTIAL]'
+            result['reason']='unrealized discourse expression: oh dear'
+            result['ir']['diagnostic_stage']='semantic_receipts'
         return result
     base_ir=_analyze_english(raw,by)
     tokens=base_ir['tokens']; constructions=base_ir['constructions']

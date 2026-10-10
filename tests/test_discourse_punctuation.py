@@ -16,12 +16,14 @@ class DiscoursePunctuationTests(unittest.TestCase):
             _, grammar, entries, forms = load_language(ROOT / 'output' / name / 'language.json')
             source = 'Oh, dear! the wind has blown my hat away!'
             result = analyze_translation(source, grammar, entries, forms)
-            reference = analyze_translation('Oh dear! the wind has blown my hat away!', grammar, entries, forms)
+            reference = analyze_translation('the wind has blown my hat away!', grammar, entries, forms)
+            by = _lexicon(entries, forms)
+            markers = [next(form for pos, form in by[word] if pos == 'interj') for word in ('oh', 'dear')]
             with self.subTest(language=name):
                 self.assertEqual(result['english'], source)
                 self.assertEqual(result['status'], 'ok', result['reason'])
-                self.assertEqual(result['surface'], reference['surface'])
-                self.assertEqual(result['gloss'], reference['gloss'])
+                self.assertEqual(result['surface'], ' '.join(markers) + '! ' + reference['surface'])
+                self.assertEqual(result['gloss'], 'OH DEAR! ' + reference['gloss'])
                 self.assertEqual(result['ir']['discourse_receipts'], ['oh', 'dear'])
                 self.assertIn('perfect', result['ir']['realization_receipts'])
 

@@ -1,0 +1,1408 @@
+{
+  "baseline_commit": "1cfbbb3",
+  "baseline_includes_preexisting_uncommitted_changes": true,
+  "regression_tests_passed": 103,
+  "semantic_fixtures_passed": 11,
+  "committed_candidate_regression_tests_passed": 86,
+  "language_audit_translations": 72,
+  "language_audit_fidelity_checks_passed": 20,
+  "preserved_language_files": {
+    "output\\Example\\contrast_suite_v1.txt": "a5d3625a5f93eebc718f470c17856702c5b91e32436bac8307660b9c9bfd3b22",
+    "output\\Example\\contrast_suite_v1_analysis.json": "390ff05582c64eca891753001c51b032805bfbacc42bf4f43e44201f10e0a8d5",
+    "output\\Example\\contrast_suite_v1_diagnostics.txt": "649e372619e05da302c7a397e14ca1c9d2fd560dc2ddfbff3e278815e2ae1ac9",
+    "output\\Example\\derivational_morphology.txt": "43893e63003c7dda2f6d61276a4f73bfaf873ecf50eac09295701db96c6c7a77",
+    "output\\Example\\dictionary.csv": "a35119b189ac22484a8aa943ee30acfbb0e08bcb16cdb281a3faf72681b4ee64",
+    "output\\Example\\etymology.txt": "5a215814901defeaceb0af067600073ede933f782a37d93042ea933f38c16a62",
+    "output\\Example\\examples.txt": "ce606ccca52f400956c410b0c547e0c501034c1c09f89b58fd8090fd706304a8",
+    "output\\Example\\grammar.json": "ea8ed8c1685eff3f36b14e8cbbcf5350d501a4c3c33d25a72ebf9b8c14c0728d",
+    "output\\Example\\language.json": "4f259a7477bebca611e666c6c3aa0a66e58de82ecc56655c3a669629b8cef3e7",
+    "output\\Example\\manifest.json": "e547c738a79dad9b9ffa888d33befca96c53298894001e8e8db555846eed72d5",
+    "output\\Example\\paradigms.csv": "e5be804f001ed68483672e57cb77b2248366a7a63a7f4fb54b4c55f2c6a2053b",
+    "output\\Example\\reference.md": "ec620df0b838e13c3a49761aaa2f64a60a8a033e7beef0ec6f154861d750e840",
+    "output\\Example\\names\\names_full.csv": "d0c9989ef3553f3105b1ca3c4e025b21e2e875412c6c3c7223993737e0bd29bb",
+    "output\\Example\\names\\names_full.txt": "f214e73bb0248d6f3994449ba0e86c3ac6ccdbb7bf05041e27c9fd983374497b",
+    "output\\Example\\translations\\contrast_suite_v1.txt": "f180898910d20aee41c8047c26fcf27fc1ef37d3706e7ad1c02687bd3ec599f0",
+    "output\\Example\\translations\\contrast_suite_v1_analysis.json": "953df6ffbc63ca3a340e512f8b22f397866ecde73bf8b22b4275a38180248fc3",
+    "output\\Example\\translations\\contrast_suite_v1_diagnostics.txt": "5e00cda5b77b2c7c2647ca26b5a19a91a72b7943fb0305591b49dad7e032137a",
+    "output\\MagicTest\\derivational_morphology.txt": "a6bd047936460b70ead3c4292e8036e10ac8a03fe844204af9b4c0c6ded1b0fe",
+    "output\\MagicTest\\dictionary.csv": "b3e4b4205ad872013ce7a235ae043244526e3e14102f4cf8279771aa4ec96981",
+    "output\\MagicTest\\etymology.txt": "a878119e75a6834a3a81d47fdff93abdce491cf555d87dc7d6f7df5bc98bad42",
+    "output\\MagicTest\\examples.txt": "54b5f3fc19182da10c80749c3635c6edbc9bdbd1597265c59b75ec6c132d45b7",
+    "output\\MagicTest\\grammar.json": "91be0bde6f71a2bdc5fb5978be5ed8d19b9a1bf49dfa29fca51b2aa6e48f889b",
+    "output\\MagicTest\\language.json": "d77892aa443a963138ec06fbdc44ec1af03ef18e1365cc1e2bc18295a328f300",
+    "output\\MagicTest\\language.json.bak": "85741135a43dee0f954b5a5a89a43b9e443f3ad26822eb1533d3e9428eedc5ba",
+    "output\\MagicTest\\manifest.json": "fc631ac0f59c3e928603657d3db6bb51dddaf5d1aa930548cc874d5e232a7866",
+    "output\\MagicTest\\paradigms.csv": "50051709a2307344aadea4bd3ef64c90a75ac2d3f5037514078b920d7b48d994",
+    "output\\MagicTest\\preflight_v7_6_10.json": "4d7f6b96ce5d53ec19ce02a3084c38a5547c119af6f0e98a77fe8dce56b7eddd",
+    "output\\MagicTest\\reference.md": "ae962db4f8b93b41f1d4c1870c4973a6adaa145fcc8d3ac053fdc04fd5f3a72a",
+    "output\\MagicTest\\translations\\contrast_suite_v1.txt": "a489deb39ef515c687c5fdb4b562c447f9897a23ee05d2c92a0ab93b583b1911",
+    "output\\MagicTest\\translations\\contrast_suite_v1_analysis.json": "8f3f68357896004494c6c6958e82fcb9fb6610ec8eef416a49a7bef8773abd36",
+    "output\\MagicTest\\translations\\contrast_suite_v1_diagnostics.txt": "545f37927660e03c5995950c7e7f0a1b9ee38309a09d802cf8a482cb240d0956",
+    "output\\Test1\\contrast_suite_v1.txt": "45cebdd1453756808c9b04f66ca16b4b51cd6e97a562da02c13635c57b05a4e0",
+    "output\\Test1\\contrast_suite_v1_analysis.json": "c9828b2cd2987f391ea5f04e6b38cf39ae4527127d63856d3f80412c2791a001",
+    "output\\Test1\\contrast_suite_v1_diagnostics.txt": "d448d047eb733e265aa7d23fef15fe15bee5629003a66ce3e0497ea825f7a7d5",
+    "output\\Test1\\derivational_morphology.txt": "feca015d4b113ce7f074405f6598246db7c9e3d3344571b5f45a0abcd5d1f09b",
+    "output\\Test1\\dictionary.csv": "dcf449b08583a914a15a967d2e9f8ff4477098d9c42815f863f3db6f6e815c68",
+    "output\\Test1\\etymology.txt": "67013bf6f01ee449a73a39b9795f35465df8d3db3c8d6707939114c047d72904",
+    "output\\Test1\\examples.txt": "dbc9875a567ab5beabba6160baabc917e344ef9b505b071e4b3af95565f74410",
+    "output\\Test1\\grammar.json": "0ec5ef1cc133128f59306cb38bc11c7b1a9cafef159db635c3ee0f77752b8e2c",
+    "output\\Test1\\language.json": "00e9fc347bb3ee71cb9a712885298c4e35cdeb303cbf1ade82360efa9a22cb8b",
+    "output\\Test1\\manifest.json": "02bb6f9ecd30a83251d267dd190a64bbccbd941b100904b52bb37b840385a98a",
+    "output\\Test1\\paradigms.csv": "aac06bc20a2ced3f672ce6e8094c9820eaec8fef0cf53ebba2b650f643bb75fa",
+    "output\\Test1\\reference.md": "86fee102e9114140b9868b7b4374bec844c4599776338be5c6cf01c5df6fe0f1",
+    "output\\Test1\\names\\names_full.csv": "371c15482e9d07c1ec4376c34ee2915830e6e0a260f91b2c8612bbb04be05ea7",
+    "output\\Test1\\names\\names_full.txt": "b9d043befa1aabd57372826347b1d11e6886a77d139fa5faa880decf6738435b",
+    "output\\Test1\\translations\\contrast_suite_v1.txt": "52c631a1c9a39992e42c18c63fe5578b94e90aa4ce3373cc5356b542164d5306",
+    "output\\Test1\\translations\\contrast_suite_v1_analysis.json": "9872192b63a5619ac0b96243442068a12fff2f561403df72a6787f32930d2f69",
+    "output\\Test1\\translations\\contrast_suite_v1_diagnostics.txt": "f3478b40d84863f5d35b84d65592845605cfa883df0e6831ca842fcf3d363b76",
+    "output\\Test2\\contrast_suite_v1.txt": "2c573f6c50888271fc81d5bdd7454656d76252f0b6ba27f5c313d8f82212f6cb",
+    "output\\Test2\\contrast_suite_v1_analysis.json": "01e1b8d25b4dd535ce5bc58c2bd795d494aae48032a1b9bef736e9850eafa2fa",
+    "output\\Test2\\contrast_suite_v1_diagnostics.txt": "ad44e90eaf349e9b0ca63c23b453b793bbaff5a9f05b959f3b9801c538896d1b",
+    "output\\Test2\\derivational_morphology.txt": "eb7423d7baa4342022f6bb10c7ec6406b7648a1841e1a6ba06711fcf13556793",
+    "output\\Test2\\dictionary.csv": "a7cc78b001d9e51815322b46a7cdaba14d68b2d319433913acee5432c389f137",
+    "output\\Test2\\etymology.txt": "b8ca8c99f52e8884fa25d403c1aa149b0a2f22aab807ca59a7a756e4273c7d65",
+    "output\\Test2\\examples.txt": "761e3ebf2f1bae38b39a1a651ae1c059442efa3701317a0270b3d9b1d01da813",
+    "output\\Test2\\grammar.json": "76be4cdd03078f0da6124bded8484367eb211ddb9f3149a4163143547db06241",
+    "output\\Test2\\language.json": "1614ab40862004232a7392c48082a0085741736bc47db22c5c37d4982e32cc4e",
+    "output\\Test2\\manifest.json": "0a84a14f7b4553d9fbbaf61abe619090bb86f656b34f8312175bead035eaff27",
+    "output\\Test2\\paradigms.csv": "648daa57aecb8e5312c2a4e017981175d495cee3993e2f0dfefd4368cd7054f9",
+    "output\\Test2\\reference.md": "1432fbd50ba73970474e98373f3bde4d925cc71ac19370d2325354a24daf6af9",
+    "output\\Test2\\names\\names_full.csv": "6cc9bbfb3c9447e622089ae817c8df9654117b8fa44e37863f3a02c429c296eb",
+    "output\\Test2\\names\\names_full.txt": "09bd2a744b5514119241c5570a5ef3a03049e8a22b9ad575e7e231232b50fb17",
+    "output\\Test2\\translations\\contrast_suite_v1.txt": "ab8c4dba95e561f286340e243c96a3006d1618f1a28e3ff799e6d7a9af6671e9",
+    "output\\Test2\\translations\\contrast_suite_v1_analysis.json": "daaac39328c7abcc01a5d6c56b43256490d720ea38adf2d9481f305bb57d7697",
+    "output\\Test2\\translations\\contrast_suite_v1_diagnostics.txt": "5cf83460f943459fe57745a9aa3e61a185a3115b4b85d7c53be62715ff9017eb"
+  },
+  "before": {
+    "Example/contrast_suite_v1": {
+      "ok": 70,
+      "partial": 6,
+      "unsupported-grammar": 4
+    },
+    "MagicTest/contrast_suite_v1": {
+      "ok": 70,
+      "partial": 6,
+      "unsupported-grammar": 4
+    },
+    "Test1/contrast_suite_v1": {
+      "ok": 70,
+      "partial": 6,
+      "unsupported-grammar": 4
+    },
+    "Test2/contrast_suite_v1": {
+      "ok": 70,
+      "partial": 6,
+      "unsupported-grammar": 4
+    },
+    "Example/graded_sentences": {
+      "ok": 352,
+      "unresolved-vocabulary": 359,
+      "partial": 257,
+      "unsupported-grammar": 129
+    },
+    "MagicTest/graded_sentences": {
+      "ok": 300,
+      "unresolved-vocabulary": 422,
+      "partial": 246,
+      "unsupported-grammar": 129
+    },
+    "Test1/graded_sentences": {
+      "ok": 352,
+      "unresolved-vocabulary": 359,
+      "partial": 257,
+      "unsupported-grammar": 129
+    },
+    "Test2/graded_sentences": {
+      "ok": 352,
+      "unresolved-vocabulary": 359,
+      "partial": 257,
+      "unsupported-grammar": 129
+    },
+    "Example/sentences_advanced": {
+      "ok": 157,
+      "partial": 52,
+      "unsupported-grammar": 20
+    },
+    "MagicTest/sentences_advanced": {
+      "ok": 121,
+      "partial": 47,
+      "unresolved-vocabulary": 41,
+      "unsupported-grammar": 20
+    },
+    "Test1/sentences_advanced": {
+      "ok": 157,
+      "partial": 52,
+      "unsupported-grammar": 20
+    },
+    "Test2/sentences_advanced": {
+      "ok": 157,
+      "partial": 52,
+      "unsupported-grammar": 20
+    },
+    "Example/sentences_default": {
+      "ok": 11
+    },
+    "MagicTest/sentences_default": {
+      "ok": 11
+    },
+    "Test1/sentences_default": {
+      "ok": 11
+    },
+    "Test2/sentences_default": {
+      "ok": 11
+    }
+  },
+  "after": {
+    "Example/contrast_suite_v1": {
+      "ok": 71,
+      "partial": 5,
+      "unsupported-grammar": 4
+    },
+    "MagicTest/contrast_suite_v1": {
+      "ok": 70,
+      "partial": 6,
+      "unsupported-grammar": 4
+    },
+    "Test1/contrast_suite_v1": {
+      "ok": 71,
+      "partial": 5,
+      "unsupported-grammar": 4
+    },
+    "Test2/contrast_suite_v1": {
+      "ok": 71,
+      "partial": 5,
+      "unsupported-grammar": 4
+    },
+    "Example/graded_sentences": {
+      "ok": 354,
+      "unresolved-vocabulary": 359,
+      "partial": 255,
+      "unsupported-grammar": 129
+    },
+    "MagicTest/graded_sentences": {
+      "ok": 301,
+      "unresolved-vocabulary": 422,
+      "partial": 245,
+      "unsupported-grammar": 129
+    },
+    "Test1/graded_sentences": {
+      "ok": 354,
+      "unresolved-vocabulary": 359,
+      "partial": 255,
+      "unsupported-grammar": 129
+    },
+    "Test2/graded_sentences": {
+      "ok": 354,
+      "unresolved-vocabulary": 359,
+      "partial": 255,
+      "unsupported-grammar": 129
+    },
+    "Example/sentences_advanced": {
+      "ok": 161,
+      "partial": 48,
+      "unsupported-grammar": 20
+    },
+    "MagicTest/sentences_advanced": {
+      "ok": 122,
+      "partial": 46,
+      "unresolved-vocabulary": 41,
+      "unsupported-grammar": 20
+    },
+    "Test1/sentences_advanced": {
+      "ok": 161,
+      "partial": 48,
+      "unsupported-grammar": 20
+    },
+    "Test2/sentences_advanced": {
+      "ok": 161,
+      "partial": 48,
+      "unsupported-grammar": 20
+    },
+    "Example/sentences_default": {
+      "ok": 11
+    },
+    "MagicTest/sentences_default": {
+      "ok": 11
+    },
+    "Test1/sentences_default": {
+      "ok": 11
+    },
+    "Test2/sentences_default": {
+      "ok": 11
+    }
+  },
+  "gates": {
+    "contrast_suite_v1_gate": {
+      "pass": true,
+      "newly_noncomplete": 0,
+      "newly_complete": 3,
+      "languages": {
+        "Example": {
+          "before_version": "7.6.12",
+          "after_version": "7.6.12",
+          "before": {
+            "Complete": 70,
+            "Partial": 6,
+            "Missing vocabulary": 0,
+            "Unsupported grammar": 4
+          },
+          "after": {
+            "Complete": 71,
+            "Partial": 5,
+            "Missing vocabulary": 0,
+            "Unsupported grammar": 4
+          },
+          "changes": [
+            {
+              "id": 43,
+              "sentence": "On a sunny morning we started for the mountains.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "recognized construction not yet fully realized",
+              "after_reason": ""
+            }
+          ],
+          "newly_noncomplete": [],
+          "newly_complete": [
+            {
+              "id": 43,
+              "sentence": "On a sunny morning we started for the mountains.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "recognized construction not yet fully realized",
+              "after_reason": ""
+            }
+          ]
+        },
+        "MagicTest": {
+          "before_version": "7.6.12",
+          "after_version": "7.6.12",
+          "before": {
+            "Complete": 70,
+            "Partial": 6,
+            "Missing vocabulary": 0,
+            "Unsupported grammar": 4
+          },
+          "after": {
+            "Complete": 70,
+            "Partial": 6,
+            "Missing vocabulary": 0,
+            "Unsupported grammar": 4
+          },
+          "changes": [],
+          "newly_noncomplete": [],
+          "newly_complete": []
+        },
+        "Test1": {
+          "before_version": "7.6.12",
+          "after_version": "7.6.12",
+          "before": {
+            "Complete": 70,
+            "Partial": 6,
+            "Missing vocabulary": 0,
+            "Unsupported grammar": 4
+          },
+          "after": {
+            "Complete": 71,
+            "Partial": 5,
+            "Missing vocabulary": 0,
+            "Unsupported grammar": 4
+          },
+          "changes": [
+            {
+              "id": 43,
+              "sentence": "On a sunny morning we started for the mountains.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "recognized construction not yet fully realized",
+              "after_reason": ""
+            }
+          ],
+          "newly_noncomplete": [],
+          "newly_complete": [
+            {
+              "id": 43,
+              "sentence": "On a sunny morning we started for the mountains.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "recognized construction not yet fully realized",
+              "after_reason": ""
+            }
+          ]
+        },
+        "Test2": {
+          "before_version": "7.6.12",
+          "after_version": "7.6.12",
+          "before": {
+            "Complete": 70,
+            "Partial": 6,
+            "Missing vocabulary": 0,
+            "Unsupported grammar": 4
+          },
+          "after": {
+            "Complete": 71,
+            "Partial": 5,
+            "Missing vocabulary": 0,
+            "Unsupported grammar": 4
+          },
+          "changes": [
+            {
+              "id": 43,
+              "sentence": "On a sunny morning we started for the mountains.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "recognized construction not yet fully realized",
+              "after_reason": ""
+            }
+          ],
+          "newly_noncomplete": [],
+          "newly_complete": [
+            {
+              "id": 43,
+              "sentence": "On a sunny morning we started for the mountains.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "recognized construction not yet fully realized",
+              "after_reason": ""
+            }
+          ]
+        }
+      },
+      "corpus": {
+        "count": 80,
+        "sha256": "a3fa508a2a288f2de8801db0cd06a73a19edf4623bdacee562f8f510be81df9f"
+      }
+    },
+    "graded_sentences_gate": {
+      "pass": true,
+      "newly_noncomplete": 0,
+      "newly_complete": 7,
+      "languages": {
+        "Example": {
+          "before_version": "7.6.12",
+          "after_version": "7.6.12",
+          "before": {
+            "Complete": 352,
+            "Partial": 257,
+            "Missing vocabulary": 359,
+            "Unsupported grammar": 129
+          },
+          "after": {
+            "Complete": 354,
+            "Partial": 255,
+            "Missing vocabulary": 359,
+            "Unsupported grammar": 129
+          },
+          "changes": [
+            {
+              "id": 449,
+              "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: carry",
+              "after_reason": ""
+            },
+            {
+              "id": 455,
+              "sentence": "Oh, dear! the wind has blown my hat away!",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: oh, dear",
+              "after_reason": ""
+            },
+            {
+              "id": 858,
+              "sentence": "I have found the ring I lost.",
+              "before": "partial",
+              "after": "partial",
+              "before_reason": "not realized: lost",
+              "after_reason": "not realized: found"
+            }
+          ],
+          "newly_noncomplete": [],
+          "newly_complete": [
+            {
+              "id": 449,
+              "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: carry",
+              "after_reason": ""
+            },
+            {
+              "id": 455,
+              "sentence": "Oh, dear! the wind has blown my hat away!",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: oh, dear",
+              "after_reason": ""
+            }
+          ]
+        },
+        "MagicTest": {
+          "before_version": "7.6.12",
+          "after_version": "7.6.12",
+          "before": {
+            "Complete": 300,
+            "Partial": 246,
+            "Missing vocabulary": 422,
+            "Unsupported grammar": 129
+          },
+          "after": {
+            "Complete": 301,
+            "Partial": 245,
+            "Missing vocabulary": 422,
+            "Unsupported grammar": 129
+          },
+          "changes": [
+            {
+              "id": 157,
+              "sentence": "The little seeds waited patiently under the snow for the warm spring sun.",
+              "before": "partial",
+              "after": "partial",
+              "before_reason": "recognized construction not yet fully realized",
+              "after_reason": "not realized: spring"
+            },
+            {
+              "id": 449,
+              "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: carry",
+              "after_reason": ""
+            },
+            {
+              "id": 455,
+              "sentence": "Oh, dear! the wind has blown my hat away!",
+              "before": "partial",
+              "after": "partial",
+              "before_reason": "not realized: dear",
+              "after_reason": "unrealized discourse expression: oh dear"
+            },
+            {
+              "id": 858,
+              "sentence": "I have found the ring I lost.",
+              "before": "partial",
+              "after": "partial",
+              "before_reason": "not realized: lost",
+              "after_reason": "not realized: found"
+            }
+          ],
+          "newly_noncomplete": [],
+          "newly_complete": [
+            {
+              "id": 449,
+              "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: carry",
+              "after_reason": ""
+            }
+          ]
+        },
+        "Test1": {
+          "before_version": "7.6.12",
+          "after_version": "7.6.12",
+          "before": {
+            "Complete": 352,
+            "Partial": 257,
+            "Missing vocabulary": 359,
+            "Unsupported grammar": 129
+          },
+          "after": {
+            "Complete": 354,
+            "Partial": 255,
+            "Missing vocabulary": 359,
+            "Unsupported grammar": 129
+          },
+          "changes": [
+            {
+              "id": 449,
+              "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: carry",
+              "after_reason": ""
+            },
+            {
+              "id": 455,
+              "sentence": "Oh, dear! the wind has blown my hat away!",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: oh, dear",
+              "after_reason": ""
+            },
+            {
+              "id": 858,
+              "sentence": "I have found the ring I lost.",
+              "before": "partial",
+              "after": "partial",
+              "before_reason": "not realized: lost",
+              "after_reason": "not realized: found"
+            }
+          ],
+          "newly_noncomplete": [],
+          "newly_complete": [
+            {
+              "id": 449,
+              "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: carry",
+              "after_reason": ""
+            },
+            {
+              "id": 455,
+              "sentence": "Oh, dear! the wind has blown my hat away!",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: oh, dear",
+              "after_reason": ""
+            }
+          ]
+        },
+        "Test2": {
+          "before_version": "7.6.12",
+          "after_version": "7.6.12",
+          "before": {
+            "Complete": 352,
+            "Partial": 257,
+            "Missing vocabulary": 359,
+            "Unsupported grammar": 129
+          },
+          "after": {
+            "Complete": 354,
+            "Partial": 255,
+            "Missing vocabulary": 359,
+            "Unsupported grammar": 129
+          },
+          "changes": [
+            {
+              "id": 449,
+              "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: carry",
+              "after_reason": ""
+            },
+            {
+              "id": 455,
+              "sentence": "Oh, dear! the wind has blown my hat away!",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: oh, dear",
+              "after_reason": ""
+            },
+            {
+              "id": 858,
+              "sentence": "I have found the ring I lost.",
+              "before": "partial",
+              "after": "partial",
+              "before_reason": "not realized: lost",
+              "after_reason": "not realized: found"
+            }
+          ],
+          "newly_noncomplete": [],
+          "newly_complete": [
+            {
+              "id": 449,
+              "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: carry",
+              "after_reason": ""
+            },
+            {
+              "id": 455,
+              "sentence": "Oh, dear! the wind has blown my hat away!",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: oh, dear",
+              "after_reason": ""
+            }
+          ]
+        }
+      },
+      "corpus": {
+        "count": 1097,
+        "sha256": "a36483f20c0f412a857e4e0075393607c3564198b8456da0ada981b38388b2d1"
+      }
+    },
+    "sentences_advanced_gate": {
+      "pass": true,
+      "newly_noncomplete": 0,
+      "newly_complete": 13,
+      "languages": {
+        "Example": {
+          "before_version": "7.6.12",
+          "after_version": "7.6.12",
+          "before": {
+            "Complete": 157,
+            "Partial": 52,
+            "Missing vocabulary": 0,
+            "Unsupported grammar": 20
+          },
+          "after": {
+            "Complete": 161,
+            "Partial": 48,
+            "Missing vocabulary": 0,
+            "Unsupported grammar": 20
+          },
+          "changes": [
+            {
+              "id": 74,
+              "sentence": "On a Sunny morning after the solstice we started for the mountains.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "recognized construction not yet fully realized",
+              "after_reason": ""
+            },
+            {
+              "id": 83,
+              "sentence": "During our residence in the country we often walked in the pastures.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: country",
+              "after_reason": ""
+            },
+            {
+              "id": 142,
+              "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: carry",
+              "after_reason": ""
+            },
+            {
+              "id": 146,
+              "sentence": "Oh, dear! the wind has blown my hat away!",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: oh, dear",
+              "after_reason": ""
+            },
+            {
+              "id": 210,
+              "sentence": "I have found the ring I lost.",
+              "before": "partial",
+              "after": "partial",
+              "before_reason": "not realized: lost",
+              "after_reason": "not realized: found"
+            }
+          ],
+          "newly_noncomplete": [],
+          "newly_complete": [
+            {
+              "id": 74,
+              "sentence": "On a Sunny morning after the solstice we started for the mountains.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "recognized construction not yet fully realized",
+              "after_reason": ""
+            },
+            {
+              "id": 83,
+              "sentence": "During our residence in the country we often walked in the pastures.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: country",
+              "after_reason": ""
+            },
+            {
+              "id": 142,
+              "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: carry",
+              "after_reason": ""
+            },
+            {
+              "id": 146,
+              "sentence": "Oh, dear! the wind has blown my hat away!",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: oh, dear",
+              "after_reason": ""
+            }
+          ]
+        },
+        "MagicTest": {
+          "before_version": "7.6.12",
+          "after_version": "7.6.12",
+          "before": {
+            "Complete": 121,
+            "Partial": 47,
+            "Missing vocabulary": 41,
+            "Unsupported grammar": 20
+          },
+          "after": {
+            "Complete": 122,
+            "Partial": 46,
+            "Missing vocabulary": 41,
+            "Unsupported grammar": 20
+          },
+          "changes": [
+            {
+              "id": 78,
+              "sentence": "The little seeds waited patiently under the snow for the warm spring sun.",
+              "before": "partial",
+              "after": "partial",
+              "before_reason": "recognized construction not yet fully realized",
+              "after_reason": "not realized: spring"
+            },
+            {
+              "id": 142,
+              "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: carry",
+              "after_reason": ""
+            },
+            {
+              "id": 146,
+              "sentence": "Oh, dear! the wind has blown my hat away!",
+              "before": "partial",
+              "after": "partial",
+              "before_reason": "not realized: dear",
+              "after_reason": "unrealized discourse expression: oh dear"
+            },
+            {
+              "id": 210,
+              "sentence": "I have found the ring I lost.",
+              "before": "partial",
+              "after": "partial",
+              "before_reason": "not realized: lost",
+              "after_reason": "not realized: found"
+            }
+          ],
+          "newly_noncomplete": [],
+          "newly_complete": [
+            {
+              "id": 142,
+              "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: carry",
+              "after_reason": ""
+            }
+          ]
+        },
+        "Test1": {
+          "before_version": "7.6.12",
+          "after_version": "7.6.12",
+          "before": {
+            "Complete": 157,
+            "Partial": 52,
+            "Missing vocabulary": 0,
+            "Unsupported grammar": 20
+          },
+          "after": {
+            "Complete": 161,
+            "Partial": 48,
+            "Missing vocabulary": 0,
+            "Unsupported grammar": 20
+          },
+          "changes": [
+            {
+              "id": 74,
+              "sentence": "On a Sunny morning after the solstice we started for the mountains.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "recognized construction not yet fully realized",
+              "after_reason": ""
+            },
+            {
+              "id": 83,
+              "sentence": "During our residence in the country we often walked in the pastures.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: country",
+              "after_reason": ""
+            },
+            {
+              "id": 142,
+              "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: carry",
+              "after_reason": ""
+            },
+            {
+              "id": 146,
+              "sentence": "Oh, dear! the wind has blown my hat away!",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: oh, dear",
+              "after_reason": ""
+            },
+            {
+              "id": 210,
+              "sentence": "I have found the ring I lost.",
+              "before": "partial",
+              "after": "partial",
+              "before_reason": "not realized: lost",
+              "after_reason": "not realized: found"
+            }
+          ],
+          "newly_noncomplete": [],
+          "newly_complete": [
+            {
+              "id": 74,
+              "sentence": "On a Sunny morning after the solstice we started for the mountains.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "recognized construction not yet fully realized",
+              "after_reason": ""
+            },
+            {
+              "id": 83,
+              "sentence": "During our residence in the country we often walked in the pastures.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: country",
+              "after_reason": ""
+            },
+            {
+              "id": 142,
+              "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: carry",
+              "after_reason": ""
+            },
+            {
+              "id": 146,
+              "sentence": "Oh, dear! the wind has blown my hat away!",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: oh, dear",
+              "after_reason": ""
+            }
+          ]
+        },
+        "Test2": {
+          "before_version": "7.6.12",
+          "after_version": "7.6.12",
+          "before": {
+            "Complete": 157,
+            "Partial": 52,
+            "Missing vocabulary": 0,
+            "Unsupported grammar": 20
+          },
+          "after": {
+            "Complete": 161,
+            "Partial": 48,
+            "Missing vocabulary": 0,
+            "Unsupported grammar": 20
+          },
+          "changes": [
+            {
+              "id": 74,
+              "sentence": "On a Sunny morning after the solstice we started for the mountains.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "recognized construction not yet fully realized",
+              "after_reason": ""
+            },
+            {
+              "id": 83,
+              "sentence": "During our residence in the country we often walked in the pastures.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: country",
+              "after_reason": ""
+            },
+            {
+              "id": 142,
+              "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: carry",
+              "after_reason": ""
+            },
+            {
+              "id": 146,
+              "sentence": "Oh, dear! the wind has blown my hat away!",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: oh, dear",
+              "after_reason": ""
+            },
+            {
+              "id": 210,
+              "sentence": "I have found the ring I lost.",
+              "before": "partial",
+              "after": "partial",
+              "before_reason": "not realized: lost",
+              "after_reason": "not realized: found"
+            }
+          ],
+          "newly_noncomplete": [],
+          "newly_complete": [
+            {
+              "id": 74,
+              "sentence": "On a Sunny morning after the solstice we started for the mountains.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "recognized construction not yet fully realized",
+              "after_reason": ""
+            },
+            {
+              "id": 83,
+              "sentence": "During our residence in the country we often walked in the pastures.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: country",
+              "after_reason": ""
+            },
+            {
+              "id": 142,
+              "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: carry",
+              "after_reason": ""
+            },
+            {
+              "id": 146,
+              "sentence": "Oh, dear! the wind has blown my hat away!",
+              "before": "partial",
+              "after": "ok",
+              "before_reason": "not realized: oh, dear",
+              "after_reason": ""
+            }
+          ]
+        }
+      },
+      "corpus": {
+        "count": 229,
+        "sha256": "3401428c05a512542522c7e69dd8daa2428e2c6429f998515552e189f41044ef"
+      }
+    },
+    "sentences_default_gate": {
+      "pass": true,
+      "newly_noncomplete": 0,
+      "newly_complete": 0,
+      "languages": {
+        "Example": {
+          "before_version": "7.6.12",
+          "after_version": "7.6.12",
+          "before": {
+            "Complete": 11,
+            "Partial": 0,
+            "Missing vocabulary": 0,
+            "Unsupported grammar": 0
+          },
+          "after": {
+            "Complete": 11,
+            "Partial": 0,
+            "Missing vocabulary": 0,
+            "Unsupported grammar": 0
+          },
+          "changes": [],
+          "newly_noncomplete": [],
+          "newly_complete": []
+        },
+        "MagicTest": {
+          "before_version": "7.6.12",
+          "after_version": "7.6.12",
+          "before": {
+            "Complete": 11,
+            "Partial": 0,
+            "Missing vocabulary": 0,
+            "Unsupported grammar": 0
+          },
+          "after": {
+            "Complete": 11,
+            "Partial": 0,
+            "Missing vocabulary": 0,
+            "Unsupported grammar": 0
+          },
+          "changes": [],
+          "newly_noncomplete": [],
+          "newly_complete": []
+        },
+        "Test1": {
+          "before_version": "7.6.12",
+          "after_version": "7.6.12",
+          "before": {
+            "Complete": 11,
+            "Partial": 0,
+            "Missing vocabulary": 0,
+            "Unsupported grammar": 0
+          },
+          "after": {
+            "Complete": 11,
+            "Partial": 0,
+            "Missing vocabulary": 0,
+            "Unsupported grammar": 0
+          },
+          "changes": [],
+          "newly_noncomplete": [],
+          "newly_complete": []
+        },
+        "Test2": {
+          "before_version": "7.6.12",
+          "after_version": "7.6.12",
+          "before": {
+            "Complete": 11,
+            "Partial": 0,
+            "Missing vocabulary": 0,
+            "Unsupported grammar": 0
+          },
+          "after": {
+            "Complete": 11,
+            "Partial": 0,
+            "Missing vocabulary": 0,
+            "Unsupported grammar": 0
+          },
+          "changes": [],
+          "newly_noncomplete": [],
+          "newly_complete": []
+        }
+      },
+      "corpus": {
+        "count": 11,
+        "sha256": "6eebba4e1eb512d2184b1f32c6d1b448cf33bfb645bcb7a72945bdb6e6aeeee4"
+      }
+    }
+  },
+  "recoveries": [
+    {
+      "language": "Example",
+      "corpus": "contrast_suite_v1",
+      "id": 43,
+      "sentence": "On a sunny morning we started for the mountains.",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "[PARTIAL]",
+      "after_gloss": "1PL  START-PST ON SUNNY MORNING:LOCATIVE FOR MOUNTAIN.PL:LOCATIVE"
+    },
+    {
+      "language": "Test1",
+      "corpus": "contrast_suite_v1",
+      "id": 43,
+      "sentence": "On a sunny morning we started for the mountains.",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "[PARTIAL]",
+      "after_gloss": "START-PST 1PL ON MORNING SUNNY FOR MOUNTAIN.PL-DEF"
+    },
+    {
+      "language": "Test2",
+      "corpus": "contrast_suite_v1",
+      "id": 43,
+      "sentence": "On a sunny morning we started for the mountains.",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "[PARTIAL]",
+      "after_gloss": "1PL  START-PST ON SUNNY MORNING FOR MOUNTAIN.PL"
+    },
+    {
+      "language": "Example",
+      "corpus": "graded_sentences",
+      "id": 449,
+      "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE TO 2SG-GEN MOTHER:LOCATIVE AND WAIT-IMP FOR ANSWER:LOCATIVE",
+      "after_gloss": "TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE AND CARRY-IMP 3SG TO 2SG-GEN MOTHER:LOCATIVE AND WAIT-IMP FOR ANSWER:LOCATIVE"
+    },
+    {
+      "language": "Example",
+      "corpus": "graded_sentences",
+      "id": 455,
+      "sentence": "Oh, dear! the wind has blown my hat away!",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "WIND 1SG-GEN HAT:ACCUSATIVE BLOW-PERF AWAY",
+      "after_gloss": "OH DEAR! WIND 1SG-GEN HAT:ACCUSATIVE BLOW-PERF AWAY"
+    },
+    {
+      "language": "MagicTest",
+      "corpus": "graded_sentences",
+      "id": 449,
+      "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE TO 2SG-GEN MOTHER AND WAIT-IMP FOR ANSWER",
+      "after_gloss": "TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE AND CARRY-IMP 3SG TO 2SG-GEN MOTHER AND WAIT-IMP FOR ANSWER"
+    },
+    {
+      "language": "Test1",
+      "corpus": "graded_sentences",
+      "id": 449,
+      "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE TO 2SG-GEN MOTHER AND WAIT-IMP FOR ANSWER",
+      "after_gloss": "TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE AND CARRY-IMP 3SG TO 2SG-GEN MOTHER AND WAIT-IMP FOR ANSWER"
+    },
+    {
+      "language": "Test1",
+      "corpus": "graded_sentences",
+      "id": 455,
+      "sentence": "Oh, dear! the wind has blown my hat away!",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "BLOW-PERF WIND 1SG-GEN HAT:ACCUSATIVE AWAY",
+      "after_gloss": "OH DEAR! BLOW-PERF WIND-DEF 1SG-GEN HAT:ACCUSATIVE AWAY"
+    },
+    {
+      "language": "Test2",
+      "corpus": "graded_sentences",
+      "id": 449,
+      "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE TO 2SG-GEN MOTHER AND WAIT-IMP FOR ANSWER",
+      "after_gloss": "TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE AND CARRY-IMP 3SG TO 2SG-GEN MOTHER AND WAIT-IMP FOR ANSWER"
+    },
+    {
+      "language": "Test2",
+      "corpus": "graded_sentences",
+      "id": 455,
+      "sentence": "Oh, dear! the wind has blown my hat away!",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "WIND 1SG-GEN HAT:ACCUSATIVE BLOW-PERF AWAY",
+      "after_gloss": "OH DEAR! WIND 1SG-GEN HAT:ACCUSATIVE BLOW-PERF AWAY"
+    },
+    {
+      "language": "Example",
+      "corpus": "sentences_advanced",
+      "id": 74,
+      "sentence": "On a Sunny morning after the solstice we started for the mountains.",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "[PARTIAL]",
+      "after_gloss": "1PL  START-PST ON SUNNY MORNING:LOCATIVE AFTER SOLSTICE:LOCATIVE FOR MOUNTAIN.PL:LOCATIVE"
+    },
+    {
+      "language": "Example",
+      "corpus": "sentences_advanced",
+      "id": 83,
+      "sentence": "During our residence in the country we often walked in the pastures.",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "1PL-GEN residence.NOM WALKED IN pasture.LOC",
+      "after_gloss": "1PL  WALK-PST OFTEN DURING 1PL-GEN RESIDENCE:LOCATIVE IN COUNTRY:LOCATIVE IN PASTURE.PL:LOCATIVE"
+    },
+    {
+      "language": "Example",
+      "corpus": "sentences_advanced",
+      "id": 142,
+      "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE TO 2SG-GEN MOTHER:LOCATIVE AND WAIT-IMP FOR ANSWER:LOCATIVE",
+      "after_gloss": "TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE AND CARRY-IMP 3SG TO 2SG-GEN MOTHER:LOCATIVE AND WAIT-IMP FOR ANSWER:LOCATIVE"
+    },
+    {
+      "language": "Example",
+      "corpus": "sentences_advanced",
+      "id": 146,
+      "sentence": "Oh, dear! the wind has blown my hat away!",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "WIND 1SG-GEN HAT:ACCUSATIVE BLOW-PERF AWAY",
+      "after_gloss": "OH DEAR! WIND 1SG-GEN HAT:ACCUSATIVE BLOW-PERF AWAY"
+    },
+    {
+      "language": "MagicTest",
+      "corpus": "sentences_advanced",
+      "id": 142,
+      "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE TO 2SG-GEN MOTHER AND WAIT-IMP FOR ANSWER",
+      "after_gloss": "TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE AND CARRY-IMP 3SG TO 2SG-GEN MOTHER AND WAIT-IMP FOR ANSWER"
+    },
+    {
+      "language": "Test1",
+      "corpus": "sentences_advanced",
+      "id": 74,
+      "sentence": "On a Sunny morning after the solstice we started for the mountains.",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "[PARTIAL]",
+      "after_gloss": "START-PST 1PL ON MORNING SUNNY AFTER SOLSTICE-DEF FOR MOUNTAIN.PL-DEF"
+    },
+    {
+      "language": "Test1",
+      "corpus": "sentences_advanced",
+      "id": 83,
+      "sentence": "During our residence in the country we often walked in the pastures.",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "WALKED 1PL-GEN residence.NOM-DEF IN pasture.LOC-DEF",
+      "after_gloss": "WALK-PST 1PL OFTEN DURING 1PL-GEN RESIDENCE IN COUNTRY-DEF IN PASTURE.PL-DEF"
+    },
+    {
+      "language": "Test1",
+      "corpus": "sentences_advanced",
+      "id": 142,
+      "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE TO 2SG-GEN MOTHER AND WAIT-IMP FOR ANSWER",
+      "after_gloss": "TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE AND CARRY-IMP 3SG TO 2SG-GEN MOTHER AND WAIT-IMP FOR ANSWER"
+    },
+    {
+      "language": "Test1",
+      "corpus": "sentences_advanced",
+      "id": 146,
+      "sentence": "Oh, dear! the wind has blown my hat away!",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "BLOW-PERF WIND 1SG-GEN HAT:ACCUSATIVE AWAY",
+      "after_gloss": "OH DEAR! BLOW-PERF WIND-DEF 1SG-GEN HAT:ACCUSATIVE AWAY"
+    },
+    {
+      "language": "Test2",
+      "corpus": "sentences_advanced",
+      "id": 74,
+      "sentence": "On a Sunny morning after the solstice we started for the mountains.",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "[PARTIAL]",
+      "after_gloss": "1PL  START-PST ON SUNNY MORNING AFTER SOLSTICE FOR MOUNTAIN.PL"
+    },
+    {
+      "language": "Test2",
+      "corpus": "sentences_advanced",
+      "id": 83,
+      "sentence": "During our residence in the country we often walked in the pastures.",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "1PL-GEN residence.NOM WALKED IN pasture.LOC",
+      "after_gloss": "OFTEN 1PL  WALK-PST DURING 1PL-GEN RESIDENCE IN COUNTRY IN PASTURE.PL"
+    },
+    {
+      "language": "Test2",
+      "corpus": "sentences_advanced",
+      "id": 142,
+      "sentence": "Take this note, carry it to your mother; and wait for an answer.",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE TO 2SG-GEN MOTHER AND WAIT-IMP FOR ANSWER",
+      "after_gloss": "TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE AND CARRY-IMP 3SG TO 2SG-GEN MOTHER AND WAIT-IMP FOR ANSWER"
+    },
+    {
+      "language": "Test2",
+      "corpus": "sentences_advanced",
+      "id": 146,
+      "sentence": "Oh, dear! the wind has blown my hat away!",
+      "before_status": "partial",
+      "after_status": "ok",
+      "before_gloss": "WIND 1SG-GEN HAT:ACCUSATIVE BLOW-PERF AWAY",
+      "after_gloss": "OH DEAR! WIND 1SG-GEN HAT:ACCUSATIVE BLOW-PERF AWAY"
+    }
+  ],
+  "changed_complete_translations": [
+    {
+      "language": "MagicTest",
+      "corpus": "contrast_suite_v1",
+      "id": 43,
+      "sentence": "On a sunny morning we started for the mountains.",
+      "before_status": "ok",
+      "after_status": "ok",
+      "before_gloss": "morning.NOM sunny START FOR mountain.DAT-DEF",
+      "after_gloss": "1PL  START-PST ON MORNING SUNNY FOR MOUNTAIN.PL-DEF"
+    },
+    {
+      "language": "Example",
+      "corpus": "graded_sentences",
+      "id": 328,
+      "sentence": "At noon we ate our lunch by the roadside.",
+      "before_status": "ok",
+      "after_status": "ok",
+      "before_gloss": "noon.NOM 1PL-GEN lunch.ACC EAT-PST BY roadside.LOC",
+      "after_gloss": "1PL 1PL-GEN LUNCH:ACCUSATIVE EAT-PST AT NOON:LOCATIVE BY ROADSIDE:LOCATIVE"
+    },
+    {
+      "language": "Test1",
+      "corpus": "graded_sentences",
+      "id": 328,
+      "sentence": "At noon we ate our lunch by the roadside.",
+      "before_status": "ok",
+      "after_status": "ok",
+      "before_gloss": "EAT-PST noon.NOM 1PL-GEN lunch.ACC BY roadside.LOC-DEF",
+      "after_gloss": "EAT-PST 1PL 1PL-GEN LUNCH:ACCUSATIVE AT NOON BY ROADSIDE-DEF"
+    },
+    {
+      "language": "Test2",
+      "corpus": "graded_sentences",
+      "id": 328,
+      "sentence": "At noon we ate our lunch by the roadside.",
+      "before_status": "ok",
+      "after_status": "ok",
+      "before_gloss": "noon.NOM 1PL-GEN lunch.ACC EAT-PST BY roadside.LOC",
+      "after_gloss": "1PL 1PL-GEN LUNCH:ACCUSATIVE EAT-PST AT NOON BY ROADSIDE"
+    },
+    {
+      "language": "Example",
+      "corpus": "sentences_advanced",
+      "id": 103,
+      "sentence": "At noon we ate our lunch by the roadside.",
+      "before_status": "ok",
+      "after_status": "ok",
+      "before_gloss": "noon.NOM 1PL-GEN lunch.ACC EAT-PST BY roadside.LOC",
+      "after_gloss": "1PL 1PL-GEN LUNCH:ACCUSATIVE EAT-PST AT NOON:LOCATIVE BY ROADSIDE:LOCATIVE"
+    },
+    {
+      "language": "Test1",
+      "corpus": "sentences_advanced",
+      "id": 103,
+      "sentence": "At noon we ate our lunch by the roadside.",
+      "before_status": "ok",
+      "after_status": "ok",
+      "before_gloss": "EAT-PST noon.NOM 1PL-GEN lunch.ACC BY roadside.LOC-DEF",
+      "after_gloss": "EAT-PST 1PL 1PL-GEN LUNCH:ACCUSATIVE AT NOON BY ROADSIDE-DEF"
+    },
+    {
+      "language": "Test2",
+      "corpus": "sentences_advanced",
+      "id": 103,
+      "sentence": "At noon we ate our lunch by the roadside.",
+      "before_status": "ok",
+      "after_status": "ok",
+      "before_gloss": "noon.NOM 1PL-GEN lunch.ACC EAT-PST BY roadside.LOC",
+      "after_gloss": "1PL 1PL-GEN LUNCH:ACCUSATIVE EAT-PST AT NOON BY ROADSIDE"
+    }
+  ],
+  "source_provenance": {
+    "Example": {
+      "translator_version": "7.6.12",
+      "language_build_version": "7.6.1",
+      "package_sha256": "4f259a7477bebca611e666c6c3aa0a66e58de82ecc56655c3a669629b8cef3e7",
+      "grammar_sha256": "fe67258bf348f344bc25634be3a189e6ac01e737a0156e1b0dcfd4610a3f2eb6",
+      "translator_sha256": "8b19a0ef2bf4cc3499300586481fced7266e83e71f8ee58b263ac19e3b5f7da7",
+      "contract_version": 9
+    },
+    "MagicTest": {
+      "translator_version": "7.6.12",
+      "language_build_version": "7.6.7",
+      "package_sha256": "d77892aa443a963138ec06fbdc44ec1af03ef18e1365cc1e2bc18295a328f300",
+      "grammar_sha256": "a499bab154115bb890eb686ed31a3a0d3bc429a6df6343702bc39d63d562baea",
+      "translator_sha256": "8b19a0ef2bf4cc3499300586481fced7266e83e71f8ee58b263ac19e3b5f7da7",
+      "contract_version": 9
+    },
+    "Test1": {
+      "translator_version": "7.6.12",
+      "language_build_version": "7.6.1",
+      "package_sha256": "00e9fc347bb3ee71cb9a712885298c4e35cdeb303cbf1ade82360efa9a22cb8b",
+      "grammar_sha256": "52bd4c413e40f23a05716cf904a17a13dc8c66c4eccf9a75d8b9276115c89f29",
+      "translator_sha256": "8b19a0ef2bf4cc3499300586481fced7266e83e71f8ee58b263ac19e3b5f7da7",
+      "contract_version": 9
+    },
+    "Test2": {
+      "translator_version": "7.6.12",
+      "language_build_version": "7.6.1",
+      "package_sha256": "1614ab40862004232a7392c48082a0085741736bc47db22c5c37d4982e32cc4e",
+      "grammar_sha256": "a3a309b6f7422bf9de5591afba30ef015f9b13ca756feb1ff837a13cb7b18622",
+      "translator_sha256": "8b19a0ef2bf4cc3499300586481fced7266e83e71f8ee58b263ac19e3b5f7da7",
+      "contract_version": 9
+    }
+  }
+}

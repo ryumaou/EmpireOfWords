@@ -190,11 +190,11 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
             return main
         return None
     if any(c in constructions for c in ('relative_clause','appositive','conditional_clause','passive','quotation','complement_clause')): return None
-    # Without a comma, a nominative pronoun supplies the adjunct boundary.
+    # A nominative pronoun supplies the adjunct boundary, with or without a comma.
     # Do not guess a boundary between adjacent common nouns.
-    unpunctuated_pp=None if ',' in raw else re.match(r'^\s*(on|in|at|during|after|before)\s+(.+?)\s+((?:I|we|you|he|she|they|it)\s+.+[.!?])\s*$',raw,re.I)
-    if unpunctuated_pp:
-        ad,object_text,main_text=unpunctuated_pp.groups()
+    pronoun_pp=re.match(r'^\s*(on|in|at|during|after|before)\s+([^,]+?)(?:,\s*|\s+)((?:I|we|you|he|she|they|it)\s+[^,]+[.!?])\s*$',raw,re.I)
+    if pronoun_pp:
+        ad,object_text,main_text=pronoun_pp.groups()
         obj=parse_np([x.lower() for x in english_tokens(object_text)],by,lexical_match)
         child=parse_clause(main_text,by,lexical_match,english_tokens,lemma_candidates,constructions,g) if obj else None
         if child is not None:
@@ -229,8 +229,14 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
     # silently reducing an A, B, and C series to its first and last verbs.
     # Only enter this branch when the initial segment and EVERY subsequent
     # segment can be parsed as a predicate; ordinary comma modifiers fall back.
-    if ',' in raw and re.search(r'\b(?:and|or|but)\b', raw, re.I):
-        segments=[part.strip(' ,;.!?') for part in raw.split(',')]
+    if (',' in raw or ';' in raw) and re.search(r'\b(?:and|or|but)\b', raw, re.I):
+        segments=[part.strip(' ,;.!?') for part in re.split(r'[,;]',raw)]
+        if ';' in raw:
+            # Semicolons may also separate independent clauses. Extend the
+            # shared-subject series only for overt verb-initial commands.
+            starts=[re.sub(r'^(?:and|or|but)\s+', '', part, flags=re.I).split() for part in segments]
+            if 'imperative' not in constructions or not all(xs and _form(by,xs[0].lower(),('v',)) and xs[0].lower() not in AUX for xs in starts):
+                segments=[]
         if len(segments)>=3:
             last=segments[-1]
             match=re.match(r'^(and|or|but)\s+(.+)$',last,re.I)

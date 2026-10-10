@@ -36,6 +36,12 @@ class FrontedPronounBoundaryTests(unittest.TestCase):
         result = analyze_translation('On a flibbertigibbet morning we started for the mountains.', grammar, entries, forms)
         self.assertNotEqual(result['status'], 'ok')
 
+    def test_fronted_series_cannot_turn_dress_into_a_noun(self):
+        for name in ('Example', 'Test1', 'Test2'):
+            _, grammar, entries, forms = load_language(ROOT / 'output' / name / 'language.json')
+            result = analyze_translation('In winter I get up at night, and dress by yellow candlelight.', grammar, entries, forms)
+            self.assertNotEqual(result['status'], 'ok', name + ': DRESS must remain a second predicate')
+
 
 if __name__ == '__main__':
     unittest.main()
