@@ -42,3 +42,20 @@ they need semantic accountability beyond the current lexical receipt sets.
 The pre-existing untracked `test_v769_fronted_pp.py` was adjusted locally to use
 an actually unavailable adjunct word for its failure check. Its prior sentence
 is now a positive regression fixture in the new committed test file.
+
+## Iteration 2 — punctuation inside discourse expressions
+
+`Oh, dear!` now follows the existing `Oh dear!` discourse path, preserving the
+original source, both interjection receipts, and the following clause's status.
+Absent interjection forms still prevent completion; no language is extended.
+
+Example, Test1 and Test2 each recover advanced #146 and graded #605. Advanced
+coverage increases from 159 to 160/229; graded coverage from 352 to 353/1,097.
+Contrast, default and MagicTest coverage are unchanged. MagicTest's corresponding
+sentences stay incomplete because the required discourse forms are unavailable.
+
+100 regression tests, 11 semantic fixtures, all four strict corpus gates and
+20 grammatical fidelity checks pass. The only changes since iteration 1 are the
+two punctuation-variant sentences in each language. All 65 language-file hashes
+are unchanged. These commits are incremental to the original dirty workspace;
+the pre-existing discourse handler remains uncommitted, as it was on entry.
