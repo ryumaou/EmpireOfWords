@@ -105,7 +105,10 @@ def parse_np(words,by,lexical_match):
     ing_i=next((i for i,w in enumerate(words[1:],1) if w.endswith('ing') and lexical_match(by,w)),None)
     if ing_i is not None:
         vl=_lemma(words[ing_i],by,lexical_match)
-        if _pos(by,vl,'v'):
+        # A postnominal participle needs a nominal host. Without one, an
+        # ambiguous -ing noun such as MORNING is the head, not a modifier
+        # of the preceding adjective SUNNY.
+        if _pos(by,vl,'v') and any(_pos(by,_lemma(w,by,lexical_match),'n') for w in words[:ing_i]):
             pobj=parse_np(words[ing_i+1:],by,lexical_match) if words[ing_i+1:] else None
             participial=[ParticipialModifierIR(vl,pobj)]
             words=words[:ing_i]
@@ -187,6 +190,17 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
             return main
         return None
     if any(c in constructions for c in ('relative_clause','appositive','conditional_clause','passive','quotation','complement_clause')): return None
+    # Without a comma, a nominative pronoun supplies the adjunct boundary.
+    # Do not guess a boundary between adjacent common nouns.
+    unpunctuated_pp=None if ',' in raw else re.match(r'^\s*(on|in|at|during|after|before)\s+(.+?)\s+((?:I|we|you|he|she|they|it)\s+.+[.!?])\s*$',raw,re.I)
+    if unpunctuated_pp:
+        ad,object_text,main_text=unpunctuated_pp.groups()
+        obj=parse_np([x.lower() for x in english_tokens(object_text)],by,lexical_match)
+        child=parse_clause(main_text,by,lexical_match,english_tokens,lemma_candidates,constructions,g) if obj else None
+        if child is not None:
+            child.predicate.pps.insert(0,PPIR(ad.lower(),obj))
+            child.source_tokens=english_tokens(raw)
+            return child
     # Degree questions are not ordinary WHERE/WHEN adjunct questions. Preserve
     # both HOW and its adjective; reconstruct the uninverted copular clause.
     degree_match=re.match(r'^\s*how\s+([a-z]+)\s+(is|are|was|were)\s+(.+?)\s*\?\s*$',raw,re.I)
