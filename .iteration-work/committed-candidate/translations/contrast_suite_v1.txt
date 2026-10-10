@@ -1,0 +1,81 @@
+# Controlled contrast suite v1; do not merge with the 229-sentence baseline
+The dog sees the cat.
+The dog saw the cat.
+The dog will see the cat.
+The dog did not see the cat.
+The dog will not see the cat.
+The dog sees the cats.
+The dogs see the cat.
+The dog sees the cat and the bird.
+The dog sees the cats and the bird.
+Does the dog see the cat?
+Did the dog see the cat?
+Will the dog see the cat?
+Is the dog happy?
+Is today Monday?
+Where is the dog?
+When will the guests arrive?
+How wide is the river?
+The dog sees the cat and the bird.
+The dog sees the cat or the bird.
+The dog sees the cat and hears the bird.
+The dog saw the cat and heard the bird.
+The dog sees the cat but hears the bird.
+The dog sees the cat, and the bird sees the dog.
+John and Elizabeth are friends.
+The dog is small but strong.
+The crow dropped pebbles and raised water.
+I awoke early, dressed hastily, and went to breakfast.
+See the cat.
+Do not see the cat.
+Take the note and wait.
+Take this note, carry it to your mother, and wait for an answer.
+Be happy.
+The girl sees the doll.
+The girl sees the doll's dress.
+The little girl made the doll's dress herself.
+The dog sees its house.
+The man sees his dog.
+The dog sees the cat.
+The small dog sees the cat.
+The dog sees the small cat.
+The dog sees the cat in the house.
+The old man with a stick stood beside the fence.
+On a sunny morning we started for the mountains.
+The girls with wreaths of flowers danced.
+The sun looked through the branches.
+The dog sees the cat.
+The dog is seeing the cat.
+The dog has seen the cat.
+The dog has been seeing the cat.
+The dog was seeing the cat.
+The dog can see the cat.
+The dog must see the cat.
+The dog should see the cat.
+The dog might see the cat.
+Will you go with us or wait here?
+The dog is big.
+The dog is bigger than the cat.
+The dog is the biggest.
+Do you like summer or winter better?
+The days grow shorter.
+The dog sees the cat because the cat is small.
+If the dog sees the cat, the bird will fly.
+The dog that sees the cat is happy.
+I know that the dog sees the cat.
+The cat was seen by the dog.
+Aha! I have caught you!
+Alas! That news is sad.
+Oh dear! The wind has blown my hat away!
+Madam, I will obey your command.
+Show the guests these shells, my son.
+The dog sees the cat.
+The dog does not see the cat.
+The dog never sees the cat.
+The dog sees no cat.
+The dog sees nothing.
+The cat sees the dog.
+The dog sees the cat.
+The girl gives the boy a book.
+The girl gives a book to the boy.
+The man stood beside the fence.

@@ -1,0 +1,16 @@
+Language: Test2
+Sentences: 1097
+Complete: 350
+Partial: 259
+Missing vocabulary: 359
+Unsupported grammar: 129
+Output: .iteration-work\iteration1\Test2\graded_sentences.txt
+Missing-word additions: .iteration-work\iteration1\Test2\graded_sentences_missing_words.txt
+Addable missing concepts: 396
+Missing words requiring POS review: 43
+Diagnostics: .iteration-work\iteration1\Test2\graded_sentences_diagnostics.txt
+Analysis JSON: .iteration-work\iteration1\Test2\graded_sentences_analysis.json
+Warning: homophone: bloody:adj = scrub:v = gumina
+Warning: homophone: silvered:adj = silver:adj = nangmoqm
+Warning: homophone: slave:n = serve:v = uluduar
+Warning: homophone: writer:n = author:n = nilr

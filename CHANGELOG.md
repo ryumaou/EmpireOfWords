@@ -1,3 +1,43 @@
+## v7.6.12
+
+- Handle leading `Madam,` and `Sir,` as vocatives, separate from the clause subject; translate only if an actual target-language form exists.
+- Report a missing vocative as partial with an explicit semantic diagnostic rather than losing the addressee.
+- Hash the full translation implementation (CLI, grammar engine, English analyzer, structured realizer, IR, and language IO) in diagnostics, instead of only `translate.py`.
+- Add three vocative regression tests; update version test. No existing language package is regenerated.
+- Proper-name coordination and preference comparisons remain unresolved.
+
+## v7.6.11
+
+- Separate leading interjections from the following sentence before clause analysis.
+- Realize `Oh dear!` with language-specific interjection lexemes when both exist; retain a semantic receipt for each word.
+- Report missing discourse forms as partial instead of silently omitting them (e.g. `Aha!`).
+- Add three discourse regression tests. Existing generated languages are not regenerated.
+- Proper-name coordination and vocatives remain future work.
+
+## v7.6.10
+- Added read-only corpus vocabulary and realization preflight, with per-sentence stages and missing-token candidate lemmas.
+- Added three preflight regression tests; no grammar coverage claims.
+
+## v7.6.9
+- Preserve leading comma-delimited adjunct prepositional phrases as PPIR nodes, rather than treating the initial adposition as the subject.
+- Realize the adjunct through each generated grammar's preposition/postposition placement rules; preserve the object noun, determiner, and semantic receipts.
+- Fail closed when a fronted adjunct cannot be analyzed (e.g., unavailable adjective/lexical structure); no invented translation or false completion.
+- Add two regression tests covering three existing languages. 86 tests pass.
+- Contrast-suite totals remain 69 complete, 7 partial, 4 unsupported per language. This is a structural correctness improvement, not a claimed benchmark gain.
+- Existing language packages remain unchanged at build version 7.6.1.
+
+## v7.6.8
+- Preserve negative-indefinite pronouns as target-language nominal arguments rather than silently dropping them; do not impose additional verbal negation.
+- Resolve English comparative adjective inflections to their canonical lexical base even when a separate surface lexeme was pre-seeded (SHORTER -> SHORT+COMP). Preserve the change-of-state predicate GROW.
+- Report an observable diagnostic pipeline stage (capability_gate, vocabulary, analysis_or_parse, target_realization, semantic_receipts, complete) in text and JSON.
+- Add focused three-language semantic and no-false-success regression tests.
+- Re-run the unchanged contrast suite on the existing language packages. Generated language build versions intentionally remain 7.6.1; languages are not regenerated.
+
+## v7.6.7
+- Realize licensed causal subordinate clauses using the generated language’s subordinate particle and placement.
+- Require a semantic realization receipt before treating a diagnosed subordinate clause as supported.
+- Add causal linker and fail-closed regression tests.
+
 ## v7.6.6
 - Preserve HOW + adjective degree interrogatives as structured WH questions and realize with target-language interrogative strategy.
 - Represent causal BECAUSE clauses as linked semantic clauses for audit, while keeping realization unsupported pending a target grammar strategy.

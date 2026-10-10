@@ -1,0 +1,446 @@
+# Empire Of Words - missing vocabulary required by this translation
+# Language: Example
+# This file is directly compatible with src/add_words.py.
+# Review before applying. Comments and uncertain items are ignored by add_words.py.
+
+became:n  # 6 occurrences
+car:n  # 5 occurrences
+lady:adj  # 5 occurrences
+merry:n  # 5 occurrences
+sent:adj  # 5 occurrences
+done:n  # 5 occurrences
+plunged:v  # 4 occurrences
+gentleman:n  # 4 occurrences
+hearth:n  # 4 occurrences
+stranger:n  # 4 occurrences; from strangers
+hung:n  # 4 occurrences
+maiden:adj  # 4 occurrences
+daisy:n  # 4 occurrences
+weary:adj  # 3 occurrences
+slept:adj  # 3 occurrences
+rang:n  # 3 occurrences
+frightened:v  # 3 occurrences
+fluttered:v  # 3 occurrences
+godmother:n  # 3 occurrences
+pole:v  # 3 occurrences
+mighty:adj  # 3 occurrences
+army:n  # 3 occurrences
+merry:adv  # 3 occurrences; from merrily
+valentine:n  # 3 occurrences; from valentines
+sunshine:n  # 3 occurrences
+musical:adj  # 3 occurrences
+gloriou:adj  # 3 occurrences; from glorious
+famou:adj  # 3 occurrences; from famous
+valuable:adj  # 3 occurrences
+chose:v  # 3 occurrences
+sir:n  # 3 occurrences
+forth:n  # 3 occurrences
+thou:n  # 3 occurrences
+statue:n  # 3 occurrences
+heaven:n  # 3 occurrences
+amazed:v  # 3 occurrences
+telephone:n  # 2 occurrences
+aloud:n  # 2 occurrences
+noisy:adv  # 2 occurrences; from noisily
+sparkled:v  # 2 occurrences
+blazing:v  # 2 occurrences
+postman:adj  # 2 occurrences
+grieved:v  # 2 occurrences
+saucy:adj  # 2 occurrences
+scampered:v  # 2 occurrences
+gallant:adj  # 2 occurrences
+onward:n  # 2 occurrences
+ceased:v  # 2 occurrences
+odor:n  # 2 occurrences
+scornful:adv  # 2 occurrences; from scornfully
+sunset:n  # 2 occurrences
+swept:adj  # 2 occurrences
+fade:n  # 2 occurrences
+lid:n  # 2 occurrences
+glittered:v  # 2 occurrences
+queer:n  # 2 occurrences
+dainty:adj  # 2 occurrences
+porch:adj  # 2 occurrences
+violet:adj  # 2 occurrences; from violets
+lark:n  # 2 occurrences
+courteou:adj  # 2 occurrences; from courteous
+tale:n  # 2 occurrences; from tales
+speck:n  # 2 occurrences
+graciou:adj  # 2 occurrences; from gracious
+sparkling:v  # 2 occurrences
+hospitality:n  # 2 occurrences
+hastened:v  # 2 occurrences
+birthplace:n  # 2 occurrences
+violet:n  # 2 occurrences
+duty:n  # 2 occurrences
+laid:n  # 2 occurrences
+torrent:n  # 2 occurrences; from torrents
+royal:adj  # 2 occurrences
+kindness:n  # 2 occurrences
+schoolmaster:n  # 2 occurrences
+arithmetic:adj  # 2 occurrences
+dollar:n  # 2 occurrences
+comfortable:adj  # 2 occurrences
+bloom:adj  # 2 occurrences
+hotel:n  # 2 occurrences
+speech:n  # 2 occurrences
+hair:n  # 2 occurrences
+seventh:adj  # 2 occurrences
+poured:v  # 2 occurrences
+pleasant:adj  # 2 occurrences
+nymph:adj  # 2 occurrences
+chariot:n  # 2 occurrences
+vanished:v  # 2 occurrences
+presence:n  # 2 occurrences
+rich:n  # 2 occurrences
+thee:n  # 2 occurrences
+pilgrim:adj  # 2 occurrences; from pilgrims
+daffodil:n  # 1 occurrence; from daffodils
+bitter:adv  # 1 occurrence; from bitterly
+pleasant:adv  # 1 occurrence; from pleasantly
+purr:n  # 1 occurrence; from purrs
+joyous:adv  # 1 occurrence; from joyously
+melted:v  # 1 occurrence
+thimble:n  # 1 occurrence
+strutting:v  # 1 occurrence
+fluttering:v  # 1 occurrence
+busy:adv  # 1 occurrence; from busily
+romping:v  # 1 occurrence
+correct:adv  # 1 occurrence; from correctly
+gracious:adv  # 1 occurrence; from graciously
+sped:v  # 1 occurrence
+melt:n  # 1 occurrence; from melts
+rapid:adv  # 1 occurrence; from rapidly
+missed:v  # 1 occurrence
+blooming:v  # 1 occurrence
+cheerful:adj  # 1 occurrence
+abroad:n  # 1 occurrence
+unhappy:n  # 1 occurrence
+rustled:v  # 1 occurrence
+automobile:n  # 1 occurrence
+savage:adv  # 1 occurrence; from savagely
+yard:n  # 1 occurrence
+deck:n  # 1 occurrence
+tolled:v  # 1 occurrence
+sly:adv  # 1 occurrence; from slyly
+arising:v  # 1 occurrence
+mermaid:n  # 1 occurrence; from mermaids
+steady:adv  # 1 occurrence; from steadily
+wafted:v  # 1 occurrence
+neighed:v  # 1 occurrence
+impatient:adv  # 1 occurrence; from impatiently
+unkind:adj  # 1 occurrence
+thoughtless:adv  # 1 occurrence; from thoughtlessly
+cluster:n  # 1 occurrence; from clusters
+twittering:v  # 1 occurrence
+sleepy:adv  # 1 occurrence; from sleepily
+flit:n  # 1 occurrence; from flits
+sandpiper:n  # 1 occurrence
+cattle:n  # 1 occurrence
+peaceful:adv  # 1 occurrence; from peacefully
+babble:n  # 1 occurrence; from babbles
+ivy:adj  # 1 occurrence
+vessel:n  # 1 occurrence; from vessels
+noisy:adj  # 1 occurrence
+majestical:adv  # 1 occurrence; from majestically
+re:v  # 1 occurrence; from reed
+woodpecker:n  # 1 occurrence; from woodpeckers
+western:adj  # 1 occurrence
+corrected:v  # 1 occurrence
+gent:adv  # 1 occurrence; from gently
+ripple:n  # 1 occurrence
+pool:n  # 1 occurrence
+clang:n  # 1 occurrence
+iri:adj  # 1 occurrence; from iris
+lilac:n  # 1 occurrence; from lilacs
+beggar:n  # 1 occurrence
+whirled:v  # 1 occurrence
+glitter:adj  # 1 occurrence; from glitters
+patchwork:adj  # 1 occurrence
+mantel:n  # 1 occurrence
+cheek:n  # 1 occurrence; from cheeks
+rosy:adj  # 1 occurrence
+leafless:adj  # 1 occurrence
+fort:adj  # 1 occurrence
+hummingbird:n  # 1 occurrence
+goldfish:n  # 1 occurrence
+contented:v  # 1 occurrence
+ninth:adj  # 1 occurrence
+theweek:n  # 1 occurrence
+sixpence:n  # 1 occurrence
+streamer:n  # 1 occurrence; from streamers
+indistinct:adv  # 1 occurrence; from indistinctly
+gladness:adj  # 1 occurrence
+troop:n  # 1 occurrence
+rushed:v  # 1 occurrence
+snowman:n  # 1 occurrence; from snowman's
+monarch:adj  # 1 occurrence
+careless:adj  # 1 occurrence
+coffee:n  # 1 occurrence
+rush:n  # 1 occurrence; from rushes
+tawny:adj  # 1 occurrence
+sardine:n  # 1 occurrence
+dictation:n  # 1 occurrence
+grammar:n  # 1 occurrence
+inhabitant:n  # 1 occurrence; from inhabitants
+pioneer:n  # 1 occurrence; from pioneers
+quotient:n  # 1 occurrence
+postage:n  # 1 occurrence
+cent:n  # 1 occurrence; from cents
+hardhearted:v  # 1 occurrence
+unkind:adv  # 1 occurrence; from unkindly
+morsel:n  # 1 occurrence
+supper:n  # 1 occurrence
+indoor:n  # 1 occurrence; from indoors
+reappeared:v  # 1 occurrence
+weed:adj  # 1 occurrence; from weeds
+noticed:v  # 1 occurrence
+trait:n  # 1 occurrence; from traits
+exquisite:n  # 1 occurrence
+snowy:adj  # 1 occurrence
+abrupt:adv  # 1 occurrence; from abruptly
+thistle:n  # 1 occurrence
+antic:n  # 1 occurrence; from antics
+ballad:n  # 1 occurrence
+cheerful:adv  # 1 occurrence; from cheerfully
+leafy:adj  # 1 occurrence
+piper:n  # 1 occurrence; from pipers
+skipper:n  # 1 occurrence
+whiff:n  # 1 occurrence
+faint:adj  # 1 occurrence
+outlawed:v  # 1 occurrence
+lanky:adj  # 1 occurrence
+disturbance:n  # 1 occurrence
+wigwam:adj  # 1 occurrence
+carol:n  # 1 occurrence; from carols
+boyhood:adj  # 1 occurrence
+entertained:v  # 1 occurrence
+tuneful:adj  # 1 occurrence
+bold:adv  # 1 occurrence; from boldly
+thy:adj  # 1 occurrence
+jagged:v  # 1 occurrence
+groves:n  # 1 occurrence
+autumnal:adj  # 1 occurrence
+airplane:adj  # 1 occurrence
+settler:n  # 1 occurrence
+crispy:n  # 1 occurrence
+medal:n  # 1 occurrence
+pound:n  # 1 occurrence
+inch:n  # 1 occurrence
+seventy:adj  # 1 occurrence
+pounding:v  # 1 occurrence
+president:adj  # 1 occurrence
+carelessness:n  # 1 occurrence
+mouthful:n  # 1 occurrence
+fragrant:adj  # 1 occurrence
+pet:n  # 1 occurrence
+exceeding:adv  # 1 occurrence; from exceedingly
+upright:adj  # 1 occurrence
+shady:adj  # 1 occurrence
+modest:n  # 1 occurrence
+pare:n  # 1 occurrence
+gift:n  # 1 occurrence; from gifts
+commotion:n  # 1 occurrence
+fern:adj  # 1 occurrence
+jaunting:v  # 1 occurrence
+brilliant:adj  # 1 occurrence
+sleigh:n  # 1 occurrence
+folk:n  # 1 occurrence; from folks
+schoolroom:adj  # 1 occurrence
+dingy:adj  # 1 occurrence
+responsible:adj  # 1 occurrence
+kingdom:n  # 1 occurrence
+chirp:n  # 1 occurrence
+peeped:v  # 1 occurrence
+procession:n  # 1 occurrence
+canary:n  # 1 occurrence
+press:n  # 1 occurrence
+dreadful:n  # 1 occurrence
+task:n  # 1 occurrence
+fatal:adv  # 1 occurrence; from fatally
+undertaking:v  # 1 occurrence
+trysting:v  # 1 occurrence
+beloved:v  # 1 occurrence
+reproach:adj  # 1 occurrence
+pellucid:adj  # 1 occurrence
+overcome:adj  # 1 occurrence
+mullein:n  # 1 occurrence
+boastful:n  # 1 occurrence
+friendless:adj  # 1 occurrence
+ease:n  # 1 occurrence
+sprite:adj  # 1 occurrence
+mischievou:adj  # 1 occurrence; from mischievous
+revel:n  # 1 occurrence; from revels
+casket:n  # 1 occurrence; from caskets
+gale:n  # 1 occurrence
+northeast:n  # 1 occurrence
+beauteou:adj  # 1 occurrence; from beauteous
+peacock:n  # 1 occurrence
+boaster:n  # 1 occurrence
+emblem:n  # 1 occurrence
+famine:adj  # 1 occurrence
+trust:n  # 1 occurrence
+principal:adj  # 1 occurrence
+mayor:n  # 1 occurrence
+secretary:n  # 1 occurrence
+conduct:n  # 1 occurrence
+disgrace:n  # 1 occurrence
+snowdrop:n  # 1 occurrence
+duckling:v  # 1 occurrence
+regard:n  # 1 occurrence; from regards
+constant:adj  # 1 occurrence
+patter:n  # 1 occurrence
+joyou:adj  # 1 occurrence; from joyous
+sled:n  # 1 occurrence; from sleds
+delayed:v  # 1 occurrence
+overcast:adj  # 1 occurrence
+begged:v  # 1 occurrence
+prancing:v  # 1 occurrence
+steed:n  # 1 occurrence; from steeds
+harness:n  # 1 occurrence; from harnesses
+seashell:n  # 1 occurrence
+clustered:v  # 1 occurrence
+fiddle:n  # 1 occurrence
+southern:n  # 1 occurrence
+daytime:adj  # 1 occurrence
+fun:n  # 1 occurrence
+neatness:n  # 1 occurrence
+politeness:n  # 1 occurrence
+endure:adj  # 1 occurrence
+judgment:n  # 1 occurrence
+precipice:n  # 1 occurrence
+phoebe:adj  # 1 occurrence
+nimble:adj  # 1 occurrence
+candlestick:n  # 1 occurrence
+immediate:adv  # 1 occurrence; from immediately
+succeeded:v  # 1 occurrence
+unfastened:v  # 1 occurrence
+outnumbered:v  # 1 occurrence
+du:adv  # 1 occurrence; from duly
+glimpse:n  # 1 occurrence
+scenery:adj  # 1 occurrence
+buttercup:adj  # 1 occurrence; from buttercups
+peaceful:adj  # 1 occurrence
+o'er:n  # 1 occurrence
+vale:n  # 1 occurrence; from vales
+goodness:n  # 1 occurrence
+cast:n  # 1 occurrence; from casts
+dewdrop:n  # 1 occurrence
+alive:adj  # 1 occurrence
+countenance:n  # 1 occurrence
+colonist:adj  # 1 occurrence; from colonists
+dreary:adj  # 1 occurrence
+courage:n  # 1 occurrence
+skim:n  # 1 occurrence; from skims
+gauze:adj  # 1 occurrence
+rustic:n  # 1 occurrence
+woodland:adj  # 1 occurrence
+clad:adj  # 1 occurrence
+suit:v  # 1 occurrence
+wildflower:n  # 1 occurrence; from wildflowers
+perish:adj  # 1 occurrence
+gloomy:n  # 1 occurrence
+sleet:n  # 1 occurrence
+glittering:v  # 1 occurrence
+diadem:n  # 1 occurrence
+willow:n  # 1 occurrence; from willows
+noontide:n  # 1 occurrence
+mellow:n  # 1 occurrence
+vineyard:n  # 1 occurrence; from vineyards
+trellised:v  # 1 occurrence
+depth:n  # 1 occurrence; from depths
+seldom:adj  # 1 occurrence
+howling:v  # 1 occurrence
+moor:n  # 1 occurrence
+lapped:v  # 1 occurrence
+forty:adj  # 1 occurrence
+toil:n  # 1 occurrence; from toils
+studded:v  # 1 occurrence
+twinkling:v  # 1 occurrence
+fastened:v  # 1 occurrence
+mast:n  # 1 occurrence
+atoned:v  # 1 occurrence
+slumber:n  # 1 occurrence; from slumbers
+foolishness:n  # 1 occurrence
+renown:n  # 1 occurrence
+baffled:v  # 1 occurrence
+audience:n  # 1 occurrence
+scheme:n  # 1 occurrence
+physician:adj  # 1 occurrence
+richer:adj  # 1 occurrence
+struck:adj  # 1 occurrence
+ly:adv  # 1 occurrence; from lily
+proceeded:v  # 1 occurrence
+correct:adj  # 1 occurrence
+keel:adj  # 1 occurrence
+gushed:v  # 1 occurrence
+doublet:n  # 1 occurrence
+jovial:adj  # 1 occurrence
+spiritual:n  # 1 occurrence
+rich:adj  # 1 occurrence; from riches
+highroad:n  # 1 occurrence; from highroads
+rural:n  # 1 occurrence
+wayside:adj  # 1 occurrence
+tern:n  # 1 occurrence; from terns
+gull:adj  # 1 occurrence; from gulls
+breaker:n  # 1 occurrence; from breakers
+saved:v  # 1 occurrence
+vain:adj  # 1 occurrence
+glad:adj  # 1 occurrence
+save:adj  # 1 occurrence
+solid:adj  # 1 occurrence
+reality:n  # 1 occurrence
+nibbled:v  # 1 occurrence
+tiding:n  # 1 occurrence; from tidings
+pursued:v  # 1 occurrence
+refuge:n  # 1 occurrence
+succeed:n  # 1 occurrence; from succeeds
+tutor:n  # 1 occurrence
+childhood:n  # 1 occurrence
+dutiful:adj  # 1 occurrence
+helpful:n  # 1 occurrence
+
+# REVIEW REQUIRED - POS could not be inferred safely; not active add_words entries.
+# bought  (4)
+# fought  (3)
+# told  (3)
+# felt  (2)
+# held  (2)
+# fro  (2)
+# laughter  (1)
+# sill  (1)
+# chimney  (1)
+# traffic  (1)
+# nook  (1)
+# bound  (1)
+# breath  (1)
+# buttercup  (1)
+# taught  (1)
+# rim  (1)
+# mad  (1)
+# shut  (1)
+# dell  (1)
+# bonnet  (1)
+# outlaw  (1)
+# nobleman  (1)
+# tarry  (1)
+# crag  (1)
+# unconscious  (1)
+# risen  (1)
+# beat  (1)
+# hemisphere  (1)
+# cheerfulness  (1)
+# greet  (1)
+# given  (1)
+# outdid  (1)
+# sprung  (1)
+# appoint  (1)
+# hale  (1)
+# sculptor  (1)
+# notice  (1)
+# bold  (1)
+# de  (1)
+# hesitate  (1)
+# beneath  (1)
+# attempt  (1)
+# spent  (1)

@@ -354,16 +354,16 @@ Status: partial
 Reason: not realized: better, comparison
 [Translation]
 English: The days grow shorter.
-Language: [PARTIAL]
-Gloss: DAY.PL SHORTER GROW
-Status: partial
-Reason: not realized: comparison
+Language: otabaa kuhun banmnu qangumu
+Gloss: DAY.PL SHORT-COMP GROW
+Status: ok
+Reason: complete
 [Translation]
 English: The dog sees the cat because the cat is small.
-Language: [UNRESOLVED]
-Gloss: [UNRESOLVED]
-Status: unsupported-grammar
-Reason: unsupported construction: subordinate_clause
+Language: tngoosa sheun wujuuba uluun uljashe sheunen mjasixi
+Gloss: CAUSE CAT SMALL BE (TEMPORARY STATE) DOG CAT:ACCUSATIVE SEE
+Status: ok
+Reason: complete
 [Translation]
 English: If the dog sees the cat, the bird will fly.
 Language: [UNRESOLVED]
@@ -444,10 +444,10 @@ Status: ok
 Reason: complete
 [Translation]
 English: The dog sees nothing.
-Language: [PARTIAL]
-Gloss: DOG  SEE
-Status: partial
-Reason: not realized: nothing
+Language: uljashe darangz mjasixi
+Gloss: DOG NOTHING-NEG.INDEF SEE
+Status: ok
+Reason: complete
 [Translation]
 English: The cat sees the dog.
 Language: sheun uljasheen mjasixi

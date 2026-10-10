@@ -1,0 +1,480 @@
+[Translation]
+English: The dog sees the cat.
+Language: kehemkaap kesamenebh sebhotekha
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog saw the cat.
+Language: kehemkaap kesamenebh sebhotemenkha
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE-PST
+Status: ok
+Reason: complete
+[Translation]
+English: The dog will see the cat.
+Language: kehemkaap kesamenebh amsabhitekha
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE-FUT
+Status: ok
+Reason: complete
+[Translation]
+English: The dog did not see the cat.
+Language: saenyo kehemkaap kesamenebh serhe sebhotemenkha
+Gloss: NOT DOG-DEF CAT:ACCUSATIVE-DEF SEE-PST-NEG
+Status: ok
+Reason: complete
+[Translation]
+English: The dog will not see the cat.
+Language: saenyo kehemkaap kesamenebh serhe amsabhitekha
+Gloss: NOT DOG-DEF CAT:ACCUSATIVE-DEF SEE-FUT-NEG
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cats.
+Language: kehemkaap kehasaminebh sebhotekha
+Gloss: DOG-DEF CAT.PL:ACCUSATIVE-DEF SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dogs see the cat.
+Language: kehahamkiap kesamenebh sebhotip
+Gloss: DOG.PL-DEF CAT:ACCUSATIVE-DEF SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat and the bird.
+Language: kehemkaap kesamenebh khetebe keeruakheh sebhotekha
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF AND BIRD:ACCUSATIVE-DEF SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cats and the bird.
+Language: kehemkaap kehasaminebh khetebe keeruakheh sebhotekha
+Gloss: DOG-DEF CAT.PL:ACCUSATIVE-DEF AND BIRD:ACCUSATIVE-DEF SEE
+Status: ok
+Reason: complete
+[Translation]
+English: Does the dog see the cat?
+Language: kehemkaap kesamenebh sebhotekha akhatai
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE Q
+Status: ok
+Reason: complete
+[Translation]
+English: Did the dog see the cat?
+Language: kehemkaap kesamenebh sebhotemenkha akhatai
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE-PST Q
+Status: ok
+Reason: complete
+[Translation]
+English: Will the dog see the cat?
+Language: kehemkaap kesamenebh amsabhitekha akhatai
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE-FUT Q
+Status: ok
+Reason: complete
+[Translation]
+English: Is the dog happy?
+Language: kehemkaap psies nakukha akhatai
+Gloss: DOG-DEF HAPPY BE (TEMPORARY STATE) Q
+Status: ok
+Reason: complete
+[Translation]
+English: Is today Monday?
+Language: rabaisb  nakukha akhatai
+Gloss: TODAY  BE (TEMPORARY STATE) Q
+Status: ok
+Reason: complete
+[Translation]
+English: Where is the dog?
+Language: kehemkaap  nakukha haentju
+Gloss: DOG-DEF  BE (TEMPORARY STATE) WH-WHERE
+Status: ok
+Reason: complete
+[Translation]
+English: When will the guests arrive?
+Language: kehadjaddi  amamisamip namunas
+Gloss: GUEST.PL-DEF  ARRIVE-FUT WH-WHEN
+Status: ok
+Reason: complete
+[Translation]
+English: How wide is the river?
+Language: kepshedja kauaqer nakukha baph
+Gloss: RIVER-DEF WIDE BE (TEMPORARY STATE) DEG-WIDE WH-HOW
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat and the bird.
+Language: kehemkaap kesamenebh khetebe keeruakheh sebhotekha
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF AND BIRD:ACCUSATIVE-DEF SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat or the bird.
+Language: kehemkaap kesamenebh mept keeruakheh sebhotekha
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF OR BIRD:ACCUSATIVE-DEF SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat and hears the bird.
+Language: kehemkaap kesamenebh sebhotekha kehemkaap keeruakheh haphkha
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE AND DOG-DEF BIRD:ACCUSATIVE-DEF HEAR
+Status: ok
+Reason: complete
+[Translation]
+English: The dog saw the cat and heard the bird.
+Language: kehemkaap kesamenebh sebhotemenkha kehemkaap keeruakheh haphmenkha
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE-PST AND DOG-DEF BIRD:ACCUSATIVE-DEF HEAR-PST
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat but hears the bird.
+Language: kehemkaap kesamenebh sebhotekha kehemkaap keeruakheh haphkha
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE BUT DOG-DEF BIRD:ACCUSATIVE-DEF HEAR
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat, and the bird sees the dog.
+Language: kehemkaap kesamenebh sebhotekha keeruakhe kehemkaaph sebhotekha
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE AND BIRD-DEF DOG:ACCUSATIVE-DEF SEE
+Status: ok
+Reason: complete
+[Translation]
+English: John and Elizabeth are friends.
+Language: [PARTIAL]
+Gloss: [PARTIAL]
+Status: partial
+Reason: recognized construction not yet fully realized
+[Translation]
+English: The dog is small but strong.
+Language: kehemkaap kherkhe autamt nakukha
+Gloss: DOG-DEF SMALL BUT STRONG BE (TEMPORARY STATE)
+Status: ok
+Reason: complete
+[Translation]
+English: The crow dropped pebbles and raised water.
+Language: kesenar hamakh tahutmenkha kesenar tatefh apetnetmenkha
+Gloss: CROW-DEF PEBBLE.PL:ACCUSATIVE DROP-PST AND CROW-DEF WATER:ACCUSATIVE RAISE-PST
+Status: ok
+Reason: complete
+[Translation]
+English: I awoke early, dressed hastily, and went to breakfast.
+Language: hefrib nebhe hebphep antut  bhumenkha samiseb henuphe
+Gloss: EARLY HASTY DRESS AWAKE  GO-PST TO BREAKFAST
+Status: ok
+Reason: complete
+[Translation]
+English: See the cat.
+Language: khsabhitenam kesamenebh
+Gloss: SEE-IMP CAT:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: Do not see the cat.
+Language: serhe khsanibtanam samenebh hart
+Gloss: DO-IMP-NEG CAT:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: Take the note and wait.
+Language: khbakiuiunam kenamefreh khnatnibikha
+Gloss: TAKE-IMP NOTE:ACCUSATIVE-DEF AND WAIT-IMP
+Status: ok
+Reason: complete
+[Translation]
+English: Take this note, carry it to your mother, and wait for an answer.
+Language: khbakiuiunam amerube namefreh khhatitkakha munefen samiseb bahherm nehespsu khnatnibikha ibremen tuntche
+Gloss: TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE AND CARRY-IMP 3SG TO 2SG-GEN MOTHER AND WAIT-IMP FOR ANSWER
+Status: ok
+Reason: complete
+[Translation]
+English: Be happy.
+Language: khnakinam psies
+Gloss: BE (TEMPORARY STATE)-IMP HAPPY
+Status: ok
+Reason: complete
+[Translation]
+English: The girl sees the doll.
+Language: kebameneb kehesponsh sebhotekha
+Gloss: GIRL-DEF DOLL:ACCUSATIVE-DEF SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The girl sees the doll's dress.
+Language: kebameneb kehebpheph hesponspsupsu sebhotekha
+Gloss: GIRL-DEF DOLL:GENITIVE-GEN DRESS:ACCUSATIVE-DEF SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The little girl made the doll's dress herself.
+Language: kebameneb meptole kehebpheph hesponspsupsu sahwenmenkha
+Gloss: GIRL-DEF LITTLE DOLL:GENITIVE-GEN DRESS:ACCUSATIVE-DEF MAKE-PST
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees its house.
+Language: kehemkaap nehadiah munefenpsu sebhotekha
+Gloss: DOG-DEF 3SG-GEN HOUSE:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The man sees his dog.
+Language: keramen hemkaaph munefenpsu sebhotekha
+Gloss: MAN-DEF 3SG-GEN DOG:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat.
+Language: kehemkaap kesamenebh sebhotekha
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The small dog sees the cat.
+Language: kehemkaap kherkhe kesamenebh sebhotekha
+Gloss: DOG-DEF SMALL CAT:ACCUSATIVE-DEF SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the small cat.
+Language: kehemkaap kesamenebh kherkhe sebhotekha
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SMALL SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat in the house.
+Language: kehemkaap kesamenebh sebhotekha ptahmin kenehadia
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE IN HOUSE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The old man with a stick stood beside the fence.
+Language: ramen anhasam ahsekhah menhastkha akhephe kekhtakhi
+Gloss: man.NOM old stand.ACC STICK BESIDE fence.LOC-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: On a sunny morning we started for the mountains.
+Language: mosekhe hemenek umenamkha ibremen kehastibi
+Gloss: morning.NOM sunny START FOR mountain.DAT-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The girls with wreaths of flowers danced.
+Language: kehabamineb menkhsh haclaipet sebkis hatcha  ampmehnemenip
+Gloss: GIRL.PL-DEF WITH WREATH.PL OF FLOWER.PL  DANCE-PST
+Status: ok
+Reason: complete
+[Translation]
+English: The sun looked through the branches.
+Language: keamenwos  ashenenmenkha uherupt kehasamint
+Gloss: SUN-DEF  LOOK-PST THROUGH BRANCH.PL-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat.
+Language: kehemkaap kesamenebh sebhotekha
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog is seeing the cat.
+Language: kehemkaap kesamenebh assabhitekha
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE-PROG
+Status: ok
+Reason: complete
+[Translation]
+English: The dog has seen the cat.
+Language: kehemkaap kesamenebh sebhoterakha
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE-PERF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog has been seeing the cat.
+Language: kehemkaap kesamenebh assabhitekhara
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE-PROG-PERF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog was seeing the cat.
+Language: kehemkaap kesamenebh assabhitemenkha
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE-PST-PROG
+Status: ok
+Reason: complete
+[Translation]
+English: The dog can see the cat.
+Language: kehemkaap kesamenebh sebhotekha sahesh
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE-MOD
+Status: ok
+Reason: complete
+[Translation]
+English: The dog must see the cat.
+Language: kehemkaap kesamenebh sebhotekha khemlot
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE-MOD
+Status: ok
+Reason: complete
+[Translation]
+English: The dog should see the cat.
+Language: kehemkaap kesamenebh sebhotekha khemlot
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE-MOD
+Status: ok
+Reason: complete
+[Translation]
+English: The dog might see the cat.
+Language: kehemkaap kesamenebh sebhotekha hotpene
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE-MOD
+Status: ok
+Reason: complete
+[Translation]
+English: Will you go with us or wait here?
+Language: nehes ambhanam menkhsh uhethet khemkho nehes nutnebinam akhatai
+Gloss: 2SG  GO-FUT WITH 1PL OR HERE 2SG  WAIT Q
+Status: ok
+Reason: complete
+[Translation]
+English: The dog is big.
+Language: kehemkaap nubenef nakukha
+Gloss: DOG-DEF BIG BE (TEMPORARY STATE)
+Status: ok
+Reason: complete
+[Translation]
+English: The dog is bigger than the cat.
+Language: kehemkaap nubenefmah nakukha pasekha kesameneb
+Gloss: DOG-DEF BIG-COMP BE (TEMPORARY STATE) COMP-STD CAT-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog is the biggest.
+Language: kehemkaap nubenefis nakukha
+Gloss: DOG-DEF BIG-SUPER BE (TEMPORARY STATE)
+Status: ok
+Reason: complete
+[Translation]
+English: Do you like summer or winter better?
+Language: [PARTIAL]
+Gloss: 2SG SUMMER:ACCUSATIVE OR WINTER:ACCUSATIVE LIKE Q
+Status: partial
+Reason: not realized: better, comparison
+[Translation]
+English: The days grow shorter.
+Language: kehamainekh samremmah rehtefip
+Gloss: DAY.PL-DEF SHORT-COMP GROW
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat because the cat is small.
+Language: khepyna kesameneb kherkhe nakukha kehemkaap kesamenebh sebhotekha
+Gloss: CAUSE CAT-DEF SMALL BE (TEMPORARY STATE) DOG-DEF CAT:ACCUSATIVE-DEF SEE
+Status: ok
+Reason: complete
+[Translation]
+English: If the dog sees the cat, the bird will fly.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: conditional_clause
+[Translation]
+English: The dog that sees the cat is happy.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: relative_clause
+[Translation]
+English: I know that the dog sees the cat.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: complement_clause
+[Translation]
+English: The cat was seen by the dog.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: passive
+[Translation]
+English: Aha! I have caught you!
+Language: [PARTIAL]
+Gloss: 1SG 2SG CATCH-PST
+Status: partial
+Reason: unrealized discourse expression: aha
+[Translation]
+English: Alas! That news is sad.
+Language: [PARTIAL]
+Gloss: THAT NEWS.PL SAD BE (TEMPORARY STATE)
+Status: partial
+Reason: unrealized discourse expression: alas
+[Translation]
+English: Oh dear! The wind has blown my hat away!
+Language: [PARTIAL]
+Gloss: WIND-DEF 1SG-GEN HAT:ACCUSATIVE BLOW-PERF AWAY
+Status: partial
+Reason: unrealized discourse expression: oh dear
+[Translation]
+English: Madam, I will obey your command.
+Language: [PARTIAL]
+Gloss: 1SG 2SG-GEN COMMAND:ACCUSATIVE OBEY-FUT
+Status: partial
+Reason: unrealized vocative: madam
+[Translation]
+English: Show the guests these shells, my son.
+Language: khhapisnam ankha ketuaqerh djedde senope
+Gloss: SHOW-IMP THESE SON:ACCUSATIVE-DEF GUEST SHELL
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat.
+Language: kehemkaap kesamenebh sebhotekha
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog does not see the cat.
+Language: saenyo kehemkaap kesamenebh serhe sebhotekha
+Gloss: NOT DOG-DEF CAT:ACCUSATIVE-DEF SEE-NEG
+Status: ok
+Reason: complete
+[Translation]
+English: The dog never sees the cat.
+Language: aket kehemkaap kesamenebh serhe sebhotekha
+Gloss: NEVER DOG-DEF CAT:ACCUSATIVE-DEF SEE-NEG
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees no cat.
+Language: kehemkaap samenebh sebhotekha
+Gloss: DOG-DEF CAT:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees nothing.
+Language: kehemkaap ampeni sebhotekha
+Gloss: DOG-DEF NOTHING-NEG.INDEF SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The cat sees the dog.
+Language: kesameneb kehemkaaph sebhotekha
+Gloss: CAT-DEF DOG:ACCUSATIVE-DEF SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat.
+Language: kehemkaap kesamenebh sebhotekha
+Gloss: DOG-DEF CAT:ACCUSATIVE-DEF SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The girl gives the boy a book.
+Language: kebameneb kesekhumeh emasams nereskha
+Gloss: GIRL-DEF BOOK:ACCUSATIVE-DEF BOY GIVE
+Status: ok
+Reason: complete
+[Translation]
+English: The girl gives a book to the boy.
+Language: kebameneb sekhumeh nereskha samiseb keemasams
+Gloss: GIRL-DEF BOOK:ACCUSATIVE GIVE TO BOY-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The man stood beside the fence.
+Language: keramen  nefenbemenkha akhephe kekhtekhe
+Gloss: MAN-DEF  STAND-PST BESIDE FENCE-DEF
+Status: ok
+Reason: complete

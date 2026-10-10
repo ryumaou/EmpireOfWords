@@ -1,0 +1,65 @@
+# Empire Of Words - missing vocabulary required by this translation
+# Language: MagicTest
+# This file is directly compatible with src/add_words.py.
+# Review before applying. Comments and uncertain items are ignored by add_words.py.
+
+robin:n  # 2 occurrences
+wild:adj  # 1 occurrence
+everywhere:adv  # 1 occurrence
+neat:adv  # 1 occurrence; from neatly
+camper:n  # 1 occurrence; from campers
+concert:n  # 1 occurrence
+mile:n  # 1 occurrence; from miles
+solstice:n  # 1 occurrence
+hidden:adj  # 1 occurrence
+drooping:v  # 1 occurrence
+bough:n  # 1 occurrence; from boughs
+bonfire:n  # 1 occurrence
+entrance:n  # 1 occurrence
+residence:n  # 1 occurrence
+lofty:adj  # 1 occurrence
+caress:n  # 1 occurrence
+spool:n  # 1 occurrence
+juicy:adj  # 1 occurrence
+salty:adj  # 1 occurrence
+roadside:n  # 1 occurrence
+litter:n  # 1 occurrence
+gray:adj  # 1 occurrence
+tune:n  # 1 occurrence
+pitcher:n  # 1 occurrence
+brim:n  # 1 occurrence
+glee:n  # 1 occurrence
+popped:v  # 1 occurrence
+corn:n  # 1 occurrence
+brave:adj  # 1 occurrence
+seized:v  # 1 occurrence
+handful:n  # 1 occurrence
+cautious:adv  # 1 occurrence; from cautiously
+room:n  # 1 occurrence; from rooms
+bedroom:n  # 1 occurrence
+tiny:adj  # 1 occurrence
+splendid:adj  # 1 occurrence
+candlelight:n  # 1 occurrence
+shabby:adj  # 1 occurrence
+uncomfortable:adj  # 1 occurrence
+act:v  # 1 occurrence
+mite:n  # 1 occurrence
+snowflake:n  # 1 occurrence; from snowflakes
+faithful:adj  # 1 occurrence
+snug:adj  # 1 occurrence
+trustworthy:adj  # 1 occurrence
+ashamed:v  # 1 occurrence
+embroidered:v  # 1 occurrence
+national:adj  # 1 occurrence
+protector:n  # 1 occurrence
+finery:adj  # 1 occurrence
+fisherman:n  # 1 occurrence
+demanded:v  # 1 occurrence
+payment:n  # 1 occurrence
+hall:n  # 1 occurrence
+log:n  # 1 occurrence; from logs
+mantle:n  # 1 occurrence
+fifty:adj  # 1 occurrence
+governor:adj  # 1 occurrence
+grant:v  # 1 occurrence
+hemlock:n  # 1 occurrence; from hemlocks

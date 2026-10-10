@@ -1,0 +1,254 @@
+{
+  "pass": false,
+  "newly_noncomplete": 6,
+  "newly_complete": 0,
+  "languages": {
+    "Example": {
+      "before_version": "7.6.12",
+      "after_version": "7.6.12",
+      "before": {
+        "Complete": 352,
+        "Partial": 257,
+        "Missing vocabulary": 359,
+        "Unsupported grammar": 129
+      },
+      "after": {
+        "Complete": 350,
+        "Partial": 259,
+        "Missing vocabulary": 359,
+        "Unsupported grammar": 129
+      },
+      "changes": [
+        {
+          "id": 157,
+          "sentence": "The little seeds waited patiently under the snow for the warm spring sun.",
+          "before": "ok",
+          "after": "partial",
+          "before_reason": "",
+          "after_reason": "not realized: spring"
+        },
+        {
+          "id": 281,
+          "sentence": "A box of growing plants stood in the Window.",
+          "before": "partial",
+          "after": "partial",
+          "before_reason": "not realized: stood",
+          "after_reason": "not realized: growing"
+        },
+        {
+          "id": 584,
+          "sentence": "Walk one mile every morning after breakfast.",
+          "before": "ok",
+          "after": "partial",
+          "before_reason": "",
+          "after_reason": "not realized: mile, morning, breakfast"
+        },
+        {
+          "id": 858,
+          "sentence": "I have found the ring I lost.",
+          "before": "partial",
+          "after": "partial",
+          "before_reason": "not realized: lost",
+          "after_reason": "not realized: found"
+        }
+      ],
+      "newly_noncomplete": [
+        {
+          "id": 157,
+          "sentence": "The little seeds waited patiently under the snow for the warm spring sun.",
+          "before": "ok",
+          "after": "partial",
+          "before_reason": "",
+          "after_reason": "not realized: spring"
+        },
+        {
+          "id": 584,
+          "sentence": "Walk one mile every morning after breakfast.",
+          "before": "ok",
+          "after": "partial",
+          "before_reason": "",
+          "after_reason": "not realized: mile, morning, breakfast"
+        }
+      ],
+      "newly_complete": []
+    },
+    "MagicTest": {
+      "before_version": "7.6.12",
+      "after_version": "7.6.12",
+      "before": {
+        "Complete": 300,
+        "Partial": 246,
+        "Missing vocabulary": 422,
+        "Unsupported grammar": 129
+      },
+      "after": {
+        "Complete": 300,
+        "Partial": 246,
+        "Missing vocabulary": 422,
+        "Unsupported grammar": 129
+      },
+      "changes": [
+        {
+          "id": 157,
+          "sentence": "The little seeds waited patiently under the snow for the warm spring sun.",
+          "before": "partial",
+          "after": "partial",
+          "before_reason": "recognized construction not yet fully realized",
+          "after_reason": "not realized: spring"
+        },
+        {
+          "id": 858,
+          "sentence": "I have found the ring I lost.",
+          "before": "partial",
+          "after": "partial",
+          "before_reason": "not realized: lost",
+          "after_reason": "not realized: found"
+        }
+      ],
+      "newly_noncomplete": [],
+      "newly_complete": []
+    },
+    "Test1": {
+      "before_version": "7.6.12",
+      "after_version": "7.6.12",
+      "before": {
+        "Complete": 352,
+        "Partial": 257,
+        "Missing vocabulary": 359,
+        "Unsupported grammar": 129
+      },
+      "after": {
+        "Complete": 350,
+        "Partial": 259,
+        "Missing vocabulary": 359,
+        "Unsupported grammar": 129
+      },
+      "changes": [
+        {
+          "id": 157,
+          "sentence": "The little seeds waited patiently under the snow for the warm spring sun.",
+          "before": "ok",
+          "after": "partial",
+          "before_reason": "",
+          "after_reason": "not realized: spring"
+        },
+        {
+          "id": 281,
+          "sentence": "A box of growing plants stood in the Window.",
+          "before": "partial",
+          "after": "partial",
+          "before_reason": "not realized: stood",
+          "after_reason": "not realized: growing"
+        },
+        {
+          "id": 584,
+          "sentence": "Walk one mile every morning after breakfast.",
+          "before": "ok",
+          "after": "partial",
+          "before_reason": "",
+          "after_reason": "not realized: mile, morning, breakfast"
+        },
+        {
+          "id": 858,
+          "sentence": "I have found the ring I lost.",
+          "before": "partial",
+          "after": "partial",
+          "before_reason": "not realized: lost",
+          "after_reason": "not realized: found"
+        }
+      ],
+      "newly_noncomplete": [
+        {
+          "id": 157,
+          "sentence": "The little seeds waited patiently under the snow for the warm spring sun.",
+          "before": "ok",
+          "after": "partial",
+          "before_reason": "",
+          "after_reason": "not realized: spring"
+        },
+        {
+          "id": 584,
+          "sentence": "Walk one mile every morning after breakfast.",
+          "before": "ok",
+          "after": "partial",
+          "before_reason": "",
+          "after_reason": "not realized: mile, morning, breakfast"
+        }
+      ],
+      "newly_complete": []
+    },
+    "Test2": {
+      "before_version": "7.6.12",
+      "after_version": "7.6.12",
+      "before": {
+        "Complete": 352,
+        "Partial": 257,
+        "Missing vocabulary": 359,
+        "Unsupported grammar": 129
+      },
+      "after": {
+        "Complete": 350,
+        "Partial": 259,
+        "Missing vocabulary": 359,
+        "Unsupported grammar": 129
+      },
+      "changes": [
+        {
+          "id": 157,
+          "sentence": "The little seeds waited patiently under the snow for the warm spring sun.",
+          "before": "ok",
+          "after": "partial",
+          "before_reason": "",
+          "after_reason": "not realized: spring"
+        },
+        {
+          "id": 281,
+          "sentence": "A box of growing plants stood in the Window.",
+          "before": "partial",
+          "after": "partial",
+          "before_reason": "not realized: stood",
+          "after_reason": "not realized: growing"
+        },
+        {
+          "id": 584,
+          "sentence": "Walk one mile every morning after breakfast.",
+          "before": "ok",
+          "after": "partial",
+          "before_reason": "",
+          "after_reason": "not realized: mile, morning, breakfast"
+        },
+        {
+          "id": 858,
+          "sentence": "I have found the ring I lost.",
+          "before": "partial",
+          "after": "partial",
+          "before_reason": "not realized: lost",
+          "after_reason": "not realized: found"
+        }
+      ],
+      "newly_noncomplete": [
+        {
+          "id": 157,
+          "sentence": "The little seeds waited patiently under the snow for the warm spring sun.",
+          "before": "ok",
+          "after": "partial",
+          "before_reason": "",
+          "after_reason": "not realized: spring"
+        },
+        {
+          "id": 584,
+          "sentence": "Walk one mile every morning after breakfast.",
+          "before": "ok",
+          "after": "partial",
+          "before_reason": "",
+          "after_reason": "not realized: mile, morning, breakfast"
+        }
+      ],
+      "newly_complete": []
+    }
+  },
+  "corpus": {
+    "count": 1097,
+    "sha256": "a36483f20c0f412a857e4e0075393607c3564198b8456da0ada981b38388b2d1"
+  }
+}

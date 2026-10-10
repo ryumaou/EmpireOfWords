@@ -1,0 +1,480 @@
+[Translation]
+English: The dog sees the cat.
+Language: saralunbu oombudb ajasidob
+Gloss: SEE DOG-DEF CAT:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog saw the cat.
+Language: tencud saralunbu oombudb ajasidob
+Gloss: SEE-PST DOG-DEF CAT:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog will see the cat.
+Language: saluuru saralunbu oombudb ajasidob
+Gloss: SEE-FUT DOG-DEF CAT:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog did not see the cat.
+Language: tencud bui saralunbu oombudb ajasidob naud
+Gloss: SEE-PST-NEG DOG-DEF CAT:ACCUSATIVE-DEF NOT
+Status: ok
+Reason: complete
+[Translation]
+English: The dog will not see the cat.
+Language: saluuru bui saralunbu oombudb ajasidob naud
+Gloss: SEE-FUT-NEG DOG-DEF CAT:ACCUSATIVE-DEF NOT
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cats.
+Language: saralunbu oombudb buajasidob
+Gloss: SEE DOG-DEF CAT.PL:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dogs see the cat.
+Language: saraluntu buoambidb ajasidob
+Gloss: SEE DOG.PL-DEF CAT:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat and the bird.
+Language: saralunbu oombudb ajasidob kuuirtob
+Gloss: SEE DOG-DEF CAT:ACCUSATIVE-DEF AND BIRD:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cats and the bird.
+Language: saralunbu oombudb buajasidob kuuirtob
+Gloss: SEE DOG-DEF CAT.PL:ACCUSATIVE-DEF AND BIRD:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: Does the dog see the cat?
+Language: saralunbu oombudb ajasidob mongun
+Gloss: SEE DOG-DEF CAT:ACCUSATIVE-DEF Q
+Status: ok
+Reason: complete
+[Translation]
+English: Did the dog see the cat?
+Language: tencud saralunbu oombudb ajasidob mongun
+Gloss: SEE-PST DOG-DEF CAT:ACCUSATIVE-DEF Q
+Status: ok
+Reason: complete
+[Translation]
+English: Will the dog see the cat?
+Language: saluuru saralunbu oombudb ajasidob mongun
+Gloss: SEE-FUT DOG-DEF CAT:ACCUSATIVE-DEF Q
+Status: ok
+Reason: complete
+[Translation]
+English: Is the dog happy?
+Language: bolusuubu oombudb danig mongun
+Gloss: BE (TEMPORARY STATE) DOG-DEF HAPPY Q
+Status: ok
+Reason: complete
+[Translation]
+English: Is today Monday?
+Language: bolusuubu coongnu yauduuy mongun
+Gloss: BE (TEMPORARY STATE) TODAY MONDAY Q
+Status: ok
+Reason: complete
+[Translation]
+English: Where is the dog?
+Language: monainu bolusuubu oombudb
+Gloss: BE (TEMPORARY STATE) DOG-DEF WH-WHERE
+Status: ok
+Reason: complete
+[Translation]
+English: When will the guests arrive?
+Language: oruui saluuru ebeigsitu buubalinb
+Gloss: ARRIVE-FUT GUEST.PL-DEF WH-WHEN
+Status: ok
+Reason: complete
+[Translation]
+English: How wide is the river?
+Language: mondun bolusuubu nuubisab qadakil
+Gloss: BE (TEMPORARY STATE) RIVER-DEF WIDE DEG-WIDE WH-HOW
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat and the bird.
+Language: saralunbu oombudb ajasidob kuuirtob
+Gloss: SEE DOG-DEF CAT:ACCUSATIVE-DEF AND BIRD:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat or the bird.
+Language: saralunbu oombudb ajasidob kuuirtob
+Gloss: SEE DOG-DEF CAT:ACCUSATIVE-DEF OR BIRD:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat and hears the bird.
+Language: saralunbu oombudb ajasidob kuuudau kookenebu oombudb kuuirtob
+Gloss: SEE DOG-DEF CAT:ACCUSATIVE-DEF AND HEAR DOG-DEF BIRD:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog saw the cat and heard the bird.
+Language: tencud saralunbu oombudb ajasidob kuuudau tencud kookenebu oombudb kuuirtob
+Gloss: SEE-PST DOG-DEF CAT:ACCUSATIVE-DEF AND HEAR-PST DOG-DEF BIRD:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat but hears the bird.
+Language: saralunbu oombudb ajasidob aunudi kookenebu oombudb kuuirtob
+Gloss: SEE DOG-DEF CAT:ACCUSATIVE-DEF BUT HEAR DOG-DEF BIRD:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat, and the bird sees the dog.
+Language: saralunbu oombudb ajasidob kuuudau saralunbu kuuirtub oombudob
+Gloss: SEE DOG-DEF CAT:ACCUSATIVE-DEF AND SEE BIRD-DEF DOG:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: John and Elizabeth are friends.
+Language: [PARTIAL]
+Gloss: [PARTIAL]
+Status: partial
+Reason: recognized construction not yet fully realized
+[Translation]
+English: The dog is small but strong.
+Language: bolusuubu oombudb jincuu aunudi mongleg
+Gloss: BE (TEMPORARY STATE) DOG-DEF SMALL BUT STRONG
+Status: ok
+Reason: complete
+[Translation]
+English: The crow dropped pebbles and raised water.
+Language: tencud qangkeibu bergengb buaraino kuuudau tencud bailasubu bergengb joorongo
+Gloss: DROP-PST CROW-DEF PEBBLE.PL:ACCUSATIVE AND RAISE-PST CROW-DEF WATER:ACCUSATIVE
+Status: ok
+Reason: complete
+[Translation]
+English: I awoke early, dressed hastily, and went to breakfast.
+Language: tencud jaulal usaiqan nabcins kuuudau mookilal usaiqan sarun kuuudau tencud ebual usaiqan kemuula uugsen
+Gloss: AWAKE-PST 1SG EARLY AND DRESSED 1SG HASTY AND GO-PST 1SG TO BREAKFAST
+Status: ok
+Reason: complete
+[Translation]
+English: See the cat.
+Language: saralunde ajasidob
+Gloss: SEE-IMP CAT:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: Do not see the cat.
+Language: bui yekede ajasido buiturt
+Gloss: DO-IMP-NEG CAT:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: Take the note and wait.
+Language: totande tanighob kuuudau sabundbu
+Gloss: TAKE-IMP NOTE:ACCUSATIVE-DEF AND WAIT-IMP
+Status: ok
+Reason: complete
+[Translation]
+English: Take this note, carry it to your mother, and wait for an answer.
+Language: totande aaca tanigho kuuudau ooroljidbu irtinut kemuula buuguuj qaicako kuuudau sabundbu gedbuuk bitalte
+Gloss: TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE AND CARRY-IMP 3SG TO 2SG-GEN MOTHER AND WAIT-IMP FOR ANSWER
+Status: ok
+Reason: complete
+[Translation]
+English: Be happy.
+Language: bolusuude danig
+Gloss: BE (TEMPORARY STATE)-IMP HAPPY
+Status: ok
+Reason: complete
+[Translation]
+English: The girl sees the doll.
+Language: saralunbu uluujerb daraulob
+Gloss: SEE GIRL-DEF DOLL:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The girl sees the doll's dress.
+Language: saralunbu uluujerb demuob daraulakoko
+Gloss: SEE GIRL-DEF DOLL:GENITIVE-GEN DRESS:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The little girl made the doll's dress herself.
+Language: tencud silduabu uluujerb qoljime demuob daraulakoko
+Gloss: MAKE-PST GIRL-DEF LITTLE DOLL:GENITIVE-GEN DRESS:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees its house.
+Language: saralunbu oombudb yongjo irtinutko
+Gloss: SEE DOG-DEF 3SG-GEN HOUSE:ACCUSATIVE
+Status: ok
+Reason: complete
+[Translation]
+English: The man sees his dog.
+Language: saralunbu ouluujub oombudo irtinutko
+Gloss: SEE MAN-DEF 3SG-GEN DOG:ACCUSATIVE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat.
+Language: saralunbu oombudb ajasidob
+Gloss: SEE DOG-DEF CAT:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The small dog sees the cat.
+Language: saralunbu oombudb jincuu ajasidob
+Gloss: SEE DOG-DEF SMALL CAT:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the small cat.
+Language: saralunbu oombudb ajasidob jincuu
+Gloss: SEE DOG-DEF CAT:ACCUSATIVE-DEF SMALL
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat in the house.
+Language: saralunbu oombudb ajasidob maralua yongjub
+Gloss: SEE DOG-DEF CAT:ACCUSATIVE-DEF IN HOUSE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The old man with a stick stood beside the fence.
+Language: odujubu ouluuju matariu orusundo olon orolanb
+Gloss: STICK man.NOM old stand.ACC BESIDE fence.LOC-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: On a sunny morning we started for the mountains.
+Language: [PARTIAL]
+Gloss: [PARTIAL]
+Status: partial
+Reason: recognized construction not yet fully realized
+[Translation]
+English: The girls with wreaths of flowers danced.
+Language: tencud cioobcimatu buulaijerb jegdele buusairkuu yuuilun buudali
+Gloss: DANCE-PST GIRL.PL-DEF WITH WREATH.PL OF FLOWER.PL
+Status: ok
+Reason: complete
+[Translation]
+English: The sun looked through the branches.
+Language: tencud balanbu dasuugib uunid buorailenb
+Gloss: LOOK-PST SUN-DEF THROUGH BRANCH.PL-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat.
+Language: saralunbu oombudb ajasidob
+Gloss: SEE DOG-DEF CAT:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog is seeing the cat.
+Language: usarilunbu oombudb ajasidob
+Gloss: SEE-PROG DOG-DEF CAT:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog has seen the cat.
+Language: saralunotubu oombudb ajasidob
+Gloss: SEE-PERF DOG-DEF CAT:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog has been seeing the cat.
+Language: usarilunbotu oombudb ajasidob
+Gloss: SEE-PROG-PERF DOG-DEF CAT:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog was seeing the cat.
+Language: tencud usarilunbu oombudb ajasidob
+Gloss: SEE-PST-PROG DOG-DEF CAT:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog can see the cat.
+Language: obarani saralunbu oombudb ajasidob
+Gloss: SEE-MOD DOG-DEF CAT:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog must see the cat.
+Language: orinski saralunbu oombudb ajasidob
+Gloss: SEE-MOD DOG-DEF CAT:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog should see the cat.
+Language: orinski saralunbu oombudb ajasidob
+Gloss: SEE-MOD DOG-DEF CAT:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog might see the cat.
+Language: yeeceni saralunbu oombudb ajasidob
+Gloss: SEE-MOD DOG-DEF CAT:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: Will you go with us or wait here?
+Language: saluuru ebue qaica jegdele daligur qoni sabune qaica nuten mongun
+Gloss: GO-FUT 2SG WITH 1PL OR WAIT 2SG HERE Q
+Status: ok
+Reason: complete
+[Translation]
+English: The dog is big.
+Language: bolusuubu oombudb casuumu
+Gloss: BE (TEMPORARY STATE) DOG-DEF BIG
+Status: ok
+Reason: complete
+[Translation]
+English: The dog is bigger than the cat.
+Language: bolusuubu oombudb micasiumu berisai ajasidb
+Gloss: BE (TEMPORARY STATE) DOG-DEF BIG-COMP COMP-STD CAT-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog is the biggest.
+Language: bolusuubu oombudb scasiumu
+Gloss: BE (TEMPORARY STATE) DOG-DEF BIG-SUPER
+Status: ok
+Reason: complete
+[Translation]
+English: Do you like summer or winter better?
+Language: [PARTIAL]
+Gloss: LIKE 2SG SUMMER:ACCUSATIVE OR WINTER:ACCUSATIVE Q
+Status: partial
+Reason: not realized: better, comparison
+[Translation]
+English: The days grow shorter.
+Language: [PARTIAL]
+Gloss: GROW DAY.PL-DEF SHORTER
+Status: partial
+Reason: not realized: comparison
+[Translation]
+English: The dog sees the cat because the cat is small.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: subordinate_clause
+[Translation]
+English: If the dog sees the cat, the bird will fly.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: conditional_clause
+[Translation]
+English: The dog that sees the cat is happy.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: relative_clause
+[Translation]
+English: I know that the dog sees the cat.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: complement_clause
+[Translation]
+English: The cat was seen by the dog.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: passive
+[Translation]
+English: Aha! I have caught you!
+Language: [PARTIAL]
+Gloss: [PARTIAL]
+Status: partial
+Reason: recognized construction not yet fully realized
+[Translation]
+English: Alas! That news is sad.
+Language: [PARTIAL]
+Gloss: BE (TEMPORARY STATE) NEWS.PL SAD THAT
+Status: partial
+Reason: not realized: alas
+[Translation]
+English: Oh dear! The wind has blown my hat away!
+Language: [PARTIAL]
+Gloss: BLOW-PERF WIND 1SG-GEN HAT:ACCUSATIVE AWAY
+Status: partial
+Reason: not realized: oh, dear
+[Translation]
+English: Madam, I will obey your command.
+Language: [PARTIAL]
+Gloss: [PARTIAL]
+Status: partial
+Reason: recognized construction not yet fully realized
+[Translation]
+English: Show the guests these shells, my son.
+Language: moorde uruqura taljuugob bolon narbert
+Gloss: SHOW-IMP THESE SON:ACCUSATIVE-DEF GUEST SHELL
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat.
+Language: saralunbu oombudb ajasidob
+Gloss: SEE DOG-DEF CAT:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog does not see the cat.
+Language: bui saralunbu oombudb ajasidob naud
+Gloss: SEE-NEG DOG-DEF CAT:ACCUSATIVE-DEF NOT
+Status: ok
+Reason: complete
+[Translation]
+English: The dog never sees the cat.
+Language: bui saralunbu oombudb ajasidob prosu
+Gloss: SEE-NEG DOG-DEF CAT:ACCUSATIVE-DEF NEVER
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees no cat.
+Language: saralunbu oombudb ajasido
+Gloss: SEE DOG-DEF CAT:ACCUSATIVE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees nothing.
+Language: [PARTIAL]
+Gloss: SEE DOG-DEF
+Status: partial
+Reason: not realized: nothing
+[Translation]
+English: The cat sees the dog.
+Language: saralunbu ajasidb oombudob
+Gloss: SEE CAT-DEF DOG:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat.
+Language: saralunbu oombudb ajasidob
+Gloss: SEE DOG-DEF CAT:ACCUSATIVE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The girl gives the boy a book.
+Language: ondelgibu uluujerb uugedob uusan
+Gloss: GIVE GIRL-DEF BOOK:ACCUSATIVE-DEF BOY
+Status: ok
+Reason: complete
+[Translation]
+English: The girl gives a book to the boy.
+Language: ondelgibu uluujerb uugedo kemuula uusanb
+Gloss: GIVE GIRL-DEF BOOK:ACCUSATIVE TO BOY-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The man stood beside the fence.
+Language: tencud minuturbu ouluujub olon orolanb
+Gloss: STAND-PST MAN-DEF BESIDE FENCE-DEF
+Status: ok
+Reason: complete

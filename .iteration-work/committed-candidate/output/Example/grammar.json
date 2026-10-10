@@ -1,0 +1,373 @@
+{
+  "family": "japanese",
+  "requested_family": "japanese",
+  "word_order": "SOV",
+  "adposition_type": "postposition",
+  "adjective_position": "before",
+  "possessor_position": "before",
+  "articles": "none",
+  "gender": 0,
+  "morphology_type": "mixed",
+  "morphophonemics": {
+    "mode": "auto",
+    "rules": [
+      "epenthesis",
+      "consonant_assimilation"
+    ]
+  },
+  "noun": {
+    "numbers": [
+      "singular",
+      "plural"
+    ],
+    "plural_strategy": "suffix",
+    "cases": [
+      "nominative",
+      "accusative",
+      "genitive",
+      "dative",
+      "instrumental",
+      "locative"
+    ]
+  },
+  "verb": {
+    "tenses": [
+      "present",
+      "past",
+      "future"
+    ],
+    "tense_level": "standard",
+    "aspects": [
+      "simple",
+      "progressive"
+    ],
+    "aspect_level": "standard",
+    "moods": [
+      "indicative",
+      "imperative",
+      "subjunctive",
+      "conditional"
+    ],
+    "mood_level": "standard",
+    "agreement": "none",
+    "negation": "affix"
+  },
+  "comparison": {
+    "degrees": [
+      "positive",
+      "comparative",
+      "superlative"
+    ],
+    "strategy": "particle",
+    "marker_position": "before"
+  },
+  "questions": {
+    "strategy": "particle",
+    "particle_position": "final",
+    "wh_strategy": "in_situ",
+    "structural_operation": null
+  },
+  "coordination": {
+    "np": {
+      "strategy": "particle",
+      "position": "between"
+    },
+    "predicate": {
+      "strategy": "particle",
+      "position": "between",
+      "shared_subject": true
+    },
+    "clause": {
+      "strategy": "juxtaposition",
+      "position": "between"
+    }
+  },
+  "possession": {
+    "strategy": "genitive",
+    "position": "before"
+  },
+  "modality": {
+    "strategy": "particle",
+    "particle_position": "before_verb"
+  },
+  "tense_realization": {
+    "past": "affix",
+    "future": "affix"
+  },
+  "aspect_realization": {
+    "progressive": "affix",
+    "perfect": "particle"
+  },
+  "mood_realization": {
+    "imperative": "affix"
+  },
+  "perfect": {
+    "strategy": "particle"
+  },
+  "adverbs": {
+    "position": "after_verb",
+    "derivation": "zero"
+  },
+  "copular": {
+    "adjective_complement": true,
+    "nominal_complement": true,
+    "copula_position": "verb"
+  },
+  "lexical_conversion": {
+    "noun_to_verb": {
+      "strategy": "zero"
+    },
+    "adjective_to_verb": {
+      "strategy": "zero"
+    },
+    "noun_to_adjective": {
+      "strategy": "affix",
+      "morpheme": "convert_noun_to_adjective"
+    }
+  },
+  "nonfinite": {
+    "participial_modifier": {
+      "strategy": "particle",
+      "particle": "participle",
+      "position": "before"
+    },
+    "infinitive_complement": {
+      "strategy": "affix",
+      "morpheme": "infinitive",
+      "position": "after_head"
+    }
+  },
+  "relative_clause": {
+    "strategy": "relative_particle",
+    "position": "after"
+  },
+  "complement_clause": {
+    "strategy": "particle",
+    "position": "before"
+  },
+  "conditional_clause": {
+    "strategy": "particle",
+    "position": "initial"
+  },
+  "subordinate_clause": {
+    "strategy": "particle",
+    "position": "before"
+  },
+  "passive": {
+    "strategy": "particle",
+    "agent_position": "after"
+  },
+  "quotation": {
+    "strategy": "quotative_particle",
+    "position": "before"
+  },
+  "apposition": {
+    "strategy": "juxtaposition",
+    "position": "adjacent"
+  },
+  "realization_profile": {
+    "word_order": "SOV",
+    "adposition_type": "postposition",
+    "adjective_position": "before",
+    "possessor_position": "before",
+    "plural_strategy": "suffix",
+    "comparison_strategy": "particle",
+    "question_strategy": "particle",
+    "negation_strategy": "affix",
+    "morphology_type": "mixed",
+    "noun_behavior": {
+      "number": "suffix",
+      "cases": [
+        "nominative",
+        "accusative",
+        "genitive",
+        "dative",
+        "instrumental",
+        "locative"
+      ],
+      "possessor_position": "before",
+      "compound_order": "modifier-head"
+    },
+    "noun_compound_order": "modifier-head",
+    "adjective_behavior": {
+      "position": "before",
+      "comparison": "particle",
+      "adverb_derivation": "zero"
+    },
+    "verb_behavior": {
+      "agreement": "none",
+      "negation": "affix",
+      "tenses": [
+        "present",
+        "past",
+        "future"
+      ],
+      "aspects": [
+        "simple",
+        "progressive"
+      ],
+      "moods": [
+        "indicative",
+        "imperative",
+        "subjunctive",
+        "conditional"
+      ]
+    },
+    "lexical_conversion": {
+      "noun_to_verb": {
+        "strategy": "zero"
+      },
+      "adjective_to_verb": {
+        "strategy": "zero"
+      },
+      "noun_to_adjective": {
+        "strategy": "affix",
+        "morpheme": "convert_noun_to_adjective"
+      }
+    },
+    "nonfinite": {
+      "participial_modifier": {
+        "strategy": "particle",
+        "particle": "participle",
+        "position": "before"
+      },
+      "infinitive_complement": {
+        "strategy": "affix",
+        "morpheme": "infinitive",
+        "position": "after_head"
+      }
+    },
+    "future": "affix",
+    "progressive": "affix",
+    "perfect": "particle",
+    "imperative": "affix"
+  },
+  "translation_readiness": {
+    "contract_version": 9,
+    "capabilities": [
+      "stacked_aspect",
+      "constituent_coordination",
+      "copular_imperative",
+      "nominal_predicate",
+      "irregular_comparison",
+      "single_negation"
+    ],
+    "analytic_fallbacks": [
+      "future",
+      "progressive",
+      "perfect",
+      "imperative"
+    ],
+    "adverb_fallback": "zero"
+  },
+  "morphemes": {
+    "plural": {
+      "form": "de",
+      "side": "suffix"
+    },
+    "accusative": {
+      "form": "zum",
+      "side": "prefix"
+    },
+    "genitive": {
+      "form": "alt",
+      "side": "prefix"
+    },
+    "dative": {
+      "form": "q",
+      "side": "suffix"
+    },
+    "instrumental": {
+      "form": "hos",
+      "side": "suffix"
+    },
+    "locative": {
+      "form": "zen",
+      "side": "suffix"
+    },
+    "past": {
+      "form": "hi",
+      "side": "suffix"
+    },
+    "future": {
+      "form": "ude",
+      "side": "prefix"
+    },
+    "progressive": {
+      "form": "wam",
+      "side": "prefix"
+    },
+    "imperative": {
+      "form": "su",
+      "side": "prefix"
+    },
+    "subjunctive": {
+      "form": "k",
+      "side": "prefix"
+    },
+    "conditional": {
+      "form": "z",
+      "side": "suffix"
+    },
+    "negative": {
+      "form": "m",
+      "side": "prefix"
+    },
+    "convert_noun_to_adjective": {
+      "form": "ya",
+      "side": "suffix"
+    },
+    "infinitive": {
+      "form": "ode",
+      "side": "prefix"
+    }
+  },
+  "particles": {
+    "past": "takinak",
+    "yes_no": "dezu",
+    "comparative": "desopyo",
+    "superlative": "nyumumu",
+    "and": "yamasu",
+    "or": "luporu",
+    "but": "hia",
+    "ability": "biteheg",
+    "obligation": "tsuarim",
+    "possibility": "futsu",
+    "future": "oyofu",
+    "progressive": "aripyam",
+    "perfect": "usarise",
+    "imperative": "kyaputa",
+    "possessive": "ryozeze",
+    "complementizer": "nemasha",
+    "relative": "nyujuda",
+    "conditional": "modemas",
+    "subordinate": "chitako",
+    "passive": "nienhad",
+    "quotative": "desuzag",
+    "appositive": "daputte",
+    "participle": "hitades"
+  },
+  "pronouns": {
+    "1sg": "adatte",
+    "2sg": "pijudic",
+    "3sg": "hitou",
+    "1pl": "zahasu",
+    "2pl": "nakinch",
+    "3pl": "hyapyob"
+  },
+  "demonstratives": {
+    "proximal_singular": "rosoo",
+    "distal_singular": "hyanta",
+    "proximal_plural": "quibuin",
+    "distal_plural": "akiguma"
+  },
+  "interrogatives": {
+    "who": "omukid",
+    "what": "tsu",
+    "where": "ishiyot",
+    "when": "antapap",
+    "why": "jisoyur",
+    "how": "devinji",
+    "which": "upyanar"
+  }
+}

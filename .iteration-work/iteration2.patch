@@ -1,0 +1,17 @@
+--- a/src/grammar_engine.py
++++ b/src/grammar_engine.py
+@@ -661,6 +661,14 @@
+ def analyze_translation(sentence,g,entries,forms):
+     """Return a structured deterministic analysis plus translation result."""
+     by=_lexicon(entries,forms); raw=sentence.strip()
++    # Punctuation inside this fixed discourse expression does not change its
++    # meaning. Reuse the ordinary discourse path, retaining the original source
++    # and all of its lexical availability / completeness checks.
++    punctuated_disourse=re.match(r'^\s*oh\s*,\s*dear\s*!\s*(.+)$',raw,re.I|re.S)
++    if punctuated_disourse:
++        result=analyze_translation('Oh dear! '+punctuated_disourse.group(1),g,entries,forms)
++        result['english']=raw
++        return result
+     base_ir=_analyze_english(raw,by)
+     tokens=base_ir['tokens']; constructions=base_ir['constructions']
+     lexical=base_ir['lexical_items']; missing=base_ir['missing_lexemes']

@@ -1,0 +1,67 @@
+Translation diagnostics: Test2
+============================================================
+
+Translator version: 7.6.12
+Language build version: 7.6.1
+Language schema version: 2
+Grammar contract version: 9
+Language package SHA256: 1614ab40862004232a7392c48082a0085741736bc47db22c5c37d4982e32cc4e
+Grammar SHA256: a3a309b6f7422bf9de5591afba30ef015f9b13ca756feb1ff837a13cb7b18622
+Translator SHA256: 2cb12ccc0ba65f99a6505d0c90fdc7ccab8d18abda32778bb0bc73b996572be0
+
+Sentences: 11
+Complete: 11
+Partial: 0
+Missing vocabulary: 0
+Unsupported grammar: 0
+
+Target language realization profile:
+  word_order: SOV
+  adposition_type: postposition
+  adjective_position: before
+  possessor_position: before
+  plural_strategy: mixed
+  comparison_strategy: particle
+  question_strategy: word-order
+  negation_strategy: particle
+  morphology_type: isolating
+  future: particle
+  progressive: affix
+  perfect: affix
+  imperative: affix
+  np_coordination: juxtaposition
+  predicate_coordination: particle
+  clause_coordination: juxtaposition
+
+Construction inventory:
+  simple_clause: supported
+  copular_clause: supported
+  existential: supported
+  imperative: supported
+  yes_no_question: limited
+  wh_question: limited
+  coordination: limited
+  modal: limited
+  perfect: limited
+  progressive: supported
+  negation: supported
+  possessive: limited
+  reflexive: limited
+  comparison: limited
+  relative_clause: diagnosed
+  complement_clause: diagnosed
+  conditional_clause: diagnosed
+  subordinate_clause: diagnosed
+  passive: diagnosed
+  quotation: diagnosed
+  appositive: diagnosed
+  phrasal_verb: limited
+  weather: limited
+  proper_name: limited
+
+Most common constructions in non-complete sentences:
+
+Most common missing/unrecognized English lexemes:
+
+Per-sentence diagnostics:
+-

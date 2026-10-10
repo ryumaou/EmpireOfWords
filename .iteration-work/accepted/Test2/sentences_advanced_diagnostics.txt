@@ -1,0 +1,585 @@
+Translation diagnostics: Test2
+============================================================
+
+Translator version: 7.6.12
+Language build version: 7.6.1
+Language schema version: 2
+Grammar contract version: 9
+Language package SHA256: 1614ab40862004232a7392c48082a0085741736bc47db22c5c37d4982e32cc4e
+Grammar SHA256: a3a309b6f7422bf9de5591afba30ef015f9b13ca756feb1ff837a13cb7b18622
+Translator SHA256: 8b19a0ef2bf4cc3499300586481fced7266e83e71f8ee58b263ac19e3b5f7da7
+
+Sentences: 229
+Complete: 161
+Partial: 48
+Missing vocabulary: 0
+Unsupported grammar: 20
+
+Target language realization profile:
+  word_order: SOV
+  adposition_type: postposition
+  adjective_position: before
+  possessor_position: before
+  plural_strategy: mixed
+  comparison_strategy: particle
+  question_strategy: word-order
+  negation_strategy: particle
+  morphology_type: isolating
+  future: particle
+  progressive: affix
+  perfect: affix
+  imperative: affix
+  np_coordination: juxtaposition
+  predicate_coordination: particle
+  clause_coordination: juxtaposition
+
+Construction inventory:
+  simple_clause: supported
+  copular_clause: supported
+  existential: supported
+  imperative: supported
+  yes_no_question: limited
+  wh_question: limited
+  coordination: limited
+  modal: limited
+  perfect: limited
+  progressive: supported
+  negation: supported
+  possessive: limited
+  reflexive: limited
+  comparison: limited
+  relative_clause: diagnosed
+  complement_clause: diagnosed
+  conditional_clause: diagnosed
+  subordinate_clause: diagnosed
+  passive: diagnosed
+  quotation: diagnosed
+  appositive: diagnosed
+  phrasal_verb: limited
+  weather: limited
+  proper_name: limited
+
+Most common constructions in non-complete sentences:
+  coordination: 17
+  comparison: 13
+  imperative: 7
+  relative_clause: 7
+  modal: 6
+  yes_no_question: 3
+  appositive: 3
+  conditional_clause: 3
+  subordinate_clause: 3
+  complement_clause: 3
+  passive: 2
+  possessive: 2
+  reflexive: 2
+  negation: 2
+  perfect: 1
+  quotation: 1
+
+Most common missing/unrecognized English lexemes:
+
+Per-sentence diagnostics:
+-
+#62 Yesterday the oldest girl in the village lost her kitten.
+  Status: partial
+  Reason: not realized: comparison
+  Diagnostic stage: semantic_receipts
+  Constructions: comparison
+  Normalized: Yesterday the oldest girl in the village did lose her kitten.
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#73 Everybody knows about hunting.
+  Status: partial
+  Reason: not realized: hunting
+  Diagnostic stage: analysis_or_parse
+  Constructions: simple
+  Normalized: Everybody know about hunting.
+
+#77 The squirrel’s nest was hidden by drooping boughs.
+  Status: unsupported-grammar
+  Reason: unsupported construction: passive
+  Diagnostic stage: capability_gate
+  Constructions: passive, possessive
+  Normalized: The squirrel nest was hidden by drooping bough.
+
+#82 On the top of the hill in a little hut lived a wise old woman.
+  Status: partial
+  Reason: not realized: hill, hut, woman
+  Diagnostic stage: analysis_or_parse
+  Constructions: simple
+  Normalized: (unchanged)
+
+#85 Near the mouth of the river, its course turns sharply towards the East.
+  Status: partial
+  Reason: not realized: river, course, sharply
+  Diagnostic stage: analysis_or_parse
+  Constructions: simple
+  Normalized: Near the mouth of the river its course turn sharply towards the East.
+
+#89 The sun looked down through the branches upon the children at play.
+  Status: partial
+  Reason: not realized: children, play
+  Diagnostic stage: analysis_or_parse
+  Constructions: simple
+  Normalized: The sun looked down through the branch upon the children at play.
+
+#92 A box of growing plants stood in the Window.
+  Status: partial
+  Reason: not realized: stood
+  Diagnostic stage: analysis_or_parse
+  Constructions: simple
+  Normalized: A box of growing plant did stand in the Window.
+
+#122 John and Elizabeth are brother and sister.
+  Status: partial
+  Reason: recognized construction not yet fully realized
+  Diagnostic stage: analysis_or_parse
+  Constructions: coordination
+  Normalized: (unchanged)
+
+#129 I am tired, but very happy.
+  Status: partial
+  Reason: not realized: happy
+  Diagnostic stage: semantic_receipts
+  Constructions: coordination
+  Normalized: (unchanged)
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#131 Toward the end of August the days grow much shorter.
+  Status: partial
+  Reason: not realized: august, days, shorter, comparison
+  Diagnostic stage: analysis_or_parse
+  Constructions: comparison
+  Normalized: Toward the end of August the day grow much shorter.
+
+#134 The crow dropped some pebbles into the pitcher and raised the water to the brim.
+  Status: partial
+  Reason: not realized: raised, water, brim, coordinated clause/predicate
+  Diagnostic stage: target_realization
+  Constructions: coordination
+  Normalized: The crow dropped some pebble into the pitcher and raised the water to the brim.
+
+#137 The sound of the drums grew louder and louder.
+  Status: partial
+  Reason: not realized: louder, comparison
+  Diagnostic stage: analysis_or_parse
+  Constructions: comparison, coordination
+  Normalized: The sound of the drum did grow louder and louder.
+
+#138 Do you like summer or winter better?
+  Status: partial
+  Reason: not realized: better, comparison
+  Diagnostic stage: semantic_receipts
+  Constructions: comparison, coordination, yes_no_question
+  Normalized: (unchanged)
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#144 Aha! I have caught you!
+  Status: partial
+  Reason: unrealized discourse expression: aha
+  Diagnostic stage: semantic_receipts
+  Constructions: simple
+  Normalized: (unchanged)
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#147 Alas! that news is sad indeed!
+  Status: partial
+  Reason: not realized: sad
+  Diagnostic stage: semantic_receipts
+  Constructions: simple
+  Normalized: (unchanged)
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#149 Are you warm enough now?
+  Status: partial
+  Reason: recognized construction not yet fully realized
+  Diagnostic stage: target_realization
+  Constructions: yes_no_question
+  Normalized: (unchanged)
+
+#150 They heard the warning too late.
+  Status: partial
+  Reason: not realized: warning, late
+  Diagnostic stage: semantic_receipts
+  Constructions: simple
+  Normalized: They did hear the warning too late.
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#154 This cottage stood on a low hill, at some distance from the village.
+  Status: partial
+  Reason: not realized: distance, village
+  Diagnostic stage: target_realization
+  Constructions: simple
+  Normalized: this cottage did stand on a low hill at some distance from the village.
+
+#159 They looked cautiously about, but saw nothing.
+  Status: partial
+  Reason: not realized: cautiously, saw, nothing, coordinated clause/predicate
+  Diagnostic stage: analysis_or_parse
+  Constructions: coordination
+  Normalized: They looked cautiously about but did see nothing.
+
+#160 The little house had three rooms, a sitting room, a bedroom, and a tiny kitchen.
+  Status: unsupported-grammar
+  Reason: unsupported construction: appositive
+  Diagnostic stage: capability_gate
+  Constructions: coordination, appositive
+  Normalized: The little house had three room a sitting room a bedroom and a tiny kitchen.
+
+#161 We visited my uncle’s village, the largest village in the world.
+  Status: partial
+  Reason: not realized: comparison
+  Diagnostic stage: semantic_receipts
+  Constructions: comparison, possessive
+  Normalized: We visited my uncle village the largest village in the world.
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#162 We learn something new each day.
+  Status: partial
+  Reason: not realized: something
+  Diagnostic stage: semantic_receipts
+  Constructions: simple
+  Normalized: (unchanged)
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#164 Did you find the distance too great?
+  Status: partial
+  Reason: not realized: great
+  Diagnostic stage: semantic_receipts
+  Constructions: yes_no_question
+  Normalized: (unchanged)
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#166 Madam, I will obey your command.
+  Status: partial
+  Reason: unrealized vocative: madam
+  Diagnostic stage: semantic_receipts
+  Constructions: modal
+  Normalized: (unchanged)
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#167 Here under this tree they gave their guests a splendid feast.
+  Status: partial
+  Reason: not realized: feast
+  Diagnostic stage: analysis_or_parse
+  Constructions: simple
+  Normalized: Here under this tree they did give their guest a splendid feast.
+
+#168 In winter I get up at night, and dress by yellow candlelight.
+  Status: partial
+  Reason: not realized: dress, candlelight
+  Diagnostic stage: analysis_or_parse
+  Constructions: coordination
+  Normalized: (unchanged)
+
+#172 She was always, shabby, often ragged, and on cold days very uncomfortable.
+  Status: partial
+  Reason: not realized: shabby, ragged
+  Diagnostic stage: analysis_or_parse
+  Constructions: coordination
+  Normalized: She was always shabby often ragged and on cold day very uncomfortable.
+
+#174 I stood, a little mite of a girl, upon a chair by the window, and watched the falling snowflakes.
+  Status: unsupported-grammar
+  Reason: unsupported construction: appositive
+  Diagnostic stage: capability_gate
+  Constructions: coordination, appositive
+  Normalized: I did stand a little mite of a girl upon a chair by the window and watched the falling snowflake.
+
+#175 Show the guests these shells, my son, and tell them their strange history.
+  Status: unsupported-grammar
+  Reason: unsupported construction: appositive
+  Diagnostic stage: capability_gate
+  Constructions: coordination, appositive, imperative
+  Normalized: Show the guest these shell my son and tell them their strange history.
+
+#176 Be satisfied with nothing but your best.
+  Status: partial
+  Reason: recognized construction not yet fully realized
+  Diagnostic stage: analysis_or_parse
+  Constructions: comparison, coordination, imperative
+  Normalized: (unchanged)
+
+#177 We consider them our faithful friends.
+  Status: partial
+  Reason: not realized: faithful
+  Diagnostic stage: semantic_receipts
+  Constructions: simple
+  Normalized: We consider them our faithful friend.
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#179 The squirrels make their nests warm and snug with soft moss and leaves.
+  Status: partial
+  Reason: not realized: make, snug, leaves, coordinated clause/predicate
+  Diagnostic stage: semantic_receipts
+  Constructions: coordination
+  Normalized: The squirrel make their nest warm and snug with soft moss and leaf.
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#183 He proved himself trustworthy.
+  Status: partial
+  Reason: not realized: trustworthy
+  Diagnostic stage: semantic_receipts
+  Constructions: reflexive
+  Normalized: (unchanged)
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#186 I feel ashamed of myself.
+  Status: partial
+  Reason: not realized: ashamed
+  Diagnostic stage: semantic_receipts
+  Constructions: reflexive
+  Normalized: (unchanged)
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#190 With him as our protector, we fear no danger.
+  Status: partial
+  Reason: recognized construction not yet fully realized
+  Diagnostic stage: analysis_or_parse
+  Constructions: simple
+  Normalized: (unchanged)
+
+#192 Light he thought her, like a feather.
+  Status: partial
+  Reason: not realized: thought
+  Diagnostic stage: semantic_receipts
+  Constructions: imperative
+  Normalized: Light he did think her like a feather.
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#193 Every spring and fall our cousins pay us a long visit.
+  Status: partial
+  Reason: recognized construction not yet fully realized
+  Diagnostic stage: target_realization
+  Constructions: coordination
+  Normalized: Every spring and fall our cousin pay us a long visit.
+
+#194 In our climate the grass remains green all winter.
+  Status: partial
+  Reason: recognized construction not yet fully realized
+  Diagnostic stage: analysis_or_parse
+  Constructions: simple
+  Normalized: (unchanged)
+
+#195 The boy who brought the book has gone.
+  Status: unsupported-grammar
+  Reason: unsupported construction: relative_clause
+  Diagnostic stage: capability_gate
+  Constructions: relative_clause, perfect
+  Normalized: The boy who did bring the book has gone.
+
+#196 These are the flowers that you ordered.
+  Status: unsupported-grammar
+  Reason: unsupported construction: relative_clause
+  Diagnostic stage: capability_gate
+  Constructions: relative_clause
+  Normalized: These are the flower that you ordered.
+
+#197 I have lost the book that you gave me.
+  Status: unsupported-grammar
+  Reason: unsupported construction: relative_clause
+  Diagnostic stage: capability_gate
+  Constructions: relative_clause
+  Normalized: I have lost the book that you did give me.
+
+#198 The fisherman who owned the boat now demanded payment.
+  Status: unsupported-grammar
+  Reason: unsupported construction: relative_clause
+  Diagnostic stage: capability_gate
+  Constructions: relative_clause
+  Normalized: (unchanged)
+
+#199 Come when you are called.
+  Status: partial
+  Reason: not realized: called
+  Diagnostic stage: semantic_receipts
+  Constructions: imperative
+  Normalized: (unchanged)
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#200 I shall stay at home if it rains.
+  Status: unsupported-grammar
+  Reason: unsupported construction: conditional_clause
+  Diagnostic stage: capability_gate
+  Constructions: conditional_clause, modal
+  Normalized: I shall stay at home if it rain.
+
+#201 When he saw me, he stopped.
+  Status: partial
+  Reason: recognized construction not yet fully realized
+  Diagnostic stage: analysis_or_parse
+  Constructions: simple
+  Normalized: When he did see me he stopped.
+
+#202 Do not laugh at me because I seem so absent minded.
+  Status: partial
+  Reason: not realized: laugh, absent, minded
+  Diagnostic stage: semantic_receipts
+  Constructions: subordinate_clause, negation, imperative
+  Normalized: (unchanged)
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#203 I shall lend you the books that you need.
+  Status: unsupported-grammar
+  Reason: unsupported construction: relative_clause
+  Diagnostic stage: capability_gate
+  Constructions: relative_clause, modal
+  Normalized: I shall lend you the book that you need.
+
+#204 Come early next Monday if you can.
+  Status: unsupported-grammar
+  Reason: unsupported construction: conditional_clause
+  Diagnostic stage: capability_gate
+  Constructions: conditional_clause, modal, imperative
+  Normalized: (unchanged)
+
+#205 If you come early, wait in the hall.
+  Status: unsupported-grammar
+  Reason: unsupported construction: conditional_clause
+  Diagnostic stage: capability_gate
+  Constructions: conditional_clause
+  Normalized: (unchanged)
+
+#206 I had a younger brother whose name was Antonio.
+  Status: unsupported-grammar
+  Reason: unsupported construction: relative_clause
+  Diagnostic stage: capability_gate
+  Constructions: relative_clause, comparison
+  Normalized: (unchanged)
+
+#207 Gnomes are little men who live under the ground.
+  Status: unsupported-grammar
+  Reason: unsupported construction: relative_clause
+  Diagnostic stage: capability_gate
+  Constructions: relative_clause
+  Normalized: gnome are little men who live under the ground.
+
+#208 He is loved by everybody, because he has a gentle disposition.
+  Status: unsupported-grammar
+  Reason: unsupported construction: subordinate_clause, passive
+  Diagnostic stage: capability_gate
+  Constructions: subordinate_clause, passive
+  Normalized: (unchanged)
+
+#209 Hold the horse while I run and get my cap.
+  Status: unsupported-grammar
+  Reason: unsupported construction: subordinate_clause
+  Diagnostic stage: capability_gate
+  Constructions: subordinate_clause, coordination, imperative
+  Normalized: (unchanged)
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#210 I have found the ring I lost.
+  Status: partial
+  Reason: not realized: found
+  Diagnostic stage: semantic_receipts
+  Constructions: simple
+  Normalized: I have found the ring I did lose.
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#212 That is the funniest story I ever heard.
+  Status: partial
+  Reason: not realized: comparison
+  Diagnostic stage: semantic_receipts
+  Constructions: comparison
+  Normalized: That is the funniest story I ever did hear.
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#214 They are no wiser than we.
+  Status: partial
+  Reason: not realized: wiser
+  Diagnostic stage: semantic_receipts
+  Constructions: comparison
+  Normalized: (unchanged)
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#217 She has more friends than enemies.
+  Status: partial
+  Reason: not realized: enemies
+  Diagnostic stage: analysis_or_parse
+  Constructions: comparison
+  Normalized: She has more friend than enemy.
+
+#218 He was very poor, and with his wife and five children lived in a little low cabin of logs and stones.
+  Status: partial
+  Reason: not realized: poor, children, lived, cabin, logs, stones
+  Diagnostic stage: analysis_or_parse
+  Constructions: coordination
+  Normalized: He was very poor and with his wife and five children lived in a little low cabin of log and stone.
+
+#219 When the wind blew, the traveler wrapped his mantle more closely around him.
+  Status: partial
+  Reason: not realized: blew
+  Diagnostic stage: semantic_receipts
+  Constructions: comparison
+  Normalized: When the wind did blow the traveler wrapped his mantle more closely around him.
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#220 I am sure that we can go.
+  Status: unsupported-grammar
+  Reason: unsupported construction: complement_clause
+  Diagnostic stage: capability_gate
+  Constructions: complement_clause, modal
+  Normalized: (unchanged)
+
+#221 We went back to the place where we saw the roses.
+  Status: partial
+  Reason: not realized: roses
+  Diagnostic stage: semantic_receipts
+  Constructions: simple
+  Normalized: We did go back to the place where we saw the ros.
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#222 “This tree is fifty feet high,” said the gardener.
+  Status: unsupported-grammar
+  Reason: unsupported construction: quotation
+  Diagnostic stage: capability_gate
+  Constructions: quotation
+  Normalized: this tree is fifty feet high did say the gardener.
+
+#223 I think that this train leaves five minutes earlier today.
+  Status: unsupported-grammar
+  Reason: unsupported construction: complement_clause
+  Diagnostic stage: capability_gate
+  Constructions: complement_clause, comparison
+  Normalized: I think that this train leaf five minute earlier today.
+
+#224 My opinion is that the governor will grant him a pardon.
+  Status: unsupported-grammar
+  Reason: unsupported construction: complement_clause
+  Diagnostic stage: capability_gate
+  Constructions: complement_clause, modal
+  Normalized: (unchanged)
+
+#226 The house stands where three roads meet.
+  Status: partial
+  Reason: not realized: meet
+  Diagnostic stage: semantic_receipts
+  Constructions: simple
+  Normalized: The house stand where three road meet.
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#227 He has far more money than brains.
+  Status: partial
+  Reason: not realized: brains, comparison
+  Diagnostic stage: analysis_or_parse
+  Constructions: comparison
+  Normalized: He has far more money than brain.
+
+#228 Evidently that gate is never opened, for the long grass and the great hemlocks grow close against it.
+  Status: partial
+  Reason: not realized: against
+  Diagnostic stage: semantic_receipts
+  Constructions: negation, coordination
+  Normalized: Evidently that gate is never opened for the long grass and the great hemlock grow close against it.
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#229 I met a little cottage girl; she was eight years old, she said.
+  Status: partial
+  Reason: not realized: met, old
+  Diagnostic stage: semantic_receipts
+  Constructions: simple
+  Normalized: I did meet a little cottage girl she was eight year old she said.
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=juxtaposition, comparison=particle, question=word-order, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+

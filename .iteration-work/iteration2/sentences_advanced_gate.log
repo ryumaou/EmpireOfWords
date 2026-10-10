@@ -1,0 +1,5 @@
+Example: complete 157 -> 160; regressions 0; recoveries 3
+MagicTest: complete 121 -> 121; regressions 0; recoveries 0
+Test1: complete 157 -> 160; regressions 0; recoveries 3
+Test2: complete 157 -> 160; regressions 0; recoveries 3
+QUALITY GATE: PASS (0 regressions; 9 recoveries)

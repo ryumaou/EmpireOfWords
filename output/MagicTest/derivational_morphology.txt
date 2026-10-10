@@ -1,0 +1,23 @@
+seed: 12345
+CANTRIP                  -te              source=Random
+SPELL                    -se              source=Random
+RITUAL                   -ka              source=Random
+SKILL                    te-              source=Random
+OPPOSITE                 -ne              source=Random
+ADVERB                   ne-              source=Random
+QUALITY.OF.BEING         -a               source=Random
+TO.MAKE                  pa-              source=Random
+HAVING.QUALITY.OF        kh-              source=Random
+RELATING.TO              -hw              source=Random
+TO.CREATE                kh-              source=Random
+RESULT.OF.DOING          -me              source=Random
+LIKELY.TO                be-              source=Random
+ACT.OF                   -ka              source=Random
+PRODUCT.OF               -ne              source=Random
+DOER                     conditional -er/r source=IF \V THEN -er ELSE -r
+PLACE.OF                 b-               source=Random
+DIM                      be-              source=Random
+AUG                      -tc              source=Random
+NOUN.TO.VERB             -ne              source=Random
+TENDING.TO               -sa              source=RANDOM
+VERB.TO.NOUN             ne-              source=RANDOM

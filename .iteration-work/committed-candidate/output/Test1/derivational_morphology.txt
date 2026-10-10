@@ -1,0 +1,19 @@
+seed: 12345
+OPPOSITE                 eji-             source=Random
+ADVERB                   bu-              source=Random
+QUALITY.OF.BEING         y-               source=Random
+TO.MAKE                  -ce              source=Random
+HAVING.QUALITY.OF        qa-              source=Random
+RELATING.TO              -m               source=Random
+TO.CREATE                -oo              source=Random
+RESULT.OF.DOING          -mo              source=Random
+LIKELY.TO                -cas             source=Random
+ACT.OF                   ke-              source=Random
+PRODUCT.OF               jig-             source=Random
+DOER                     conditional -er/r source=IF \V THEN -er ELSE -r
+PLACE.OF                 -ji              source=Random
+DIM                      -mo              source=Random
+AUG                      -bu              source=Random
+NOUN.TO.VERB             ci-              source=Random
+TENDING.TO               au-              source=RANDOM
+VERB.TO.NOUN             m-               source=Random

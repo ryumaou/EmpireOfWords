@@ -1,0 +1,13 @@
+Language: Test2
+Sentences: 11
+Complete: 11
+Partial: 0
+Missing vocabulary: 0
+Unsupported grammar: 0
+Output: .iteration-work\baseline\Test2\sentences_default.txt
+Diagnostics: .iteration-work\baseline\Test2\sentences_default_diagnostics.txt
+Analysis JSON: .iteration-work\baseline\Test2\sentences_default_analysis.json
+Warning: homophone: bloody:adj = scrub:v = gumina
+Warning: homophone: silvered:adj = silver:adj = nangmoqm
+Warning: homophone: slave:n = serve:v = uluduar
+Warning: homophone: writer:n = author:n = nilr

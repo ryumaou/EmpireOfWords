@@ -1,0 +1,10 @@
+# Empire Of Words — language diversity and realization audit
+
+## Package provenance and validity
+
+- **Example**: 5327 lexical entries; build version 7.6.1; package SHA256 `4f259a7477bebca611e666c6c3aa0a66e58de82ecc56655c3a669629b8cef3e7`; validation errors 0; warnings 2
+- **MagicTest**: 5444 lexical entries; build version 7.6.7; package SHA256 `d77892aa443a963138ec06fbdc44ec1af03ef18e1365cc1e2bc18295a328f300`; validation errors 0; warnings 9
+- **Test1**: 5327 lexical entries; build version 7.6.1; package SHA256 `00e9fc347bb3ee71cb9a712885298c4e35cdeb303cbf1ade82360efa9a22cb8b`; validation errors 0; warnings 8
+- **Test2**: 5279 lexical entries; build version 7.6.1; package SHA256 `1614ab40862004232a7392c48082a0085741736bc47db22c5c37d4982e32cc4e`; validation errors 0; warnings 4
+Audit: C:\Users\Jim\Documents\GitHub\EmpireOfWords\.iteration-work\accepted\audit\language_audit.md
+Contrasts: C:\Users\Jim\Documents\GitHub\EmpireOfWords\.iteration-work\accepted\audit\contrast_probes.csv

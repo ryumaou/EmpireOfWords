@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "tool_version": "7.6.7",
+  "language": "MagicTest",
+  "seed": 12345,
+  "source": {
+    "path": "C:\\Users\\Jim\\Documents\\GitHub\\EmpireOfWords\\data\\egyptian.txt",
+    "sha256": "7a63e406f618fd52475d5839232924306833cb4d141f660bf40edb837cb6c573"
+  },
+  "vocabulary": {
+    "path": "C:\\Users\\Jim\\Documents\\GitHub\\EmpireOfWords\\vocabulary\\MagicVocabulary.txt",
+    "sha256": "25b346833c082f2bc20a4b4f5a05c18a99f471a782743fa425e0f3a217c7316f"
+  },
+  "supplemental_vocabulary": [],
+  "translation_vocabulary_preflight": {
+    "enabled": true,
+    "added": 11
+  },
+  "grammar_family": "naturalistic",
+  "grammar_file": null,
+  "translation_source": "C:\\Users\\Jim\\Documents\\GitHub\\EmpireOfWords\\translations\\sentences_default.txt",
+  "counts": {
+    "entries": 5441,
+    "base_roots": 4781,
+    "modifiers": 22,
+    "derived_resolved": 660,
+    "unresolved_errors": 0
+  }
+}

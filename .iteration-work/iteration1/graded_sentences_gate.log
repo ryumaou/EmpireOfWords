@@ -1,0 +1,11 @@
+Example: complete 352 -> 350; regressions 2; recoveries 0
+  REGRESSION #157: The little seeds waited patiently under the snow for the warm spring sun. (not realized: spring)
+  REGRESSION #584: Walk one mile every morning after breakfast. (not realized: mile, morning, breakfast)
+MagicTest: complete 300 -> 300; regressions 0; recoveries 0
+Test1: complete 352 -> 350; regressions 2; recoveries 0
+  REGRESSION #157: The little seeds waited patiently under the snow for the warm spring sun. (not realized: spring)
+  REGRESSION #584: Walk one mile every morning after breakfast. (not realized: mile, morning, breakfast)
+Test2: complete 352 -> 350; regressions 2; recoveries 0
+  REGRESSION #157: The little seeds waited patiently under the snow for the warm spring sun. (not realized: spring)
+  REGRESSION #584: Walk one mile every morning after breakfast. (not realized: mile, morning, breakfast)
+QUALITY GATE: FAIL (6 regressions; 0 recoveries)

@@ -1,0 +1,19 @@
+seed: 12345
+OPPOSITE                 yud-             source=Random
+ADVERB                   -ho              source=Random
+QUALITY.OF.BEING         -c               source=Random
+TO.MAKE                  an-              source=Random
+HAVING.QUALITY.OF        -me              source=Random
+RELATING.TO              ch-              source=Random
+TO.CREATE                -ni              source=Random
+RESULT.OF.DOING          -da              source=Random
+LIKELY.TO                -sh              source=Random
+ACT.OF                   yo-              source=Random
+PRODUCT.OF               pu-              source=Random
+DOER                     conditional -er/r source=IF \V THEN -er ELSE -r
+PLACE.OF                 -w               source=Random
+DIM                      ana-             source=Random
+AUG                      d-               source=Random
+NOUN.TO.VERB             -c               source=Random
+TENDING.TO               -er              source=RANDOM
+VERB.TO.NOUN             ts-              source=Random

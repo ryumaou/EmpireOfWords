@@ -1,0 +1,17 @@
+Language: MagicTest
+Sentences: 1097
+Complete: 300
+Partial: 246
+Missing vocabulary: 422
+Unsupported grammar: 129
+Output: .iteration-work\iteration1_revised\MagicTest\graded_sentences.txt
+Missing-word additions: .iteration-work\iteration1_revised\MagicTest\graded_sentences_missing_words.txt
+Addable missing concepts: 453
+Missing words requiring POS review: 47
+Diagnostics: .iteration-work\iteration1_revised\MagicTest\graded_sentences_diagnostics.txt
+Analysis JSON: .iteration-work\iteration1_revised\MagicTest\graded_sentences_analysis.json
+Warning: homophone: armory:n = weapon:n = bebarse
+Warning: homophone: astral projection:n = astral:n = nefersa
+Warning: homophone: bakery:n = bake:v = banannu
+Warning: homophone: manager:n = manage:v = enhater
+Warning: homophone: teacher:n = teach:v = netutr

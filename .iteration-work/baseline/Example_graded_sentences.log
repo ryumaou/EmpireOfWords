@@ -1,0 +1,14 @@
+Language: Example
+Sentences: 1097
+Complete: 352
+Partial: 257
+Missing vocabulary: 359
+Unsupported grammar: 129
+Output: .iteration-work\baseline\Example\graded_sentences.txt
+Missing-word additions: .iteration-work\baseline\Example\graded_sentences_missing_words.txt
+Addable missing concepts: 396
+Missing words requiring POS review: 43
+Diagnostics: .iteration-work\baseline\Example\graded_sentences_diagnostics.txt
+Analysis JSON: .iteration-work\baseline\Example\graded_sentences_analysis.json
+Warning: homophone: teacher:n = teach:v = nakuyor
+Warning: homophone: writer:n = author:n = aryuzemr

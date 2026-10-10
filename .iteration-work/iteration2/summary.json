@@ -1,0 +1,79 @@
+{
+  "Example/contrast_suite_v1": {
+    "ok": 71,
+    "partial": 5,
+    "unsupported-grammar": 4
+  },
+  "MagicTest/contrast_suite_v1": {
+    "ok": 70,
+    "partial": 6,
+    "unsupported-grammar": 4
+  },
+  "Test1/contrast_suite_v1": {
+    "ok": 71,
+    "partial": 5,
+    "unsupported-grammar": 4
+  },
+  "Test2/contrast_suite_v1": {
+    "ok": 71,
+    "partial": 5,
+    "unsupported-grammar": 4
+  },
+  "Example/graded_sentences": {
+    "ok": 353,
+    "unresolved-vocabulary": 359,
+    "partial": 256,
+    "unsupported-grammar": 129
+  },
+  "MagicTest/graded_sentences": {
+    "ok": 300,
+    "unresolved-vocabulary": 422,
+    "partial": 246,
+    "unsupported-grammar": 129
+  },
+  "Test1/graded_sentences": {
+    "ok": 353,
+    "unresolved-vocabulary": 359,
+    "partial": 256,
+    "unsupported-grammar": 129
+  },
+  "Test2/graded_sentences": {
+    "ok": 353,
+    "unresolved-vocabulary": 359,
+    "partial": 256,
+    "unsupported-grammar": 129
+  },
+  "Example/sentences_advanced": {
+    "ok": 160,
+    "partial": 49,
+    "unsupported-grammar": 20
+  },
+  "MagicTest/sentences_advanced": {
+    "ok": 121,
+    "partial": 47,
+    "unresolved-vocabulary": 41,
+    "unsupported-grammar": 20
+  },
+  "Test1/sentences_advanced": {
+    "ok": 160,
+    "partial": 49,
+    "unsupported-grammar": 20
+  },
+  "Test2/sentences_advanced": {
+    "ok": 160,
+    "partial": 49,
+    "unsupported-grammar": 20
+  },
+  "Example/sentences_default": {
+    "ok": 11
+  },
+  "MagicTest/sentences_default": {
+    "ok": 11
+  },
+  "Test1/sentences_default": {
+    "ok": 11
+  },
+  "Test2/sentences_default": {
+    "ok": 11
+  }
+}

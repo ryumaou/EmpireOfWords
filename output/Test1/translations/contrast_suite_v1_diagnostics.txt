@@ -1,0 +1,149 @@
+Translation diagnostics: Test1
+============================================================
+
+Translator version: 7.6.12
+Language build version: 7.6.1
+Language schema version: 2
+Grammar contract version: 9
+Language package SHA256: 00e9fc347bb3ee71cb9a712885298c4e35cdeb303cbf1ade82360efa9a22cb8b
+Grammar SHA256: 52bd4c413e40f23a05716cf904a17a13dc8c66c4eccf9a75d8b9276115c89f29
+Translator SHA256: 2cb12ccc0ba65f99a6505d0c90fdc7ccab8d18abda32778bb0bc73b996572be0
+
+Sentences: 80
+Complete: 70
+Partial: 6
+Missing vocabulary: 0
+Unsupported grammar: 4
+
+Target language realization profile:
+  word_order: VSO
+  adposition_type: preposition
+  adjective_position: after
+  possessor_position: after
+  plural_strategy: mixed
+  comparison_strategy: mixed
+  question_strategy: mixed
+  negation_strategy: particle
+  morphology_type: mixed
+  future: particle
+  progressive: affix
+  perfect: affix
+  imperative: affix
+  np_coordination: juxtaposition
+  predicate_coordination: particle
+  clause_coordination: particle
+
+Construction inventory:
+  simple_clause: supported
+  copular_clause: supported
+  existential: supported
+  imperative: supported
+  yes_no_question: limited
+  wh_question: limited
+  coordination: limited
+  modal: limited
+  perfect: limited
+  progressive: supported
+  negation: supported
+  possessive: limited
+  reflexive: limited
+  comparison: limited
+  relative_clause: diagnosed
+  complement_clause: diagnosed
+  conditional_clause: diagnosed
+  subordinate_clause: diagnosed
+  passive: diagnosed
+  quotation: diagnosed
+  appositive: diagnosed
+  phrasal_verb: limited
+  weather: limited
+  proper_name: limited
+
+Most common constructions in non-complete sentences:
+  coordination: 2
+  modal: 2
+  comparison: 1
+  yes_no_question: 1
+  conditional_clause: 1
+  relative_clause: 1
+  complement_clause: 1
+  passive: 1
+
+Most common missing/unrecognized English lexemes:
+
+Per-sentence diagnostics:
+-
+#24 John and Elizabeth are friends.
+  Status: partial
+  Reason: recognized construction not yet fully realized
+  Diagnostic stage: analysis_or_parse
+  Constructions: coordination
+  Normalized: John and Elizabeth are friend.
+
+#43 On a sunny morning we started for the mountains.
+  Status: partial
+  Reason: recognized construction not yet fully realized
+  Diagnostic stage: analysis_or_parse
+  Constructions: simple
+  Normalized: On a sunny morning we started for the mountain.
+
+#59 Do you like summer or winter better?
+  Status: partial
+  Reason: not realized: better, comparison
+  Diagnostic stage: semantic_receipts
+  Constructions: comparison, coordination, yes_no_question
+  Normalized: (unchanged)
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#62 If the dog sees the cat, the bird will fly.
+  Status: unsupported-grammar
+  Reason: unsupported construction: conditional_clause
+  Diagnostic stage: capability_gate
+  Constructions: conditional_clause, modal
+  Normalized: If the dog see the cat the bird will fly.
+
+#63 The dog that sees the cat is happy.
+  Status: unsupported-grammar
+  Reason: unsupported construction: relative_clause
+  Diagnostic stage: capability_gate
+  Constructions: relative_clause
+  Normalized: The dog that see the cat is happy.
+
+#64 I know that the dog sees the cat.
+  Status: unsupported-grammar
+  Reason: unsupported construction: complement_clause
+  Diagnostic stage: capability_gate
+  Constructions: complement_clause
+  Normalized: I know that the dog see the cat.
+
+#65 The cat was seen by the dog.
+  Status: unsupported-grammar
+  Reason: unsupported construction: passive
+  Diagnostic stage: capability_gate
+  Constructions: passive
+  Normalized: (unchanged)
+
+#66 Aha! I have caught you!
+  Status: partial
+  Reason: unrealized discourse expression: aha
+  Diagnostic stage: semantic_receipts
+  Constructions: simple
+  Normalized: (unchanged)
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#67 Alas! That news is sad.
+  Status: partial
+  Reason: unrealized discourse expression: alas
+  Diagnostic stage: semantic_receipts
+  Constructions: simple
+  Normalized: (unchanged)
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+
+#69 Madam, I will obey your command.
+  Status: partial
+  Reason: unrealized vocative: madam
+  Diagnostic stage: semantic_receipts
+  Constructions: modal
+  Normalized: (unchanged)
+  Target strategies: word_order=VSO, adposition=preposition, adjective_position=after, possession=genitive, comparison=mixed, question=mixed, coordination={'np': {'strategy': 'juxtaposition', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'particle', 'position': 'between'}}, tense={'past': 'particle', 'future': 'particle'}, aspect={'progressive': 'affix', 'perfect': 'affix'}, mood={'imperative': 'affix'}
+

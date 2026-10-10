@@ -1,0 +1,1875 @@
+{
+  "language": "MagicTest",
+  "summary": {
+    "ok": 11
+  },
+  "provenance": {
+    "translator_version": "7.6.12",
+    "language_build_version": "7.6.7",
+    "package_sha256": "d77892aa443a963138ec06fbdc44ec1af03ef18e1365cc1e2bc18295a328f300",
+    "grammar_sha256": "a499bab154115bb890eb686ed31a3a0d3bc429a6df6343702bc39d63d562baea",
+    "translator_sha256": "8a7a55c3ee7e0718753a86a0ce918783ca1effa641c22158181e5591e4cd560b",
+    "contract_version": 9
+  },
+  "capabilities": {
+    "simple_clause": "supported",
+    "copular_clause": "supported",
+    "existential": "supported",
+    "imperative": "supported",
+    "yes_no_question": "limited",
+    "wh_question": "limited",
+    "coordination": "limited",
+    "modal": "limited",
+    "perfect": "limited",
+    "progressive": "supported",
+    "negation": "supported",
+    "possessive": "limited",
+    "reflexive": "limited",
+    "comparison": "limited",
+    "relative_clause": "diagnosed",
+    "complement_clause": "diagnosed",
+    "conditional_clause": "diagnosed",
+    "subordinate_clause": "diagnosed",
+    "passive": "diagnosed",
+    "quotation": "diagnosed",
+    "appositive": "diagnosed",
+    "phrasal_verb": "limited",
+    "weather": "limited",
+    "proper_name": "limited"
+  },
+  "sentences": [
+    {
+      "type": "Translation",
+      "english": "The big dog is sleeping.",
+      "surface": "kehemkaap nubenef  asamsinepkha",
+      "gloss": "DOG-DEF BIG  SLEEP-PROG",
+      "status": "ok",
+      "reason": "complete",
+      "ir": {
+        "tokens": [
+          "the",
+          "big",
+          "dog",
+          "is",
+          "sleeping"
+        ],
+        "original_tokens": [
+          "The",
+          "big",
+          "dog",
+          "is",
+          "sleeping"
+        ],
+        "constructions": [
+          "progressive"
+        ],
+        "lexical_items": [
+          {
+            "token": "big",
+            "lemma": "big"
+          },
+          {
+            "token": "dog",
+            "lemma": "dog"
+          },
+          {
+            "token": "sleeping",
+            "lemma": "sleep"
+          }
+        ],
+        "grammatical_items": [
+          {
+            "token": "the",
+            "role": "function"
+          },
+          {
+            "token": "is",
+            "role": "function"
+          }
+        ],
+        "proper_names": [],
+        "missing_lexemes": [],
+        "normalized_english": null,
+        "realizer_input": null,
+        "structured_source": "The big dog is sleeping.",
+        "structured_realized": true,
+        "structured_clause": {
+          "subject": {
+            "tokens": [
+              "big",
+              "dog"
+            ],
+            "head": "dog",
+            "determiner": "the",
+            "number": "singular",
+            "adjectives": [
+              "big"
+            ],
+            "noun_modifiers": [],
+            "participial_modifiers": [],
+            "attached_pps": [],
+            "proper_name": false,
+            "quantifier": null,
+            "numeral": null,
+            "possessor": null,
+            "person": null,
+            "conjunction": null,
+            "coordinated": [],
+            "comparison": null
+          },
+          "predicate": {
+            "lemma": "sleep",
+            "tense": "present",
+            "aspect": [
+              "progressive"
+            ],
+            "mood": "indicative",
+            "negative": false,
+            "modal": null,
+            "object": null,
+            "indirect_object": null,
+            "complement": null,
+            "complement_kind": null,
+            "complement_conjunction": null,
+            "coordinated_complements": [],
+            "modifiers": [],
+            "particles": [],
+            "pps": [],
+            "comparison": null,
+            "conjunction": null,
+            "coordinated": []
+          },
+          "clause_type": "declarative",
+          "conjunction": null,
+          "coordinated": null,
+          "source_tokens": [
+            "The",
+            "big",
+            "dog",
+            "is",
+            "sleeping"
+          ],
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
+        },
+        "realization_receipts": [
+          "big",
+          "dog",
+          "progressive",
+          "sleep"
+        ],
+        "realization_strategies": {
+          "word_order": "SOV",
+          "adposition": "preposition",
+          "adjective_position": "after",
+          "possession": "genitive",
+          "comparison": "mixed",
+          "question": "particle",
+          "coordination": {
+            "np": {
+              "strategy": "particle",
+              "position": "between"
+            },
+            "predicate": {
+              "strategy": "juxtaposition",
+              "position": "between",
+              "shared_subject": true
+            },
+            "clause": {
+              "strategy": "juxtaposition",
+              "position": "between"
+            }
+          },
+          "tense": {
+            "past": "affix",
+            "future": "affix"
+          },
+          "aspect": {
+            "progressive": "affix",
+            "perfect": "affix"
+          },
+          "mood": {
+            "imperative": "affix"
+          }
+        },
+        "diagnostic_stage": "complete"
+      }
+    },
+    {
+      "type": "Translation",
+      "english": "Where is my book?",
+      "surface": "sekhume amenmospsu  nakukha haentju",
+      "gloss": "1SG-GEN BOOK  BE (TEMPORARY STATE) WH-WHERE",
+      "status": "ok",
+      "reason": "complete",
+      "ir": {
+        "tokens": [
+          "where",
+          "is",
+          "my",
+          "book"
+        ],
+        "original_tokens": [
+          "Where",
+          "is",
+          "my",
+          "book"
+        ],
+        "constructions": [
+          "wh_question"
+        ],
+        "lexical_items": [
+          {
+            "token": "book",
+            "lemma": "book"
+          }
+        ],
+        "grammatical_items": [
+          {
+            "token": "where",
+            "role": "function"
+          },
+          {
+            "token": "is",
+            "role": "function"
+          },
+          {
+            "token": "my",
+            "role": "function"
+          }
+        ],
+        "proper_names": [],
+        "missing_lexemes": [],
+        "normalized_english": null,
+        "realizer_input": null,
+        "structured_source": "Where is my book?",
+        "structured_realized": true,
+        "structured_clause": {
+          "subject": {
+            "tokens": [
+              "book"
+            ],
+            "head": "book",
+            "determiner": null,
+            "number": "singular",
+            "adjectives": [],
+            "noun_modifiers": [],
+            "participial_modifiers": [],
+            "attached_pps": [],
+            "proper_name": false,
+            "quantifier": null,
+            "numeral": null,
+            "possessor": {
+              "tokens": [
+                "my"
+              ],
+              "head": "my",
+              "determiner": null,
+              "number": "singular",
+              "adjectives": [],
+              "noun_modifiers": [],
+              "participial_modifiers": [],
+              "attached_pps": [],
+              "proper_name": false,
+              "quantifier": null,
+              "numeral": null,
+              "possessor": null,
+              "person": "1sg",
+              "conjunction": null,
+              "coordinated": [],
+              "comparison": null
+            },
+            "person": null,
+            "conjunction": null,
+            "coordinated": [],
+            "comparison": null
+          },
+          "predicate": {
+            "lemma": "be (temporary state)",
+            "tense": "present",
+            "aspect": [],
+            "mood": "indicative",
+            "negative": false,
+            "modal": null,
+            "object": null,
+            "indirect_object": null,
+            "complement": null,
+            "complement_kind": null,
+            "complement_conjunction": null,
+            "coordinated_complements": [],
+            "modifiers": [],
+            "particles": [],
+            "pps": [],
+            "comparison": null,
+            "conjunction": null,
+            "coordinated": []
+          },
+          "clause_type": "wh_question",
+          "conjunction": null,
+          "coordinated": null,
+          "source_tokens": [
+            "Where",
+            "is",
+            "my",
+            "book"
+          ],
+          "wh_word": "where",
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
+        },
+        "realization_receipts": [
+          "be (temporary state)",
+          "book",
+          "my",
+          "possessive",
+          "question",
+          "wh_question",
+          "where"
+        ],
+        "realization_strategies": {
+          "word_order": "SOV",
+          "adposition": "preposition",
+          "adjective_position": "after",
+          "possession": "genitive",
+          "comparison": "mixed",
+          "question": "particle",
+          "coordination": {
+            "np": {
+              "strategy": "particle",
+              "position": "between"
+            },
+            "predicate": {
+              "strategy": "juxtaposition",
+              "position": "between",
+              "shared_subject": true
+            },
+            "clause": {
+              "strategy": "juxtaposition",
+              "position": "between"
+            }
+          },
+          "tense": {
+            "past": "affix",
+            "future": "affix"
+          },
+          "aspect": {
+            "progressive": "affix",
+            "perfect": "affix"
+          },
+          "mood": {
+            "imperative": "affix"
+          }
+        },
+        "diagnostic_stage": "complete"
+      }
+    },
+    {
+      "type": "Translation",
+      "english": "She will give him water.",
+      "surface": "munefen tatefh amnariskha",
+      "gloss": "3SG WATER:ACCUSATIVE GIVE-FUT",
+      "status": "ok",
+      "reason": "complete",
+      "ir": {
+        "tokens": [
+          "she",
+          "will",
+          "give",
+          "him",
+          "water"
+        ],
+        "original_tokens": [
+          "She",
+          "will",
+          "give",
+          "him",
+          "water"
+        ],
+        "constructions": [
+          "modal"
+        ],
+        "lexical_items": [
+          {
+            "token": "give",
+            "lemma": "give"
+          },
+          {
+            "token": "water",
+            "lemma": "water"
+          }
+        ],
+        "grammatical_items": [
+          {
+            "token": "she",
+            "role": "function"
+          },
+          {
+            "token": "will",
+            "role": "function"
+          },
+          {
+            "token": "him",
+            "role": "function"
+          }
+        ],
+        "proper_names": [],
+        "missing_lexemes": [],
+        "normalized_english": null,
+        "realizer_input": null,
+        "structured_source": "She will give him water.",
+        "structured_realized": true,
+        "structured_clause": {
+          "subject": {
+            "tokens": [
+              "she"
+            ],
+            "head": "she",
+            "determiner": null,
+            "number": "singular",
+            "adjectives": [],
+            "noun_modifiers": [],
+            "participial_modifiers": [],
+            "attached_pps": [],
+            "proper_name": false,
+            "quantifier": null,
+            "numeral": null,
+            "possessor": null,
+            "person": "3sg",
+            "conjunction": null,
+            "coordinated": [],
+            "comparison": null
+          },
+          "predicate": {
+            "lemma": "give",
+            "tense": "future",
+            "aspect": [],
+            "mood": "indicative",
+            "negative": false,
+            "modal": null,
+            "object": {
+              "tokens": [
+                "him",
+                "water"
+              ],
+              "head": "water",
+              "determiner": null,
+              "number": "singular",
+              "adjectives": [],
+              "noun_modifiers": [],
+              "participial_modifiers": [],
+              "attached_pps": [],
+              "proper_name": false,
+              "quantifier": null,
+              "numeral": null,
+              "possessor": null,
+              "person": null,
+              "conjunction": null,
+              "coordinated": [],
+              "comparison": null
+            },
+            "indirect_object": null,
+            "complement": null,
+            "complement_kind": null,
+            "complement_conjunction": null,
+            "coordinated_complements": [],
+            "modifiers": [],
+            "particles": [],
+            "pps": [],
+            "comparison": null,
+            "conjunction": null,
+            "coordinated": []
+          },
+          "clause_type": "declarative",
+          "conjunction": null,
+          "coordinated": null,
+          "source_tokens": [
+            "She",
+            "will",
+            "give",
+            "him",
+            "water"
+          ],
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
+        },
+        "realization_receipts": [
+          "future",
+          "give",
+          "she",
+          "water"
+        ],
+        "realization_strategies": {
+          "word_order": "SOV",
+          "adposition": "preposition",
+          "adjective_position": "after",
+          "possession": "genitive",
+          "comparison": "mixed",
+          "question": "particle",
+          "coordination": {
+            "np": {
+              "strategy": "particle",
+              "position": "between"
+            },
+            "predicate": {
+              "strategy": "juxtaposition",
+              "position": "between",
+              "shared_subject": true
+            },
+            "clause": {
+              "strategy": "juxtaposition",
+              "position": "between"
+            }
+          },
+          "tense": {
+            "past": "affix",
+            "future": "affix"
+          },
+          "aspect": {
+            "progressive": "affix",
+            "perfect": "affix"
+          },
+          "mood": {
+            "imperative": "affix"
+          }
+        },
+        "diagnostic_stage": "complete"
+      }
+    },
+    {
+      "type": "Translation",
+      "english": "This child walked to that house yesterday.",
+      "surface": "amerube feribut  hepetuamenkha samiseb heptahs nehadia",
+      "gloss": "PROXIMAL_SINGULAR CHILD  WALK-PST TO DISTAL_SINGULAR HOUSE",
+      "status": "ok",
+      "reason": "complete",
+      "ir": {
+        "tokens": [
+          "this",
+          "child",
+          "walked",
+          "to",
+          "that",
+          "house",
+          "yesterday"
+        ],
+        "original_tokens": [
+          "This",
+          "child",
+          "walked",
+          "to",
+          "that",
+          "house",
+          "yesterday"
+        ],
+        "constructions": [],
+        "lexical_items": [
+          {
+            "token": "child",
+            "lemma": "child"
+          },
+          {
+            "token": "walked",
+            "lemma": "walk"
+          },
+          {
+            "token": "house",
+            "lemma": "house"
+          }
+        ],
+        "grammatical_items": [
+          {
+            "token": "this",
+            "role": "function"
+          },
+          {
+            "token": "to",
+            "role": "function"
+          },
+          {
+            "token": "that",
+            "role": "function"
+          },
+          {
+            "token": "yesterday",
+            "role": "function"
+          }
+        ],
+        "proper_names": [],
+        "missing_lexemes": [],
+        "normalized_english": "this child walked to that house yesterday.",
+        "realizer_input": null,
+        "structured_source": "This child walked to that house yesterday.",
+        "structured_realized": true,
+        "structured_clause": {
+          "subject": {
+            "tokens": [
+              "child"
+            ],
+            "head": "child",
+            "determiner": "this",
+            "number": "singular",
+            "adjectives": [],
+            "noun_modifiers": [],
+            "participial_modifiers": [],
+            "attached_pps": [],
+            "proper_name": false,
+            "quantifier": null,
+            "numeral": null,
+            "possessor": null,
+            "person": null,
+            "conjunction": null,
+            "coordinated": [],
+            "comparison": null
+          },
+          "predicate": {
+            "lemma": "walk",
+            "tense": "past",
+            "aspect": [],
+            "mood": "indicative",
+            "negative": false,
+            "modal": null,
+            "object": null,
+            "indirect_object": null,
+            "complement": null,
+            "complement_kind": null,
+            "complement_conjunction": null,
+            "coordinated_complements": [],
+            "modifiers": [],
+            "particles": [],
+            "pps": [
+              {
+                "adposition": "to",
+                "object": {
+                  "tokens": [
+                    "house",
+                    "yesterday"
+                  ],
+                  "head": "house",
+                  "determiner": "that",
+                  "number": "singular",
+                  "adjectives": [],
+                  "noun_modifiers": [],
+                  "participial_modifiers": [],
+                  "attached_pps": [],
+                  "proper_name": false,
+                  "quantifier": null,
+                  "numeral": null,
+                  "possessor": null,
+                  "person": null,
+                  "conjunction": null,
+                  "coordinated": [],
+                  "comparison": null
+                }
+              }
+            ],
+            "comparison": null,
+            "conjunction": null,
+            "coordinated": []
+          },
+          "clause_type": "declarative",
+          "conjunction": null,
+          "coordinated": null,
+          "source_tokens": [
+            "This",
+            "child",
+            "walked",
+            "to",
+            "that",
+            "house",
+            "yesterday"
+          ],
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
+        },
+        "realization_receipts": [
+          "child",
+          "house",
+          "past",
+          "to",
+          "walk"
+        ],
+        "realization_strategies": {
+          "word_order": "SOV",
+          "adposition": "preposition",
+          "adjective_position": "after",
+          "possession": "genitive",
+          "comparison": "mixed",
+          "question": "particle",
+          "coordination": {
+            "np": {
+              "strategy": "particle",
+              "position": "between"
+            },
+            "predicate": {
+              "strategy": "juxtaposition",
+              "position": "between",
+              "shared_subject": true
+            },
+            "clause": {
+              "strategy": "juxtaposition",
+              "position": "between"
+            }
+          },
+          "tense": {
+            "past": "affix",
+            "future": "affix"
+          },
+          "aspect": {
+            "progressive": "affix",
+            "perfect": "affix"
+          },
+          "mood": {
+            "imperative": "affix"
+          }
+        },
+        "diagnostic_stage": "complete"
+      }
+    },
+    {
+      "type": "Translation",
+      "english": "Are you hungry?",
+      "surface": "nehes amentue nakunam akhatai",
+      "gloss": "2SG HUNGRY BE (TEMPORARY STATE) Q",
+      "status": "ok",
+      "reason": "complete",
+      "ir": {
+        "tokens": [
+          "are",
+          "you",
+          "hungry"
+        ],
+        "original_tokens": [
+          "Are",
+          "you",
+          "hungry"
+        ],
+        "constructions": [
+          "yes_no_question"
+        ],
+        "lexical_items": [
+          {
+            "token": "hungry",
+            "lemma": "hungry"
+          }
+        ],
+        "grammatical_items": [
+          {
+            "token": "are",
+            "role": "function"
+          },
+          {
+            "token": "you",
+            "role": "function"
+          }
+        ],
+        "proper_names": [],
+        "missing_lexemes": [],
+        "normalized_english": null,
+        "realizer_input": null,
+        "structured_source": "Are you hungry?",
+        "structured_realized": true,
+        "structured_clause": {
+          "subject": {
+            "tokens": [
+              "you"
+            ],
+            "head": "you",
+            "determiner": null,
+            "number": "singular",
+            "adjectives": [],
+            "noun_modifiers": [],
+            "participial_modifiers": [],
+            "attached_pps": [],
+            "proper_name": false,
+            "quantifier": null,
+            "numeral": null,
+            "possessor": null,
+            "person": "2sg",
+            "conjunction": null,
+            "coordinated": [],
+            "comparison": null
+          },
+          "predicate": {
+            "lemma": "be (temporary state)",
+            "tense": "present",
+            "aspect": [],
+            "mood": "indicative",
+            "negative": false,
+            "modal": null,
+            "object": null,
+            "indirect_object": null,
+            "complement": {
+              "tokens": [
+                "hungry"
+              ],
+              "head": "hungry",
+              "determiner": null,
+              "number": "singular",
+              "adjectives": [],
+              "noun_modifiers": [],
+              "participial_modifiers": [],
+              "attached_pps": [],
+              "proper_name": false,
+              "quantifier": null,
+              "numeral": null,
+              "possessor": null,
+              "person": null,
+              "conjunction": null,
+              "coordinated": [],
+              "comparison": null
+            },
+            "complement_kind": "adjective",
+            "complement_conjunction": null,
+            "coordinated_complements": [],
+            "modifiers": [],
+            "particles": [],
+            "pps": [],
+            "comparison": null,
+            "conjunction": null,
+            "coordinated": []
+          },
+          "clause_type": "yes_no_question",
+          "conjunction": null,
+          "coordinated": null,
+          "source_tokens": [
+            "Are",
+            "you",
+            "hungry"
+          ],
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
+        },
+        "realization_receipts": [
+          "be (temporary state)",
+          "hungry",
+          "question",
+          "you"
+        ],
+        "realization_strategies": {
+          "word_order": "SOV",
+          "adposition": "preposition",
+          "adjective_position": "after",
+          "possession": "genitive",
+          "comparison": "mixed",
+          "question": "particle",
+          "coordination": {
+            "np": {
+              "strategy": "particle",
+              "position": "between"
+            },
+            "predicate": {
+              "strategy": "juxtaposition",
+              "position": "between",
+              "shared_subject": true
+            },
+            "clause": {
+              "strategy": "juxtaposition",
+              "position": "between"
+            }
+          },
+          "tense": {
+            "past": "affix",
+            "future": "affix"
+          },
+          "aspect": {
+            "progressive": "affix",
+            "perfect": "affix"
+          },
+          "mood": {
+            "imperative": "affix"
+          }
+        },
+        "diagnostic_stage": "complete"
+      }
+    },
+    {
+      "type": "Translation",
+      "english": "Give me the red bird!",
+      "surface": "khnarisnam eruakheh hepet",
+      "gloss": "GIVE-IMP BIRD:ACCUSATIVE RED",
+      "status": "ok",
+      "reason": "complete",
+      "ir": {
+        "tokens": [
+          "give",
+          "me",
+          "the",
+          "red",
+          "bird"
+        ],
+        "original_tokens": [
+          "Give",
+          "me",
+          "the",
+          "red",
+          "bird"
+        ],
+        "constructions": [
+          "imperative"
+        ],
+        "lexical_items": [
+          {
+            "token": "give",
+            "lemma": "give"
+          },
+          {
+            "token": "red",
+            "lemma": "red"
+          },
+          {
+            "token": "bird",
+            "lemma": "bird"
+          }
+        ],
+        "grammatical_items": [
+          {
+            "token": "me",
+            "role": "function"
+          },
+          {
+            "token": "the",
+            "role": "function"
+          }
+        ],
+        "proper_names": [],
+        "missing_lexemes": [],
+        "normalized_english": null,
+        "realizer_input": null,
+        "structured_source": "Give me the red bird!",
+        "structured_realized": true,
+        "structured_clause": {
+          "subject": null,
+          "predicate": {
+            "lemma": "give",
+            "tense": "present",
+            "aspect": [],
+            "mood": "imperative",
+            "negative": false,
+            "modal": null,
+            "object": {
+              "tokens": [
+                "me",
+                "the",
+                "red",
+                "bird"
+              ],
+              "head": "bird",
+              "determiner": null,
+              "number": "singular",
+              "adjectives": [
+                "red"
+              ],
+              "noun_modifiers": [],
+              "participial_modifiers": [],
+              "attached_pps": [],
+              "proper_name": false,
+              "quantifier": null,
+              "numeral": null,
+              "possessor": null,
+              "person": null,
+              "conjunction": null,
+              "coordinated": [],
+              "comparison": null
+            },
+            "indirect_object": null,
+            "complement": null,
+            "complement_kind": null,
+            "complement_conjunction": null,
+            "coordinated_complements": [],
+            "modifiers": [],
+            "particles": [],
+            "pps": [],
+            "comparison": null,
+            "conjunction": null,
+            "coordinated": []
+          },
+          "clause_type": "imperative",
+          "conjunction": null,
+          "coordinated": null,
+          "source_tokens": [
+            "Give",
+            "me",
+            "the",
+            "red",
+            "bird"
+          ],
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
+        },
+        "realization_receipts": [
+          "bird",
+          "give",
+          "imperative",
+          "red"
+        ],
+        "realization_strategies": {
+          "word_order": "SOV",
+          "adposition": "preposition",
+          "adjective_position": "after",
+          "possession": "genitive",
+          "comparison": "mixed",
+          "question": "particle",
+          "coordination": {
+            "np": {
+              "strategy": "particle",
+              "position": "between"
+            },
+            "predicate": {
+              "strategy": "juxtaposition",
+              "position": "between",
+              "shared_subject": true
+            },
+            "clause": {
+              "strategy": "juxtaposition",
+              "position": "between"
+            }
+          },
+          "tense": {
+            "past": "affix",
+            "future": "affix"
+          },
+          "aspect": {
+            "progressive": "affix",
+            "perfect": "affix"
+          },
+          "mood": {
+            "imperative": "affix"
+          }
+        },
+        "diagnostic_stage": "complete"
+      }
+    },
+    {
+      "type": "Translation",
+      "english": "The woman and the man are talking.",
+      "surface": "keheferer khetebe keramen  asarihkha",
+      "gloss": "WOMAN-DEF AND MAN-DEF  TALK-PROG",
+      "status": "ok",
+      "reason": "complete",
+      "ir": {
+        "tokens": [
+          "the",
+          "woman",
+          "and",
+          "the",
+          "man",
+          "are",
+          "talking"
+        ],
+        "original_tokens": [
+          "The",
+          "woman",
+          "and",
+          "the",
+          "man",
+          "are",
+          "talking"
+        ],
+        "constructions": [
+          "progressive",
+          "coordination"
+        ],
+        "lexical_items": [
+          {
+            "token": "woman",
+            "lemma": "woman"
+          },
+          {
+            "token": "man",
+            "lemma": "man"
+          },
+          {
+            "token": "talking",
+            "lemma": "talk"
+          }
+        ],
+        "grammatical_items": [
+          {
+            "token": "the",
+            "role": "function"
+          },
+          {
+            "token": "and",
+            "role": "function"
+          },
+          {
+            "token": "the",
+            "role": "function"
+          },
+          {
+            "token": "are",
+            "role": "function"
+          }
+        ],
+        "proper_names": [],
+        "missing_lexemes": [],
+        "normalized_english": null,
+        "realizer_input": null,
+        "structured_source": "The woman and the man are talking.",
+        "structured_realized": true,
+        "structured_clause": {
+          "subject": {
+            "tokens": [
+              "woman"
+            ],
+            "head": "woman",
+            "determiner": "the",
+            "number": "singular",
+            "adjectives": [],
+            "noun_modifiers": [],
+            "participial_modifiers": [],
+            "attached_pps": [],
+            "proper_name": false,
+            "quantifier": null,
+            "numeral": null,
+            "possessor": null,
+            "person": null,
+            "conjunction": "and",
+            "coordinated": [
+              {
+                "tokens": [
+                  "man"
+                ],
+                "head": "man",
+                "determiner": "the",
+                "number": "singular",
+                "adjectives": [],
+                "noun_modifiers": [],
+                "participial_modifiers": [],
+                "attached_pps": [],
+                "proper_name": false,
+                "quantifier": null,
+                "numeral": null,
+                "possessor": null,
+                "person": null,
+                "conjunction": null,
+                "coordinated": [],
+                "comparison": null
+              }
+            ],
+            "comparison": null
+          },
+          "predicate": {
+            "lemma": "talk",
+            "tense": "present",
+            "aspect": [
+              "progressive"
+            ],
+            "mood": "indicative",
+            "negative": false,
+            "modal": null,
+            "object": null,
+            "indirect_object": null,
+            "complement": null,
+            "complement_kind": null,
+            "complement_conjunction": null,
+            "coordinated_complements": [],
+            "modifiers": [],
+            "particles": [],
+            "pps": [],
+            "comparison": null,
+            "conjunction": null,
+            "coordinated": []
+          },
+          "clause_type": "declarative",
+          "conjunction": null,
+          "coordinated": null,
+          "source_tokens": [
+            "The",
+            "woman",
+            "and",
+            "the",
+            "man",
+            "are",
+            "talking"
+          ],
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
+        },
+        "realization_receipts": [
+          "coordination",
+          "man",
+          "progressive",
+          "talk",
+          "woman"
+        ],
+        "realization_strategies": {
+          "word_order": "SOV",
+          "adposition": "preposition",
+          "adjective_position": "after",
+          "possession": "genitive",
+          "comparison": "mixed",
+          "question": "particle",
+          "coordination": {
+            "np": {
+              "strategy": "particle",
+              "position": "between"
+            },
+            "predicate": {
+              "strategy": "juxtaposition",
+              "position": "between",
+              "shared_subject": true
+            },
+            "clause": {
+              "strategy": "juxtaposition",
+              "position": "between"
+            }
+          },
+          "tense": {
+            "past": "affix",
+            "future": "affix"
+          },
+          "aspect": {
+            "progressive": "affix",
+            "perfect": "affix"
+          },
+          "mood": {
+            "imperative": "affix"
+          }
+        },
+        "diagnostic_stage": "complete"
+      }
+    },
+    {
+      "type": "Translation",
+      "english": "I do not see three cats.",
+      "surface": "saenyo amenmos benhotp hasaminebh serhe sebhotep",
+      "gloss": "NOT 1SG THREE CAT.PL:ACCUSATIVE SEE-NEG",
+      "status": "ok",
+      "reason": "complete",
+      "ir": {
+        "tokens": [
+          "i",
+          "do",
+          "not",
+          "see",
+          "three",
+          "cats"
+        ],
+        "original_tokens": [
+          "I",
+          "do",
+          "not",
+          "see",
+          "three",
+          "cats"
+        ],
+        "constructions": [
+          "negation"
+        ],
+        "lexical_items": [
+          {
+            "token": "see",
+            "lemma": "see"
+          },
+          {
+            "token": "three",
+            "lemma": "three"
+          },
+          {
+            "token": "cats",
+            "lemma": "cat"
+          }
+        ],
+        "grammatical_items": [
+          {
+            "token": "i",
+            "role": "function"
+          },
+          {
+            "token": "do",
+            "role": "function"
+          },
+          {
+            "token": "not",
+            "role": "function"
+          }
+        ],
+        "proper_names": [],
+        "missing_lexemes": [],
+        "normalized_english": "I do not see three cat.",
+        "realizer_input": null,
+        "structured_source": "I do not see three cats.",
+        "structured_realized": true,
+        "structured_clause": {
+          "subject": {
+            "tokens": [
+              "i"
+            ],
+            "head": "i",
+            "determiner": null,
+            "number": "singular",
+            "adjectives": [],
+            "noun_modifiers": [],
+            "participial_modifiers": [],
+            "attached_pps": [],
+            "proper_name": false,
+            "quantifier": null,
+            "numeral": null,
+            "possessor": null,
+            "person": "1sg",
+            "conjunction": null,
+            "coordinated": [],
+            "comparison": null
+          },
+          "predicate": {
+            "lemma": "see",
+            "tense": "present",
+            "aspect": [],
+            "mood": "indicative",
+            "negative": true,
+            "modal": null,
+            "object": {
+              "tokens": [
+                "three",
+                "cats"
+              ],
+              "head": "cat",
+              "determiner": null,
+              "number": "plural",
+              "adjectives": [],
+              "noun_modifiers": [],
+              "participial_modifiers": [],
+              "attached_pps": [],
+              "proper_name": false,
+              "quantifier": null,
+              "numeral": "three",
+              "possessor": null,
+              "person": null,
+              "conjunction": null,
+              "coordinated": [],
+              "comparison": null
+            },
+            "indirect_object": null,
+            "complement": null,
+            "complement_kind": null,
+            "complement_conjunction": null,
+            "coordinated_complements": [],
+            "modifiers": [
+              {
+                "lemma": "not",
+                "kind": "manner",
+                "source": "not"
+              }
+            ],
+            "particles": [],
+            "pps": [],
+            "comparison": null,
+            "conjunction": null,
+            "coordinated": []
+          },
+          "clause_type": "declarative",
+          "conjunction": null,
+          "coordinated": null,
+          "source_tokens": [
+            "I",
+            "do",
+            "not",
+            "see",
+            "three",
+            "cats"
+          ],
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
+        },
+        "realization_receipts": [
+          "cat",
+          "i",
+          "negation",
+          "not",
+          "see",
+          "three"
+        ],
+        "realization_strategies": {
+          "word_order": "SOV",
+          "adposition": "preposition",
+          "adjective_position": "after",
+          "possession": "genitive",
+          "comparison": "mixed",
+          "question": "particle",
+          "coordination": {
+            "np": {
+              "strategy": "particle",
+              "position": "between"
+            },
+            "predicate": {
+              "strategy": "juxtaposition",
+              "position": "between",
+              "shared_subject": true
+            },
+            "clause": {
+              "strategy": "juxtaposition",
+              "position": "between"
+            }
+          },
+          "tense": {
+            "past": "affix",
+            "future": "affix"
+          },
+          "aspect": {
+            "progressive": "affix",
+            "perfect": "affix"
+          },
+          "mood": {
+            "imperative": "affix"
+          }
+        },
+        "diagnostic_stage": "complete"
+      }
+    },
+    {
+      "type": "Translation",
+      "english": "There is a black mountain.",
+      "surface": "hastabi serurt skhepkha",
+      "gloss": "mountain.NOM black exist-3SG",
+      "status": "ok",
+      "reason": "complete",
+      "ir": {
+        "tokens": [
+          "there",
+          "is",
+          "a",
+          "black",
+          "mountain"
+        ],
+        "original_tokens": [
+          "There",
+          "is",
+          "a",
+          "black",
+          "mountain"
+        ],
+        "constructions": [],
+        "lexical_items": [
+          {
+            "token": "black",
+            "lemma": "black"
+          },
+          {
+            "token": "mountain",
+            "lemma": "mountain"
+          }
+        ],
+        "grammatical_items": [
+          {
+            "token": "there",
+            "role": "function"
+          },
+          {
+            "token": "is",
+            "role": "function"
+          },
+          {
+            "token": "a",
+            "role": "function"
+          }
+        ],
+        "proper_names": [],
+        "missing_lexemes": [],
+        "normalized_english": null,
+        "realizer_input": null,
+        "structured_source": null,
+        "structured_realized": false,
+        "structured_clause": null,
+        "realization_receipts": [],
+        "realization_strategies": {},
+        "diagnostic_stage": "complete"
+      }
+    },
+    {
+      "type": "Translation",
+      "english": "Two children played in the garden.",
+      "surface": "luxorpa hafaribut  hontitemenip ptahmin kebaut",
+      "gloss": "TWO CHILD.PL  PLAY-PST IN GARDEN-DEF",
+      "status": "ok",
+      "reason": "complete",
+      "ir": {
+        "tokens": [
+          "two",
+          "children",
+          "played",
+          "in",
+          "the",
+          "garden"
+        ],
+        "original_tokens": [
+          "Two",
+          "children",
+          "played",
+          "in",
+          "the",
+          "garden"
+        ],
+        "constructions": [],
+        "lexical_items": [
+          {
+            "token": "two",
+            "lemma": "two"
+          },
+          {
+            "token": "children",
+            "lemma": "child"
+          },
+          {
+            "token": "played",
+            "lemma": "play"
+          },
+          {
+            "token": "garden",
+            "lemma": "garden"
+          }
+        ],
+        "grammatical_items": [
+          {
+            "token": "in",
+            "role": "function"
+          },
+          {
+            "token": "the",
+            "role": "function"
+          }
+        ],
+        "proper_names": [],
+        "missing_lexemes": [],
+        "normalized_english": null,
+        "realizer_input": null,
+        "structured_source": "Two children played in the garden.",
+        "structured_realized": true,
+        "structured_clause": {
+          "subject": {
+            "tokens": [
+              "two",
+              "children"
+            ],
+            "head": "child",
+            "determiner": null,
+            "number": "plural",
+            "adjectives": [],
+            "noun_modifiers": [],
+            "participial_modifiers": [],
+            "attached_pps": [],
+            "proper_name": false,
+            "quantifier": null,
+            "numeral": "two",
+            "possessor": null,
+            "person": null,
+            "conjunction": null,
+            "coordinated": [],
+            "comparison": null
+          },
+          "predicate": {
+            "lemma": "play",
+            "tense": "past",
+            "aspect": [],
+            "mood": "indicative",
+            "negative": false,
+            "modal": null,
+            "object": null,
+            "indirect_object": null,
+            "complement": null,
+            "complement_kind": null,
+            "complement_conjunction": null,
+            "coordinated_complements": [],
+            "modifiers": [],
+            "particles": [],
+            "pps": [
+              {
+                "adposition": "in",
+                "object": {
+                  "tokens": [
+                    "garden"
+                  ],
+                  "head": "garden",
+                  "determiner": "the",
+                  "number": "singular",
+                  "adjectives": [],
+                  "noun_modifiers": [],
+                  "participial_modifiers": [],
+                  "attached_pps": [],
+                  "proper_name": false,
+                  "quantifier": null,
+                  "numeral": null,
+                  "possessor": null,
+                  "person": null,
+                  "conjunction": null,
+                  "coordinated": [],
+                  "comparison": null
+                }
+              }
+            ],
+            "comparison": null,
+            "conjunction": null,
+            "coordinated": []
+          },
+          "clause_type": "declarative",
+          "conjunction": null,
+          "coordinated": null,
+          "source_tokens": [
+            "Two",
+            "children",
+            "played",
+            "in",
+            "the",
+            "garden"
+          ],
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
+        },
+        "realization_receipts": [
+          "child",
+          "garden",
+          "in",
+          "past",
+          "play",
+          "two"
+        ],
+        "realization_strategies": {
+          "word_order": "SOV",
+          "adposition": "preposition",
+          "adjective_position": "after",
+          "possession": "genitive",
+          "comparison": "mixed",
+          "question": "particle",
+          "coordination": {
+            "np": {
+              "strategy": "particle",
+              "position": "between"
+            },
+            "predicate": {
+              "strategy": "juxtaposition",
+              "position": "between",
+              "shared_subject": true
+            },
+            "clause": {
+              "strategy": "juxtaposition",
+              "position": "between"
+            }
+          },
+          "tense": {
+            "past": "affix",
+            "future": "affix"
+          },
+          "aspect": {
+            "progressive": "affix",
+            "perfect": "affix"
+          },
+          "mood": {
+            "imperative": "affix"
+          }
+        },
+        "diagnostic_stage": "complete"
+      }
+    },
+    {
+      "type": "Translation",
+      "english": "A Tiger wearing a bell will starve.",
+      "surface": "ubkis hothneb pmek khthufuh  amkhaptiakha",
+      "gloss": "TIGER WEARING-PTCP BELL:ACCUSATIVE  STARVE-FUT",
+      "status": "ok",
+      "reason": "complete",
+      "ir": {
+        "tokens": [
+          "a",
+          "tiger",
+          "wearing",
+          "a",
+          "bell",
+          "will",
+          "starve"
+        ],
+        "original_tokens": [
+          "A",
+          "Tiger",
+          "wearing",
+          "a",
+          "bell",
+          "will",
+          "starve"
+        ],
+        "constructions": [
+          "modal"
+        ],
+        "lexical_items": [
+          {
+            "token": "tiger",
+            "lemma": "tiger"
+          },
+          {
+            "token": "wearing",
+            "lemma": "wear"
+          },
+          {
+            "token": "bell",
+            "lemma": "bell"
+          },
+          {
+            "token": "starve",
+            "lemma": "starve"
+          }
+        ],
+        "grammatical_items": [
+          {
+            "token": "a",
+            "role": "function"
+          },
+          {
+            "token": "a",
+            "role": "function"
+          },
+          {
+            "token": "will",
+            "role": "function"
+          }
+        ],
+        "proper_names": [],
+        "missing_lexemes": [],
+        "normalized_english": null,
+        "realizer_input": null,
+        "structured_source": "A Tiger wearing a bell will starve.",
+        "structured_realized": true,
+        "structured_clause": {
+          "subject": {
+            "tokens": [
+              "tiger"
+            ],
+            "head": "tiger",
+            "determiner": "a",
+            "number": "singular",
+            "adjectives": [],
+            "noun_modifiers": [],
+            "participial_modifiers": [
+              {
+                "lemma": "wearing",
+                "object": {
+                  "tokens": [
+                    "bell"
+                  ],
+                  "head": "bell",
+                  "determiner": "a",
+                  "number": "singular",
+                  "adjectives": [],
+                  "noun_modifiers": [],
+                  "participial_modifiers": [],
+                  "attached_pps": [],
+                  "proper_name": false,
+                  "quantifier": null,
+                  "numeral": null,
+                  "possessor": null,
+                  "person": null,
+                  "conjunction": null,
+                  "coordinated": [],
+                  "comparison": null
+                }
+              }
+            ],
+            "attached_pps": [],
+            "proper_name": false,
+            "quantifier": null,
+            "numeral": null,
+            "possessor": null,
+            "person": null,
+            "conjunction": null,
+            "coordinated": [],
+            "comparison": null
+          },
+          "predicate": {
+            "lemma": "starve",
+            "tense": "future",
+            "aspect": [],
+            "mood": "indicative",
+            "negative": false,
+            "modal": null,
+            "object": null,
+            "indirect_object": null,
+            "complement": null,
+            "complement_kind": null,
+            "complement_conjunction": null,
+            "coordinated_complements": [],
+            "modifiers": [],
+            "particles": [],
+            "pps": [],
+            "comparison": null,
+            "conjunction": null,
+            "coordinated": []
+          },
+          "clause_type": "declarative",
+          "conjunction": null,
+          "coordinated": null,
+          "source_tokens": [
+            "A",
+            "Tiger",
+            "wearing",
+            "a",
+            "bell",
+            "will",
+            "starve"
+          ],
+          "wh_word": null,
+          "wh_degree": null,
+          "subordinate": null,
+          "subordinate_relation": null
+        },
+        "realization_receipts": [
+          "bell",
+          "future",
+          "participial modifier",
+          "starve",
+          "tiger",
+          "wearing"
+        ],
+        "realization_strategies": {
+          "word_order": "SOV",
+          "adposition": "preposition",
+          "adjective_position": "after",
+          "possession": "genitive",
+          "comparison": "mixed",
+          "question": "particle",
+          "coordination": {
+            "np": {
+              "strategy": "particle",
+              "position": "between"
+            },
+            "predicate": {
+              "strategy": "juxtaposition",
+              "position": "between",
+              "shared_subject": true
+            },
+            "clause": {
+              "strategy": "juxtaposition",
+              "position": "between"
+            }
+          },
+          "tense": {
+            "past": "affix",
+            "future": "affix"
+          },
+          "aspect": {
+            "progressive": "affix",
+            "perfect": "affix"
+          },
+          "mood": {
+            "imperative": "affix"
+          }
+        },
+        "diagnostic_stage": "complete"
+      }
+    }
+  ]
+}

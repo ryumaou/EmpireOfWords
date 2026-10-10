@@ -1,0 +1,87 @@
+{
+  "pass": true,
+  "newly_noncomplete": 0,
+  "newly_complete": 0,
+  "languages": {
+    "Example": {
+      "before_version": "7.6.12",
+      "after_version": "7.6.12",
+      "before": {
+        "Complete": 11,
+        "Partial": 0,
+        "Missing vocabulary": 0,
+        "Unsupported grammar": 0
+      },
+      "after": {
+        "Complete": 11,
+        "Partial": 0,
+        "Missing vocabulary": 0,
+        "Unsupported grammar": 0
+      },
+      "changes": [],
+      "newly_noncomplete": [],
+      "newly_complete": []
+    },
+    "MagicTest": {
+      "before_version": "7.6.12",
+      "after_version": "7.6.12",
+      "before": {
+        "Complete": 11,
+        "Partial": 0,
+        "Missing vocabulary": 0,
+        "Unsupported grammar": 0
+      },
+      "after": {
+        "Complete": 11,
+        "Partial": 0,
+        "Missing vocabulary": 0,
+        "Unsupported grammar": 0
+      },
+      "changes": [],
+      "newly_noncomplete": [],
+      "newly_complete": []
+    },
+    "Test1": {
+      "before_version": "7.6.12",
+      "after_version": "7.6.12",
+      "before": {
+        "Complete": 11,
+        "Partial": 0,
+        "Missing vocabulary": 0,
+        "Unsupported grammar": 0
+      },
+      "after": {
+        "Complete": 11,
+        "Partial": 0,
+        "Missing vocabulary": 0,
+        "Unsupported grammar": 0
+      },
+      "changes": [],
+      "newly_noncomplete": [],
+      "newly_complete": []
+    },
+    "Test2": {
+      "before_version": "7.6.12",
+      "after_version": "7.6.12",
+      "before": {
+        "Complete": 11,
+        "Partial": 0,
+        "Missing vocabulary": 0,
+        "Unsupported grammar": 0
+      },
+      "after": {
+        "Complete": 11,
+        "Partial": 0,
+        "Missing vocabulary": 0,
+        "Unsupported grammar": 0
+      },
+      "changes": [],
+      "newly_noncomplete": [],
+      "newly_complete": []
+    }
+  },
+  "corpus": {
+    "count": 11,
+    "sha256": "6eebba4e1eb512d2184b1f32c6d1b448cf33bfb645bcb7a72945bdb6e6aeeee4"
+  }
+}

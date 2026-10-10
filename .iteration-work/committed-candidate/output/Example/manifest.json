@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "tool_version": "7.6.1",
+  "language": "Example",
+  "seed": 12345,
+  "source": {
+    "path": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\data\\fantasian.txt",
+    "sha256": "dc0fcb3e2004f874c87e98c8cd462c1444f690f9dec89f22ea2fd5deeece47d9"
+  },
+  "vocabulary": {
+    "path": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\vocabulary\\UndermountainVocabulary.txt",
+    "sha256": "36163ab1d3b0e1e5a98ea211fb6c613b7ea473ee7f0c299eafcf83921b277545"
+  },
+  "supplemental_vocabulary": [],
+  "translation_vocabulary_preflight": {
+    "enabled": true,
+    "added": 253
+  },
+  "grammar_family": "japanese",
+  "grammar_file": null,
+  "translation_source": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\translations\\sentences_advanced.txt",
+  "counts": {
+    "entries": 5357,
+    "base_roots": 4982,
+    "modifiers": 18,
+    "derived_resolved": 375,
+    "unresolved_errors": 0
+  }
+}

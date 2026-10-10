@@ -94,6 +94,11 @@ def parse_np(words,by,lexical_match):
         if a and b:
             a.conjunction=cj; a.coordinated=[b]; return a
     if len(words)==1 and words[0] in PRON: return NPIR(words,person=PRON[words[0]],head=words[0])
+    # Negative indefinite pronouns are full nominal arguments, not dropped
+    # predicate-tail tokens. Do not add verbal negation as well: that would
+    # impose an unlicensed double-negation strategy on the target language.
+    if len(words)==1 and words[0] in ('nothing','nobody','none') and _form(by,words[0],('pron',)):
+        return NPIR(words,head=words[0])
     poss=None
     if words and words[0] in POSS:
         poss=NPIR([words[0]],person=POSS[words[0]],head=words[0]); words=words[1:]
@@ -201,6 +206,18 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
             child.predicate.pps.insert(0,PPIR(ad.lower(),obj))
             child.source_tokens=english_tokens(raw)
             return child
+    # Fronted adjunct PP: retain its semantic role and let the target grammar
+    # decide preposition/postposition order. Never silently discard the adjunct.
+    front_pp=re.match(r'^\s*(on|in|at|during|after|before)\s+(.+?),\s*(.+[.!?])\s*$',raw,re.I)
+    if front_pp:
+        ad,object_text,main_text=front_pp.groups()
+        obj=parse_np([x.lower() for x in english_tokens(object_text)],by,lexical_match)
+        if obj is not None:
+            child=parse_clause(main_text,by,lexical_match,english_tokens,lemma_candidates,constructions,g)
+            if child is not None:
+                child.predicate.pps.insert(0,PPIR(ad.lower(),obj))
+                child.source_tokens=english_tokens(raw)
+                return child
     # Degree questions are not ordinary WHERE/WHEN adjunct questions. Preserve
     # both HOW and its adjective; reconstruct the uninverted copular clause.
     degree_match=re.match(r'^\s*how\s+([a-z]+)\s+(is|are|was|were)\s+(.+?)\s*\?\s*$',raw,re.I)
@@ -452,9 +469,18 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
             vals=[x for x in npwords if x not in DEGREE]
             if len(vals)==1:
                 lm=_lemma(vals[0],by,lexical_match)
+                # A seeded English comparative surface (SHORTER:adj) must not
+                # conceal the comparative semantic feature SHORT+COMP.
+                raw_degree=_degree_for(vals[0],lm,by)
+                if vals[0].endswith(('er','est')):
+                    from english_analyzer import lemma_candidates as _degree_candidates
+                    base=next((x for x in _degree_candidates(vals[0]) if x!=vals[0] and _pos(by,x,'adj')),None)
+                    if base:
+                        lm=base
+                        raw_degree='superlative' if vals[0].endswith('est') else 'comparative'
                 if _pos(by,lm,'adj'):
                     pred.complement=NPIR(vals,head=lm); pred.complement_kind='adjective'; copular=True
-                    d='comparative' if any(x in ('more','less') for x in npwords) else _degree_for(vals[0],lm,by)
+                    d='comparative' if any(x in ('more','less') for x in npwords) else raw_degree
                     if d!='positive': pred.comparison=pred.comparison or ComparisonIR(d,marker=vals[0])
                 elif _pos(by,lm,'n'):
                     pred.complement=NPIR(vals,head=lm); pred.complement_kind='nominal'; copular=True
@@ -476,6 +502,9 @@ def realize_np(np,g,by,noun_form,possessive_phrase,adjective_form=None,case='nom
     if not nf and np.head in ('today','tomorrow','yesterday') and np.tokens==[np.head]:
         adv=_form(by,np.head,('adv',))
         if adv:return adv,np.head.upper(),{np.head}
+    if not nf and np.head in ('nothing','nobody','none'):
+        pf=_form(by,np.head,('pron',))
+        if pf:return pf,np.head.upper()+'-NEG.INDEF',{np.head,'negative indefinite'}
     if not nf:return None,None,set()
     surf=noun_form(nf,g,np.number,case if case in g.get('noun',{}).get('cases',[]) else 'nominative'); gloss=np.head.upper()+('.PL' if np.number=='plural' else '')+(':'+case.upper() if case!='nominative' and case in g.get('noun',{}).get('cases',[]) else ''); receipts={np.head}
     # Articles/demonstratives are target-grammar morphology, not discarded English scaffolding.
@@ -639,6 +668,9 @@ def realize(clause,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix
         if adjective_form: af=adjective_form(af,g,degree)
         comp_s=af; comp_g=p.complement.head.upper()+('-COMP' if degree=='comparative' else '-SUPER' if degree=='superlative' else '')
         receipts.add(p.complement.head)
+        # Preserve the source inflection receipt when its canonical lemma
+        # differs from an independently seeded English surface lexeme.
+        if p.complement.tokens and degree!='positive': receipts.update(p.complement.tokens)
         if degree!='positive': receipts.add('comparison')
         os=comp_s if not os else os+' '+comp_s; og=comp_g if not og else og+' '+comp_g
         if p.coordinated_complements:
@@ -725,10 +757,31 @@ def realize(clause,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix
         if mark and mark not in surf.split(): surf=mark+' '+surf
         receipts.add('imperative'); receipts.add('hortative'); gloss+=' HORT'
     if clause.subordinate is not None:
-        # This semantic structure is available for auditing, not yet realized.
-        # The causal connective requires a target grammar contract; refusing to
-        # invent one is safer than claiming a faithful translation.
-        return None
+        # Realize both clauses independently, then join them with the licensed
+        # causal subordinator. A missing linker or incomplete clause is failure.
+        if clause.subordinate_relation != 'cause':
+            return None
+        contract=g.get('subordinate_clause',{})
+        if contract.get('strategy')!='particle' or contract.get('position') not in ('before','after'):
+            return None
+        linker=g.get('particles',{}).get('subordinate')
+        if not linker:
+            return None
+        child=realize(clause.subordinate,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix,adjective_form)
+        if not child or not child.get('surface'):
+            return None
+        # before/after describe placement of the subordinate clause relative
+        # to the main clause; the linker belongs to the reason clause.
+        reason_surface=linker+' '+child['surface']
+        reason_gloss='CAUSE '+child['gloss']
+        if contract['position']=='before':
+            surf=reason_surface+' '+surf
+            gloss=reason_gloss+' '+gloss
+        else:
+            surf=surf+' '+reason_surface
+            gloss=gloss+' '+reason_gloss
+        receipts.update(child['receipts'])
+        receipts.update(('subordinate_clause','causal_relation','because'))
     if clause.clause_type=='wh_question':
         interrogative=g.get('interrogatives',{}).get(clause.wh_word)
         if not interrogative:return None

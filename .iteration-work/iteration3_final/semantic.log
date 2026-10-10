@@ -1,0 +1,12 @@
+PASS contrast-23-independent-clauses
+PASS contrast-27-three-predicates
+PASS contrast-31-three-imperatives
+PASS contrast-42-np-attachment
+PASS contrast-44-nested-np-attachment
+PASS contrast-15-where-question
+PASS contrast-16-when-future-question
+PASS contrast-14-inverted-copular-question
+PASS contrast-55-coordinated-modal-question
+PASS contrast-17-degree-question
+PASS contrast-61-causal-subordination-ir
+11/11 semantic fixtures passed

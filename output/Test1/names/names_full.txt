@@ -1,0 +1,204 @@
+Proper names: Test1
+============================================================
+
+1. Nig Totaa Jincuouatong
+   Personal name: Nig Totaa
+   Personal generation: nig+totaa
+   Family name: Jincuouatong
+   Meaning: small purple goblin
+   Formula: small+purple+goblin
+   Language roots: jincuu+ouatu+ong
+
+2. Cik Uluyaar Ulunouluuju
+   Personal name: Cik Uluyaar
+   Personal generation: cik+uluyaar
+   Family name: Ulunouluuju
+   Meaning: castle man
+   Formula: castle+man
+   Language roots: ulun+ouluuju
+
+3. Oronigha Tngkeyin Otainoombud
+   Personal name: Oronigha Tngkeyin
+   Personal generation: oronigha+tngkeyin
+   Family name: Otainoombud
+   Meaning: iron dog
+   Formula: iron+dog
+   Language roots: otain+oombud
+
+4. Bisala Ira Dasancuulasi
+   Personal name: Bisala Ira
+   Personal generation: bisala+ira
+   Family name: Dasancuulasi
+   Meaning: occult master
+   Formula: occult+master
+   Language roots: dasan+cuulasi
+
+5. Soncuuri Sitan Qataigigyongju
+   Personal name: Soncuuri Sitan
+   Personal generation: soncuuri+sitan
+   Family name: Qataigigyongju
+   Meaning: five dragon house
+   Formula: five+dragon+house
+   Language roots: qatai+gig+yongju
+
+6. Gilay Dabuiruut Tobeyinongqani
+   Personal name: Gilay Dabuiruut
+   Personal generation: gilay+dabuiruut
+   Family name: Tobeyinongqani
+   Meaning: silver eye
+   Formula: silver+eye
+   Language roots: tobeyin+ongqani
+
+7. Jorus Ebesisuuk Saiqailantng
+   Personal name: Jorus Ebesisuuk
+   Personal generation: jorus+ebesisuuk
+   Family name: Saiqailantng
+   Meaning: blind demon mountain
+   Formula: blind+demon+mountain
+   Language roots: saiqai+ilan+tng
+
+8. Tobc Najaruui Edbuuimoorila
+   Personal name: Tobc Najaruui
+   Personal generation: tobc+najaruui
+   Family name: Edbuuimoorila
+   Meaning: crimson crab
+   Formula: crimson+crab
+   Language roots: edbuui+moorila
+
+9. Boljarusa Gila Ouatorusutudotan
+   Personal name: Boljarusa Gila
+   Personal generation: boljarusa+gila
+   Family name: Ouatorusutudotan
+   Meaning: purple robe lord
+   Formula: purple+robe+lord
+   Language roots: ouatu+orusutu+dotan
+
+10. Bun Qubenu Tobeyinbarighesitu
+   Personal name: Bun Qubenu
+   Personal generation: bun+qubenu
+   Family name: Tobeyinbarighesitu
+   Meaning: silver eel bay
+   Formula: silver+eel+bay
+   Language roots: tobeyin+barighe+situ
+
+11. Qoyau Gedb Sonutuleighe
+   Personal name: Qoyau Gedb
+   Personal generation: qoyau+gedb
+   Family name: Sonutuleighe
+   Meaning: cave lake
+   Formula: cave+lake
+   Language roots: sonutu+uleighe
+
+12. Kin Jilaljiju Tegtusaaju
+   Personal name: Kin Jilaljiju
+   Personal generation: kin+jilaljiju
+   Family name: Tegtusaaju
+   Meaning: clothing merchant
+   Formula: clothing+merchant
+   Language roots: teg+tusaaju
+
+13. Doom Guuke Ilandotan
+   Personal name: Doom Guuke
+   Personal generation: doom+guuke
+   Family name: Ilandotan
+   Meaning: demon lord
+   Formula: demon+lord
+   Language roots: ilan+dotan
+
+14. Tei Geijuuri Ataajubida
+   Personal name: Tei Geijuuri
+   Personal generation: tei+geijuuri
+   Family name: Ataajubida
+   Meaning: bat soldier
+   Formula: bat+soldier
+   Language roots: atai+ajubida
+
+15. Ewrosun Saljin Qubelemsanijun
+   Personal name: Ewrosun Saljin
+   Personal generation: ewrosun+saljin
+   Family name: Qubelemsanijun
+   Meaning: hand hammer
+   Formula: hand+hammer
+   Language roots: qubelem+sanijun
+
+16. Toorongud Buja Dalitotalan
+   Personal name: Toorongud Buja
+   Personal generation: toorongud+buja
+   Family name: Dalitotalan
+   Meaning: flower orchard
+   Formula: flower+orchard
+   Language roots: dali+totalan
+
+17. Dabuulu Irq Dalajubida
+   Personal name: Dabuulu Irq
+   Personal generation: dabuulu+irq
+   Family name: Dalajubida
+   Meaning: flower soldier
+   Formula: flower+soldier
+   Language roots: dali+ajubida
+
+18. Jiy Donguuyau Aranigenuubisa
+   Personal name: Jiy Donguuyau
+   Personal generation: jiy+donguuyau
+   Family name: Aranigenuubisa
+   Meaning: moon river
+   Formula: moon+river
+   Language roots: aranige+nuubisa
+
+19. Qar Nudabui Keoorongojegui
+   Personal name: Qar Nudabui
+   Personal generation: qar+nudabui
+   Family name: Keoorongojegui
+   Meaning: death ear
+   Formula: death+ear
+   Language roots: keoorongo+jegui
+
+20. Nei Raduuk Amsiduyauljudotan
+   Personal name: Nei Raduuk
+   Personal generation: nei+raduuk
+   Family name: Amsiduyauljudotan
+   Meaning: white shield lord
+   Formula: white+shield+lord
+   Language roots: amsida+uyaulju+dotan
+
+21. Basai Neg Umbudsiun
+   Personal name: Basai Neg
+   Personal generation: basai+neg
+   Family name: Umbudsiun
+   Meaning: blue snake
+   Formula: blue+snake
+   Language roots: umbud+siun
+
+22. Man Kolsuu Moduugsongritu
+   Personal name: Man Kolsuu
+   Personal generation: man+kolsuu
+   Family name: Moduugsongritu
+   Meaning: blood blade
+   Formula: blood+blade
+   Language roots: moduugs+ongritu
+
+23. Medebu Catal Qandunmoorila
+   Personal name: Medebu Catal
+   Personal generation: medebu+catal
+   Family name: Qandunmoorila
+   Meaning: gold crab
+   Formula: gold+crab
+   Language roots: qandun+moorila
+
+24. Edud Toiciki Joorongtotalan
+   Personal name: Edud Toiciki
+   Personal generation: edud+toiciki
+   Family name: Joorongtotalan
+   Meaning: water orchard
+   Formula: water+orchard
+   Language roots: joorong+totalan
+
+25. Buu Moongolaa Orcimaongritu
+   Personal name: Buu Moongolaa
+   Personal generation: buu+moongolaa
+   Family name: Orcimaongritu
+   Meaning: poison blade
+   Formula: poison+blade
+   Language roots: orcimai+ongritu
+
+Unavailable formulas (missing one or more lexical roots): 99

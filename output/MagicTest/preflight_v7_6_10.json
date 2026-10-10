@@ -1,0 +1,496 @@
+{
+  "total": 80,
+  "statuses": {
+    "ok": 71,
+    "partial": 5,
+    "unsupported-grammar": 4
+  },
+  "stages": {
+    "analysis_or_parse": 3,
+    "capability_gate": 4,
+    "semantic_receipts": 2
+  },
+  "missing_tokens": [],
+  "sentences": [
+    {
+      "sentence": "The dog sees the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog saw the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog will see the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog did not see the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog will not see the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog sees the cats.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dogs see the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog sees the cat and the bird.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog sees the cats and the bird.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "Does the dog see the cat?",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "Did the dog see the cat?",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "Will the dog see the cat?",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "Is the dog happy?",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "Is today Monday?",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "Where is the dog?",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "When will the guests arrive?",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "How wide is the river?",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog sees the cat and the bird.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog sees the cat or the bird.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog sees the cat and hears the bird.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog saw the cat and heard the bird.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog sees the cat but hears the bird.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog sees the cat, and the bird sees the dog.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "John and Elizabeth are friends.",
+      "status": "partial",
+      "stage": "analysis_or_parse",
+      "reason": "recognized construction not yet fully realized"
+    },
+    {
+      "sentence": "The dog is small but strong.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The crow dropped pebbles and raised water.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "I awoke early, dressed hastily, and went to breakfast.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "See the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "Do not see the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "Take the note and wait.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "Take this note, carry it to your mother, and wait for an answer.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "Be happy.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The girl sees the doll.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The girl sees the doll's dress.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The little girl made the doll's dress herself.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog sees its house.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The man sees his dog.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog sees the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The small dog sees the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog sees the small cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog sees the cat in the house.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The old man with a stick stood beside the fence.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "On a sunny morning we started for the mountains.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The girls with wreaths of flowers danced.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The sun looked through the branches.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog sees the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog is seeing the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog has seen the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog has been seeing the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog was seeing the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog can see the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog must see the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog should see the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog might see the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "Will you go with us or wait here?",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog is big.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog is bigger than the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog is the biggest.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "Do you like summer or winter better?",
+      "status": "partial",
+      "stage": "semantic_receipts",
+      "reason": "not realized: better, comparison"
+    },
+    {
+      "sentence": "The days grow shorter.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog sees the cat because the cat is small.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "If the dog sees the cat, the bird will fly.",
+      "status": "unsupported-grammar",
+      "stage": "capability_gate",
+      "reason": "unsupported construction: conditional_clause"
+    },
+    {
+      "sentence": "The dog that sees the cat is happy.",
+      "status": "unsupported-grammar",
+      "stage": "capability_gate",
+      "reason": "unsupported construction: relative_clause"
+    },
+    {
+      "sentence": "I know that the dog sees the cat.",
+      "status": "unsupported-grammar",
+      "stage": "capability_gate",
+      "reason": "unsupported construction: complement_clause"
+    },
+    {
+      "sentence": "The cat was seen by the dog.",
+      "status": "unsupported-grammar",
+      "stage": "capability_gate",
+      "reason": "unsupported construction: passive"
+    },
+    {
+      "sentence": "Aha! I have caught you!",
+      "status": "partial",
+      "stage": "analysis_or_parse",
+      "reason": "recognized construction not yet fully realized"
+    },
+    {
+      "sentence": "Alas! That news is sad.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "Oh dear! The wind has blown my hat away!",
+      "status": "partial",
+      "stage": "semantic_receipts",
+      "reason": "not realized: dear"
+    },
+    {
+      "sentence": "Madam, I will obey your command.",
+      "status": "partial",
+      "stage": "analysis_or_parse",
+      "reason": "recognized construction not yet fully realized"
+    },
+    {
+      "sentence": "Show the guests these shells, my son.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog sees the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog does not see the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog never sees the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog sees no cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog sees nothing.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The cat sees the dog.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The dog sees the cat.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The girl gives the boy a book.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The girl gives a book to the boy.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    },
+    {
+      "sentence": "The man stood beside the fence.",
+      "status": "ok",
+      "stage": "complete",
+      "reason": "complete"
+    }
+  ]
+}

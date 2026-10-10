@@ -1,0 +1,11 @@
+Language: Example
+Sentences: 80
+Complete: 71
+Partial: 5
+Missing vocabulary: 0
+Unsupported grammar: 4
+Output: .iteration-work\iteration1\Example\contrast_suite_v1.txt
+Diagnostics: .iteration-work\iteration1\Example\contrast_suite_v1_diagnostics.txt
+Analysis JSON: .iteration-work\iteration1\Example\contrast_suite_v1_analysis.json
+Warning: homophone: teacher:n = teach:v = nakuyor
+Warning: homophone: writer:n = author:n = aryuzemr

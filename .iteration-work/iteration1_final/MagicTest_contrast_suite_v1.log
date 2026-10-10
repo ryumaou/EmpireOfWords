@@ -1,0 +1,14 @@
+Language: MagicTest
+Sentences: 80
+Complete: 70
+Partial: 6
+Missing vocabulary: 0
+Unsupported grammar: 4
+Output: .iteration-work\iteration1_final\MagicTest\contrast_suite_v1.txt
+Diagnostics: .iteration-work\iteration1_final\MagicTest\contrast_suite_v1_diagnostics.txt
+Analysis JSON: .iteration-work\iteration1_final\MagicTest\contrast_suite_v1_analysis.json
+Warning: homophone: armory:n = weapon:n = bebarse
+Warning: homophone: astral projection:n = astral:n = nefersa
+Warning: homophone: bakery:n = bake:v = banannu
+Warning: homophone: manager:n = manage:v = enhater
+Warning: homophone: teacher:n = teach:v = netutr

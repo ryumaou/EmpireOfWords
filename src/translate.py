@@ -208,7 +208,16 @@ def main(argv=None) -> int:
     name = str(data.get("name") or language_path.parent.name)
 
     package_sha = hashlib.sha256(language_path.read_bytes()).hexdigest()
-    translator_sha = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+    # Hash the implementation, not just this thin CLI wrapper. A change to the
+    # analyzer or realizer must change the reported translator fingerprint.
+    implementation_files = ('translate.py', 'grammar_engine.py', 'english_analyzer.py',
+                            'structured_realizer.py', 'ir.py', 'language_io.py')
+    digest = hashlib.sha256()
+    for filename in implementation_files:
+        digest.update(filename.encode('utf-8') + b'\0')
+        digest.update((Path(__file__).resolve().parent / filename).read_bytes())
+        digest.update(b'\0')
+    translator_sha = digest.hexdigest()
     grammar_sha = hashlib.sha256(json.dumps(grammar, sort_keys=True, ensure_ascii=False).encode('utf-8')).hexdigest()
     manifest_path = language_path.parent / 'manifest.json'
     manifest = json.loads(manifest_path.read_text(encoding='utf-8')) if manifest_path.exists() else {}
@@ -283,6 +292,7 @@ def main(argv=None) -> int:
             for i,r in enumerate(results,1):
                 if r['status']=='ok': continue
                 lines += [f"#{i} {r['english']}",f"  Status: {r['status']}",f"  Reason: {r['reason']}",
+                          f"  Diagnostic stage: {r['ir'].get('diagnostic_stage','unknown')}",
                           f"  Constructions: {', '.join(r['ir'].get('constructions',[])) or 'simple'}",
                           f"  Normalized: {r['ir'].get('normalized_english') or '(unchanged)'}"]
                 rs=r['ir'].get('realization_strategies',{})

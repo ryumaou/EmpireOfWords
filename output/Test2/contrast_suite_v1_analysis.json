@@ -1,16 +1,16 @@
 {
   "language": "Test2",
   "summary": {
-    "ok": 66,
-    "partial": 9,
-    "unsupported-grammar": 5
+    "ok": 69,
+    "partial": 7,
+    "unsupported-grammar": 4
   },
   "provenance": {
-    "translator_version": "7.6.6",
+    "translator_version": "7.6.8",
     "language_build_version": "7.6.1",
     "package_sha256": "1614ab40862004232a7392c48082a0085741736bc47db22c5c37d4982e32cc4e",
     "grammar_sha256": "a3a309b6f7422bf9de5591afba30ef015f9b13ca756feb1ff837a13cb7b18622",
-    "translator_sha256": "68188b51eb2da5cdea9c5780b5defefd0fc7c57335210033db0aec6e25cf4b7c",
+    "translator_sha256": "fb9cbd2f42a186a65826ec40754b088a0f2802e2ed647a0dd0d98aa021216da6",
     "contract_version": 9
   },
   "capabilities": {
@@ -206,7 +206,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -376,7 +377,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -555,7 +557,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -749,7 +752,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -944,7 +948,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -1113,7 +1118,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -1282,7 +1288,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -1497,7 +1504,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -1712,7 +1720,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -1891,7 +1900,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -2071,7 +2081,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -2252,7 +2263,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -2417,7 +2429,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -2575,7 +2588,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -2722,7 +2736,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -2878,7 +2893,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -3054,7 +3070,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -3269,7 +3286,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -3484,7 +3502,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -3727,7 +3746,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -3971,7 +3991,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -4214,7 +4235,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -4504,7 +4526,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -4567,7 +4590,8 @@
         "structured_realized": false,
         "structured_clause": null,
         "realization_receipts": [],
-        "realization_strategies": {}
+        "realization_strategies": {},
+        "diagnostic_stage": "analysis_or_parse"
       }
     },
     {
@@ -4768,7 +4792,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -4998,7 +5023,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -5264,7 +5290,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -5402,7 +5429,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -5561,7 +5589,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -5738,7 +5767,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -6085,7 +6115,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -6216,7 +6247,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -6385,7 +6417,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -6585,7 +6618,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -6807,7 +6841,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -6997,7 +7032,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -7187,7 +7223,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -7356,7 +7393,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -7536,7 +7574,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -7716,7 +7755,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -7932,7 +7972,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -8020,7 +8061,8 @@
         "structured_realized": false,
         "structured_clause": null,
         "realization_receipts": [],
-        "realization_strategies": {}
+        "realization_strategies": {},
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -8102,7 +8144,8 @@
         "structured_realized": false,
         "structured_clause": null,
         "realization_receipts": [],
-        "realization_strategies": {}
+        "realization_strategies": {},
+        "diagnostic_stage": "analysis_or_parse"
       }
     },
     {
@@ -8319,7 +8362,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -8502,7 +8546,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -8671,7 +8716,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -8852,7 +8898,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -9033,7 +9080,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -9224,7 +9272,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -9406,7 +9455,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -9585,7 +9635,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -9764,7 +9815,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -9943,7 +9995,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -10122,7 +10175,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -10355,7 +10409,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -10517,7 +10572,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -10690,6 +10746,7 @@
         "realization_receipts": [
           "be (temporary state)",
           "big",
+          "bigger",
           "cat",
           "comparison",
           "dog"
@@ -10727,7 +10784,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -10868,8 +10926,10 @@
         "realization_receipts": [
           "be (temporary state)",
           "big",
+          "biggest",
           "comparison",
-          "dog"
+          "dog",
+          "the"
         ],
         "realization_strategies": {
           "word_order": "SOV",
@@ -10904,7 +10964,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -11116,16 +11177,17 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "semantic_receipts"
       }
     },
     {
       "type": "Translation",
       "english": "The days grow shorter.",
-      "surface": "[PARTIAL]",
-      "gloss": "DAY.PL SHORTER GROW",
-      "status": "partial",
-      "reason": "not realized: comparison",
+      "surface": "otabaa kuhun banmnu qangumu",
+      "gloss": "DAY.PL SHORT-COMP GROW",
+      "status": "ok",
+      "reason": "complete",
       "ir": {
         "tokens": [
           "the",
@@ -11202,7 +11264,7 @@
               "tokens": [
                 "shorter"
               ],
-              "head": "shorter",
+              "head": "short",
               "determiner": null,
               "number": "singular",
               "adjectives": [],
@@ -11224,7 +11286,11 @@
             "modifiers": [],
             "particles": [],
             "pps": [],
-            "comparison": null,
+            "comparison": {
+              "degree": "comparative",
+              "standard": null,
+              "marker": "shorter"
+            },
             "conjunction": null,
             "coordinated": []
           },
@@ -11243,8 +11309,10 @@
           "subordinate_relation": null
         },
         "realization_receipts": [
+          "comparison",
           "day",
           "grow",
+          "short",
           "shorter"
         ],
         "realization_strategies": {
@@ -11280,16 +11348,17 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
       "type": "Translation",
       "english": "The dog sees the cat because the cat is small.",
-      "surface": "[UNRESOLVED]",
-      "gloss": "[UNRESOLVED]",
-      "status": "unsupported-grammar",
-      "reason": "unsupported construction: subordinate_clause",
+      "surface": "tngoosa sheun wujuuba uluun uljashe sheunen mjasixi",
+      "gloss": "CAUSE CAT SMALL BE (TEMPORARY STATE) DOG CAT:ACCUSATIVE SEE",
+      "status": "ok",
+      "reason": "complete",
       "ir": {
         "tokens": [
           "the",
@@ -11367,7 +11436,7 @@
         "normalized_english": "The dog see the cat because the cat is small.",
         "realizer_input": null,
         "structured_source": "The dog sees the cat because the cat is small.",
-        "structured_realized": false,
+        "structured_realized": true,
         "structured_clause": {
           "subject": {
             "tokens": [
@@ -11521,8 +11590,51 @@
           },
           "subordinate_relation": "cause"
         },
-        "realization_receipts": [],
-        "realization_strategies": {}
+        "realization_receipts": [
+          "be (temporary state)",
+          "because",
+          "cat",
+          "causal_relation",
+          "dog",
+          "see",
+          "small",
+          "subordinate_clause"
+        ],
+        "realization_strategies": {
+          "word_order": "SOV",
+          "adposition": "postposition",
+          "adjective_position": "before",
+          "possession": "juxtaposition",
+          "comparison": "particle",
+          "question": "word-order",
+          "coordination": {
+            "np": {
+              "strategy": "juxtaposition",
+              "position": "between"
+            },
+            "predicate": {
+              "strategy": "particle",
+              "position": "between",
+              "shared_subject": true
+            },
+            "clause": {
+              "strategy": "juxtaposition",
+              "position": "between"
+            }
+          },
+          "tense": {
+            "past": "particle",
+            "future": "particle"
+          },
+          "aspect": {
+            "progressive": "affix",
+            "perfect": "affix"
+          },
+          "mood": {
+            "imperative": "affix"
+          }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -11613,7 +11725,8 @@
         "structured_realized": false,
         "structured_clause": null,
         "realization_receipts": [],
-        "realization_strategies": {}
+        "realization_strategies": {},
+        "diagnostic_stage": "capability_gate"
       }
     },
     {
@@ -11691,7 +11804,8 @@
         "structured_realized": false,
         "structured_clause": null,
         "realization_receipts": [],
-        "realization_strategies": {}
+        "realization_strategies": {},
+        "diagnostic_stage": "capability_gate"
       }
     },
     {
@@ -11769,7 +11883,8 @@
         "structured_realized": false,
         "structured_clause": null,
         "realization_receipts": [],
-        "realization_strategies": {}
+        "realization_strategies": {},
+        "diagnostic_stage": "capability_gate"
       }
     },
     {
@@ -11841,7 +11956,8 @@
         "structured_realized": false,
         "structured_clause": null,
         "realization_receipts": [],
-        "realization_strategies": {}
+        "realization_strategies": {},
+        "diagnostic_stage": "capability_gate"
       }
     },
     {
@@ -11901,7 +12017,8 @@
         "structured_realized": false,
         "structured_clause": null,
         "realization_receipts": [],
-        "realization_strategies": {}
+        "realization_strategies": {},
+        "diagnostic_stage": "analysis_or_parse"
       }
     },
     {
@@ -12078,7 +12195,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "semantic_receipts"
       }
     },
     {
@@ -12307,7 +12425,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "semantic_receipts"
       }
     },
     {
@@ -12375,7 +12494,8 @@
         "structured_realized": false,
         "structured_clause": null,
         "realization_receipts": [],
-        "realization_strategies": {}
+        "realization_strategies": {},
+        "diagnostic_stage": "analysis_or_parse"
       }
     },
     {
@@ -12551,7 +12671,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -12720,7 +12841,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -12913,7 +13035,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -13099,7 +13222,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -13269,16 +13393,17 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
       "type": "Translation",
       "english": "The dog sees nothing.",
-      "surface": "[PARTIAL]",
-      "gloss": "DOG  SEE",
-      "status": "partial",
-      "reason": "not realized: nothing",
+      "surface": "uljashe darangz mjasixi",
+      "gloss": "DOG NOTHING-NEG.INDEF SEE",
+      "status": "ok",
+      "reason": "complete",
       "ir": {
         "tokens": [
           "the",
@@ -13347,7 +13472,26 @@
             "mood": "indicative",
             "negative": false,
             "modal": null,
-            "object": null,
+            "object": {
+              "tokens": [
+                "nothing"
+              ],
+              "head": "nothing",
+              "determiner": null,
+              "number": "singular",
+              "adjectives": [],
+              "noun_modifiers": [],
+              "participial_modifiers": [],
+              "attached_pps": [],
+              "proper_name": false,
+              "quantifier": null,
+              "numeral": null,
+              "possessor": null,
+              "person": null,
+              "conjunction": null,
+              "coordinated": [],
+              "comparison": null
+            },
             "indirect_object": null,
             "complement": null,
             "complement_kind": null,
@@ -13376,6 +13520,8 @@
         },
         "realization_receipts": [
           "dog",
+          "negative indefinite",
+          "nothing",
           "see"
         ],
         "realization_strategies": {
@@ -13411,7 +13557,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -13580,7 +13727,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -13749,7 +13897,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -13937,7 +14086,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -14153,7 +14303,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     },
     {
@@ -14336,7 +14487,8 @@
           "mood": {
             "imperative": "affix"
           }
-        }
+        },
+        "diagnostic_stage": "complete"
       }
     }
   ]

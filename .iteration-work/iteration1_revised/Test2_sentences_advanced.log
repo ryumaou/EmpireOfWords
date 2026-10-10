@@ -1,0 +1,13 @@
+Language: Test2
+Sentences: 229
+Complete: 159
+Partial: 50
+Missing vocabulary: 0
+Unsupported grammar: 20
+Output: .iteration-work\iteration1_revised\Test2\sentences_advanced.txt
+Diagnostics: .iteration-work\iteration1_revised\Test2\sentences_advanced_diagnostics.txt
+Analysis JSON: .iteration-work\iteration1_revised\Test2\sentences_advanced_analysis.json
+Warning: homophone: bloody:adj = scrub:v = gumina
+Warning: homophone: silvered:adj = silver:adj = nangmoqm
+Warning: homophone: slave:n = serve:v = uluduar
+Warning: homophone: writer:n = author:n = nilr

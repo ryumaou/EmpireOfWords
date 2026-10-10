@@ -680,6 +680,50 @@ def analyze_translation(sentence,g,entries,forms):
             result['reason']='unrealized discourse expression: oh dear'
             result['ir']['diagnostic_stage']='semantic_receipts'
         return result
+    # Discourse expressions are independent of the following clause. Translate
+    # them only when this language actually contains the relevant interjection
+    # forms; never discard an unknown expression to inflate completion counts.
+    discourse=re.match(r"^\s*(oh dear|aha|alas|oh)\s*!\s*(.+)$",raw,re.I|re.S)
+    if discourse:
+        phrase,remaining=discourse.groups()
+        words=phrase.lower().split()
+        markers=[_lookup(by,w,('interj',)) for w in words]
+        base=analyze_translation(remaining,g,entries,forms)
+        result=dict(base)
+        result['english']=raw
+        result['ir']=dict(base['ir'])
+        result['ir']['discourse_expression']=phrase.lower()
+        result['ir']['discourse_forms_available']=all(markers)
+        if base['status']=='ok' and all(markers):
+            result['surface']=' '.join(markers)+'! '+base['surface']
+            result['gloss']=' '.join(w.upper() for w in words)+'! '+base['gloss']
+            result['ir']['discourse_receipts']=words
+            result['reason']='complete'
+        elif base['status']=='ok':
+            result['status']='partial'
+            result['surface']='[PARTIAL]'
+            result['reason']='unrealized discourse expression: '+phrase.lower()
+            result['ir']['diagnostic_stage']='semantic_receipts'
+        return result
+    # Direct address is independent of the clause subject. Do not feed the
+    # vocative to the ordinary subject parser or silently drop it.
+    vocative=re.match(r"^\s*(madam|sir)\s*,\s*(.+)$",raw,re.I|re.S)
+    if vocative:
+        address,remaining=vocative.groups()
+        base=analyze_translation(remaining,g,entries,forms)
+        result=dict(base); result['english']=raw; result['ir']=dict(base['ir'])
+        result['ir']['vocative']=address.lower()
+        address_form=_lookup(by,address.lower(),('n','interj'))
+        result['ir']['vocative_form_available']=bool(address_form)
+        if base['status']=='ok' and address_form:
+            result['surface']=address_form+', '+base['surface']
+            result['gloss']='VOC:'+address.upper()+', '+base['gloss']
+            result['ir']['vocative_receipt']=address.lower()
+        elif base['status']=='ok':
+            result['status']='partial'; result['surface']='[PARTIAL]'
+            result['reason']='unrealized vocative: '+address.lower()
+            result['ir']['diagnostic_stage']='semantic_receipts'
+        return result
     base_ir=_analyze_english(raw,by)
     tokens=base_ir['tokens']; constructions=base_ir['constructions']
     lexical=base_ir['lexical_items']; missing=base_ir['missing_lexemes']
@@ -717,7 +761,7 @@ def analyze_translation(sentence,g,entries,forms):
 
     # Constructions that the current deterministic realizer can identify but not
     # yet safely realize must never be silently flattened into a simple clause.
-    diagnosed=[c for c in constructions if TRANSLATION_CAPABILITIES.get(c)=='diagnosed']
+    diagnosed=[c for c in constructions if TRANSLATION_CAPABILITIES.get(c)=='diagnosed' and not (c=='subordinate_clause' and structured and 'causal_relation' in structured.get('receipts',()))]
     if diagnosed:
         status='unsupported-grammar'; surface='[UNRESOLVED]'; gloss='[UNRESOLVED]'
         reason='unsupported construction: '+', '.join(diagnosed)
@@ -782,6 +826,16 @@ def analyze_translation(sentence,g,entries,forms):
     ir['structured_clause']=structured.get('ir') if structured else (structured_ir.to_dict() if structured_ir is not None else None)
     ir['realization_receipts']=sorted(structured.get('receipts',())) if structured else []
     ir['realization_strategies']=structured.get('strategies',{}) if structured else {}
+    # A stable, machine-readable failure stage for contrast-suite triage.
+    # These stages describe the observable pipeline outcome, not a guess
+    # about the underlying root cause.
+    if status=='unsupported-grammar': stage='capability_gate'
+    elif status=='unresolved-vocabulary': stage='vocabulary'
+    elif status=='ok': stage='complete'
+    elif structured is None and structured_ir is None: stage='analysis_or_parse'
+    elif structured is None: stage='target_realization'
+    else: stage='semantic_receipts'
+    ir['diagnostic_stage']=stage
     return {'type':'Translation','english':raw,'surface':surface,'gloss':gloss,'status':status,'reason':reason,'ir':ir}
 
 

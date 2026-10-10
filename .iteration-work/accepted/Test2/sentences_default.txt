@@ -1,0 +1,66 @@
+[Translation]
+English: The big dog is sleeping.
+Language: che uljashe  yicinjis
+Gloss: BIG DOG  SLEEP-PROG
+Status: ok
+Reason: complete
+[Translation]
+English: Where is my book?
+Language: zaoyang toruumi  uluun cechan
+Gloss: 1SG-GEN BOOK  BE (TEMPORARY STATE) WH-WHERE
+Status: ok
+Reason: complete
+[Translation]
+English: She will give him water.
+Language: shuno boyanen zhanliu deban
+Gloss: 3SG WATER:ACCUSATIVE GIVE-FUT
+Status: ok
+Reason: complete
+[Translation]
+English: This child walked to that house yesterday.
+Language: daqob beliumo  todou ulusin dotuluu guuludi pekab
+Gloss: PROXIMAL_SINGULAR CHILD  WALK-PST TO DISTAL_SINGULAR HOUSE
+Status: ok
+Reason: complete
+[Translation]
+English: Are you hungry?
+Language: zalju uluun menged
+Gloss: 2SG HUNGRY BE (TEMPORARY STATE) Q
+Status: ok
+Reason: complete
+[Translation]
+English: Give me the red bird!
+Language: debanmut chen guijen
+Gloss: GIVE-IMP RED BIRD:ACCUSATIVE
+Status: ok
+Reason: complete
+[Translation]
+English: The woman and the man are talking.
+Language: qaliudu alaruod  qoturass
+Gloss: WOMAN AND MAN  TALK-PROG
+Status: ok
+Reason: complete
+[Translation]
+English: I do not see three cats.
+Language: sheubaa zaoyang shunbe otasheunen kuumonu mjasixi
+Gloss: NOT 1SG THREE CAT.PL:ACCUSATIVE SEE-NEG
+Status: ok
+Reason: complete
+[Translation]
+English: There is a black mountain.
+Language: baildu wekongg nakilaa
+Gloss: black mountain.NOM exist-3SG
+Status: ok
+Reason: complete
+[Translation]
+English: Two children played in the garden.
+Language: orine otabeliumo  todou mengeie mongkeg otu
+Gloss: TWO CHILD.PL  PLAY-PST IN GARDEN
+Status: ok
+Reason: complete
+[Translation]
+English: A Tiger wearing a bell will starve.
+Language: baixi oturang ranen moqing  zhanliu delemuu
+Gloss: WEARING-PTCP BELL:ACCUSATIVE TIGER  STARVE-FUT
+Status: ok
+Reason: complete

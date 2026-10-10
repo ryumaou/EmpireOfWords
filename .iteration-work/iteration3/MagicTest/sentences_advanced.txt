@@ -1,0 +1,1374 @@
+[Translation]
+English: The big dog is sleeping.
+Language: kehemkaap nubenef  asamsinepkha
+Gloss: DOG-DEF BIG  SLEEP-PROG
+Status: ok
+Reason: complete
+[Translation]
+English: Where is my book?
+Language: sekhume amenmospsu  nakukha haentju
+Gloss: 1SG-GEN BOOK  BE (TEMPORARY STATE) WH-WHERE
+Status: ok
+Reason: complete
+[Translation]
+English: She will give him water.
+Language: munefen tatefh amnariskha
+Gloss: 3SG WATER:ACCUSATIVE GIVE-FUT
+Status: ok
+Reason: complete
+[Translation]
+English: This child walked to that house yesterday.
+Language: amerube feribut  hepetuamenkha samiseb heptahs nehadia
+Gloss: PROXIMAL_SINGULAR CHILD  WALK-PST TO DISTAL_SINGULAR HOUSE
+Status: ok
+Reason: complete
+[Translation]
+English: Are you hungry?
+Language: nehes amentue nakunam akhatai
+Gloss: 2SG HUNGRY BE (TEMPORARY STATE) Q
+Status: ok
+Reason: complete
+[Translation]
+English: Give me the red bird!
+Language: khnarisnam eruakheh hepet
+Gloss: GIVE-IMP BIRD:ACCUSATIVE RED
+Status: ok
+Reason: complete
+[Translation]
+English: The woman and the man are talking.
+Language: keheferer khetebe keramen  asarihkha
+Gloss: WOMAN-DEF AND MAN-DEF  TALK-PROG
+Status: ok
+Reason: complete
+[Translation]
+English: I do not see three cats.
+Language: saenyo amenmos benhotp hasaminebh serhe sebhotep
+Gloss: NOT 1SG THREE CAT.PL:ACCUSATIVE SEE-NEG
+Status: ok
+Reason: complete
+[Translation]
+English: There is a black mountain.
+Language: hastabi serurt skhepkha
+Gloss: mountain.NOM black exist-3SG
+Status: ok
+Reason: complete
+[Translation]
+English: Two children played in the garden.
+Language: luxorpa hafaribut  hontitemenip ptahmin kebaut
+Gloss: TWO CHILD.PL  PLAY-PST IN GARDEN-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: A Tiger wearing a bell will starve.
+Language: ubkis hothneb pmek khthufuh  amkhaptiakha
+Gloss: TIGER WEARING-PTCP BELL:ACCUSATIVE  STARVE-FUT
+Status: ok
+Reason: complete
+[Translation]
+English: The sun shines.
+Language: keamenwos  ipakha
+Gloss: SUN-DEF  SHINE
+Status: ok
+Reason: complete
+[Translation]
+English: The sun is shining.
+Language: keamenwos  asapikha
+Gloss: SUN-DEF  SHINE-PROG
+Status: ok
+Reason: complete
+[Translation]
+English: The sun shone.
+Language: keamenwos  ipamenkha
+Gloss: SUN-DEF  SHINE-PST
+Status: ok
+Reason: complete
+[Translation]
+English: The sun will shine.
+Language: keamenwos  amapikha
+Gloss: SUN-DEF  SHINE-FUT
+Status: ok
+Reason: complete
+[Translation]
+English: The sun has been shining.
+Language: keamenwos  asapikhara
+Gloss: SUN-DEF  SHINE-PROG-PERF
+Status: ok
+Reason: complete
+[Translation]
+English: The sun is shining again.
+Language: shenefe keamenwos  asapikha
+Gloss: AGAIN SUN-DEF  SHINE-PROG
+Status: ok
+Reason: complete
+[Translation]
+English: The sun will shine tomorrow.
+Language: mesit keamenwos  amapikha
+Gloss: TOMORROW SUN-DEF  SHINE-FUT
+Status: ok
+Reason: complete
+[Translation]
+English: The sun shines brightly.
+Language: hennebu keamenwos  ipakha
+Gloss: BRIGHT SUN-DEF  SHINE
+Status: ok
+Reason: complete
+[Translation]
+English: The bright sun shines.
+Language: keamenwos hennebu  ipakha
+Gloss: SUN-DEF BRIGHT  SHINE
+Status: ok
+Reason: complete
+[Translation]
+English: The sun is rising now.
+Language: seseb keamenwos  asamirmakha
+Gloss: NOW SUN-DEF  RISE-PROG
+Status: ok
+Reason: complete
+[Translation]
+English: All the people shouted.
+Language: hireded hamharit  khestulmenip
+Gloss: ALL PERSON.PL  SHOUT-PST
+Status: ok
+Reason: complete
+[Translation]
+English: Some of the people shouted.
+Language: kehamhirit khestulkha
+Gloss: person.PL.NOM-DEF SHOUT
+Status: ok
+Reason: complete
+[Translation]
+English: Many of the people shouted twice.
+Language: kehamhirit khestulkha
+Gloss: person.PL.NOM-DEF SHOUT
+Status: ok
+Reason: complete
+[Translation]
+English: Happy people often shout.
+Language: mesmenb hamharit psies  khestulip
+Gloss: OFTEN PERSON.PL HAPPY  SHOUT
+Status: ok
+Reason: complete
+[Translation]
+English: The kitten jumped up.
+Language: kebesameneb  raptaismenkha mebakha
+Gloss: KITTEN-DEF  JUMP-PST UP
+Status: ok
+Reason: complete
+[Translation]
+English: The kitten jumped onto the table.
+Language: kebesameneb  raptaismenkha butmosh keimurt
+Gloss: KITTEN-DEF  JUMP-PST ONTO TABLE-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: My little kitten walked away.
+Language: besameneb meptole amenmospsu  hepetuamenkha khmin
+Gloss: 1SG-GEN KITTEN LITTLE  WALK-PST AWAY
+Status: ok
+Reason: complete
+[Translation]
+English: It’s raining.
+Language: munefen  ashamhinenekha
+Gloss: 3SG  RAIN-PROG
+Status: ok
+Reason: complete
+[Translation]
+English: The rain came down.
+Language: kehemhane  ilutmenkha hera
+Gloss: RAIN-DEF  COME-PST DOWN
+Status: ok
+Reason: complete
+[Translation]
+English: The kitten is playing in the rain.
+Language: kebesameneb  ashantitekha ptahmin kehemhane
+Gloss: KITTEN-DEF  PLAY-PROG IN RAIN-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The rain has stopped.
+Language: kehemhane  umhotenmenrakha
+Gloss: RAIN-DEF  STOP-PST-PERF
+Status: ok
+Reason: complete
+[Translation]
+English: Soon the rain will stop.
+Language: adihut kehemhane  amamhitenkha
+Gloss: SOON RAIN-DEF  STOP-FUT
+Status: ok
+Reason: complete
+[Translation]
+English: I hope the rain stops soon.
+Language: [PARTIAL]
+Gloss: SOON 1SG RAIN:ACCUSATIVE-DEF HOPE
+Status: partial
+Reason: not realized: stops
+[Translation]
+English: Once wild animals lived here.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: wild
+[Translation]
+English: Slowly she looked around.
+Language: taabhor munefen  ashenenmenkha senalut
+Gloss: SLOW 3SG  LOOK-PST AROUND
+Status: ok
+Reason: complete
+[Translation]
+English: Go away!
+Language: khbhanam khmin
+Gloss: GO-IMP AWAY
+Status: ok
+Reason: complete
+[Translation]
+English: Let’s go!
+Language: serkhem uhethet  khbhane
+Gloss: 1PL  GO-IMP HORT
+Status: ok
+Reason: complete
+[Translation]
+English: You should go.
+Language: nehes  bhunam khemlot
+Gloss: 2SG  GO-MOD
+Status: ok
+Reason: complete
+[Translation]
+English: I will be happy to go.
+Language: [PARTIAL]
+Gloss: [PARTIAL]
+Status: partial
+Reason: recognized construction not yet fully realized
+[Translation]
+English: He will arrive soon.
+Language: adihut munefen  amamisamekha
+Gloss: SOON 3SG  ARRIVE-FUT
+Status: ok
+Reason: complete
+[Translation]
+English: The baby’s ball has rolled away.
+Language: kemediamt nakhotepsupsu  nerimenrakha khmin
+Gloss: BABY:GENITIVE-GEN BALL-DEF  ROLL-PST-PERF AWAY
+Status: ok
+Reason: complete
+[Translation]
+English: The two boys are working together.
+Language: weruakh luxorpa kehemasims  asapihip
+Gloss: TOGETHER TWO BOY.PL-DEF  WORK-PROG
+Status: ok
+Reason: complete
+[Translation]
+English: This mist will probably clear away.
+Language: inu amerube banaput  amshahwinkha khmin
+Gloss: PROBABLY PROXIMAL_SINGULAR MIST  CLEAR-FUT AWAY
+Status: ok
+Reason: complete
+[Translation]
+English: Lovely flowers are growing everywhere.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: everywhere
+[Translation]
+English: We should eat more slowly.
+Language: pasekha taabhor uhethet  hepentcane khemlot
+Gloss: SLOW 1PL  EAT-MOD
+Status: ok
+Reason: complete
+[Translation]
+English: You have come too soon.
+Language: hetefer adihut nehes  ilutnam
+Gloss: TOO SOON 2SG  COME
+Status: ok
+Reason: complete
+[Translation]
+English: You must write more neatly.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: neatly; not realized: comparison
+[Translation]
+English: Directly opposite stands a wonderful palace.
+Language: heretaa scepuqe naahhuth henasas nefenbekha
+Gloss: DIRECT OPPOSITE PALACE:ACCUSATIVE WONDERFUL STAND
+Status: ok
+Reason: complete
+[Translation]
+English: Henry’s dog is lost.
+Language: [PARTIAL]
+Gloss: DOG  LOSE-PST
+Status: partial
+Reason: not realized: possessive relation
+[Translation]
+English: My cat is black.
+Language: sameneb amenmospsu serurt nakukha
+Gloss: 1SG-GEN CAT BLACK BE (TEMPORARY STATE)
+Status: ok
+Reason: complete
+[Translation]
+English: The little girl’s doll is broken.
+Language: kehespons bamenebpsu meptolepsu ikuiume nakukha
+Gloss: GIRL:GENITIVE LITTLE-GEN DOLL-DEF BROKEN BE (TEMPORARY STATE)
+Status: ok
+Reason: complete
+[Translation]
+English: I usually sleep soundly.
+Language: hedjhuf sari  mesutkha
+Gloss: USUALLY SLEEP  SOUND
+Status: ok
+Reason: complete
+[Translation]
+English: The children ran after Jack.
+Language: kehafiribut sismenip
+Gloss: child.PL.NOM-DEF RUN-PST
+Status: ok
+Reason: complete
+[Translation]
+English: I can play after school.
+Language: amenmos  hontitep sahesh khem heptanu
+Gloss: 1SG  PLAY-MOD AFTER SCHOOL
+Status: ok
+Reason: complete
+[Translation]
+English: We went to the village for a visit.
+Language: [PARTIAL]
+Gloss: 1PL GO-PST TO village.DAT
+Status: partial
+Reason: not realized: visit
+[Translation]
+English: We arrived at the river.
+Language: uhethet  amesamemenane mehumer kepshedja
+Gloss: 1PL  ARRIVE-PST AT RIVER-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: I have been waiting for you.
+Language: amenmos  asnatnibipra ibremen nehes
+Gloss: 1SG  WAIT-PROG-PERF FOR 2SG
+Status: ok
+Reason: complete
+[Translation]
+English: The campers sat around the fire.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: campers
+[Translation]
+English: A little girl with a kitten sat near me.
+Language: bameneb meptole menkhsh besameneb  sendbakmenkha wenniut amenmos
+Gloss: GIRL LITTLE WITH KITTEN  SIT-PST NEAR 1SG
+Status: ok
+Reason: complete
+[Translation]
+English: The child waited at the door for her father.
+Language: keferibut  nutnebimenkha mehumer kemenkhap ibremen retep munefenpsu
+Gloss: CHILD-DEF  WAIT-PST AT DOOR-DEF FOR 3SG-GEN FATHER
+Status: ok
+Reason: complete
+[Translation]
+English: Yesterday the oldest girl in the village lost her kitten.
+Language: djehma kebameneb anhasamis ptahmin kehetreru besamenebh munefenpsu tatemmenkha
+Gloss: YESTERDAY GIRL-DEF OLD-SUPER IN VILLAGE-DEF 3SG-GEN KITTEN:ACCUSATIVE LOSE-PST
+Status: ok
+Reason: complete
+[Translation]
+English: Were you born in this village?
+Language: nehes miuh nakumennam ptahmin amerube hetreru akhatai
+Gloss: 2SG BEAR:ACCUSATIVE BE (TEMPORARY STATE)-PST IN PROXIMAL_SINGULAR VILLAGE Q
+Status: ok
+Reason: complete
+[Translation]
+English: Can your brother dance well?
+Language: baretch aneketh nehespsu  ampmehnekha sahesh akhatai
+Gloss: WELL 2SG-GEN BROTHER  DANCE-MOD Q
+Status: ok
+Reason: complete
+[Translation]
+English: Did the man leave?
+Language: keramen  aakhermenkha akhatai
+Gloss: MAN-DEF  LEAVE-PST Q
+Status: ok
+Reason: complete
+[Translation]
+English: Is your sister coming for you?
+Language: anre nehespsu  ilutkha ibremen nehes akhatai
+Gloss: 2SG-GEN SISTER  COME FOR 2SG Q
+Status: ok
+Reason: complete
+[Translation]
+English: Can you come tomorrow?
+Language: mesit nehes  ilutnam sahesh akhatai
+Gloss: TOMORROW 2SG  COME-MOD Q
+Status: ok
+Reason: complete
+[Translation]
+English: Have the neighbors gone away for the winter?
+Language: kehakanimem  bhip khmin ibremen kepaserte akhatai
+Gloss: NEIGHBOR.PL-DEF  GO AWAY FOR WINTER-DEF Q
+Status: ok
+Reason: complete
+[Translation]
+English: Does the robin sing in the rain?
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: robin
+[Translation]
+English: Are you going with us to the concert?
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: concert
+[Translation]
+English: Have you ever travelled in the jungle?
+Language: hentepe nehes  amtepmennam ptahmin kewabutu akhatai
+Gloss: EVER 2SG  TRAVEL-PST IN JUNGLE-DEF Q
+Status: ok
+Reason: complete
+[Translation]
+English: We sailed down the river for several miles.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: miles; not realized: several
+[Translation]
+English: Everybody knows about hunting.
+Language: [PARTIAL]
+Gloss: [PARTIAL]
+Status: partial
+Reason: recognized construction not yet fully realized
+[Translation]
+English: On a Sunny morning after the solstice we started for the mountains.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: solstice
+[Translation]
+English: Tom laughed at the monkey’s tricks.
+Language: [PARTIAL]
+Gloss: [PARTIAL]
+Status: partial
+Reason: recognized construction not yet fully realized
+[Translation]
+English: An old man with a walking stick stood beside the fence.
+Language: [PARTIAL]
+Gloss: MAN OLD WITH WALKING  STAND-PST BESIDE FENCE-DEF
+Status: partial
+Reason: not realized: stick
+[Translation]
+English: The squirrel’s nest was hidden by drooping boughs.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: passive
+[Translation]
+English: The little seeds waited patiently under the snow for the warm spring sun.
+Language: [PARTIAL]
+Gloss: PATIENT SEED.PL-DEF LITTLE  WAIT-PST UNDER SNOW-DEF FOR SUN-DEF WARM
+Status: partial
+Reason: not realized: spring
+[Translation]
+English: Many little girls with wreaths of flowers on their heads danced around the bonfire.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: bonfire
+[Translation]
+English: The cover of the basket fell to the floor.
+Language: [PARTIAL]
+Gloss: [PARTIAL]
+Status: partial
+Reason: recognized construction not yet fully realized
+[Translation]
+English: The first boy in the line stopped at the entrance.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: entrance
+[Translation]
+English: On the top of the hill in a little hut lived a wise old woman.
+Language: [PARTIAL]
+Gloss: top.NOM little woman.ACC wise old LIVE
+Status: partial
+Reason: not realized: hill, hut
+[Translation]
+English: During our residence in the country we often walked in the pastures.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: residence
+[Translation]
+English: When will your guests from the city arrive?
+Language: hadjaddi khaperm kethet nehespsu  amamisamip namunas
+Gloss: 2SG-GEN GUEST.PL FROM CITY-DEF  ARRIVE-FUT WH-WHEN
+Status: ok
+Reason: complete
+[Translation]
+English: Near the mouth of the river, its course turns sharply towards the East.
+Language: [PARTIAL]
+Gloss: 3SG-GEN mouth.NOM-DEF TURN TOWARDS east.LOC-DEF
+Status: partial
+Reason: not realized: river, course, sharply
+[Translation]
+English: Between the two lofty mountains lay a fertile valley.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: lofty
+[Translation]
+English: Among the wheat grew tall red poppies.
+Language: semka hamapiseth khasamo hepet rehtefemenkha
+Gloss: WHEAT POPPY.PL:ACCUSATIVE TALL RED GROW-PST
+Status: ok
+Reason: complete
+[Translation]
+English: The strong roots of the oak trees were torn from the ground.
+Language: kehamapimho autamt sebkis kehipat tekheni amehumhh nakumenip khaperm kekhabni
+Gloss: ROOT.PL-DEF STRONG OF TREE.PL-DEF OAK TEAR:ACCUSATIVE BE (TEMPORARY STATE)-PST FROM GROUND-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The sun looked down through the branches upon the children at play.
+Language: [PARTIAL]
+Gloss: sun.NOM-DEF LOOK THROUGH branch.LOC-DEF
+Status: partial
+Reason: not realized: children, play
+[Translation]
+English: The west wind blew across my face like a friendly caress.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: caress; not realized: blew, like
+[Translation]
+English: The spool of thread rolled across the floor.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: spool
+[Translation]
+English: A box of growing plants stood in the Window.
+Language: [PARTIAL]
+Gloss: box.NOM plant.ACC GROW IN window.LOC-DEF
+Status: partial
+Reason: not realized: stood
+[Translation]
+English: I am very happy.
+Language: hupheft amenmos psies nakup
+Gloss: VERY 1SG HAPPY BE (TEMPORARY STATE)
+Status: ok
+Reason: complete
+[Translation]
+English: These oranges are juicy.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: juicy
+[Translation]
+English: Sea water is salty.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: salty
+[Translation]
+English: The streets are full of people.
+Language: kehamati inyotep nakip sebkis hamharit
+Gloss: STREET.PL-DEF FULL BE (TEMPORARY STATE) OF PERSON.PL
+Status: ok
+Reason: complete
+[Translation]
+English: Sugar tastes sweet.
+Language: bakemte semeru nebehtekha
+Gloss: SUGAR SWEET TASTE
+Status: ok
+Reason: complete
+[Translation]
+English: The fire feels hot.
+Language: kegebeh menmit hethibekha
+Gloss: FIRE-DEF HOT FEEL
+Status: ok
+Reason: complete
+[Translation]
+English: The little girl seemed lonely.
+Language: bepeh kebameneb meptole  temhepumenkha
+Gloss: LONE GIRL-DEF LITTLE  SEEM-PST
+Status: ok
+Reason: complete
+[Translation]
+English: The little boy’s father had once been a sailor.
+Language: nenkhu keretep emasamspsu meptolepsu nubkauaerh nakumenkha
+Gloss: ONCE BOY:GENITIVE LITTLE-GEN FATHER-DEF SAILOR:ACCUSATIVE BE (TEMPORARY STATE)-PST
+Status: ok
+Reason: complete
+[Translation]
+English: I have lost my blanket.
+Language: amenmos apemh amenmospsu tatemmenp
+Gloss: 1SG 1SG-GEN BLANKET:ACCUSATIVE LOSE-PST
+Status: ok
+Reason: complete
+[Translation]
+English: A robin has built his nest in the apple tree.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: robin
+[Translation]
+English: At noon we ate our lunch by the roadside.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: roadside
+[Translation]
+English: Mr. Jones made a knife for his little boy.
+Language: [PARTIAL]
+Gloss: [PARTIAL]
+Status: partial
+Reason: recognized construction not yet fully realized
+[Translation]
+English: Their voices sound very happy.
+Language: hupheft hapasinep kheberepsu psies mesutip
+Gloss: VERY 3PL-GEN VOICE.PL HAPPY SOUND
+Status: ok
+Reason: complete
+[Translation]
+English: Is today Monday?
+Language: rabaisb  nakukha akhatai
+Gloss: TODAY  BE (TEMPORARY STATE) Q
+Status: ok
+Reason: complete
+[Translation]
+English: Have all the leaves fallen from the tree?
+Language: hireded hakhth  nefibip khaperm keiput akhatai
+Gloss: ALL LEAF.PL  FALL FROM TREE-DEF Q
+Status: ok
+Reason: complete
+[Translation]
+English: Will you be ready on time?
+Language: nehes maaib amnakinam menuhep heferre akhatai
+Gloss: 2SG READY BE (TEMPORARY STATE)-FUT ON TIME Q
+Status: ok
+Reason: complete
+[Translation]
+English: Will you send this message for me?
+Language: nehes amerube raph amparpitinam ibremen amenmos akhatai
+Gloss: 2SG PROXIMAL_SINGULAR MESSAGE:ACCUSATIVE SEND-FUT FOR 1SG Q
+Status: ok
+Reason: complete
+[Translation]
+English: Are you waiting for me?
+Language: nehes  nutnebinam ibremen amenmos akhatai
+Gloss: 2SG  WAIT FOR 1SG Q
+Status: ok
+Reason: complete
+[Translation]
+English: Is this the first kitten of the litter?
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: litter
+[Translation]
+English: Are these shoes too big for you?
+Language: hetefer mese hanabimen nubenef nakip ibremen nehes akhatai
+Gloss: TOO PROXIMAL_PLURAL SHOE.PL BIG BE (TEMPORARY STATE) FOR 2SG Q
+Status: ok
+Reason: complete
+[Translation]
+English: How wide is the River?
+Language: kepshedja kauaqer nakukha baph
+Gloss: RIVER-DEF WIDE BE (TEMPORARY STATE) DEG-WIDE WH-HOW
+Status: ok
+Reason: complete
+[Translation]
+English: Listen.
+Language: khbannisnam
+Gloss: LISTEN-IMP
+Status: ok
+Reason: complete
+[Translation]
+English: Sit here by me.
+Language: khemkho khsandbiknam uahemhe amenmos
+Gloss: HERE SIT-IMP BY 1SG
+Status: ok
+Reason: complete
+[Translation]
+English: Keep this secret until tomorrow.
+Language: khbakhipanam amerube khnipuhh
+Gloss: keep-IMP THIS secret.ACC
+Status: ok
+Reason: complete
+[Translation]
+English: Come with us.
+Language: khalitnam menkhsh uhethet
+Gloss: COME-IMP WITH 1PL
+Status: ok
+Reason: complete
+[Translation]
+English: Bring your friends with you.
+Language: khpatinam harantchih nehespsu menkhsh nehes
+Gloss: BRING-IMP 2SG-GEN FRIEND.PL:ACCUSATIVE WITH 2SG
+Status: ok
+Reason: complete
+[Translation]
+English: Be careful.
+Language: khnakinam gebahme
+Gloss: BE (TEMPORARY STATE)-IMP CAREFUL
+Status: ok
+Reason: complete
+[Translation]
+English: Have some tea.
+Language: khpasinesnam sarerkoh
+Gloss: have-IMP tea.ACC
+Status: ok
+Reason: complete
+[Translation]
+English: Pip and his dog were great friends.
+Language: hemkaap harantchih tefenak nakumenkha
+Gloss: DOG FRIEND.PL:ACCUSATIVE GREAT BE (TEMPORARY STATE)-PST
+Status: ok
+Reason: complete
+[Translation]
+English: John and Elizabeth are brother and sister.
+Language: [PARTIAL]
+Gloss: [PARTIAL]
+Status: partial
+Reason: recognized construction not yet fully realized
+[Translation]
+English: You and I will go together.
+Language: weruakh nehes  ambhanam
+Gloss: TOGETHER 2SG  GO-FUT
+Status: ok
+Reason: complete
+[Translation]
+English: They opened all the doors and windows.
+Language: khebere hireded hamankhiph khetebe hamankhith nenetahmenip
+Gloss: 3PL ALL DOOR.PL:ACCUSATIVE AND WINDOW.PL:ACCUSATIVE OPEN-PST
+Status: ok
+Reason: complete
+[Translation]
+English: He is small, but strong.
+Language: munefen kherkhe autamt nakukha
+Gloss: 3SG SMALL BUT STRONG BE (TEMPORARY STATE)
+Status: ok
+Reason: complete
+[Translation]
+English: Is this tree an oak or a maple?
+Language: amerube iput tekhenih mept ketimah nakukha akhatai
+Gloss: PROXIMAL_SINGULAR TREE OAK:ACCUSATIVE OR MAPLE:ACCUSATIVE BE (TEMPORARY STATE) Q
+Status: ok
+Reason: complete
+[Translation]
+English: Does the sky look blue or gray?
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: gray; not realized: blue
+[Translation]
+English: Come with your father or mother.
+Language: khalitnam menkhsh retep nehespsu mept bahherm
+Gloss: COME-IMP WITH 2SG-GEN FATHER OR MOTHER
+Status: ok
+Reason: complete
+[Translation]
+English: I am tired, but very happy.
+Language: hupheft amenmos pana psies nakup
+Gloss: VERY 1SG TIRED BUT HAPPY BE (TEMPORARY STATE)
+Status: ok
+Reason: complete
+[Translation]
+English: He played a tune on his wonderful flute.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: tune
+[Translation]
+English: Toward the end of August the days grow much shorter.
+Language: [PARTIAL]
+Gloss: end.NOM-DEF GROW
+Status: partial
+Reason: not realized: days, shorter, comparison
+[Translation]
+English: A company of soldiers marched over the hill and across the meadow.
+Language: hemhast sebkis hanabihad  rahipepmenkha tahmosh keiunebmo emunis kesusetef
+Gloss: COMPANY OF SOLDIER.PL  MARCH-PST OVER HILL-DEF ACROSS MEADOW-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The first part of the story is very interesting.
+Language: [PARTIAL]
+Gloss: first.NOM-DEF INTEREST COP
+Status: partial
+Reason: not realized: part, story
+[Translation]
+English: The crow dropped some pebbles into the pitcher and raised the water to the brim.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: pitcher, brim; not realized: dropped, pebbles, into, coordinated clause/predicate
+[Translation]
+English: The baby clapped her hands and laughed in glee.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: glee; not realized: clapped, hands, coordinated clause/predicate
+[Translation]
+English: Stop your game and be quiet.
+Language: khamhitennam nubitefh nehespsu khnakikha semtep
+Gloss: STOP-IMP 2SG-GEN GAME:ACCUSATIVE AND BE (TEMPORARY STATE)-IMP QUIET
+Status: ok
+Reason: complete
+[Translation]
+English: The sound of the drums grew louder and louder.
+Language: [PARTIAL]
+Gloss: SOUND-DEF OF DRUM.PL-DEF LOUD AND LOUD GROW-PST
+Status: partial
+Reason: not realized: comparison
+[Translation]
+English: Do you like summer or winter better?
+Language: [PARTIAL]
+Gloss: 2SG SUMMER:ACCUSATIVE OR WINTER:ACCUSATIVE LIKE Q
+Status: partial
+Reason: not realized: better, comparison
+[Translation]
+English: That boy will have a wonderful trip.
+Language: maq emasams herrabh henasas ampasineskha
+Gloss: THAT BOY TRIP:ACCUSATIVE WONDERFUL HAVE-FUT
+Status: ok
+Reason: complete
+[Translation]
+English: They popped corn, and then sat around the fire and ate it.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: popped, corn; not realized: sat, coordinated clause/predicate
+[Translation]
+English: They won the first two games, but lost the last one.
+Language: [PARTIAL]
+Gloss: 3PL first.PL.ACC-DEF TWO WIN-PST
+Status: partial
+Reason: not realized: games, lost, last, one, coordinated clause/predicate
+[Translation]
+English: Take this note, carry it to your mother; and wait for an answer.
+Language: khbakiuiunam amerube namefreh khhatitkakha munefen samiseb bahherm nehespsu khnatnibikha ibremen tuntche
+Gloss: TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE AND CARRY-IMP 3SG TO 2SG-GEN MOTHER AND WAIT-IMP FOR ANSWER
+Status: ok
+Reason: complete
+[Translation]
+English: I awoke early, dressed hastily, and went down to breakfast.
+Language: hefrib nebhe hebphep antut  bhumenkha hera samiseb henuphe
+Gloss: EARLY HASTY DRESS AWAKE  GO-PST DOWN TO BREAKFAST
+Status: ok
+Reason: complete
+[Translation]
+English: Aha! I have caught you!
+Language: [PARTIAL]
+Gloss: 1SG 2SG CATCH-PST
+Status: partial
+Reason: unrealized discourse expression: aha
+[Translation]
+English: This string is too short!
+Language: hetefer amerube khameni samrem nakukha
+Gloss: TOO PROXIMAL_SINGULAR STRING SHORT BE (TEMPORARY STATE)
+Status: ok
+Reason: complete
+[Translation]
+English: Oh, dear! the wind has blown my hat away!
+Language: [PARTIAL]
+Gloss: WIND-DEF 1SG-GEN HAT:ACCUSATIVE BLOW-PERF AWAY
+Status: partial
+Reason: unrealized discourse expression: oh dear
+[Translation]
+English: Alas! that news is sad indeed!
+Language: [PARTIAL]
+Gloss: THAT INDEED NEWS.PL SAD BE (TEMPORARY STATE)
+Status: partial
+Reason: unrealized discourse expression: alas
+[Translation]
+English: Whew! that cold wind freezes my nose!
+Language: maq anutmiu bapmeru esebhaph amenmospsu hefertkha
+Gloss: THAT WIND COLD 1SG-GEN NOSE:ACCUSATIVE FREEZE
+Status: ok
+Reason: complete
+[Translation]
+English: Are you warm enough now?
+Language: [PARTIAL]
+Gloss: [PARTIAL]
+Status: partial
+Reason: recognized construction not yet fully realized
+[Translation]
+English: They heard the warning too late.
+Language: [PARTIAL]
+Gloss: TOO 3PL  HEAR-PST
+Status: partial
+Reason: not realized: warning, late
+[Translation]
+English: We are a brave people, and love our country.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: brave
+[Translation]
+English: All the children came except Mary.
+Language: hireded hafaribut  ilutmenip
+Gloss: ALL CHILD.PL  COME-PST
+Status: ok
+Reason: complete
+[Translation]
+English: Jack seized a handful of pebbles and threw them into the lake.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: seized, handful
+[Translation]
+English: This cottage stood on a low hill, at some distance from the village.
+Language: [PARTIAL]
+Gloss: THIS cottage.NOM STAND-PST ON hill.LOC-DEF low
+Status: partial
+Reason: not realized: distance, village
+[Translation]
+English: On a fine summer evening, the two old people were sitting outside the door of their cottage.
+Language: [PARTIAL]
+Gloss: TWO PERSON.PL-DEF OLD DOOR:ACCUSATIVE SIT-PST-PROG ON EVENING SUMMER FINE OF 3PL-GEN COTTAGE
+Status: partial
+Reason: not realized: outside
+[Translation]
+English: Our bird’s name is Jacko.
+Language: sahsu eruakhepsupsu  nakukha
+Gloss: BIRD:GENITIVE-GEN NAME  BE (TEMPORARY STATE)
+Status: ok
+Reason: complete
+[Translation]
+English: The river knows the way to the sea.
+Language: kepshedja kenemkhorh hekkha samiseb keremhont
+Gloss: RIVER-DEF WAY:ACCUSATIVE-DEF KNOW TO SEA-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: The boat sails away, like a bird on the wing.
+Language: keasara  nubkauakha khmin themirw eruakhe menuhep kesenkope
+Gloss: BOAT-DEF  SAIL AWAY LIKE BIRD ON WING-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: They looked cautiously about, but saw nothing.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: cautiously; not realized: saw, nothing, coordinated clause/predicate
+[Translation]
+English: The little house had three rooms, a sitting room, a bedroom, and a tiny kitchen.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: appositive
+[Translation]
+English: We visited my uncle’s village, the largest village in the world.
+Language: uhethet hetreruh hetreru khemhamis senankopsupsu wetmenane ptahmin kemerment
+Gloss: 1PL UNCLE:GENITIVE-GEN VILLAGE:ACCUSATIVE VILLAGE LARGE-SUPER VISIT-PST IN WORLD-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: We learn something new each day.
+Language: [PARTIAL]
+Gloss: 1PL EACH DAY:ACCUSATIVE NEW LEARN
+Status: partial
+Reason: not realized: something
+[Translation]
+English: The market begins five minutes earlier this week.
+Language: kenalutsa tahauiu raankh hanabisesh kuep hefribmah anbaatkha
+Gloss: MARKET-DEF FIVE THIS WEEK.PL:ACCUSATIVE MINUTE EARLY-COMP BEGIN
+Status: ok
+Reason: complete
+[Translation]
+English: Did you find the distance too great?
+Language: [PARTIAL]
+Gloss: TOO 2SG DISTANCE:ACCUSATIVE-DEF FIND-PST Q
+Status: partial
+Reason: not realized: great
+[Translation]
+English: Hurry, children.
+Language: khahimsemnam hafaributh
+Gloss: HURRY-IMP CHILD.PL:ACCUSATIVE
+Status: ok
+Reason: complete
+[Translation]
+English: Madam, I will obey your command.
+Language: [PARTIAL]
+Gloss: 1SG 2SG-GEN COMMAND:ACCUSATIVE OBEY-FUT
+Status: partial
+Reason: unrealized vocative: madam
+[Translation]
+English: Here under this tree they gave their guests a splendid feast.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: splendid; not realized: feast
+[Translation]
+English: In winter I get up at night, and dress by yellow candlelight.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: candlelight; not realized: dress
+[Translation]
+English: Tell the last part of that story again.
+Language: [PARTIAL]
+Gloss: TELL-IMP PART:ACCUSATIVE-DEF OF DISTAL_SINGULAR STORY
+Status: partial
+Reason: not realized: last
+[Translation]
+English: Be quick or you will be too late.
+Language: khnakinam hast hetefer khaminnishekha
+Gloss: BE (TEMPORARY STATE)-IMP QUICK OR TOO LATE-FUT-IMP
+Status: ok
+Reason: complete
+[Translation]
+English: Will you go with us or wait here?
+Language: nehes ambhanam menkhsh uhethet khemkho nehes nutnebinam akhatai
+Gloss: 2SG  GO-FUT WITH 1PL OR HERE 2SG  WAIT Q
+Status: ok
+Reason: complete
+[Translation]
+English: She was always, shabby, often ragged, and on cold days very uncomfortable.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: shabby, uncomfortable
+[Translation]
+English: Think first and then act.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: act; not realized: then
+[Translation]
+English: I stood, a little mite of a girl, upon a chair by the window, and watched the falling snowflakes.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: appositive
+[Translation]
+English: Show the guests these shells, my son, and tell them their strange history.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: appositive
+[Translation]
+English: Be satisfied with nothing but your best.
+Language: [PARTIAL]
+Gloss: [PARTIAL]
+Status: partial
+Reason: recognized construction not yet fully realized
+[Translation]
+English: We consider them our faithful friends.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: faithful
+[Translation]
+English: We will make this place our home.
+Language: uhethet amerube ashenh naib amsahwinane
+Gloss: 1PL PROXIMAL_SINGULAR HOME:ACCUSATIVE PLACE MAKE-FUT
+Status: ok
+Reason: complete
+[Translation]
+English: The squirrels make their nests warm and snug with soft moss and leaves.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: snug; not realized: make, warm, leaves, coordinated clause/predicate
+[Translation]
+English: The little girl made the doll’s dress herself.
+Language: kebameneb meptole kehebpheph hesponspsupsu sahwenmenkha
+Gloss: GIRL-DEF LITTLE DOLL:GENITIVE-GEN DRESS:ACCUSATIVE-DEF MAKE-PST
+Status: ok
+Reason: complete
+[Translation]
+English: I hurt myself.
+Language: amenmos  mekhesup
+Gloss: 1SG  HURT
+Status: ok
+Reason: complete
+[Translation]
+English: She was talking to herself.
+Language: munefen asknamtirmenkha
+Gloss: 3SG TALKING-PST-PROG
+Status: ok
+Reason: complete
+[Translation]
+English: He proved himself trustworthy.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: trustworthy
+[Translation]
+English: We could see ourselves in the water.
+Language: uhethet  sebhotane sahesh ptahmin ketatef
+Gloss: 1PL  SEE-MOD IN WATER-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: Do it yourself.
+Language: khsanibtanam
+Gloss: DO-IMP
+Status: ok
+Reason: complete
+[Translation]
+English: I feel ashamed of myself.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: ashamed
+[Translation]
+English: Sit here by yourself.
+Language: [PARTIAL]
+Gloss: [PARTIAL]
+Status: partial
+Reason: recognized construction not yet fully realized
+[Translation]
+English: The dress of the little princess was embroidered with roses, the national flower of the Country.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: embroidered, national
+[Translation]
+English: They wore red caps, the symbol of liberty.
+Language: khebere mehufuh amen hepet tcherkhmenip sebkis mantate
+Gloss: 3PL SYMBOL:ACCUSATIVE CAP RED WEAR-PST OF LIBERTY
+Status: ok
+Reason: complete
+[Translation]
+English: With him as our protector, we fear no danger.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: protector
+[Translation]
+English: All her finery, lace, ribbons, and feathers, was packed away in a trunk.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: finery
+[Translation]
+English: Light he thought her, like a feather.
+Language: [PARTIAL]
+Gloss: LIGHT-IMP LIKE FEATHER
+Status: partial
+Reason: not realized: thought
+[Translation]
+English: Every spring and fall our cousins pay us a long visit.
+Language: [PARTIAL]
+Gloss: [PARTIAL]
+Status: partial
+Reason: recognized construction not yet fully realized
+[Translation]
+English: In our climate the grass remains green all winter.
+Language: [PARTIAL]
+Gloss: [PARTIAL]
+Status: partial
+Reason: recognized construction not yet fully realized
+[Translation]
+English: The boy who brought the book has gone.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: relative_clause
+[Translation]
+English: These are the flowers that you ordered.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: relative_clause
+[Translation]
+English: I have lost the book that you gave me.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: relative_clause
+[Translation]
+English: The fisherman who owned the boat now demanded payment.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: relative_clause
+[Translation]
+English: Come when you are called.
+Language: [PARTIAL]
+Gloss: COME-IMP
+Status: partial
+Reason: not realized: called
+[Translation]
+English: I shall stay at home if it rains.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: conditional_clause
+[Translation]
+English: When he saw me, he stopped.
+Language: [PARTIAL]
+Gloss: [PARTIAL]
+Status: partial
+Reason: recognized construction not yet fully realized
+[Translation]
+English: Do not laugh at me because I seem so absent minded.
+Language: [PARTIAL]
+Gloss: CAUSE SO 1SG MIND:ACCUSATIVE ABSENT SEEM DO-IMP-NEG AT 1SG
+Status: partial
+Reason: not realized: laugh
+[Translation]
+English: I shall lend you the books that you need.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: relative_clause
+[Translation]
+English: Come early next Monday if you can.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: conditional_clause
+[Translation]
+English: If you come early, wait in the hall.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: conditional_clause
+[Translation]
+English: I had a younger brother whose name was Antonio.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: relative_clause
+[Translation]
+English: Gnomes are little men who live under the ground.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: relative_clause
+[Translation]
+English: He is loved by everybody, because he has a gentle disposition.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: subordinate_clause, passive
+[Translation]
+English: Hold the horse while I run and get my cap.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: subordinate_clause
+[Translation]
+English: I have found the ring I lost.
+Language: [PARTIAL]
+Gloss: RING  LOSE-PST
+Status: partial
+Reason: not realized: found
+[Translation]
+English: Play and I will sing.
+Language: khhantitenam khamkhnifinakha
+Gloss: PLAY-IMP AND SING-FUT-IMP
+Status: ok
+Reason: complete
+[Translation]
+English: That is the funniest story I ever heard.
+Language: maq hentepe kebaabehi poprutis  haphmenkha
+Gloss: THAT EVER STORY-DEF FUNNY-SUPER  HEAR-PST
+Status: ok
+Reason: complete
+[Translation]
+English: She is taller than her brother.
+Language: munefen khasamomah nakukha pasekha aneketh munefenpsu
+Gloss: 3SG TALL-COMP BE (TEMPORARY STATE) COMP-STD 3SG-GEN BROTHER
+Status: ok
+Reason: complete
+[Translation]
+English: They are no wiser than we.
+Language: [PARTIAL]
+Gloss: 3PL  BE (TEMPORARY STATE) COMP-STD 1PL
+Status: partial
+Reason: not realized: wiser
+[Translation]
+English: Light travels faster than sound.
+Language: [PARTIAL]
+Gloss: LIGHT-IMP COMP-STD SOUND
+Status: partial
+Reason: not realized: travels, faster
+[Translation]
+English: We have more time than they.
+Language: uhethet heferreh nebheranera
+Gloss: 1PL time.ACC MORE-PERF
+Status: ok
+Reason: complete
+[Translation]
+English: She has more friends than enemies.
+Language: [PARTIAL]
+Gloss: 3SG friend.ACC MORE-PERF
+Status: partial
+Reason: not realized: enemies
+[Translation]
+English: He was very poor, and with his wife and five children lived in a little low cabin of logs and stones.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: logs; not realized: poor, children, cabin, stones
+[Translation]
+English: When the wind blew, the traveler wrapped his mantle more closely around him.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: mantle; not realized: blew, traveler
+[Translation]
+English: I am sure that we can go.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: complement_clause
+[Translation]
+English: We went back to the place where we saw the roses.
+Language: uhethet  bhumenane bat samiseb kehahay naib hart
+Gloss: 1PL  GO-PST BACK TO ROSE.PL-DEF PLACE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: “This tree is fifty feet high,” said the gardener.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: quotation
+[Translation]
+English: I think that this train leaves five minutes earlier today.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: complement_clause
+[Translation]
+English: My opinion is that the governor will grant him a pardon.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: complement_clause
+[Translation]
+English: Why he has left the city is a mystery.
+Language: merhotp munefen kesetekheh thet aakhermenkha
+Gloss: WHY 3SG MYSTERY:ACCUSATIVE-DEF CITY LEAVE-PST
+Status: ok
+Reason: complete
+[Translation]
+English: The house stands where three roads meet.
+Language: [PARTIAL]
+Gloss: WHERE HOUSE-DEF THREE ROAD.PL:ACCUSATIVE STAND
+Status: partial
+Reason: not realized: meet
+[Translation]
+English: He has far more money than brains.
+Language: [PARTIAL]
+Gloss: 3SG money.ACC FAR-PERF
+Status: partial
+Reason: not realized: brains, comparison
+[Translation]
+English: Evidently that gate is never opened, for the long grass and the great hemlocks grow close against it.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unresolved-vocabulary
+Reason: missing vocabulary: hemlocks; not realized: opened, grow, against, negation, coordinated clause/predicate
+[Translation]
+English: I met a little cottage girl; she was eight years old, she said.
+Language: [PARTIAL]
+Gloss: EIGHT YEAR.PL COTTAGE GIRL LITTLE  SAY-PST
+Status: partial
+Reason: not realized: met, old

@@ -1,0 +1,204 @@
+Proper names: Test2
+============================================================
+
+1. Jaberdra Jai Qurdodurandariya
+   Personal name: Jaberdra Jai
+   Personal generation: jaberdra+jai
+   Family name: Qurdodurandariya
+   Meaning: green robe soldier
+   Formula: green+robe+soldier
+   Language roots: qur+doduran+dariya
+
+2. Uberaulju Jira Boluutuzhomei
+   Personal name: Uberaulju Jira
+   Personal generation: uberaulju+jira
+   Family name: Boluutuzhomei
+   Meaning: dragon kin
+   Formula: dragon+kin
+   Language roots: boluutu+zhomei
+
+3. Moqianlia Lajild Shidenkaca
+   Personal name: Moqianlia Lajild
+   Personal generation: moqianlia+lajild
+   Family name: Shidenkaca
+   Meaning: castle lake
+   Formula: castle+lake
+   Language roots: shiden+kaca
+
+4. Yobiezhen Tail Kildarudariya
+   Personal name: Yobiezhen Tail
+   Personal generation: yobiezhen+tail
+   Family name: Kildarudariya
+   Meaning: rabbit soldier
+   Formula: rabbit+soldier
+   Language roots: kildaru+dariya
+
+5. Chen Casui Ekoosurqaqaisa
+   Personal name: Chen Casui
+   Personal generation: chen+casui
+   Family name: Ekoosurqaqaisa
+   Meaning: moon eye
+   Formula: moon+eye
+   Language roots: ekoosur+qaqaisa
+
+6. Qatuluunb Don Gumingyeber
+   Personal name: Qatuluunb Don
+   Personal generation: qatuluunb+don
+   Family name: Gumingyeber
+   Meaning: blood sailor
+   Formula: blood+sailor
+   Language roots: gumin+gyeber
+
+7. Baii Qan Kujiamiuulinubaii
+   Personal name: Baii Qan
+   Personal generation: baii+qan
+   Family name: Kujiamiuulinubaii
+   Meaning: white shield lord
+   Formula: white+shield+lord
+   Language roots: kujiami+uulin+ubaii
+
+8. Batena Qaldu Boyanguuier
+   Personal name: Batena Qaldu
+   Personal generation: batena+qaldu
+   Family name: Boyanguuier
+   Meaning: water artist
+   Formula: water+artist
+   Language roots: boyan+guuier
+
+9. Anshun Phekoorma Jinumuuwujun
+   Personal name: Anshun Phekoorma
+   Personal generation: anshun+phekoorma
+   Family name: Jinumuuwujun
+   Meaning: gold bat
+   Formula: gold+bat
+   Language roots: jinumuu+wujun
+
+10. Tngchom Tooriyi Nacbangjildesi
+   Personal name: Tngchom Tooriyi
+   Personal generation: tngchom+tooriyi
+   Family name: Nacbangjildesi
+   Meaning: goblin island
+   Formula: goblin+island
+   Language roots: nacbang+jildesi
+
+11. Monganma Tei Jasanggbaiq
+   Personal name: Monganma Tei
+   Personal generation: monganma+tei
+   Family name: Jasanggbaiq
+   Meaning: crimson bull
+   Formula: crimson+bull
+   Language roots: jasangg+baiq
+
+12. Moomei Cighun Sheundariya
+   Personal name: Moomei Cighun
+   Personal generation: moomei+cighun
+   Family name: Sheundariya
+   Meaning: cat soldier
+   Formula: cat+soldier
+   Language roots: sheun+dariya
+
+13. Enabsutu Jia Banguumbuur
+   Personal name: Enabsutu Jia
+   Personal generation: enabsutu+jia
+   Family name: Banguumbuur
+   Meaning: tattoo merchant
+   Formula: tattoo+merchant
+   Language roots: banguum+buur
+
+14. Bozeekila Fei Fosusaldurandamacaer
+   Personal name: Bozeekila Fei
+   Personal generation: bozeekila+fei
+   Family name: Fosusaldurandamacaer
+   Meaning: candle wizard
+   Formula: candle+wizard
+   Language roots: fosusal+durandamacaer
+
+15. Tngqaw Umongzu Nangmoqwekongg
+   Personal name: Tngqaw Umongzu
+   Personal generation: tngqaw+umongzu
+   Family name: Nangmoqwekongg
+   Meaning: silver mountain
+   Formula: silver+mountain
+   Language roots: nangmoq+wekongg
+
+16. Chuannanm Citan Nabanmajoosr
+   Personal name: Chuannanm Citan
+   Personal generation: chuannanm+citan
+   Family name: Nabanmajoosr
+   Meaning: knife lover
+   Formula: knife+lover
+   Language roots: nabanma+joosr
+
+17. Uug Guminjild Siximogjilawekongg
+   Personal name: Uug Guminjild
+   Personal generation: uug+guminjild
+   Family name: Siximogjilawekongg
+   Meaning: blind dwarf mountain
+   Formula: blind+dwarf+mountain
+   Language roots: sixi+mogjila+wekongg
+
+18. Ciliang Moqi Cheneri
+   Personal name: Ciliang Moqi
+   Personal generation: ciliang+moqi
+   Family name: Cheneri
+   Meaning: red gem
+   Formula: red+gem
+   Language roots: chen+eri
+
+19. Jasa Jinaitur Boluutushiden
+   Personal name: Jasa Jinaitur
+   Personal generation: jasa+jinaitur
+   Family name: Boluutushiden
+   Meaning: dragon castle
+   Formula: dragon+castle
+   Language roots: boluutu+shiden
+
+20. Biriya Guu Tngqwekongg
+   Personal name: Biriya Guu
+   Personal generation: biriya+guu
+   Family name: Tngqwekongg
+   Meaning: razor mountain
+   Formula: razor+mountain
+   Language roots: tngq+wekongg
+
+21. Qura Qubalafan Guminmuui
+   Personal name: Qura Qubalafan
+   Personal generation: qura+qubalafan
+   Family name: Guminmuui
+   Meaning: blood hand
+   Formula: blood+hand
+   Language roots: gumin+muui
+
+22. Morgedbei Asa Qurnakdura
+   Personal name: Morgedbei Asa
+   Personal generation: morgedbei+asa
+   Family name: Qurnakdura
+   Meaning: green seed
+   Formula: green+seed
+   Language roots: qur+nakdura
+
+23. Moruuti Jaun Banguumdariya
+   Personal name: Moruuti Jaun
+   Personal generation: moruuti+jaun
+   Family name: Banguumdariya
+   Meaning: tattoo soldier
+   Formula: tattoo+soldier
+   Language roots: banguum+dariya
+
+24. Citaifeie Bani Bodurzhomei
+   Personal name: Citaifeie Bani
+   Personal generation: citaifeie+bani
+   Family name: Bodurzhomei
+   Meaning: eel kin
+   Formula: eel+kin
+   Language roots: bodur+zhomei
+
+25. Jilan Uluurabas Farinubaii
+   Personal name: Jilan Uluurabas
+   Personal generation: jilan+uluurabas
+   Family name: Farinubaii
+   Meaning: demon lord
+   Formula: demon+lord
+   Language roots: farin+ubaii
+
+Unavailable formulas (missing one or more lexical roots): 99

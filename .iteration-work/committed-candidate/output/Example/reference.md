@@ -1,0 +1,1473 @@
+# Example
+
+Generation seed: `12345`
+Grammar family: **japanese**
+Morphology type: **mixed**
+Morphophonemics: **epenthesis, consonant_assimilation**
+
+## Syntax
+- Basic word order: **SOV**
+- Adpositions: **postpositions**
+- Adjectives occur **before** the noun.
+- Possessors occur **before** the possessed noun.
+- Articles: **none**
+- Gender/classes: **0**
+
+## Nouns
+- Number strategy: **suffix**.
+- Cases: nominative, accusative, genitive, dative, instrumental, locative.
+
+## Verbs
+- Agreement: **none**.
+- Tense: present, past, future.
+- Aspect: simple, progressive.
+- Moods: indicative, imperative, subjunctive, conditional.
+- Negation: **affix**.
+
+## Comparison
+- Strategy: **particle**.
+
+## Questions
+- Strategy: **particle**.
+- Wh-words: **in_situ**.
+
+## Demonstratives
+- proximal_singular: **rosoo**
+- distal_singular: **hyanta**
+- proximal_plural: **quibuin**
+- distal_plural: **akiguma**
+
+## Interrogatives
+- who: **omukid**
+- what: **tsu**
+- where: **ishiyot**
+- when: **antapap**
+- why: **jisoyur**
+- how: **devinji**
+- which: **upyanar**
+
+## Pronouns
+- 1sg: **adatte**
+- 2sg: **pijudic**
+- 3sg: **hitou**
+- 1pl: **zahasu**
+- 2pl: **nakinch**
+- 3pl: **hyapyob**
+
+## Inflectional Morphemes
+- plural: **-de**
+- accusative: **zum-**
+- genitive: **alt-**
+- dative: **-q**
+- instrumental: **-hos**
+- locative: **-zen**
+- past: **-hi**
+- future: **ude-**
+- progressive: **wam-**
+- imperative: **su-**
+- subjunctive: **k-**
+- conditional: **-z**
+- negative: **m-**
+- convert_noun_to_adjective: **-ya**
+- infinitive: **ode-**
+
+## Particles
+- past: **takinak**
+- yes_no: **dezu**
+- comparative: **desopyo**
+- superlative: **nyumumu**
+- and: **yamasu**
+- or: **luporu**
+- but: **hia**
+- ability: **biteheg**
+- obligation: **tsuarim**
+- possibility: **futsu**
+- future: **oyofu**
+- progressive: **aripyam**
+- perfect: **usarise**
+- imperative: **kyaputa**
+- possessive: **ryozeze**
+- complementizer: **nemasha**
+- relative: **nyujuda**
+- conditional: **modemas**
+- subordinate: **chitako**
+- passive: **nienhad**
+- quotative: **desuzag**
+- appositive: **daputte**
+- participle: **hitades**
+
+## Generated Examples
+### Translation
+- English: The big dog is sleeping.
+- Language: **yojizoz janni  wamadafus**
+- Gloss: `BIG DOG  SLEEP-PROG`
+- Status: `ok`
+
+### Translation
+- English: Where is my book?
+- Language: **ishiyot altadatte hyantte**
+- Gloss: `WHERE 1SG-GEN book`
+- Status: `ok`
+
+### Translation
+- English: She will give him water.
+- Language: **hitou zumautara udenyopet**
+- Gloss: `3SG WATER:ACCUSATIVE GIVE-FUT`
+- Status: `ok`
+
+### Translation
+- English: This child walked to that house yesterday.
+- Language: **rosoo auta  myuzotohi hyanta zattakizen bomasu**
+- Gloss: `PROXIMAL_SINGULAR CHILD  WALK-PST TO DISTAL_SINGULAR HOUSE:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: Are you hungry?
+- Language: **pijudic one uuge dezu**
+- Gloss: `2SG HUNGRY BE (TEMPORARY STATE) Q`
+- Status: `ok`
+
+### Translation
+- English: Give me the red bird!
+- Language: **sunyopet tomasut zumawopihyu**
+- Gloss: `GIVE-IMP RED BIRD:ACCUSATIVE`
+- Status: `ok`
+
+### Translation
+- English: The woman and the man are talking.
+- Language: **wade yamasu anchita  wamazem**
+- Gloss: `WOMAN AND MAN  TALK-PROG`
+- Status: `ok`
+
+### Translation
+- English: I do not see three cats.
+- Language: **adatte sedomas zumahittasude makarinta samumas**
+- Gloss: `1SG THREE CAT.PL:ACCUSATIVE SEE-NEG NOT`
+- Status: `ok`
+
+### Translation
+- English: There is a black mountain.
+- Language: **ademasu kotoshu reaazap**
+- Gloss: `black mountain.NOM exist-3SG`
+- Status: `ok`
+
+### Translation
+- English: Two children played in the garden.
+- Language: **izumono autade  tadorotahi puwozen kyogemy**
+- Gloss: `TWO CHILD.PL  PLAY-PST IN GARDEN:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: A Tiger wearing a bell will starve.
+- Language: **hitades niumasu zumatamashi kotatas  udesetta**
+- Gloss: `WEARING-PTCP BELL:ACCUSATIVE TIGER  STARVE-FUT`
+- Status: `ok`
+
+### Translation
+- English: The sun shines.
+- Language: **datta  tochi**
+- Gloss: `SUN  SHINE`
+- Status: `ok`
+
+### Translation
+- English: The sun is shining.
+- Language: **datta  wamatochi**
+- Gloss: `SUN  SHINE-PROG`
+- Status: `ok`
+
+### Translation
+- English: The sun shone.
+- Language: **datta  tochihi**
+- Gloss: `SUN  SHINE-PST`
+- Status: `ok`
+
+### Translation
+- English: The sun will shine.
+- Language: **datta  udetochi**
+- Gloss: `SUN  SHINE-FUT`
+- Status: `ok`
+
+### Translation
+- English: The sun has been shining.
+- Language: **datta  usarise wamatochi**
+- Gloss: `SUN  SHINE-PROG-PERF`
+- Status: `ok`
+
+### Translation
+- English: The sun is shining again.
+- Language: **datta  wamatochi aru**
+- Gloss: `SUN  SHINE-PROG AGAIN`
+- Status: `ok`
+
+### Translation
+- English: The sun will shine tomorrow.
+- Language: **datta  udetochi zui**
+- Gloss: `SUN  SHINE-FUT TOMORROW`
+- Status: `ok`
+
+### Translation
+- English: The sun shines brightly.
+- Language: **datta  tochi nyanzuk**
+- Gloss: `SUN  SHINE BRIGHT`
+- Status: `ok`
+
+### Translation
+- English: The bright sun shines.
+- Language: **datta  tochi nyanzuk**
+- Gloss: `SUN  SHINE BRIGHT`
+- Status: `ok`
+
+### Translation
+- English: The sun is rising now.
+- Language: **datta  wamasewapyu osomas**
+- Gloss: `SUN  RISE-PROG NOW`
+- Status: `ok`
+
+### Translation
+- English: All the people shouted.
+- Language: **kotta hozuarede  hituruhi**
+- Gloss: `ALL PERSON.PL  SHOUT-PST`
+- Status: `ok`
+
+### Translation
+- English: Some of the people shouted.
+- Language: **hozuarede kotakit**
+- Gloss: `person.PL.NOM SHOUTED`
+- Status: `ok`
+
+### Translation
+- English: Many of the people shouted twice.
+- Language: **hozuarede kotakit**
+- Gloss: `person.PL.NOM SHOUTED`
+- Status: `ok`
+
+### Translation
+- English: Happy people often shout.
+- Language: **jinatta hozuarede  hituru gufucur**
+- Gloss: `HAPPY PERSON.PL  SHOUT OFTEN`
+- Status: `ok`
+
+### Translation
+- English: The kitten jumped up.
+- Language: **anahittasu  byawohi yaroo**
+- Gloss: `KITTEN  JUMP-PST UP`
+- Status: `ok`
+
+### Translation
+- English: The kitten jumped onto the table.
+- Language: **anahittasu  byawohi fumazen anakis**
+- Gloss: `KITTEN  JUMP-PST ONTO TABLE:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: My little kitten walked away.
+- Language: **altadatte yokunta anahittasu  myuzotohi zunseda**
+- Gloss: `1SG-GEN LITTLE KITTEN  WALK-PST AWAY`
+- Status: `ok`
+
+### Translation
+- English: It’s raining.
+- Language: **hitou  wamawahedesc**
+- Gloss: `3SG  RAIN-PROG`
+- Status: `ok`
+
+### Translation
+- English: The rain came down.
+- Language: **wahedes  ajimasuhi myoto**
+- Gloss: `RAIN  COME-PST DOWN`
+- Status: `ok`
+
+### Translation
+- English: The kitten is playing in the rain.
+- Language: **anahittasu  wamatadorot wahedesazen kyogemy**
+- Gloss: `KITTEN  PLAY-PROG IN RAIN:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: The rain has stopped.
+- Language: **wahedes  usarise wattebuhi**
+- Gloss: `RAIN  STOP-PST-PERF`
+- Status: `ok`
+
+### Translation
+- English: Soon the rain will stop.
+- Language: **wahedes  udewattebu shitter**
+- Gloss: `RAIN  STOP-FUT SOON`
+- Status: `ok`
+
+### Translation
+- English: I hope the rain stops soon.
+- Language: **adatte wahedes zumarurude hen shitter**
+- Gloss: `1SG RAIN STOP.PL:ACCUSATIVE HOPE SOON`
+- Status: `ok`
+
+### Translation
+- English: Once wild animals lived here.
+- Language: **jinanak hekyade  uhezenrahi chokimy nihange**
+- Gloss: `WILD ANIMAL.PL  LIVE-PST ONCE HERE`
+- Status: `ok`
+
+### Translation
+- English: Slowly she looked around.
+- Language: **hitou  karisejahi gozota shinaki**
+- Gloss: `3SG  LOOK-PST SLOW AROUND`
+- Status: `ok`
+
+### Translation
+- English: Go away!
+- Language: **suhyano zunseda**
+- Gloss: `GO-IMP AWAY`
+- Status: `ok`
+
+### Translation
+- English: Let’s go!
+- Language: **kyaputa zahasu  suhyano**
+- Gloss: `1PL  GO-IMP HORT`
+- Status: `ok`
+
+### Translation
+- English: You should go.
+- Language: **pijudic  tsuarim hyano**
+- Gloss: `2SG  GO-MOD`
+- Status: `ok`
+
+### Translation
+- English: I will be happy to go.
+- Language: **adatte  udejinatta dabeteizen bomasu**
+- Gloss: `1SG  HAPPY-FUT TO GO:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: He will arrive soon.
+- Language: **hitou  udealtis shitter**
+- Gloss: `3SG  ARRIVE-FUT SOON`
+- Status: `ok`
+
+### Translation
+- English: The baby’s ball has rolled away.
+- Language: **altaltahinmasu ode  usarise yujuhi zunseda**
+- Gloss: `BABY:GENITIVE-GEN BALL  ROLL-PST-PERF AWAY`
+- Status: `ok`
+
+### Translation
+- English: The two boys are working together.
+- Language: **izumono yojiishade  wamatetent hihono**
+- Gloss: `TWO BOY.PL  WORK-PROG TOGETHER`
+- Status: `ok`
+
+### Translation
+- English: This mist will probably clear away.
+- Language: **rosoo kotosat  udejihoe bozam zunseda**
+- Gloss: `PROXIMAL_SINGULAR MIST  CLEAR-FUT PROBABLY AWAY`
+- Status: `ok`
+
+### Translation
+- English: Lovely flowers are growing everywhere.
+- Language: **semaside  wamabekoto zunbyoy monripi**
+- Gloss: `FLOWER.PL  GROW-PROG LOVELY EVERYWHERE`
+- Status: `ok`
+
+### Translation
+- English: We should eat more slowly.
+- Language: **zahasu  tsuarim byasi desopyo gozota**
+- Gloss: `1PL  EAT-MOD SLOW`
+- Status: `ok`
+
+### Translation
+- English: You have come too soon.
+- Language: **pijudic  ajimasu oesu shitter**
+- Gloss: `2SG  COME TOO SOON`
+- Status: `ok`
+
+### Translation
+- English: You must write more neatly.
+- Language: **pijudic  tsuarim aryuzem desopyo eshazej**
+- Gloss: `2SG  WRITE-MOD NEAT`
+- Status: `ok`
+
+### Translation
+- English: Directly opposite stands a wonderful palace.
+- Language: **tumasu hodoru zumazuyuho kande zatatte**
+- Gloss: `OPPOSITE WONDERFUL PALACE:ACCUSATIVE STAND DIRECT`
+- Status: `ok`
+
+### Translation
+- English: Henry’s dog is lost.
+- Language: **altaltochuzu janni  dantahi**
+- Gloss: `HENRY:GENITIVE-GEN DOG  LOSE-PST`
+- Status: `ok`
+
+### Translation
+- English: My cat is black.
+- Language: **altadatte hittasu ademasu uuge**
+- Gloss: `1SG-GEN CAT BLACK BE (TEMPORARY STATE)`
+- Status: `ok`
+
+### Translation
+- English: The little girl’s doll is broken.
+- Language: **altayokunta altacolevit keao samasuda uuge**
+- Gloss: `LITTLE GIRL:GENITIVE-GEN DOLL BROKEN BE (TEMPORARY STATE)`
+- Status: `ok`
+
+### Translation
+- English: I usually sleep soundly.
+- Language: **wochito  mijulli wazumas**
+- Gloss: `SLEEP  SOUND USUALLY`
+- Status: `ok`
+
+### Translation
+- English: The children ran after Jack.
+- Language: **autade  henuzukahi kyonhyazen soo**
+- Gloss: `CHILD.PL  RUN-PST AFTER JACK:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: I can play after school.
+- Language: **adatte  biteheg tadorot shohekyazen soo**
+- Gloss: `1SG  PLAY-MOD AFTER SCHOOL:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: We went to the village for a visit.
+- Language: **zahasu  hyanohi aribyumazen bomasu erenyomazen woutte**
+- Gloss: `1PL  GO-PST TO VILLAGE:LOCATIVE FOR VISIT:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: We arrived at the river.
+- Language: **zahasu  altisahi bayuyosazen waminai**
+- Gloss: `1PL  ARRIVE-PST AT RIVER:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: I have been waiting for you.
+- Language: **adatte  usarise wamajudata pijudic woutte**
+- Gloss: `1SG  WAIT-PROG-PERF FOR 2SG`
+- Status: `ok`
+
+### Translation
+- English: The campers sat around the fire.
+- Language: **doyajim zumapyahyat jietemahi shinaki**
+- Gloss: `CAMPER FIRE:ACCUSATIVE SIT-PST AROUND`
+- Status: `ok`
+
+### Translation
+- English: A little girl with a kitten sat near me.
+- Language: **yokunta colevit anahittasu  jietemahi adatte kyoshuc**
+- Gloss: `LITTLE GIRL KITTEN  SIT-PST NEAR 1SG`
+- Status: `ok`
+
+### Translation
+- English: The child waited at the door for her father.
+- Language: **auta  judatahi jinakyuzen waminai altahitou quatezen woutte**
+- Gloss: `CHILD  WAIT-PST AT DOOR:LOCATIVE FOR 3SG-GEN FATHER:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: Yesterday the oldest girl in the village lost her kitten.
+- Language: **[PARTIAL]**
+- Gloss: `OLDEST GIRL VILLAGE 3SG-GEN KITTEN:ACCUSATIVE LOSE-PST YESTERDAY`
+- Status: `partial`
+
+### Translation
+- English: Were you born in this village?
+- Language: **pijudic  hinakarahi rosoo aribyumazen kyogemy dezu**
+- Gloss: `2SG  BEAR-PST IN PROXIMAL_SINGULAR VILLAGE:LOCATIVE Q`
+- Status: `ok`
+
+### Translation
+- English: Can your brother dance well?
+- Language: **altapijudic ata  biteheg yahyuc nayojih dezu**
+- Gloss: `2SG-GEN BROTHER  DANCE-MOD WELL Q`
+- Status: `ok`
+
+### Translation
+- English: Did the man leave?
+- Language: **anchita  heyanyohi dezu**
+- Gloss: `MAN  LEAVE-PST Q`
+- Status: `ok`
+
+### Translation
+- English: Is your sister coming for you?
+- Language: **altapijudic ohyohe  ajimasu pijudic woutte dezu**
+- Gloss: `2SG-GEN SISTER  COME FOR 2SG Q`
+- Status: `ok`
+
+### Translation
+- English: Can you come tomorrow?
+- Language: **pijudic  biteheg ajimasu zui dezu**
+- Gloss: `2SG  COME-MOD TOMORROW Q`
+- Status: `ok`
+
+### Translation
+- English: Have the neighbors gone away for the winter?
+- Language: **harimasade  hyano zunseda tsunazen woutte dezu**
+- Gloss: `NEIGHBOR.PL  GO AWAY FOR WINTER:LOCATIVE Q`
+- Status: `ok`
+
+### Translation
+- English: Does the robin sing in the rain?
+- Language: **dezu  zuheazoni wahedesazen kyogemy dezu**
+- Gloss: `ROBIN  SING IN RAIN:LOCATIVE Q`
+- Status: `ok`
+
+### Translation
+- English: Are you going with us to the concert?
+- Language: **pijudic  hyano zahasu zaku watteyazen bomasu dezu**
+- Gloss: `2SG  GO WITH 1PL TO CONCERT:LOCATIVE Q`
+- Status: `ok`
+
+### Translation
+- English: Have you ever travelled in the jungle?
+- Language: **pijudic  cumyonahi anata heonozen kyogemy dezu**
+- Gloss: `2SG  TRAVEL-PST EVER IN JUNGLE:LOCATIVE Q`
+- Status: `ok`
+
+### Translation
+- English: We sailed down the river for several miles.
+- Language: **zahasu zumabayuyos wohyohi myoto chitaaz sazojikadezen woutte**
+- Gloss: `1PL RIVER:ACCUSATIVE SAIL-PST DOWN FOR SEVERAL MILE.PL:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: Everybody knows about hunting.
+- Language: **omo oobyode  tozu shitibe**
+- Gloss: `EVERYBODY KNOW.PL  HUNT ABOUT`
+- Status: `ok`
+
+### Translation
+- English: On a Sunny morning after the solstice we started for the mountains.
+- Language: **[PARTIAL]**
+- Gloss: `[PARTIAL]`
+- Status: `partial`
+
+### Translation
+- English: Tom laughed at the monkey’s tricks.
+- Language: **gyawa  zerokuhi altaltanyumumu soryodezen waminai**
+- Gloss: `TOM  LAUGH-PST AT MONKEY:GENITIVE-GEN TRICK.PL:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: An old man with a walking stick stood beside the fence.
+- Language: **[PARTIAL]**
+- Gloss: `WALKING-PTCP OLD MAN  STAND-PST BESIDE FENCE:LOCATIVE`
+- Status: `partial`
+
+### Translation
+- English: The squirrel’s nest was hidden by drooping boughs.
+- Language: **[UNRESOLVED]**
+- Gloss: `[UNRESOLVED]`
+- Status: `unsupported-grammar`
+
+### Translation
+- English: The little seeds waited patiently under the snow for the warm spring sun.
+- Language: **yokunta geheikade  judatahi deshosa wokuruzen bamasub hitades payoto zumadatta shubezen woutte**
+- Gloss: `LITTLE SEED.PL  WAIT-PST PATIENT UNDER SNOW:LOCATIVE FOR SPRING-PTCP SUN:ACCUSATIVE WARM:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: Many little girls with wreaths of flowers on their heads danced around the bonfire.
+- Language: **[PARTIAL]**
+- Gloss: `3PL-GEN little girl.NOM bonfire.ACC HEAD`
+- Status: `partial`
+
+### Translation
+- English: The cover of the basket fell to the floor.
+- Language: **kariish nio  binsekihi chazuozen bomasu**
+- Gloss: `COVER BASKET  FALL-PST TO FLOOR:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: The first boy in the line stopped at the entrance.
+- Language: **yojiish myozohe  wattebuhi otewo gozahozen waminai**
+- Gloss: `BOY LINE  STOP-PST FIRST AT ENTRANCE:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: On the top of the hill in a little hut lived a wise old woman.
+- Language: **[PARTIAL]**
+- Gloss: `little top.NOM old wise.ACC LIVED`
+- Status: `partial`
+
+### Translation
+- English: During our residence in the country we often walked in the pastures.
+- Language: **[PARTIAL]**
+- Gloss: `1PL-GEN residence.NOM WALKED IN pasture.LOC`
+- Status: `partial`
+
+### Translation
+- English: When will your guests from the city arrive?
+- Language: **[PARTIAL]**
+- Gloss: `[PARTIAL]`
+- Status: `partial`
+
+### Translation
+- English: Near the mouth of the river, its course turns sharply towards the East.
+- Language: **[PARTIAL]**
+- Gloss: `3SG-GEN mouth.NOM TURN TOWARDS east.LOC`
+- Status: `partial`
+
+### Translation
+- English: Between the two lofty mountains lay a fertile valley.
+- Language: **izumono kyodo kotoshude bane zumadomyu atayaha**
+- Gloss: `TWO LOFTY MOUNTAIN.PL FERTILE VALLEY:ACCUSATIVE LAY`
+- Status: `ok`
+
+### Translation
+- English: Among the wheat grew tall red poppies.
+- Language: **ogyasu tomasut aran zumawaturu bekotohi**
+- Gloss: `WHEAT RED TALL POPPY:ACCUSATIVE GROW-PST`
+- Status: `ok`
+
+### Translation
+- English: The strong roots of the oak trees were torn from the ground.
+- Language: **goha apyogyo hogyose fusokumade  kaguyuyahi kyonezen ehogoz**
+- Gloss: `OAK STRONG ROOT TREE.PL  TEAR-PST FROM GROUND:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: The sun looked down through the branches upon the children at play.
+- Language: **[PARTIAL]**
+- Gloss: `sun.NOM LOOKED THROUGH branch.LOC`
+- Status: `partial`
+
+### Translation
+- English: The west wind blew across my face like a friendly caress.
+- Language: **fuka wanyo  heyohi altadatte hyumasezen byodo chryazugy moshimazen omarima**
+- Gloss: `WEST WIND  BLOW-PST ACROSS 1SG-GEN FACE:LOCATIVE LIKE FRIENDLY CARESS:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: The spool of thread rolled across the floor.
+- Language: **kototo zudatte  yujuhi chazuozen byodo**
+- Gloss: `SPOOL THREAD  ROLL-PST ACROSS FLOOR:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: A box of growing plants stood in the Window.
+- Language: **hitades hajifus zumahipukin chauzom  kandehi sechumazen kyogemy**
+- Gloss: `GROWING-PTCP PLANT:ACCUSATIVE BOX  STAND-PST IN WINDOW:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: I am very happy.
+- Language: **adatte jinatta uuge rimuzua**
+- Gloss: `1SG HAPPY BE (TEMPORARY STATE) VERY`
+- Status: `ok`
+
+### Translation
+- English: These oranges are juicy.
+- Language: **quibuin owomasade redi uuge**
+- Gloss: `PROXIMAL_PLURAL ORANGE.PL JUICY BE (TEMPORARY STATE)`
+- Status: `ok`
+
+### Translation
+- English: Sea water is salty.
+- Language: **chodari autara pian uuge**
+- Gloss: `SEA WATER SALTY BE (TEMPORARY STATE)`
+- Status: `ok`
+
+### Translation
+- English: The streets are full of people.
+- Language: **komuyusade hadeshi uuge hozuaredezen hiyopyu**
+- Gloss: `STREET.PL FULL BE (TEMPORARY STATE) OF PERSON.PL:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: Sugar tastes sweet.
+- Language: **ryawa zuminmasu lua**
+- Gloss: `SUGAR SWEET:ACCUSATIVE TASTE`
+- Status: `ok`
+
+### Translation
+- English: The fire feels hot.
+- Language: **pyahyat hebojum heyu**
+- Gloss: `FIRE HOT FEEL`
+- Status: `ok`
+
+### Translation
+- English: The little girl seemed lonely.
+- Language: **yokunta colevit  anmasuyahi eshonma**
+- Gloss: `LITTLE GIRL  SEEM-PST LONE`
+- Status: `ok`
+
+### Translation
+- English: The little boy’s father had once been a sailor.
+- Language: **altayokunta altayojiish quate zumawohyoer uugehi chokimy**
+- Gloss: `LITTLE BOY:GENITIVE-GEN FATHER SAILOR:ACCUSATIVE BE (TEMPORARY STATE)-PST ONCE`
+- Status: `ok`
+
+### Translation
+- English: I have lost my blanket.
+- Language: **adatte altadatte zumaguhodod dantahi**
+- Gloss: `1SG 1SG-GEN BLANKET:ACCUSATIVE LOSE-PST`
+- Status: `ok`
+
+### Translation
+- English: A robin has built his nest in the apple tree.
+- Language: **dezu altahitou zumashidara puzusanahi abyoede fusokumazen kyogemy**
+- Gloss: `ROBIN 3SG-GEN NEST:ACCUSATIVE BUILD-PST IN APPLE TREE:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: At noon we ate our lunch by the roadside.
+- Language: **zosede altazahasu zumadasusaz byasihi oyatezen wodasu**
+- Gloss: `NOON 1PL-GEN LUNCH:ACCUSATIVE EAT-PST BY ROADSIDE:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: Mr. Jones made a knife for his little boy.
+- Language: **lonya zumashawo nyuzumahi altahitou yokunta yojiishazen woutte**
+- Gloss: `JONE KNIFE:ACCUSATIVE MAKE-PST FOR 3SG-GEN LITTLE BOY:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: Their voices sound very happy.
+- Language: **altahyapyob sosazede jinatta mijulli rimuzua**
+- Gloss: `3PL-GEN VOICE.PL HAPPY SOUND VERY`
+- Status: `ok`
+
+### Translation
+- English: Is today Monday?
+- Language: **[PARTIAL]**
+- Gloss: `[PARTIAL]`
+- Status: `partial`
+
+### Translation
+- English: Have all the leaves fallen from the tree?
+- Language: **kotta hikinarade  binseki fusokumazen ehogoz dezu**
+- Gloss: `ALL LEAF.PL  FALL FROM TREE:LOCATIVE Q`
+- Status: `ok`
+
+### Translation
+- English: Will you be ready on time?
+- Language: **pijudic seku udeuuge lebranozen gonsu dezu**
+- Gloss: `2SG READY BE (TEMPORARY STATE)-FUT ON TIME:LOCATIVE Q`
+- Status: `ok`
+
+### Translation
+- English: Will you send this message for me?
+- Language: **pijudic rosoo zumufuzezu udeimi adatte woutte dezu**
+- Gloss: `2SG PROXIMAL_SINGULAR MESSAGE:ACCUSATIVE SEND-FUT FOR 1SG Q`
+- Status: `ok`
+
+### Translation
+- English: Are you waiting for me?
+- Language: **pijudic  judata adatte woutte dezu**
+- Gloss: `2SG  WAIT FOR 1SG Q`
+- Status: `ok`
+
+### Translation
+- English: Is this the first kitten of the litter?
+- Language: **rosoo desuae zumogyu anahittasu dezu**
+- Gloss: `THIS first.NOM litter.ACC KITTEN Q`
+- Status: `ok`
+
+### Translation
+- English: Are these shoes too big for you?
+- Language: **quibuin byonode yojizoz uuge oesu pijudic woutte dezu**
+- Gloss: `PROXIMAL_PLURAL SHOE.PL BIG BE (TEMPORARY STATE) TOO FOR 2SG Q`
+- Status: `ok`
+
+### Translation
+- English: How wide is the River?
+- Language: **[PARTIAL]**
+- Gloss: `[PARTIAL]`
+- Status: `partial`
+
+### Translation
+- English: Listen.
+- Language: **sukyatta**
+- Gloss: `LISTEN-IMP`
+- Status: `ok`
+
+### Translation
+- English: Sit here by me.
+- Language: **sujietema nihange adatte wodasu**
+- Gloss: `SIT-IMP HERE BY 1SG`
+- Status: `ok`
+
+### Translation
+- English: Keep this secret until tomorrow.
+- Language: **sunatta rosoo zumacoruyo**
+- Gloss: `keep-IMP THIS secret.ACC`
+- Status: `ok`
+
+### Translation
+- English: Come with us.
+- Language: **suajimasu zahasu zaku**
+- Gloss: `COME-IMP WITH 1PL`
+- Status: `ok`
+
+### Translation
+- English: Bring your friends with you.
+- Language: **sukyuru ountul pijudic zaku**
+- Gloss: `BRING-IMP FRIEND WITH 2SG`
+- Status: `ok`
+
+### Translation
+- English: Be careful.
+- Language: **suuuge jiajitoda**
+- Gloss: `BE (TEMPORARY STATE)-IMP CAREFUL`
+- Status: `ok`
+
+### Translation
+- English: Have some tea.
+- Language: **susoho zumonenai**
+- Gloss: `have-IMP tea.ACC`
+- Status: `ok`
+
+### Translation
+- English: Pip and his dog were great friends.
+- Language: **janni nowahya uugehi ountul**
+- Gloss: `DOG GREAT BE (TEMPORARY STATE)-PST FRIEND`
+- Status: `ok`
+
+### Translation
+- English: John and Elizabeth are brother and sister.
+- Language: **[PARTIAL]**
+- Gloss: `[PARTIAL]`
+- Status: `partial`
+
+### Translation
+- English: You and I will go together.
+- Language: **pijudic  udehyano hihono**
+- Gloss: `2SG  GO-FUT TOGETHER`
+- Status: `ok`
+
+### Translation
+- English: They opened all the doors and windows.
+- Language: **hyapyob kotta zumajinakyude yamasu zumasechumade konahi**
+- Gloss: `3PL ALL DOOR.PL:ACCUSATIVE AND WINDOW.PL:ACCUSATIVE OPEN-PST`
+- Status: `ok`
+
+### Translation
+- English: He is small, but strong.
+- Language: **hitou jijocho hia apyogyo uuge**
+- Gloss: `3SG SMALL BUT STRONG BE (TEMPORARY STATE)`
+- Status: `ok`
+
+### Translation
+- English: Is this tree an oak or a maple?
+- Language: **rosoo fusokum zumanemasha luporu zumatissi uuge dezu**
+- Gloss: `PROXIMAL_SINGULAR TREE OAK:ACCUSATIVE OR MAPLE:ACCUSATIVE BE (TEMPORARY STATE) Q`
+- Status: `ok`
+
+### Translation
+- English: Does the sky look blue or gray?
+- Language: **ozakiz deshito luporu defuode karisej dezu**
+- Gloss: `SKY BLUE OR GRAY LOOK Q`
+- Status: `ok`
+
+### Translation
+- English: Come with your father or mother.
+- Language: **suajimasu altapijudic quatezen luporu sokamasazen zaku**
+- Gloss: `COME-IMP WITH 2SG-GEN FATHER:LOCATIVE OR MOTHER:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: I am tired, but very happy.
+- Language: **[PARTIAL]**
+- Gloss: `1SG  TIRED VERY`
+- Status: `partial`
+
+### Translation
+- English: He played a tune on his wonderful flute.
+- Language: **hitou zumanyahasu tadorotahi altahitou hodoru darenaizen gonsu**
+- Gloss: `3SG TUNE:ACCUSATIVE PLAY-PST ON 3SG-GEN WONDERFUL FLUTE:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: Toward the end of August the days grow much shorter.
+- Language: **[PARTIAL]**
+- Gloss: `end.NOM GROW`
+- Status: `partial`
+
+### Translation
+- English: A company of soldiers marched over the hill and across the meadow.
+- Language: **atakyaa hezemasade  onarehi kotimasazen ogyude diimasuzen byodo**
+- Gloss: `COMPANY SOLDIER.PL  MARCH-PST OVER HILL:LOCATIVE ACROSS MEADOW:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: The first part of the story is very interesting.
+- Language: **hishiis mororyu  yam otewo rimuzua**
+- Gloss: `PART STORY  INTERESTING FIRST VERY`
+- Status: `ok`
+
+### Translation
+- English: The crow dropped some pebbles into the pitcher and raised the water to the brim.
+- Language: **[PARTIAL]**
+- Gloss: `crow.NOM pebble.ACC DROPPED INTO pitcher.LOC`
+- Status: `partial`
+
+### Translation
+- English: The baby clapped her hands and laughed in glee.
+- Language: **hinmasu altahitou zumurude newahi yamasu hinmasu zerokuhi wazehamazen kyogemy**
+- Gloss: `BABY 3SG-GEN HAND.PL:ACCUSATIVE CLAP-PST AND BABY  LAUGH-PST IN GLEE:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: Stop your game and be quiet.
+- Language: **suwattebu altapijudic zumasohehyu yamasu suuuge yotte**
+- Gloss: `STOP-IMP 2SG-GEN GAME:ACCUSATIVE AND BE (TEMPORARY STATE)-IMP QUIET`
+- Status: `ok`
+
+### Translation
+- English: The sound of the drums grew louder and louder.
+- Language: **[PARTIAL]**
+- Gloss: `DRUM LOUDER AND LOUDER GROW-PST SOUND`
+- Status: `partial`
+
+### Translation
+- English: Do you like summer or winter better?
+- Language: **[PARTIAL]**
+- Gloss: `2SG SUMMER:ACCUSATIVE OR WINTER:ACCUSATIVE LIKE Q`
+- Status: `partial`
+
+### Translation
+- English: That boy will have a wonderful trip.
+- Language: **yojiish hodoru zumashokets udesoho behazun**
+- Gloss: `BOY WONDERFUL TRIP:ACCUSATIVE HAVE-FUT THAT`
+- Status: `ok`
+
+### Translation
+- English: They popped corn, and then sat around the fire and ate it.
+- Language: **hyapyob zumazuyojid kosohyo yamasu hyapyob zumapyahyat jietemahi wantter shinaki yamasu hyapyob hitou byasihi**
+- Gloss: `3PL CORN:ACCUSATIVE POPPED AND 3PL FIRE:ACCUSATIVE SIT-PST THEN AROUND AND 3PL 3SG EAT-PST`
+- Status: `ok`
+
+### Translation
+- English: They won the first two games, but lost the last one.
+- Language: **hyapyob izumono zumasohehyude wosetehi otewo hia hyapyob bayoto zumakanyama dantahi**
+- Gloss: `3PL TWO GAME.PL:ACCUSATIVE WIN-PST FIRST BUT 3PL LAST ONE:ACCUSATIVE LOSE-PST`
+- Status: `ok`
+
+### Translation
+- English: Take this note, carry it to your mother; and wait for an answer.
+- Language: **[PARTIAL]**
+- Gloss: `TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE TO 2SG-GEN MOTHER:LOCATIVE AND WAIT-IMP FOR ANSWER:LOCATIVE`
+- Status: `partial`
+
+### Translation
+- English: I awoke early, dressed hastily, and went down to breakfast.
+- Language: **[PARTIAL]**
+- Gloss: `1SG  AWAKE-PST EARLY HASTY AND 1SG  GO-PST DOWN TO BREAKFAST:LOCATIVE`
+- Status: `partial`
+
+### Translation
+- English: Aha! I have caught you!
+- Language: **[PARTIAL]**
+- Gloss: `[PARTIAL]`
+- Status: `partial`
+
+### Translation
+- English: This string is too short!
+- Language: **sumonpyun gihench zumahega**
+- Gloss: `this-IMP short string.ACC`
+- Status: `ok`
+
+### Translation
+- English: Oh, dear! the wind has blown my hat away!
+- Language: **[PARTIAL]**
+- Gloss: `WIND 1SG-GEN HAT:ACCUSATIVE BLOW-PERF AWAY`
+- Status: `partial`
+
+### Translation
+- English: Alas! that news is sad indeed!
+- Language: **[PARTIAL]**
+- Gloss: `NEWS.PL  INDE-PST THAT`
+- Status: `partial`
+
+### Translation
+- English: Whew! that cold wind freezes my nose!
+- Language: **jasu wanyo altadatte zumimashim gozema behazun**
+- Gloss: `COLD WIND 1SG-GEN NOSE:ACCUSATIVE FREEZE THAT`
+- Status: `ok`
+
+### Translation
+- English: Are you warm enough now?
+- Language: **[PARTIAL]**
+- Gloss: `[PARTIAL]`
+- Status: `partial`
+
+### Translation
+- English: They heard the warning too late.
+- Language: **[PARTIAL]**
+- Gloss: `3PL  HEAR-PST TOO`
+- Status: `partial`
+
+### Translation
+- English: We are a brave people, and love our country.
+- Language: **zahasu zonhyab zumahozuarede uuge yamasu zahasu altazahasu zumakyaha somne**
+- Gloss: `1PL BRAVE PERSON.PL:ACCUSATIVE BE (TEMPORARY STATE) AND 1PL 1PL-GEN COUNTRY:ACCUSATIVE LOVE`
+- Status: `ok`
+
+### Translation
+- English: All the children came except Mary.
+- Language: **kotta autade  ajimasuhi**
+- Gloss: `ALL CHILD.PL  COME-PST`
+- Status: `ok`
+
+### Translation
+- English: Jack seized a handful of pebbles and threw them into the lake.
+- Language: **kyonhya zumadate jara edattezen hiyopyu yamasu kyonhya hyapyob dachufuhi ohesuzen shitagy**
+- Gloss: `JACK HANDFUL:ACCUSATIVE SEIZED OF PEBBLE:LOCATIVE AND JACK 3PL THROW-PST INTO LAKE:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: This cottage stood on a low hill, at some distance from the village.
+- Language: **[PARTIAL]**
+- Gloss: `THIS cottage.NOM STAND-PST ON low hill.LOC`
+- Status: `partial`
+
+### Translation
+- English: On a fine summer evening, the two old people were sitting outside the door of their cottage.
+- Language: **hitades eopyaki izumono monyuzu zumahozuarede chupawa eijudes wayamas zumajinakyu wamajietemahi altahyapyob ejizen hiyopyu**
+- Gloss: `EVENING-PTCP TWO OLD PERSON.PL:ACCUSATIVE FINE SUMMER OUTSIDE DOOR:ACCUSATIVE SIT-PST-PROG OF 3PL-GEN COTTAGE:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: Our bird’s name is Jacko.
+- Language: **altaltawopihyu byosaki chitara uuge**
+- Gloss: `BIRD:GENITIVE-GEN NAME JACKO BE (TEMPORARY STATE)`
+- Status: `ok`
+
+### Translation
+- English: The river knows the way to the sea.
+- Language: **bayuyos zumamodaryo zuchibu chodasuzen bomasu**
+- Gloss: `RIVER WAY:ACCUSATIVE KNOW TO SEA:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: The boat sails away, like a bird on the wing.
+- Language: **atate  wohyo zunseda wopihyuzen omarima hiyuhohazen gonsu**
+- Gloss: `BOAT  SAIL AWAY LIKE BIRD:LOCATIVE ON WING:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: They looked cautiously about, but saw nothing.
+- Language: **[PARTIAL]**
+- Gloss: `3PL LOOKED`
+- Status: `partial`
+
+### Translation
+- English: The little house had three rooms, a sitting room, a bedroom, and a tiny kitchen.
+- Language: **[UNRESOLVED]**
+- Gloss: `[UNRESOLVED]`
+- Status: `unsupported-grammar`
+
+### Translation
+- English: We visited my uncle’s village, the largest village in the world.
+- Language: **[PARTIAL]**
+- Gloss: `1PL UNCLE:GENITIVE-GEN LARGEST VILLAGE VILLAGE:ACCUSATIVE VISIT-PST IN WORLD:LOCATIVE`
+- Status: `partial`
+
+### Translation
+- English: We learn something new each day.
+- Language: **[PARTIAL]**
+- Gloss: `1PL NEW EACH DAY:ACCUSATIVE LEARN`
+- Status: `partial`
+
+### Translation
+- English: The market begins five minutes earlier this week.
+- Language: **dashiru satte desopyo hodabya monpyun nakus zumashihyotade hajiro**
+- Gloss: `MARKET FIVE EARLY-COMP THIS MINUTE WEEK.PL:ACCUSATIVE BEGIN`
+- Status: `ok`
+
+### Translation
+- English: Did you find the distance too great?
+- Language: **[PARTIAL]**
+- Gloss: `2SG DISTANCE:ACCUSATIVE FIND-PST TOO Q`
+- Status: `partial`
+
+### Translation
+- English: Hurry, children.
+- Language: **suyapyai zumautade**
+- Gloss: `HURRY-IMP CHILD.PL:ACCUSATIVE`
+- Status: `ok`
+
+### Translation
+- English: Madam, I will obey your command.
+- Language: **[PARTIAL]**
+- Gloss: `[PARTIAL]`
+- Status: `partial`
+
+### Translation
+- English: Here under this tree they gave their guests a splendid feast.
+- Language: **monpyun fusokum altahyapyob nue aus zumarosotte nyopetahi nihange**
+- Gloss: `THIS TREE 3PL-GEN SPLENDID GUEST FEAST:ACCUSATIVE GIVE-PST HERE`
+- Status: `ok`
+
+### Translation
+- English: In winter I get up at night, and dress by yellow candlelight.
+- Language: **tsun  zuitasu yaroo dattamazen yamasu muntsuzen waminai soma takinakazen wodasu**
+- Gloss: `WINTER  GET UP AT NIGHT:LOCATIVE AND DRESS:LOCATIVE BY YELLOW CANDLELIGHT:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: Tell the last part of that story again.
+- Language: **sujisomas bayoto zumahishiis hyanta mororyuzen hiyopyu**
+- Gloss: `TELL-IMP LAST PART:ACCUSATIVE OF DISTAL_SINGULAR STORY:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: Be quick or you will be too late.
+- Language: **suuuge zakinma luporu suudeada oesu**
+- Gloss: `BE (TEMPORARY STATE)-IMP QUICK OR LATE-FUT-IMP TOO`
+- Status: `ok`
+
+### Translation
+- English: Will you go with us or wait here?
+- Language: **[PARTIAL]**
+- Gloss: `2SG  GO-FUT WITH 1PL OR 2SG  WAIT HERE`
+- Status: `partial`
+
+### Translation
+- English: She was always, shabby, often ragged, and on cold days very uncomfortable.
+- Language: **[PARTIAL]**
+- Gloss: `3SG ALWAYS-PST ON uncomfortable cold day.LOC`
+- Status: `partial`
+
+### Translation
+- English: Think first and then act.
+- Language: **susoota otewo yamasu suaruodat wantter**
+- Gloss: `THINK-IMP FIRST AND ACT-IMP THEN`
+- Status: `ok`
+
+### Translation
+- English: I stood, a little mite of a girl, upon a chair by the window, and watched the falling snowflakes.
+- Language: **[UNRESOLVED]**
+- Gloss: `[UNRESOLVED]`
+- Status: `unsupported-grammar`
+
+### Translation
+- English: Show the guests these shells, my son, and tell them their strange history.
+- Language: **[UNRESOLVED]**
+- Gloss: `[UNRESOLVED]`
+- Status: `unsupported-grammar`
+
+### Translation
+- English: Be satisfied with nothing but your best.
+- Language: **[PARTIAL]**
+- Gloss: `[PARTIAL]`
+- Status: `partial`
+
+### Translation
+- English: We consider them our faithful friends.
+- Language: **[PARTIAL]**
+- Gloss: `1PL  CONSIDER FRIEND`
+- Status: `partial`
+
+### Translation
+- English: We will make this place our home.
+- Language: **zahasu honohak rosoo zumazadesu udenyuzum**
+- Gloss: `1PL PLACE PROXIMAL_SINGULAR HOME:ACCUSATIVE MAKE-FUT`
+- Status: `ok`
+
+### Translation
+- English: The squirrels make their nests warm and snug with soft moss and leaves.
+- Language: **[PARTIAL]**
+- Gloss: `SQUIRREL.PL 3PL-GEN NEST WARM:ACCUSATIVE MAKE AND SQUIRREL.PL  LEAVE`
+- Status: `partial`
+
+### Translation
+- English: The little girl made the doll’s dress herself.
+- Language: **[PARTIAL]**
+- Gloss: `LITTLE GIRL DOLL DRESS:ACCUSATIVE MAKE-PST`
+- Status: `partial`
+
+### Translation
+- English: I hurt myself.
+- Language: **adatte zumahyudio deyuzam**
+- Gloss: `1SG MYSELF:ACCUSATIVE HURT`
+- Status: `ok`
+
+### Translation
+- English: She was talking to herself.
+- Language: **hitou wamatoyoruhi**
+- Gloss: `3SG TALKING-PST-PROG`
+- Status: `ok`
+
+### Translation
+- English: He proved himself trustworthy.
+- Language: **[PARTIAL]**
+- Gloss: `3SG HIMSELF:ACCUSATIVE PROVE-PST`
+- Status: `partial`
+
+### Translation
+- English: We could see ourselves in the water.
+- Language: **zahasu zumayanade biteheg karinta autarazen kyogemy**
+- Gloss: `1PL OURSELVES.PL:ACCUSATIVE SEE-MOD IN WATER:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: Do it yourself.
+- Language: **suhogyaji zumasus**
+- Gloss: `DO-IMP YOURSELF:ACCUSATIVE`
+- Status: `ok`
+
+### Translation
+- English: I feel ashamed of myself.
+- Language: **[PARTIAL]**
+- Gloss: `1SG  FEEL OF MYSELF:LOCATIVE`
+- Status: `partial`
+
+### Translation
+- English: Sit here by yourself.
+- Language: **sujietema nihange susazen wodasu**
+- Gloss: `SIT-IMP HERE BY YOURSELF:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: The dress of the little princess was embroidered with roses, the national flower of the Country.
+- Language: **yokunta muntsu doshu  anfudatahi porugyu gyukyas semasizen zaku kyahazen hiyopyu**
+- Gloss: `LITTLE DRESS PRINCESS  EMBROIDERED-PST WITH NATIONAL ROS FLOWER:LOCATIVE OF COUNTRY:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: They wore red caps, the symbol of liberty.
+- Language: **hyapyob tomasut myunai zumayoni deshamahi wayutozen hiyopyu**
+- Gloss: `3PL RED CAP SYMBOL:ACCUSATIVE WEAR-PST OF LIBERTY:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: With him as our protector, we fear no danger.
+- Language: **[PARTIAL]**
+- Gloss: `[PARTIAL]`
+- Status: `partial`
+
+### Translation
+- English: All her finery, lace, ribbons, and feathers, was packed away in a trunk.
+- Language: **dullo homagik kotta jizumasade yamasu chazomade  memyotohi zunseda jibokujazen kyogemy**
+- Gloss: `LACE FINERY ALL RIBBON.PL AND FEATHER.PL  PACK-PST AWAY IN TRUNK:LOCATIVE`
+- Status: `ok`
+
+### Translation
+- English: Light he thought her, like a feather.
+- Language: **[PARTIAL]**
+- Gloss: `LIGHT-IMP LIKE FEATHER:LOCATIVE`
+- Status: `partial`
+
+### Translation
+- English: Every spring and fall our cousins pay us a long visit.
+- Language: **[PARTIAL]**
+- Gloss: `[PARTIAL]`
+- Status: `partial`
+
+### Translation
+- English: In our climate the grass remains green all winter.
+- Language: **[PARTIAL]**
+- Gloss: `CLIMATE GRASS GREEN ALL WINTER.PL:ACCUSATIVE REMAIN`
+- Status: `partial`
+
+### Translation
+- English: The boy who brought the book has gone.
+- Language: **[UNRESOLVED]**
+- Gloss: `[UNRESOLVED]`
+- Status: `unsupported-grammar`
+
+### Translation
+- English: These are the flowers that you ordered.
+- Language: **[UNRESOLVED]**
+- Gloss: `[UNRESOLVED]`
+- Status: `unsupported-grammar`
+
+### Translation
+- English: I have lost the book that you gave me.
+- Language: **[UNRESOLVED]**
+- Gloss: `[UNRESOLVED]`
+- Status: `unsupported-grammar`
+
+### Translation
+- English: The fisherman who owned the boat now demanded payment.
+- Language: **[UNRESOLVED]**
+- Gloss: `[UNRESOLVED]`
+- Status: `unsupported-grammar`
+
+### Translation
+- English: Come when you are called.
+- Language: **[PARTIAL]**
+- Gloss: `COME-IMP`
+- Status: `partial`
+
+### Translation
+- English: I shall stay at home if it rains.
+- Language: **[UNRESOLVED]**
+- Gloss: `[UNRESOLVED]`
+- Status: `unsupported-grammar`
+
+### Translation
+- English: When he saw me, he stopped.
+- Language: **[PARTIAL]**
+- Gloss: `[PARTIAL]`
+- Status: `partial`
+
+### Translation
+- English: Do not laugh at me because I seem so absent minded.
+- Language: **[UNRESOLVED]**
+- Gloss: `[UNRESOLVED]`
+- Status: `unsupported-grammar`
+
+### Translation
+- English: I shall lend you the books that you need.
+- Language: **[UNRESOLVED]**
+- Gloss: `[UNRESOLVED]`
+- Status: `unsupported-grammar`
+
+### Translation
+- English: Come early next Monday if you can.
+- Language: **[UNRESOLVED]**
+- Gloss: `[UNRESOLVED]`
+- Status: `unsupported-grammar`
+
+### Translation
+- English: If you come early, wait in the hall.
+- Language: **[UNRESOLVED]**
+- Gloss: `[UNRESOLVED]`
+- Status: `unsupported-grammar`
+
+### Translation
+- English: I had a younger brother whose name was Antonio.
+- Language: **[UNRESOLVED]**
+- Gloss: `[UNRESOLVED]`
+- Status: `unsupported-grammar`
+
+### Translation
+- English: Gnomes are little men who live under the ground.
+- Language: **[UNRESOLVED]**
+- Gloss: `[UNRESOLVED]`
+- Status: `unsupported-grammar`
+
+### Translation
+- English: He is loved by everybody, because he has a gentle disposition.
+- Language: **[UNRESOLVED]**
+- Gloss: `[UNRESOLVED]`
+- Status: `unsupported-grammar`
+
+### Translation
+- English: Hold the horse while I run and get my cap.
+- Language: **[UNRESOLVED]**
+- Gloss: `[UNRESOLVED]`
+- Status: `unsupported-grammar`
+
+### Translation
+- English: I have found the ring I lost.
+- Language: **[PARTIAL]**
+- Gloss: `1SG ring.ACC FIND-PERF`
+- Status: `partial`
+
+### Translation
+- English: Play and I will sing.
+- Language: **sutadorot yamasu suudezuheazoni**
+- Gloss: `PLAY-IMP AND SING-FUT-IMP`
+- Status: `ok`
+
+### Translation
+- English: That is the funniest story I ever heard.
+- Language: **[PARTIAL]**
+- Gloss: `FUNNIEST STORY  HEAR-PST THAT EVER`
+- Status: `partial`
+
+### Translation
+- English: She is taller than her brother.
+- Language: **hitou desopyo dotte uuge desopyo altahitou ata**
+- Gloss: `3SG TALLER-COMP BE (TEMPORARY STATE) COMP-STD 3SG-GEN BROTHER`
+- Status: `ok`
+
+### Translation
+- English: They are no wiser than we.
+- Language: **[PARTIAL]**
+- Gloss: `3PL  BE (TEMPORARY STATE) COMP-STD 1PL`
+- Status: `partial`
+
+### Translation
+- English: Light travels faster than sound.
+- Language: **suyomono uwo zumesara desopyo mijulli**
+- Gloss: `LIGHT-IMP TRAVEL FASTER:ACCUSATIVE COMP-STD SOUND`
+- Status: `ok`
+
+### Translation
+- English: We have more time than they.
+- Language: **zahasu zumalebrano ochi**
+- Gloss: `1PL time.ACC MORE-PERF`
+- Status: `ok`
+
+### Translation
+- English: She has more friends than enemies.
+- Language: **[PARTIAL]**
+- Gloss: `3SG friend.ACC MORE-PERF`
+- Status: `partial`
+
+### Translation
+- English: He was very poor, and with his wife and five children lived in a little low cabin of logs and stones.
+- Language: **[PARTIAL]**
+- Gloss: `3SG POOR BE (TEMPORARY STATE)-PST VERY AND 3SG  LIVE-PST IN LOW LITTLE CABIN:LOCATIVE OF LOG.PL:LOCATIVE AND STONE.PL:LOCATIVE`
+- Status: `partial`
+
+### Translation
+- English: When the wind blew, the traveler wrapped his mantle more closely around him.
+- Language: **[PARTIAL]**
+- Gloss: `WIND TRAVELER MANTLE:ACCUSATIVE BLOW-PST CLOSE AROUND`
+- Status: `partial`
+
+### Translation
+- English: I am sure that we can go.
+- Language: **[UNRESOLVED]**
+- Gloss: `[UNRESOLVED]`
+- Status: `unsupported-grammar`
+
+### Translation
+- English: We went back to the place where we saw the roses.
+- Language: **[PARTIAL]**
+- Gloss: `1PL  GO-PST BACK TO PLACE:LOCATIVE`
+- Status: `partial`
+
+### Translation
+- English: “This tree is fifty feet high,” said the gardener.
+- Language: **[UNRESOLVED]**
+- Gloss: `[UNRESOLVED]`
+- Status: `unsupported-grammar`
+
+### Translation
+- English: I think that this train leaves five minutes earlier today.
+- Language: **[UNRESOLVED]**
+- Gloss: `[UNRESOLVED]`
+- Status: `unsupported-grammar`
+
+### Translation
+- English: My opinion is that the governor will grant him a pardon.
+- Language: **[UNRESOLVED]**
+- Gloss: `[UNRESOLVED]`
+- Status: `unsupported-grammar`
+
+### Translation
+- English: Why he has left the city is a mystery.
+- Language: **hitou wato zumahesu heyanyohi gyaa**
+- Gloss: `3SG CITY MYSTERY:ACCUSATIVE LEAVE-PST WHY`
+- Status: `ok`
+
+### Translation
+- English: The house stands where three roads meet.
+- Language: **[PARTIAL]**
+- Gloss: `HOUSE THREE ROAD.PL:ACCUSATIVE STAND WHERE`
+- Status: `partial`
+
+### Translation
+- English: He has far more money than brains.
+- Language: **[PARTIAL]**
+- Gloss: `3SG money.ACC FAR-PERF`
+- Status: `partial`
+
+### Translation
+- English: Evidently that gate is never opened, for the long grass and the great hemlocks grow close against it.
+- Language: **[PARTIAL]**
+- Gloss: `GATE  OPEN-PST-NEG EVIDENT THAT NEVER FOR LONG GRASS:LOCATIVE AND HEMLOCK GREAT GROW  CLOSE-NEG`
+- Status: `partial`
+
+### Translation
+- English: I met a little cottage girl; she was eight years old, she said.
+- Language: **[PARTIAL]**
+- Gloss: `1SG EIGHT COTTAGE LITTLE GIRL YEAR.PL:ACCUSATIVE MEET-PST`
+- Status: `partial`
+

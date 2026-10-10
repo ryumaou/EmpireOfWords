@@ -1,0 +1,142 @@
+Translation diagnostics: Example
+============================================================
+
+Translator version: 7.6.12
+Language build version: 7.6.1
+Language schema version: 2
+Grammar contract version: 9
+Language package SHA256: 4f259a7477bebca611e666c6c3aa0a66e58de82ecc56655c3a669629b8cef3e7
+Grammar SHA256: fe67258bf348f344bc25634be3a189e6ac01e737a0156e1b0dcfd4610a3f2eb6
+Translator SHA256: ad16609b47586b64f5c905465fbac63ffddc35ebe2f1130da9508440805c2d2d
+
+Sentences: 80
+Complete: 71
+Partial: 5
+Missing vocabulary: 0
+Unsupported grammar: 4
+
+Target language realization profile:
+  word_order: SOV
+  adposition_type: postposition
+  adjective_position: before
+  possessor_position: before
+  plural_strategy: suffix
+  comparison_strategy: particle
+  question_strategy: particle
+  negation_strategy: affix
+  morphology_type: mixed
+  future: affix
+  progressive: affix
+  perfect: particle
+  imperative: affix
+  np_coordination: particle
+  predicate_coordination: particle
+  clause_coordination: juxtaposition
+
+Construction inventory:
+  simple_clause: supported
+  copular_clause: supported
+  existential: supported
+  imperative: supported
+  yes_no_question: limited
+  wh_question: limited
+  coordination: limited
+  modal: limited
+  perfect: limited
+  progressive: supported
+  negation: supported
+  possessive: limited
+  reflexive: limited
+  comparison: limited
+  relative_clause: diagnosed
+  complement_clause: diagnosed
+  conditional_clause: diagnosed
+  subordinate_clause: diagnosed
+  passive: diagnosed
+  quotation: diagnosed
+  appositive: diagnosed
+  phrasal_verb: limited
+  weather: limited
+  proper_name: limited
+
+Most common constructions in non-complete sentences:
+  coordination: 2
+  modal: 2
+  comparison: 1
+  yes_no_question: 1
+  conditional_clause: 1
+  relative_clause: 1
+  complement_clause: 1
+  passive: 1
+
+Most common missing/unrecognized English lexemes:
+
+Per-sentence diagnostics:
+-
+#24 John and Elizabeth are friends.
+  Status: partial
+  Reason: recognized construction not yet fully realized
+  Diagnostic stage: analysis_or_parse
+  Constructions: coordination
+  Normalized: John and Elizabeth are friend.
+
+#59 Do you like summer or winter better?
+  Status: partial
+  Reason: not realized: better, comparison
+  Diagnostic stage: semantic_receipts
+  Constructions: comparison, coordination, yes_no_question
+  Normalized: (unchanged)
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=genitive, comparison=particle, question=particle, coordination={'np': {'strategy': 'particle', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'affix', 'future': 'affix'}, aspect={'progressive': 'affix', 'perfect': 'particle'}, mood={'imperative': 'affix'}
+
+#62 If the dog sees the cat, the bird will fly.
+  Status: unsupported-grammar
+  Reason: unsupported construction: conditional_clause
+  Diagnostic stage: capability_gate
+  Constructions: conditional_clause, modal
+  Normalized: If the dog see the cat the bird will fly.
+
+#63 The dog that sees the cat is happy.
+  Status: unsupported-grammar
+  Reason: unsupported construction: relative_clause
+  Diagnostic stage: capability_gate
+  Constructions: relative_clause
+  Normalized: The dog that see the cat is happy.
+
+#64 I know that the dog sees the cat.
+  Status: unsupported-grammar
+  Reason: unsupported construction: complement_clause
+  Diagnostic stage: capability_gate
+  Constructions: complement_clause
+  Normalized: I know that the dog see the cat.
+
+#65 The cat was seen by the dog.
+  Status: unsupported-grammar
+  Reason: unsupported construction: passive
+  Diagnostic stage: capability_gate
+  Constructions: passive
+  Normalized: (unchanged)
+
+#66 Aha! I have caught you!
+  Status: partial
+  Reason: unrealized discourse expression: aha
+  Diagnostic stage: semantic_receipts
+  Constructions: simple
+  Normalized: (unchanged)
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=genitive, comparison=particle, question=particle, coordination={'np': {'strategy': 'particle', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'affix', 'future': 'affix'}, aspect={'progressive': 'affix', 'perfect': 'particle'}, mood={'imperative': 'affix'}
+
+#67 Alas! That news is sad.
+  Status: partial
+  Reason: unrealized discourse expression: alas
+  Diagnostic stage: semantic_receipts
+  Constructions: simple
+  Normalized: (unchanged)
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=genitive, comparison=particle, question=particle, coordination={'np': {'strategy': 'particle', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'affix', 'future': 'affix'}, aspect={'progressive': 'affix', 'perfect': 'particle'}, mood={'imperative': 'affix'}
+
+#69 Madam, I will obey your command.
+  Status: partial
+  Reason: unrealized vocative: madam
+  Diagnostic stage: semantic_receipts
+  Constructions: modal
+  Normalized: (unchanged)
+  Target strategies: word_order=SOV, adposition=postposition, adjective_position=before, possession=genitive, comparison=particle, question=particle, coordination={'np': {'strategy': 'particle', 'position': 'between'}, 'predicate': {'strategy': 'particle', 'position': 'between', 'shared_subject': True}, 'clause': {'strategy': 'juxtaposition', 'position': 'between'}}, tense={'past': 'affix', 'future': 'affix'}, aspect={'progressive': 'affix', 'perfect': 'particle'}, mood={'imperative': 'affix'}
+

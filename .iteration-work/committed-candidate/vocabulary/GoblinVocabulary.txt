@@ -1,0 +1,5377 @@
+abandon:v
+able:adj
+aboard:adv
+abolish:v
+about (concerning):prep
+about:adv
+above:prep
+absen:br
+absorption:n
+absurd:adj
+abundant:adj
+abuse:v
+academy:n
+accelerate:v
+accent:n
+accept:v
+access:v
+accessory:n
+accident:n
+accommodation:n
+accompany:v
+accomplish:v
+according:prep
+account:n
+accumulate:v
+accurate:adj
+accuse:v
+accustom:v
+ache:v
+achieve:v
+acid:n
+acquaintance:n
+acquire:v
+acre:n
+acronym:n
+across:prep
+act:v
+act:vaction:n
+action:n
+activaction:n
+activate:v
+activity:n
+actually:adv
+acute:adj
+adapt:v
+add:v
+addicted:adj
+adept:n
+adjacent:adj
+adjustment:n
+administration:n
+admiral:n
+admire:v
+adolescent:n
+adopt:v
+adult:n
+advance:v
+adventure:n
+adversary:n
+adverse:adj
+advertise:v
+advertisement:n
+advice:n
+advocate:v
+adze:n
+aesthetic:adj
+affect:v
+affection:n
+affiliate:v
+affirm:v
+affliction:n
+afford:v
+afraid:adj
+after:prep
+afternoon:n
+again:adv
+against:p
+against:prep
+age:n
+agency:n
+agent:n
+aggressive:adj
+agitate:v
+ago:adv
+agony:n
+agree:v
+agriculture:n
+ahead:adv
+aim:v
+Air Forces:n
+air:n
+airlock:n
+airplane:n
+alarm:n
+albeit:c.
+albeit:conj
+alchemy:n
+alcohol:n
+ale:n
+alert:v
+algae:n
+algorithm:n
+alibi:n
+alien:n
+aligator:n
+align:v
+all:det
+allege:v
+allegedly:adv
+allergy:n
+alleviate:v
+allocate:v
+allocation:n
+allow:v
+ally:n
+almond:n
+almost:adv
+alone:adj
+along:prep
+alongside:prep
+alphabet:n
+already:adv
+also:adv
+altar:n
+alteration:n
+alternate:adj
+although:conj
+altitude:n
+alum:n
+alumnus:n
+always:adv
+amateur:n
+amazing:adj
+ambassador:n
+amber:n
+ambergris:n
+ambiguous:adj
+ambition:n
+amend:v
+ammonia:n
+ammunition:n
+among:prep
+amount:n
+amphora:n
+amplification:n
+amulet:n
+amuse:v
+analogy:n
+analysis:n
+analyze:v
+ancestor:n
+anchor:n
+ancient:adj
+and:conj
+and:p
+android:n
+angel:n
+angle:n
+angry:adj
+angst:n
+animal:n
+animate:v
+animation:n
+animism:n
+aniseed:n
+announce:v
+annual:adj
+anonymous:adj
+another:det
+answer:n
+ant:n
+antenna:n
+anthropology:n
+anticipate:v
+antidote:n
+antique:adj
+anvil:n
+anxious:adj
+any:det
+anybody:pron
+anymore:adv
+anyone:pron
+anything:pron
+anyway:adv
+apart:adv
+apartment:n
+apology:n
+apparatus:n
+apparent:adj
+appeal:v
+appear:v
+appearance:n
+appetite:n
+applaud:v
+apple:n
+appliance:n
+application:n
+apply:v
+apportation:n
+appraise:v
+appreciate:v
+apprentice:n
+approach:n
+appropriate:adj
+approximate:adj
+apricot:n
+apron:n
+aptitude:n
+aqua:adj
+aquatic:adj
+arbitrary:adj
+arc:n
+arcane:adj
+arch:n
+archetype:n
+archipelago:n
+architecture:n
+archive:n
+area:n
+arena:n
+argue:v
+arm:n
+arm:v
+armed:adj
+armor:n
+armorer’s hammer:n
+armpit:n
+arms:n
+army/warband:n
+Army:n
+around:prep
+arouse:v
+aroused (sexually):adj
+arrange:v
+array:n
+arrest:v
+arrive:v
+arrogant:adj
+arrow:n
+arsenal:n
+art:n
+artery:n
+article:n
+artifact:n
+artillery:n
+as well as:prep
+as:adv
+asceticism:n
+ash, dust:n
+ash, tree:n
+ash:n
+aside:adv
+ask:v
+asp:n
+aspire:v
+aspirin:n
+ass:n
+assassin:n
+assassinate:v
+assault:v
+assemble:v
+assign:v
+assimilation:n
+assist:v
+association:n
+assume:v
+asteroid:n
+astonish:v
+astral:n
+astrology:n
+astronomy:n
+at:prep
+athlete:n
+atmosphere:n
+atom:n
+atomic:n
+attach:v
+attack:n
+attend:v
+attention:n
+attic:n
+attractive:adj
+attribute:v
+audio:adj
+audio:n
+audit:v
+auger:n
+augury:n
+aunt:n
+aura:n
+authentic:adj
+authority:n
+authorize:v
+automatic:adj
+autonomous:adj
+autumn:n
+available:adj
+avatar:n
+avenue:n
+average:adj
+average:n
+avert:v
+avian:adj
+avoid:v
+awake:adj
+aware:adj
+away:adv
+awe:n
+awesome:adj
+awful:adj
+awkward:adj
+axe:n
+axis:n
+axle:n
+baboon:n
+baby:n
+bachelor:n
+back (of body):n
+back (reverse side):n
+back:adv
+back:v
+backpack:n
+backup:n
+backward:adj
+bacon:n
+bacteria:n
+bad:adj
+badge:n
+bag:n
+bagpipe:n
+bailey:n
+bait:n
+bake:v
+balance:n
+balance:v
+balcony:n
+bald:adj
+baldric:n
+ball:n
+balm:n
+band:n
+bane:n
+bang:v
+banish:v
+banishment:n
+bank:n
+bankrupt:adj
+banner:n
+bar (pub):n
+barbecue:n
+barbican:n
+bard, troubador:n
+bard:n
+barely:adv
+bargain:n
+bark (of tree):n
+bark:v
+barley:n
+barracuda:n
+barrel:n
+barrier:n
+base:n
+base:v
+basic:adj
+basically:adv
+basil:n
+basilisk:n
+basin:n
+basket:n
+bass:n
+bastard sword:n
+bastard:n
+bastion:n
+bat (club):n
+bat (winged mammal):n
+batch:n
+bath:n
+battalion:n
+batter:v
+batteries:n
+battery:n
+battle axe:n
+battle:n
+battleship:n
+bay:n
+bayonet:n
+be (age):v
+be (exist - there is/are):v
+be (located):v
+be (temporary state):v
+beach:n
+beacon:n
+bead:n
+beak:n
+beam:n
+bean:n
+bear:n
+beard:n
+beast:n
+beautiful:adj
+beauty:n
+beaver:n
+because:conj
+become:v
+becoming:n
+bed hangings:n
+bed:n
+bedroll:n
+bee:n
+beef:n
+beer:n
+beet:n
+beetle:n
+before:prep
+begin:v
+behalf:n
+behave (act):v
+behave (well):v
+behind:adv
+being:n
+belch:v
+belfry:n
+believe:v
+bell:n
+bellows:n
+belly (stomach area):n
+below:prep
+belt:n
+bench:n
+bend:v
+benefit:n
+benign:adj
+berm:n
+berry:n
+beside:prep
+besides:prep
+best:adj
+betray:v
+better:adj
+between:prep
+beverage:n
+beyond:prep
+bias:n
+bicycle:n
+bid:v
+big:adj
+bigot:n
+bigotry:n
+bill:n
+billion:num
+binary:n
+bindery glue:n
+binding:n
+biology:n
+biplane:n
+birch:n
+bird:n
+birth:n
+birthday:n
+biscuit:n
+bit:n
+bitch:n
+bite:v
+bizarre:adj
+black:adj
+blackness:n
+blacksmith’s hammer:n
+bladderpipe:n
+blade:n
+blame:v
+blank:adj
+blanket:n
+blasphemy:n
+blast:v
+blaster:n
+bleach:n
+bleak:adj
+bleed:n
+blend:v
+blending:n
+bless:v
+blessing:n
+blight:n
+blind:adj
+blink:v
+block:n
+blonde:adj
+blood:n
+blossom:n
+blouse:n
+blow:v
+blowgun:n
+blue:adj
+bluff:v
+blunder:n
+blunt:adj
+blur:n
+boar:n
+board:n
+boat:n
+bodkin:n
+body:n
+boil:v
+bola:n
+bolster:v
+bolt:n
+bomb:n
+bombard:v
+bomber:n
+bond:v
+bone:n
+bones:n
+book cover:n
+book of hours:n
+book:n
+book:v
+bookshelf:n
+boomerang:n
+boost:v
+boot:n
+border:n
+bore:v
+boring:adj
+borough, neighborhood:n
+borough:n
+borrow:v
+boss:n
+both:det
+bother:v
+bottle:n
+bottom (lowest part):n
+boulder:n
+bounce:v
+bow (decorative material):n
+bow (weapon):n
+bow:v
+bowl:n
+box:n
+boy:n
+boyfriend:n
+bra:n
+brace:v
+bracelet:n
+bracer:n
+bracket:n
+brag:v
+braid:n
+brain:n
+brake:v
+brakes:n
+branch:n
+brandy:n
+brass:n
+bravery:
+bravery:n
+brazier:n
+bread:n
+break:v
+breakdown:n
+breakfast:n
+breakthrough:n
+breast:n
+breastplate:n
+breathe:v
+breathing:n
+breed:n
+breeze:n
+bribe:n
+brick:n
+bridge:n
+bridle:n
+brief:v
+brigade:n
+bright:adj
+brimstone:n
+bring:v
+broad:adj
+broadhead:n
+broadsword:n
+brochure:n
+bronze:adj
+bronze:n
+brook:n
+broom:n
+broth:n
+brothel:n
+brother:n
+brow:n
+brown:adj
+browse:v
+bruise:n
+brush (for hair):n
+brush:n
+bucket:n
+buckler:n
+bud:n
+buffalo:n
+bug:n
+build:v
+building:n
+bulb:n
+bulk:n
+bull:n
+bullet:n
+bully:n
+bump:n
+bump:v
+bun:n
+bundle:n
+bunker:n
+bureaucracy:n
+bureaucrat:n
+burger:n
+burly:adj
+burn:n
+burp:v
+burst:v
+bury:v
+bush:n
+bushel:n
+business:n
+bust:v
+but:conj
+butt:n
+butte:n
+butter:n
+buttermilk:n
+buttocks:n
+button:n
+buttress:n
+buxom:adj
+buy:v
+buzzard:n
+by:prep
+cab:n
+cabbage:n
+cabin:n
+cabinet:n
+cable:n
+cafeteria:n
+cage:n
+cake:n
+calculate:v
+calf:n
+call:v
+calling:n
+calm:adj
+calming:n
+caltrop:n
+camel:n
+camera:n
+camp:n
+campaign:n
+camphor:n
+can:v
+canal:n
+candle:n
+candleholder, candlestick:n
+candleholder:n
+candlestick:n
+candy:n
+cane:n
+cannon (law):n
+cannon (weapon):n
+cannon:n
+canoe:n
+canon (law):n
+canonical:
+canonical:adj
+canopy:n
+canteen:n
+cantrip:n
+canvas:n
+canyon:n
+cap:n
+capacity:n
+caper:n
+capital:n
+capon:n
+capsule:n
+captain (of ship):n
+captain (of the Navy):n
+captain:n
+capture:v
+car:n
+carbohydrate:n
+carbon:n
+carburetor:n
+carcass:n
+card:n
+carding comb:n
+care:v
+career:n
+cargo:n
+carpenter’s hammer:n
+carpenter’s level:n
+carpenter’s square:n
+carpet:n
+carriage:n
+carrier:n
+carrot:n
+carry:v
+cart:n
+cartomancy:n
+cartoon:n
+cartridge:n
+case:n
+cashew:n
+casino:n
+cask:n
+casting:v
+castle:n
+casual:adj
+cat:n
+catalog:n
+catastrophe:n
+catch:v
+cater:v
+caterpillar:n
+cathedral:n
+catnip:n
+cauldron:n
+cause:v
+causing:v
+caution:n
+Cavalry:n
+cave:n
+cavity:n
+cedar:n
+celadon:adj
+celebrate:v
+celebrity:n
+celestial:adj
+cell (biology):n
+cell:n
+cellar:n
+cement:n
+census:n
+centaur:n
+center:n
+centipede:n
+century:n
+ceramic:n
+cereal:n
+ceremonial:adj
+ceremony:n
+certain:adj
+certainly:adv
+certificate:n
+certify:v
+cestus:n
+chain:n
+chainmail:n
+chair:n
+chakras:n
+chalice:n
+chalk:n
+challenge:n
+chamomile:n
+champion:n
+chance:n
+change:n
+change:v
+channel (of water):n
+channeling:v
+chant:v
+chaos:n
+chapel:n
+character:n
+characteristic:adj
+charcoal:n
+charge:n
+charges:n
+charity:n
+charm:v
+charming:n
+chase:v
+chasm:n
+chat:v
+cheap:adj
+check:n
+check:v
+cheer:v
+cheese:n
+chemical:n
+chemist:n
+cherry-blossom:n
+cherry:n
+chest:n
+chestnut:adj
+chestnut:n
+chick (girl):n
+chicken:n
+chief petty officer:n
+chief:adj
+child:n
+chill:n
+chime:n
+chimera:n
+chimp:n
+chin:n
+chirographic:adj
+chisel:n
+chive:n
+choir:n
+choke:v
+choose:v
+chop:v
+chord:n
+chore:n
+chorus:n
+chronic:adj
+chuckle:v
+church:n
+cider:n
+cigar:n
+cigarette:n
+cinnamon:n
+ciphers:n
+circle:n
+circuit:n
+circulate:v
+circulation:n
+circus:n
+citizen:n
+cittern:n
+city:n
+civilized:adj
+claim:v
+clairaudience:n
+clairvoyance:n
+clam:n
+clan:n
+clap:v
+clarify:v
+clash:n
+class:n
+classic:adj
+classify:v
+clause:n
+clavichord:n
+claw:n
+clay:n
+claymore:n
+clean:adj
+clean:v
+cleansing:n
+clear:adj
+cleavage:n
+cleric:n
+clerk:n
+clever:adj
+click:n
+cliff:n
+climate:n
+climb:v
+clinic:n
+clip:v
+cloak:n
+cloak:v
+clock:n
+clone:n
+close:adj
+close:v
+closed coach:n
+closure:n
+cloth:n
+clothes, clothing:n
+clothes:n
+clothing:n
+cloud:n
+clove:adj
+clove:n
+clown:n
+club:n
+clutch:n
+clutch:v
+clutter:n
+coach:n
+coal:n
+Coast Guard:n
+coast:n
+coat:n
+cobbler:n
+cobra:n
+cockpit:n
+cockroach:n
+cocktail:n
+coconut:n
+cod:n
+code (computer):n
+code:n
+codes:n
+coffee:n
+coffer:n
+coffin:n
+coherent:adj
+cohort:n
+coif:n
+coil:v
+coin:n
+coincidence:n
+cold chisel:n
+cold:adj
+collaborate:v
+collapse:v
+collar:n
+collect:v
+college:n
+collide:v
+colonel:n
+colony:n
+color:n
+colored:adj
+colored:n
+column:n
+comb:n
+combat:v
+combine:v
+come:v
+comedy:n
+comet:n
+comfort:n
+comic:adj
+coming:
+coming:n
+command:n
+commander(frigate captain):n
+comment:n
+commentary:n
+commerce:n
+commission:n
+committee:n
+commodity:n
+common:adj
+communication:n
+community:n
+commute:v
+compact:adj
+companion:n
+company:n
+compare:v
+compartment:n
+compass:n
+compassion:n
+compatible:adj
+compel:v
+compensate:v
+compete:v
+competent:adj
+competition:n
+compile:v
+complain:v
+complement:v
+complete:v
+complex:adj
+complex:n
+complicate:v
+compliment:n
+comply:v
+compose:v
+composite bow:n
+composite:adj
+compost:n
+compound:n
+comprehend:v
+comprise:v
+compromise:v
+comrade:n
+con:n
+conceal:v
+concentrate:v
+concept:n
+concern:n
+concerning:prep
+concession:n
+conch:n
+concrete:n
+condition:n
+cone:n
+confer:v
+confess:v
+confident:adj
+confidential:adj
+confine:v
+confirm:v
+confluence:n
+conform:v
+confront:v
+confuse:v
+congregate:v
+conjuration:n
+conjurations:n
+conjuring:n
+conquer:v
+conquest:n
+conscious:adj
+consecrate:v
+consecrated:adj
+consider:v
+consistent:adj
+consolidate:v
+conspire:v
+constable:n
+constellation:n
+constitution:n
+construction:n
+consult:v
+consultant:n
+contagion:n
+contain:v
+container:n
+contaminate:v
+contempt:n
+continent:n
+continue:v
+contract:n
+contradict:v
+contrast:v
+contribute:v
+control:n
+controlling:n
+controls:n
+controversy:n
+convenient:adj
+converse:v
+convert:v
+convict:v
+conviction:n
+cook (heat food):v
+cook (prepare food) that is medicinal:v
+cook (prepare food):v
+cook:n
+cooking oil:n
+cooking:n
+cool (fashionable):adj
+cool (slightly cold):adj
+cooperate:v
+coordinate:n
+copper:adj
+copper:n
+copy:v
+copyright:n
+coral:n
+cord:n
+coriander:n
+cork:n
+corner:n
+cornett:n
+corporal:n
+corps:n
+corpse:n
+correlate:v
+corrupt:adj
+cost:n
+costume:n
+cottage:n
+cotton:n
+couch:n
+cough:v
+could:v
+counsel:n
+counselor:n
+count:v
+counter (flat surface):n
+countermagic:n
+counterspell:n
+country:n
+couple:n
+courage/bravery:n
+courier:n
+course:n
+court:n
+courtesan:n
+courtesy:n
+courtyard:n
+cousin:n
+cove:n
+cover:v
+cow:n
+coward:n
+cowardice:n
+cowl:n
+cozy:adj
+crab-apple:n
+crab:n
+crack:n
+cracker:n
+craft:n
+cram:v
+crane:n
+crash:v
+crate:n
+crater:n
+crave:v
+crawl:n
+crazy:adj
+creak:v
+cream:n
+create:v
+creating:n
+creation:n
+creature:n
+creatures:n
+credible:adj
+credit:n
+creek:n
+creep:v
+creeping:n
+creme:n
+crenel:n
+crenelation:n
+crest:n
+cricket:n
+crime:n
+criminal:n
+crimson:adj
+crippled:adj
+crisp:adj
+criteria:n
+critical:adj
+criticize:v
+critique:n
+crock:n
+crocodile:n
+crop:n
+crossbow:n
+crouch:v
+crowbar:n
+crowd:n
+crown:n
+crude:adj
+crude:n
+cruel:adj
+cruise:v
+cruiser:n
+crumb:n
+crumble:v
+crumhorn:n
+crumple:v
+crunch:v
+crusade:n
+crush:v
+crust:n
+cry:v
+crystal:n
+crystallomancy:n
+cube:n
+cucumber:n
+cuff:n
+cuirass:n
+cuisine:n
+cuisse:n
+cull:v
+cult:n
+culture:n
+cup:n
+curator:n
+curb:v
+curdle:v
+curds and whey:n
+curds:n
+cure:v
+curious:adj
+curl:n
+current:adj
+current:n
+curse:n
+curtain:n
+curtal:n
+curve:n
+cushion:n
+custody:n
+custom:adj
+custom:n
+cut:n
+cute:adj
+cylinder:n
+cymbal:n
+cynic:n
+dactylogy:n
+dactylomancy:n
+daemon:n
+dagger:n
+dairy:n
+dam:n
+damage:v
+damn:adj
+damnum:n
+damp:adj
+dampen:v
+damping:n
+dance:n
+danger:n
+dangle:v
+dark:adj
+dark:n
+darkvision:n
+darling:n
+dart:n
+dash:n
+data:n
+database:n
+date:n
+daughter:n
+daunting:adj
+dawn:n
+day:n
+dead:adj
+deadly:adj
+deaf:adj
+deal:v
+dean:n
+debate:v
+debt:n
+decade:n
+decay:n
+decide:v
+decipher:v
+deck:n
+decorate:v
+deduce:v
+deed:n
+deem:v
+deep:adj
+deer:n
+default:n
+defecate:v
+defect:n
+defend:v
+define:v
+definite:adj
+deflect:v
+deflection:n
+defy:v
+degree:n
+deity:n
+delegate:n
+deliberate:adj
+delicious:adj
+delight:n
+deliver:v
+demesne:n
+demise:n
+democracy:n
+demographic:n
+demon:n
+demonic:adj
+den:n
+denounce:v
+dense:adj
+dentist:n
+deny:v
+depart:v
+Department:n
+depend:v
+deploy:v
+deposit:v
+depressed:adj
+deprive:v
+deputy:n
+descend:v
+descendant:n
+describe:v
+desert:n
+desert:v
+design:n
+designate:v
+desire:v
+desk:n
+despair:n
+desperate:adj
+despite:prep
+dessert:n
+destination:n
+destiny:n
+destroy:v
+destroyer:n
+detail:n
+detain:v
+detect:v
+detecting:n
+detention:n
+deter:v
+deteriorate:v
+devastate:v
+develop:v
+device:n
+devil:n
+devise:v
+devote:v
+devotee:n
+dew:n
+diagnose:v
+diagram:n
+dial:v
+dialect:n
+diameter:n
+diamond:n
+diaper:n
+dice:n
+dictator:n
+dictionary:n
+die:v
+diesel oil:n
+differ:v
+different:adj
+difficult:adj
+dig:v
+dignity:n
+dim:adj
+dimension:n
+dine:v
+diner:n
+dinner:n
+diplomacy:n
+dire:adj
+direct:adj
+direct:v
+direction:n
+dirt:n
+dirty:adj
+disappoint:v
+disaster:n
+discharge:v
+disclose:v
+discount:n
+discourage:v
+discourse:n
+discover:v
+discriminate:v
+discuss:v
+disease:n
+disembowel:v
+disguise:n
+disgust:n
+dish:n
+disinfectant:n
+dismantle:v
+dismiss:v
+disperse:v
+display:v
+dispose:v
+disposition:n
+dispute:n
+disrupt:v
+disruption:n
+dissolve:v
+distance:n
+distill:v
+distilled spirits, hard liquor:n
+distilled spirits:n
+distilled water:n
+distinction:n
+distinguish:v
+distort:v
+distract:v
+distrain:
+distress:n
+disturb:v
+ditch:n
+dive bomber:n
+dive:v
+divert:v
+divide:v
+divination:n
+divine:v
+divorce:n
+do:v
+docking bay:n
+doctor:n
+doctrine:n
+document:n
+dodge:v
+dog:n
+dolphin:n
+dome:n
+domestic:adj
+dominate:v
+donate:v
+donjon:n
+donkey:n
+doom:n
+doom:v
+door:n
+doppelganger:n
+dot:n
+double-ended:adj
+double:adj
+double:n
+doubt:v
+dove:n
+down:adv
+download:n
+download:v
+downtown (commercial area of city):n
+draft harness:n
+drafthorse:n
+dragon:n
+drain:v
+draining:n
+drama:n
+drape:v
+draw:v
+drawer:n
+dream:n
+drench:v
+dress:n
+drift:v
+drill bit:n
+drill:n
+drink:n
+drinking horn:n
+drip:v
+drive:v
+driving whip:n
+drop:v
+drought:n
+drown:v
+drug:n
+druid:n
+drum:n
+drunk (inebriated):adj
+dry:adj
+dual:adj
+dualism:n
+dub:v
+dubious:adj
+duck:n
+duck:v
+due:adj
+duel:v
+dukes:n
+dulcimer:n
+dull:adj
+dumb:adj
+dumbek:n
+dump:n
+dumpling:n
+dune:n
+dungeon:n
+during:prep
+dusk:n
+dust:n
+dusty:adj
+dwarf:n
+dwell:v
+dye:n
+dynamic:adj
+dynamics:n
+each:det
+eager:adj
+eagle:n
+ear:n
+earl:n
+early:adj
+earn:v
+earnest:adj
+earring:n
+earth:n
+earthenware:n
+earthquake:n
+east:n
+easy:adj
+eat:v
+echo:n
+eclipse:n
+economy:n
+edge:n
+edit:v
+editor:n
+education:n
+eel:n
+eerie:adj
+effect:n
+effective:adj
+efficient:adj
+effort:n
+efreet:n
+egg:n
+ego:n
+eight:num
+eighteen:num
+either:adv
+eject:v
+elaborate:adj
+elaborate:v
+elastic:n
+elbow:n
+elder flower:n
+elect:v
+electoral:adj
+electric wire:n
+electricity:n
+electron:n
+element:n
+elemental:adj
+elemental:n
+elements:n
+elephant:n
+elevate:v
+elevated surface:n
+elevation:n
+eleven:num
+elf:n
+elimination:n
+elite:adj
+elk:n
+elm:n
+else:adv
+elsewhere:adv
+elusive:adj
+embargo:n
+embark:v
+embarrass:v
+embassy:n
+embed:v
+embody:v
+embrace:v
+embrasure:n
+embryo:n
+emerald:n
+emit:v
+emotion:n
+empath:n
+empathy:n
+emperor:n
+emphasis:n
+emphasize:v
+empire:n
+empirical:adj
+employ:v
+employee:n
+empty:adj
+enable:v
+enameled:adj
+enchant:v
+enchanted:adj
+enchanting:adj
+enchantment:n
+encompass:v
+encounter:n
+encourage:v
+end:n
+endangered:adj
+endive:n
+endorse:v
+enemy:n
+energy:n
+enforce:v
+engine:n
+engineer, mechanician:n
+engineers:n
+enhance:v
+enhancing:n
+enjoy:v
+enlist:v
+enough:det
+enrich:v
+enrollment:n
+ensemble:n
+ensign (second lieutenant):n
+ensorcelment:n
+entail:v
+entanglement:n
+enter:v
+enterprise:n
+enthusiasm:n
+entire:adj
+entities:n
+entity:n
+entry:n
+environment:n
+envision:v
+equal:adj
+equipment:n
+equivalent:adj
+erase:v
+erect:v
+erection:n
+ermine:n
+erode:v
+error:n
+erupt:v
+escalate:v
+escape:v
+escort:v
+especially:adv
+essence:n
+establish:v
+estimate:v
+estoc:n
+etcetera:adv
+ether:n
+ethic:n
+ethnicity:n
+evacuate:v
+evaporate:v
+even though:adv
+even:adv
+even:conj
+evening:n
+event:n
+eventually:adv
+ever:adv
+every:art
+everybody:pron
+everyone:pron
+everything:pron
+evidence:n
+evil:adj
+evil:n
+evocation:n
+evoke:v
+evolve:v
+exacerbate:v
+exact:adj
+exactly:adv
+exaggerate:v
+examination:n
+examine:n
+example:n
+excel:v
+excellent:adj
+except:conj
+except:prep
+excerpt:n
+excess:adj
+excite:v
+exclaim:v
+exclude:v
+exclusive:adj
+excrement:n
+excruciating:adj
+excuse:n
+execute:v
+exempt:adj
+exercise:v
+exert:v
+exhibit:n
+exile:n
+exist:v
+existence:n
+exit:n
+exorcist:n
+expect:v
+expel:v
+experience:n
+experiment:n
+expert:n
+expire:v
+explain:v
+explicit:adj
+explode:v
+exploit:v
+explore:v
+export:v
+expose:v
+expression:n
+extend:v
+extent:n
+exterminate:v
+external:adj
+extinct:adj
+extract:v
+extrasensory:adj
+extreme:n
+eye:n
+eyeball:n
+eyelash:n
+eyelid:n
+fabulous:adj
+facade:n
+face:n
+face:v
+fact:n
+factor:n
+faculty:n
+fail:v
+fair:adj
+fairly:adv
+fairy:n
+faith:n
+fake:adj
+falchion:n
+falcon:n
+fall:v
+false:adj
+familiar:adj
+familiar:n
+family:n
+fan (enthusiast):n
+fan:n
+fancy:adj
+fantastic:adj
+fantastical:adj
+fantasy:n
+far:adv
+farm:n
+fascinate:v
+fascist:adj
+fashion:n
+fashioning:n
+fast:adj
+fat:adj
+fat:n
+fate:n
+father:n
+fathom:v
+fatigue:n
+fatted:adj
+favor:v
+favorite:adj
+fear:n
+feast:n
+feat:n
+feather:n
+federal:adj
+feed:v
+feel:v
+feign:v
+fellow:adj
+felony:n
+female:n
+fence:n
+fence:v
+fennel:n
+fermented:adj
+ferry:n
+fertile:adj
+fertilize:v
+festival:n
+fetch:v
+fetus:n
+few:det
+fiber:n
+fiction:n
+fief:n
+field:n
+fierce:adj
+fifteen:num
+fig:n
+fight:n
+fighter plane:n
+figure:n
+fill:v
+film:n
+filter:n
+fin (of fish):n
+finally:adv
+find:v
+fine:adj
+finger-hole horn:n
+finger:n
+fingerprint:n
+finish:v
+fir:n
+fire extinguisher:n
+fire:n
+firearm:n
+fireball:n
+firebolt:n
+fireproofing:n
+firewood:n
+firm:adj
+first lieutenant:n
+first sergeant:n
+first:num
+fish net:n
+fish:n
+fishhook:n
+fist:n
+fit:n
+five:num
+fix:v
+fixture:n
+flag:n
+flagon:n
+flagship:n
+flail:n
+flake:n
+flame:n
+flammable:adj
+flank:n
+flash:n
+flashlight:n
+flask:n
+flat:adj
+flaunt:v
+flavor:n
+flavorsome:adj
+flaw:n
+flee:v
+flesh:n
+fletcher:n
+fletchings:n
+flexible:adj
+flick:v
+flimsy:adj
+fling:v
+flint and steel:n
+flint:n
+flirt:v
+float:v
+floatation:n
+flock:n
+flood:n
+floor loom:n
+floor:n
+flour:n
+flourish:v
+flow:n
+flower:n
+flu:n
+fluent:adj
+fluke:n
+flush:v
+flute:n
+fly:n
+fly:v
+foam:n
+focus:v
+fodder:n
+foe:n
+fog:n
+foil:n
+fold:v
+folder:n
+foliage:n
+follow:v
+fond:adj
+food that is also medicine:n
+food:n
+fool:n
+foot:n
+footfall:n
+footpath:n
+footprint:n
+for:prep
+force field:n
+force:n
+forecast:n
+forefather:n
+forehead:n
+foreign, alien:adj
+foreign:adj
+forensic:adj
+foresee:v
+forest:n
+forge:n
+forget:v
+forgive:v
+fork:n
+form:n
+formal:adj
+formation:n
+former:det
+formerly:adv
+formula:n
+fortress:n
+fortunate:adj
+forward:adv
+fossil:n
+foster:v
+found:v
+foundation:n
+fountain:n
+four:num
+fourteen:num
+fowl:n
+fox:n
+fracture:n
+fragile:adj
+frame:n
+franchise:n
+frankincense:n
+free:adj
+freehold:n
+freeze:v
+freezing:n
+frenzy:n
+frequent:adj
+fresh:adj
+freshen:v
+friction:n
+friend:n
+fringe:n
+frog:n
+from:prep
+frond:n
+front:n
+frontier:n
+frown:v
+frozen:adj
+fruit:n
+frustrate:v
+fry:v
+fuck:v
+fuel tank:n
+fuel:n
+fulfill:v
+full:adj
+fuller:n
+fumble:v
+fumes:n
+fund:n
+funeral:n
+fungus:n
+funny:adj
+fur:n
+furious:adj
+furniture:n
+furthermore:adv
+fury:n
+fuse:n
+fuselage:n
+fusion:n
+futile:adj
+future:n
+fuzzy:adj
+gag:n
+galaxy:n
+gallon:n
+gambeson:n
+gamble:v
+game bird:n
+game:n
+garbage:n
+garden:n
+garderobe:n
+gargoyle:n
+garlic:n
+garment:n
+garrote:n
+gas:n
+gasoline:n
+gasp:v
+gate:n
+gather:v
+gauge:n
+gauntlet:n
+gay:adj
+gear:v
+geas:n
+geek:n
+gem:n
+gemshorn:n
+gene:n
+general:adj
+general:n
+generate:v
+generic:adj
+genetics:n
+genocide:n
+gentle:adj
+geography:n
+gesture:v
+get:v
+ghost:n
+ghoul:n
+giant:n
+giggle:v
+ginger:n
+ginseng:n
+girdle:n
+girl:n
+girlfriend:n
+gittern:n
+give:v
+glacier:n
+glaive:n
+glamour:n
+glance:v
+glare:v
+glass:n
+glasses:n
+glide:v
+glitter/bright:adj
+glory:n
+glove:n
+glow:v
+glue:n
+gnats:n
+gnome:n
+go back:v
+go:v
+goal:n
+goat:n
+goblet:n
+goblin:n
+god:n
+goddess:n
+godling:n
+goetia:n
+goggles:n
+going:v
+gold leaf:n
+gold:n
+golem:n
+gong:n
+good:adj
+goodbye:interj
+goose:n
+gorgeous:adj
+gorget:n
+gorgon:n
+gorilla:n
+gossip:n
+gouge:v
+govern:v
+gown:n
+grace:n
+grade:n
+gradual:adj
+graduate:v
+grain:n
+grandfather:n
+grandmother:n
+granite:n
+grape:adj
+grape:n
+graph:n
+graphic:n
+grappling hook:n
+grasp:v
+grass:n
+grave:adj
+grave:n
+gravel:n
+gravity:n
+graze:v
+grease:n
+great axe:n
+great:adj
+greater:adj
+greave:n
+greed:n
+green:adj
+greenhouse:n
+grenade:n
+grenado:n
+grey:adj
+grid:n
+grill:n
+grim:adj
+grimoire:n
+grind:v
+grindstone:n
+grip:v
+grit:n
+groan:v
+gross:adj
+ground:n
+group:n
+grow:v
+gryphon:n
+guard:v
+guardian:n
+guerrilla:n
+guess:v
+guest:n
+guide:n
+guilt:n
+guilty:adj
+gum:n
+gun:n
+gut:n
+guy:n
+habit:n
+habitat:n
+hack:v
+hag (old woman):n
+haggle:v
+hail:v
+hair (of body):n
+hair (of head):n
+halberd:n
+half-track:n
+half:n
+halfling:n
+hallway:n
+halt:v
+ham:n
+hammer:n
+hammock:n
+hand-axe:n
+hand:n
+handcuff:v
+hang:v
+hangar:n
+hangover:n
+happen:v
+happy:adj
+harass:v
+harbor:n
+hard-tack:n
+hard:adj
+hardly:adv
+hardware:n
+harm:v
+harming:v
+harmony:n
+harp:n
+harpoon:n
+harpsichord:n
+hat:n
+hatch:n
+hatchet, hand-axe:n
+hatchet:n
+hate:v
+haunt:v
+haunting:n
+have to (must):v
+have:v
+haven:n
+hawk:n
+hay:n
+hazard:n
+hazelnut:n
+he/she/it:pron
+he:pron
+head:n
+head:v
+heal:v
+healing:n
+health:n
+heap:n
+hear:v
+heart:n
+heating:n
+heavy:adj
+hedge:n
+heel:n
+heir:n
+heirloom:n
+hell:n
+hello:interj
+helmet:n
+help:v
+hemp:n
+hen:n
+hence:adv
+herb:n
+herbal:adj
+herd:n
+here:adv
+heritage:n
+hero:n
+heroes:n
+herring:n
+hibernation:n
+hide:n
+hide:v
+hierarchy:n
+high:adj
+highlight:n
+hike:v
+hill:n
+hilt     :n
+hilt:n
+him/her/it:pron
+hint:v
+hip:n
+hippogriff:n
+hire:v
+his/hers/its:pron
+hiss:v
+history:n
+hit:v
+hive:n
+hoax:n
+hobby:n
+hoe:n
+hold:v
+hole:n
+holiday:n
+hollow:adj
+hologram:n
+holster:n
+holy:adj
+homage:n
+home:n
+homeland, fatherland, motherland:n
+homeland:n
+homespun:adj
+homicide:n
+homosexual:adj
+homunculus:n
+honest:adj
+honey:n
+honor:n
+hood:n
+hoof:n
+hook:n
+hop:v
+hope:v
+horehound:n
+horizon:n
+hormone:n
+horn:n
+horoscope:n
+horse collar:n
+horse:n
+horsemeat:n
+horseshoe:n
+hose:n
+hospital:n
+hostile:adj
+hot (attractive):adj
+hot:adj
+hound:n
+hour:n
+hourglass:n
+house cat:n
+house:n
+hover:v
+how:adv
+however:adv
+howitzer:n
+https://enwikipedia.org/wiki/List_of_colors_by_shade
+hub:n
+huddle:v
+hue:n
+hug:n
+huge:adj
+hull:n
+hum:v
+human:n
+humble:adj
+humiliate:v
+humor:n
+hundred:num
+hungry:adj
+hunt:v
+hunting:adj
+hurdle:n
+hurdy-gurdy:n
+hurl:v
+hurricane:n
+hurry:v
+hurt:v
+husband:n
+hut:n
+hybrid:n
+hydrogen:n
+hyperdrive:n
+hyperspace:n
+hypnotism:n
+hyssop:n
+I:pron
+ice:n
+icon:n
+idea:n
+ideal:n
+identify:v
+idiot:n
+idle:n
+idol:n
+if:conj
+ignite:v
+igniting:v
+ignition:n
+ignorant:adj
+ignore:v
+iguana:n
+illness:n
+illuminate:v
+illuminated:adj
+illuminator:n
+illusion:n
+illusory:adj
+illustrate:v
+image:n
+imaginary:adj
+imagine:v
+imitate:v
+immense:adj
+imminent:adj
+immune:adj
+imp:n
+impact:n
+impair:v
+impeachment:n
+implant:n
+implement:v
+imploding:v
+imply:v
+import:v
+important:adj
+impose:v
+impression:n
+improve:v
+impulse:n
+in:prep
+incantation:n
+incense:n
+incentive:n
+incident:n
+incineration:n
+include:v
+including:prep
+incorporate:v
+increase:v
+incubi:n
+indeed:adv
+indenture:n
+independence:n
+indicate:v
+indigo (plant):n
+individual:n
+induce:v
+indulge:v
+industry:n
+inevitably:adv
+infant:n
+Infantry:n
+infect:v
+infection:n
+inferior:adj
+infinite:adj
+inflict:v
+influence:v
+information:n
+ingot:n
+inhabit:v
+inhale:v
+inherit:v
+inhibit:v
+initiation:n
+initiative:n
+inject:v
+ink cake:n
+ink:n
+inkwell:n
+inn:n
+innocent:adj
+innovate:v
+input:n
+inquire:v
+insane:adj
+insect:n
+insecticide:n
+inside:prep
+insight:n
+insist:v
+inspect:v
+install:v
+instant:adj
+instead:adv
+instill:v
+institute:n
+instruct:v
+instrument:n
+insult:v
+insurance:n
+insure:v
+insurgent:n
+integrity:n
+intend:v
+intense:adj
+interact:v
+intercept:v
+interest:n
+interface:n
+interior:n
+internal:adj
+interpret:v
+interrogate:v
+interrupt:v
+intervene:v
+intervention:n
+interview:n
+intestine:n
+intimate:adj
+intimidate:v
+into:prep
+intricate:adj
+invade:v
+invent:v
+investigate:v
+investment:n
+investments:n
+investure:v
+invisibility:n
+invisible:adj
+invite:v
+invocation:n
+invoke:v
+involve:v
+iodine:n
+ion:n
+iron:adj
+iron:n
+irony:n
+irrigate:v
+is/am/to be:v
+island:n
+isolate:v
+isotope:n
+issue:n
+ivory:n
+jack:n
+jackal:n
+jacket:n
+jade:n
+jam:n
+jam:v
+jar:n
+jasmine:n
+javelin:n
+jaw:n
+jealous:adj
+jelly:n
+jerk:v
+jet:n
+jewel:n
+job:n
+join:v
+joint:n
+joke:n
+jolly:adj
+journey:n
+journeyman:n
+joy:n
+judge:v
+jug:n
+jump:v
+junction:n
+jungle:n
+juniper:n
+junk:n
+just:adv
+justice:n
+justify:v
+juvenile:adj
+keen:adj
+keep:v
+kelp:n
+kerosene:n
+kettle hat:n
+kettle:n
+key:n
+keyboard:n
+kick:v
+kid:n
+kidnap:v
+kidney:n
+kill:v
+kin:n
+kind:n
+kindergarten:n
+king:n
+kink (sharp twist):n
+kiosk:n
+kiss:v
+kit:n
+kitchen:n
+kite:n
+knee:n
+knife:n
+knight:n
+knob:n
+knock:v
+knot:n
+know:v
+label:n
+laboratory:n
+lace:n
+ladder:n
+ladle:n
+lag:n
+lake:n
+lamb:n
+lament:v
+lamp:n
+lance:n
+land:n
+landlord:n
+landscape:n
+language:n
+lantern oil:n
+lantern:n
+larch:n
+lard:n
+large:adj
+laser:n
+lasso:n
+last (final):adj
+last (previous):adj
+last:v
+late:adj
+lately:adv
+later:adv
+laugh:v
+laundry:n
+lava:n
+lavender:n
+law:n
+lay:v
+layer:v
+layout:n
+lazy:adj
+lead (soft metal):n
+lead:n
+lead:v
+leaf:n
+leak:v
+lean:v
+leap:v
+learn:v
+lease:n
+least:adv
+leather:n
+leave:v
+lecture:n
+leech:n
+left:adj
+leg:n
+legend:n
+leggings:n
+leisure:n
+lemon:n
+lend:v
+lens:n
+lentil:n
+leopard:n
+lesbian:n
+less:adv
+lesser:adj
+lesson:n
+let:v
+lethal:adj
+letter:n
+lettuce:n
+level:n
+lever:n
+leverage:n
+levitate:v
+levitation:n
+liberate:v
+liberty:n
+library:n
+license:n
+lich:n
+lichen:n
+lick:v
+lie:v
+lieutenant (lieutenant captain):n
+lieutenant colonel:n
+lieutenant commander (corvette captain):n
+lieutenant junior grade (first lieutenant):n
+life:n
+lift:v
+light (weight):adj
+light bulb:n
+light:n
+light:v
+lightning:n
+like:prep
+like:v
+likely:adj
+lime:n
+limestone:n
+limit:n
+limited:adj
+limp:v
+line:n
+linen:n
+linger:v
+linguistics:n
+link:n
+lion:n
+lip:n
+lipstick:n
+liquid:n
+liquor:n
+list:n
+listen:v
+litany:n
+literature:n
+litigation:n
+little:adj
+live:adj
+live:v
+liver:n
+livery:n
+livestock:n
+lizard:n
+loaf:n
+lobby:n
+lobster:n
+local:adj
+location:n
+lock-box:n
+lock:n
+locker:n
+lockpick:n
+lodge:n
+logic:n
+logo:n
+loin:n
+lone:adj
+long (want for):v
+long:adj
+longboat:n
+longbow:n
+look (appearance):n
+look:v
+loom:n
+loom:v
+loop:n
+loose:adj
+lord:n
+lore:n
+lose:v
+loser:n
+lot:n
+lots:pron
+lottery:n
+lotus:n
+loud:adj
+lounge:n
+louse:n
+love:v
+lovely:adj
+low:adj
+lower class:n
+loyal:adj
+luck:n
+lucrative:adj
+luggage:n
+lumber:n
+lump:n
+lunch:n
+lung:n
+lure:v
+lurk:v
+lush:adj
+lust:n
+lute:n
+luxury:n
+lyre:n
+lyrics:n
+mace:n
+machine:n
+mackerel:n
+maelstrom:n
+magazine:n
+mage, magi:n
+mage:n
+mageking:n
+magi:n
+magic:n
+magical:adj
+magister:n
+magma:n
+magnet:n
+magnitude:n
+magus:n
+maid:n
+mail:n
+main-gauche:n
+main:adj
+maintain:v
+major:adj
+major:n
+make:v
+making:n
+male:adj
+male:n
+malfunction:v
+malignant:adj
+mall:n
+mallet:n
+mammal:n
+man:n
+mana:n
+manacle:n
+manage:v
+mandala:n
+mandate:n
+mandatory:adj
+mane:n
+maneuver:v
+mango:n
+manic:adj
+manifest:v
+manipulate:v
+manner:n
+manta ray:n
+manticore:n
+mantis:n
+mantling (clothing):n
+mantra:n
+manual:adj
+manual:n
+manufacture:v
+manufacturing:n
+many:det
+map case:n
+map:n
+maple:n
+marathon:n
+marble:n
+march:v
+margin:n
+marinate:v
+marine:adj
+Marines:n
+marital:adj
+marjoram:n
+mark:v
+market:n
+marketing:n
+maroon:adj
+marquis:n
+marriage:n
+marry:v
+marsh:n
+martial:adj
+mask:n
+masonry:n
+mass:n
+massacre:n
+massage:v
+massive:adj
+master sergeant:n
+master:n
+masturbate:v
+mat:n
+match:n
+material:n
+mathematics:n
+matrix:n
+matter:n
+matter:v
+mattock:n
+mattress:n
+mature:adj
+maximum:n
+may:v
+maybe:adv
+maze:n
+me:pron
+mead:n
+meadow:n
+meal:n
+mean:adj
+mean:v
+meanwhile:adv
+measure:v
+meat:n
+mechanic:n
+media:n
+median:adj
+Medical Corps:n
+medicine:n
+meditate:v
+medium:adj
+medium:n
+meet:v
+melee:n
+melody:n
+meltdown:n
+member:n
+membrane:n
+memento:n
+memo:n
+memoir:n
+memorial:n
+mend:v
+mental:adj
+mention:v
+menu:n
+mercer, textile merchant:n
+mercer:
+merchandise:n
+merchant:n
+mercy:n
+mere:adj
+merely:adv
+merfolk:n
+merge:v
+merit:n
+merlon:n
+mess kit:n
+mess:n
+message:n
+metal:n
+metalic:adj
+metaphysics:n
+meteor:n
+metro:n
+metropolis:n
+microscope:n
+microwave:n
+mid:adj
+middle class:n
+middle:adj
+midnight:n
+midshipman:n
+midst:n
+might:v
+migraine:n
+migrate:v
+Military Police:n
+military:n
+militia:n
+milk:n
+mill:n
+millennium:n
+million:num
+millstone:n
+mimic:v
+mind:n
+mine detector:n
+mine sweeper:n
+mine:n
+mine:pron
+miniature:adj
+ministry:n
+minor:adj
+minotaur:n
+minstrel:n
+mint:n
+minute glass:n
+minute:n
+miracle:n
+mirror:n
+miscarriage:n
+misery:n
+miss (long for):v
+miss (not hit):v
+miss (not take advantage of):v
+missing:adj
+mist:n
+mistake:n
+mistletoe:n
+mistress:n
+mitten:n
+mix:v
+moan:v
+moat     :n
+moat:n
+mob:n
+mobile:adj
+mock:v
+model:n
+modify:n
+module:n
+moist:adj
+moisture:n
+mold:n
+mold:v
+mole:n
+molecular:adj
+molecule:n
+moment:n
+monastery:n
+monetary:adj
+money:n
+mongoose:n
+monitor:v
+monk:n
+monkey:n
+monoplane:n
+monopoly:n
+monster:n
+monsters:n
+month:n
+mood:n
+moon:n
+moral:adj
+morale:n
+more:det
+morning:n
+morningstar:n
+mortar:n
+mosquito netting:n
+mosquito:n
+moss:n
+most:adv
+motel:n
+mother:n
+motherland:n
+motif:n
+motion:n
+motor:n
+motte:n
+mound:n
+mountain:n
+mourn:v
+mouse:n
+mouth:n
+move:v
+much:det
+mud:n
+mudra:n
+muffle:v
+mug:n
+mule:n
+multiply:v
+mumble:v
+mummy:n
+municipal:adj
+murage (tax):n
+mural chamber:n
+mural passage:n
+mural tower:n
+mural:n
+murder:v
+murmur:v
+muscle:n
+mushroom:n
+music:n
+musk:n
+must:v
+mustache:n
+mustang:n
+mustard (spice):n
+mustard/spice:n
+mustard:n
+mutate:v
+mute:adj
+mute:v
+mutton:n
+myrrh:n
+myrtle:n
+mystery:n
+mystic:adj
+mystic:n
+mysticism:n
+myth:n
+mythos:n
+nag:v
+naga:n
+nail:n
+naive:adj
+naked:adj
+naker:n
+name:n
+naming, to name:v
+naming:n
+nap:v
+napkin:n
+narrative:adj
+narrow:adj
+nasty:adj
+nation:n
+native:adj
+nature:n
+naval:adj
+navigate:v
+navigation instruments:n
+navigation:n
+navy:n
+near:prep
+nebula:n
+necessary:adj
+neck:n
+necklace:n
+necromancy:n
+necromantic:adj
+need:v
+needle:n
+neglect:v
+negotiate:v
+neighbor:n
+neither:adv
+nephew:n
+nerve:n
+nervous:adj
+nest:n
+net:n
+network:n
+neutralizing:adj
+neutron:n
+never:adv
+nevertheless:adv
+new:adj
+news:n
+next:adj
+nice:adj
+niche:n
+nickname:n
+niece:n
+night:n
+nine:num
+nineteen:num
+nitrogen:n
+no:art
+no:interj
+noble:adj
+noble:n
+nobody:pron
+nocturnal:adj
+nod:v
+noise:n
+nominate:v
+noncommissioned officer:n
+none:pron
+nonsense:n
+noon:n
+nor:
+nor:conj
+normal:adj
+north:n
+nose:n
+nosebag:n
+nostril:n
+not:adv
+notable:adj
+note:n
+notebook:n
+nothing:pron
+notify:v
+notorious:adj
+nova:n
+novel:n
+novice:n
+now:adv
+nowadays:adv
+nowhere:adv
+noxious:adj
+nuclear:adj
+nucleus:n
+nude:adj
+number:n
+numerology:n
+nurse:n
+nursery:n
+nurture:v
+nut:n
+nutmeg:n
+nutrition:n
+oak:n
+oar:n
+oasis:n
+oat:n
+oath:n
+oatmeal:n
+oats:n
+obese:adj
+obey:v
+object:n
+objective:adj
+oblige:v
+obscure:adj
+obscurement:n
+observation plane:n
+observation:n
+observer:n
+obsess:v
+obvious:adj
+ocarina:n
+occult:adj
+occultist:n
+occur:v
+ocean:n
+ochre:adj
+octopus:n
+of:prep
+off:adv
+offend:v
+offense:n
+offer:v
+offering:n
+office:n
+officer:n
+official:n
+offspring:n
+often:adv
+ogre:n
+oil:n
+ok:adv
+okay:interj
+old:adj
+olfactory:adj
+olive oil:n
+olive:n
+on:prep
+once:adv
+one:num
+one:pron
+onion:n
+only:adj
+only:adv
+onto:prep
+opal:n
+open:v
+opening:n
+operate:v
+opinion:n
+opposite:n
+oppress:v
+optical:adj
+optimal:adj
+optimism:n
+option:n
+or:conj
+orange:adj
+orange:n
+orbit:n
+orc:n
+orchard:n
+orchestra:n
+orchid:n
+order:n
+order:v
+Ordnance:n
+oregano:n
+organ:n
+organetto:n
+organism:n
+organization:n
+organize:v
+orgasm:n
+origin:n
+ornament:n
+orphan:n
+orthodox:adj
+other:adj
+other:n
+others:n
+otherwise:adv
+otter:v
+ours:pron
+out of:prep
+out:adv
+out:prep
+outbreak:n
+outcome:n
+outline:n
+output:n
+outrageous:adj
+outside:prep
+oval:n
+ovation:n
+oven:n
+over:prep
+overdose:n
+overlook:v
+overseas:adj
+overwhelming:adj
+owe:v
+owl:n
+own:det
+owner:n
+ox yoke:n
+ox:n
+oxen:n
+oxygen:n
+oyster:n
+pace:v
+pack:v
+package:n
+packet:n
+packsaddle:n
+pact:n
+paddle:n
+pagan:n
+paganism:n
+page:n
+pain:n
+paint:n
+pair:n
+palace:n
+pale:adj
+palette:n
+palfrey:n
+palm (of hand):n
+palm tree:n
+palm:n
+pamper:v
+pan:n
+panic:v
+panorama:n
+panpipes:n
+pant:v
+pantheon:n
+pantry:n
+pants:n
+paper:n
+parachutist:n
+paradigm:n
+paradise:n
+paradox:n
+paragon:n
+paragraph:n
+parallel:adj
+paralyze:v
+parameter:n
+parapet:n
+parcel:n
+parchment:n
+pardon:v
+parent:n
+park:n
+parliament:n
+parlor:n
+parrot:n
+parry:v
+parsley:n
+parsnip:n
+part:n
+particle:n
+particular:adj
+partisan:adj
+partner:n
+party:n
+pass:v
+passion:n
+passive:adj
+password:n
+past:adj
+past:n
+pasta:n
+paste:n
+pastoral:adj
+pastry:n
+pasture:n
+patent:n
+path:n
+patient:adj
+patient:n
+patio:n
+patriot:n
+patrol:v
+patron:n
+pause:v
+pavage     :
+pave:v
+pavement:n
+pavilion:n
+paw:n
+pay:v
+pea:n
+peace:n
+peach:n
+peak:n
+pear:n
+pearl:n
+peasant:n
+peculiar:adj
+pedal:n
+pedestrian:n
+peek:v
+peel:n
+peer:v
+pell:n
+pen:n
+pencil:n
+pending:adj
+pendulum:n
+penetrate:v
+peninsula:n
+penis:n
+penknife:n
+pentacle:n
+pentagram:n
+peony:n
+pepper:n
+per:prep
+perceive:v
+percent:n
+perception:n
+perch:v
+perfect:adj
+perform:v
+perfume:n
+perhaps:adv
+peril:n
+perimeter:n
+period:n
+permanent:adj
+permission:n
+permit:v
+persist:v
+person:n
+persona:n
+pest:n
+pestilence:n
+petal:n
+petition:n
+petty officer:n
+petty:adj
+pewter:n
+phantasm:n
+pheasant:n
+phoenix:n
+phone:n
+photon:n
+physical:adj
+physiker:n
+physiker’s kit:n
+piano:n
+pick-axe:n
+pick:n
+pick:v
+picnic:n
+picture:n
+pie:n
+piece:n
+pierce:v
+pig:n
+pigeon:n
+pike (fish):n
+pike:n
+pilgrimage:n
+pillage:v
+pillar:n
+pillow:n
+pilot:n
+pin:n
+pinch:v
+pine:n
+pink:adj
+pint:n
+pipe organ:n
+pipe:n
+pirate:n
+pistol:n
+pitchfork:n
+pity:v
+place:n
+plague:n
+plain:adj
+plain:n
+plan:n
+plane:n
+planet:n
+planetoid:n
+plant:n
+plantation:n
+plaque:n
+plasma:n
+plastic:n
+plate:n
+plateau:n
+platinum:n
+platter:n
+plausible:adj
+play (stage play):n
+play:v
+player:n
+please:adv
+please:v
+pledge:v
+plenty:adj
+plenty:n
+plenty:pron
+pliers:n
+plight:n
+plot:n
+plough:n
+ploughland:n
+pluck:v
+plug:n
+plum:adj
+plum:n
+plus:prep
+plutonium:n
+ply:n
+pocket:n
+poem:n
+point:n
+poise:v
+poison:n
+polar:adj
+poleaxe:n
+police:n
+policy:n
+polish:v
+polite:adj
+politics:n
+pollute:v
+poltergeist:n
+pomegranate:n
+pommel:n
+pond:n
+ponder:v
+pontoons:n
+pony:n
+poor:adj
+poppy:n
+popular:adj
+populate:v
+population:n
+porcelain:n
+pork:n
+pornography:n
+port:n
+portable:adj
+portal:n
+portcullis     :n
+portcullis:n
+porter:n
+portion:n
+pose:v
+position:n
+possess:v
+possession:n
+possible:adj
+post:n
+post:v
+postern:n
+postpone:v
+postulate:v
+posture:n
+pot:n
+potato:n
+potion:n
+pottery:n
+pouch:n
+poultry:n
+powder:n
+power:n
+practical:adj
+practice:v
+practitioner:n
+pragmatic:adj
+prairie:n
+praise:v
+prawn:n
+pray:v
+prayer:n
+precede:v
+precedent:n
+precinct:n
+precious:adj
+precise:adj
+precognition:n
+predecessor:n
+predict:v
+pregnant:adj
+prejudice:n
+premier:adj
+premiere:n
+premise:n
+preparation:n
+prepare:v
+preparing:n
+prescribe:v
+present (gift):n
+present (time):n
+present:n
+present:v
+presidents:n
+pressure:n
+prestige:n
+prestigious:adj
+pretty:adj
+pretty:adv
+prevalent:adj
+prevent:v
+prey:n
+price:n
+prick:v
+pride:n
+priest-mage:n
+priest:n
+priestess:n
+primitive:adj
+prince:n
+princes:n
+princess:n
+print:n
+priority:n
+prism:n
+prison:n
+private:adj
+private:n
+privilege:n
+prize:n
+probable:adj
+probably:adv
+probe:v
+problem:n
+procedure:n
+process:n
+processor:n
+proclaim:v
+produce:v
+production:n
+profit:n
+program:n
+progress:n
+project:n
+projected:adj
+projectile:n
+projection:n
+prolonging:n
+promise:n
+promote:v
+prompt:adj
+prone:adj
+pronounce:v
+prop:v
+propaganda:n
+propel:v
+propeller:n
+property:n
+prophet:n
+proposed:adj
+prose:n
+prosecute:v
+prospect:n
+prostitute:n
+protagonist:n
+protect:v
+protection:n
+protein:n
+protest:v
+proton:n
+prototype:n
+proud:adj
+prove:v
+proverb:n
+provide:v
+province:n
+provision:n
+provoke:v
+prowl:v
+psaltery:n
+psychology:n
+pub:n
+pubic hair:n
+public:n
+publicity:n
+puddle:n
+pull:v
+pulley:n
+pulsar:n
+pulse:n
+pump:n
+pumpkin:n
+pun:n
+punch:n
+pungent:adj
+punish:v
+pupil:n
+puppet:n
+pure:adj
+purification:n
+purple:adj
+purpose:n
+purse:n
+push:v
+put:v
+putrescence:n
+putresence:n
+pyramid:n
+pyrogenesis:n
+python:n
+quail:n
+qualify:v
+qualitative:adj
+quality:n
+quantum:n
+quark:n
+quarrel:n
+quart:n
+quarter:adj
+quarter:n
+quarterhorse:n
+Quartermaster:n
+quarterstaff:n
+queen:n
+question:n
+quick:adj
+quickness:n
+quiet:adj
+quill pen:n
+quill:n
+quillon:n
+quilt:n
+quintain:
+quitclaim:n
+quite:adv
+quiver:n
+quota:n
+rabbit:n
+raccoon:n
+race (ethnicity):n
+race:n
+racket:n
+radar:n
+radiate:v
+radiation:n
+radical:adj
+radio:n
+radius:n
+raft:n
+rag:n
+rage:n
+raid:n
+rail:n
+rain:n
+rainbow:n
+raise:v
+rake:n
+rally:v
+ram:n
+ramp:n
+rampart:n
+random:adj
+range:n
+ranger:n
+rank (military):n
+rank (position):n
+rape:v
+rapier:n
+rare:adj
+rat:n
+rate:n
+rather:adv
+ration:n
+rational:adj
+rationale:n
+rattle:v
+ravel:v
+raven:n
+raw:adj
+ray:n
+razor:n
+reach:v
+react:v
+reactor:n
+read:v
+reading:n
+ready:adj
+real:adj
+realize:v
+really:adv
+realm:n
+reap:v
+rear:n
+rearrangement:n
+reason:n
+reasonable:adj
+rebec:n
+rebel:n
+receipt:n
+receive:v
+recent:adj
+reception (of office or hotel):n
+recession:n
+recipe:n
+recite:v
+recognize:v
+recommend:v
+reconcile:v
+record:n
+recorder:n
+recover:v
+recreation:n
+recruit:v
+recycle:v
+red:adj
+reduce:v
+redundant:adj
+reef:n
+refer:v
+reference:n
+referendum:n
+refine:v
+reflect:v
+reform:v
+refuse:v
+regarding:prep
+regardless:adv
+regiment:n
+region:n
+register:v
+regression:n
+regret:v
+regular:adj
+regulate:v
+rehearse:v
+reign, rule:n
+reign. rule:n
+reign:n
+reincarnation:n
+reinforce:v
+reject:v
+relate:v
+relationship:n
+relax:v
+release:v
+relevant:adj
+relic:n
+relieve:v
+religion:n
+reliquary:n
+reluctant:adj
+rely:v
+remain:v
+remains:n
+remark:v
+remarkable:adj
+remedy:n
+remember:v
+remind:v
+remnant:n
+remove:v
+render:v
+renegade:n
+renowned:adj
+rent:v
+rep:n
+repeat:v
+repertoire:n
+repetition:n
+replace:v
+replicate:v
+reply:v
+report:v
+reproduce:v
+reptile:n
+request:v
+require:v
+rescue:v
+research:n
+resemblance:n
+resent:v
+reservation:n
+reserve:v
+reservoir:n
+resident:n
+residue:n
+resist:av
+resist:v
+resistance:n
+resolution:n
+resort:n
+resource:n
+respect:v
+respond:v
+rest:v
+restaurant:n
+restoration:n
+restorative:adj
+restrain:v
+result:n
+retain:v
+retention:n
+retire:v
+retreat:v
+retrieve:v
+return:v
+reveal:v
+revenge:n
+reversal:n
+reverse:adj
+review:v
+revise:v
+revolution:n
+revolve:v
+reward:n
+rhetoric:n
+rhythm:n
+rib:n
+ribbon:n
+rice:n
+ride:v
+riding crop:n
+rifle:n
+right (correct):adj
+right (direction):adj
+right:adv
+right:n
+rigid:adj
+rigorous:adj
+ring:n
+ring:v
+rinse:v
+riot:n
+ripe:adj
+rise:v
+risk:n
+rite:n
+ritual, rite:n
+ritual:n
+rival:n
+river:n
+road:n
+roam:v
+roar:v
+roast:v
+rob:v
+robe:n
+robot:n
+robust:adj
+rock (move back and forth):v
+rock drill:n
+rock:n
+rocket:n
+rod:n
+rodent:n
+role:n
+roll:n
+roll:v
+romance:n
+roof:n
+rookie:n
+room (of house):n
+room (space):n
+rooster:n
+root:n
+rope:n
+rose:adj
+rose:n
+rosemary:n
+roster:n
+rotate:v
+rough:adj
+round:adj
+row:n
+row:v
+rowboat:n
+rub:v
+rubber:n
+rubbish:n
+rubble:n
+ruby:n
+rude:adj
+rue:n
+ruffle:v
+rug:n
+rugged:adj
+ruin:n
+ruin:v
+rule:n
+rumor:n
+run:v
+rune:n
+runes:n
+runic:adj
+runway:n
+rush-light:n
+rust:adj
+rust:n
+rye:n
+sabre:n
+sack:n
+sackbut:n
+sacred:adj
+sacrifice:n
+sad:adj
+saddle bag:n
+saddle blanket:n
+saddle:n
+safe:adj
+saffron:n
+sage (plant):n
+sage, scholar:n
+sage, wise:adj
+sage:n
+sail:n
+sail:v
+saint:n
+salamander:n
+salami:n
+sale:n
+salmon:n
+salon:n
+salt cellar:n
+salt:n
+salted:adj
+salve:n
+same:det
+sample:n
+sanctuary:n
+sand:n
+sandal:n
+sap (tree):n
+sap (weapon):n
+sap:n
+sapphire:n
+sarcastic:adj
+satin:n
+satisfy:v
+saturate:v
+saucepan:n
+sausage:n
+save (put aside):v
+savvy:adj
+saw:n
+say:v
+scabbard:n
+scale:n
+scallions:n
+scan:v
+scapegoat:n
+scar:n
+scarce:adj
+scared:adj
+scarf:n
+scarlet:adj
+scarring:n
+scene:n
+schedule:n
+scholar-mage:n
+scholar:n
+school:n
+science:n
+scimitar:n
+scissors:n
+scone:n
+scoop:n
+scoop:v
+scope:n
+scorpion:n
+scout:n
+scout:v
+scramble:v
+scrap:n
+scrape:v
+scratch:v
+scream:v
+screw:n
+screwdriver:n
+scribe, scrivener:n
+scribe:n
+scriptorium:n
+scrivener:n
+scroll:n
+scrub:v
+scrutiny:n
+scutage (military tax):n
+scythe:n
+sea:n
+seabird:n
+seafood:n
+seal:n
+seal:v
+sealing wax:n
+seaman:n
+search:v
+searchlight:n
+season:n
+seasoning:n
+seat:n
+seaweed:n
+secnt:n
+second lieutenant:n
+second:adv
+second:n
+second:num
+secret:n
+section:n
+sector:n
+security:n
+sediment:n
+see:v
+seed:n
+seek:v
+seem:v
+segment:n
+segregate:n
+segregate:v
+seizure:n
+select:adj
+selected:adj
+self:n
+selfbow (weapon):n
+selfish:adj
+sell:v
+semen:n
+semester:n
+semiprecious:adj
+send:v
+sending:n
+sensation:n
+sense:n
+senses:n
+sensible:adj
+sensitivity:n
+sensors:n
+sentence:v
+sentients:n
+separate:v
+sequence:n
+serf:n
+sergeant (third sergeant):n
+sergeant:n
+serial:adj
+series:n
+serious:adj
+sermon:n
+serpent:n
+servant:n
+serve:v
+set:n
+set:v
+settle (land):v
+seven:num
+seventeen:num
+several:det
+severe:adj
+sew:v
+sewage:n
+sewer:n
+sex:n
+shack:n
+shade:n
+shadow:n
+shadowed:adj
+shaft:n
+shake:v
+shaman:n
+shame:n
+shape:n
+share:v
+shark:n
+sharp:adj
+shatter:v
+shave:v
+shawm, oboe:n
+shawm:n
+shears:n
+shed:n
+sheep:n
+sheet:n
+shelf:n
+shell:n
+shellfish:n
+shelter:n
+shield:n
+shine:v
+shiny:adj
+ship:n
+shirt:n
+shit:n
+shiver:v
+shock:v
+shoe:n
+shoot:v
+shooting star:n
+shooting:n
+shop:v
+shore:n
+short:adj
+shortage:n
+shortsword:n
+shot:n
+should:v
+shoulder:n
+shout:v
+shove:v
+shovel:n
+show:n
+show:v
+showcase:n
+shower:n
+shrimp:n
+shrine:n
+shrink:v
+shrub:n
+shudder:v
+shuffle:v
+shut/close:v
+shuttered:adj
+shuttle:n
+sibling:n
+sick:adj
+sickle:n
+side-saddle:n
+side:n
+sidewalk:n
+siege:n
+sigh:v
+sight:n
+sigil:n
+sign:n
+Signal Corps:n
+significant:adj
+silent:adj
+silicone:n
+silk:n
+silver:adj
+silver:n
+silvered:adj
+similar:adj
+simmer:v
+simple:adj
+simulacrum:n
+simultaneous:adj
+sin:n
+since:conj
+sincere:adj
+single:adj
+sink:v
+sinking:n
+sip:v
+siren:n
+sister:n
+sit:v
+site:n
+situate:v
+situation:n
+six:num
+sixteen:num
+size:n
+skate:v
+skeleton:n
+skeptic:n
+sketch:n
+skid:v
+skill:n
+skillet:n
+skin/hide:n
+skin:n
+skin:v
+skinny:adj
+skirmish:n
+skirt:n
+skull:n
+sky:n
+slab:n
+slack:n
+slant:n
+slash:v
+slate:n
+slaughter:v
+sleek:adj
+sleep:n
+sleep:v
+sleeping furs:n
+slender:adj
+slice:n
+slide:v
+slim (of a person):adj
+sling:n
+slip:v
+slipper:n
+slit:n
+slogan:n
+slope:n
+slow:adj
+slowness:n
+slump:v
+smack:v
+small:adj
+smart:adj
+smash:v
+smell (emit odor):v
+smell (sense with nose):v
+smile:v
+smirk:v
+smite:v
+smoke:n
+smoked:adj
+smoking:adj
+smooth:adj
+smuggle:v
+snack:n
+snail:n
+snake:n
+snap:v
+snares:n
+snatch:v
+sneak:v
+sneeze:v
+sniff:v
+sniper:n
+snow:n
+so:adv
+soap:n
+soar:v
+sob:v
+sober:adj
+social:adj
+society:n
+sock:n
+sofa:n
+soft:adj
+software:n
+soil:n
+soldier:n
+sole:adj
+solo:n
+somebody:pron
+somehow:adv
+someone:pron
+something:pron
+sometimes:adv
+somewhat:adv
+somewhere:adv
+son:n
+sonar:n
+song:n
+soon:adv
+sophisticated:adj
+sorcerer:n
+sorceress:n
+sorceries:n
+sore:adj
+sorrow:n
+sort:v
+soul:n
+sound:n
+soup:n
+sour:adj
+source:n
+south:n
+souvenir:n
+sovereign:n
+spa:n
+space (outer):n
+space (room):n
+spacecraft:n
+spaceport:n
+spaceship:n
+spacesuit:n
+spade:n
+span:n
+spare:adj
+spark plugs:n
+spark:n
+spawn:v
+speak:v
+speaking:n
+spear:n
+special:adj
+specialist:n
+specialty:n
+species:n
+specific:adj
+specimen:n
+spectacle:n
+spectacles/glasses:n
+spectate:v
+spectrum:n
+speculate:v
+speed:n
+speeder:n
+spell (of magic):n
+spell (of time):n
+spell:n
+spell:v
+spend:v
+sphere:n
+sphinx:n
+spice:n
+spider:n
+spike:n
+spill:v
+spin:v
+spinach:n
+spindle:n
+spine:n
+spirit:n
+spit:v
+splash:v
+split:v
+spoil:v
+sponge:n
+sponsor:v
+spontaneous:adj
+spook:v
+spoon:n
+sport:n
+spot:v
+spotlight:n
+spray:v
+spread:v
+spring (coil):n
+spring (season):n
+spring:v
+sprout:v
+spruce:n
+spur:n
+spy:n
+spyglass:n
+squad:n
+squadron:n
+square:n
+squash:n
+squash:v
+squat:v
+squeeze:v
+squid:n
+squint:v
+squirrel:n
+stab:v
+stable:adj
+stack:v
+staff sergeant(second sergeant):n
+staff:n
+stag:n
+stage:n
+stain:v
+stake:n
+stalemate:n
+stalk:v
+stall:n
+stall:v
+stamp:v
+stand:n
+stand:v
+standard:adj
+standard:n
+staple:n
+star:n
+stare:v
+stark:adj
+stars:n
+start:v
+startle:v
+starve:v
+state:n
+state:v
+static:adj
+station:n
+statistic:n
+staves:n
+stay:n
+stay:v
+steak:n
+steal:v
+steam:n
+steel:n
+steep:adj
+stem:n
+step:v
+stereotype:n
+stew:n
+stick (of tree):n
+stick (of wood):n
+stick:v
+sticky:adj
+stiff:adj
+still:adv
+stir:v
+stitch:n
+stitch:v
+stock:n
+stoke:v
+stomach:n
+stone:n
+stool:n
+stop:v
+store:n
+storm:n
+story, narrative:n
+story:n
+stout:adj
+stout:n
+straight:adj
+straight:n
+straighten:v
+strand:n
+strange:adj
+strap:n
+strategy:n
+straw:n
+strawberry:n
+streak:n
+stream:n
+street:n
+stress:v
+stretch:v
+stride:n
+strike:v
+string:n
+strip:n
+strip:v
+stripe:n
+strive:v
+stroke:v
+stroll:v
+strong:adj
+structure:n
+struggle:n
+stubborn:adj
+student:n
+study:v
+stuff:n
+stumble:v
+stump:n
+stun:v
+stunning:adj
+stupid:adj
+sturdy:adj
+style:n
+stylus:n
+subject:n
+subjective:adj
+subsidize:v
+substantial:adj
+substitute:v
+subtle:adj
+suburb:n
+success:n
+succession:n
+succubi:n
+such:det
+suck:v
+suckling pig:n
+sudden:adj
+sudden:adv
+sufficient:adj
+sugar:n
+suggest:v
+suitcase:n
+sum:n
+summary:n
+summer:n
+summon:v
+summoning:n
+sun:n
+sundial:n
+sunflower:n
+sunglasses:n
+superb:adj
+supernatural:adj
+supernatural:n
+supervise:v
+supervisor:n
+supplement:v
+supplication:n
+supply:n
+support:v
+suppress:v
+surcoat:n
+sure:adj
+surf:n
+surface:n
+surge:n
+surgery:n
+surpass:v
+surplus:n
+surprise:v
+surrender:v
+surround:v
+survive:v
+suspect:n
+suspicious:adj
+sustain:v
+swallow:v
+swamp:n
+swan:n
+swarm:n
+sway:v
+sweat:v
+sweater:n
+sweep:v
+sweet potato:n
+sweet:adj
+sweeten:v
+sweetheart:n
+swift:adj
+swim:v
+swing:v
+swipe:v
+swirl:v
+switch:n
+sword:n
+symbol:n
+sympathy:n
+sync:v
+synthetic:adj
+syrup:n
+system:n
+tab:n
+table loom:n
+table:n
+tablet:n
+tabor (drum):n
+tabor:n
+tackle:v
+tactical:adj
+tactile:adj
+tag:n
+tail:n
+tailor:n
+take out:v
+take:v
+talcum powder:n
+talent:n
+talisman:n
+talk:v
+tall:adj
+tallow:n
+tambourine:n
+tan:adj
+tan:v
+tangible:adj
+tangle:n
+tangle:v
+tankard:n
+tankman:n
+tantra:n
+tap:n
+tap:v
+tape:n
+tapestry:n
+target:n
+tariff:n
+tarnish:n
+tarot:n
+tarp:n
+tart:n
+taste:v
+tattoo:n
+taupe:adj
+tax:n
+taxi:n
+tea:n
+teach:v
+team:n
+teapot:n
+tear:n
+tease:v
+technical:adj
+technology:n
+tee:n
+teenager:n
+telekinesis:n
+telekinetic:adj
+telepathy:n
+telephone:n
+telescope:n
+television:n
+tell:v
+temper:n
+temperature:n
+temple:n
+temporary:adj
+tempt:v
+ten:num
+tenant:n
+tense:adj
+tension:n
+tent:n
+term:n
+terminate:v
+terrace:n
+terrain:n
+terrible:adj
+territory:n
+terror:n
+test:v
+testify:v
+text:n
+textile:n
+than:conj
+thank:v
+that:adv
+that:conj
+that:det
+thaumaturgie:n
+thaumaturgy:n
+the:art
+their:pron
+theirs:pron
+them:pron
+then:adv
+theology:n
+theory:n
+therapy:n
+there:adv
+therefore:adv
+thermal:adj
+these:det
+thesis:n
+theurgy:n
+they:pron
+thick:adj
+thigh:n
+thin (of an object):adj
+thin:adj
+thing:n
+think:v
+third:adv
+third:num
+thirsty:adj
+thirteen:num
+this:det
+thorn:n
+thorns:n
+thorough:adj
+those:det
+though:conj
+thousand:num
+thread:n
+threat:n
+threaten:
+threaten:v
+three:num
+thrill:v
+throat:n
+throne:n
+throttle:n
+through:prep
+throughout:prep
+throw:v
+thrust:v
+thumb:n
+thump:v
+thunder:n
+thus:adv
+thyme:n
+tick:v
+ticket:n
+tide:n
+tie:n
+tie:v
+tiger:n
+tight:adj
+till:prep
+tilt:v
+time:n
+tin (box):n
+tin:n
+tinderbox:n
+tire:n
+tired:adj
+titanium:n
+title:n
+to him/her/it:pron
+to me:pron
+to them:pron
+to us:pron
+to you (pl.):pron
+to you:pron
+to:prep
+toad:n
+toast:n
+tobacco:n
+today:adv
+toddler:n
+toe:n
+together:adv
+toilet perfume:n
+toilet:n
+tolerate:v
+tomato:n
+tomb:n
+tomorrow:adv
+tongs:n
+tongue:n
+tonight:adv
+too:adv
+tool:n
+tooth:n
+top:n
+topic:n
+topple:v
+torch:n
+tornado:n
+torpedo:n
+torso:n
+torture:v
+toss:v
+total:n
+totem:n
+touch:v
+tour:n
+tourist:n
+tourney:n
+toward:prep
+towel:n
+tower:n
+town:n
+toy:n
+track:n
+tracking:n
+trade:n
+tradition:n
+trail:n
+trailer:n
+train:n
+train:v
+trance:n
+tranquil:adj
+transcend:v
+transcript:n
+transfer:v
+transformation:n
+transition:n
+translate:v
+transmutation:n
+transmute:v
+transparent:adj
+transplant:n
+transport:n
+trap:n
+trash:n
+trauma:n
+travel:v
+tray:n
+tread:v
+treason:n
+treasure/wealth:n
+treat:v
+trebuchet:n
+tree:n
+tremble:v
+tremor:n
+trench:n
+trencher:n
+trial:n
+triangle:n
+tribunal:n
+tribute:n
+trick:v
+trident:n
+trigger:n
+trim:n
+trip:n
+trip:v
+triple:adj
+tripod:n
+trivia:n
+troll:n
+troopship:n
+trophy:n
+tropical:adj
+troubador, bard:n
+trouble:n
+trousers:n
+trout:n
+truck:n
+true:adj
+trumpet:n
+trumpet:v
+trunk:n
+try:v
+tub:n
+tug:v
+tuition:n
+tulwar:n
+tumble:v
+tuna:n
+tunic:n
+tunnel:n
+tunneling:n
+turbine:n
+turf:n
+turkey:n
+turmoil:n
+turn [sth.] on:v
+turn:v
+turnip:n
+turtle:n
+tusk:n
+tweak:v
+twelve:num
+twenty:num
+twilight:n
+twine:n
+twist:v
+twisted:adj
+twitch:v
+two-handed sword:n
+two:num
+type:n
+ugly:adj
+ultramarine:adj
+umbrella:n
+unborn:adj
+uncle:n
+uncover:v
+undead:adj
+undead:n
+under:prep
+underscore:v
+understand:v
+underwear:n
+unfortunate:adj
+unicorn:n
+uniform:n
+unit:n
+unity:n
+universe:n
+university:n
+unless:conj
+unlock:v
+unseen:adj
+untie:v
+until:conj
+unwell:adj
+up:adv
+update:n
+upload:v
+upon:prep
+upper class:n
+upset:adj
+uranium:n
+urge:n
+urgent:adj
+urine:n
+urn:n
+us:pron
+use:v
+useful:adj
+usher:v
+using:v
+usually:adv
+vacant:adj
+vacation:n
+vacuum:n
+vagina:n
+vague:adj
+valet:n
+valid:adj
+validate:v
+valley:n
+value:n
+valve:n
+vampire:n
+vanilla:n
+vapor:n
+variable:n
+various:adj
+vary:v
+vase:n
+vassal:n
+veal:n
+vegetable:n
+vehicle:n
+veil:n
+vein:n
+vellum:n
+velocity:n
+velvet:n
+veneer:n
+venison:n
+venom:n
+vent:n
+ventriloquism:n
+venue:n
+veranda:n
+verge:n
+verify:v
+verse:n
+versus:prep
+vertical:adj
+very:adv
+vest:n
+veteran:n
+veto:v
+via:prep
+viable:adj
+vial:n
+vibrant:adj
+vibrate:v
+vicious:adj
+victim:n
+victory:n
+video:n
+view:n
+viewscreen:n
+vigorous:adj
+village:n
+villain:n
+vindicate:v
+vine:n
+vinegar:n
+vintage:n
+viol:n
+violate:v
+violent:adj
+violin:n
+virility:n
+virtual:adj
+visa:n
+vision:n
+visit:v
+visitation:n
+visual:adj
+vivid:adj
+vocabulary:n
+voice:n
+void:n
+volatile:adj
+volcano:n
+vole:n
+volume:n
+volunteer:v
+vomit:v
+vortex:n
+vote:v
+voucher:n
+vow:v
+voyage:n
+vulgar:adj
+vulture:n
+wacky:adj
+wade:v
+wage:n
+wagon:n
+waist:n
+wait:v
+waiter:n
+wake:v
+walk:v
+walking:n
+wall:n
+wallet:n
+walnut:adj
+walnut:n
+wand:n
+wander:v
+wands:n
+want:v
+war:n
+ward (against):v
+ward:n
+ward:v
+warding:n
+wardrobe:n
+wardship:n
+warhammer:n
+warlock:n
+warm:adj
+warn:v
+warping:v
+warrant officer:n
+warrant:n
+warship:n
+wary:adj
+wash:v
+waste:v
+wasting:n
+watch:v
+water:n
+watercress:n
+waterfall:n
+waterskin:n
+wave (ocean):n
+wave (salutation):v
+wave:n
+wax:n
+waxed:adj
+way:n
+we:pron
+weak:adj
+wealth:n
+wealthy:adj
+weapon:n
+wear:v
+weasel:n
+weather:n
+weave:n
+web:n
+wedding:n
+wedge:n
+week:n
+weep:v
+weight:n
+welcome:interj
+well:adv
+well:interj
+well:n
+were-creature:n
+west:n
+wet:adj
+whale:n
+what:det
+whatever:det
+wheat:n
+wheel:n
+wheelbarrow:n
+when:conj
+where:adv
+whether:conj
+whey:n
+which:det
+while:conj
+whimsical:adj
+whine:v
+whip:n
+whirlwind:n
+whisk:v
+whiskey:n
+whisper:v
+whistle:n
+whistle:v
+white:adj
+whitewash:n
+who:pron
+whole wheat:adj
+whole:adj
+wholesome:adj
+whore:n
+whose:det
+why:adv
+wide:adj
+widow:n
+wield:v
+wife:n
+wild boar:n
+wilderness:n
+wildlife:n
+will:n
+will:v
+wilt:v
+win:v
+wind:n
+wind:v
+window:n
+wine:n
+wineskin:n
+wing:n
+wink:v
+winter:n
+wire:n
+wise:adj
+wish:n
+wisteria:adj
+wisteria:n
+wit:n
+witch:n
+with:prep
+withdraw:v
+within:prep
+without:prep
+withstand:v
+witness:v
+wolf:n
+woman:n
+wonder:v
+wonderful:adj
+wood-axe:n
+wood-chisel:n
+wood-drill:n
+wood:n
+wooden:adj
+wool:n
+woolen:adj
+word:n
+work:v
+workshop:n
+world:n
+worm:n
+worry:v
+worship:v
+worth:adj
+worthy:adj
+would:v
+wound:n
+wraith:n
+wrap:v
+wreck:v
+wrestle:v
+wrinkle:n
+wrist:n
+write:v
+writer:n
+writhe:v
+writing:n
+wrong:adj
+wyvern:n
+x-ray:n
+yacht:n
+yank:v
+yardstick:n
+yawn:n
+year:n
+yell:v
+yellow:adj
+yes:interj
+yesterday:adv
+yet:adv
+yogurt:n
+you (object pl.):pron
+you (subject pl.):pron
+you:pron
+young:adj
+yours (pl.):pron
+yours:pron
+zero:num
+zil:n
+zither:n
+zombie:n
+zoo:n
+
+ACT.OF = Random
+ADVERB = Random
+AUG = Random
+DIM = Random
+DOER = IF \V THEN -er ELSE -r
+HAVING.QUALITY.OF = Random
+LIKELY.TO = Random
+NOUN.TO.VERB = Random
+OPPOSITE = Random
+PLACE.OF = Random
+PRODUCT.OF = Random
+QUALITY.OF.BEING = Random
+RELATING.TO = Random
+RESULT.OF.DOING = Random
+TENDING.TO = RANDOM
+TO.CREATE = Random
+TO.MAKE = Random
+VERB.TO.NOUN = Random
+
+ability:n = able-ACT.OF
+absence:n = absen-QUALITY.OF.BEING
+absent:adj = absen-HAVING.QUALITY.OF
+academic:adj = academy-RELATING.TO
+accelerator:n = accelerate-DOER
+accountant:n = account-DOER
+agreement:n = agree-ACT.OF
+aircraft carrier:n = airplane-ship
+alchemist:n = alchemy-DOER
+analysis:n = analyze-ACT.OF
+anger:n = angry-TO.CREATE-QUALITY.OF.BEING
+antigravity:adj = gravity-OPPOSITE-QUALITY.OF.BEING
+antigravity:n = gravity-OPPOSITE
+antipersonnel mine:n = person-bomb
+antitank guns:n = OPPOSITE-armor-canon
+anxiety:n = anxious-TO.CREATE-QUALITY.OF.BEING
+apothecary:n = drug-PLACE.OF
+argument:n = argue-ACT.OF
+armored:n = armor-group
+armory:n = weapon-PLACE.OF
+arrival:n = arrive-ACT.OF
+artillery:n = canon-DOER
+artist:n = art-DOER
+astral plane:n = astral-PLACE.OF
+astral projection:n = astral-QUALITY.OF.BEING
+attack:v = attack-NOUN.TO.VERB
+author:n = write-DOER
+bakery:n = bake-PLACE.OF
+barbed wire:n = wire-thorn
+bead:v = bead-NOUN.TO.VERB
+beauty:n = beautiful-TO.CREATE-QUALITY.OF.BEING
+behavior:n = behave (act)-ACT.OF
+belief:n = believe-ACT.OF
+bleached:adj = bleach-QUALITY.OF.BEING
+block:v = block-NOUN.TO.VERB
+bloody:adj = blood-RELATING.TO
+blossom:v = blossom-NOUN.TO.VERB
+braid:v = braid-NOUN.TO.VERB
+brake fluid:n = brakes-oil:n
+breed:v = breed-NOUN.TO.VERB
+bribe:v = bribe-NOUN.TO.VERB
+broken:adj = break-RESULT.OF.DOING
+brush:v = brush-NOUN.TO.VERB
+burn:v = burn-NOUN.TO.VERB
+burp:n = burp-ACT.OF
+cafe:n = coffee-PLACE.OF
+caller:n = call-DOER
+camp:v = camp-NOUN.TO.VERB
+careful:adj = care-RESULT.OF.DOING
+cargo ship:n = cargo-ship
+caterpillar track:n = worm-wheel
+central:adj = center-RELATING.TO
+charge:v = charge-NOUN.TO.VERB
+chef:n = cook-DOER
+choice:n = choose-ACT.OF
+clearly:adv = clear-ADVERB
+comb:v = comb-NOUN.TO.VERB
+confidence:n = confident-TO.CREATE-QUALITY.OF.BEING
+craft:v = craft-NOUN.TO.VERB
+criminal:adj = crime-RELATING.TO
+curse:v = curse-NOUN.TO.VERB
+cut:v = cut-NOUN.TO.VERB
+dance:v = dance-NOUN.TO.VERB
+dancer:n = dance:v-DOER
+dangerous:adj = danger-RELATING.TO
+darkness:n = dark-TO.CREATE-QUALITY.OF.BEING
+dart:v = dart-NOUN.TO.VERB
+dealer:n = deal-DOER
+death:n = die-ACT.OF
+deathcurse:n = death-curse
+decay:v = decay-NOUN.TO.VERB
+decision:n = decide-ACT.OF
+defense:n = defend-ACT.OF
+description:n = describe-ACT.OF
+destruction:n = destroy-ACT.OF
+development:n = develop-ACT.OF
+difference:n = different-TO.CREATE-QUALITY.OF.BEING
+dirty:adj = dirt-RELATING.TO
+discovery:n = discover-ACT.OF
+disguise:v = disguise-NOUN.TO.VERB
+distant:adj = distance-RELATING.TO
+divine:adj = god-RELATING.TO
+diviner:n = future-predict-DOER
+division:n = divide-ACT.OF
+drill:v = drill-NOUN.TO.VERB
+drink:v = drink-NOUN.TO.VERB
+driver:n = drive-DOER
+dye:v = dye-NOUN.TO.VERB
+economic:adj = economy-RELATING.TO
+election:n = elect-ACT.OF
+employer:n = employ-DOER
+engine room:n = engine-PLACE.OF
+evident, obvious:adj = evidence-RELATING.TO
+excitement:n = excite-ACT.OF
+expensive:adj = cost-RELATING.TO
+experience:v = experience-NOUN.TO.VERB
+explanation:n = explain-ACT.OF
+failure:n = fail-ACT.OF
+farmer:n = farm-DOER
+fashionable:adj = fashion-RELATING.TO
+feeling:n = feel-ACT.OF
+fertility:n = fertile-TO.CREATE-QUALITY.OF.BEING
+fight:v = fight-NOUN.TO.VERB
+final:adj = finish-RESULT.OF.DOING
+fire:v = fire-NOUN.TO.VERB
+fit:v = fit-NOUN.TO.VERB
+flavor:v = flavor-TO.CREATE
+flight:n = fly-ACT.OF
+florist:n = flower-DOER
+foreigner:n = foreign-DOER
+forge:v = forge-NOUN.TO.VERB
+forgetful:adj = forget-RESULT.OF.DOING
+friendly:adj = friend-RELATING.TO
+frost:n = freeze-ACT.OF
+gardener:n = garden-DOER
+glue:v = glue-NOUN.TO.VERB
+golden:adj = gold-RELATING.TO
+government:n = govern-ACT.OF
+government official:n = government-DOER
+graveyard:n = grave-PLACE.OF
+greedy:adj = greed-RELATING.TO
+grocer:n = vegetable-PLACE.OF
+growth:n = grow-ACT.OF
+gunner:n = gun-DOER
+hairy:adj = hair-RELATING.TO
+happiness:n = happy-TO.CREATE-QUALITY.OF.BEING
+healer:n = heal-DOER
+healthy:adj = health-RELATING.TO
+hearing:n = hear-ACT.OF
+heat:n = hot-TO.CREATE-QUALITY.OF.BEING
+homely:adj = home-RELATING.TO
+hunter:n = hunt-DOER
+identity:n = identify-ACT.OF
+idiotic:adj = idiot-RELATING.TO
+imperial:adj = empire-RELATING.TO
+indenture:v = indenture-TO.CREATE
+indigo:adj = indigo (plant)-RELATING.TO
+industrial:adj = industry-RELATING.TO
+ironic:adj = irony-RELATING.TO
+keeper:n = keep-DOER
+killer:n = kill-DOER
+kitten:n = cat-DIM
+knot:v = knot-TO.CREATE
+knowledge:n = know-ACT.OF
+lawyer:n = law-DOER
+leader:n = lead-DOER
+legal:adj = law-RELATING.TO
+length:n = long-TO.CREATE-QUALITY.OF.BEING
+locksmith:n = lock-DOER
+loss:n = lose-ACT.OF
+lover:n = love-DOER
+lucky:adj = luck-RELATING.TO
+machine gun:n = fast-gun
+machine gunner:n = machine gun-DOER
+magician:n = magic-DOER
+manager:n = manage-DOER
+mansion:n = house-AUG
+map:v = map-NOUN.TO.VERB
+medical:adj = medicine-RELATING.TO
+meeting:n = meet-ACT.OF
+memory:n = remember-ACT.OF
+messy:adj = mess-RELATING.TO
+mirror:v = mirror-NOUN.TO.VERB
+movement:n = move-ACT.OF
+nail:v = nail-NOUN.TO.VERB
+natural:adj = nature-RELATING.TO
+necromancer:n = death-magic-DOER
+nest:v = nest-NOUN.TO.VERB
+offensive:adj = offend-RESULT.OF.DOING
+oil:v = oil-NOUN.TO.VERB
+opening:n = open-ACT.OF
+oral:adj = mouth-RELATING.TO
+painful:adj = pain-RELATING.TO
+paint:v = paint-NOUN.TO.VERB
+painter:n = paint:v-DOER
+painting:n = paint:n-ACT.OF
+paste:v = paste-NOUN.TO.VERB
+peel:v = peel-NOUN.TO.VERB
+pensive:adj = think-RESULT.OF.DOING
+perfection:n = perfect-TO.CREATE-QUALITY.OF.BEING
+personal:adj = person-RELATING.TO
+place:v = place-NOUN.TO.VERB
+plant:v = plant-NOUN.TO.VERB
+pleasure:n = please-ACT.OF
+plough:v = plough-NOUN.TO.VERB
+poet:n = poem-DOER
+poison:v = poison-NOUN.TO.VERB
+politician:n = politics-DOER
+possibility:n = possible-TO.CREATE-QUALITY.OF.BEING
+powerful:adj = power-RELATING.TO
+preparation:n = prepare-ACT.OF
+prima noctis, universal concubine right:n = chief-baby-law
+prisoner:n = prison-DOER
+product:n = produce-ACT.OF
+promise:v = promise-NOUN.TO.VERB
+proof:n = prove-ACT.OF
+protection:n = protect-ACT.OF
+psychologist:n = psychology-DOER
+puppy:n = dog-DIM
+quarrel:v = quarrel-NOUN.TO.VERB
+quickly:adv = quick-ADVERB
+race:v = race-NOUN.TO.VERB
+radio antenna:n = radio-antenna
+radio equipment:n = radio-machine
+radio operator:n = radio-DOER
+radio repairman:n = radio-fix-DOER
+radio station:n = radio-PLACE.OF
+rain:v = rain-NOUN.TO.VERB
+recently:adv = recent-ADVERB
+recognition:n = recognize-ACT.OF
+record:v = record-NOUN.TO.VERB
+reflection:n = reflect-ACT.OF
+religious:adj = religion-RELATING.TO
+response:n = respond-ACT.OF
+rich, flavorsome:adj = flavor-RELATING.TO
+rich, wealthy:adj = wealth-RELATING.TO
+rifleman:n = rifle-DOER
+risky, dangerous:adj = risk-RELATING.TO
+ruler:n = rule-DOER
+runner:n = run-DOER
+rust:v = rust:n-NOUN.TO.VERB
+sacrifice:v = sacrifice-NOUN.TO.VERB
+sadness:n = sad-TO.CREATE-QUALITY.OF.BEING
+sailor:n = sail:v-DOER
+scientist:n = science-DOER
+screw:v = screw-NOUN.TO.VERB
+seer:n = divination-DOER
+service:n = serve-ACT.OF
+settlement:n = settle (land)-ACT.OF
+sexy:adj = sex-RELATING.TO
+sickness, disease:n = sick-TO.CREATE-QUALITY.OF.BEING
+silence:n = silent-TO.CREATE-QUALITY.OF.BEING
+simply:adv = simple-ADVERB
+sing:v = song-TO.CREATE
+singer:n = song-DOER
+skilled:adj = skill-RELATING.TO
+slave:n = serve-DOER
+smoke:v = smoke-NOUN.TO.VERB
+space station:n = space (outer)-house
+spelling:n = spell:v-ACT.OF
+stable:n = horse-PLACE.OF
+starchart:n = space (outer)-map
+strength:n = strong-TO.CREATE-QUALITY.OF.BEING
+submachine gun:n = small-fast-gun
+submarine:n = under-water-boat
+subtlety:n = subtle-TO.CREATE-QUALITY.OF.BEING
+successful:adj = success-RELATING.TO
+suddenly:adv = sudden:adv-ADVERB
+suggestion:n = suggest-ACT.OF
+tattoo:v = tattoo-NOUN.TO.VERB
+teacher:n = teach-DOER
+technological:adj = technology-RELATING.TO
+thief:n = steal-DOER
+thought:n = think-ACT.OF
+tire patches:n = tire-fix-DOER
+torpedo boat:n = torpedo-ship
+torpedo plane:n = torpedo-airplane
+trade:v = trade-NOUN.TO.VERB
+trader:n = trade:v-DOER
+training:n = train:v-ACT.OF
+treatment:n = treat-ACT.OF
+troublesome:adj = trouble-RELATING.TO
+truth:n = true-TO.CREATE-QUALITY.OF.BEING
+urban:adj = city-RELATING.TO
+vendor:n = sell-DOER
+violence:n = violent-TO.CREATE-QUALITY.OF.BEING
+visitor:n = visit-DOER
+warrior:n = war-DOER
+weigh:v = weight-TO.CREATE
+width:n = wide-TO.CREATE-QUALITY.OF.BEING
+winery:n = wine-PLACE.OF
+wire cutters:n = scissors-wire
+witchcraft:n = witch-art
+witchdoctor:n = witch-heal-DOER
+witchfinder:n = witch-hammer-DOER
+wizard:n = wise-magic-DOER
+worker, employee:n = work-DOER
+youth:n = young-TO.CREATE-QUALITY.OF.BEING

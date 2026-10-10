@@ -1,0 +1,14 @@
+Language: Test1
+Sentences: 11
+Complete: 11
+Partial: 0
+Missing vocabulary: 0
+Unsupported grammar: 0
+Output: .iteration-work\iteration2\Test1\sentences_default.txt
+Diagnostics: .iteration-work\iteration2\Test1\sentences_default_diagnostics.txt
+Analysis JSON: .iteration-work\iteration2\Test1\sentences_default_analysis.json
+Warning: homophone: academic:adj = most:adv = aulam
+Warning: homophone: archer:n = arrow:n = jer
+Warning: homophone: astral projection:n = astral:n = yosirui
+Warning: homophone: decay:v = distill:v = ciger
+Warning: homophone: growth:n = livestock:n = keng

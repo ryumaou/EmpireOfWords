@@ -1,0 +1,66 @@
+[Translation]
+English: The big dog is sleeping.
+Language: ajairbu oombudb casuumu
+Gloss: SLEEP-PROG DOG-DEF BIG
+Status: ok
+Reason: complete
+[Translation]
+English: Where is my book?
+Language: monainu bolusuubu uuged usaiqanko
+Gloss: BE (TEMPORARY STATE) 1SG-GEN BOOK WH-WHERE
+Status: ok
+Reason: complete
+[Translation]
+English: She will give him water.
+Language: saluuru ondelgibu irtinut joorongo
+Gloss: GIVE-FUT 3SG WATER:ACCUSATIVE
+Status: ok
+Reason: complete
+[Translation]
+English: This child walked to that house yesterday.
+Language: tencud tuurtinbu aaca uunigha kemuula jegere yongju
+Gloss: WALK-PST PROXIMAL_SINGULAR CHILD TO DISTAL_SINGULAR HOUSE
+Status: ok
+Reason: complete
+[Translation]
+English: Are you hungry?
+Language: bolusue qaica enilaul mongun
+Gloss: BE (TEMPORARY STATE) 2SG HUNGRY Q
+Status: ok
+Reason: complete
+[Translation]
+English: Give me the red bird!
+Language: ondelgide kuuirto cighen
+Gloss: GIVE-IMP BIRD:ACCUSATIVE RED
+Status: ok
+Reason: complete
+[Translation]
+English: The woman and the man are talking.
+Language: ugalinbu iruugseb ouluujub
+Gloss: TALK-PROG WOMAN-DEF AND MAN-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: I do not see three cats.
+Language: bui saralunal usaiqan catan buajasido naud
+Gloss: SEE-NEG 1SG THREE CAT.PL:ACCUSATIVE NOT
+Status: ok
+Reason: complete
+[Translation]
+English: There is a black mountain.
+Language: bisqubabu tng baiqai
+Gloss: exist-3SG mountain.NOM black
+Status: ok
+Reason: complete
+[Translation]
+English: Two children played in the garden.
+Language: tencud moogsektu oruulbi buuanigha maralua ejibalib
+Gloss: PLAY-PST TWO CHILD.PL IN GARDEN-DEF
+Status: ok
+Reason: complete
+[Translation]
+English: A Tiger wearing a bell will starve.
+Language: saluuru bosuujubu delekuu aulaqu amjijin senigho
+Gloss: STARVE-FUT TIGER WEARING-PTCP BELL:ACCUSATIVE
+Status: ok
+Reason: complete

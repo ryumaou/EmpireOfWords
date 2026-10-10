@@ -1,0 +1,11 @@
+Language: Example
+Sentences: 11
+Complete: 11
+Partial: 0
+Missing vocabulary: 0
+Unsupported grammar: 0
+Output: .iteration-work\iteration3\Example\sentences_default.txt
+Diagnostics: .iteration-work\iteration3\Example\sentences_default_diagnostics.txt
+Analysis JSON: .iteration-work\iteration3\Example\sentences_default_analysis.json
+Warning: homophone: teacher:n = teach:v = nakuyor
+Warning: homophone: writer:n = author:n = aryuzemr

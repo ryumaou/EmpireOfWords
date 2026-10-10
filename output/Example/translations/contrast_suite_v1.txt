@@ -1,0 +1,480 @@
+[Translation]
+English: The dog sees the cat.
+Language: janni zumahittasu karinta
+Gloss: DOG CAT:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog saw the cat.
+Language: janni zumahittasu karintahi
+Gloss: DOG CAT:ACCUSATIVE SEE-PST
+Status: ok
+Reason: complete
+[Translation]
+English: The dog will see the cat.
+Language: janni zumahittasu udekarinta
+Gloss: DOG CAT:ACCUSATIVE SEE-FUT
+Status: ok
+Reason: complete
+[Translation]
+English: The dog did not see the cat.
+Language: janni zumahittasu makarintahi samumas
+Gloss: DOG CAT:ACCUSATIVE SEE-PST-NEG NOT
+Status: ok
+Reason: complete
+[Translation]
+English: The dog will not see the cat.
+Language: janni zumahittasu mudekarinta samumas
+Gloss: DOG CAT:ACCUSATIVE SEE-FUT-NEG NOT
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cats.
+Language: janni zumahittasude karinta
+Gloss: DOG CAT.PL:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dogs see the cat.
+Language: jannide zumahittasu karinta
+Gloss: DOG.PL CAT:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat and the bird.
+Language: janni zumahittasu yamasu zumawopihyu karinta
+Gloss: DOG CAT:ACCUSATIVE AND BIRD:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cats and the bird.
+Language: janni zumahittasude yamasu zumawopihyu karinta
+Gloss: DOG CAT.PL:ACCUSATIVE AND BIRD:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: Does the dog see the cat?
+Language: janni zumahittasu karinta dezu
+Gloss: DOG CAT:ACCUSATIVE SEE Q
+Status: ok
+Reason: complete
+[Translation]
+English: Did the dog see the cat?
+Language: janni zumahittasu karintahi dezu
+Gloss: DOG CAT:ACCUSATIVE SEE-PST Q
+Status: ok
+Reason: complete
+[Translation]
+English: Will the dog see the cat?
+Language: janni zumahittasu udekarinta dezu
+Gloss: DOG CAT:ACCUSATIVE SEE-FUT Q
+Status: ok
+Reason: complete
+[Translation]
+English: Is the dog happy?
+Language: janni jinatta uuge dezu
+Gloss: DOG HAPPY BE (TEMPORARY STATE) Q
+Status: ok
+Reason: complete
+[Translation]
+English: Is today Monday?
+Language: goyahab botasu uuge dezu
+Gloss: TODAY MONDAY BE (TEMPORARY STATE) Q
+Status: ok
+Reason: complete
+[Translation]
+English: Where is the dog?
+Language: janni  uuge ishiyot
+Gloss: DOG  BE (TEMPORARY STATE) WH-WHERE
+Status: ok
+Reason: complete
+[Translation]
+English: When will the guests arrive?
+Language: ausade  udealtis antapap
+Gloss: GUEST.PL  ARRIVE-FUT WH-WHEN
+Status: ok
+Reason: complete
+[Translation]
+English: How wide is the river?
+Language: bayuyos todasha uuge devinji
+Gloss: RIVER WIDE BE (TEMPORARY STATE) DEG-WIDE WH-HOW
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat and the bird.
+Language: janni zumahittasu yamasu zumawopihyu karinta
+Gloss: DOG CAT:ACCUSATIVE AND BIRD:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat or the bird.
+Language: janni zumahittasu luporu zumawopihyu karinta
+Gloss: DOG CAT:ACCUSATIVE OR BIRD:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat and hears the bird.
+Language: janni zumahittasu karinta yamasu janni zumawopihyu hyujide
+Gloss: DOG CAT:ACCUSATIVE SEE AND DOG BIRD:ACCUSATIVE HEAR
+Status: ok
+Reason: complete
+[Translation]
+English: The dog saw the cat and heard the bird.
+Language: janni zumahittasu karintahi yamasu janni zumawopihyu hyujidehi
+Gloss: DOG CAT:ACCUSATIVE SEE-PST AND DOG BIRD:ACCUSATIVE HEAR-PST
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat but hears the bird.
+Language: janni zumahittasu karinta hia janni zumawopihyu hyujide
+Gloss: DOG CAT:ACCUSATIVE SEE BUT DOG BIRD:ACCUSATIVE HEAR
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat, and the bird sees the dog.
+Language: janni zumahittasu karinta wopihyu zumajanni karinta
+Gloss: DOG CAT:ACCUSATIVE SEE AND BIRD DOG:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: John and Elizabeth are friends.
+Language: [PARTIAL]
+Gloss: [PARTIAL]
+Status: partial
+Reason: recognized construction not yet fully realized
+[Translation]
+English: The dog is small but strong.
+Language: janni jijocho hia apyogyo uuge
+Gloss: DOG SMALL BUT STRONG BE (TEMPORARY STATE)
+Status: ok
+Reason: complete
+[Translation]
+English: The crow dropped pebbles and raised water.
+Language: momasum zumedattede depyapuhi yamasu momasum zumautara sopyuhi
+Gloss: CROW PEBBLE.PL:ACCUSATIVE DROP-PST AND CROW WATER:ACCUSATIVE RAISE-PST
+Status: ok
+Reason: complete
+[Translation]
+English: I awoke early, dressed hastily, and went to breakfast.
+Language: adatte gabyahi hodabya yamasu adatte seyawo pyujita yamasu adatte hyanohi bonsilizen bomasu
+Gloss: 1SG  AWAKE-PST EARLY AND 1SG  DRESSED HASTY AND 1SG  GO-PST TO BREAKFAST:LOCATIVE
+Status: ok
+Reason: complete
+[Translation]
+English: See the cat.
+Language: sukarinta zumahittasu
+Gloss: SEE-IMP CAT:ACCUSATIVE
+Status: ok
+Reason: complete
+[Translation]
+English: Do not see the cat.
+Language: masuhogyaji sod zumahittasu
+Gloss: DO-IMP-NEG SEE CAT:ACCUSATIVE
+Status: ok
+Reason: complete
+[Translation]
+English: Take the note and wait.
+Language: suowatak zumitte yamasu sujudata
+Gloss: TAKE-IMP NOTE:ACCUSATIVE AND WAIT-IMP
+Status: ok
+Reason: complete
+[Translation]
+English: Take this note, carry it to your mother, and wait for an answer.
+Language: suowatak rosoo zumitte yamasu sukamashi hitou altapijudic sokamasazen bomasu yamasu sujudata tsuzen woutte
+Gloss: TAKE-IMP PROXIMAL_SINGULAR NOTE:ACCUSATIVE AND CARRY-IMP 3SG TO 2SG-GEN MOTHER:LOCATIVE AND WAIT-IMP FOR ANSWER:LOCATIVE
+Status: ok
+Reason: complete
+[Translation]
+English: Be happy.
+Language: suuuge jinatta
+Gloss: BE (TEMPORARY STATE)-IMP HAPPY
+Status: ok
+Reason: complete
+[Translation]
+English: The girl sees the doll.
+Language: colevit zumakeao karinta
+Gloss: GIRL DOLL:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The girl sees the doll's dress.
+Language: colevit altaltakeao zumamuntsu karinta
+Gloss: GIRL DOLL:GENITIVE-GEN DRESS:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The little girl made the doll's dress herself.
+Language: yokunta colevit altaltakeao zumamuntsu nyuzumahi
+Gloss: LITTLE GIRL DOLL:GENITIVE-GEN DRESS:ACCUSATIVE MAKE-PST
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees its house.
+Language: janni altahitou zumazattaki karinta
+Gloss: DOG 3SG-GEN HOUSE:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The man sees his dog.
+Language: anchita altahitou zumajanni karinta
+Gloss: MAN 3SG-GEN DOG:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat.
+Language: janni zumahittasu karinta
+Gloss: DOG CAT:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The small dog sees the cat.
+Language: jijocho janni zumahittasu karinta
+Gloss: SMALL DOG CAT:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the small cat.
+Language: janni jijocho zumahittasu karinta
+Gloss: DOG SMALL CAT:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat in the house.
+Language: janni zumahittasu karinta zattakizen kyogemy
+Gloss: DOG CAT:ACCUSATIVE SEE IN HOUSE:LOCATIVE
+Status: ok
+Reason: complete
+[Translation]
+English: The old man with a stick stood beside the fence.
+Language: monyuzu anchita zumoopyom kagyuma netozen zutsu
+Gloss: old man.NOM stand.ACC STICK BESIDE fence.LOC
+Status: ok
+Reason: complete
+[Translation]
+English: On a sunny morning we started for the mountains.
+Language: [PARTIAL]
+Gloss: [PARTIAL]
+Status: partial
+Reason: recognized construction not yet fully realized
+[Translation]
+English: The girls with wreaths of flowers danced.
+Language: colevitade yodatedezen semasidezen hiyopyu zaku  yahyucahi
+Gloss: GIRL.PL WITH WREATH.PL:LOCATIVE OF FLOWER.PL:LOCATIVE  DANCE-PST
+Status: ok
+Reason: complete
+[Translation]
+English: The sun looked through the branches.
+Language: datta  karisejahi ukudezen shisqui
+Gloss: SUN  LOOK-PST THROUGH BRANCH.PL:LOCATIVE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat.
+Language: janni zumahittasu karinta
+Gloss: DOG CAT:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog is seeing the cat.
+Language: janni zumahittasu wamakarinta
+Gloss: DOG CAT:ACCUSATIVE SEE-PROG
+Status: ok
+Reason: complete
+[Translation]
+English: The dog has seen the cat.
+Language: janni zumahittasu usarise karinta
+Gloss: DOG CAT:ACCUSATIVE SEE-PERF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog has been seeing the cat.
+Language: janni zumahittasu usarise wamakarinta
+Gloss: DOG CAT:ACCUSATIVE SEE-PROG-PERF
+Status: ok
+Reason: complete
+[Translation]
+English: The dog was seeing the cat.
+Language: janni zumahittasu wamakarintahi
+Gloss: DOG CAT:ACCUSATIVE SEE-PST-PROG
+Status: ok
+Reason: complete
+[Translation]
+English: The dog can see the cat.
+Language: janni zumahittasu biteheg karinta
+Gloss: DOG CAT:ACCUSATIVE SEE-MOD
+Status: ok
+Reason: complete
+[Translation]
+English: The dog must see the cat.
+Language: janni zumahittasu tsuarim karinta
+Gloss: DOG CAT:ACCUSATIVE SEE-MOD
+Status: ok
+Reason: complete
+[Translation]
+English: The dog should see the cat.
+Language: janni zumahittasu tsuarim karinta
+Gloss: DOG CAT:ACCUSATIVE SEE-MOD
+Status: ok
+Reason: complete
+[Translation]
+English: The dog might see the cat.
+Language: janni zumahittasu futsu karinta
+Gloss: DOG CAT:ACCUSATIVE SEE-MOD
+Status: ok
+Reason: complete
+[Translation]
+English: Will you go with us or wait here?
+Language: pijudic udehyano zahasu zaku luporu pijudic judata nihange dezu
+Gloss: 2SG  GO-FUT WITH 1PL OR 2SG  WAIT HERE Q
+Status: ok
+Reason: complete
+[Translation]
+English: The dog is big.
+Language: janni yojizoz uuge
+Gloss: DOG BIG BE (TEMPORARY STATE)
+Status: ok
+Reason: complete
+[Translation]
+English: The dog is bigger than the cat.
+Language: janni desopyo yojizoz uuge desopyo hittasu
+Gloss: DOG BIG-COMP BE (TEMPORARY STATE) COMP-STD CAT
+Status: ok
+Reason: complete
+[Translation]
+English: The dog is the biggest.
+Language: janni nyumumu yojizoz uuge
+Gloss: DOG BIG-SUPER BE (TEMPORARY STATE)
+Status: ok
+Reason: complete
+[Translation]
+English: Do you like summer or winter better?
+Language: [PARTIAL]
+Gloss: 2SG SUMMER:ACCUSATIVE OR WINTER:ACCUSATIVE LIKE Q
+Status: partial
+Reason: not realized: better, comparison
+[Translation]
+English: The days grow shorter.
+Language: fatade desopyo gihench bekoto
+Gloss: DAY.PL SHORT-COMP GROW
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat because the cat is small.
+Language: chitako hittasu jijocho uuge janni zumahittasu karinta
+Gloss: CAUSE CAT SMALL BE (TEMPORARY STATE) DOG CAT:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: If the dog sees the cat, the bird will fly.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: conditional_clause
+[Translation]
+English: The dog that sees the cat is happy.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: relative_clause
+[Translation]
+English: I know that the dog sees the cat.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: complement_clause
+[Translation]
+English: The cat was seen by the dog.
+Language: [UNRESOLVED]
+Gloss: [UNRESOLVED]
+Status: unsupported-grammar
+Reason: unsupported construction: passive
+[Translation]
+English: Aha! I have caught you!
+Language: [PARTIAL]
+Gloss: 1SG 2SG CATCH-PST
+Status: partial
+Reason: unrealized discourse expression: aha
+[Translation]
+English: Alas! That news is sad.
+Language: [PARTIAL]
+Gloss: NEWS.PL SAD BE (TEMPORARY STATE) THAT
+Status: partial
+Reason: unrealized discourse expression: alas
+[Translation]
+English: Oh dear! The wind has blown my hat away!
+Language: cra nyus! wanyo altadatte zumuhoda usarise heyo zunseda
+Gloss: OH DEAR! WIND 1SG-GEN HAT:ACCUSATIVE BLOW-PERF AWAY
+Status: ok
+Reason: complete
+[Translation]
+English: Madam, I will obey your command.
+Language: [PARTIAL]
+Gloss: 1SG 2SG-GEN COMMAND:ACCUSATIVE OBEY-FUT
+Status: partial
+Reason: unrealized vocative: madam
+[Translation]
+English: Show the guests these shells, my son.
+Language: sugatta sakyuma cenyawo aus zumatowa
+Gloss: SHOW-IMP THESE SHELL GUEST SON:ACCUSATIVE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat.
+Language: janni zumahittasu karinta
+Gloss: DOG CAT:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog does not see the cat.
+Language: janni zumahittasu makarinta samumas
+Gloss: DOG CAT:ACCUSATIVE SEE-NEG NOT
+Status: ok
+Reason: complete
+[Translation]
+English: The dog never sees the cat.
+Language: janni zumahittasu makarinta sochito
+Gloss: DOG CAT:ACCUSATIVE SEE-NEG NEVER
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees no cat.
+Language: janni zumahittasu karinta
+Gloss: DOG CAT:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees nothing.
+Language: janni shizoma karinta
+Gloss: DOG NOTHING-NEG.INDEF SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The cat sees the dog.
+Language: hittasu zumajanni karinta
+Gloss: CAT DOG:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The dog sees the cat.
+Language: janni zumahittasu karinta
+Gloss: DOG CAT:ACCUSATIVE SEE
+Status: ok
+Reason: complete
+[Translation]
+English: The girl gives the boy a book.
+Language: colevit yojiish zumahyantte nyopet
+Gloss: GIRL BOY BOOK:ACCUSATIVE GIVE
+Status: ok
+Reason: complete
+[Translation]
+English: The girl gives a book to the boy.
+Language: colevit zumahyantte nyopet yojiishazen bomasu
+Gloss: GIRL BOOK:ACCUSATIVE GIVE TO BOY:LOCATIVE
+Status: ok
+Reason: complete
+[Translation]
+English: The man stood beside the fence.
+Language: anchita  kandehi netozen zutsu
+Gloss: MAN  STAND-PST BESIDE FENCE:LOCATIVE
+Status: ok
+Reason: complete

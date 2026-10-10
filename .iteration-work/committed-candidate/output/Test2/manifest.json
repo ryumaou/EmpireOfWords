@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "tool_version": "7.6.1",
+  "language": "Test2",
+  "seed": 12345,
+  "source": {
+    "path": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\data\\StandardImperialModern3.txt",
+    "sha256": "290b915cd53c596b4a82ed8c29fea669c17b9cf8dd75cb876b48141474a75765"
+  },
+  "vocabulary": {
+    "path": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\vocabulary\\ImperialVocabulary.txt",
+    "sha256": "9436a4d27b50081d7ce6f28e6e3ba53d03b4a1b4ee55a11e7b3f57835955f448"
+  },
+  "supplemental_vocabulary": [],
+  "translation_vocabulary_preflight": {
+    "enabled": true,
+    "added": 254
+  },
+  "grammar_family": "sino-tibetan",
+  "grammar_file": null,
+  "translation_source": "C:\\Users\\jhoffman\\Documents\\GitHub\\EmpireOfWords\\translations\\sentences_advanced.txt",
+  "counts": {
+    "entries": 5293,
+    "base_roots": 4963,
+    "modifiers": 18,
+    "derived_resolved": 330,
+    "unresolved_errors": 0
+  }
+}

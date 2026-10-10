@@ -1,0 +1,17 @@
+Language: Test1
+Sentences: 1097
+Complete: 350
+Partial: 259
+Missing vocabulary: 359
+Unsupported grammar: 129
+Output: .iteration-work\iteration1\Test1\graded_sentences.txt
+Missing-word additions: .iteration-work\iteration1\Test1\graded_sentences_missing_words.txt
+Addable missing concepts: 396
+Missing words requiring POS review: 43
+Diagnostics: .iteration-work\iteration1\Test1\graded_sentences_diagnostics.txt
+Analysis JSON: .iteration-work\iteration1\Test1\graded_sentences_analysis.json
+Warning: homophone: academic:adj = most:adv = aulam
+Warning: homophone: archer:n = arrow:n = jer
+Warning: homophone: astral projection:n = astral:n = yosirui
+Warning: homophone: decay:v = distill:v = ciger
+Warning: homophone: growth:n = livestock:n = keng
