@@ -6,7 +6,7 @@ from pathlib import Path
 import json
 
 SCHEMA_VERSION=2
-TOOL_VERSION='8.0.0-dev1'
+TOOL_VERSION='8.0.0-dev2'
 
 @dataclass(frozen=True)
 class EntryKey:
@@ -126,4 +126,14 @@ def validate_grammar_contract(grammar):
             issues.append('contract v7 requires past tense realization or analytic past marker')
         if grammar.get('verb',{}).get('negation') in ('affix','mixed') and 'negative' not in morph:
             issues.append('contract v7 requires a negative affix for affix/mixed negation')
+    if grammar.get('translation_readiness',{}).get('contract_version',0)>=10:
+        passive=grammar.get('passive',{})
+        if passive.get('agent_position') not in ('before','after'):
+            issues.append('contract v10 requires passive agent placement')
+        if passive.get('strategy')=='particle' and not particles.get('passive'):
+            issues.append('contract v10 requires passive particle')
+        elif passive.get('strategy')=='morphological' and 'passive' not in morph:
+            issues.append('contract v10 requires passive morpheme')
+        elif passive.get('strategy') not in ('particle','morphological'):
+            issues.append('contract v10 requires passive strategy')
     return issues,warnings

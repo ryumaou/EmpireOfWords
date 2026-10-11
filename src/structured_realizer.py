@@ -180,6 +180,31 @@ def _modifier(word,by,lexical_match):
 def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructions,g=None):
     toks=[x.lower() for x in english_tokens(raw)]
     if not toks:return None
+    if 'passive' in constructions:
+        # Only a complete finite passive with an overt agent is licensed. The
+        # English subject is the patient, regardless of target word order.
+        match=re.fullmatch(r'\s*([A-Za-z ]+?)\s+(is|are|was|were)\s+([A-Za-z]+)\s+by\s+([A-Za-z ]+?)\s*[.!?]\s*',raw,re.I)
+        if not match or raw.rstrip().endswith('?'):return None
+        patient_text,aux,participle,agent_text=match.groups()
+        participle=participle.lower()
+        if not (participle.endswith('ed') or IRREGULAR_VERBS.get(participle,('', ''))[1]=='participle'):
+            return None
+        def simple_np(value):
+            words=[x.lower() for x in english_tokens(value)]
+            if not 1<=len(words)<=4 or any(x in AUX|PREP|CONJ|set(POSS) for x in words):return None
+            np=parse_np(words,by,lexical_match)
+            if not np or not np.head or np.attached_pps or np.possessor or np.coordinated or np.noun_modifiers:
+                return None
+            # parse_np is intentionally permissive elsewhere; here every word
+            # must have a represented role so an adjunct cannot vanish.
+            represented=(1 if np.head else 0)+(1 if np.determiner else 0)+len(np.adjectives)+(1 if np.quantifier else 0)+(1 if np.numeral else 0)
+            return np if represented==len(words) else None
+        patient=simple_np(patient_text); agent=simple_np(agent_text)
+        lemma=_lemma_for_pos(participle,by,lemma_candidates,'v',g or {})
+        if not patient or not agent or not lemma:return None
+        predicate=PredicateIR(lemma,tense='past' if aux.lower() in ('was','were') else 'present',
+                              voice='passive',patient=patient,agent=agent)
+        return ClauseIR(patient,predicate,source_tokens=english_tokens(raw))
     # A conditional joins two complete clauses. Require an overt boundary so
     # IF cannot be mistaken for an argument or silently swallow a second verb.
     if 'conditional_clause' in constructions:
@@ -225,7 +250,7 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
             main.source_tokens=english_tokens(raw)
             return main
         return None
-    if any(c in constructions for c in ('relative_clause','appositive','passive','quotation','complement_clause')): return None
+    if any(c in constructions for c in ('relative_clause','appositive','quotation','complement_clause')): return None
     # A nominative pronoun supplies the adjunct boundary, with or without a comma.
     # Do not guess a boundary between adjacent common nouns.
     pronoun_pp=re.match(r'^\s*(on|in|at|during|after|before)\s+([^,]+?)(?:,\s*|\s+)((?:I|we|you|he|she|they|it)\s+[^,]+[.!?])\s*$',raw,re.I)
@@ -626,6 +651,9 @@ def _realize_modifier(m,g,by):
 
 def realize(clause,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix,adjective_form=None):
     p=clause.predicate; receipts=set(); ss=sg=''; person='2sg' if clause.clause_type=='imperative' else '3sg'
+    if p.voice not in ('active','passive'):return None
+    if p.voice=='passive' and (not clause.subject or p.patient!=clause.subject or not p.agent or p.object or p.complement or p.indirect_object):
+        return None
     if clause.subject:
         ss,sg,sr=realize_np(clause.subject,g,by,noun_form,possessive_phrase,adjective_form)
         if not ss:return None
@@ -637,6 +665,16 @@ def realize(clause,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix
     # A feature counts as morphologically available only if its morpheme exists,
     # not merely because its label appears in the grammar inventory.
     morph=g.get('morphemes',{})
+    passive_contract=g.get('passive',{}) if p.voice=='passive' else {}
+    if p.voice=='passive':
+        if passive_contract.get('agent_position') not in ('before','after') or not _form(by,'by',('prep','p')):
+            return None
+        strategy=passive_contract.get('strategy')
+        if strategy=='morphological':
+            if not morph.get('passive'):return None
+            vf=affix(vf,morph['passive'],g)
+        elif strategy!='particle' or not g.get('particles',{}).get('passive'):
+            return None
     native_tense=p.tense in g.get('verb',{}).get('tenses',[]) and (p.tense=='present' or p.tense in morph)
     tense=p.tense if native_tense else 'present'
     requested_aspects=[x for x in ('progressive','perfect') if x in p.aspect]
@@ -648,6 +686,10 @@ def realize(clause,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix
     # Negation is realized once by the grammar engine. A gloss must describe
     # the single licensed operation, not add a second independent NOT token.
     v=verb_form(vf,g,person,tense,aspect,mood,p.negative); vg=p.lemma.upper(); receipts.add(p.lemma)
+    if p.voice=='passive':
+        if passive_contract['strategy']=='particle':
+            v=g['particles']['passive']+' '+v
+        vg+='-PASS'
     if p.tense=='past' and not native_tense:
         mark=g.get('particles',{}).get('past')
         if not mark:return None
@@ -721,6 +763,17 @@ def realize(clause,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix
         os=comp_s if not os else os+' '+comp_s; og=comp_g if not og else og+' '+comp_g
     surf=order_clause(ss,v,os,g).strip() if ss else ' '.join(x for x in (v,os) if x)
     gloss=order_clause(sg,vg,og,g).strip() if sg else ' '.join(x for x in (vg,og) if x)
+    if p.voice=='passive':
+        agent_case='instrumental' if 'instrumental' in g.get('noun',{}).get('cases',[]) else 'nominative'
+        agent_s,agent_g,agent_r=realize_np(p.agent,g,by,noun_form,possessive_phrase,adjective_form,agent_case)
+        if not agent_s:return None
+        by_form=_form(by,'by',('prep','p'))
+        agent_phrase=(by_form+' '+agent_s if g.get('adposition_type')=='preposition' else agent_s+' '+by_form)
+        if passive_contract['agent_position']=='before':
+            surf=agent_phrase+' '+surf; gloss='AGENT '+agent_g+' '+gloss
+        else:
+            surf=surf+' '+agent_phrase; gloss=gloss+' AGENT '+agent_g
+        receipts.update(agent_r); receipts.update(('passive','passive_relation','patient','agent','by'))
     # Modifiers are first-class receipts. -ly may use target adjective by explicit zero-adverb strategy.
     before=[]; after=[]; final=[]
     for m in p.modifiers:

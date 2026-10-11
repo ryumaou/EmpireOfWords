@@ -1,5 +1,7 @@
 ## v8.0.0 (development)
 
+- Bind patient and overt agent roles in simple finite passives and realize the generated language's voice and agent placement; reject incomplete old morphological contracts.
+- Give newly generated morphological languages a passive affix and validate the version 10 voice contract. Stamp package metadata with the actual tool version.
 - Parse explicit two-clause conditionals as separate condition and consequence clauses, preserving each clause's roles, tense, and negation.
 - Realize the generated language's existing conditional particle and clause placement; require both clauses and the marker before reporting completion.
 - Keep ambiguous unpunctuated boundaries and embedded-question uses of *if* unsupported.

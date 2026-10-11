@@ -289,8 +289,9 @@ def generate_grammar(root_pool,rng,family='naturalistic',overrides=None):
            'perfect':'affix' if 'perfect' in morph else 'particle',
            'imperative':'affix' if 'imperative' in morph else 'particle',
        },
-       'translation_readiness':{'contract_version':9,'capabilities':['stacked_aspect','constituent_coordination','copular_imperative','nominal_predicate','irregular_comparison','single_negation'],'analytic_fallbacks':['future','progressive','perfect','imperative'],'adverb_fallback':'zero'},
+       'translation_readiness':{'contract_version':10,'capabilities':['stacked_aspect','constituent_coordination','copular_imperative','nominal_predicate','irregular_comparison','single_negation','role_aware_passive'],'analytic_fallbacks':['future','progressive','perfect','imperative'],'adverb_fallback':'zero'},
        'morphemes':morph,'particles':particles,'pronouns':pronouns,'demonstratives':demonstratives,'interrogatives':interrogatives}
+    if g['passive']['strategy']=='morphological': M('passive',affix_sides)
     return g
 
 def load_grammar(path): return json.loads(Path(path).read_text(encoding='utf-8'))
@@ -761,7 +762,7 @@ def analyze_translation(sentence,g,entries,forms):
 
     # Constructions that the current deterministic realizer can identify but not
     # yet safely realize must never be silently flattened into a simple clause.
-    realized_relations={'subordinate_clause':'causal_relation','conditional_clause':'condition_relation'}
+    realized_relations={'subordinate_clause':'causal_relation','conditional_clause':'condition_relation','passive':'passive_relation'}
     diagnosed=[c for c in constructions if TRANSLATION_CAPABILITIES.get(c)=='diagnosed'
                and not (structured and realized_relations.get(c) in structured.get('receipts',()))]
     if diagnosed:
@@ -879,8 +880,9 @@ def generate_examples(g, entries, forms, translation_sentences=None):
     return examples
 
 def write_package(outdir, language_name, grammar, entries, forms, deriv_affixes, seed, translation_sentences=None, translation_source=None):
+    from language_io import TOOL_VERSION
     outdir.mkdir(parents=True,exist_ok=True); examples=generate_examples(grammar,entries,forms,translation_sentences)
-    data={'schema_version':2,'tool_version':'6.8','name':language_name,'seed':seed,'grammar':grammar,'translation_capabilities':TRANSLATION_CAPABILITIES,'derivational_morphology':{k:{'side':v.side,'form':v.form,'source_rule':v.source_rule} for k,v in deriv_affixes.items()},'lexicon':[{'gloss':e.key.gloss,'pos':e.key.pos,'form':forms.get(e.key,''),'derivation':e.expr} for e in entries],'translation_source':str(translation_source) if translation_source else None,'examples':[{'type':t,'english':en,'surface':s,'gloss':gl,'status':status} for t,en,s,gl,status in examples]}
+    data={'schema_version':2,'tool_version':TOOL_VERSION,'name':language_name,'seed':seed,'grammar':grammar,'translation_capabilities':TRANSLATION_CAPABILITIES,'derivational_morphology':{k:{'side':v.side,'form':v.form,'source_rule':v.source_rule} for k,v in deriv_affixes.items()},'lexicon':[{'gloss':e.key.gloss,'pos':e.key.pos,'form':forms.get(e.key,''),'derivation':e.expr} for e in entries],'translation_source':str(translation_source) if translation_source else None,'examples':[{'type':t,'english':en,'surface':s,'gloss':gl,'status':status} for t,en,s,gl,status in examples]}
     (outdir/'language.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8'); (outdir/'grammar.json').write_text(json.dumps(grammar,ensure_ascii=False,indent=2),encoding='utf-8')
     with (outdir/'paradigms.csv').open('w',encoding='utf-8',newline='') as f:
         w=csv.writer(f); w.writerow(['English','POS','Lemma','Feature','Form'])

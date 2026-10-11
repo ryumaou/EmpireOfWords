@@ -11,7 +11,7 @@ Example:
 from __future__ import annotations
 import argparse, csv, importlib.util, random, re, sys, json, hashlib
 from grammar_engine import FAMILIES, generate_grammar, load_grammar, write_package, load_translation_sentences
-from language_io import validate_grammar_contract
+from language_io import validate_grammar_contract, TOOL_VERSION
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -436,7 +436,7 @@ def main(argv=None):
             for chunk in iter(lambda:fh.read(1024*1024),b''): h.update(chunk)
         return h.hexdigest()
     manifest={
-        'schema_version':2,'tool_version':'7.6.7','language':args.language_name,'seed':args.seed,
+        'schema_version':2,'tool_version':TOOL_VERSION,'language':args.language_name,'seed':args.seed,
         'source':{'path':str(args.corpus),'sha256':sha256_file(args.corpus)},
         'vocabulary':{'path':str(args.vocabulary),'sha256':sha256_file(args.vocabulary)},
         'supplemental_vocabulary':[{'path':str(x),'sha256':sha256_file(x)} for x in supplemental_paths],

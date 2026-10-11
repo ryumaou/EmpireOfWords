@@ -124,7 +124,10 @@ def detect_constructions(raw, low_tokens, by=None):
             found.append('complement_clause')
         elif i>0 and prev not in AUX|MODALS|{'to','and','or','but'} and (nxt in {'i','you','he','she','we','they','it'} or (by and any(p.startswith('v') for p,_ in by.get(lexical_match(by,nxt,'v'),[])))):
             found.append('relative_clause')
-    if re.search(r'\b(?:is|are|was|were|be|been|being)\s+\w+(?:ed|en)\b',low) and ' by ' in ' '+low+' ': found.append('passive')
+    passive_participles={w for w,(_,tense) in IRREGULAR_VERBS.items() if tense=='participle'}
+    if ' by ' in ' '+low+' ' and (re.search(r'\b(?:is|are|was|were|be|been|being)\s+\w+(?:ed|en)\b',low)
+                                   or re.search(r'\b(?:is|are|was|were|be|been|being)\s+(?:'+ '|'.join(sorted(passive_participles))+r')\b',low)):
+        found.append('passive')
     comp=False
     if ' than ' in ' '+low+' ' or any(w in low_tokens for w in ('more','less','better','worse','best','worst')): comp=True
     elif by:

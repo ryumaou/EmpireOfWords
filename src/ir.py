@@ -52,6 +52,9 @@ class PredicateIR:
     mood: str='indicative'
     negative: bool=False
     modal: Optional[str]=None
+    voice: str='active'
+    patient: Optional[NPIR]=None
+    agent: Optional[NPIR]=None
     object: Optional[NPIR]=None
     indirect_object: Optional[NPIR]=None
     complement: Optional[NPIR]=None
