@@ -6,7 +6,7 @@ from pathlib import Path
 import json
 
 SCHEMA_VERSION=2
-TOOL_VERSION='8.0.0-dev2'
+TOOL_VERSION='8.0.0-dev3'
 
 @dataclass(frozen=True)
 class EntryKey:
@@ -136,4 +136,10 @@ def validate_grammar_contract(grammar):
             issues.append('contract v10 requires passive morpheme')
         elif passive.get('strategy') not in ('particle','morphological'):
             issues.append('contract v10 requires passive strategy')
+    if grammar.get('translation_readiness',{}).get('contract_version',0)>=11:
+        relative=grammar.get('relative_clause',{})
+        if relative.get('strategy')!='relative_particle' or relative.get('position') not in ('before','after'):
+            issues.append('contract v11 requires relative marker strategy and placement')
+        if not particles.get('relative'):
+            issues.append('contract v11 requires relative particle')
     return issues,warnings

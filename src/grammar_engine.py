@@ -289,7 +289,7 @@ def generate_grammar(root_pool,rng,family='naturalistic',overrides=None):
            'perfect':'affix' if 'perfect' in morph else 'particle',
            'imperative':'affix' if 'imperative' in morph else 'particle',
        },
-       'translation_readiness':{'contract_version':10,'capabilities':['stacked_aspect','constituent_coordination','copular_imperative','nominal_predicate','irregular_comparison','single_negation','role_aware_passive'],'analytic_fallbacks':['future','progressive','perfect','imperative'],'adverb_fallback':'zero'},
+       'translation_readiness':{'contract_version':11,'capabilities':['stacked_aspect','constituent_coordination','copular_imperative','nominal_predicate','irregular_comparison','single_negation','role_aware_passive','subject_relative_gap'],'analytic_fallbacks':['future','progressive','perfect','imperative'],'adverb_fallback':'zero'},
        'morphemes':morph,'particles':particles,'pronouns':pronouns,'demonstratives':demonstratives,'interrogatives':interrogatives}
     if g['passive']['strategy']=='morphological': M('passive',affix_sides)
     return g
@@ -762,7 +762,7 @@ def analyze_translation(sentence,g,entries,forms):
 
     # Constructions that the current deterministic realizer can identify but not
     # yet safely realize must never be silently flattened into a simple clause.
-    realized_relations={'subordinate_clause':'causal_relation','conditional_clause':'condition_relation','passive':'passive_relation'}
+    realized_relations={'subordinate_clause':'causal_relation','conditional_clause':'condition_relation','passive':'passive_relation','relative_clause':'relative_relation'}
     diagnosed=[c for c in constructions if TRANSLATION_CAPABILITIES.get(c)=='diagnosed'
                and not (structured and realized_relations.get(c) in structured.get('receipts',()))]
     if diagnosed:

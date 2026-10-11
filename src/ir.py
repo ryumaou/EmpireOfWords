@@ -85,5 +85,10 @@ class ClauseIR:
     wh_degree: Optional[str]=None  # how + adjective, e.g. HOW WIDE
     subordinate: Optional['ClauseIR']=None
     subordinate_relation: Optional[str]=None
+    relative_clause: Optional['ClauseIR']=None
+    relative_host_role: Optional[str]=None
+    relative_source: Optional[str]=None
+    gap_role: Optional[str]=None
+    gap_antecedent: Optional[NPIR]=None
 
     def to_dict(self): return asdict(self)

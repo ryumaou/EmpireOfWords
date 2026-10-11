@@ -1,5 +1,7 @@
 ## v8.0.0 (development)
 
+- Parse a conservative subject-relative clause with an explicit antecedent and missing embedded subject; preserve the embedded predicate, object, tense, and main-clause predicate independently.
+- Realize the generated relative marker before or after its noun phrase, validate the version 11 relative contract, and keep object gaps and ambiguous nesting unresolved.
 - Bind patient and overt agent roles in simple finite passives and realize the generated language's voice and agent placement; reject incomplete old morphological contracts.
 - Give newly generated morphological languages a passive affix and validate the version 10 voice contract. Stamp package metadata with the actual tool version.
 - Parse explicit two-clause conditionals as separate condition and consequence clauses, preserving each clause's roles, tense, and negation.

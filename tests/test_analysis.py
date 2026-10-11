@@ -208,7 +208,7 @@ class V66GenerationVariationTests(unittest.TestCase):
         pool=[''.join(x) for x in itertools.product('ptkmnslr','aeiou','ptkmnslr','aeiou')]
         a=generate_grammar(pool,random.Random(1),'japanese',{})
         b=generate_grammar(pool,random.Random(2),'romance',{})
-        self.assertEqual(a['translation_readiness']['contract_version'],10)
+        self.assertEqual(a['translation_readiness']['contract_version'],11)
         self.assertNotEqual(a['realization_profile'],b['realization_profile'])
         self.assertIn('predicate',a['coordination']); self.assertIn('clause',b['coordination'])
 
@@ -254,7 +254,7 @@ class V68CreationContractTests(unittest.TestCase):
         import random,itertools
         pool=[''.join(x) for x in itertools.product('ptkmnslr','aeiou','ptkmnslr','aeiou')]
         g=generate_grammar(pool,random.Random(9),'japanese',{'aspect_level':'minimal'})
-        self.assertEqual(g['translation_readiness']['contract_version'],10)
+        self.assertEqual(g['translation_readiness']['contract_version'],11)
         self.assertIn('participial_modifier',g['nonfinite'])
         self.assertIn('infinitive_complement',g['nonfinite'])
         self.assertNotIn('perfect',g['morphemes'])
@@ -298,7 +298,7 @@ class V69RegressionTests(unittest.TestCase):
         from language_io import validate_grammar_contract
         roots=["ka"+str(i) for i in range(300)]
         g=generate_grammar(roots, random.Random(77), "naturalistic", {})
-        self.assertEqual(g["translation_readiness"]["contract_version"],10)
+        self.assertEqual(g["translation_readiness"]["contract_version"],11)
         self.assertIn("stacked_aspect",g["translation_readiness"]["capabilities"])
         errors,_=validate_grammar_contract(g)
         self.assertEqual(errors,[])
@@ -315,7 +315,7 @@ class V71FidelityTests(unittest.TestCase):
         import random
         g=generate_grammar(['maka','talu','ranu','sena','katu','mori','pala','nako']*200,random.Random(712),family='random')
         self.assertTrue('past' in g['morphemes'] or g['particles'].get('past'))
-        self.assertEqual(g['translation_readiness']['contract_version'],10)
+        self.assertEqual(g['translation_readiness']['contract_version'],11)
 
 class V71PastSourceTests(unittest.TestCase):
     def test_irregular_past_is_not_discarded_before_structured_parse(self):

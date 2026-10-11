@@ -180,6 +180,55 @@ def _modifier(word,by,lexical_match):
 def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructions,g=None):
     toks=[x.lower() for x in english_tokens(raw)]
     if not toks:return None
+    if 'relative_clause' in constructions:
+        # A subject relative has two finite predicates and one overt antecedent.
+        # Find a unique main-clause boundary; never guess if several parses fit.
+        if not re.fullmatch(r'\s*[A-Za-z ]+[.!?]\s*',raw) or raw.rstrip().endswith('?'):
+            return None
+        markers=[i for i,w in enumerate(toks) if w in ('who','which','that')]
+        if len(markers)!=1:return None
+        marker_i=markers[0]; marker=toks[marker_i]
+        host_words=toks[:marker_i]; tail=toks[marker_i+1:]
+        def simple_np(words):
+            if not 1<=len(words)<=4 or any(w in AUX|PREP|CONJ|set(POSS) for w in words):return None
+            np=parse_np(list(words),by,lexical_match)
+            if not np or not np.head or np.attached_pps or np.possessor or np.coordinated or np.noun_modifiers:
+                return None
+            represented=1+bool(np.determiner)+len(np.adjectives)+bool(np.quantifier)+bool(np.numeral)
+            return np if represented==len(words) else None
+        host=simple_np(host_words)
+        if not host or len(tail)<2:return None
+        def finite(word):
+            if word in ('is','are','was','were','has','have','had'):return True
+            if word in IRREGULAR_VERBS and IRREGULAR_VERBS[word][1]=='past':return bool(_lemma_for_pos(word,by,lemma_candidates,'v',g or {}))
+            return word.endswith(('s','ed')) and bool(_lemma_for_pos(word,by,lemma_candidates,'v',g or {}))
+        candidates=[]
+        for cut in range(1,len(tail)):
+            rel_words=tail[:cut]; main_words=tail[cut:]
+            if not finite(rel_words[0]) or not finite(main_words[0]):continue
+            rel_object=simple_np(rel_words[1:]) if len(rel_words)>1 else None
+            if len(rel_words)>1 and not rel_object:continue
+            main_rest=main_words[1:]
+            main_nominal=simple_np(main_rest) if main_rest else None
+            main_adjective=(len(main_rest)==1 and _pos(by,_lemma(main_rest[0],by,lexical_match),'adj'))
+            if main_rest and not main_nominal and not (main_words[0] in COPULA and main_adjective):continue
+            host_text=' '.join(host_words)
+            child=parse_clause(host_text+' '+' '.join(rel_words)+'.',by,lexical_match,english_tokens,lemma_candidates,[],g)
+            main=parse_clause(host_text+' '+' '.join(main_words)+'.',by,lexical_match,english_tokens,lemma_candidates,[],g)
+            if not child or not main or not child.subject or not main.subject:continue
+            if child.subject.head!=host.head or main.subject.head!=host.head:continue
+            if bool(child.predicate.object)!=bool(rel_object):continue
+            if rel_object and child.predicate.object.head!=rel_object.head:continue
+            if main_rest and not (main.predicate.object or main.predicate.complement):continue
+            child.subject=None
+            child.gap_role='subject'
+            child.gap_antecedent=copy.deepcopy(main.subject)
+            main.relative_clause=child
+            main.relative_host_role='subject'
+            main.relative_source=marker
+            main.source_tokens=english_tokens(raw)
+            candidates.append(main)
+        return candidates[0] if len(candidates)==1 else None
     if 'passive' in constructions:
         # Only a complete finite passive with an overt agent is licensed. The
         # English subject is the patient, regardless of target word order.
@@ -250,7 +299,7 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
             main.source_tokens=english_tokens(raw)
             return main
         return None
-    if any(c in constructions for c in ('relative_clause','appositive','quotation','complement_clause')): return None
+    if any(c in constructions for c in ('appositive','quotation','complement_clause')): return None
     # A nominative pronoun supplies the adjunct boundary, with or without a comma.
     # Do not guess a boundary between adjacent common nouns.
     pronoun_pp=re.match(r'^\s*(on|in|at|during|after|before)\s+([^,]+?)(?:,\s*|\s+)((?:I|we|you|he|she|they|it)\s+[^,]+[.!?])\s*$',raw,re.I)
@@ -651,6 +700,8 @@ def _realize_modifier(m,g,by):
 
 def realize(clause,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix,adjective_form=None):
     p=clause.predicate; receipts=set(); ss=sg=''; person='2sg' if clause.clause_type=='imperative' else '3sg'
+    if clause.gap_role and (clause.gap_role!='subject' or clause.subject or not clause.gap_antecedent or clause.relative_clause):
+        return None
     if p.voice not in ('active','passive'):return None
     if p.voice=='passive' and (not clause.subject or p.patient!=clause.subject or not p.agent or p.object or p.complement or p.indirect_object):
         return None
@@ -660,6 +711,26 @@ def realize(clause,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix
         receipts|=sr
         if clause.subject.person: person=clause.subject.person
         elif clause.subject.number=='plural': person='3pl'
+    elif clause.gap_role=='subject':
+        person=clause.gap_antecedent.person or ('3pl' if clause.gap_antecedent.number=='plural' else '3sg')
+    if clause.relative_clause:
+        spec=g.get('relative_clause',{})
+        marker=g.get('particles',{}).get('relative')
+        child=clause.relative_clause
+        if (clause.relative_host_role!='subject' or not clause.subject or not ss
+                or child.gap_role!='subject' or child.gap_antecedent!=clause.subject
+                or spec.get('strategy')!='relative_particle' or spec.get('position') not in ('before','after')
+                or not marker):return None
+        relative=realize(child,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix,adjective_form)
+        if not relative:return None
+        if spec['position']=='before':
+            ss=marker+' '+relative['surface']+' '+ss
+            sg='REL '+relative['gloss']+' '+sg
+        else:
+            ss=ss+' '+marker+' '+relative['surface']
+            sg=sg+' REL '+relative['gloss']
+        receipts.update(relative['receipts'])
+        receipts.update(('relative_clause','relative_relation',clause.relative_source or 'relative'))
     vf=_convert_form(by,p.lemma,'v',g)
     if not vf:return None
     # A feature counts as morphologically available only if its morpheme exists,
@@ -761,8 +832,8 @@ def realize(clause,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix
         if not comp_s:return None
         receipts|=cr
         os=comp_s if not os else os+' '+comp_s; og=comp_g if not og else og+' '+comp_g
-    surf=order_clause(ss,v,os,g).strip() if ss else ' '.join(x for x in (v,os) if x)
-    gloss=order_clause(sg,vg,og,g).strip() if sg else ' '.join(x for x in (vg,og) if x)
+    surf=order_clause(ss,v,os,g).strip() if ss else ' '.join(order_clause('',v,os,g).split()) if clause.gap_role=='subject' else ' '.join(x for x in (v,os) if x)
+    gloss=order_clause(sg,vg,og,g).strip() if sg else ' '.join(order_clause('',vg,og,g).split()) if clause.gap_role=='subject' else ' '.join(x for x in (vg,og) if x)
     if p.voice=='passive':
         agent_case='instrumental' if 'instrumental' in g.get('noun',{}).get('cases',[]) else 'nominative'
         agent_s,agent_g,agent_r=realize_np(p.agent,g,by,noun_form,possessive_phrase,adjective_form,agent_case)
