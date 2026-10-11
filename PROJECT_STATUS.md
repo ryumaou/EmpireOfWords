@@ -25,6 +25,8 @@ Evidence generated: 2026-10-11T02:52:00.273164+00:00. Python 3.14.7; win32.
 
 ## Iteration evidence
 
+- Documentation iteration: `README.md` now contains the original project description, current features, and commands for each feature; version history and design notes were removed. No translator or package code changed.
+- Documentation verification: 114 regression tests passed; installation CLI smoke checks passed; the four-language contrast audit passed without FAIL or INCONCLUSIVE probes. Existing generated packages were not changed.
 - Regression suite: 114 tests passed; semantic fixtures: 11 passed.
 - Holdout translator completion: 134–138/200 per language; independently reviewed: 0/2,000; independently correct: 0/2,000.
 - Ten-language generation: 10/10 reproducible; 45/45 distinct pairs; 3 observed core word orders.
