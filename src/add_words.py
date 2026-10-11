@@ -5,7 +5,7 @@ Existing forms are never regenerated. New forms are generated from a Pound-style
 transition model learned from the language's existing root lexicon.
 """
 from __future__ import annotations
-import argparse, csv, json, random, re, sys, tempfile
+import argparse, csv, json, os, random, re, shutil, sys, tempfile
 from pathlib import Path
 from language_io import resolve_project_path, resolve_language_path, load_language, validate_package
 from build_language import EntryKey, generate_unique_roots, load_lc_module, read_text
@@ -131,15 +131,39 @@ def main(argv=None):
     additions=[]
     for (gloss,pos),form in zip(todo,generated):
         x={'gloss':gloss,'pos':pos,'form':form,'derivation':None}; data['lexicon'].append(x); additions.append(x)
-    data['tool_version']='6.8'
     history=data.setdefault('lexicon_extensions',[])
     history.append({'source':str(words),'seed':args.seed,'count':len(additions),'origin_language':str(data.get('name',lang.parent.name)),'entries':[f"{x['gloss']}:{x['pos']}" for x in additions]})
-    # Back up language.json before changing the package.
-    backup=lang.with_suffix('.json.bak'); backup.write_bytes(lang.read_bytes())
-    lang.write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
-    pkg=lang.parent; is_daughter=bool(data.get('lineage'));
-    if is_daughter: update_daughter_lineage(pkg,additions,str(data.get('name',pkg.name)))
-    rewrite_dictionary(pkg,data['lexicon'],daughter=is_daughter); append_paradigms(pkg,additions,grammar)
+    # Generate every affected artifact in a sibling staging directory first. A
+    # failure in any writer must leave the installed package byte-for-byte intact.
+    pkg=lang.parent; is_daughter=bool(data.get('lineage'))
+    backup=lang.with_suffix('.json.bak')
+    with tempfile.TemporaryDirectory(prefix=f'.{pkg.name}-expansion-',dir=pkg.parent) as temp:
+        staged=Path(temp)/pkg.name
+        shutil.copytree(pkg,staged)
+        (staged/backup.name).write_bytes(lang.read_bytes())
+        (staged/lang.name).write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf-8')
+        if is_daughter: update_daughter_lineage(staged,additions,str(data.get('name',pkg.name)))
+        rewrite_dictionary(staged,data['lexicon'],daughter=is_daughter)
+        append_paradigms(staged,additions,grammar)
+        changed=[]
+        for candidate in staged.iterdir():
+            if not candidate.is_file(): continue
+            installed=pkg/candidate.name
+            previous=installed.read_bytes() if installed.exists() else None
+            if previous != candidate.read_bytes(): changed.append((candidate,installed,previous))
+        # Publish language.json last so normal readers see the old package until
+        # the generated support files are ready. Roll back any failed publication.
+        changed.sort(key=lambda item: item[1].name == lang.name)
+        published=[]
+        try:
+            for candidate,installed,previous in changed:
+                os.replace(candidate,installed)
+                published.append((installed,previous))
+        except OSError:
+            for installed,previous in reversed(published):
+                if previous is None: installed.unlink()
+                else: installed.write_bytes(previous)
+            raise
     print(f'Language: {data.get("name",pkg.name)}'); print(f'Added: {len(additions)}')
     for x in additions: print(f"  {x['gloss']}:{x['pos']} = {x['form']}")
     print(f'Backup: {backup}'); print(f'Updated: {lang}'); return 0

@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "case_count": 200,
+  "suite_sha256": "7ca5315c05cad55813adf463a1f4b6fd4f530ef1fa673d89d0df8f532e896fd0",
+  "construction_counts": {
+    "aspect": 10,
+    "comparison": 10,
+    "complement_clause": 10,
+    "conditional": 10,
+    "copular": 10,
+    "imperative": 10,
+    "intransitive": 10,
+    "modality": 10,
+    "negation": 10,
+    "noun_coordination": 10,
+    "number_quantifiers": 10,
+    "passive": 10,
+    "possession": 10,
+    "pp_attachment": 10,
+    "predicate_coordination": 10,
+    "relative_clause": 10,
+    "tense": 10,
+    "transitive": 10,
+    "wh_question": 10,
+    "yes_no_question": 10
+  },
+  "authors": [
+    "implementation-agent"
+  ],
+  "independence_status": "candidate-awaiting-independent-review",
+  "policy": "All 200 cases remain in scope. Do not tune the translator on this suite. Replace it if used for development."
+}

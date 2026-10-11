@@ -1,0 +1,201 @@
+id	construction	english
+H001	transitive	The farmer carries the basket.
+H002	transitive	A child opens the window.
+H003	transitive	The queen reads the letter.
+H004	transitive	The hunter follows the horse.
+H005	transitive	My brother washes the cup.
+H006	transitive	The woman holds a flower.
+H007	transitive	Our teacher draws a tree.
+H008	transitive	A fox watches the rabbit.
+H009	transitive	The soldier closes the gate.
+H010	transitive	The mother finds her book.
+H011	intransitive	The baby sleeps quietly.
+H012	intransitive	A horse runs slowly.
+H013	intransitive	The flowers grow here.
+H014	intransitive	Our friends arrive today.
+H015	intransitive	The farmer works outside.
+H016	intransitive	The little boy laughs loudly.
+H017	intransitive	The river flows quickly.
+H018	intransitive	The old woman waits patiently.
+H019	intransitive	The children dance together.
+H020	intransitive	The traveler returns tomorrow.
+H021	copular	The water is cold.
+H022	copular	This house is old.
+H023	copular	Her brother is a farmer.
+H024	copular	The apples are sweet.
+H025	copular	That road is narrow.
+H026	copular	Our teacher is tired.
+H027	copular	The sky was gray.
+H028	copular	Those horses are strong.
+H029	copular	My sister is happy today.
+H030	copular	The stone feels smooth.
+H031	tense	The farmer carried the basket yesterday.
+H032	tense	The farmer will carry the basket tomorrow.
+H033	tense	The queen read the letter yesterday.
+H034	tense	The queen will read the letter tomorrow.
+H035	tense	The hunter followed the horse.
+H036	tense	The hunter will follow the horse.
+H037	tense	The woman held a flower.
+H038	tense	The woman will hold a flower.
+H039	tense	Our friends arrived yesterday.
+H040	tense	Our friends will arrive tomorrow.
+H041	aspect	The mother is reading her book.
+H042	aspect	The farmer was carrying the basket.
+H043	aspect	The children are playing outside.
+H044	aspect	The queen has opened the letter.
+H045	aspect	The hunter has found the horse.
+H046	aspect	My brother had washed the cup.
+H047	aspect	The women have been working.
+H048	aspect	The traveler had been walking slowly.
+H049	aspect	Our teacher will be reading.
+H050	aspect	The child has been sleeping quietly.
+H051	negation	The farmer does not carry the basket.
+H052	negation	The queen did not read the letter.
+H053	negation	The hunter will not follow the horse.
+H054	negation	My brother never washes the cup.
+H055	negation	The water is not cold.
+H056	negation	The children are not dancing.
+H057	negation	The mother has not found her book.
+H058	negation	No child opened the window.
+H059	negation	The traveler saw nobody.
+H060	negation	The woman carries no basket.
+H061	yes_no_question	Does the farmer carry the basket?
+H062	yes_no_question	Did the child open the window?
+H063	yes_no_question	Will the queen read the letter?
+H064	yes_no_question	Is the water cold?
+H065	yes_no_question	Are the children dancing?
+H066	yes_no_question	Has the hunter found the horse?
+H067	yes_no_question	Can my brother wash the cup?
+H068	yes_no_question	Was the woman holding a flower?
+H069	yes_no_question	Do our friends live here?
+H070	yes_no_question	Will the traveler return tomorrow?
+H071	wh_question	Where is the farmer?
+H072	wh_question	When did the children arrive?
+H073	wh_question	Who opened the gate?
+H074	wh_question	What does the queen read?
+H075	wh_question	Which horse did the hunter follow?
+H076	wh_question	Why is the mother sad?
+H077	wh_question	How long is the road?
+H078	wh_question	Whose basket did the child carry?
+H079	wh_question	Where will the traveler sleep?
+H080	wh_question	How many cups does the woman have?
+H081	imperative	Open the small window.
+H082	imperative	Carry this basket carefully.
+H083	imperative	Do not close the gate.
+H084	imperative	Read the letter aloud.
+H085	imperative	Follow that horse.
+H086	imperative	Wash these cups.
+H087	imperative	Be quiet now.
+H088	imperative	Wait beside the river.
+H089	imperative	Bring the book to your sister.
+H090	imperative	Take the flower and close the door.
+H091	modality	The child can open the window.
+H092	modality	The farmer must carry the basket.
+H093	modality	The queen should read the letter.
+H094	modality	The hunter might find the horse.
+H095	modality	My brother cannot wash the cup.
+H096	modality	The woman may leave tomorrow.
+H097	modality	The traveler could cross the river.
+H098	modality	Our teacher must not close the book.
+H099	modality	The children should wait here.
+H100	modality	The mother might not return today.
+H101	possession	The farmer's basket is heavy.
+H102	possession	The child carries her mother's cup.
+H103	possession	The queen reads her brother's letter.
+H104	possession	Our teacher opens his book.
+H105	possession	The hunter finds the horse's food.
+H106	possession	My sister washes our cups.
+H107	possession	The woman's horse runs quickly.
+H108	possession	Their children read our letters.
+H109	possession	The door of the house is open.
+H110	possession	The roof of that house is red.
+H111	number_quantifiers	Two farmers carry a basket.
+H112	number_quantifiers	The child opens three windows.
+H113	number_quantifiers	Many horses run here.
+H114	number_quantifiers	Every woman has a cup.
+H115	number_quantifiers	Some children read books.
+H116	number_quantifiers	Both hunters follow the rabbit.
+H117	number_quantifiers	The farmer carries one basket.
+H118	number_quantifiers	The teacher reads several letters.
+H119	number_quantifiers	All the flowers are red.
+H120	number_quantifiers	Few travelers cross this river.
+H121	comparison	The horse is faster than the fox.
+H122	comparison	This basket is heavier than that cup.
+H123	comparison	The queen's house is the largest.
+H124	comparison	My sister walks more slowly than my brother.
+H125	comparison	The river is wider than the road.
+H126	comparison	The youngest child opens the gate.
+H127	comparison	The hunter carries the smallest basket.
+H128	comparison	This letter is better than that letter.
+H129	comparison	The mother is less tired than the farmer.
+H130	comparison	Do you like apples or pears better?
+H131	noun_coordination	The farmer and the queen read letters.
+H132	noun_coordination	The child sees a horse and a rabbit.
+H133	noun_coordination	My brother carries the basket or the cup.
+H134	noun_coordination	The woman and her sister dance.
+H135	noun_coordination	The red flowers and the white flowers grow here.
+H136	noun_coordination	The hunter follows the fox and the horse.
+H137	noun_coordination	Our teacher reads books and letters.
+H138	noun_coordination	The mother washes the cups and the plates.
+H139	noun_coordination	The boy or the girl will open the window.
+H140	noun_coordination	The queen gives food to the farmer and the child.
+H141	predicate_coordination	The farmer opens the gate and carries the basket.
+H142	predicate_coordination	The child read the letter and closed the book.
+H143	predicate_coordination	The woman sings but her brother dances.
+H144	predicate_coordination	The hunter sees the fox and follows the horse.
+H145	predicate_coordination	The mother will wash the cup and dry the plate.
+H146	predicate_coordination	Our teacher reads while the children listen.
+H147	predicate_coordination	The traveler sat, ate, and slept.
+H148	predicate_coordination	The queen opened the letter, read it, and smiled.
+H149	predicate_coordination	Will the farmer stay here or cross the river?
+H150	predicate_coordination	The horse ran away, but the hunter waited.
+H151	pp_attachment	The child with the red basket opens the gate.
+H152	pp_attachment	The hunter follows the horse beside the river.
+H153	pp_attachment	The book on the table belongs to my sister.
+H154	pp_attachment	The woman puts the cup under the chair.
+H155	pp_attachment	The farmer in the small house reads a letter.
+H156	pp_attachment	Before breakfast, the children wash their hands.
+H157	pp_attachment	In the morning we walked to the village.
+H158	pp_attachment	The traveler rests near the bridge over the river.
+H159	pp_attachment	The mother carries a basket of apples.
+H160	pp_attachment	The flowers in the queen's garden are white.
+H161	conditional	If the farmer opens the gate, the horse will leave.
+H162	conditional	If the water is cold, the child will not swim.
+H163	conditional	The queen will read the letter if the traveler returns.
+H164	conditional	If the hunter finds the horse, he will bring it home.
+H165	conditional	If the mother is tired, her sister can carry the basket.
+H166	conditional	If the children wash the cups, the farmer will cook.
+H167	conditional	The flowers will grow if the rain comes.
+H168	conditional	If the gate were open, the horse would leave.
+H169	conditional	If the teacher had read the letter, she would have known.
+H170	conditional	If the traveler does not arrive, we must wait.
+H171	relative_clause	The farmer who carries the basket is tired.
+H172	relative_clause	The child that opened the window is happy.
+H173	relative_clause	The letter that the queen reads is long.
+H174	relative_clause	The horse that the hunter follows is fast.
+H175	relative_clause	The woman whose brother left is sad.
+H176	relative_clause	The cup which my sister washed is blue.
+H177	relative_clause	The teacher who lives here reads many books.
+H178	relative_clause	The house where the farmer sleeps is small.
+H179	relative_clause	The flowers that grow near the river are red.
+H180	relative_clause	The traveler whom the queen met returned yesterday.
+H181	complement_clause	The farmer knows that the gate is open.
+H182	complement_clause	The queen thinks that the letter is important.
+H183	complement_clause	The child says that the water is cold.
+H184	complement_clause	The hunter believes that the horse will return.
+H185	complement_clause	My sister hopes that the traveler arrives today.
+H186	complement_clause	The mother knows that her child has eaten.
+H187	complement_clause	The teacher said that the children were tired.
+H188	complement_clause	We know that the farmer did not open the gate.
+H189	complement_clause	The woman asks whether the queen will read the letter.
+H190	complement_clause	The hunter wants the child to close the gate.
+H191	passive	The basket is carried by the farmer.
+H192	passive	The window was opened by the child.
+H193	passive	The letter will be read by the queen.
+H194	passive	The horse is followed by the hunter.
+H195	passive	The cup has been washed by my brother.
+H196	passive	The flowers were not picked by the children.
+H197	passive	The gate is being closed by the soldier.
+H198	passive	The book was found yesterday.
+H199	passive	Was the basket carried by the woman?
+H200	passive	The letter must be read before tomorrow.

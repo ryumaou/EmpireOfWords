@@ -1,3 +1,19 @@
+## Production acceptance and project status
+
+See [PROJECT_STATUS.md](PROJECT_STATUS.md) for current release readiness and
+[acceptance/README.md](acceptance/README.md) for the frozen holdout, independent
+semantic-review protocol, ten-language checks and reproducible acceptance commands.
+Passing the original 80-sentence suite is not production acceptance.
+
+```text
+python -B src/verify_install.py
+python -B src/run_acceptance.py --output acceptance-runs/iteration-01
+```
+
+The acceptance command intentionally exits nonzero until **all eight** release
+criteria have evidence, including independent semantic review. It writes a full
+report and updates `PROJECT_STATUS.md`; existing generated packages are preserved.
+
 ## v7.6.5
 
 See ITERATION_REVIEW_v7_6_5.md for interrogative scope and copular question changes.
