@@ -7,7 +7,7 @@ accepted only when every represented lexical/grammatical feature receives a rece
 from __future__ import annotations
 import re
 import copy
-from english_analyzer import IRREGULAR_VERBS
+from english_analyzer import IRREGULAR_VERBS, COMPLEMENT_HEADS, detect_constructions
 from ir import NPIR, PPIR, PredicateIR, ClauseIR, ModifierIR, ComparisonIR, ParticipialModifierIR
 
 PRON={'i':'1sg','me':'1sg','you':'2sg','he':'3sg','him':'3sg','she':'3sg','her':'3sg','we':'1pl','us':'1pl','they':'3pl','them':'3pl','it':'3sg'}
@@ -180,6 +180,37 @@ def _modifier(word,by,lexical_match):
 def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructions,g=None):
     toks=[x.lower() for x in english_tokens(raw)]
     if not toks:return None
+    # A conditional joins two complete clauses. Require an overt boundary so
+    # IF cannot be mistaken for an argument or silently swallow a second verb.
+    if 'conditional_clause' in constructions:
+        if len(re.findall(r'\bif\b',raw,re.I)) != 1:return None
+        front=re.fullmatch(r'\s*if\s+([^,;.!?]+)\s*,\s*([^,;]+[.!?])\s*',raw,re.I)
+        trailing=re.fullmatch(r'\s*([^,;.!?]+)\s+if\s+([^,;.!?]+)\s*([.!?])\s*',raw,re.I)
+        if front:
+            condition_text,main_text=front.groups()
+        elif trailing:
+            main_text,condition_text,punctuation=trailing.groups()
+            main_text+=punctuation
+        else:
+            return None
+        def parse_child(text):
+            tokens=[x.lower() for x in english_tokens(text)]
+            child_constructions=detect_constructions(text,tokens,by)
+            return parse_clause(text,by,lexical_match,english_tokens,lemma_candidates,child_constructions,g)
+        main=parse_child(main_text)
+        condition=parse_child(condition_text.strip()+'.')
+        if not main or not condition or main.clause_type!='declarative' or condition.clause_type!='declarative':
+            return None
+        # Bare cognition, perception, and inquiry predicates commonly select
+        # an embedded yes/no question ("I wonder if ..."). Without a separate
+        # object/complement, trailing IF has no safe conditional reading here.
+        embedded_question_heads=COMPLEMENT_HEADS|{'ask','wonder','check','learn','discover','determine','remember','decide'}
+        if trailing and main.predicate.lemma in embedded_question_heads and not (main.predicate.object or main.predicate.complement):
+            return None
+        main.subordinate=condition
+        main.subordinate_relation='condition'
+        main.source_tokens=english_tokens(raw)
+        return main
     # Causal subordination is preserved in the IR, but deliberately remains
     # diagnosed/unsupported until a licensed target-language linker is available.
     # Do not flatten the reason clause into a single predicate.
@@ -194,7 +225,7 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
             main.source_tokens=english_tokens(raw)
             return main
         return None
-    if any(c in constructions for c in ('relative_clause','appositive','conditional_clause','passive','quotation','complement_clause')): return None
+    if any(c in constructions for c in ('relative_clause','appositive','passive','quotation','complement_clause')): return None
     # A nominative pronoun supplies the adjunct boundary, with or without a comma.
     # Do not guess a boundary between adjacent common nouns.
     pronoun_pp=re.match(r'^\s*(on|in|at|during|after|before)\s+([^,]+?)(?:,\s*|\s+)((?:I|we|you|he|she|they|it)\s+[^,]+[.!?])\s*$',raw,re.I)
@@ -757,31 +788,34 @@ def realize(clause,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix
         if mark and mark not in surf.split(): surf=mark+' '+surf
         receipts.add('imperative'); receipts.add('hortative'); gloss+=' HORT'
     if clause.subordinate is not None:
-        # Realize both clauses independently, then join them with the licensed
-        # causal subordinator. A missing linker or incomplete clause is failure.
-        if clause.subordinate_relation != 'cause':
+        relation=clause.subordinate_relation
+        if relation=='cause':
+            contract=g.get('subordinate_clause',{})
+            linker=g.get('particles',{}).get('subordinate')
+            placement={'before':'before','after':'after'}.get(contract.get('position'))
+        elif relation=='condition':
+            contract=g.get('conditional_clause',{})
+            linker=g.get('particles',{}).get('conditional')
+            placement={'initial':'before','medial':'after'}.get(contract.get('position'))
+        else:
             return None
-        contract=g.get('subordinate_clause',{})
-        if contract.get('strategy')!='particle' or contract.get('position') not in ('before','after'):
-            return None
-        linker=g.get('particles',{}).get('subordinate')
-        if not linker:
-            return None
+        if contract.get('strategy')!='particle' or not placement or not linker:return None
         child=realize(clause.subordinate,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix,adjective_form)
         if not child or not child.get('surface'):
             return None
-        # before/after describe placement of the subordinate clause relative
-        # to the main clause; the linker belongs to the reason clause.
-        reason_surface=linker+' '+child['surface']
-        reason_gloss='CAUSE '+child['gloss']
-        if contract['position']=='before':
-            surf=reason_surface+' '+surf
-            gloss=reason_gloss+' '+gloss
+        # The linker belongs to the subordinate clause, and its placement is
+        # specified by this generated language's grammar.
+        linked_surface=linker+' '+child['surface']
+        linked_gloss=('CAUSE ' if relation=='cause' else 'IF ')+child['gloss']
+        if placement=='before':
+            surf=linked_surface+' '+surf
+            gloss=linked_gloss+' '+gloss
         else:
-            surf=surf+' '+reason_surface
-            gloss=gloss+' '+reason_gloss
+            surf=surf+' '+linked_surface
+            gloss=gloss+' '+linked_gloss
         receipts.update(child['receipts'])
-        receipts.update(('subordinate_clause','causal_relation','because'))
+        if relation=='cause': receipts.update(('subordinate_clause','causal_relation','because'))
+        else: receipts.update(('conditional_clause','condition_relation','if'))
     if clause.clause_type=='wh_question':
         interrogative=g.get('interrogatives',{}).get(clause.wh_word)
         if not interrogative:return None

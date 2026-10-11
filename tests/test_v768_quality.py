@@ -9,7 +9,7 @@ from grammar_engine import analyze_translation
 
 class QualityTests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(TOOL_VERSION,'7.6.12')
+        self.assertEqual(TOOL_VERSION,'8.0.0-dev1')
 
     def test_negative_indefinite_and_change_of_state(self):
         for name in ('Example','Test1','Test2'):
@@ -24,12 +24,20 @@ class QualityTests(unittest.TestCase):
                 self.assertIn('SHORT-COMP',comp['gloss'])
                 self.assertIn('GROW',comp['gloss'])
 
-    def test_unsupported_remains_unsupported(self):
+    def test_conditional_preserves_both_roles_and_future(self):
         for name in ('Example','Test1','Test2'):
             _,g,e,f=load_language(ROOT/'output'/name/'language.json')
             result=analyze_translation('If the dog sees the cat, the bird will fly.',g,e,f)
-            self.assertEqual(result['status'],'unsupported-grammar')
-            self.assertEqual(result['ir']['diagnostic_stage'],'capability_gate')
+            self.assertEqual(result['status'],'ok')
+            clause=result['ir']['structured_clause']
+            self.assertEqual(clause['subject']['head'],'bird')
+            self.assertEqual(clause['predicate']['lemma'],'fly')
+            self.assertEqual(clause['predicate']['tense'],'future')
+            self.assertEqual(clause['subordinate_relation'],'condition')
+            self.assertEqual(clause['subordinate']['subject']['head'],'dog')
+            self.assertEqual(clause['subordinate']['predicate']['lemma'],'see')
+            self.assertEqual(clause['subordinate']['predicate']['object']['head'],'cat')
+            self.assertIn(g['particles']['conditional'],result['surface'].split())
 
     def test_unresolved_names_not_invented(self):
         for name in ('Example','Test1','Test2'):

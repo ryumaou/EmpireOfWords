@@ -20,8 +20,9 @@ class PreflightTests(unittest.TestCase):
         self.assertEqual(r['statuses'],{'unresolved-vocabulary':1})
         self.assertIn('zzzfictionalobject',[w['token'] for w in r['missing_tokens']])
         self.assertEqual(len(self.entries),before)
-    def test_diagnosed_grammar_not_misclassified_as_vocabulary(self):
+    def test_supported_conditional_does_not_queue_vocabulary(self):
         r=inspect_corpus(['If the dog sees the cat, the bird will fly.'],self.grammar,self.entries,self.forms)
-        self.assertEqual(r['statuses'],{'unsupported-grammar':1})
-        self.assertEqual(r['stages'],{'capability_gate':1})
+        self.assertEqual(r['statuses'],{'ok':1})
+        self.assertEqual(r['missing_tokens'],[])
+        self.assertEqual(r['stages'],{})
 if __name__=='__main__':unittest.main()

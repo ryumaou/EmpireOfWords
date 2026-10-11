@@ -1,3 +1,10 @@
+## v8.0.0 (development)
+
+- Parse explicit two-clause conditionals as separate condition and consequence clauses, preserving each clause's roles, tense, and negation.
+- Realize the generated language's existing conditional particle and clause placement; require both clauses and the marker before reporting completion.
+- Keep ambiguous unpunctuated boundaries and embedded-question uses of *if* unsupported.
+- Reuse existing language packages without changing their grammar schema or lexical forms. Production semantic acceptance remains pending independent review.
+
 ## v7.6.12
 
 - Handle leading `Madam,` and `Sir,` as vocatives, separate from the clause subject; translate only if an actual target-language form exists.

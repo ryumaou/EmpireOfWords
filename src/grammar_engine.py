@@ -761,7 +761,9 @@ def analyze_translation(sentence,g,entries,forms):
 
     # Constructions that the current deterministic realizer can identify but not
     # yet safely realize must never be silently flattened into a simple clause.
-    diagnosed=[c for c in constructions if TRANSLATION_CAPABILITIES.get(c)=='diagnosed' and not (c=='subordinate_clause' and structured and 'causal_relation' in structured.get('receipts',()))]
+    realized_relations={'subordinate_clause':'causal_relation','conditional_clause':'condition_relation'}
+    diagnosed=[c for c in constructions if TRANSLATION_CAPABILITIES.get(c)=='diagnosed'
+               and not (structured and realized_relations.get(c) in structured.get('receipts',()))]
     if diagnosed:
         status='unsupported-grammar'; surface='[UNRESOLVED]'; gloss='[UNRESOLVED]'
         reason='unsupported construction: '+', '.join(diagnosed)
