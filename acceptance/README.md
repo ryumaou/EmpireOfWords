@@ -19,6 +19,14 @@ Exit 0 means all eight acceptance criteria pass; exit 1 means failed or incomple
 evidence; exit 2 means invalid configuration. A missing independent review is not
 a successful semantic assessment. Failed trials remain visible in the report.
 
+Previously complete development outputs that change remain visible in
+`regressions.changed_complete`. The regression gate accepts a change only with an
+exact-hash, dimension-by-dimension development review supplied through
+`--development-reviews` (default `development_change_reviews.json`). Such reviews
+are scoped to the development comparison; they never approve a holdout output or
+satisfy the independent semantic-review criteria. New incomplete outputs always
+fail the comparison.
+
 ## Frozen holdout and scope
 
 `holdout_v1.tsv` contains 200 distinct candidate sentences, ten in each of twenty

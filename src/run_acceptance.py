@@ -226,6 +226,21 @@ def development_contrasts(destination):
     return results
 
 
+def reviewed_development_change(item, before, after, reviews):
+    """Match an explicit, hash-bound review; never infer approval from a gloss."""
+    required=('roles','tense_aspect_mood','scope','reference','lexical_content','target_grammar')
+    for review in reviews:
+        if any(review.get(key)!=item[key] for key in ('language','corpus','id')):
+            continue
+        if (review.get('english')!=before['english'] or review.get('old_sha256')!=digest(before)
+                or review.get('new_sha256')!=digest(after) or review.get('scope')!='development_only'
+                or not review.get('reviewer') or not review.get('notes')
+                or not all(review.get('dimensions',{}).get(key) is True for key in required)):
+            return False
+        return True
+    return False
+
+
 def write_status(path, report, destination):
     rows = ['# Empire Of Words — project status', '',
             'Production acceptance: **' + ('SATISFIED' if report['pass'] else 'NOT SATISFIED') + '**.', '',
@@ -249,10 +264,10 @@ def write_status(path, report, destination):
              'A translator completion flag is never an independent semantic correctness score.', '',
              '## Next priority and architectural decision', '',
              'The major parser revision is underway. Explicit conditionals preserve both clauses,',
-             'finite passives bind patient and agent, and subject relatives bind an antecedent to',
-             'a missing embedded subject. Each uses its generated target-language strategy.',
+             'finite passives bind patient and agent, and finite relatives bind an antecedent to',
+             'a missing embedded subject or object. Each uses its generated target strategy.',
              'Existing language packages remain immutable; incomplete contracts fail safely.',
-             'Next: object-relative gaps, complement arguments, and complex passive clauses.',
+             'Next: medial object-relative gaps, complement arguments, and complex passives.',
              'These need broader compositional source-span and argument-binding contracts, plus',
              'an independent target-semantic oracle.', '',
              'Vocabulary expansion passes simulated writer and publication failures; power-loss',
@@ -275,6 +290,8 @@ def main(argv=None):
     parser.add_argument('--output', type=Path, required=True, help='new empty run directory, outside output/')
     parser.add_argument('--reviews', type=Path, default=ROOT / 'acceptance/semantic_reviews.json')
     parser.add_argument('--previous', type=Path, help='prior report.json for development-regression comparison')
+    parser.add_argument('--development-reviews', type=Path, default=ROOT / 'acceptance/development_change_reviews.json',
+                        help='exact-hash reviews for changed complete development outputs only')
     parser.add_argument('--status-file', type=Path, default=ROOT / 'PROJECT_STATUS.md')
     args = parser.parse_args(argv)
     destination = args.output.resolve()
@@ -323,8 +340,10 @@ def main(argv=None):
     report['clean_install'] = clean_install(destination)
     print('Checking all development corpora and existing-language contrast probes', flush=True)
     development = development_contrasts(destination)
-    report['regressions'] = {'pass': True, 'summary': 'Baseline established; no prior-run comparison supplied.', 'new_failures': [], 'changed_complete': []}
+    report['regressions'] = {'pass': True, 'summary': 'Baseline established; no prior-run comparison supplied.',
+                             'new_failures': [], 'changed_complete': [], 'reviewed_changes': [], 'unreviewed_changes': []}
     if args.previous:
+        development_reviews=json.loads(args.development_reviews.read_text(encoding='utf-8')).get('reviews',[]) if args.development_reviews.is_file() else []
         old_path = args.previous.resolve().parent / 'development_results.json'
         old = json.loads(old_path.read_text(encoding='utf-8'))
         if old.keys() != development.keys():
@@ -343,10 +362,14 @@ def main(argv=None):
                         report['regressions']['new_failures'].append(item)
                     if a['status'] == b['status'] == 'ok' and (a['surface'], a['gloss']) != (b['surface'], b['gloss']):
                         report['regressions']['changed_complete'].append(item)
+                        category='reviewed_changes' if reviewed_development_change(item,a,b,development_reviews) else 'unreviewed_changes'
+                        report['regressions'][category].append(item)
         failures = len(report['regressions']['new_failures'])
         changes = len(report['regressions']['changed_complete'])
-        report['regressions']['pass'] = failures == changes == 0
-        report['regressions']['summary'] = f'{failures} newly non-complete; {changes} changed complete outputs requiring semantic review.'
+        reviewed = len(report['regressions']['reviewed_changes'])
+        report['regressions']['pass'] = failures == 0 and changes == reviewed
+        report['regressions']['summary'] = (f'{failures} newly non-complete; {changes} changed complete outputs; '
+                                            f'{reviewed} exact-hash development reviews; {changes-reviewed} unreviewed.')
     language_paths = sorted(p.parent for p in (ROOT / 'output').glob('*/language.json'))
     audit = run_process([sys.executable, '-B', ROOT / 'src/audit_languages.py', '--languages', *language_paths,
                          '--output', destination / 'contrast_audit'], destination / 'logs/contrast_audit.log')

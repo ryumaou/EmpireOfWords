@@ -1,0 +1,245 @@
+{
+  "purpose": "Hash-bound review of changed complete development outputs; not independent holdout evidence",
+  "reviews": [
+    {
+      "language": "Example",
+      "corpus": "graded_sentences",
+      "id": 121,
+      "english": "Have you been writing at my desk?",
+      "old_sha256": "33d244f252adafec25c062d88a2ea2f832da7e94aa7a0180667a0ed778874246",
+      "new_sha256": "1a02ed076e697aae9257267ba4ff84e2724d79dbc08d48a310791391fdf57fd5",
+      "scope": "development_only",
+      "reviewer": "Codex implementation review",
+      "independent_of_implementation": false,
+      "notes": "Previously the inverted auxiliary failed to license PERFECT and PROGRESSIVE. The corrected target keeps the same 2SG subject, WRITE predicate, AT desk adjunct, and question operation while marking both aspects. Reviewed Example surface against its generated lexicon, marker placement and word order.",
+      "dimensions": {
+        "roles": true,
+        "tense_aspect_mood": true,
+        "scope": true,
+        "reference": true,
+        "lexical_content": true,
+        "target_grammar": true
+      }
+    },
+    {
+      "language": "MagicTest",
+      "corpus": "graded_sentences",
+      "id": 121,
+      "english": "Have you been writing at my desk?",
+      "old_sha256": "d3bf6c181df46a123ccf7c711f9d008a4cb76f30242f8c90b3ca1e766e06c03c",
+      "new_sha256": "ce0eb64ec8e9ca504822f93f51f62785ec49d34bb1e8efa504ac517bb4a21404",
+      "scope": "development_only",
+      "reviewer": "Codex implementation review",
+      "independent_of_implementation": false,
+      "notes": "Previously the inverted auxiliary failed to license PERFECT and PROGRESSIVE. The corrected target keeps the same 2SG subject, WRITE predicate, AT desk adjunct, and question operation while marking both aspects. Reviewed MagicTest surface against its generated lexicon, marker placement and word order.",
+      "dimensions": {
+        "roles": true,
+        "tense_aspect_mood": true,
+        "scope": true,
+        "reference": true,
+        "lexical_content": true,
+        "target_grammar": true
+      }
+    },
+    {
+      "language": "Test1",
+      "corpus": "graded_sentences",
+      "id": 121,
+      "english": "Have you been writing at my desk?",
+      "old_sha256": "d935f286fe5fc62bcf1bf740c29860e3681cdd88b603347ecb39119b313c404f",
+      "new_sha256": "e05455113b25110d9a021fdd580f5ebe33c83e0f3eedaa63c51341b55caca63d",
+      "scope": "development_only",
+      "reviewer": "Codex implementation review",
+      "independent_of_implementation": false,
+      "notes": "Previously the inverted auxiliary failed to license PERFECT and PROGRESSIVE. The corrected target keeps the same 2SG subject, WRITE predicate, AT desk adjunct, and question operation while marking both aspects. Reviewed Test1 surface against its generated lexicon, marker placement and word order.",
+      "dimensions": {
+        "roles": true,
+        "tense_aspect_mood": true,
+        "scope": true,
+        "reference": true,
+        "lexical_content": true,
+        "target_grammar": true
+      }
+    },
+    {
+      "language": "Test2",
+      "corpus": "graded_sentences",
+      "id": 121,
+      "english": "Have you been writing at my desk?",
+      "old_sha256": "d0ab0a963a2499f7c1577ae53e61a3aab921830daf45da45021bededa647e95e",
+      "new_sha256": "46746d51cd4ad4529b9959fcf43fdc5d51ee255085a4e47cf17795b2e33b2f8c",
+      "scope": "development_only",
+      "reviewer": "Codex implementation review",
+      "independent_of_implementation": false,
+      "notes": "Previously the inverted auxiliary failed to license PERFECT and PROGRESSIVE. The corrected target keeps the same 2SG subject, WRITE predicate, AT desk adjunct, and question operation while marking both aspects. Reviewed Test2 surface against its generated lexicon, marker placement and word order.",
+      "dimensions": {
+        "roles": true,
+        "tense_aspect_mood": true,
+        "scope": true,
+        "reference": true,
+        "lexical_content": true,
+        "target_grammar": true
+      }
+    },
+    {
+      "language": "Example",
+      "corpus": "graded_sentences",
+      "id": 333,
+      "english": "Have you seen the monkeys in the zoo?",
+      "old_sha256": "424b830b4e38c6fa4fe8120d866bc3891943213d2cf1d77d1bce2a4104ee8c63",
+      "new_sha256": "b1e1106979f11798a51119013ee63bc2cbdc984c0f7b051f0a4a924df39f96c1",
+      "scope": "development_only",
+      "reviewer": "Codex implementation review",
+      "independent_of_implementation": false,
+      "notes": "Previously the inverted auxiliary failed to license PERFECT. The corrected target keeps the 2SG subject, SEE predicate, MONKEY plural object, IN zoo adjunct, and question operation while marking perfect aspect. Reviewed Example surface against its generated lexicon, marker placement and word order.",
+      "dimensions": {
+        "roles": true,
+        "tense_aspect_mood": true,
+        "scope": true,
+        "reference": true,
+        "lexical_content": true,
+        "target_grammar": true
+      }
+    },
+    {
+      "language": "MagicTest",
+      "corpus": "graded_sentences",
+      "id": 333,
+      "english": "Have you seen the monkeys in the zoo?",
+      "old_sha256": "1feddd826ee229549add0027ede5d4ab1382a014e3abc13cf63b22da8a209955",
+      "new_sha256": "86e29baa76296b472a13d8c9407ca4ca7740368178f68ddc35b7863eb135ca5d",
+      "scope": "development_only",
+      "reviewer": "Codex implementation review",
+      "independent_of_implementation": false,
+      "notes": "Previously the inverted auxiliary failed to license PERFECT. The corrected target keeps the 2SG subject, SEE predicate, MONKEY plural object, IN zoo adjunct, and question operation while marking perfect aspect. Reviewed MagicTest surface against its generated lexicon, marker placement and word order.",
+      "dimensions": {
+        "roles": true,
+        "tense_aspect_mood": true,
+        "scope": true,
+        "reference": true,
+        "lexical_content": true,
+        "target_grammar": true
+      }
+    },
+    {
+      "language": "Test1",
+      "corpus": "graded_sentences",
+      "id": 333,
+      "english": "Have you seen the monkeys in the zoo?",
+      "old_sha256": "b1a198aac99ccf32aa6ee44a303e84c5cdefe01933f3b7c76bd64c87cda184e3",
+      "new_sha256": "469ee53bff1c520c3f455b3f22f8ce07e6b4bd5eb661b30b57bd6b760c9bef0f",
+      "scope": "development_only",
+      "reviewer": "Codex implementation review",
+      "independent_of_implementation": false,
+      "notes": "Previously the inverted auxiliary failed to license PERFECT. The corrected target keeps the 2SG subject, SEE predicate, MONKEY plural object, IN zoo adjunct, and question operation while marking perfect aspect. Reviewed Test1 surface against its generated lexicon, marker placement and word order.",
+      "dimensions": {
+        "roles": true,
+        "tense_aspect_mood": true,
+        "scope": true,
+        "reference": true,
+        "lexical_content": true,
+        "target_grammar": true
+      }
+    },
+    {
+      "language": "Test2",
+      "corpus": "graded_sentences",
+      "id": 333,
+      "english": "Have you seen the monkeys in the zoo?",
+      "old_sha256": "d86b892cf4a2e9e7c2139ba570b9a66167dd619d86c5a3de6095c4a30433f742",
+      "new_sha256": "3b0cfdd3d8c1b36405ee6ca77120db5fd0c4de60fba14aab81f502e4048af607",
+      "scope": "development_only",
+      "reviewer": "Codex implementation review",
+      "independent_of_implementation": false,
+      "notes": "Previously the inverted auxiliary failed to license PERFECT. The corrected target keeps the 2SG subject, SEE predicate, MONKEY plural object, IN zoo adjunct, and question operation while marking perfect aspect. Reviewed Test2 surface against its generated lexicon, marker placement and word order.",
+      "dimensions": {
+        "roles": true,
+        "tense_aspect_mood": true,
+        "scope": true,
+        "reference": true,
+        "lexical_content": true,
+        "target_grammar": true
+      }
+    },
+    {
+      "language": "Example",
+      "corpus": "graded_sentences",
+      "id": 846,
+      "english": "Have you seen the flowers that the children brought?",
+      "old_sha256": "36ade34e61c6c4f6a04680816ddbe447871429f13409fe423b0243507147843a",
+      "new_sha256": "1b5e5f68de332069b113ff840734cb22f9aaf8c634834e6c6706c2c374ba4d78",
+      "scope": "development_only",
+      "reviewer": "Codex implementation review",
+      "independent_of_implementation": false,
+      "notes": "Previously the embedded CHILD/BRING clause displaced the main YOU/SEE clause and the FLOWER object gap was unbound. The corrected target has 2SG SEE-PERF with FLOWER:ACC, a licensed relative marker, CHILD.PL BRING-PST, and question scope over the main clause. Reviewed Example surface against its generated lexicon, marker placement and word order.",
+      "dimensions": {
+        "roles": true,
+        "tense_aspect_mood": true,
+        "scope": true,
+        "reference": true,
+        "lexical_content": true,
+        "target_grammar": true
+      }
+    },
+    {
+      "language": "MagicTest",
+      "corpus": "graded_sentences",
+      "id": 846,
+      "english": "Have you seen the flowers that the children brought?",
+      "old_sha256": "73a6b2ddb9ef5a885fef07db24768315e882ec22eb996c35ec488e217e05eca5",
+      "new_sha256": "07e05cd6b6974259a442dbbaf3eb943ac8d36874cc44bea6bbfe3baa269cb2d3",
+      "scope": "development_only",
+      "reviewer": "Codex implementation review",
+      "independent_of_implementation": false,
+      "notes": "Previously the embedded CHILD/BRING clause displaced the main YOU/SEE clause and the FLOWER object gap was unbound. The corrected target has 2SG SEE-PERF with FLOWER:ACC, a licensed relative marker, CHILD.PL BRING-PST, and question scope over the main clause. Reviewed MagicTest surface against its generated lexicon, marker placement and word order.",
+      "dimensions": {
+        "roles": true,
+        "tense_aspect_mood": true,
+        "scope": true,
+        "reference": true,
+        "lexical_content": true,
+        "target_grammar": true
+      }
+    },
+    {
+      "language": "Test1",
+      "corpus": "graded_sentences",
+      "id": 846,
+      "english": "Have you seen the flowers that the children brought?",
+      "old_sha256": "c126ce3c2e3d8fe42edf986ccdbeff728a2be78327da2e3e244ec78f40b66b55",
+      "new_sha256": "437ce0fb7e0802db45a8f93e91cafea65aab0aafd17c87c53c6e2d9451f7efda",
+      "scope": "development_only",
+      "reviewer": "Codex implementation review",
+      "independent_of_implementation": false,
+      "notes": "Previously the embedded CHILD/BRING clause displaced the main YOU/SEE clause and the FLOWER object gap was unbound. The corrected target has 2SG SEE-PERF with FLOWER:ACC, a licensed relative marker, CHILD.PL BRING-PST, and question scope over the main clause. Reviewed Test1 surface against its generated lexicon, marker placement and word order.",
+      "dimensions": {
+        "roles": true,
+        "tense_aspect_mood": true,
+        "scope": true,
+        "reference": true,
+        "lexical_content": true,
+        "target_grammar": true
+      }
+    },
+    {
+      "language": "Test2",
+      "corpus": "graded_sentences",
+      "id": 846,
+      "english": "Have you seen the flowers that the children brought?",
+      "old_sha256": "4d2ab8ded96825ee908d0c1da1579746da74b8f4850b6674b1cf931a02d60be8",
+      "new_sha256": "20161c64f589ea9d38582b04f038411d372f51282a2f2afc548111aa74c54ef2",
+      "scope": "development_only",
+      "reviewer": "Codex implementation review",
+      "independent_of_implementation": false,
+      "notes": "Previously the embedded CHILD/BRING clause displaced the main YOU/SEE clause and the FLOWER object gap was unbound. The corrected target has 2SG SEE-PERF with FLOWER:ACC, a licensed relative marker, CHILD.PL BRING-PST, and question scope over the main clause. Reviewed Test2 surface against its generated lexicon, marker placement and word order.",
+      "dimensions": {
+        "roles": true,
+        "tense_aspect_mood": true,
+        "scope": true,
+        "reference": true,
+        "lexical_content": true,
+        "target_grammar": true
+      }
+    }
+  ]
+}

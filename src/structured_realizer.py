@@ -183,7 +183,7 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
     if 'relative_clause' in constructions:
         # A subject relative has two finite predicates and one overt antecedent.
         # Find a unique main-clause boundary; never guess if several parses fit.
-        if not re.fullmatch(r'\s*[A-Za-z ]+[.!?]\s*',raw) or raw.rstrip().endswith('?'):
+        if not re.fullmatch(r'\s*[A-Za-z ]+[.!?]\s*',raw):
             return None
         markers=[i for i,w in enumerate(toks) if w in ('who','which','that')]
         if len(markers)!=1:return None
@@ -196,8 +196,37 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
                 return None
             represented=1+bool(np.determiner)+len(np.adjectives)+bool(np.quantifier)+bool(np.numeral)
             return np if represented==len(words) else None
+        # Clause-final object relatives have an overt embedded subject and a
+        # missing object coindexed with the main predicate's object.
+        if len(tail)>=2 and marker in ('that','which','who'):
+            embedded_subject=simple_np(tail[:-1])
+            if embedded_subject:
+                punctuation='?' if raw.rstrip().endswith('?') else '.'
+                main_text=' '.join(host_words)+punctuation
+                main_constructions=detect_constructions(main_text,[x.lower() for x in english_tokens(main_text)],by)
+                main=parse_clause(main_text,by,lexical_match,english_tokens,lemma_candidates,main_constructions,g)
+                if main and main.predicate.object and not main.relative_clause:
+                    matches=[]
+                    for length in range(1,min(4,len(host_words))+1):
+                        antecedent_words=host_words[-length:]
+                        antecedent=simple_np(antecedent_words)
+                        if antecedent==main.predicate.object:matches.append(antecedent_words)
+                    if len(matches)==1:
+                        antecedent=main.predicate.object
+                        child_text=' '.join(tail[:-1]+[tail[-1]]+matches[0])+'.'
+                        child=parse_clause(child_text,by,lexical_match,english_tokens,lemma_candidates,[],g)
+                        if (child and child.subject==embedded_subject and child.predicate.object==antecedent
+                                and not child.predicate.pps and not child.predicate.modifiers):
+                            child.predicate.object=None
+                            child.gap_role='object'
+                            child.gap_antecedent=copy.deepcopy(antecedent)
+                            main.relative_clause=child
+                            main.relative_host_role='object'
+                            main.relative_source=marker
+                            main.source_tokens=english_tokens(raw)
+                            return main
         host=simple_np(host_words)
-        if not host or len(tail)<2:return None
+        if raw.rstrip().endswith('?') or not host or len(tail)<2:return None
         def finite(word):
             if word in ('is','are','was','were','has','have','had'):return True
             if word in IRREGULAR_VERBS and IRREGULAR_VERBS[word][1]=='past':return bool(_lemma_for_pos(word,by,lemma_candidates,'v',g or {}))
@@ -700,8 +729,10 @@ def _realize_modifier(m,g,by):
 
 def realize(clause,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix,adjective_form=None):
     p=clause.predicate; receipts=set(); ss=sg=''; person='2sg' if clause.clause_type=='imperative' else '3sg'
-    if clause.gap_role and (clause.gap_role!='subject' or clause.subject or not clause.gap_antecedent or clause.relative_clause):
+    if clause.gap_role and (clause.gap_role not in ('subject','object') or not clause.gap_antecedent or clause.relative_clause):
         return None
+    if clause.gap_role=='subject' and clause.subject:return None
+    if clause.gap_role=='object' and (not clause.subject or p.object):return None
     if p.voice not in ('active','passive'):return None
     if p.voice=='passive' and (not clause.subject or p.patient!=clause.subject or not p.agent or p.object or p.complement or p.indirect_object):
         return None
@@ -713,7 +744,7 @@ def realize(clause,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix
         elif clause.subject.number=='plural': person='3pl'
     elif clause.gap_role=='subject':
         person=clause.gap_antecedent.person or ('3pl' if clause.gap_antecedent.number=='plural' else '3sg')
-    if clause.relative_clause:
+    if clause.relative_clause and clause.relative_host_role=='subject':
         spec=g.get('relative_clause',{})
         marker=g.get('particles',{}).get('relative')
         child=clause.relative_clause
@@ -803,6 +834,25 @@ def realize(clause,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix
         os,og,orr=realize_np(p.object,g,by,noun_form,possessive_phrase,adjective_form,'accusative')
         if not os:return None
         receipts|=orr
+    if clause.relative_clause and clause.relative_host_role=='object':
+        spec=g.get('relative_clause',{})
+        marker=g.get('particles',{}).get('relative')
+        child=clause.relative_clause
+        if (not p.object or not os or child.gap_role!='object' or child.gap_antecedent!=p.object
+                or spec.get('strategy')!='relative_particle' or spec.get('position') not in ('before','after')
+                or not marker):return None
+        relative=realize(child,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix,adjective_form)
+        if not relative:return None
+        if spec['position']=='before':
+            os=marker+' '+relative['surface']+' '+os
+            og='REL '+relative['gloss']+' '+og
+        else:
+            os=os+' '+marker+' '+relative['surface']
+            og=og+' REL '+relative['gloss']
+        receipts.update(relative['receipts'])
+        receipts.update(('relative_clause','relative_relation','object_gap',clause.relative_source or 'relative'))
+    elif clause.relative_clause and clause.relative_host_role!='subject':
+        return None
     # adjective predicate/linking complement
     comp_s=comp_g=''
     if p.complement and p.complement_kind=='adjective':

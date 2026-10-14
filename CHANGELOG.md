@@ -1,5 +1,8 @@
 ## v8.0.0 (development)
 
+- Bind clause-final object relatives to the main predicate's object and an explicit missing embedded object; realize the existing relative marker according to each target grammar.
+- Correct legacy false-success analyses that promoted an embedded relative subject and verb into the main clause. Keep medial and ambiguous object gaps unresolved pending a broader argument-binding model.
+- Preserve perfect and progressive aspect in inverted auxiliary questions. Require exact-hash semantic reviews before accepting changed complete development outputs; these reviews do not count as independent holdout evidence.
 - Parse a conservative subject-relative clause with an explicit antecedent and missing embedded subject; preserve the embedded predicate, object, tense, and main-clause predicate independently.
 - Realize the generated relative marker before or after its noun phrase, validate the version 11 relative contract, and keep object gaps and ambiguous nesting unresolved.
 - Bind patient and overt agent roles in simple finite passives and realize the generated language's voice and agent placement; reject incomplete old morphological contracts.

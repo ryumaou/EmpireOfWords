@@ -69,5 +69,77 @@ class RelativeTests(unittest.TestCase):
                 self.assertNotEqual(result['status'],'ok')
                 self.assertIn(result['surface'],('[UNRESOLVED]','[PARTIAL]'))
 
+    def test_clause_final_object_gap_keeps_both_predicates_and_arguments(self):
+        for sentence,main_subject,object_head,child_subject,child_verb in (
+            ('The dog sees the cat that the bird chased.','dog','cat','bird','chase'),
+            ('Have you seen the flowers that the children brought?','you','flower','child','bring')):
+            with self.subTest(sentence=sentence):
+                result=self.translate(sentence)
+                self.assertEqual(result['status'],'ok')
+                main=result['ir']['structured_clause']
+                self.assertEqual(main['subject']['head'],main_subject)
+                self.assertEqual(main['predicate']['object']['head'],object_head)
+                if sentence.startswith('Have '):
+                    self.assertIn('perfect',main['predicate']['aspect'])
+                    self.assertIn('PERF',result['gloss'])
+                self.assertEqual(main['relative_host_role'],'object')
+                child=main['relative_clause']
+                self.assertEqual(child['subject']['head'],child_subject)
+                self.assertEqual(child['predicate']['lemma'],child_verb)
+                self.assertIsNone(child['predicate']['object'])
+                self.assertEqual(child['gap_role'],'object')
+                self.assertEqual(child['gap_antecedent']['head'],object_head)
+                self.assertIn(self.grammar['particles']['relative'],result['surface'].split())
+                self.assertIn('REL',result['gloss'])
+                self.assertIn('SEE',result['gloss'])
+
+    def test_object_gap_marker_position_and_missing_marker(self):
+        sentence='The dog sees the cat that the bird chased.'
+        before=copy.deepcopy(self.grammar)
+        after=copy.deepcopy(self.grammar)
+        before['relative_clause']['position']='before'
+        after['relative_clause']['position']='after'
+        first=self.translate(sentence,before)
+        last=self.translate(sentence,after)
+        self.assertEqual(first['status'],last['status'])
+        self.assertEqual(first['status'],'ok')
+        self.assertNotEqual(first['surface'],last['surface'])
+        after['particles'].pop('relative')
+        failed=self.translate(sentence,after)
+        self.assertEqual(failed['status'],'unsupported-grammar')
+        self.assertEqual(failed['surface'],'[UNRESOLVED]')
+
+    def test_inverted_perfect_and_progressive_scope(self):
+        for sentence,aspects in (('Have you seen the monkeys in the zoo?',['perfect']),
+                                 ('Have you been writing at my desk?',['perfect','progressive'])):
+            with self.subTest(sentence=sentence):
+                result=self.translate(sentence)
+                self.assertEqual(result['status'],'ok')
+                predicate=result['ir']['structured_clause']['predicate']
+                self.assertEqual(predicate['aspect'],aspects)
+                for aspect in aspects:
+                    self.assertIn('PERF' if aspect=='perfect' else 'PROG',result['gloss'])
+
+    def test_existing_languages_bind_object_gap_and_question_scope(self):
+        sentence='Have you seen the flowers that the children brought?'
+        for name in ('Example','MagicTest','Test1','Test2'):
+            with self.subTest(language=name):
+                _,grammar,entries,forms=load_language(ROOT/'output'/name/'language.json')
+                result=analyze_translation(sentence,grammar,entries,forms)
+                self.assertEqual(result['status'],'ok')
+                main=result['ir']['structured_clause']
+                self.assertEqual(main['clause_type'],'yes_no_question')
+                self.assertEqual(main['subject']['person'],'2sg')
+                self.assertEqual(main['predicate']['lemma'],'see')
+                self.assertEqual(main['predicate']['object']['head'],'flower')
+                self.assertIn('perfect',main['predicate']['aspect'])
+                child=main['relative_clause']
+                self.assertEqual(child['subject']['head'],'child')
+                self.assertEqual(child['predicate']['lemma'],'bring')
+                self.assertEqual(child['predicate']['tense'],'past')
+                self.assertEqual(child['gap_role'],'object')
+                self.assertEqual(child['gap_antecedent']['head'],'flower')
+                self.assertIn(grammar['particles']['relative'],result['surface'].split())
+
 
 if __name__=='__main__':unittest.main()

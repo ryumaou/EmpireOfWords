@@ -122,7 +122,7 @@ def detect_constructions(raw, low_tokens, by=None):
         prev=low_tokens[i-1] if i else '' ; nxt=low_tokens[i+1] if i+1<len(low_tokens) else ''
         if prev in COMPLEMENT_HEADS or any(x in COMPLEMENT_HEADS for x in low_tokens[max(0,i-4):i]):
             found.append('complement_clause')
-        elif i>0 and prev not in AUX|MODALS|{'to','and','or','but'} and (nxt in {'i','you','he','she','we','they','it'} or (by and any(p.startswith('v') for p,_ in by.get(lexical_match(by,nxt,'v'),[])))):
+        elif i>0 and prev not in AUX|MODALS|{'to','and','or','but'} and (nxt in {'i','you','he','she','we','they','it'} or (nxt in {'the','a','an','this','these','those'} and len(low_tokens)>=i+4 and (low_tokens[-1].endswith(('s','ed')) or low_tokens[-1] in IRREGULAR_VERBS)) or (by and any(p.startswith('v') for p,_ in by.get(lexical_match(by,nxt,'v'),[])))):
             found.append('relative_clause')
     passive_participles={w for w,(_,tense) in IRREGULAR_VERBS.items() if tense=='participle'}
     if ' by ' in ' '+low+' ' and (re.search(r'\b(?:is|are|was|were|be|been|being)\s+\w+(?:ed|en)\b',low)
@@ -155,6 +155,13 @@ def detect_constructions(raw, low_tokens, by=None):
         nxt=low_tokens[i+1]
         if nxt=='been' or nxt in IRREGULAR_VERBS and IRREGULAR_VERBS[nxt][1]=='participle' or nxt.endswith(('ed','en')):
             found.append('perfect'); break
+    if (len(low_tokens)>=3 and low_tokens[0] in ('has','have','had')
+            and low_tokens[1] in {'i','you','he','she','it','we','they'}
+            and ('that' not in low_tokens or 'relative_clause' in found or 'complement_clause' in found)):
+        participle=low_tokens[2]
+        if ((participle in IRREGULAR_VERBS and IRREGULAR_VERBS[participle][1]=='participle')
+                or participle.endswith(('ed','en'))):
+            found.append('perfect')
     # Progressive requires a BE auxiliary immediately licensing a verbal -ing form.
     # A noun such as STRING in 'This string is too short' is not progressive merely
     # because its spelling ends in -ing.
@@ -164,7 +171,10 @@ def detect_constructions(raw, low_tokens, by=None):
         if not nxt.endswith('ing'): continue
         lemma=lexical_match(by,nxt) if by else None
         vals=by.get(lemma,[]) if by and lemma else []
-        if not vals or any(p=='v' for p,_ in vals):
+        inverted_perfect=(w=='been' and i>=2 and low_tokens[0] in ('has','have','had')
+                          and low_tokens[1] in {'i','you','he','she','it','we','they'})
+        verbal_base=any(p=='v' for candidate in lemma_candidates(nxt) for p,_ in (by or {}).get(candidate,[]))
+        if not vals or any(p=='v' for p,_ in vals) or (inverted_perfect and verbal_base):
             found.append('progressive'); break
     if 'not' in low_tokens or 'never' in low_tokens: found.append('negation')
     if any(w in low_tokens for w in ('and','or','but')): found.append('coordination')
