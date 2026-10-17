@@ -196,6 +196,17 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
                 return None
             represented=1+bool(np.determiner)+len(np.adjectives)+bool(np.quantifier)+bool(np.numeral)
             return np if represented==len(words) else None
+        def finite(word):
+            if word in ('is','are','was','were','has','have','had'):return True
+            if word in IRREGULAR_VERBS and IRREGULAR_VERBS[word][1]=='past':return bool(_lemma_for_pos(word,by,lemma_candidates,'v',g or {}))
+            return word.endswith(('s','ed')) and bool(_lemma_for_pos(word,by,lemma_candidates,'v',g or {}))
+        def attached_np(words):
+            # An OF phrase is part of the antecedent, not a main-clause PP.
+            if words.count('of')!=1:return simple_np(words)
+            left, right=words[:words.index('of')], words[words.index('of')+1:]
+            if not simple_np(left) or not simple_np(right):return None
+            np=parse_np(list(words),by,lexical_match)
+            return np if np and len(np.attached_pps)==1 and np.attached_pps[0].adposition=='of' else None
         # Clause-final object relatives have an overt embedded subject and a
         # missing object coindexed with the main predicate's object.
         if len(tail)>=2 and marker in ('that','which','who'):
@@ -225,12 +236,94 @@ def parse_clause(raw,by,lexical_match,english_tokens,lemma_candidates,constructi
                             main.relative_source=marker
                             main.source_tokens=english_tokens(raw)
                             return main
+        # Proper-name agents with a finite verb may leave a recipient pronoun
+        # and a temporal adjunct after an object gap. Keep each as a separate
+        # role; the antecedent can contain one bound OF phrase.
+        source=english_tokens(raw)
+        source_tail=source[marker_i+1:]
+        if (len(source_tail)>=2 and source_tail[0][:1].isupper()
+                and source_tail[0].lower() not in set(PRON)|DET and finite(tail[1])):
+            verb=_lemma_for_pos(tail[1],by,lemma_candidates,'v',g or {})
+            remainder=tail[2:]
+            recipient=None; modifier=None
+            if remainder and remainder[0] in {'me','you','him','her','us','them'} and verb in {'give','send','show','offer','hand'}:
+                recipient=parse_np([remainder.pop(0)],by,lexical_match)
+            if remainder and len(remainder)==1 and remainder[0] in TEMP:
+                modifier=_modifier(remainder.pop(0),by,lexical_match)
+            if verb and not remainder and (not tail[2:] or recipient or modifier):
+                punctuation='?' if raw.rstrip().endswith('?') else '.'
+                host_text=' '.join(host_words)+punctuation
+                main_constructions=detect_constructions(host_text,[x.lower() for x in english_tokens(host_text)],by)
+                main=parse_clause(host_text,by,lexical_match,english_tokens,lemma_candidates,main_constructions,g)
+                host_role='object'
+                if main is None and len(host_words)>=4 and host_words[0] in {'this','that','these','those'} and host_words[1] in {'is','are','was','were'}:
+                    antecedent=attached_np(host_words[2:])
+                    copula=_copula_lemma(by)
+                    if antecedent and copula:
+                        demonstrative=NPIR([host_words[0]],head=host_words[0])
+                        predicate=PredicateIR(copula,tense='past' if host_words[1] in {'was','were'} else 'present',
+                                              complement=antecedent,complement_kind='nominal')
+                        main=ClauseIR(demonstrative,predicate,source_tokens=english_tokens(host_text))
+                        host_role='complement'
+                if main and not main.relative_clause:
+                    matches=[]
+                    for length in range(1,min(7,len(host_words))+1):
+                        words=host_words[-length:]
+                        antecedent=attached_np(words)
+                        if not antecedent:continue
+                        if host_role=='complement':
+                            if antecedent==main.predicate.complement:matches.append(antecedent)
+                        elif main.predicate.object and antecedent.head==main.predicate.object.head:
+                            # The ordinary parser may place OF CANDY in a
+                            # predicate PP. Rebind it only when both spans agree.
+                            bare=copy.deepcopy(antecedent); bare.attached_pps=[]
+                            if (bare==main.predicate.object and
+                                    main.predicate.pps==antecedent.attached_pps):
+                                matches.append(antecedent)
+                            elif antecedent==main.predicate.object and not main.predicate.pps:
+                                matches.append(antecedent)
+                    if len(matches)==1:
+                        antecedent=matches[0]
+                        if host_role=='object':
+                            main.predicate.object=antecedent
+                            main.predicate.pps=[]
+                        agent=NPIR([source_tail[0]],head=source_tail[0],proper_name=True)
+                        tense='past' if tail[1] in IRREGULAR_VERBS and IRREGULAR_VERBS[tail[1]][1]=='past' else 'present'
+                        child_predicate=PredicateIR(verb,tense=tense,indirect_object=recipient,
+                                                    modifiers=[modifier] if modifier else [])
+                        child=ClauseIR(agent,child_predicate,source_tokens=source_tail,
+                                       gap_role='object',gap_antecedent=copy.deepcopy(antecedent))
+                        main.relative_clause=child
+                        main.relative_host_role=host_role
+                        main.relative_source=marker
+                        main.source_tokens=source
+                        return main
         host=simple_np(host_words)
         if raw.rstrip().endswith('?') or not host or len(tail)<2:return None
-        def finite(word):
-            if word in ('is','are','was','were','has','have','had'):return True
-            if word in IRREGULAR_VERBS and IRREGULAR_VERBS[word][1]=='past':return bool(_lemma_for_pos(word,by,lemma_candidates,'v',g or {}))
-            return word.endswith(('s','ed')) and bool(_lemma_for_pos(word,by,lemma_candidates,'v',g or {}))
+        # A medial object gap in a subject relative: THE DOG [THAT THE CAT
+        # SEES] RUNS. Both finite boundaries and the embedded subject must be
+        # overt; verify the reconstructed object before removing it.
+        object_gap_candidates=[]
+        for cut in range(2,len(tail)):
+            rel_words=tail[:cut]; main_words=tail[cut:]
+            embedded_subject=simple_np(rel_words[:-1])
+            if not embedded_subject or not finite(rel_words[-1]) or not finite(main_words[0]):continue
+            host_text=' '.join(host_words)
+            child=parse_clause(' '.join(rel_words+host_words)+'.',by,lexical_match,english_tokens,lemma_candidates,[],g)
+            main=parse_clause(host_text+' '+' '.join(main_words)+'.',by,lexical_match,english_tokens,lemma_candidates,[],g)
+            if (not child or not main or child.subject!=embedded_subject or main.subject!=host
+                    or child.predicate.object!=host or child.predicate.pps or child.predicate.modifiers
+                    or child.predicate.complement or child.predicate.indirect_object):continue
+            child.predicate.object=None
+            child.gap_role='object'
+            child.gap_antecedent=copy.deepcopy(main.subject)
+            main.relative_clause=child
+            main.relative_host_role='subject'
+            main.relative_source=marker
+            main.source_tokens=english_tokens(raw)
+            object_gap_candidates.append(main)
+        if object_gap_candidates:
+            return object_gap_candidates[0] if len(object_gap_candidates)==1 else None
         candidates=[]
         for cut in range(1,len(tail)):
             rel_words=tail[:cut]; main_words=tail[cut:]
@@ -630,6 +723,14 @@ def _conj_form(g,cj,by): return g.get('particles',{}).get(cj) or _form(by,cj,('c
 
 def realize_np(np,g,by,noun_form,possessive_phrase,adjective_form=None,case='nominative'):
     if np is None:return None,None,set()
+    if np.proper_name and len(np.tokens)==1 and np.tokens[0]==np.head:
+        # Explicit borrowing preserves a referent without inventing a lexeme.
+        return np.head,'NAME:'+np.head.upper(),{np.head.lower(),'proper_name'}
+    if np.head in ('this','that','these','those') and np.tokens==[np.head]:
+        key={'this':'proximal_singular','that':'distal_singular',
+             'these':'proximal_plural','those':'distal_plural'}[np.head]
+        form=g.get('demonstratives',{}).get(key)
+        return (form,np.head.upper(),{np.head}) if form else (None,None,set())
     if np.person:
         f=g.get('pronouns',{}).get(np.person); return (f,np.person.upper(),{np.head or np.person}) if f else (None,None,set())
     nf=_form(by,np.head,('n',)) if np.head else None
@@ -749,7 +850,7 @@ def realize(clause,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix
         marker=g.get('particles',{}).get('relative')
         child=clause.relative_clause
         if (clause.relative_host_role!='subject' or not clause.subject or not ss
-                or child.gap_role!='subject' or child.gap_antecedent!=clause.subject
+                or child.gap_role not in ('subject','object') or child.gap_antecedent!=clause.subject
                 or spec.get('strategy')!='relative_particle' or spec.get('position') not in ('before','after')
                 or not marker):return None
         relative=realize(child,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix,adjective_form)
@@ -851,7 +952,7 @@ def realize(clause,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix
             og=og+' REL '+relative['gloss']
         receipts.update(relative['receipts'])
         receipts.update(('relative_clause','relative_relation','object_gap',clause.relative_source or 'relative'))
-    elif clause.relative_clause and clause.relative_host_role!='subject':
+    elif clause.relative_clause and clause.relative_host_role not in ('subject','complement'):
         return None
     # adjective predicate/linking complement
     comp_s=comp_g=''
@@ -881,7 +982,26 @@ def realize(clause,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix
         comp_s,comp_g,cr=realize_np(p.complement,g,by,noun_form,possessive_phrase,adjective_form,'nominative')
         if not comp_s:return None
         receipts|=cr
+        if clause.relative_clause and clause.relative_host_role=='complement':
+            spec=g.get('relative_clause',{})
+            marker=g.get('particles',{}).get('relative')
+            child=clause.relative_clause
+            if (child.gap_role!='object' or child.gap_antecedent!=p.complement
+                    or spec.get('strategy')!='relative_particle' or spec.get('position') not in ('before','after')
+                    or not marker):return None
+            relative=realize(child,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix,adjective_form)
+            if not relative:return None
+            if spec['position']=='before':
+                comp_s=marker+' '+relative['surface']+' '+comp_s
+                comp_g='REL '+relative['gloss']+' '+comp_g
+            else:
+                comp_s=comp_s+' '+marker+' '+relative['surface']
+                comp_g=comp_g+' REL '+relative['gloss']
+            receipts.update(relative['receipts'])
+            receipts.update(('relative_clause','relative_relation','object_gap',clause.relative_source or 'relative'))
         os=comp_s if not os else os+' '+comp_s; og=comp_g if not og else og+' '+comp_g
+    elif clause.relative_clause and clause.relative_host_role=='complement':
+        return None
     surf=order_clause(ss,v,os,g).strip() if ss else ' '.join(order_clause('',v,os,g).split()) if clause.gap_role=='subject' else ' '.join(x for x in (v,os) if x)
     gloss=order_clause(sg,vg,og,g).strip() if sg else ' '.join(order_clause('',vg,og,g).split()) if clause.gap_role=='subject' else ' '.join(x for x in (vg,og) if x)
     if p.voice=='passive':
@@ -925,6 +1045,13 @@ def realize(clause,g,by,verb_form,noun_form,possessive_phrase,order_clause,affix
         if not pf or not ad:return None
         chunk=ad+' '+pf if g.get('adposition_type')=='preposition' else pf+' '+ad
         surf+=' '+chunk; gloss+=' '+pp.adposition.upper()+' '+pg; receipts|=pr; receipts.add(pp.adposition)
+    if p.indirect_object:
+        recipient_s,recipient_g,recipient_r=realize_np(p.indirect_object,g,by,noun_form,possessive_phrase,adjective_form,'dative')
+        to_form=_form(by,'to',('prep','p'))
+        if not recipient_s or not to_form:return None
+        phrase=(to_form+' '+recipient_s if g.get('adposition_type')=='preposition' else recipient_s+' '+to_form)
+        surf+=' '+phrase; gloss+=' RECIPIENT '+recipient_g
+        receipts.update(recipient_r); receipts.add('recipient')
     if p.comparison and p.comparison.standard:
         sf,sgl,sr=realize_np(p.comparison.standard,g,by,noun_form,possessive_phrase,adjective_form,'ablative')
         if not sf:return None

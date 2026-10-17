@@ -61,13 +61,91 @@ class RelativeTests(unittest.TestCase):
         issues,_=validate_grammar_contract(after)
         self.assertIn('contract v11 requires relative particle',issues)
 
-    def test_object_gap_and_ambiguous_scope_remain_unresolved(self):
-        for sentence in ('The dog that the cat sees is happy.',
-                         'The dog that sees the cat that runs is happy.'):
+    def test_medial_object_gap_in_subject_relative(self):
+        result=self.translate('The dog that the cat sees is happy.')
+        self.assertEqual(result['status'],'ok')
+        main=result['ir']['structured_clause']
+        self.assertEqual(main['subject']['head'],'dog')
+        self.assertEqual(main['predicate']['complement']['head'],'happy')
+        child=main['relative_clause']
+        self.assertEqual(child['subject']['head'],'cat')
+        self.assertEqual(child['predicate']['lemma'],'see')
+        self.assertIsNone(child['predicate']['object'])
+        self.assertEqual(child['gap_role'],'object')
+        self.assertEqual(child['gap_antecedent']['head'],'dog')
+        self.assertIn('REL',result['gloss'])
+
+    def test_ambiguous_scope_remains_unresolved(self):
+        for sentence in ('The dog that sees the cat that runs is happy.',
+                         'The dog that the cat sees the bird chases is happy.'):
             with self.subTest(sentence=sentence):
                 result=self.translate(sentence)
                 self.assertNotEqual(result['status'],'ok')
                 self.assertIn(result['surface'],('[UNRESOLVED]','[PARTIAL]'))
+
+    def test_unbound_complex_relative_is_not_complete(self):
+        for sentence in ('The dog sees the cat that the bird chased yesterday.',
+                         'The box of candy that Lucy gave me yesterday is red.'):
+            with self.subTest(sentence=sentence):
+                result=self.translate(sentence)
+                self.assertNotEqual(result['status'],'ok')
+
+    def test_proper_agent_and_copular_complement_gap(self):
+        sentence='This is the house that Jack built.'
+        for name in ('Example','MagicTest','Test1','Test2'):
+            with self.subTest(language=name):
+                _,grammar,entries,forms=load_language(ROOT/'output'/name/'language.json')
+                result=analyze_translation(sentence,grammar,entries,forms)
+                self.assertEqual(result['status'],'ok')
+                main=result['ir']['structured_clause']
+                self.assertEqual(main['subject']['head'],'this')
+                self.assertEqual(main['predicate']['complement']['head'],'house')
+                self.assertEqual(main['relative_host_role'],'complement')
+                child=main['relative_clause']
+                self.assertEqual(child['subject']['head'],'Jack')
+                self.assertTrue(child['subject']['proper_name'])
+                self.assertEqual(child['predicate']['lemma'],'build')
+                self.assertEqual(child['predicate']['tense'],'past')
+                self.assertEqual(child['gap_role'],'object')
+                self.assertEqual(child['gap_antecedent'],main['predicate']['complement'])
+                self.assertIn('NAME:JACK',result['gloss'])
+                self.assertIn(grammar['particles']['relative'],result['surface'].split())
+
+    def test_attached_antecedent_recipient_and_time(self):
+        sentence='Have you seen the box of candy that Lucy gave me yesterday?'
+        for name in ('Example','MagicTest','Test1','Test2'):
+            with self.subTest(language=name):
+                _,grammar,entries,forms=load_language(ROOT/'output'/name/'language.json')
+                result=analyze_translation(sentence,grammar,entries,forms)
+                self.assertEqual(result['status'],'ok')
+                main=result['ir']['structured_clause']
+                self.assertEqual(main['clause_type'],'yes_no_question')
+                self.assertIn('perfect',main['predicate']['aspect'])
+                antecedent=main['predicate']['object']
+                self.assertEqual(antecedent['head'],'box')
+                self.assertEqual(antecedent['attached_pps'][0]['object']['head'],'candy')
+                self.assertEqual(main['predicate']['pps'],[])
+                child=main['relative_clause']
+                self.assertEqual(child['subject']['head'],'Lucy')
+                self.assertEqual(child['predicate']['lemma'],'give')
+                self.assertEqual(child['predicate']['indirect_object']['person'],'1sg')
+                self.assertEqual(child['predicate']['modifiers'][0]['lemma'],'yesterday')
+                self.assertEqual(child['gap_antecedent'],antecedent)
+                self.assertIn('RECIPIENT',result['gloss'])
+                self.assertIn('REL',result['gloss'])
+                self.assertIn(grammar['particles']['relative'],result['surface'].split())
+
+    def test_medial_object_gap_across_existing_languages(self):
+        sentence='The dog that the cat sees runs.'
+        for name in ('Example','MagicTest','Test1','Test2'):
+            with self.subTest(language=name):
+                _,grammar,entries,forms=load_language(ROOT/'output'/name/'language.json')
+                result=analyze_translation(sentence,grammar,entries,forms)
+                self.assertEqual(result['status'],'ok')
+                main=result['ir']['structured_clause']
+                self.assertEqual(main['relative_clause']['gap_role'],'object')
+                self.assertEqual(main['relative_clause']['gap_antecedent'],main['subject'])
+                self.assertIn(grammar['particles']['relative'],result['surface'].split())
 
     def test_clause_final_object_gap_keeps_both_predicates_and_arguments(self):
         for sentence,main_subject,object_head,child_subject,child_verb in (

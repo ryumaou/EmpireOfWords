@@ -9,7 +9,7 @@ from grammar_engine import analyze_translation
 
 class QualityTests(unittest.TestCase):
     def test_version(self):
-        self.assertEqual(TOOL_VERSION,'8.0.0-dev4')
+        self.assertEqual(TOOL_VERSION,'8.0.0-dev6')
 
     def test_negative_indefinite_and_change_of_state(self):
         for name in ('Example','Test1','Test2'):

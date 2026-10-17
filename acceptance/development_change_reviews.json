@@ -240,6 +240,166 @@
         "lexical_content": true,
         "target_grammar": true
       }
+    },
+    {
+      "language": "Example",
+      "corpus": "graded_sentences",
+      "id": 850,
+      "english": "This is the house that Jack built.",
+      "old_sha256": "b0e0bfc5b308992d03d54ea63096f93488d38b8e36e34e0f16b73426d7b703e1",
+      "new_sha256": "784d975d33a54ee269fcdeea3b59f9c94cd78d95efcff297dc1d52164c2f4dd1",
+      "scope": "development_only",
+      "reviewer": "Codex implementation review",
+      "independent_of_implementation": false,
+      "notes": "Implementation review of Example: the new surface retains THIS as the main subject, a nominal HOUSE complement, and a separate past BUILD clause with borrowed proper-name agent Jack. Its object gap binds HOUSE. Checked the generated relative marker and clause order against this package. The prior surface flattened these roles.",
+      "dimensions": {
+        "roles": true,
+        "tense_aspect_mood": true,
+        "scope": true,
+        "reference": true,
+        "lexical_content": true,
+        "target_grammar": true
+      }
+    },
+    {
+      "language": "Example",
+      "corpus": "graded_sentences",
+      "id": 927,
+      "english": "Have you seen the box of candy that Lucy gave me yesterday?",
+      "old_sha256": "355e5889abf7a237a4ab8180aaf1ebcaf43741a2c28d68ed3f897fc75559ba86",
+      "new_sha256": "9ab0e0f9c469b9a0a1dbe1a6976db34c1d4373d06336e1e68d59df9fc301e993",
+      "scope": "development_only",
+      "reviewer": "Codex implementation review",
+      "independent_of_implementation": false,
+      "notes": "Implementation review of Example: the new surface retains the 2SG question and perfect SEE, binds the full BOX OF CANDY object as the relative gap, and retains Lucy as the past GIVE agent, ME as recipient, and YESTERDAY as time. Checked the generated relative marker, recipient adposition, and clause order against this package. The prior surface flattened these roles.",
+      "dimensions": {
+        "roles": true,
+        "tense_aspect_mood": true,
+        "scope": true,
+        "reference": true,
+        "lexical_content": true,
+        "target_grammar": true
+      }
+    },
+    {
+      "language": "MagicTest",
+      "corpus": "graded_sentences",
+      "id": 850,
+      "english": "This is the house that Jack built.",
+      "old_sha256": "ded0e8dce7b91f2d4755e55cd67aa108ed50b40d3f0bc26bad77122bd4bb6ced",
+      "new_sha256": "f5038fe0e42497a8615ac384c788f7e2e15aaf90ddb40293126d71aaa7062822",
+      "scope": "development_only",
+      "reviewer": "Codex implementation review",
+      "independent_of_implementation": false,
+      "notes": "Implementation review of MagicTest: the new surface retains THIS as the main subject, a nominal HOUSE complement, and a separate past BUILD clause with borrowed proper-name agent Jack. Its object gap binds HOUSE. Checked the generated relative marker and clause order against this package. The prior surface flattened these roles.",
+      "dimensions": {
+        "roles": true,
+        "tense_aspect_mood": true,
+        "scope": true,
+        "reference": true,
+        "lexical_content": true,
+        "target_grammar": true
+      }
+    },
+    {
+      "language": "MagicTest",
+      "corpus": "graded_sentences",
+      "id": 927,
+      "english": "Have you seen the box of candy that Lucy gave me yesterday?",
+      "old_sha256": "cd167c4e3ad13738793d85a2cc8a3367f8cdbe9d1d59919cf5fafd5f837fd747",
+      "new_sha256": "e0dec565980804fcf0a9d5d2e03f68c513a631bfaf23a358bc2277fbdaf544ef",
+      "scope": "development_only",
+      "reviewer": "Codex implementation review",
+      "independent_of_implementation": false,
+      "notes": "Implementation review of MagicTest: the new surface retains the 2SG question and perfect SEE, binds the full BOX OF CANDY object as the relative gap, and retains Lucy as the past GIVE agent, ME as recipient, and YESTERDAY as time. Checked the generated relative marker, recipient adposition, and clause order against this package. The prior surface flattened these roles.",
+      "dimensions": {
+        "roles": true,
+        "tense_aspect_mood": true,
+        "scope": true,
+        "reference": true,
+        "lexical_content": true,
+        "target_grammar": true
+      }
+    },
+    {
+      "language": "Test1",
+      "corpus": "graded_sentences",
+      "id": 850,
+      "english": "This is the house that Jack built.",
+      "old_sha256": "482f2015a6b72d508c24f29f208230bbfc0df45674f255a29da8a162bee34f55",
+      "new_sha256": "350f8d54e81ce9938b51d9e1257c792467f5e562f80fab5214cf0309417bae20",
+      "scope": "development_only",
+      "reviewer": "Codex implementation review",
+      "independent_of_implementation": false,
+      "notes": "Implementation review of Test1: the new surface retains THIS as the main subject, a nominal HOUSE complement, and a separate past BUILD clause with borrowed proper-name agent Jack. Its object gap binds HOUSE. Checked the generated relative marker and clause order against this package. The prior surface flattened these roles.",
+      "dimensions": {
+        "roles": true,
+        "tense_aspect_mood": true,
+        "scope": true,
+        "reference": true,
+        "lexical_content": true,
+        "target_grammar": true
+      }
+    },
+    {
+      "language": "Test1",
+      "corpus": "graded_sentences",
+      "id": 927,
+      "english": "Have you seen the box of candy that Lucy gave me yesterday?",
+      "old_sha256": "f690bc0843ddf5cf6b942833356d8a884f27d040c27fe912dc37ed81f7a08586",
+      "new_sha256": "41af17aa342919f645f70d7ed2b9f60f259bc80636258067f5fa3a1ebd192bd8",
+      "scope": "development_only",
+      "reviewer": "Codex implementation review",
+      "independent_of_implementation": false,
+      "notes": "Implementation review of Test1: the new surface retains the 2SG question and perfect SEE, binds the full BOX OF CANDY object as the relative gap, and retains Lucy as the past GIVE agent, ME as recipient, and YESTERDAY as time. Checked the generated relative marker, recipient adposition, and clause order against this package. The prior surface flattened these roles.",
+      "dimensions": {
+        "roles": true,
+        "tense_aspect_mood": true,
+        "scope": true,
+        "reference": true,
+        "lexical_content": true,
+        "target_grammar": true
+      }
+    },
+    {
+      "language": "Test2",
+      "corpus": "graded_sentences",
+      "id": 850,
+      "english": "This is the house that Jack built.",
+      "old_sha256": "d1551cff6bec6ade4df6d76aea23b4deb7018454266a36891da3c9199b00b171",
+      "new_sha256": "03b175e851740d10b50ef534d887796c5f0c58dedbcbc99967bb4d3c808a6b35",
+      "scope": "development_only",
+      "reviewer": "Codex implementation review",
+      "independent_of_implementation": false,
+      "notes": "Implementation review of Test2: the new surface retains THIS as the main subject, a nominal HOUSE complement, and a separate past BUILD clause with borrowed proper-name agent Jack. Its object gap binds HOUSE. Checked the generated relative marker and clause order against this package. The prior surface flattened these roles.",
+      "dimensions": {
+        "roles": true,
+        "tense_aspect_mood": true,
+        "scope": true,
+        "reference": true,
+        "lexical_content": true,
+        "target_grammar": true
+      }
+    },
+    {
+      "language": "Test2",
+      "corpus": "graded_sentences",
+      "id": 927,
+      "english": "Have you seen the box of candy that Lucy gave me yesterday?",
+      "old_sha256": "03241e649ced9e4cdde93ebd8e4a446e4e4ff0df8cd9b7d85b6895cd923b0471",
+      "new_sha256": "e0144bc98c968e881339725f62f4d5aa2b9574d3f967708ae6dae9cf6ccf2409",
+      "scope": "development_only",
+      "reviewer": "Codex implementation review",
+      "independent_of_implementation": false,
+      "notes": "Implementation review of Test2: the new surface retains the 2SG question and perfect SEE, binds the full BOX OF CANDY object as the relative gap, and retains Lucy as the past GIVE agent, ME as recipient, and YESTERDAY as time. Checked the generated relative marker, recipient adposition, and clause order against this package. The prior surface flattened these roles.",
+      "dimensions": {
+        "roles": true,
+        "tense_aspect_mood": true,
+        "scope": true,
+        "reference": true,
+        "lexical_content": true,
+        "target_grammar": true
+      }
     }
   ]
 }

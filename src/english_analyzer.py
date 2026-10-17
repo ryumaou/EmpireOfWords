@@ -112,6 +112,7 @@ def _is_proper(raw_token, index):
 
 def detect_constructions(raw, low_tokens, by=None):
     low=' '.join(low_tokens); found=[]
+    source_tokens=tokens(raw)
     if 'if' in low_tokens: found.append('conditional_clause')
     if any(x in low_tokens for x in ('because','while')): found.append('subordinate_clause')
     if any(x in low_tokens for x in ('who','whose','which')): found.append('relative_clause')
@@ -120,9 +121,17 @@ def detect_constructions(raw, low_tokens, by=None):
     for i,w in enumerate(low_tokens):
         if w!='that': continue
         prev=low_tokens[i-1] if i else '' ; nxt=low_tokens[i+1] if i+1<len(low_tokens) else ''
-        if prev in COMPLEMENT_HEADS or any(x in COMPLEMENT_HEADS for x in low_tokens[max(0,i-4):i]):
+        complement_context=(prev in COMPLEMENT_HEADS
+                            or any(x in COMPLEMENT_HEADS for x in low_tokens[max(0,i-4):i]))
+        if complement_context:
             found.append('complement_clause')
-        elif i>0 and prev not in AUX|MODALS|{'to','and','or','but'} and (nxt in {'i','you','he','she','we','they','it'} or (nxt in {'the','a','an','this','these','those'} and len(low_tokens)>=i+4 and (low_tokens[-1].endswith(('s','ed')) or low_tokens[-1] in IRREGULAR_VERBS)) or (by and any(p.startswith('v') for p,_ in by.get(lexical_match(by,nxt,'v'),[])))):
+        nominal_subject=(nxt in {'the','a','an','this','these','those'}
+                         or (i+1<len(source_tokens) and source_tokens[i+1][:1].isupper()))
+        later_finite=any(w.endswith(('s','ed')) or w in IRREGULAR_VERBS for w in low_tokens[i+2:])
+        immediate_verb=bool(by and any(p.startswith('v') for p,_ in by.get(lexical_match(by,nxt,'v'),[])))
+        if (not complement_context and i>0 and prev not in AUX|MODALS|{'to','and','or','but'}
+                and (nxt in {'i','you','he','she','we','they','it'}
+                     or (nominal_subject and later_finite) or immediate_verb)):
             found.append('relative_clause')
     passive_participles={w for w,(_,tense) in IRREGULAR_VERBS.items() if tense=='participle'}
     if ' by ' in ' '+low+' ' and (re.search(r'\b(?:is|are|was|were|be|been|being)\s+\w+(?:ed|en)\b',low)
